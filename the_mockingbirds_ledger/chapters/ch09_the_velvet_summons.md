@@ -8,7 +8,7 @@ Tonight, the same steps were swept clean of snow and lined with sixty honor guar
 
 I did not walk quickly. A man who rushes reveals his anxiety; a man who strolls commands the architecture.
 
-I wore a coat of deep charcoal-grey wool, woven from fine Spanish merino, edged at the cuffs and hem with midnight-black velvet. It was unadorned by gold braid, gems, or heraldic posturing. Upon my left lapel rested my only ornament: a delicate, wrought-silver brooch shaped like a singing mockingbird, its eye a tiny, uncut black diamond.
+I wore a coat of deep charcoal-grey wool, woven from fine West-Reach merino, edged at the cuffs and hem with midnight-black velvet. It was unadorned by gold braid, gems, or heraldic posturing. Upon my left lapel rested my only ornament: a delicate, wrought-silver brooch shaped like a singing mockingbird, its eye a tiny, uncut black diamond.
 
 Beside me walked two clerks carrying iron-bound oak caskets filled with the realm's promissory notes, bills of exchange, and foreign mortgages.
 

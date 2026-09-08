@@ -54,7 +54,7 @@ The first was the Great Crown Register—a massive, iron-bound volume bound in p
 
 The second was a small, oblong notebook bound in worn brown calfskin, resting half-hidden beneath a stack of salt-charters to his left.
 
-Whenever a consignment of high-value luxury cargo passed his inspection—fine Spanish merino wool, casks of fortified Malmsey wine, or crates of refined candle-tallow—Mallow’s quill dipped into a secondary inkpot. A paler ink, slightly watered. He scribbled a note into the brown calfskin ledger, then stamped the clearance with a second, slightly smaller brass signet kept concealed inside his wide wool sleeve.
+Whenever a consignment of high-value luxury cargo passed his inspection—fine West-Reach merino wool, casks of fortified Malmsey wine, or crates of refined candle-tallow—Mallow’s quill dipped into a secondary inkpot. A paler ink, slightly watered. He scribbled a note into the brown calfskin ledger, then stamped the clearance with a second, slightly smaller brass signet kept concealed inside his wide wool sleeve.
 
 It took me precisely forty-five minutes to decipher the arithmetic.
 
@@ -106,7 +106,7 @@ Mallow blinked, his mouth opening and closing like a landed carp. "Then... what 
 
 "I want what your department considers worthless," I said softly, drawing a folded sheet of parchment from my coat.
 
-"Three months ago, the municipal bailiffs seized the old Romanesque cistern near the Coal Sump—*The Drowned Cellar*—for non-payment of fifty sovereigns in crown arrears. The lease reverted to the Sovereign Customs Department as delinquent salvage. It sits in your strongbox, gathering dust and mildew, while the city levies an annual maintenance penalty against your ledger."
+"Three months ago, the municipal bailiffs seized the old imperial basalt cistern near the Coal Sump—*The Drowned Cellar*—for non-payment of fifty sovereigns in crown arrears. The lease reverted to the Sovereign Customs Department as delinquent salvage. It sits in your strongbox, gathering dust and mildew, while the city levies an annual maintenance penalty against your ledger."
 
 Mallow stared at me, his piggish eyes narrowing with dawning bewilderment. "The cistern? It's flooded knee-deep in canal sludge! The boiler trusses are rotted through! No sane man would pay three copper bits for that waterlogged tomb!"
 

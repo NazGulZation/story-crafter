@@ -30,7 +30,7 @@ Stories/
     │   └── dossiers.md
     ├── outlines/                              # Arc breakdown & beat sheets
     │   └── arc_outline.md
-    └── world/                                 # Setting bibles, geography & ecology
+    └── world/                                 # Setting codices, geography & ecology
         └── setting_and_lore.md
 ```
 
@@ -86,6 +86,7 @@ All story drafts, character sheets, and lore documents within this workspace adh
    - `Sunken Pass`, `Oakhaven`, `Julian`, `Rian`, `Mia`, `Elyria`, `Whispering Wood`, `Dragon/Drakes`, `Garrick`, `Bram`, `Vaelrian`, `Vane`, `Aethelgard`, `Harrick`, `Varis`, `Corin`, `Silas`, `Monster Crawler`, `Monster Dog`, `Sunken Crypt/Hollow`.
    - `Opening Alley Thug / Mugger Encounter`: No brawling with or looting street muggers in opening chapters.
    - `Accountant Assistant / Junior Ledger Clerk Subordination`: No subordinate bookkeeper or clerk employment.
+   - `Earth Idioms & Eponyms in Fantasy`: Strict ban on Earth-derived idioms, historical eponyms (`Achilles' heel`, `Pyrrhic victory`), real-world demonyms/materials (`Spanish wool`, `Swedish iron`, `Persian carpet`, `Romanesque`), and Earth religions/languages (`Latin`, `Christian mercy`). Always substitute setting-authentic equivalents.
 2. **Anti-Deus Ex Machina & Mandatory Foreshadowing**:
    - No ass-pulls or unearned plot conveniences.
    - All climactic resolutions, critical skills, or turning points must be seeded and foreshadowed beforehand (Chekhov's Arsenal).

@@ -54,7 +54,7 @@ I drew a folded sheepskin ledger from my inner pocket, turning the pages with de
 
 I looked up from the parchment, my grey eyes smiling into hers.
 
-"Remarkable bone, that femur. Especially considering that Saint Cecilia died without legs, having been martyred by the Wheel. The bone in question belonged to a calf slaughtered behind the butcher's row in the Canal Ward."
+"Remarkable bone, that femur. Especially considering that Saint Ysolde died without legs, having been martyred by the Wheel. The bone in question belonged to a calf slaughtered behind the butcher's row in the Canal Ward."
 
 Vivienne stared at me in horrified silence. Her chest rose and fell in rapid, shallow bursts. For the first time, she truly looked at my face—past the neat beard, past the fine wool coat.
 
@@ -62,9 +62,9 @@ Her blue eyes widened in sudden, staggering comprehension.
 
 "Alden?" she breathed, the word tumbling from her lips like broken glass. "You... you were the one who..."
 
-"Alden Croft," I supplied gently, dipping my head. "The very same novice you once counseled to accept his banishment with Christian humility. *'The Light demands strength, brother,'* I believe were your exact words as you watched Lord Godfrey toss my sword into the horse trough."
+"Alden Croft," I supplied gently, dipping my head. "The very same novice you once counseled to accept his banishment with holy humility. *'The Light demands strength, brother,'* I believe were your exact words as you watched Lord Godfrey toss my sword into the horse trough."
 
-Vivienne retreated half a step, her back pressing against the cold marble of Saint Jude’s tomb. Her mind was working frantically, weighing threats, violence, and escape.
+Vivienne retreated half a step, her back pressing against the cold marble of Saint Maelor’s tomb. Her mind was working frantically, weighing threats, violence, and escape.
 
 Then, true to her nature, she chose the weapon that had served her best for five years.
 

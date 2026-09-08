@@ -2,7 +2,7 @@
 
 The freezing rain of Blackweir did not fall in clean sheets. It whipped sideways off the sheer lip of the Cormorant Chasm, driving sulfurous grit from the smelting furnaces straight into my borrowed eyes.
 
-I pulled the collar of Caspar’s damp woolen doublet tight against my throat, walking down the slick cobblestones of Tallow Street. With every stride, I tested the machine. I rolled my ankles over the wet stones, feeling the bite of the Achilles tendons. I worked my shoulders, cataloging the stiffness in the trapezoids and the hollow ache in the small of the back.
+I pulled the collar of Caspar’s damp woolen doublet tight against my throat, walking down the slick cobblestones of Tallow Street. With every stride, I tested the machine. I rolled my ankles over the wet stones, feeling the bite of the heel-cords. I worked my shoulders, cataloging the stiffness in the trapezoids and the hollow ache in the small of the back.
 
 *Flesh of an ink-pusher,* I thought, letting the icy water wash the stink of the tavern from my hair. *The chest is too narrow. The lungs burn after fifty paces of uphill grade. The knuckles are stiff from damp parchment, and the belly is hollow from five days of moldy rations. But the bones are straight, and the reflexes... the reflexes will obey.*
 

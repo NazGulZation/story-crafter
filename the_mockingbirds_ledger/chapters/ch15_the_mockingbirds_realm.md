@@ -34,7 +34,7 @@ Mallow consulted a small vellum scroll.
 
 "And Vivienne Claire?"
 
-"The Grand Inquisitor stripped her of her vows and consecrated names. She resides in the lay dormitory of Saint Ursula’s cloister, scrubbing the flagstones of the chapter house in coarse burlap. She is forbidden to speak above a whisper on pain of the scourge."
+"The Grand Inquisitor stripped her of her vows and consecrated names. She resides in the lay dormitory of Saint Eluned’s cloister, scrubbing the flagstones of the chapter house in coarse burlap. She is forbidden to speak above a whisper on pain of the scourge."
 
 "And Lynette Morrow?"
 
@@ -50,7 +50,7 @@ The dead boy's heart within this chest did not stir. Not even a flutter. The pha
 
 "Ensure the textile mill pays its workers their full wages on Friday, Mallow," I said, waving a hand toward the door. "And provide the fleece-washers with an extra half-loaf of bread on holy days. I have no desire to see my laborers freeze."
 
-"You are a paragon of Christian mercy, Your Grace," Mallow said, bowing once more before retreating through the arched doorway.
+"You are a paragon of divine mercy, Your Grace," Mallow said, bowing once more before retreating through the arched doorway.
 
 "Mercy," I chuckled softly to the morning wind. "What an astonishing word to describe good management."
 

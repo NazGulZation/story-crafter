@@ -64,7 +64,7 @@ Lynette dropped her hands, her eyes widening in fury. "Fourteen hundred? Are you
 
 "The winter storms have closed the southern shipping lanes, Your Grace," I explained with gentle, sorrowful patience. "Two cogs were lost off the Horn of Skulls. The apothecary had to convey the chests by armed mule-train through the mountain passes. Furthermore, the ingredients include twenty ounces of refined ambergris."
 
-"I don't have fourteen hundred sovereigns in cash!" she cried, pacing the Persian carpet, her silk train sweeping across the floor. "Godfrey cleared out the civil account yesterday to buy three Andalusian stallions for his personal guard! The exchequer is empty! Vivienne Claire laughed in my face when I asked for a cathedral advance!"
+"I don't have fourteen hundred sovereigns in cash!" she cried, pacing the woven silk carpet, her silk train sweeping across the floor. "Godfrey cleared out the civil account yesterday to buy three southern blood-stallions for his personal guard! The exchequer is empty! Vivienne Claire laughed in my face when I asked for a cathedral advance!"
 
 "A tragic state of affairs," I murmured, my eyes following her pacing figure with quiet amusement. "That a woman of your grace and station should be subjected to the indignities of a tight purse. Especially now... when younger noblewomen from the south are arriving with dowries of fifty thousand pieces."
 
@@ -98,7 +98,7 @@ She stared at the parchment. Her breath came fast and shallow, rattling against 
 
 "Twelve thousand," I repeated, pressing the quill into her cold, trembling fingers. "Enough to pay the apothecary for a lifetime of beauty. Enough to hire your own private company of sworn lances to guard your person. Enough to ensure that whatever happens with Lady Clara, the Duchess of Bell-Garde will never return to Weirs-End with empty hands."
 
-She looked down at the parchment. She did not read the small, densely scribbled Latin clauses at the bottom of the leaf.
+She looked down at the parchment. She did not read the small, densely scribbled High Imperial clauses at the bottom of the leaf.
 
 She did not see the clause stating that in the event of default on the grain deliveries, the physical freehold of the manors, their tenant populations, and their stone manor houses would transfer unconditionally to the creditor.
 

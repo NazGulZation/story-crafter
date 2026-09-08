@@ -1,4 +1,4 @@
-# Setting & Lore Bible: The Rogue Prince of Blackweir
+# Setting & Lore Codex: The Rogue Prince of Blackweir
 
 Geographical, political, and material worldbuilding for the frontier marches of Blackweir.
 

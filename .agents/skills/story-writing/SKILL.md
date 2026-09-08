@@ -28,6 +28,7 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
 | **Forbidden Names** | `Julian`, `Rian`, `Mia`, `Elyria`, `Garrick`, `Bram`, `Vaelrian`, `Vane`, `Aethelgard`, `Harrick`, `Varis`, `Corin`, `Silas` | Base naming on authentic phonetic roots and linguistic traditions (e.g., Anglo-Saxon, Old Norse, Cornish, Slavic, Ugaritic, Basque) consistent with the character's culture. |
 | **Forbidden Beasts & Creatures** | `Dragon` / `Drakes`, `Monster Crawler`, `Monster Dog` | Construct creatures with coherent ecology, realistic sensory organs, predatory behavior, and environmental adaptation rather than generic fantasy monsters. |
 | **Forbidden Plot Tropes** | `Deus Ex Machina`, `Ass-Pulls`, `Unforeshadowed Plot Armor`, `Opening Alley Thug / Mugger Encounter`, `Accountant Assistant / Junior Ledger Clerk Subordination` | Ground every climax in earned causality. Avoid having the protagonist assaulted by alley muggers at the start or taking subordinate junior bookkeeper employment. Instead, establish their rise via independent commercial arbitrage, debt leverage, contract law, or commercial syndication. |
+| **Forbidden Earth Idioms & Eponyms in Fantasy** | `Achilles' heel/tendon`, `Pyrrhic victory`, `Romanesque`, `Gothic`, `Byzantine`, `Damascened`, `Spanish/Flemish/Swedish/Andalusian/Persian/Parisian`, `Latin script`, `Christian mercy/charity`, Earth saints | Never use Earth-derived idioms, architectural styles, demonyms, languages, religions, or eponyms in secondary fantasy worlds. Always translate into setting-authentic equivalents (e.g., *heel-cords*, *ruinous triumph*, *Old Imperial basalt*, *High Imperial script*, *divine mercy of the Light*, *Wester-Reach merino*, *southern blood-stallions*). |
 
 > [!IMPORTANT]
 > **Anti-Cliché Directive**: In addition to the banned list, systematically reject lazy fantasy tropes. When tempted to name a town "Riverwood" or "Shadowfen", or give a character an overused apostrophe-laden elven name, pause and construct culturally grounded nomenclature based on authentic linguistic roots.
@@ -42,7 +43,7 @@ Maintain forward momentum and psychological weight by structuring narrative unit
 1. **Scene (Action & Conflict)**:
    - **Goal**: The POV character enters the scene wanting a clear, concrete objective.
    - **Conflict**: Active, rising opposition (environment, adversary, social pressure).
-   - **Disaster / Complication**: The scene ends on an unexpected setback or pyrrhic outcome ("Yes, but..." or "No, and furthermore...").
+   - **Disaster / Complication**: The scene ends on an unexpected setback or costly outcome ("Yes, but..." or "No, and furthermore...").
 
 2. **Sequel (Processing & Transition)**:
    - **Reaction**: Visceral, emotional, and physical aftermath of the disaster.

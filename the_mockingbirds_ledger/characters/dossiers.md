@@ -25,10 +25,10 @@ A psychological and sociological breakdown of the primary figures in Bell-Garde,
 ## 2. Lord Godfrey Sterling
 
 - **Epithet**: The Sun-Gilded Hero / The Lion of the High Keep / Slayer of the Great Behemoth
-- **Apparent Form**: Twenty-five years of age, broad-shouldered, statuesque, fair-skinned, with flaxen-blonde hair falling in curated curls over a chiseled jawline and cleft chin. Wears fluted breastplates damascened in bright gold leaf, azure velvet capes pinned with sun-burst medallions, and high calfskin riding boots.
+- **Apparent Form**: Twenty-five years of age, broad-shouldered, statuesque, fair-skinned, with flaxen-blonde hair falling in curated curls over a chiseled jawline and cleft chin. Wears fluted breastplates inlaid in bright gold leaf, azure velvet capes pinned with sun-burst medallions, and high calfskin riding boots.
 - **Public Station**: Celebrated savior of the Grand Realm of Osterlund; Commander of the Order of the Gilded Sun; husband to Duchess Lynette Morrow; sovereign champion.
 - **Internal Vulnerability**:
-  - Vain, reckless, and mathematically illiterate. He equates nobility with extravagant display: five-thousand-crown tourneys, imported Andalusian coursers, and banquets featuring sugar sculptures of himself.
+  - Vain, reckless, and mathematically illiterate. He equates nobility with extravagant display: five-thousand-crown tourneys, imported southern blood-coursers, and banquets featuring sugar sculptures of himself.
   - Paralyzed by the dread of fading glory. As the peace lengthens, his martial prowess becomes irrelevant, yet his spending multiplies.
   - Deeply unfaithful; views women as decorative laurels to prove his supremacy over lesser men.
 - **Tactile Tic / Mannerism**: Resting his right hand on the lion-headed pommel of his broadsword; puffing his chest when entering a hall; running his fingers through his golden hair whenever challenged on facts.
@@ -47,7 +47,7 @@ A psychological and sociological breakdown of the primary figures in Bell-Garde,
 - **Internal Vulnerability**:
   - Born in the muddy pig-sties of Weirs-End alongside Alden Croft. She swore eternal devotion to Alden in their youth, only to eagerly surrender herself to Godfrey the moment the blonde knight demonstrated his aristocratic station.
   - Tormented by class insecurity. She constantly fears the highborn ladies of Bell-Garde whisper behind her back that she smells of river silt and turnip greens.
-  - Terrified of Godfrey’s wandering gaze. To maintain her youth and station, she borrows ruinously against crown estates to purchase alchemical tinctures and Parisienne velvets.
+  - Terrified of Godfrey’s wandering gaze. To maintain her youth and station, she borrows ruinously against crown estates to purchase alchemical tinctures and imported silk velvets.
 - **Tactile Tic / Mannerism**: Clasping her throat with rings that pinch her flesh; smoothing her skirts compulsively; averting her gaze whenever the past is invoked.
 - **Dialogue Cadence**:
   - Affects an exaggerated courtly poise that occasionally cracks to reveal harsh, rural vulgarity.

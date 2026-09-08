@@ -22,9 +22,9 @@ Godfrey raised his electrum-plated visor, revealing his square, chiseled face. H
 
 "Look at him," a voice murmured to my left.
 
-It was Master Corban, an elderly Lombard factor with yellowed parchment skin and ink-stained knuckles.
+It was Master Corban, an elderly Ost-Reach banking factor with yellowed parchment skin and ink-stained knuckles.
 
-"Ten thousand gold sovereigns on pavilions alone," Corban wheezed, shaking his head until his black velvet skullcap slipped. "The pavilions are hung with Flemish tapestry. The horses are shod in silver. And who pays the smiths? The Crown Treasury! He hasn't won a war in five years, yet he spends as if the River Sunder flowed with molten bullion."
+"Ten thousand gold sovereigns on pavilions alone," Corban wheezed, shaking his head until his black velvet skullcap slipped. "The pavilions are hung with Ost-Reach tapestry. The horses are shod in silver. And who pays the smiths? The Crown Treasury! He hasn't won a war in five years, yet he spends as if the River Sunder flowed with molten bullion."
 
 "A hero must maintain his luster, Master Corban," I said mildly, sipping spiced wine from a pewter cup. The wine was acidic, masking its cheap vintage with cinnamon and nutmeg. "A rusty savior inspires very little credit."
 
@@ -32,7 +32,7 @@ It was Master Corban, an elderly Lombard factor with yellowed parchment skin and
 
 "A sixty percent reduction is remarkably steep," I observed, keeping my voice gentle, sympathetic, almost sorrowful. "The markets must be severely alarmed."
 
-"Alarmed? The Lombard houses are fleeing! Half the factors on the High Wharf are selling their crown bonds at fifty cents on the sovereign just to cover their shipping margins!"
+"Alarmed? The merchant banking houses are fleeing! Half the factors on the High Wharf are selling their crown bonds at fifty cents on the sovereign just to cover their shipping margins!"
 
 My fingers curled around my cup. *Fifty cents on the sovereign.*
 
@@ -42,7 +42,7 @@ In King's Landing, when King Robert's tourney debts overwhelmed the treasury, I 
 
 Corban glared at me through his rheumy eyes. "You're with that new syndicate, aren't you? The Grey River Trust?"
 
-"I am merely their junior scribe, Master Corban. A humble man of numbers."
+"I am merely their factor, Master Corban. A humble man of numbers."
 
 "Your trust has been buying up timber contracts in the East Ward. Do they buy debt?"
 

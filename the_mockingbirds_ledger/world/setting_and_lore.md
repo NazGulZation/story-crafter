@@ -1,4 +1,4 @@
-# Setting & World Bible: The Mockingbird's Ledger
+# Setting & World Codex: The Mockingbird's Ledger
 
 A grounded reference for the geography, economy, social hierarchy, and systemic rot of Bell-Garde and the Grand Realm of Osterlund.
 
@@ -22,7 +22,7 @@ A sprawling, fortified coastal metropolis constructed at the mouth of the grey R
 - **The Canal Quarter & The Sump**:
   - A dense labyrinth of tidal ditches, slaughterhouses, tanneries, cheap brothels, and peat warehouses.
   - The air tastes of sulfur, wet wool, brine, and horse manure.
-  - Home to *The Brazen Quill*, the nondescript three-story tavern and bathhouse acquired by Petyr Baelish. Beneath its cellar lies the subterranean network connecting to the old Romanesque drainage vaults.
+  - Home to *The Brazen Quill*, the nondescript three-story tavern and bathhouse acquired by Petyr Baelish. Beneath its cellar lies the subterranean network connecting to the old imperial basalt drainage vaults.
 
 - **The Outlying Marches (Weirs-End)**:
   - A sodden river hamlet thirty miles up the Sunder.

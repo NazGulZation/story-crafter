@@ -44,7 +44,7 @@ Then, the coup de grâce. The moment that had hollowed this wretched husk into a
 
 Alden had turned to Lynette, his knuckles white against the tabletop, his voice cracking like dry kindling. *Lynette. You promised.*
 
-She had not even looked down. She had leaned her cheek against Godfrey’s broad, damascened shoulder, her slender fingers tracing the golden links of the knight’s gorget.
+She had not even looked down. She had leaned her cheek against Godfrey’s broad, inlaid steel shoulder, her slender fingers tracing the golden links of the knight’s gorget.
 
 *"Don't be pathetic, Alden,"* she had said, her voice clear, light, and utterly devoid of mercy. *"A girl grows up. Did you really think I’d spend my life sleeping in ditches with a common hedge-swordsman? Godfrey showed me what a real man offers. I’ve been in his bed since the night we took the river fort. Gisela and Vivienne too, when the mood strikes him. You were the only one blind enough not to notice."*
 
@@ -98,9 +98,9 @@ The warden’s jaw slacked. His eyes darted nervously to the junior clerk standi
 
 "Is... is there such a clause?" the warden hissed under his breath.
 
-The clerk furiously thumbed through the parchment leaves, his finger tracing the faded Latin script. His face went pale. "By the Light... he's right, sir. It's the old treaty. Signed by the Grand Duke's grandfather."
+The clerk furiously thumbed through the parchment leaves, his finger tracing the faded High Imperial script. His face went pale. "By the Light... he's right, sir. It's the old treaty. Signed by the Grand Duke's grandfather."
 
-"And what is more," I continued, my gaze narrowing slightly, holding the warden’s eyes with cold intensity, "if your bailiffs attach illegal seals to Ost-Reach goods, Master Klaus is legally entitled under treaty to lodge an immediate protest with the High Chancellor’s envoy. When Duchess Lynette learns that her shipment of imported Spanish silks and cosmetic tinctures has been delayed because the Ost-Reach League placed a reciprocal embargo on your port... whose head do you imagine she will offer to the foreign magistrates?"
+"And what is more," I continued, my gaze narrowing slightly, holding the warden’s eyes with cold intensity, "if your bailiffs attach illegal seals to Ost-Reach goods, Master Klaus is legally entitled under treaty to lodge an immediate protest with the High Chancellor’s envoy. When Duchess Lynette learns that her shipment of imported southern silks and cosmetic tinctures has been delayed because the Ost-Reach League placed a reciprocal embargo on your port... whose head do you imagine she will offer to the foreign magistrates?"
 
 The silence beneath the portico was sudden and absolute.
 

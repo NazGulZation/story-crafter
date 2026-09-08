@@ -45,6 +45,7 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
 2. **Authentic Nomenclatures**: Ground all character, region, settlement, and creature names in culturally consistent etymology (e.g., Anglo-Saxon, Old Norse, Gaelic, Slavic, Latinate, Semitic, or Mesoamerican phonemes) tailored to the setting's history.
 3. **Original Fauna & Threats**: Rather than generic fantasy beasts, craft creatures with distinct ecological niches, anatomy, and behavioral patterns rooted in their environment.
 4. **Protagonist Agency & Commercial Independence**: Financial and intellectual protagonists must rise through independent leverage, arbitrage, information brokering, contract law, or commercial syndication rather than subservient clerk employment or street mugger beatdowns.
+5. **No Earth Idioms or Real-World Eponyms in Fantasy**: In any fantasy or secondary-world setting, never use idioms, metaphors, cultural descriptors, or eponyms derived from Earth's history, mythologies, geography, languages, or religions. Translate all such concepts into setting-authentic equivalents rooted in the world's own lore.
 
 ---
 
@@ -79,3 +80,28 @@ When creative writing or worldbuilding incorporates, references, adapts, or tran
 
 - **Project Partitioning**: Every story project resides in its own named directory (e.g., `d:/Documents/Stories/<story_name>/`) containing standard subdirectories: `assets/`, `characters/`, `world/`, `outlines/`, and `chapters/`.
 - **Visual Assets**: Concept art and character portraits should emphasize grounded, painterly realism and world-consistent detail. Assets are stored in `<story_name>/assets/` and copied to conversation brain directories when embedding into Antigravity artifacts.
+
+---
+
+## 6. Strict Prohibition of Earth Idioms, Eponyms & Geography in Fantasy
+
+When a story takes place in a fantasy world (e.g. *The Mockingbird's Ledger*, *The Rogue Prince of Blackweir*, or any secondary realm):
+- **Forbidden Historical & Mythological Eponyms**: Expressions derived from Earth history, myth, or literature are strictly prohibited.
+  - *Banned Examples*: `Achilles' heel`, `Achilles tendon`, `Pyrrhic victory`, `Trojan horse`, `Gorgon stare`, `Sisyphean task`, `Herculean effort`, `Draconian measures`, `Spartan discipline`, `Machiavellian scheme`, `Damoclean sword`, `Gordian knot`, `Pandora's box`.
+- **Forbidden Earth Architectural & Cultural Descriptors**:
+  - *Banned Examples*: `Romanesque`, `Gothic`, `Byzantine`, `Damascened` / `Damascus`, `Bohemian`, `Baroque`.
+- **Forbidden Real-World Earth Geographies & National Demonyms**:
+  - *Banned Examples*: `Spanish` (e.g. *Spanish wool*), `Flemish` (e.g. *Flemish linen*), `Swedish` (e.g. *Swedish iron*), `Baltic` (e.g. *Baltic rye*), `Persian` (e.g. *Persian carpet*), `Andalusian` (e.g. *Andalusian stallion*), `Parisian` / `Parisienne` (e.g. *Parisian velvet*), `Troy` / `Trojan`.
+- **Forbidden Earth Languages, Religions & Scripture**:
+  - *Banned Examples*: `Latin script` / `legal Latin`, `Christian mercy` / `Christian charity`, real-world canonized saints (`Saint Ursula`, `Saint Jude`), `Biblical proportions`.
+- **Mandatory In-World Equivalents**:
+  - Always substitute setting-authentic, world-built terms:
+    - `Achilles tendon` -> `heel-cord` / `heel tendon`
+    - `Pyrrhic victory` -> `costly victory` / `ruinous triumph`
+    - `Romanesque cistern` -> `Old Imperial basalt cistern` / `archaic vaulted cistern`
+    - `Latin script` -> `High Imperial script` / `Old Valyrian glyphs` / `Ancient Osterish script`
+    - `Christian mercy` -> `divine mercy of the Light` / `sacred charity`
+    - `Spanish merino / Flemish linen / Swedish iron` -> `Wester-Reach merino` / `Ost-Reach linen` / `Norrmark iron`
+    - `Andalusian courser` -> `southern blood-stallion` / `Val-d'Or courser`
+    - `Persian carpet` -> `woven silk carpet` / `southern pile rug`
+    - `Fall of Troy` -> `Siege of Khors` / `Sack of the Sun-Citadel`

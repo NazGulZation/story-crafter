@@ -24,11 +24,11 @@ I reached into my charcoal coat and drew forth a scrap of stained linen—a note
 
 "I received it," I said mildly, setting the brass hand-lamp upon a stone ledge outside the cell.
 
-"The Inquisitor is a madman!" she sobbed, tears cutting pale channels through the grime on her cheeks. "He tore through my private apartments! He seized the caskets from San Remo! He says I am to be degraded before the High Altar on Sunday, stripped naked, and branded with the iron of the blasphemer! They're going to burn me, Alden!"
+"The Inquisitor is a madman!" she sobbed, tears cutting pale channels through the grime on her cheeks. "He tore through my private apartments! He seized the caskets from Val-Rhea! He says I am to be degraded before the High Altar on Sunday, stripped naked, and branded with the iron of the blasphemer! They're going to burn me, Alden!"
 
 She thrust her trembling, bruised hands through the iron bars, reaching desperately for the hem of my cloak.
 
-"You have the gold," she wept, her fingers clawing at the fine Spanish wool. "The Inquisitor owes your syndicate eight hundred sovereigns! Bribe him! Buy the gaolers! Arrange a boat to take me across the Bitter Sea! I know all of Godfrey’s secrets! I know where he hid the southern tribute! I can give you the names of every bishop who took bribes from the crown!"
+"You have the gold," she wept, her fingers clawing at the fine West-Reach wool. "The Inquisitor owes your syndicate eight hundred sovereigns! Bribe him! Buy the gaolers! Arrange a boat to take me across the Bitter Sea! I know all of Godfrey’s secrets! I know where he hid the southern tribute! I can give you the names of every bishop who took bribes from the crown!"
 
 I looked down at her hands. I did not pull away, nor did I step closer. I remained perfectly still, watching her unravel with the clinical detachment of a physician observing a rotting limb.
 

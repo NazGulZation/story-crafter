@@ -62,7 +62,7 @@ She stared at the gold wax, her breath hitching. "Godfrey's private signet..."
 
 "Delivered to my townhouse this morning by the Lord Chancellor," I said, untying the ribbon and snapping the seal. "A petition of marital nullity, drafted and signed under Godfrey Sterling’s own hand."
 
-I held the parchment before her eyes, pointing to the Latin clauses inscribed in dark, flourishing ink.
+I held the parchment before her eyes, pointing to the High Imperial clauses inscribed in dark, flourishing ink.
 
 "Read it, my dear. Item three: *'The marriage between Lord Godfrey Sterling and the peasant woman Lynette Morrow is declared null, void, and of no legal effect, by reason of fraudulent personation of nobility, base rural birth, and total failure of dowry.'*"
 

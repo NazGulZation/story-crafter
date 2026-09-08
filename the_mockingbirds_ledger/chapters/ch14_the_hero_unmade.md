@@ -2,7 +2,7 @@
 
 When a man who has lived by the sword realizes the world is ruled by clerks, he does not surrender; he goes mad.
 
-The storm that struck Bell-Garde that midnight was violent enough to shake the leaded glass windows in their stone mullions, filling the Great Salon of my coastal townhouse with the low, ominous rattle of gale-force thunder. Outside, the Bitter Sea smashed against the seawall in great geysers of foaming brine; inside, the hearth burned with fragrant oak billets, casting a warm, amber glow across polished walnut wainscoting and heavy Flemish tapestries depicting the fall of Troy.
+The storm that struck Bell-Garde that midnight was violent enough to shake the leaded glass windows in their stone mullions, filling the Great Salon of my coastal townhouse with the low, ominous rattle of gale-force thunder. Outside, the Bitter Sea smashed against the seawall in great geysers of foaming brine; inside, the hearth burned with fragrant oak billets, casting a warm, amber glow across polished walnut wainscoting and heavy Ost-Reach tapestries depicting the Siege of Khors.
 
 I sat behind my broad mahogany desk, checking the interest schedules on the municipal debt.
 

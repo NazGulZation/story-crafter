@@ -23,14 +23,14 @@ A fifteen-chapter structural beat sheet written strictly from the **First-Person
 #### Chapter 1: The Gutter and the Mockingbird
 - **Setting**: The limestone portico of the Municipal Corn Exchange overlooking Bell-Garde’s harbor; freezing dawn mist, salty sea spray, wet granite flags.
 - **Sensory Anchors**: Bitter taste of cheap grain spirits, sting of freezing rain on cracked lips, screech of harbor gulls, scent of roasted chicory and rotting kelp.
-- **The Turn**: Petyr Baelish awakens expecting the icy floor of Winterfell's Great Hall and the hot gush of a severed windpipe; instead, he finds himself in the starved, shuddering carcass of Alden Croft. Sifting through Alden’s pathetic memories of the banishment five years ago: Godfrey’s contemptuous smirk, Gisela’s sneers, Vivienne’s cold dismissal, and Lynette Morrow’s revelation that she had shared Godfrey’s bed all along. Petyr mocks Alden's romantic self-destruction.
+- **The Turn**: Petyr Baelish awakens expecting the icy floor of Winterfell's Great Hall and the hot gush of a severed windpipe; instead, he finds himself in the starved, shuddering carcass of Alden Croft. Sifting through Alden’s pathetic memories of the banishment five years ago: Godfrey’s contemptuous smirk, Gisela’s sneers, Vivienne’s cold dismissal, and Lynette Morrow’s revelation that she had shared Godfrey’s bed all along. Petyr mocks Alden's sentimental self-destruction.
 - **Action (No Thug Brawl)**: Petyr observes a bitter commercial dispute at the Exchange gates between an Ost-Reach wool factor and a municipal harbor warden over a stranded cargo facing ruinous demurrage impoundment. Petyr intervenes as an independent commercial arbiter, identifies a forgotten maritime charter exemption, structures an immediate tripartite settlement saving the factor forty gold sovereigns, and earns an agreed five-percent brokerage fee in crisp unclipped coin (two gold sovereigns and ten silver crowns).
 
 #### Chapter 2: The Worth of Grain and Salt
 - **Setting**: The Lower Wharf and Sovereign Customs House; grey tides, screeching gulls, stacks of uninspected salt cod.
 - **Sensory Anchors**: Tang of sea brine, crunch of coarse rock salt underfoot, wet wool smell of shivering dockers, scratch of goose quills on damp vellum.
 - **The Turn**: Petyr observes the grand triumphal monuments honoring Godfrey while the actual harbor rots. Rather than taking subordinate employment as an assistant accountant or junior tally-clerk, Petyr acts as an independent merchant factor representing *The Grey River Mercantile Trust*.
-- **Action & Leverage**: Petyr deciphers the dual-entry elderberry ink fraud Senior Assessor Mallow uses to skim luxury customs duties. Petyr corners Mallow in the empty hall, blackmails him with the proof, and extorts the distressed municipal lease to the abandoned Romanesque cistern/bathhouse (held by customs for back-taxes), forcing Mallow to serve as his terrified inside informant.
+- **Action & Leverage**: Petyr deciphers the dual-entry elderberry ink fraud Senior Assessor Mallow uses to skim luxury customs duties. Petyr corners Mallow in the empty hall, blackmails him with the proof, and extorts the distressed municipal lease to the abandoned imperial basalt cistern/bathhouse (held by customs for back-taxes), forcing Mallow to serve as his terrified inside informant.
 
 #### Chapter 3: The Brazen Quill
 - **Setting**: A condemned bathhouse and cider cellar near the Coal Sump.
@@ -60,7 +60,7 @@ A fifteen-chapter structural beat sheet written strictly from the **First-Person
 - **Setting**: Duchess Lynette Morrow’s private salon overlooking the sea cliffs.
 - **Sensory Anchors**: Lavender oil, crushed rosewater powder, rasp of silk ribbons, clink of wine goblets.
 - **The Vulnerability**: Godfrey’s infidelities are common knowledge; Lynette’s beauty is fading, and her panic makes her reckless.
-- **The Trap**: Petyr plants a Parisian modiste and an alchemical factor into Lynette’s household. To fund her vanity and secret retinues, Lynette begins mortgaging royal manors under her signature.
+- **The Trap**: Petyr plants a high-court modiste and an alchemical factor into Lynette’s household. To fund her vanity and secret retinues, Lynette begins mortgaging royal manors under her signature.
 
 #### Chapter 8: The Winter Corner
 - **Setting**: The frozen docks of the River Sunder as the first winter ice floes appear.

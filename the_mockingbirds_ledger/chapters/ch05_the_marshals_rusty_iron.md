@@ -46,7 +46,7 @@ Gisela’s hand dropped to her sword hilt with instinctive violence. "Who allowe
 
 I offered her a deep, elegant bow—the bow of a high courtier addressing an empress, executed with flawless grace.
 
-"Alden Croft, factor for *The Grey River Syndicate*," I replied softly, my voice calm, melodic, and entirely devoid of martial swagger. "Forgive the intrusion, my lady. I was merely inspecting the consignment of Swedish iron currently awaiting customs clearance on the High Wharf."
+"Alden Croft, factor for *The Grey River Syndicate*," I replied softly, my voice calm, melodic, and entirely devoid of martial swagger. "Forgive the intrusion, my lady. I was merely inspecting the consignment of Norrmark iron currently awaiting customs clearance on the High Wharf."
 
 Gisela froze.
 
@@ -68,11 +68,11 @@ Gisela’s lip curled. The confusion on her face vanished, replaced by the deep,
 
 "A quill-pusher," she sneered, relaxing her stance. "A peddler of ledgers. I suppose that suits a coward better than steel."
 
-"Infinitely so," I agreed, inclining my head in cheerful acquiescence. "Quills rarely sever arteries, and ledgers rarely demand that one sleep in wet ditches. Though, as it happens, this particular quill holds forty tons of high-grade Swedish pig-iron currently sitting in warehouse seven."
+"Infinitely so," I agreed, inclining my head in cheerful acquiescence. "Quills rarely sever arteries, and ledgers rarely demand that one sleep in wet ditches. Though, as it happens, this particular quill holds forty tons of high-grade Norrmark pig-iron currently sitting in warehouse seven."
 
 Gisela’s smirk faltered. She glanced at the master smith, who had suddenly perked up like a hound catching the scent of roast mutton.
 
-"Swedish iron?" the smith breathed. "Cold-smelted? Low sulfur?"
+"Norrmark iron?" the smith breathed. "Cold-smelted? Low sulfur?"
 
 "The finest quality," I purred, looking directly into Gisela’s amber eyes. "Sufficient to forge twelve hundred pike-heads and re-plate sixty suits of heavy cuirass. Furthermore, *The Grey River Syndicate* has recently purchased Master Cole’s charcoal debts."
 

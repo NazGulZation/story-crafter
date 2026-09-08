@@ -6,7 +6,7 @@ In King’s Landing, my establishments were legendary for their velvet alcoves, 
 
 In Bell-Garde, I did not possess the gold for velvet and myrrh. Not yet. But the Canal Quarter was damp, filthy, and populated by thousands of men whose bones ached with the northern chill.
 
-Two streets down from the Lower Wharves stood the remains of the Old Romanesque cisterns—a squat, vaulted stone structure built of dark basalt, known to the locals as *The Drowned Cellar*. It had been abandoned three years prior when an overflow from the canal flooded the boiler room. The municipal bailiffs had nailed an iron notice to the rotting oak door: *Forfeited for Unpaid Crown Levies — Forty Gold Sovereigns or Best Offer.*
+Two streets down from the Lower Wharves stood the remains of the Old Imperial basalt cisterns—a squat, vaulted stone structure built of dark basalt, known to the locals as *The Drowned Cellar*. It had been abandoned three years prior when an overflow from the canal flooded the boiler room. The municipal bailiffs had nailed an iron notice to the rotting oak door: *Forfeited for Unpaid Crown Levies — Forty Gold Sovereigns or Best Offer.*
 
 Forty sovereigns was what the Crown demanded on parchment. In reality, the building was a damp tomb collecting rat carcasses and stagnant sludge.
 

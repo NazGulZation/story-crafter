@@ -26,7 +26,7 @@ Godfrey froze, his sword caught between the scabbard and the candlelight.
 
 Lynette let out a sharp, choked gasp, her face buried in her sleeves, her shoulders shaking violently.
 
-"Alden Croft died five years ago in the gutter behind *The Boar’s Tusk*," I said, my grey eyes locking onto Godfrey’s furious blue glare with an icy, merciless intensity. "The man who sits before you is Master of Coin. And if so much as a drop of my blood touches this Persian carpet, your world ends within the hour."
+"Alden Croft died five years ago in the gutter behind *The Boar’s Tusk*," I said, my grey eyes locking onto Godfrey’s furious blue glare with an icy, merciless intensity. "The man who sits before you is Master of Coin. And if so much as a drop of my blood touches this woven silk carpet, your world ends within the hour."
 
 "You bluff!" Gisela Brandt barked, her hand slamming onto her sword belt. "The city watch is under my command! One signal, and the garrison will seize your warehouses, hang your factors, and reclaim the grain!"
 
@@ -72,7 +72,7 @@ I stood up, adjusting the silver mockingbird pin at my lapel, smoothing the char
 
 "I do not want Weirs-End. I want everything you possess."
 
-I drew forth a series of parchment warrants, already inscribed in legal Latin, bearing the blank seals of the Sovereign Regency.
+I drew forth a series of parchment warrants, already inscribed in High Imperial script, bearing the blank seals of the Sovereign Regency.
 
 "The terms of liquidation are remarkably straightforward," I said, laying the pages before the trembling Grand Duke.
 
