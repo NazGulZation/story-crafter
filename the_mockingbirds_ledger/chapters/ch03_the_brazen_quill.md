@@ -12,13 +12,13 @@ Forty sovereigns was what the Crown demanded on parchment. In reality, the build
 
 I did not offer forty sovereigns.
 
-I went to the Municipal Court of Solvency with Master Mallow’s letter of introduction in my pocket and twenty-five silver shillings in a calfskin purse. The court clerk was an elderly, wheezing wreck named Hemlock, whose wool sleeve was worn through at the elbows.
+I went to the Municipal Court of Solvency with Master Mallow’s sealed deed of assignment in my coat and the gold sovereigns from Master Klaus safely secured in my belt. The court clerk was an elderly, wheezing wreck named Hemlock, whose wool sleeve was worn through at the elbows.
 
-"The basement is knee-deep in canal sewage," I told Hemlock, placing four silver shillings upon his greasy desk. "The cedar trusses are black with dry rot. No sane merchant will touch it. Yet, if the city clears the deed and grants a five-year tax exemption for drainage restoration, I shall relieve you of the nuisance and pay seven silver groats into the municipal relief chest."
+"The customs department has formally assigned the delinquent tax lien to *The Grey River Mercantile Trust*," I told Hemlock, placing four silver shillings upon his greasy desk. "The basement is knee-deep in canal sewage, and the cedar trusses are black with dry rot. No sane merchant will touch it. Yet, if the court ratifies the transfer and certifies the five-year tax exemption for drainage restoration under the statutory decree, I shall relieve you of the nuisance and pay seven silver groats into the municipal relief chest."
 
 Hemlock stared at the four shillings. His tongue wet his dry, cracked lower lip.
 
-"Seven groats into the city chest," he rasped, his hand sliding across the oak desk to swallow the silver. "And a modest fee of three shillings for the registration of the deed to... what name did you say?"
+"Seven groats into the city chest," he rasped, his hand sliding across the oak desk to swallow the silver. "And a modest fee of three shillings for the court seal registering the freehold to... what name did you say?"
 
 "The Grey River Mercantile Trust," I replied with a warm, self-effacing bow. "Represented by their humble factor, Alden Croft."
 

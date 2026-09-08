@@ -4,21 +4,21 @@ The throat, I expected, would hurt more.
 
 When the Stark girl drew her Valyrian steel across my windpipe in that cavernous northern hall, the sensation had been remarkably brief—a sudden, icy slice, the sound of tearing vellum, and the hot, arterial gush that choked my last plea before it reached the rafters. I remembered the cold flags of Winterfell rising to meet my cheek. I remembered the scent of wet wolf fur, stale tallow, and pine smoke.
 
-I did not expect to wake in a puddle of pig swill.
+I did not expect to wake upon the damp limestone flags of an unfamiliar portico.
 
-The liquid seeped through the threadbare wool against my ribs, rancid and icy against skin that burned with an agonizing, hollow fever. My nose was filled with the stench of fermented cabbage, stagnant river mud, and horse urine. When I tried to draw a breath, my chest hitched, bringing up the sour, bilious taste of rotgut corn liquor.
+The morning sea fog rolled off the harbor in sluggish grey plumes, thick with the stench of fermented bilge-water, rotting kelp, and horse manure. The cold seeped through the threadbare wool against my ribs, rancid and biting against skin that burned with a dull, hollow fever. When I tried to draw a breath, my chest hitched, bringing up the sour, bilious taste of cheap corn liquor.
 
-I pushed my palms against the greasy stones. My fingers were long, knob-jointed, and caked in black grime. A young man’s hands, yet trembling with the palsy of a drunkard who had not eaten bread in four days.
+I pushed my palms against the wet stone. My fingers were long, knob-jointed, and caked in black harbor grime. A young man’s hands, yet trembling with the palsy of an idler who had not eaten solid bread in four days.
 
 *Where is Sansa?* the thought flickered, then vanished, washed away by a torrential deluge of foreign memories that crashed through my skull like an overturned grain wagon.
 
 Not the North. Not the Seven Kingdoms.
 
-A city called Bell-Garde. A coastal fortress of white limestone and copper spires overlooking a grey sea. And within this starving, trembling carcass resided the lingering, pathetic phantom of one Alden Croft.
+A coastal city called Bell-Garde. A realm of white limestone ramparts, copper spires, and salt-encrusted quays overlooking the grey expanse of the Bitter Sea. And within this starving, trembling carcass resided the lingering, pathetic phantom of one Alden Croft.
 
-I leaned my back against the damp brick wall of the alley, closing my eyes to sift through the boy’s wreckage. It took only moments. The mind of Alden Croft was remarkably uncluttered—mostly because it was entirely devoid of intellect.
+I leaned my shoulder against a fluted stone pillar of the Municipal Corn Exchange, closing my eyes to sift through the boy’s wreckage. It took only moments. The mind of Alden Croft was remarkably uncluttered—mostly because it was entirely devoid of intellect.
 
-Five years ago. An inn called *The Boar’s Tusk*, situated just two streets from this very gutter.
+Five years ago. An inn called *The Boar’s Tusk*, situated barely three hundred paces from this very square.
 
 A party of five novice adventurers had sat around an oak trestle table littered with mutton grease and half-empty tankards.
 
@@ -54,52 +54,92 @@ The tavern had erupted in coarse laughter. The tavern-keeper had swept Alden’s
 
 He had died of a broken heart.
 
-For five years, while Godfrey Sterling rose to become the worshipped "Sun-Hero" of the realm—slaying a northern beast, claiming the title of High Warden, and installing Lynette as Duchess and High Stewardess—Alden Croft had sat in this alley, drinking swill, weeping into puddle-water, and pining over a village trollop.
+For five years, while Godfrey Sterling rose to become the worshipped "Sun-Hero" of the realm—slaying a northern beast, claiming the title of High Warden, and installing Lynette as Duchess and High Stewardess—Alden Croft had haunted these docks like a drowned ghost, drinking rotgut, weeping into his ale, and pining over a village trollop.
 
 Brandon Stark had carved my chest open from hip to collarbone when I was fifteen years of age, leaving me to drown in my own gore upon the water-meadows of Riverrun. He took Catelyn. He took my pride. He left me with nothing but a scar that ached whenever the winter winds blew.
 
 Yet I did not curl into a ditch and drink horse piss until my liver rotted.
 
-I smiled. The skin of my new face cracked with the motion, dry and crusted with salt.
+I smiled. The skin of my new face cracked with the motion, dry and crusted with sea salt.
 
-"You soft, sentimental little fool," I whispered into the freezing drizzle. My voice was hoarse, grated raw by sour grain alcohol, but the cadence was mine. Quiet. Measured. "You had two arms, ten fingers, and an entire city of corrupt, vain hypocrites begging to be sheared like sheep. And you chose to die because your milkmaid liked a bigger rooster."
+"You soft, sentimental little fool," I whispered into the morning mist. My voice was hoarse, grated raw by sour spirits, but the cadence was mine. Quiet. Measured. "You had two arms, ten fingers, and an entire city of corrupt, vain hypocrites begging to be sheared like sheep. And you chose to die because your milkmaid liked a bigger rooster."
 
-Footsteps sloshed through the mud at the mouth of the alley.
+I pushed myself upright. My knees trembled with weakness, but I locked my joints until the vertigo subsided.
 
-A man in a greasy leather jerkin approached, his breath smelling of stale onions and vinegar. He carried a notched skinning knife, his eyes fixed on the cracked leather boots on my feet.
+Across the cobbled expanse of the Exchange square, the morning trading bell began to toll from the tower of the Water Gate. Three heavy, bronze strokes that vibrated deep in the soles of my cracked boots. Below the arcades, a crowd of carters, dockers, and factors were already gathering around the municipal weigh-scales, their breath rising in plumes of white steam against the grey dawn.
 
-"Still breathin', gutter-rat?" the cutpurse grunted, nudging my shin with his iron-toed boot. "Good. Makes pullin' the boots off easier while the leather's warm. Don't squirm, or I'll open your belly."
+A shouting match broke out near the inner basin gate.
 
-I did not move. I allowed my chin to rest against my chest, my breathing shallow, my limbs slack.
+"I don't give a damn about your silt-bar!" a thickset man in the dark blue surcoat of a municipal harbor warden was bellowing, slamming an iron-tipped measuring rod against an oak bollard. "The statute is as clear as midday sun, Master Klaus. Third bell has rung. Your barge remains wedged in the sluice channel. That is unlawful obstruction under Section Nine of the Harbor Code. Forty gold sovereigns in punitive demurrage, or my bailiffs drop the iron chains and seize the consignment for the High Steward's auction!"
 
-"Please," I rasped, making my voice tremble with the precise pitch of a terrified, dying dog. "A copper... for bread, master..."
+Opposite him stood a round, florid merchant in a grease-spotted beaver hat, his woolen mantle trembling with frantic despair.
 
-"I'll give you an inch of iron, you sack of filth," he sneered, bending down, his right hand reaching for my left ankle while his knife dipped low, careless and off-balance.
+"Forty sovereigns?" the foreign factor choked, his voice cracking on the verge of tears. "The cargo is only worth ninety! Two hundred bolts of Ost-Reach carded wool and combed fleece! The water-gate grounded my keel because the Crown has not dredged the channel in two years! You cannot impound my life’s work for four inches of municipal mud!"
 
-He was looking at my boots. He was not looking at the chipped granite cobble resting two inches from my right hand.
+"The law does not measure mud, it measures time," the warden sneered, waving his hand toward three burly dock bailiffs who stood waiting with iron padlocks and lead seals. "Pay the fine or step aside."
 
-I did not strike like a knight. Knights shout battle cries and telegraph their blows with chivalric posture. I struck like a tavern brawler from the docks of King's Landing.
+The onlookers murmured. In the crowd, several local factors were smirking, already calculating how cheaply they could buy the impounded wool at the Duchess's distress sale tomorrow afternoon.
 
-My left hand flashed upward, two fingers driving straight into his right eye with wet, sickening force.
+I did not join the crowd. I smoothed down the greasy wool of my tunic, brushed the stone dust from my elbows, and stepped forward with the measured, unhurried gait of a lord entering his council chamber.
 
-The cutpurse screamed, his head jerking back, his balance broken. Before his heel could find purchase in the slick mud, my right hand came up with the heavy granite cobble, smashing into his exposed wrist. Bone cracked with the dull pop of dry pine branch. The skinning knife splashed harmlessly into the puddle.
+"A fascinating dilemma, gentlemen," I said.
 
-He fell to his knees, clutching his pulverized wrist, sobbing in shock.
+My voice was not loud, but it possessed that quiet, crystalline clarity that cuts through shouting men like a sharpened razor through silk. The warden turned, frowning with annoyance at my patched grey rags, while the Ost-Reach merchant looked at me with the wild, desperate hope of a drowning sailor grasping at a floating reed.
 
-I rolled to my feet. The starvation made my vision swim with dark spots, but the adrenaline burned like spiced wine through my veins. I stepped behind him, planted my boot against the small of his back, and drove him face-first into the sewer ditch.
+"Who invited you into this business, beggar?" the warden barked, stepping forward, his chest puffed. "Clear off before I have the bailiffs put you in the stocks."
 
-I did not slit his throat. Dead men draw town watches; broken men draw nothing but silence.
+"I am Alden Croft, an independent commercial arbiter," I replied, offering him an elegant, modest bow that would not have disgraced the court of the Eyrie. "And I intervene merely to preserve you from committing an error that will cost you your office before sundown, Master Warden."
 
-I knelt beside him, my knee pinning his shoulder blades, and went through his pockets with practiced, surgical efficiency.
+The warden blinked, taken aback by the courtly diction issuing from a man in ragged boots. "My office? You’re mad."
 
-A brass latch-key. A lump of salt lard wrapped in greasy paper. And inside a stained linen purse: four silver shillings and eight copper farthings.
+"Hardly," I said softly, stepping between him and the grounded barge. "You cite Section Nine of the Harbor Code regarding obstruction of the sluice basin. A commendable memory. However, you appear to have overlooked the Sovereign Maritime Treaty of Bell-Garde, signed thirty years ago with the Ost-Reach Mercantile League. Chapter Fourteen, Article Three, paragraph two: *In the event of grounding caused by failure of municipal maintenance of the channel depth below four fathoms, all demurrage penalties are waived, and the municipality is required to furnish two lightering skiffs at municipal expense.*"
 
-"Numbers," I murmured, rolling one of the silver shillings over my filthy knuckles. It felt cool, solid, and wonderfully familiar. "A modest beginning, but one must never despise the first rung of the ladder."
+The warden’s jaw slacked. His eyes darted nervously to the junior clerk standing beside him holding the town charter book.
 
-I wiped the mud from my face with the hem of my tunic, took the cutpurse's wool scarf from his neck, and wrapped it neatly about my throat.
+"Is... is there such a clause?" the warden hissed under his breath.
 
-The High Citadel gleamed upon its white cliffs above the chimney pots of the lower town, its golden banners fluttering in the cold sea gale. Somewhere up there, Lord Godfrey Sterling was drinking spiced wine from a golden goblet, and Duchess Lynette was admiring her pearls in a gilded looking-glass.
+The clerk furiously thumbed through the parchment leaves, his finger tracing the faded Latin script. His face went pale. "By the Light... he's right, sir. It's the old treaty. Signed by the Grand Duke's grandfather."
 
-"They think the game was won five years ago," I said softly, the silver coin vanishing into my sleeve.
+"And what is more," I continued, my gaze narrowing slightly, holding the warden’s eyes with cold intensity, "if your bailiffs attach illegal seals to Ost-Reach goods, Master Klaus is legally entitled under treaty to lodge an immediate protest with the High Chancellor’s envoy. When Duchess Lynette learns that her shipment of imported Spanish silks and cosmetic tinctures has been delayed because the Ost-Reach League placed a reciprocal embargo on your port... whose head do you imagine she will offer to the foreign magistrates?"
 
-I turned my back on the alley and stepped out onto the cobblestones of the High Wharf, humming a quiet tune from the Fingers.
+The silence beneath the portico was sudden and absolute.
+
+The warden swallowed hard, his Adam's apple bobbing. The dock bailiffs slowly lowered their heavy chains.
+
+"Furthermore," I said, turning smoothly to Master Klaus, "there is no need for dispute. Across the canal, three coal barges belonging to the Lightermen’s Guild sit empty. For twelve silver groats, they will take off fifty sacks of wool right now. The draft of your barge will rise by eight inches, she will float clear of the sill within ten minutes, and you may unload at the private wharf without passing the inner basin."
+
+The foreign merchant looked at me as though an archangel had descended from the grey clouds.
+
+"Twelve groats?" Klaus breathed. "I will pay fifteen!"
+
+"A sensible resolution," I said, turning back to the warden with a tranquil smile. "The channel is cleared, the charter is honored, and no embarrassing petitions reach the High Keep. Do we agree, Master Warden?"
+
+The warden wiped a film of cold sweat from his forehead with his sleeve. "Clear the barge," he muttered hoarsely to his men. "Get it out of the sluice. Move!"
+
+The crowd parted as the carters and lightermen rushed toward the basin. Master Klaus grabbed my hand with two trembling, ink-stained paws, his face glowing with profound relief.
+
+"You saved me forty gold pieces," the merchant stammered. "My business... my wife, my children in Ost-Reach... I would have been ruined. Who are you, sir? Why are you in such clothes?"
+
+"Clothes are merely the packaging of a man's mind, Master Klaus," I said gently, freeing my fingers from his grip. "My standard fee for commercial arbitration and statutory salvage is five percent of the saved value. Two gold sovereigns and ten silver crowns. Paid in crisp, unclipped coin."
+
+Klaus did not hesitate for an instant. He reached deep beneath his heavy wool tunic, unbuckled an oiled leather belt-purse, and counted out two gleaming gold sovereigns stamped with the triple wheat-sheaves of the League, along with ten heavy silver crowns.
+
+The coins clinked as they fell into my open palm.
+
+Heavy. Cold. Beautiful.
+
+"Numbers," I murmured, rolling one of the gold sovereigns smoothly across my knuckles with fluid, practiced dexterity. "A modest beginning, but one must never despise the first rung of the ladder."
+
+"If you ever need cargo in Ost-Reach, Master Croft," Klaus said, bowing deeply, "ask for the House of Van Eyck at the Wool Exchange. My brothers will remember."
+
+"I shall remember, Master Klaus," I replied with a gracious incline of my head. "Safe tides."
+
+I walked away from the quays, leaving the noise of the docks behind me.
+
+Above the slate roofs and stone chimneys of the lower city, the white limestone towers of the High Citadel rose into the morning sunlight, their golden pennants snapping proudly in the coastal wind. Somewhere up there, Lord Godfrey Sterling was admiring his gilded breastplate in a polished silver mirror. Somewhere up there, Duchess Lynette was smoothing her silk skirts, convinced that her peasant past had been safely buried forever in the mud.
+
+I slipped the gold sovereigns into my coat pocket, listening to their muffled, reassuring clink against my ribs.
+
+"They think the game was won five years ago," I said softly, breathing in the cold, salt-laden air.
+
+I turned toward the Merchant Quarter, humming a quiet tune from the Fingers.

@@ -36,11 +36,15 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
   - `Dragon` / `Drakes`
   - `Monster Crawler`
   - `Monster Dog`
+- **Forbidden Narrative & Plot Tropes**:
+  - `Opening Alley Thug / Mugger Encounter`: Having the newly awakened or destitute protagonist ambushed, attacked, or harassed by street thugs, cutpurses, or alley muggers in the opening chapter to establish physical danger, demonstrate quick brawling competence, or loot initial coins.
+  - `Accountant Assistant / Junior Ledger Clerk Subordination`: Having the protagonist take a subordinate, junior salaried position as an assistant bookkeeper, tally-clerk, or junior ledger clerk under a petty bureaucrat. Protagonists must operate as independent principals, brokers, arbiters, syndicators, or creditors from inception.
 
 ### Directives:
 1. **No Reskins or Near-Variants**: Do not use these exact names, close phonetic variants (e.g., *Jullian*, *Vaelryn*, *Aethelgardt*), or thin reskins.
 2. **Authentic Nomenclatures**: Ground all character, region, settlement, and creature names in culturally consistent etymology (e.g., Anglo-Saxon, Old Norse, Gaelic, Slavic, Latinate, Semitic, or Mesoamerican phonemes) tailored to the setting's history.
 3. **Original Fauna & Threats**: Rather than generic fantasy beasts, craft creatures with distinct ecological niches, anatomy, and behavioral patterns rooted in their environment.
+4. **Protagonist Agency & Commercial Independence**: Financial and intellectual protagonists must rise through independent leverage, arbitrage, information brokering, contract law, or commercial syndication rather than subservient clerk employment or street mugger beatdowns.
 
 ---
 
