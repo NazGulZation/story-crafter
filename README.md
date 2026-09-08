@@ -85,7 +85,7 @@ All story drafts, character sheets, and lore documents within this workspace adh
 1. **Strictly Forbidden Names & Tropes**:
    - `Sunken Pass`, `Oakhaven`, `Julian`, `Rian`, `Mia`, `Elyria`, `Whispering Wood`, `Dragon/Drakes`, `Garrick`, `Bram`, `Vaelrian`, `Vane`, `Aethelgard`, `Harrick`, `Varis`, `Corin`, `Silas`, `Monster Crawler`, `Monster Dog`, `Sunken Crypt/Hollow`.
    - `Opening Alley Thug / Mugger Encounter`: No brawling with or looting street muggers in opening chapters.
-   - `Accountant Assistant / Junior Ledger Clerk Subordination`: No subordinate bookkeeper or clerk employment; protagonist must rise through independent commercial leverage and arbitrage.
+   - `Accountant Assistant / Junior Ledger Clerk Subordination`: No subordinate bookkeeper or clerk employment.
 2. **Anti-Deus Ex Machina & Mandatory Foreshadowing**:
    - No ass-pulls or unearned plot conveniences.
    - All climactic resolutions, critical skills, or turning points must be seeded and foreshadowed beforehand (Chekhov's Arsenal).
