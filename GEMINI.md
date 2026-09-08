@@ -9,7 +9,7 @@ This workspace is dedicated to creative writing, storytelling, narrative design,
 The following names, locations, and tropes are strictly forbidden in all narrative prose, character profiles, lore documents, worldbuilding, and outlines:
 
 ```
-Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria, Whispering Wood, Dragon/Drakes, Garrick, Bram, Vaelrian, Vane, Aethelgard, Harrick, Varis, Corin, Monster Crawler, Monster Dog, Sunken Crypt/Hollow.
+Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria, Whispering Wood, Dragon/Drakes, Garrick, Bram, Vaelrian, Vane, Aethelgard, Harrick, Varis, Corin, Silas, Monster Crawler, Monster Dog, Sunken Crypt/Hollow.
 ```
 
 ### Breakdown of Prohibitions:
@@ -31,6 +31,7 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
   - `Harrick`
   - `Varis`
   - `Corin`
+  - `Silas`
 - **Forbidden Creatures & Beast Tropes**:
   - `Dragon` / `Drakes`
   - `Monster Crawler`

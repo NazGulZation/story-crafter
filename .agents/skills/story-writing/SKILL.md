@@ -17,7 +17,7 @@ A disciplined, modular framework for crafting compelling narrative fiction, rich
 The following elements are strictly forbidden across all creative writing, character creation, worldbuilding, and story drafting. Do not use these exact names, close phonetic variants, or simple re-skins:
 
 ```
-Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria, Whispering Wood, Dragon/Drakes, Garrick, Bram, Vaelrian, Vane, Aethelgard, Harrick, Varis, Corin, Monster Crawler, Monster Dog, Sunken Crypt/Hollow.
+Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria, Whispering Wood, Dragon/Drakes, Garrick, Bram, Vaelrian, Vane, Aethelgard, Harrick, Varis, Corin, Silas, Monster Crawler, Monster Dog, Sunken Crypt/Hollow.
 ```
 
 ### Breakdown of Forbidden Elements:
@@ -25,7 +25,7 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
 | Category | Forbidden Elements | Mandated Alternative Strategy |
 | :--- | :--- | :--- |
 | **Forbidden Locations** | `Sunken Pass`, `Oakhaven`, `Whispering Wood`, `Sunken Crypt`, `Sunken Hollow` | Create geologically and historically specific topiary names (e.g., *Skelter Gap*, *Cormorant Reach*, *Marrow-Fen*, *Thimble-in-the-Clay*, *The Red Kilns*). |
-| **Forbidden Names** | `Julian`, `Rian`, `Mia`, `Elyria`, `Garrick`, `Bram`, `Vaelrian`, `Vane`, `Aethelgard`, `Harrick`, `Varis`, `Corin` | Base naming on authentic phonetic roots and linguistic traditions (e.g., Anglo-Saxon, Old Norse, Cornish, Slavic, Ugaritic, Basque) consistent with the character's culture. |
+| **Forbidden Names** | `Julian`, `Rian`, `Mia`, `Elyria`, `Garrick`, `Bram`, `Vaelrian`, `Vane`, `Aethelgard`, `Harrick`, `Varis`, `Corin`, `Silas` | Base naming on authentic phonetic roots and linguistic traditions (e.g., Anglo-Saxon, Old Norse, Cornish, Slavic, Ugaritic, Basque) consistent with the character's culture. |
 | **Forbidden Beasts & Creatures** | `Dragon` / `Drakes`, `Monster Crawler`, `Monster Dog` | Construct creatures with coherent ecology, realistic sensory organs, predatory behavior, and environmental adaptation rather than generic fantasy monsters. |
 | **Forbidden Plot Tropes** | `Deus Ex Machina`, `Ass-Pulls`, `Unforeshadowed Plot Armor` | Ground every climax and turning point in prior foreshadowing, established character limitations, and earned sacrifices. Never use unseeded conveniences. |
 
@@ -187,3 +187,35 @@ Integrating visual art enhances immersion and gives readers concrete touchstones
 ### 9.3. Narrative Placement
 - Embed character portraits at the top of character dossiers (`dossiers.md`).
 - Place evocative concept art directly before pivotal story turning points to ground the reader visually before the prose unfolds.
+
+---
+
+## 10. Desktop Book Reader Presentation & Formatting Standards
+
+All prose drafted within this workspace is designed for immersive presentation inside the StoryCrafter Desktop Book Reader (`reader_app.py` / `StoryReader.exe`). Adhere to the following formatting standards to ensure optimal visual rendering, pagination, and reader immersion:
+
+### 10.1. Chapter Markdown Conventions
+1. **Title Header**: Begin each chapter with a single top-level markdown heading: `# Chapter Title`. The reader parser extracts this for the running book header, Table of Contents, and the ornamental chapter title block.
+2. **Initial Drop Cap**: The opening paragraph of every chapter automatically formats with a classical gilded drop cap. Ensure the opening word begins with a letter that reads naturally in stylized initial form.
+3. **Paragraph Breaks & Indentation**: Separate all prose paragraphs with standard double newlines (`\n\n`). In spread view, paragraphs automatically receive book indentations without excessive vertical spacing.
+4. **Scene Breaks & Fleurons**: Use `---` or `***` for scene dividers. The reader transforms these into centered ornamental fleurons (`❦  ❦  ❦`).
+5. **In-World Artifacts & Missives**: Use blockquotes (`> `) for letters, decrees, debt ledgers, ledger balances, alchemical recipes, and prayers. They render with custom accent borders and indented italic styling.
+6. **Dialogue Formatting**: Enclose spoken dialogue in standard quotation marks with dialogue tags attached to character actions rather than standalone adverbial tags.
+
+### 10.2. Dynamic Pagination & Spread Mechanics
+- **Responsive Spread Reflow**: The reader dynamically measures viewport dimensions on startup, window resize, and maximize, calculating exact DOM content height and splitting chapters into two-page spreads without truncating text or changing font size.
+- **Chapter Transition Rules**:
+  - Advancing forward into a new chapter (`nextPage()`) resets the spread index to `0`, opening on **Page 1** (left) and **Page 2** (right).
+  - Reversing backward into a prior chapter (`prevPage()`) opens on the chapter's final page spread, preserving continuous narrative progression.
+- **Directional Page Turning Animations**:
+  - Turning forward applies a right-to-left slide transition (`swishRightToLeft`), simulating advancing through physical parchment.
+  - Turning backward applies a left-to-right slide transition (`swishLeftToRight`), simulating flipping back to previous pages.
+- **Tactile Audio Feedback**:
+  - The reader integrates synthesized crisp paper swipe sound effects via the Web Audio API (zero external audio dependencies).
+  - Users can toggle sound at any time via the top bar button or keyboard shortcut `S`.
+
+### 10.3. Desktop Application Tooling & Distribution
+- **One-Click Native Executable**: [`StoryReader.exe`](file:///c:/StoryCrafter/StoryReader.exe) compiled with embedded custom vector book icon (`app_icon.ico`). It automatically verifies/installs Python, sets up a git-ignored `.venv`, installs requirements, and launches the reader.
+- **Batch Launcher Fallback**: [`run_reader.bat`](file:///c:/StoryCrafter/run_reader.bat) provides a native command-line launcher with identical environment verification.
+- **Git Hygiene**: Always ensure `.gitignore` excludes `.venv/`, `venv/`, `__pycache__/`, and `.reader_config.json`.
+

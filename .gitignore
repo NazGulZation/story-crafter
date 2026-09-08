@@ -1,0 +1,20 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# App configuration & local progress
+.reader_config.json
+
+# Build and temp files
+build/
+dist/
+*.spec
+*.log

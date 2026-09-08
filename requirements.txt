@@ -1,0 +1,2 @@
+pywebview>=5.0.0
+markdown>=3.5.0
