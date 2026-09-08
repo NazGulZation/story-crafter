@@ -69,10 +69,11 @@ A fifteen-chapter structural beat sheet written strictly from the **First-Person
 - **The Squeeze**: The High Council cannot feed the city without coming to Petyr's table. Bread prices quadruple; bread riots loom outside the High Citadel.
 
 #### Chapter 9: The Velvet Summons
-- **Setting**: The Council Chamber of the High Citadel.
-- **Sensory Anchors**: Warm beeswax tapers, cedar fire roaring in the hearth, scent of spiced mulled wine, heavy velvet draperies.
-- **The Encounter**: Clad in tailored charcoal wool with a silver mockingbird pin, Master Alden Croft enters the hall as the chief factor of the creditor syndicate.
-- **The Irony**: Godfrey, Lynette, Gisela, and Vivienne look upon him. They see an immaculate, soft-spoken financier whose hands hold the realm’s food and gold; not one of them recognizes the wretch they cast into the mud five years ago. Petyr smiles his thin, mocking smile.
+- **Setting**: The moonlit Colonnade of Lions, Ante-Solar, and Council Chamber of the High Citadel.
+- **Sensory Anchors**: Razor-sharp night air, salt mist off sea cliffs, lavender pomade, roaring cedar hearth, warm spiced Malmsey wine, rustle of charcoal West-Reach wool.
+- **The Personal Taunt & Realization**: In the high gallery before the session, Petyr intercepts Duchess Lynette Morrow. He taunts her personally about her pearl choker and the mortgaged grain-manors. Lynette cannot grasp the complex financial machinery, but her primal instinct realizes that Alden is orchestrating their total destruction.
+- **The Dismissal**: Lynette rushes in terror into Godfrey's ante-solar, begging him, Gisela, and Vivienne to execute Alden before the council meets. Lord Godfrey Sterling laughs in her face, mocking her peasant paranoia. Gisela Brandt sneers that her garrison will skewer him if he twitches, and Vivienne Claire proclaims that Alden was a faithless beggar who should have died in a ditch five years ago. Petyr overhears their arrogant hubris with quiet delight.
+- **The Irony & Turn**: Clad in tailored charcoal wool with his silver mockingbird pin, Master Alden Croft enters the Grand Council Chamber with iron-bound caskets and the master ledger, announcing the realm's unconditional default.
 
 ---
 
@@ -80,9 +81,10 @@ A fifteen-chapter structural beat sheet written strictly from the **First-Person
 
 #### Chapter 10: The Sovereign Audit (The Climax Begins)
 - **Setting**: The Grand Council Chamber; midnight session.
-- **Sensory Anchors**: Dwindling tallow candles, scrape of iron strongbox keys, scent of dry ink and sour sweat of terrified lords.
-- **The Climax Beat**: Petyr spreads the master ledger across the council table. He announces that the Crown is in unconditional default: 312,000 sovereigns overdue.
-- **The Confrontation**: Godfrey Sterling draws six inches of gilded steel, threatening to hang his creditors. Petyr remains seated, gently sipping arbor gold, reminding the "Hero" that the moment steel touches a creditor's neck, the grain gates close, the mercenary contracts expire, and forty thousand starving commoners storm the palisade.
+- **Sensory Anchors**: Dwindling tallow candles, scrape of iron strongbox keys, scent of dry ink, sour sweat, cold iron rivets of gauntlets.
+- **Structure & POV Shift**:
+  - **Part I (Gisela Brandt 1st-person POV)**: Brandt sits with arrogant confidence in her garrison and martial steel, dismissing Lynette's panic. As Croft reads the default notes, Godfrey draws six inches of steel. Brandt threatens to seize his warehouses, only for Croft to reveal he purchased the Vanguard's entire wage arrears. Brandt orders Captain Donald to arrest him; the guards remain rigid, refusing to obey her. Brandt realizes with chilling dread that her army has been bought from beneath her boots.
+  - **Part II (Lord Petyr Baelish 1st-person POV)**: Petyr savors the shattering of their illusions. He systematically liquidates their status: revealing Vivienne's sealed reliquaries, stripping Godfrey of command and attaching his estates, removing Brandt from the Vanguard, and annulling Lynette's marriage. Petyr exits to the loyal salutes of the Vanguard sentries.
 
 #### Chapter 11: The Vanguard's Mutiny (Gisela's Fall)
 - **Setting**: The Parade Grounds outside the Iron Gate under heavy snowfall.
