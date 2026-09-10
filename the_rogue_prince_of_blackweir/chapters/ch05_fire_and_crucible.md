@@ -98,7 +98,7 @@ I did not stop with a single sword.
 
 In the weeks that followed, I took the thirty Sump-laborers who had followed me down into the ash—runaway serfs, debtors marked for the quarry-chains, and starvelings who had spent their winters coughing black mud into the canals. I did not offer them pious sermons. I fed them salt beef, hot pea-stew, and clean water boiled over volcanic flues. I drilled them in the narrow basalt defiles until their shivering limbs learned the brutal economy of the arbalest and the billhook. Korgan fitted each man with a breastplate of oil-quenched star-iron, turning ragged wretches into an unyielding wall of black steel.
 
-Standing upon the high gallery, I watched a former sewer-sweeper named Bran rack his eighty-pound arbalest with cold, rhythmic precision, his scarred chin held high, his eyes reflecting the furnace glow.
+Standing upon the high gallery, I watched a former sewer-sweeper named Kellan rack his eighty-pound arbalest with cold, rhythmic precision, his scarred chin held high, his eyes reflecting the furnace glow.
 
 *Look at you,* I thought, feeling that ancient, wicked thrill singing in my blood. *Yesterday, a highborn lord like Lysander would have had the city bailiffs whip you for dirtying his courser's hooves. Tomorrow, you will hold his throat under your boot.*
 

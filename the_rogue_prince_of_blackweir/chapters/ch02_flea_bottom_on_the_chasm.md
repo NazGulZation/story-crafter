@@ -124,9 +124,15 @@ I looked at him. And I gave him the smile that had once made the lords of the Se
 
 Before the scream could leave his lungs, my blade drew a clean, horizontal seam across his windpipe. 
 
-His hands flew to his throat, trying in vain to hold back the red tide, his knees folding beneath him. He hit the cobblestones with a heavy, wet thud, his heels drumming once, twice against the stones before going slack.
+His hands flew to his throat, trying in vain to hold back the red tide, his knees folding beneath him. I stood alone in the rain among the dead and the broken. 
 
-I stood alone in the rain among the dead and the broken. Joram was still twitching in the mud, gurgling through his ruined jaw, but he was nothing to me. A dying rat was not worth another inch of steel.
+Near the rusted barrel-hoop, Joram was still twitching in the mud, gurgling through his crushed jaw, his single unswollen eye dilated in petrified terror as he watched me.
+
+I walked over and crouched beside him, resting the bloody flat of my iron blade against his shivering cheek.
+
+"Listen to me, dog," I whispered, the words quiet and sharp as ice. "I am leaving you your breath for one reason. When the red-haired sow comes looking for her thugs, you tell her what you saw. You tell your gilded lord that Caspar Thorne died in the tavern—and the thing wearing his skin is coming to take everything he owns. Carry my words, or I will come back and finish the job."
+
+Joram gave a frantic, sobbing nod against the mud, choking on his own blood.
 
 I wiped the stolen blade clean on the pig’s buff coat, then slid it through my belt. I tucked the leather purse inside my doublet beside Caspar’s maps.
 

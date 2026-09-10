@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-StoryCrafter Sleek Desktop Book Reader
-A book-style desktop reader for StoryCrafter narratives.
-Provides two-page book spread, continuous reading, customizable typography,
-parchment/sepia/dark themes, and automatic reading progress tracking.
+StoryCrafter Sleek Python Web Reader
+A responsive, book-style web application for StoryCrafter narratives.
+Provides two-page book spread with spine crease effect, continuous reading mode,
+customizable typography, parchment/sepia/midnight/clean paper themes,
+synthesized Web Audio paper turning sounds, touch swipe gestures on mobile/tablet,
+URL deep linking, live library reloading, and reading progress synchronization.
 """
 
 import os
@@ -11,10 +13,13 @@ import sys
 import json
 import re
 import html
+import socket
+import argparse
 import threading
 import webbrowser
-from http.server import SimpleHTTPRequestHandler, HTTPServer
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.parse import urlparse, parse_qs
 
 # Optional markdown library
 try:
@@ -22,23 +27,20 @@ try:
 except ImportError:
     markdown = None
 
-# Optional pywebview library
-try:
-    import webview
-except ImportError:
-    webview = None
-
 BASE_DIR = Path(__file__).resolve().parent
 CONFIG_FILE = BASE_DIR / ".reader_config.json"
+ICON_SVG_FILE = BASE_DIR / "app_icon.svg"
+ICON_ICO_FILE = BASE_DIR / "app_icon.ico"
 
 
 def load_config():
+    """Load user configuration and reading progress from .reader_config.json."""
     if CONFIG_FILE.exists():
         try:
             with open(CONFIG_FILE, "r", encoding="utf-8") as f:
                 return json.load(f)
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"[WARN] Failed to read config: {e}")
     return {
         "active_story": "the_mockingbirds_ledger",
         "active_chapter": "ch01_the_gutter_and_the_mockingbird.md",
@@ -52,11 +54,14 @@ def load_config():
 
 
 def save_config(config):
+    """Save user configuration and reading progress to .reader_config.json."""
     try:
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
             json.dump(config, f, indent=2)
+        return True
     except Exception as e:
-        print(f"Error saving config: {e}")
+        print(f"[ERROR] Error saving config: {e}")
+        return False
 
 
 def format_markdown_to_html(md_text):
@@ -110,19 +115,22 @@ def scan_full_library():
                     display_title = item.name.replace("_", " ").title()
                     chapter_list = []
                     for idx, f in enumerate(files, 1):
-                        text = f.read_text(encoding="utf-8")
-                        title, raw_html = format_markdown_to_html(text)
-                        word_count = len(re.findall(r"\b\w+\b", text))
-                        reading_minutes = max(1, round(word_count / 220))
+                        try:
+                            text = f.read_text(encoding="utf-8")
+                            title, raw_html = format_markdown_to_html(text)
+                            word_count = len(re.findall(r"\b\w+\b", text))
+                            reading_minutes = max(1, round(word_count / 220))
 
-                        chapter_list.append({
-                            "filename": f.name,
-                            "title": title or f.stem.replace("_", " ").title(),
-                            "index": idx,
-                            "word_count": word_count,
-                            "reading_time": f"{reading_minutes} min",
-                            "html": raw_html
-                        })
+                            chapter_list.append({
+                                "filename": f.name,
+                                "title": title or f.stem.replace("_", " ").title(),
+                                "index": idx,
+                                "word_count": word_count,
+                                "reading_time": f"{reading_minutes} min",
+                                "html": raw_html
+                            })
+                        except Exception as e:
+                            print(f"[WARN] Failed to parse chapter {f}: {e}")
 
                     stories.append({
                         "id": item.name,
@@ -136,12 +144,36 @@ def scan_full_library():
     return stories
 
 
-def get_html_ui():
-    """Generate the complete standalone reader HTML with pre-embedded library data."""
-    config = load_config()
-    library = scan_full_library()
+def get_lan_ip():
+    """Attempt to discover the host's local IPv4 address on the LAN."""
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.settimeout(0.5)
+        s.connect(("8.8.8.8", 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception:
+        try:
+            return socket.gethostbyname(socket.gethostname())
+        except Exception:
+            return "127.0.0.1"
 
-    # Pre-embed complete library and config directly into JavaScript
+
+def find_available_port(host, start_port=8080, max_attempts=25):
+    """Find an available TCP port starting from start_port."""
+    for p in range(start_port, start_port + max_attempts):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            try:
+                s.bind((host, p))
+                return p
+            except OSError:
+                continue
+    return start_port
+
+
+def generate_web_ui(library, config):
+    """Generate the complete web reader HTML with embedded library and client scripts."""
     embedded_json = json.dumps({
         "stories": library,
         "config": config
@@ -151,9 +183,15 @@ def get_html_ui():
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StoryCrafter Book Reader</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect x='24' y='24' width='464' height='464' rx='108' ry='108' fill='%23141820' stroke='%23d4af37' stroke-width='16'/%3E%3Cpath d='M256 350C210 338 135 320 98 334C94 250 94 220 96 172C140 162 216 178 256 195Z' fill='%23fdfbf5'/%3E%3Cpath d='M256 350C302 338 377 320 414 334C418 250 418 220 416 172C372 162 296 178 256 195Z' fill='%23fdfbf5'/%3E%3Cpath d='M256 345Q296 230 354 100Q320 180 256 345Z' fill='%23d4af37'/%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>StoryCrafter Web Reader</title>
+<meta name="description" content="A sleek, book-style web reader for StoryCrafter narratives.">
+<meta name="theme-color" content="#8b3a2b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/svg+xml" href="/app_icon.svg">
+<link rel="alternate icon" href="/favicon.ico">
 <style>
   :root {{
     --bg-app: #e8dec8;
@@ -223,10 +261,12 @@ def get_html_ui():
     color: var(--text-primary);
     font-family: var(--font-serif);
     height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
+    touch-action: pan-y;
   }}
 
   /* TOP APP BAR */
@@ -237,7 +277,7 @@ def get_html_ui():
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 16px;
+    padding: 0 12px;
     font-family: var(--font-sans);
     z-index: 50;
     user-select: none;
@@ -247,22 +287,23 @@ def get_html_ui():
   .app-bar-left, .app-bar-right, .app-bar-center {{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }}
 
   .btn {{
     background: transparent;
     border: 1px solid var(--border-color);
     color: var(--text-primary);
-    padding: 6px 12px;
+    padding: 6px 10px;
     border-radius: 6px;
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
     transition: all 0.15s ease;
+    white-space: nowrap;
   }}
 
   .btn:hover {{
@@ -281,14 +322,14 @@ def get_html_ui():
     background: var(--bg-page);
     color: var(--text-primary);
     border: 1px solid var(--border-color);
-    padding: 6px 12px;
+    padding: 6px 10px;
     border-radius: 6px;
     font-size: 13px;
     font-weight: 600;
     font-family: var(--font-sans);
     cursor: pointer;
     outline: none;
-    min-width: 220px;
+    max-width: 220px;
   }}
 
   .story-title-badge {{
@@ -297,6 +338,10 @@ def get_html_ui():
     font-weight: 600;
     letter-spacing: 0.5px;
     color: var(--accent);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 320px;
   }}
 
   /* MAIN WORKSPACE */
@@ -310,6 +355,7 @@ def get_html_ui():
   /* TABLE OF CONTENTS DRAWER */
   aside.toc-drawer {{
     width: 340px;
+    max-width: 85vw;
     background-color: var(--bg-book);
     border-right: 1px solid var(--border-color);
     display: flex;
@@ -321,7 +367,7 @@ def get_html_ui():
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
-    box-shadow: 4px 0 24px rgba(0,0,0,0.15);
+    box-shadow: 4px 0 24px rgba(0,0,0,0.18);
   }}
 
   aside.toc-drawer.open {{
@@ -329,7 +375,7 @@ def get_html_ui():
   }}
 
   .toc-header {{
-    padding: 16px;
+    padding: 14px 16px;
     border-bottom: 1px solid var(--border-color);
     font-family: var(--font-sans);
     display: flex;
@@ -345,7 +391,7 @@ def get_html_ui():
   .toc-list {{
     flex: 1;
     overflow-y: auto;
-    padding: 10px 0;
+    padding: 8px 0;
     list-style: none;
     font-family: var(--font-sans);
   }}
@@ -398,11 +444,12 @@ def get_html_ui():
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 64px;
+    padding: 12px 54px;
     overflow: hidden;
     position: relative;
     width: 100%;
     height: 100%;
+    user-select: text;
   }}
 
   /* SPREAD MODE */
@@ -436,7 +483,7 @@ def get_html_ui():
   }}
 
   .page {{
-    padding: 32px 56px 24px 56px;
+    padding: 30px 48px 20px 48px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -461,8 +508,11 @@ def get_html_ui():
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid var(--border-color);
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }}
 
   .page-running-footer {{
@@ -492,7 +542,7 @@ def get_html_ui():
   /* SINGLE COLUMN MODE */
   .book-single {{
     width: 100%;
-    max-width: min(920px, calc(100vw - 120px));
+    max-width: min(920px, calc(100vw - 80px));
     height: 100%;
     max-height: 100%;
     background-color: var(--bg-page);
@@ -501,8 +551,9 @@ def get_html_ui():
     border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
-    padding: 44px 72px;
+    padding: 40px 60px;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }}
 
   .book-single .page-content {{
@@ -512,7 +563,7 @@ def get_html_ui():
   /* CHAPTER TYPOGRAPHY */
   .chapter-title-block {{
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     user-select: none;
   }}
 
@@ -530,7 +581,7 @@ def get_html_ui():
     font-weight: 700;
     color: var(--accent);
     letter-spacing: 0.5px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     line-height: 1.3;
   }}
 
@@ -541,9 +592,9 @@ def get_html_ui():
     letter-spacing: 6px;
   }}
 
-  /* Drop Cap */
+  /* Drop Cap - Chapter beginning only */
   .has-drop-cap > p:first-of-type::first-letter,
-  .page-content > p:first-of-type::first-letter {{
+  .page-left.has-drop-cap .page-content > p:first-of-type::first-letter {{
     float: left;
     font-size: 3.4em;
     line-height: 0.82;
@@ -552,7 +603,7 @@ def get_html_ui():
     margin-bottom: -0.05em;
     color: var(--accent);
     font-weight: 700;
-    font-family: 'Cinzel', 'Georgia', serif;
+    font-family: 'Georgia', serif;
   }}
 
   .page-content p {{
@@ -594,8 +645,8 @@ def get_html_ui():
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 48px;
-    height: 72px;
+    width: 44px;
+    height: 68px;
     background: var(--bg-book);
     border: 1px solid var(--border-color);
     color: var(--text-primary);
@@ -606,7 +657,7 @@ def get_html_ui():
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     transition: all 0.2s ease;
-    z-index: 50;
+    z-index: 40;
     font-size: 26px;
     font-weight: bold;
     user-select: none;
@@ -622,18 +673,18 @@ def get_html_ui():
   }}
 
   .nav-turn-btn.prev {{
-    left: 10px;
+    left: 8px;
   }}
 
   .nav-turn-btn.next {{
-    right: 10px;
+    right: 8px;
   }}
 
   /* PAPER SWISH ANIMATIONS */
   @keyframes swishRightToLeft {{
     0% {{
-      transform: translateX(45px);
-      opacity: 0.3;
+      transform: translateX(36px);
+      opacity: 0.35;
       filter: blur(0.5px);
     }}
     100% {{
@@ -645,8 +696,8 @@ def get_html_ui():
 
   @keyframes swishLeftToRight {{
     0% {{
-      transform: translateX(-45px);
-      opacity: 0.3;
+      transform: translateX(-36px);
+      opacity: 0.35;
       filter: blur(0.5px);
     }}
     100% {{
@@ -657,11 +708,11 @@ def get_html_ui():
   }}
 
   .swish-next {{
-    animation: swishRightToLeft 0.24s cubic-bezier(0.2, 0.8, 0.25, 1) both;
+    animation: swishRightToLeft 0.22s cubic-bezier(0.2, 0.8, 0.25, 1) both;
   }}
 
   .swish-prev {{
-    animation: swishLeftToRight 0.24s cubic-bezier(0.2, 0.8, 0.25, 1) both;
+    animation: swishLeftToRight 0.22s cubic-bezier(0.2, 0.8, 0.25, 1) both;
   }}
 
   /* BOTTOM PROGRESS BAR */
@@ -672,7 +723,7 @@ def get_html_ui():
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 16px;
     font-family: var(--font-sans);
     font-size: 12px;
     color: var(--text-secondary);
@@ -685,7 +736,7 @@ def get_html_ui():
     height: 4px;
     background: var(--border-color);
     border-radius: 2px;
-    margin: 0 16px;
+    margin: 0 14px;
     overflow: hidden;
     position: relative;
   }}
@@ -701,7 +752,7 @@ def get_html_ui():
   .modal-backdrop {{
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.55);
     display: none;
     align-items: center;
     justify-content: center;
@@ -716,15 +767,15 @@ def get_html_ui():
     background: var(--bg-page);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 24px;
-    max-width: 420px;
+    padding: 22px;
+    max-width: 440px;
     width: 90%;
     box-shadow: 0 16px 40px rgba(0,0,0,0.25);
     font-family: var(--font-sans);
   }}
 
   .modal-box h3 {{
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     color: var(--accent);
   }}
 
@@ -742,6 +793,56 @@ def get_html_ui():
     padding: 2px 6px;
     border-radius: 4px;
     font-weight: 600;
+  }}
+
+  /* RESPONSIVE DESIGN FOR MOBILE & TABLET */
+  @media (max-width: 820px) {{
+    header.app-bar {{
+      padding: 0 8px;
+    }}
+    .app-bar-center {{
+      display: none;
+    }}
+    select.select-input {{
+      max-width: 140px;
+      font-size: 12px;
+      padding: 4px 6px;
+    }}
+    .btn {{
+      padding: 4px 8px;
+      font-size: 12px;
+    }}
+    main.book-stage {{
+      padding: 6px 36px;
+    }}
+    .book-spread {{
+      grid-template-columns: 1fr;
+    }}
+    .book-spread::after {{
+      display: none;
+    }}
+    .page-right {{
+      display: none;
+    }}
+    .page-left {{
+      border-right: none;
+      padding: 20px 24px 16px 24px;
+    }}
+    .book-single {{
+      padding: 24px 20px;
+      max-width: 100%;
+    }}
+    .nav-turn-btn {{
+      width: 32px;
+      height: 54px;
+      font-size: 20px;
+    }}
+    .nav-turn-btn.prev {{ left: 2px; }}
+    .nav-turn-btn.next {{ right: 2px; }}
+    footer.app-footer {{
+      font-size: 11px;
+      padding: 0 10px;
+    }}
   }}
 
   /* SCROLLBAR */
@@ -779,27 +880,29 @@ def get_html_ui():
         <path d="M256 345Q296 230 354 100Q320 180 256 345Z" fill="#d4af37"/>
         <circle cx="256" cy="370" r="8" fill="#d4af37"/>
       </svg>
-      <span class="story-title-badge" id="currentStoryTitle">StoryCrafter Reader</span>
+      <span class="story-title-badge" id="currentStoryTitle">StoryCrafter Web Reader</span>
     </div>
 
     <div class="app-bar-right">
-      <button class="btn" id="btnFontDec" title="Decrease font size">A-</button>
-      <button class="btn" id="btnFontInc" title="Increase font size">A+</button>
+      <button class="btn" id="btnFontDec" title="Decrease font size (-)">A-</button>
+      <button class="btn" id="btnFontInc" title="Increase font size (+)">A+</button>
 
-      <select class="select-input" id="selectTheme" style="min-width: 110px;" title="Select Reading Theme">
+      <select class="select-input" id="selectTheme" style="min-width: 100px;" title="Select Reading Theme (T)">
         <option value="parchment">Parchment</option>
         <option value="sepia">Sepia</option>
         <option value="midnight">Midnight</option>
         <option value="paper">Clean Paper</option>
       </select>
 
-      <button class="btn" id="btnLayout" title="Toggle Layout (Spread / Single)">
+      <button class="btn" id="btnLayout" title="Toggle Layout Spread / Scroll (L)">
         <span id="layoutIcon">📖 Spread</span>
       </button>
 
-      <button class="btn" id="btnSound" title="Toggle Page Flip Sound">🔊 Sound</button>
+      <button class="btn" id="btnSound" title="Toggle Page Flip Sound (S)">🔊 Sound</button>
 
-      <button class="btn" id="btnHelp" title="Keyboard Shortcuts (?)">?</button>
+      <button class="btn" id="btnFullscreen" title="Toggle Fullscreen (F)"><span>⛶</span> Full</button>
+
+      <button class="btn" id="btnHelp" title="Shortcuts & Help (?)">?</button>
     </div>
   </header>
 
@@ -808,7 +911,12 @@ def get_html_ui():
     <!-- TABLE OF CONTENTS DRAWER -->
     <aside class="toc-drawer" id="tocDrawer">
       <div class="toc-header">
-        <h2>Chapters</h2>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <h2>Chapters</h2>
+          <button class="btn" id="btnReloadLibrary" title="Rescan stories & chapters (R)" style="padding: 2px 8px; font-size: 11px;">
+            ↻ Reload
+          </button>
+        </div>
         <button class="btn" id="btnCloseToc">✕</button>
       </div>
       <ul class="toc-list" id="tocList">
@@ -819,14 +927,14 @@ def get_html_ui():
     <!-- BOOK VIEWPORT -->
     <main class="book-stage" id="bookStage">
       <!-- TURN BUTTONS -->
-      <button class="nav-turn-btn prev" id="btnPrevPage" title="Previous Page / Chapter (Left Arrow / A)">‹</button>
-      <button class="nav-turn-btn next" id="btnNextPage" title="Next Page / Chapter (Right Arrow / Space / D)">›</button>
+      <button class="nav-turn-btn prev" id="btnPrevPage" title="Previous Page (Left Arrow / A / Swipe Right)">‹</button>
+      <button class="nav-turn-btn next" id="btnNextPage" title="Next Page (Right Arrow / Space / D / Swipe Left)">›</button>
 
       <!-- SPREAD MODE CONTAINER -->
       <div class="book-spread" id="bookSpread">
         <!-- Left Page -->
         <article class="page page-left" id="pageLeft">
-          <div class="page-running-header" id="headerLeft">The Mockingbird's Ledger</div>
+          <div class="page-running-header" id="headerLeft">Story Title</div>
           <div class="page-content" id="contentLeft"></div>
           <div class="page-running-footer">
             <span id="pageLeftNum">Page 1</span>
@@ -859,24 +967,26 @@ def get_html_ui():
 
   <!-- BOTTOM STATUS & PROGRESS -->
   <footer class="app-footer">
-    <div id="footerChapterInfo">Chapter 1 of 15</div>
+    <div id="footerChapterInfo">Chapter 1</div>
     <div class="progress-track">
       <div class="progress-fill" id="progressFill"></div>
     </div>
-    <div id="footerProgressInfo">Page 1 of 6</div>
+    <div id="footerProgressInfo">Page 1 of 1</div>
   </footer>
 
-  <!-- KEYBOARD SHORTCUTS MODAL -->
+  <!-- KEYBOARD SHORTCUTS & HELP MODAL -->
   <div class="modal-backdrop" id="helpModal">
     <div class="modal-box">
-      <h3>Keyboard Shortcuts</h3>
-      <div class="shortcut-row"><span>Next Page / Chapter</span><span class="shortcut-key">Right / Space / D</span></div>
-      <div class="shortcut-row"><span>Previous Page / Chapter</span><span class="shortcut-key">Left / A</span></div>
-      <div class="shortcut-row"><span>Toggle Table of Contents</span><span class="shortcut-key">M</span></div>
+      <h3>StoryCrafter Web Reader</h3>
+      <div class="shortcut-row"><span>Next Page / Chapter</span><span class="shortcut-key">Right / Space / D / Swipe Left</span></div>
+      <div class="shortcut-row"><span>Previous Page / Chapter</span><span class="shortcut-key">Left / A / Swipe Right</span></div>
+      <div class="shortcut-row"><span>Table of Contents</span><span class="shortcut-key">M</span></div>
       <div class="shortcut-row"><span>Cycle Theme</span><span class="shortcut-key">T</span></div>
       <div class="shortcut-row"><span>Toggle Sound Effect</span><span class="shortcut-key">S</span></div>
-      <div class="shortcut-row"><span>Toggle Spread / Single</span><span class="shortcut-key">L</span></div>
+      <div class="shortcut-row"><span>Toggle Spread / Scroll</span><span class="shortcut-key">L</span></div>
       <div class="shortcut-row"><span>Font Size Up / Down</span><span class="shortcut-key">+ / -</span></div>
+      <div class="shortcut-row"><span>Toggle Fullscreen</span><span class="shortcut-key">F</span></div>
+      <div class="shortcut-row"><span>Reload Library</span><span class="shortcut-key">R</span></div>
       <div class="shortcut-row"><span>Close Dialogs</span><span class="shortcut-key">Esc</span></div>
       <div style="text-align: right; margin-top: 16px;">
         <button class="btn active" id="btnCloseModal">Got it</button>
@@ -906,6 +1016,7 @@ def get_html_ui():
   let currentPagePair = 0;
   let totalPagePairs = 1;
   let splitPages = [];
+  let isSinglePageOnMobile = false;
 
   // DOM Elements
   const body = document.body;
@@ -940,9 +1051,11 @@ def get_html_ui():
   const pageLeft = document.getElementById('pageLeft');
   const pageRight = document.getElementById('pageRight');
   const btnSound = document.getElementById('btnSound');
+  const btnFullscreen = document.getElementById('btnFullscreen');
   const helpModal = document.getElementById('helpModal');
   const btnHelp = document.getElementById('btnHelp');
   const btnCloseModal = document.getElementById('btnCloseModal');
+  const btnReloadLibrary = document.getElementById('btnReloadLibrary');
 
   // AUDIO SYNTHESIZER FOR CRISP PAPER SWIPE
   let audioCtx = null;
@@ -968,16 +1081,16 @@ def get_html_ui():
       if (!ctx) return;
       const now = ctx.currentTime;
 
-      // 160ms burst of fibrous paper friction noise
+      // 160ms fibrous paper friction noise
       const duration = 0.16;
       const bufferSize = Math.floor(ctx.sampleRate * duration);
       const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-      const data = buffer.getChannelData(0);
+      const channelData = buffer.getChannelData(0);
 
       for (let i = 0; i < bufferSize; i++) {{
         const t = i / bufferSize;
         const env = Math.sin(t * Math.PI) * Math.exp(-t * 3.8);
-        data[i] = (Math.random() * 2 - 1) * env;
+        channelData[i] = (Math.random() * 2 - 1) * env;
       }}
 
       const noiseSource = ctx.createBufferSource();
@@ -1018,31 +1131,84 @@ def get_html_ui():
     return currentStory().chapters[currentChapterIndex] || {{ title: '', filename: '', html: '' }};
   }}
 
-  // INITIALIZE SYNCHRONOUSLY
+  // URL HASH ROUTING & DEEP LINKING
+  function parseUrlHash() {{
+    if (!window.location.hash) return null;
+    const hash = window.location.hash.substring(1);
+    const params = new URLSearchParams(hash);
+    return {{
+      story: params.get('story'),
+      chapter: params.get('chapter'),
+      page: params.get('page') !== null ? parseInt(params.get('page'), 10) : null
+    }};
+  }}
+
+  function syncUrlHash() {{
+    const st = currentStory();
+    const ch = currentChapter();
+    if (!st || !ch) return;
+    const hash = `#story=${{encodeURIComponent(st.id)}}&chapter=${{encodeURIComponent(ch.filename)}}&page=${{currentPagePair}}`;
+    if (window.location.hash !== hash) {{
+      history.replaceState(null, '', hash);
+    }}
+  }}
+
+  // INITIALIZATION
   function init() {{
     if (!stories.length) {{
       console.warn("No stories loaded.");
       return;
     }}
 
-    // Resolve initial story
-    if (currentConfig.active_story) {{
-      const sIdx = stories.findIndex(s => s.id === currentConfig.active_story);
+    // Check URL Hash first, then config
+    const hashParams = parseUrlHash();
+    const activeStoryId = (hashParams && hashParams.story) || currentConfig.active_story;
+    const activeChapterFile = (hashParams && hashParams.chapter) || currentConfig.active_chapter;
+    const activePage = (hashParams && hashParams.page !== null) ? hashParams.page : currentConfig.page_index;
+
+    if (activeStoryId) {{
+      const sIdx = stories.findIndex(s => s.id === activeStoryId);
       if (sIdx !== -1) currentStoryIndex = sIdx;
     }}
 
     populateStorySelect();
     selectStory.value = currentStoryIndex;
 
-    // Resolve initial chapter
-    if (currentConfig.active_chapter) {{
-      const cIdx = currentStory().chapters.findIndex(c => c.filename === currentConfig.active_chapter);
+    if (activeChapterFile) {{
+      const cIdx = currentStory().chapters.findIndex(c => c.filename === activeChapterFile);
       if (cIdx !== -1) currentChapterIndex = cIdx;
+    }}
+
+    if (activePage !== undefined && activePage !== null) {{
+      currentPagePair = Math.max(0, activePage);
     }}
 
     applyConfig();
     updateStoryView();
-    loadChapter(currentChapterIndex, false, null);
+    loadChapter(currentChapterIndex, false, null, currentPagePair);
+
+    // Check responsive layout mode
+    checkViewport();
+
+    requestAnimationFrame(() => {{
+      const ch = currentChapter();
+      if (ch && ch.html && currentConfig.layout === 'spread') {{
+        splitPagesIntoSpreads(ch.html, ch.title);
+      }}
+    }});
+
+    if (document.fonts && document.fonts.ready) {{
+      document.fonts.ready.then(() => {{
+        const ch = currentChapter();
+        if (ch && ch.html && currentConfig.layout === 'spread') {{
+          splitPagesIntoSpreads(ch.html, ch.title);
+        }}
+      }});
+    }}
+  }}
+
+  function checkViewport() {{
+    isSinglePageOnMobile = window.innerWidth <= 820;
   }}
 
   function applyConfig() {{
@@ -1100,13 +1266,16 @@ def get_html_ui():
     }});
   }}
 
-  function loadChapter(idx, startAtEnd = false, direction = null) {{
+  function loadChapter(idx, startAtEnd = false, direction = null, specificPage = null) {{
     currentChapterIndex = idx;
     const ch = currentStory().chapters[idx];
     if (!ch) return;
 
-    // Reset page pair to 0 on forward progress, or last page when returning
-    currentPagePair = startAtEnd ? 999999 : 0;
+    if (specificPage !== null && specificPage !== undefined) {{
+      currentPagePair = specificPage;
+    }} else {{
+      currentPagePair = startAtEnd ? 999999 : 0;
+    }}
 
     renderToc();
     footerChapterInfo.textContent = `${{currentStory().title}} — Chapter ${{idx + 1}} of ${{currentStory().chapters.length}}`;
@@ -1144,11 +1313,10 @@ def get_html_ui():
   }}
 
   function splitPagesIntoSpreads(rawHtml, title, direction = null) {{
-    // Measure actual rendered size of the page content area
-    const targetHeight = Math.max(320, (contentLeft.clientHeight > 50 ? contentLeft.clientHeight : (window.innerHeight - 200)));
-    const targetWidth = Math.max(300, (contentLeft.clientWidth > 50 ? contentLeft.clientWidth : Math.floor((window.innerWidth - 200) / 2)));
+    checkViewport();
+    const targetHeight = Math.max(320, (contentLeft.clientHeight > 50 ? contentLeft.clientHeight : (window.innerHeight - 190)));
+    const targetWidth = Math.max(280, (contentLeft.clientWidth > 50 ? contentLeft.clientWidth : (isSinglePageOnMobile ? window.innerWidth - 60 : Math.floor((window.innerWidth - 160) / 2))));
 
-    // Create an off-screen measurement sandbox with identical font and padding
     const tester = document.createElement('div');
     tester.className = 'page-content';
     tester.style.cssText = `
@@ -1185,7 +1353,6 @@ def get_html_ui():
       </div>
     `;
 
-    // Start Page 0 with Title Block
     tester.innerHTML = titleBlockHtml;
     currentPageNodes.push(titleBlockHtml);
     let isFirstPage = true;
@@ -1194,16 +1361,13 @@ def get_html_ui():
       const nodeHtml = nodes[i].outerHTML;
       tester.innerHTML += nodeHtml;
 
-      // When added element causes page overflow
       if (tester.scrollHeight > targetHeight + 6) {{
-        // If we already have content on this page, push current page and start a new one
         if (currentPageNodes.length > (isFirstPage ? 1 : 0)) {{
           splitPages.push(currentPageNodes.join(''));
           currentPageNodes = [nodeHtml];
           isFirstPage = false;
           tester.innerHTML = nodeHtml;
 
-          // If a single massive paragraph overflows by itself, still push it to avoid losing text
           if (tester.scrollHeight > targetHeight + 6) {{
             splitPages.push(currentPageNodes.join(''));
             currentPageNodes = [];
@@ -1227,7 +1391,10 @@ def get_html_ui():
 
     document.body.removeChild(tester);
 
-    totalPagePairs = Math.max(1, Math.ceil(splitPages.length / 2));
+    // On narrow screens (mobile), 1 page per spread step; on wide desktop, 2 pages per spread
+    const pagesPerStep = isSinglePageOnMobile ? 1 : 2;
+    totalPagePairs = Math.max(1, Math.ceil(splitPages.length / pagesPerStep));
+
     if (currentPagePair >= totalPagePairs) {{
       currentPagePair = totalPagePairs - 1;
     }}
@@ -1238,7 +1405,9 @@ def get_html_ui():
   }}
 
   function renderCurrentSpread(direction = null) {{
-    const leftIndex = currentPagePair * 2;
+    checkViewport();
+    const pagesPerStep = isSinglePageOnMobile ? 1 : 2;
+    const leftIndex = currentPagePair * pagesPerStep;
     const rightIndex = leftIndex + 1;
 
     headerLeft.textContent = currentStory().title;
@@ -1248,29 +1417,42 @@ def get_html_ui():
     chapterTagRight.textContent = `Chapter ${{currentChapterIndex + 1}}`;
 
     contentLeft.innerHTML = splitPages[leftIndex] || '<p style="color:var(--text-muted); text-align:center; padding-top:40px;"><em>End of chapter.</em></p>';
-    contentRight.innerHTML = splitPages[rightIndex] || '';
+    contentRight.innerHTML = isSinglePageOnMobile ? '' : (splitPages[rightIndex] || '');
 
-    // Scroll to top of content
+    if (currentPagePair === 0) {{
+      pageLeft.classList.add('has-drop-cap');
+    }} else {{
+      pageLeft.classList.remove('has-drop-cap');
+    }}
+    pageRight.classList.remove('has-drop-cap');
+
     contentLeft.scrollTop = 0;
     contentRight.scrollTop = 0;
 
     pageLeftNum.textContent = `Page ${{leftIndex + 1}}`;
-    pageRightNum.textContent = rightIndex < splitPages.length ? `Page ${{rightIndex + 1}}` : '';
+    pageRightNum.textContent = (!isSinglePageOnMobile && rightIndex < splitPages.length) ? `Page ${{rightIndex + 1}}` : '';
 
     const totalPages = splitPages.length;
-    footerProgressInfo.textContent = `Page ${{leftIndex + 1}}–${{Math.min(rightIndex + 1, totalPages)}} of ${{totalPages}}`;
+    if (isSinglePageOnMobile) {{
+      footerProgressInfo.textContent = `Page ${{leftIndex + 1}} of ${{totalPages}}`;
+    }} else {{
+      footerProgressInfo.textContent = `Page ${{leftIndex + 1}}–${{Math.min(rightIndex + 1, totalPages)}} of ${{totalPages}}`;
+    }}
 
-    const progressPct = Math.round(((Math.min(rightIndex + 1, totalPages)) / totalPages) * 100);
+    const viewedPage = isSinglePageOnMobile ? (leftIndex + 1) : Math.min(rightIndex + 1, totalPages);
+    const progressPct = Math.round((viewedPage / Math.max(1, totalPages)) * 100);
     progressFill.style.width = `${{progressPct}}%`;
 
-    // Apply swish animation & sound effect
+    syncUrlHash();
+
+    // Swish animation & sound effect
     if (direction) {{
       pageLeft.classList.remove('swish-next', 'swish-prev');
       pageRight.classList.remove('swish-next', 'swish-prev');
-      void pageLeft.offsetWidth; // Force reflow to restart animation
+      void pageLeft.offsetWidth;
       const animClass = direction === 'next' ? 'swish-next' : 'swish-prev';
       pageLeft.classList.add(animClass);
-      pageRight.classList.add(animClass);
+      if (!isSinglePageOnMobile) pageRight.classList.add(animClass);
       playPaperSound();
     }}
   }}
@@ -1280,8 +1462,8 @@ def get_html_ui():
       if (currentPagePair < totalPagePairs - 1) {{
         currentPagePair++;
         renderCurrentSpread('next');
+        saveState();
       }} else {{
-        // Advance to Next Chapter starting at page 0
         if (currentChapterIndex < currentStory().chapters.length - 1) {{
           loadChapter(currentChapterIndex + 1, false, 'next');
         }}
@@ -1299,8 +1481,8 @@ def get_html_ui():
       if (currentPagePair > 0) {{
         currentPagePair--;
         renderCurrentSpread('prev');
+        saveState();
       }} else {{
-        // Return to Previous Chapter starting at last page
         if (currentChapterIndex > 0) {{
           loadChapter(currentChapterIndex - 1, true, 'prev');
         }}
@@ -1313,27 +1495,35 @@ def get_html_ui():
     }}
   }}
 
+  // SAVE PROGRESS & CONFIG TO SERVER & LOCAL STORAGE
+  let saveTimer = null;
   function saveState() {{
     const state = {{
       active_story: currentStory().id,
       active_chapter: currentChapter().filename,
       theme: currentConfig.theme,
       font_size: currentConfig.font_size,
-      layout: currentConfig.layout
+      layout: currentConfig.layout,
+      page_index: currentPagePair
     }};
 
-    // Save to LocalStorage
     try {{
       localStorage.setItem('storycrafter_reader_config', JSON.stringify(state));
     }} catch (e) {{}}
 
-    // Save through pywebview API if available
-    if (window.pywebview && window.pywebview.api && window.pywebview.api.save_progress) {{
-      window.pywebview.api.save_progress(state);
-    }}
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {{
+      fetch('/api/config', {{
+        method: 'POST',
+        headers: {{ 'Content-Type': 'application/json' }},
+        body: JSON.stringify(state)
+      }}).catch(() => {{}});
+    }}, 400);
+
+    syncUrlHash();
   }}
 
-  // ATTACH EVENT LISTENERS IMMEDIATELY
+  // ATTACH EVENT LISTENERS
   selectStory.onchange = (e) => {{
     currentStoryIndex = parseInt(e.target.value, 10);
     currentChapterIndex = 0;
@@ -1353,11 +1543,17 @@ def get_html_ui():
   btnLayout.onclick = () => {{
     currentConfig.layout = currentConfig.layout === 'spread' ? 'single' : 'spread';
     updateLayoutDisplay();
+    if (currentConfig.layout === 'spread') {{
+      const ch = currentChapter();
+      if (ch && ch.html) {{
+        splitPagesIntoSpreads(ch.html, ch.title);
+      }}
+    }}
     saveState();
   }};
 
   btnFontInc.onclick = () => {{
-    if (currentConfig.font_size < 28) {{
+    if (currentConfig.font_size < 32) {{
       currentConfig.font_size += 2;
       applyConfig();
       if (currentChapter().html) {{
@@ -1368,7 +1564,7 @@ def get_html_ui():
   }};
 
   btnFontDec.onclick = () => {{
-    if (currentConfig.font_size > 14) {{
+    if (currentConfig.font_size > 12) {{
       currentConfig.font_size -= 2;
       applyConfig();
       if (currentChapter().html) {{
@@ -1386,19 +1582,94 @@ def get_html_ui():
     btnSound.textContent = soundEnabled ? '🔊 Sound' : '🔇 Mute';
   }};
 
+  // FULLSCREEN TOGGLE
+  function toggleFullscreen() {{
+    if (!document.fullscreenElement) {{
+      document.documentElement.requestFullscreen().catch(() => {{}});
+    }} else {{
+      if (document.exitFullscreen) {{
+        document.exitFullscreen().catch(() => {{}});
+      }}
+    }}
+  }}
+
+  btnFullscreen.onclick = toggleFullscreen;
+  document.addEventListener('fullscreenchange', () => {{
+    btnFullscreen.innerHTML = document.fullscreenElement ? '<span>⛶</span> Exit' : '<span>⛶</span> Full';
+  }});
+
   btnHelp.onclick = () => helpModal.classList.add('open');
   btnCloseModal.onclick = () => helpModal.classList.remove('open');
   helpModal.onclick = (e) => {{
     if (e.target === helpModal) helpModal.classList.remove('open');
   }};
 
+  // LIVE LIBRARY RELOAD
+  async function reloadLibraryData() {{
+    if (!btnReloadLibrary) return;
+    btnReloadLibrary.disabled = true;
+    btnReloadLibrary.textContent = '...';
+    try {{
+      const res = await fetch('/api/reload');
+      const freshData = await res.json();
+      if (freshData && freshData.stories) {{
+        stories = freshData.stories;
+        populateStorySelect();
+        selectStory.value = currentStoryIndex;
+        updateStoryView();
+        loadChapter(currentChapterIndex);
+      }}
+    }} catch (err) {{
+      console.error('Failed to reload library:', err);
+    }} finally {{
+      btnReloadLibrary.disabled = false;
+      btnReloadLibrary.textContent = '↻ Reload';
+    }}
+  }}
+
+  if (btnReloadLibrary) {{
+    btnReloadLibrary.onclick = reloadLibraryData;
+  }}
+
+  // TOUCH & SWIPE NAVIGATION FOR MOBILE & TABLETS
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchStartTime = 0;
+
+  const stage = document.getElementById('bookStage');
+  stage.addEventListener('touchstart', (e) => {{
+    if (e.touches.length === 1) {{
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchStartTime = Date.now();
+    }}
+  }}, {{ passive: true }});
+
+  stage.addEventListener('touchend', (e) => {{
+    if (e.changedTouches.length === 1) {{
+      const deltaX = e.changedTouches[0].clientX - touchStartX;
+      const deltaY = e.changedTouches[0].clientY - touchStartY;
+      const elapsedTime = Date.now() - touchStartTime;
+
+      if (Math.abs(deltaX) > 45 && Math.abs(deltaX) > Math.abs(deltaY) * 1.4 && elapsedTime < 600) {{
+        if (deltaX < 0) {{
+          nextPage();
+        }} else {{
+          prevPage();
+        }}
+      }}
+    }}
+  }}, {{ passive: true }});
+
   // KEYBOARD NAVIGATION
   window.addEventListener('keydown', (e) => {{
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA') return;
 
     if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'd' || e.key === 'D') {{
+      e.preventDefault();
       nextPage();
     }} else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {{
+      e.preventDefault();
       prevPage();
     }} else if (e.key === 'm' || e.key === 'M') {{
       tocDrawer.classList.toggle('open');
@@ -1412,17 +1683,43 @@ def get_html_ui():
       saveState();
     }} else if (e.key === 'l' || e.key === 'L') {{
       btnLayout.click();
+    }} else if (e.key === 'f' || e.key === 'F') {{
+      toggleFullscreen();
+    }} else if (e.key === 'r' || e.key === 'R') {{
+      reloadLibraryData();
     }} else if (e.key === '+' || e.key === '=') {{
       btnFontInc.click();
     }} else if (e.key === '-' || e.key === '_') {{
       btnFontDec.click();
+    }} else if (e.key === '?' || (e.shiftKey && e.key === '/')) {{
+      btnHelp.click();
     }} else if (e.key === 'Escape') {{
       tocDrawer.classList.remove('open');
       helpModal.classList.remove('open');
     }}
   }});
 
-  // DYNAMIC RESIZE / MAXIMIZE LISTENER
+  // POPSTATE & HASHCHANGE LISTENER
+  window.addEventListener('hashchange', () => {{
+    const hashParams = parseUrlHash();
+    if (!hashParams) return;
+    if (hashParams.story) {{
+      const sIdx = stories.findIndex(s => s.id === hashParams.story);
+      if (sIdx !== -1 && sIdx !== currentStoryIndex) {{
+        currentStoryIndex = sIdx;
+        selectStory.value = sIdx;
+        updateStoryView();
+      }}
+    }}
+    if (hashParams.chapter) {{
+      const cIdx = currentStory().chapters.findIndex(c => c.filename === hashParams.chapter);
+      if (cIdx !== -1 && (cIdx !== currentChapterIndex || hashParams.page !== currentPagePair)) {{
+        loadChapter(cIdx, false, null, hashParams.page);
+      }}
+    }}
+  }});
+
+  // DYNAMIC RESIZE LISTENER
   let resizeTimer = null;
   window.addEventListener('resize', () => {{
     clearTimeout(resizeTimer);
@@ -1437,7 +1734,7 @@ def get_html_ui():
     }}, 100);
   }});
 
-  // Execute initialization immediately on DOM ready
+  // INITIALIZE ON DOM READY
   if (document.readyState === 'loading') {{
     document.addEventListener('DOMContentLoaded', init);
   }} else {{
@@ -1449,69 +1746,207 @@ def get_html_ui():
 """
 
 
-class ReaderApi:
-    """Python-to-JavaScript bridge for pywebview."""
+class StoryReaderWebHandler(SimpleHTTPRequestHandler):
+    """HTTP Request Handler providing REST API and serving Web Reader assets."""
 
-    def __init__(self):
-        self.config = load_config()
+    server_version = "StoryReader/2.0"
 
-    def save_progress(self, state):
-        self.config.update(state)
-        save_config(self.config)
-        return True
+    def do_GET(self):
+        parsed = urlparse(self.path)
+        path = parsed.path
 
-
-def run_desktop():
-    api = ReaderApi()
-
-    if webview is not None:
-        try:
-            window = webview.create_window(
-                title="StoryCrafter — The Mockingbird's Ledger",
-                html=get_html_ui(),
-                js_api=api,
-                width=1280,
-                height=860,
-                min_size=(900, 600),
-                background_color="#e8dec8"
-            )
-            webview.start(debug=False)
-            return
-        except Exception as e:
-            print(f"pywebview GUI error: {e}. Falling back to local browser server...")
-
-    # Fallback to local server + browser
-    port = 8765
-    server_html = get_html_ui()
-
-    class ImmediateHandler(SimpleHTTPRequestHandler):
-        def do_GET(self):
+        if path == "/" or path == "/index.html":
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Cache-Control", "no-cache")
             self.end_headers()
-            self.wfile.write(server_html.encode("utf-8"))
+            library = self.server.get_library()
+            config = load_config()
+            html_content = generate_web_ui(library, config)
+            self.wfile.write(html_content.encode("utf-8"))
 
-        def log_message(self, format, *args):
-            pass
+        elif path == "/api/library":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Cache-Control", "no-cache")
+            self.end_headers()
+            library = self.server.get_library()
+            self.wfile.write(json.dumps({"stories": library}).encode("utf-8"))
 
-    server = HTTPServer(("127.0.0.1", port), ImmediateHandler)
-    url = f"http://127.0.0.1:{port}"
-    print(f"Opening StoryCrafter Reader at {url} ...")
-    threading.Thread(target=server.serve_forever, daemon=True).start()
-    webbrowser.open(url)
+        elif path == "/api/reload":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Cache-Control", "no-cache")
+            self.end_headers()
+            library = self.server.reload_library()
+            self.wfile.write(json.dumps({"status": "ok", "stories": library}).encode("utf-8"))
+
+        elif path == "/api/config":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Cache-Control", "no-cache")
+            self.end_headers()
+            config = load_config()
+            self.wfile.write(json.dumps(config).encode("utf-8"))
+
+        elif path == "/manifest.json":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/manifest+json; charset=utf-8")
+            self.end_headers()
+            manifest = {
+                "name": "StoryCrafter Web Reader",
+                "short_name": "StoryReader",
+                "start_url": "/",
+                "display": "standalone",
+                "background_color": "#e8dec8",
+                "theme_color": "#8b3a2b",
+                "icons": [
+                    {
+                        "src": "/app_icon.svg",
+                        "sizes": "any",
+                        "type": "image/svg+xml"
+                    },
+                    {
+                        "src": "/app_icon.ico",
+                        "sizes": "64x64 32x32 24x24 16x16",
+                        "type": "image/x-icon"
+                    }
+                ]
+            }
+            self.wfile.write(json.dumps(manifest, indent=2).encode("utf-8"))
+
+        elif path == "/app_icon.svg":
+            if ICON_SVG_FILE.exists():
+                self.send_response(200)
+                self.send_header("Content-Type", "image/svg+xml")
+                self.end_headers()
+                self.wfile.write(ICON_SVG_FILE.read_bytes())
+            else:
+                self.send_error(404, "Icon not found")
+
+        elif path in ("/app_icon.ico", "/favicon.ico"):
+            if ICON_ICO_FILE.exists():
+                self.send_response(200)
+                self.send_header("Content-Type", "image/x-icon")
+                self.end_headers()
+                self.wfile.write(ICON_ICO_FILE.read_bytes())
+            else:
+                self.send_error(404, "Icon not found")
+
+        else:
+            self.send_error(404, "Not Found")
+
+    def do_POST(self):
+        parsed = urlparse(self.path)
+        path = parsed.path
+
+        if path == "/api/config":
+            try:
+                content_len = int(self.headers.get("Content-Length", 0))
+                post_body = self.rfile.read(content_len).decode("utf-8")
+                updates = json.loads(post_body)
+                current = load_config()
+                current.update(updates)
+                save_config(current)
+
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "ok", "config": current}).encode("utf-8"))
+            except Exception as e:
+                self.send_response(400)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+        else:
+            self.send_error(404, "Not Found")
+
+    def log_message(self, format, *args):
+        # Suppress routine request logging to keep console clean, but print errors
+        if args and str(args[1]) in ("400", "404", "500"):
+            print(f"[HTTP {args[1]}] {args[0]}")
+
+
+class StoryReaderServer(ThreadingHTTPServer):
+    """Threaded HTTP server managing library state and cache."""
+
+    def __init__(self, server_address, RequestHandlerClass):
+        super().__init__(server_address, RequestHandlerClass)
+        self._library = None
+        self._lock = threading.Lock()
+
+    def get_library(self):
+        with self._lock:
+            if self._library is None:
+                self._library = scan_full_library()
+            return self._library
+
+    def reload_library(self):
+        with self._lock:
+            self._library = scan_full_library()
+            return self._library
+
+
+def run_server(host="127.0.0.1", port=8080, open_browser=True, lan_mode=False):
+    """Run the StoryReader web server."""
+    if lan_mode or host == "0.0.0.0":
+        host = "0.0.0.0"
+
+    actual_port = find_available_port(host, port)
+    server = StoryReaderServer((host, actual_port), StoryReaderWebHandler)
+    lan_ip = get_lan_ip()
+
+    local_url = f"http://localhost:{actual_port}/"
+    lan_url = f"http://{lan_ip}:{actual_port}/"
+
+    print("=" * 62, flush=True)
+    print("           StoryCrafter Sleek Python Web Reader           ", flush=True)
+    print("=" * 62, flush=True)
+    print(f"  Local Access:      {local_url}", flush=True)
+    if host == "0.0.0.0" or lan_mode:
+        print(f"  Network/LAN:       {lan_url}  (Mobile & Tablet)", flush=True)
+    else:
+        print(f"  Network access:    Run with --lan to enable mobile reading", flush=True)
+    print("-" * 62, flush=True)
+    print("  Controls & Hotkeys:", flush=True)
+    print("    [Arrow Keys / Space / A / D] Turn Pages", flush=True)
+    print("    [M] Table of Contents    [T] Cycle Themes", flush=True)
+    print("    [S] Sound Toggle         [L] Spread / Scroll Layout", flush=True)
+    print("    [F] Fullscreen           [R] Live Reload Library", flush=True)
+    print("=" * 62, flush=True)
+    print("  Press Ctrl+C to stop server.\n", flush=True)
+
+    if open_browser:
+        def _open():
+            import time
+            time.sleep(0.4)
+            webbrowser.open(local_url)
+        threading.Thread(target=_open, daemon=True).start()
+
     try:
-        import time
-        while True:
-            time.sleep(1)
+        server.serve_forever()
     except KeyboardInterrupt:
-        print("Reader closed.")
+        print("\n[STOP] Shutting down StoryCrafter Web Reader server...")
+        server.shutdown()
+        server.server_close()
+        print("[OK] Server stopped.")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="StoryCrafter Sleek Python Web Reader")
+    parser.add_argument("--port", "-p", type=int, default=8080, help="Port to run server on (default: 8080)")
+    parser.add_argument("--host", type=str, default="127.0.0.1", help="Host address (default: 127.0.0.1)")
+    parser.add_argument("--lan", action="store_true", help="Bind to 0.0.0.0 to allow mobile/tablet access across LAN")
+    parser.add_argument("--no-browser", action="store_true", help="Do not open web browser automatically")
+    args = parser.parse_args()
+
+    run_server(
+        host=args.host,
+        port=args.port,
+        open_browser=not args.no_browser,
+        lan_mode=args.lan
+    )
 
 
 if __name__ == "__main__":
-    if "--web" in sys.argv or "-w" in sys.argv:
-        # Strip out --web and -w before passing to web_reader
-        sys.argv = [arg for arg in sys.argv if arg not in ("--web", "-w")]
-        import web_reader
-        web_reader.main()
-    else:
-        run_desktop()
+    main()

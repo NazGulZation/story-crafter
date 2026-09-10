@@ -41,7 +41,7 @@ A psychological and sociological breakdown of the primary figures in Bell-Garde,
 
 ## 3. Duchess Lynette Morrow
 
-- **Epithet**: The Duchess of Bell-Garde / High Stewardess of the Realm / Formerly the Village Osanajimi
+- **Epithet**: The Duchess of Bell-Garde / High Stewardess of the Realm / The Faithless Childhood Companion
 - **Apparent Form**: Twenty-three years of age, delicate oval countenance, honey-brown hair braided with freshwater pearls, almond hazel eyes. Clad in heavy brocade skirts and ermine-trimmed mantles, adorned in jewels that strain the municipal treasury.
 - **Public Station**: First Lady of the Realm, overseer of the High Keep’s civil household and grain quotas, wife of Godfrey Sterling.
 - **Internal Vulnerability**:

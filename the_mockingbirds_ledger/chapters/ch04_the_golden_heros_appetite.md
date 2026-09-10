@@ -54,7 +54,7 @@ I allowed myself to pause, looking out over the lists.
 
 Down below, Godfrey was taking his lance. On the royal viewing dais sat Duchess Lynette Morrow.
 
-She was dressed in a gown of heavy emerald damask, her throat encircled by a collar of baroque freshwater pearls that rose and fell with her breath. She looked radiant, distant, and intensely proud—the very image of an imperial duchess.
+She was dressed in a gown of heavy emerald damask, her throat encircled by a collar of irregular teardrop freshwater pearls that rose and fell with her breath. She looked radiant, distant, and intensely proud—the very image of an imperial duchess.
 
 Yet I had seen the reports from Nesta that morning.
 

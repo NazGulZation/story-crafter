@@ -36,7 +36,7 @@ Korgan squinted, leaning dangerously over the chasm lip. His scarred jaw went sl
 
 "We do not assault," I said coldly. "We hunt."
 
-Just then, a light-footed boy in a torn tunic scrambled up the goat-path behind us, panting hard, clutching a grease-stained strip of linen. It was Bran, one of Orrin’s dock-rat runners from the Sump.
+Just then, a light-footed boy in a torn tunic scrambled up the goat-path behind us, panting hard, clutching a grease-stained strip of linen. It was Kellan, one of Orrin’s dock-rat runners from the Sump.
 
 "From the northern defiles, Marshal Orrin," the boy wheezed, handing the linen over. "The Dawn Vanguard."
 

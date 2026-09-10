@@ -26,7 +26,7 @@ Directly beneath the fountain, four dockhands in rags were shivering as they unl
 
 *Delightful,* I thought, a thin, familiar amusement warming my blood. *A realm ruled by a chivalric peacock who spends treasury gold six months before it enters the harbor, while the men who move the iron and grain starve in the mud.*
 
-In King's Landing, Robert Baratheon had played the exact same tune. Robert would feast on roast swans and crown tournament champions while I borrowed six million dragons from the Iron Bank and House Lannister, juggling promissory notes until the Iron Throne was essentially my private freehold. A warrior king is the greatest gift God ever bestowed upon an ambitious financier.
+In King's Landing, Robert Baratheon had played the exact same tune. Robert would feast on roast swans and crown tournament champions while I borrowed six million gold sovereigns from the Iron Bank and House Lannister, juggling promissory notes until the Iron Throne was essentially my private freehold. A warrior king is the greatest gift God ever bestowed upon an ambitious financier.
 
 I turned away from the fountain and entered the sovereign customs house.
 

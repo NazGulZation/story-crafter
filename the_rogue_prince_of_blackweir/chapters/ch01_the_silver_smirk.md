@@ -88,7 +88,7 @@ Briony stopped chuckling, her thick brows knitting as she stared across the tabl
 
 Slowly, deliberately, I lifted my head.
 
-The pathetic, wounded gaze of the tenant farmer's son was gone. Behind these hazel eyes, the blood of the dragonlords awoke. Smoke, violet steel, and the cold, unyielding arrogance of a prince who had carved a kingdom out of the sea with his bare hands.
+The pathetic, wounded gaze of the tenant farmer's son was gone. Behind these hazel eyes, the blood of high Valyrian princes awoke. Smoke, violet steel, and the cold, unyielding arrogance of a prince who had carved a kingdom out of the sea with his bare hands.
 
 I took a slow breath, tasting the room. It was filthy. Cheap ale, wet dog, grease, and the sickly sweet rosewater perfume wafting from Lysander's groomed tunic.
 

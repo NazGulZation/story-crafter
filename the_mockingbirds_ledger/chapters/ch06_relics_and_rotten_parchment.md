@@ -88,7 +88,7 @@ I reached out with my left hand and gently, almost reverently, wiped the tear fr
 
 Then, I smiled.
 
-"You have an extraordinary talent, my dear," I said softly. "Truly. In the theatre of King's Landing, you would have commanded fifty gold dragons a night for such a performance."
+"You have an extraordinary talent, my dear," I said softly. "Truly. In the theatre of King's Landing, you would have commanded fifty gold royals a night for such a performance."
 
 Vivienne froze. Her hands stiffened against my arm.
 

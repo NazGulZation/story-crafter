@@ -12,7 +12,9 @@ Stories/
 ├── README.md                                  # Workspace overview & story catalog
 ├── .agents/
 │   └── skills/
-│       └── story-writing/                     # Workspace creative writing skill
+│       ├── story-writing/                     # Workspace creative writing skill
+│       │   └── SKILL.md
+│       └── narrative-consistency/             # Plot hole auditing & causal consistency skill
 │           └── SKILL.md
 └── the_rogue_prince_of_blackweir/             # Active Story Project
     ├── chapters/                              # 10 completed chapters
@@ -75,6 +77,24 @@ A sleek, book-style desktop application for reading all stories in this workspac
   - Classical book typography with gilded drop caps, fleurons, and running headers.
   - Parchment, Warm Sepia, Midnight, and Clean Paper themes.
   - Story selector, Table of Contents drawer, font sizing, and reading progress auto-save.
+
+---
+
+## Web Book Reader (Browser & Mobile Access)
+
+A responsive, feature-rich web application version of StoryReader powered by a Python multi-threaded HTTP server. It can be accessed on any browser locally or over local Wi-Fi from phones and tablets:
+- **Launch via Batch**: Double-click [`run_web_reader.bat`](file:///c:/StoryCrafter/run_web_reader.bat).
+- **Direct Python Launch**: `.\.venv\Scripts\python.exe web_reader.py` (or `python reader_app.py --web`).
+- **Mobile & LAN Access**: Run with `--lan` (e.g. `.\.venv\Scripts\python.exe web_reader.py --lan`) to bind to `0.0.0.0` and access from any mobile phone, iPad, or tablet connected to your local network.
+- **Key Features**:
+  - **Identical Book Aesthetics**: Two-page spread with center spine shadow or single scroll mode, Cinzel/Georgia drop caps, running headers, and 4 themes (*Parchment*, *Warm Sepia*, *Midnight*, *Clean Paper*).
+  - **Touch & Mobile Swipes**: Left/right swipe gestures on touchscreens for page navigation.
+  - **Responsive Reflow**: Adapts smoothly to mobile screens (<820px) without cramped text or horizontal scrollbars.
+  - **URL Deep-Linking**: URL hash routing (`#story=...&chapter=...&page=...`) enables bookmarking, browser back/forward navigation, and instant page refreshes without losing place.
+  - **Live Library Reload**: "↻ Reload" button in the Table of Contents drawer dynamically rescans story chapters without restarting the server.
+  - **Fullscreen Reading**: Fullscreen mode (`F` shortcut) for distraction-free reading.
+  - **Web Audio Paper Sounds**: Realistic fibrous paper swipe rustle synthesized via Web Audio API.
+  - **PWA Ready**: Web app manifest and icons support "Add to Home Screen" on iOS and Android.
 
 ---
 

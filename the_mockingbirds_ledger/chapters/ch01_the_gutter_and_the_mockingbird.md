@@ -30,7 +30,7 @@ There was Vivienne Claire: a pale, soft-spoken hedge-priestess, whom Alden had d
 
 And there was Lynette Morrow.
 
-The memory of her face made the dead boy’s nerves twitch in my chest like a salted eel. A country milkmaid with hazel eyes, fresh linen skirts, and hair braided with river rushes. His *osanajimi*, as the eastern traders called it. The girl from the next cabbage patch in the hamlet of Weirs-End. The girl who had pressed a carved wooden acorn into his palm when they were twelve, swearing beneath the willow trees that they would see the high towers of the capital together, that they would never part.
+The memory of her face made the dead boy’s nerves twitch in my chest like a salted eel. A country milkmaid with hazel eyes, fresh linen skirts, and hair braided with river rushes. His cradle-sworn companion. The girl from the next cabbage patch in the hamlet of Weirs-End. The girl who had pressed a carved wooden acorn into his palm when they were twelve, swearing beneath the willow trees that they would see the high towers of the capital together, that they would never part.
 
 I watched the memory unfold with detached amusement.
 

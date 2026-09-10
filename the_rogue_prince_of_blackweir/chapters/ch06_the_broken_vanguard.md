@@ -10,9 +10,9 @@ The citizens of the Middle Flumes lined the street in stunned silence. Guild smi
 
 I looked at the men marching beside my wagons. Ditch-diggers, runaway serfs, dock-scum who had spent their entire lives staring at the mud whenever a nobleman rode past. Now they marched four abreast in black star-iron plate, shoulders square, boots striking the wet flagstones in thunderous unison. 
 
-When a wealthy silk-factor stepped off the curb to get a closer look, young Bran leveled the dark steel point of his billhook with a flat, murderous stare. The merchant choked on his breath, blanching, stepping hurriedly backward into the gutter slurry to let the wagon pass. 
+When a wealthy silk-factor stepped off the curb to get a closer look, young Kellan leveled the dark steel point of his billhook with a flat, murderous stare. The merchant choked on his breath, blanching, stepping hurriedly backward into the gutter slurry to let the wagon pass. 
 
-I watched the exchange from my saddle, and a slow, savage grin touched my lips. Three weeks ago, that merchant would have paid the watch five coppers to whip Bran bloody for splashing his cloak. Now the silk-belly was cowering in the muck before the boy’s iron. There was no vintage in the world sweeter than watching the beaten dregs of the earth learn how to bare their fangs at their betters.
+I watched the exchange from my saddle, and a slow, savage grin touched my lips. Three weeks ago, that merchant would have paid the watch five coppers to whip Kellan bloody for splashing his cloak. Now the silk-belly was cowering in the muck before the boy’s iron. There was no vintage in the world sweeter than watching the beaten dregs of the earth learn how to bare their fangs at their betters.
 
 We halted in the Grand Plaza of the High Crescent, before the fountain of the Luminescent Mother.
 
@@ -91,5 +91,17 @@ I merely looked straight through her, as if she were a pile of horse dung drying
 "Quartermaster," I said, my voice carrying clearly across the silent plaza, "have your men unload the fourth wagon first. The Duke's personal armorer is waiting."
 
 "Right away, Lord High Warden," the old man bowed deeply, stepping aside to let me pass.
+
+I pulled my gelding up beside the portly figure of Factor Osric, who stood clutching his debt rolls beneath the marble arcade, staring hungrily at my wagons of star-iron.
+
+"Factor Osric," I said, leaning down from the stirrup, tossing a heavy ingot of refined star-iron onto his ledger-table with a resounding *clack*. "I understand House Morn owes you three thousand gold crowns in defaulted bonds and retainer collateral."
+
+The debt-broker swallowed hard, his plump fingers caressing the dark, unblemished metal. "They do, Lord High Warden. Three thousand, secured by personal chattel and indenture notes."
+
+"Consider the debt settled in star-iron," I murmured, resting my gloved hand on the pommel of *Bloodthorn*. "Hand over Lysander's signed indenture deeds and debt-rolls to Marshal Orrin. Every single scrap of parchment."
+
+Osric hastily pulled the lead-sealed deeds from his velvet satchel, bowing until his double chin wobbled. "The contracts are yours, my lord. Every lien, every signature."
+
+I signaled Orrin to pocket the papers, then turned my horse toward the citadel gates.
 
 Behind me, in the freezing mud of the plaza, I heard the sound of Althea collapsing to her knees, her ragged sobs swallowed by the cold wind of the chasm.

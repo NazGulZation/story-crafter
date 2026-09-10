@@ -4,6 +4,7 @@ description: >-
   Comprehensive guide and methodology for creative writing, narrative fiction, worldbuilding, character design, and scene drafting in this workspace.
   Use when planning, outlining, writing, or editing stories, novels, chapters, lore codices, character sheets, and dialogue.
   Enforces original naming conventions, grounded settings, distinct character voices, and strict anti-cliché constraints.
+  Also covers explicit, detailed, arousing NSFW/erotica, word-count compliance.
 ---
 
 # Story Writing & Creative Craft Skill
@@ -219,4 +220,103 @@ All prose drafted within this workspace is designed for immersive presentation i
 - **One-Click Native Executable**: [`StoryReader.exe`](file:///c:/StoryCrafter/StoryReader.exe) compiled with embedded custom vector book icon (`app_icon.ico`). It automatically verifies/installs Python, sets up a git-ignored `.venv`, installs requirements, and launches the reader.
 - **Batch Launcher Fallback**: [`run_reader.bat`](file:///c:/StoryCrafter/run_reader.bat) provides a native command-line launcher with identical environment verification.
 - **Git Hygiene**: Always ensure `.gitignore` excludes `.venv/`, `venv/`, `__pycache__/`, and `.reader_config.json`.
+
+---
+
+## 11. NSFW / Explicit Fiction Standards — Explicit, Detailed, Arousing Mandate
+
+Use this section ONLY when the user explicitly requests NSFW, erotica, explicit, steamy, or crass sexual content. Otherwise default to non-explicit romance/sensuality.
+
+When activated, every NSFW scene MUST be explicit, detailed, and engineered to arouse the reader. Vague fade-to-black, coy euphemism, off-screen sex, or clinical summary is a failure. Write the act on-page, moment-to-moment, with sustained erotic tension from first touch to afterglow.
+
+### 11.1. Explicit Language Calibration
+- Default register when user asks for crass/explicit/detailed: direct anatomical and act language (cock, pussy, clit, nipples, balls, ass, come, suck, fuck, lick, thrust, grind, moan) — not clinical coldness (`genitalia`, `intercourse was achieved`), not coy euphemism (`his manhood`, `her flower`, `made love` as sole descriptor), not purple metaphor pile-up.
+- Mix registers for arousal: 70% direct physical + 20% dirty-talk voice + 10% raw sensory metaphor. Name body parts and what is done to them every 2-3 paragraphs minimum during the act.
+- Dirty talk must fit character voice per Section 4: terse characters grunt commands and praise; ornate characters croon filthy poetry; shy characters break into blurted need. Never give every character identical porn-script dialogue.
+
+### 11.2. Arousal Architecture — 5-Beat Escalation
+Structure every NSFW scene as escalating beats. Do not jump from kiss to climax:
+1. **Anticipation / Ignition**: charged proximity, undressing with friction (buttons, laces, sweat-stuck cloth), first deliberate touches, scent/taste establishment, verbal want stated out loud.
+2. **Foreplay Expansion**: hands, mouths, grinding — map arousal progression concretely: breath quickening, hardness swelling, nipples tightening, wetness slicking thighs, hips hunting for pressure. Tease, deny, edge at least once before penetration.
+3. **Escalation / Penetration or Peak Act**: entry / full-contact rhythm described thrust-by-thrust in bursts, not summarized. Vary pace: slow deep grind → fast hard slap → stuttering loss of control. Include position change with physical cost (aching knees, slipped footing, creaking cot, need for lube/rest).
+4. **Climax(s)**: orgasm is embodied, not announced. Show involuntary contraction, cry/whimper/gasp, pulsing, flooding warmth, shaking legs, nails digging, vision whiting. Stagger climaxes if multiple; no perfectly simultaneous Hollywood finish unless seeded as practiced lovers.
+5. **Afterglow / Sequel**: panting cooldown, stickiness, soreness, trembling, laughter or tender filth, cleanup (wipe, wash, piss, drink water), cuddling or banter that locks in emotional turn. Never end-cut at climax.
+
+### 11.3. Detail & Choreography Mandate — Be Explicit and Specific
+- **Moment-to-moment choreography**: track who is where, hands where, mouth where, legs where, clothing where (on floor, rucked up, torn aside). If a hand was on a hip, say when it slides to ass / hair / throat (consensual). No teleporting limbs.
+- **Body mechanics**: hardness, tightness, wetness, swelling, slip vs. friction, rhythm, depth, angle. When dry, add spit / lube / foreplay — never force dry penetration without pain cost.
+- **Sound**: kiss-smack, squelch, slap of skin, creak of frame, gasp, whimper, moan swallowed into shoulder, dirty-talk whisper/growl. At least 3 distinct erotic sounds per explicit scene.
+- **Smell / taste / texture**: salt sweat, musk, soap residue, leather, ale-breath, slick inner heat, stubble scrape, callused palms, silk vs. homespun abrasion. Mandated 3+ non-visual senses per explicit scene per Section 2.2 — applied to the sex itself, not just the room.
+- **Interior arousal POV**: braid physical sensation with filthy wanting thought — what they crave next, how good it feels, losing composure, brief shame-to-hunger flip. Avoid abstract labeling (`she felt aroused`); show pulse, ache, throb, clench, drool, beg.
+- **Duration on page**: explicit act gets 400+ words minimum per round even in a short chapter; multi-round chapters give each round its own texture (oral differs from grinding differs from penetrative) — never copy-paste rhythm with noun swaps.
+
+### 11.4. Reader Arousal Craft — How to Be Arousing, Not Just Graphic
+- **Tension before release**: delay gratification. Interrupt with eye contact, whispered dare, garment snag, noise-risk (someone might hear), then reward. Edge the reader as the characters edge each other.
+- **Rhythm mirrors act**: long languid sentences for undress / tease; short punchy fragments for hard thrusting / climax; ragged line breaks and repeated pleas (`please — please —`) at peak. Let syntax get breathless, then go soft and slow for aftercare.
+- **Power and want**: make desire active and mutual. Both parties hunger, grab, demand, praise. Avoid passive mannequin partner who just receives. Show who leads, who begs, who surrenders control consensually — and flip it at least once per scene for charge.
+- **Specificity arouses**: one exact image (`slick stringing between thighs when she lifts`) beats five vague ones (`it was amazing`). Choose visceral, achievable details over grandiose porn-cliché (`endless ecstasy`, `goddess-like`).
+- **Taboo-free heat**: lean into exhibition-risk, praise/degradation-lite (only affectionate/consensual: `good girl`, `mine`, `take it`), marking (hickeys, handprints that fade), taste/swallow, creampie only with protection logic intact — always keep it craved by both parties on-page.
+
+### 11.5. Anti-Fade-to-Black Prohibitions
+FAIL the draft if any appear in NSFW mode:
+- Cutaway lines: `they made love through the night`, `the rest was a blur`, `nature took its course`.
+- Single-paragraph summary for a requested explicit scene.
+- Euphemism-only anatomy (`core`, `heat`, `length` with no direct term anywhere).
+- Off-screen climax; arousal stated but never embodied.
+- Identical looped sentences (`it felt good, so good, so good`) to pad length.
+Repair by rewriting on-page: add hands/mouths/rhythm/sound/fluid/cleanup and at least one spoken line of want per 150 words of sex.
+
+### 11.6. Length Compliance
+- When user sets a per-chapter minimum (e.g. 1000 words min), draft to ~1100-1300 words to clear counting variance, then verify with a word-count (`Measure-Object -Word` / split count) before delivering.
+- Never pad with repetition. Expand via sensory anchors (3+ non-visual senses per explicit scene), dirty-talk variation, position change with physical cost, edge/denial beat, second round or prolonged foreplay, and Sequel beats (reaction/dilemma/decision).
+
+### 11.7. Multi-Chapter Single NSFW Scene — Extended Arc Framework
+
+Default remains **one scene = one chapter** unless a longer arc is earned. Sometimes — when the user explicitly requests it, when the outline declares it, or when realism/pacing demands it — a *single continuous sexual encounter* may proceed across 2-4 consecutive chapters. This is not separate hookups; it is one arousal chain with chapter breaks inside it.
+
+**11.7.1. When to Split vs. When Not To:**
+- SPLIT when: user asks for extended / slow-burn / interrupted / multi-round night; outline timeline shows <90 min in-world gap with sustained nudity/arousal; stamina realism requires rest/hydration/snack/shower bridge that deserves its own chapter; interruption (knock, text, cramp, condom break, noise-risk) creates earned Therefore/But suspense.
+- DO NOT SPLIT when: chapters are separated by days, location change with full redress, or resolved afterglow + sleep. That is a *new* scene, not a continuation. Never stretch one act past 4 chapters — fatigue kills arousal; close it and start fresh.
+
+**11.7.2. Three Sanctioned Patterns (declare one in outline):**
+1. **Interrupted & Resumed**: Act starts Ch N, is cut off mid-foreplay/mid-thrust by seeded interruption, resumes same positions/fluids in Ch N+1 after cover/masking beat. Interruption MUST be seeded (faulty lock, expected text, thin walls, dying battery) — never random cockblock ass-pull.
+2. **Continuous Night / Multi-Round Chain**: Round 1 in Ch N → Sustained Heat Bridge (cleanup + water + banter with hands still roaming) → Round 2/3 in Ch N+1/N+2, each round with distinct texture (oral vs. grinding vs. penetrative). Soreness, wetness, smell persist and compound.
+3. **Slow Tease Chain**: Anticipation in Ch N (grinding through clothes, undress friction) → Foreplay + edge/denial cliffhanger ending Ch N → Escalation/Climax in Ch N+1/N+2. Edge the reader exactly as characters edge each other.
+
+**11.7.3. Cross-Chapter Beat Mapping:**
+Map the 5-beat escalation from 11.2 across the arc in the outline — never repeat the full 1-5 per chapter:
+- Example 3-chapter arc: Ch N = Beats 1-2 (Ignition + Foreplay + edge denied) ending on erotic cliffhanger; Ch N+1 = Beat 3 (Escalation/Penetration + position change + first climax); Ch N+2 = Beats 4-5 (staggered second climax + full Afterglow/cleanup only here).
+- Each installment needs its own micro-turn (Hopeful → Ravenous, Control → Begging) AND an erotic cliffhanger unless it is the final installment: edge-denied plea, whispered dare (`don't come yet — wait till we're in bed`), garment half-off snag, noise-risk freeze, interruption knock.
+- Never close an intermediate chapter on resolved afterglow/sleep — that signals scene end. Use Sustained Heat Bridge instead: panting cooldown that re-ignites (wash that gropes, cuddle that grinds, snack fed mouth-to-mouth).
+
+**11.7.4. Hot Re-Entry — How to Open a Continuation Chapter:**
+- NO cold re-intro, NO dry recap paragraph, NO resetting to fully dressed/fresh. Open embodied, mid-state.
+- First 2-3 sentences = They-Left-Off Anchor shown through body: taste still on tongue, cock still slick, thighs still stringing, sheet still damp under ass, condom wrapper still stuck to knee — then immediate touch + spoken want line within 150 words.
+- Good: `Her spit hadn't dried on his throat when she climbed back on... "Where were we —" "Right here," he said, sliding...`
+- Bad: `Previously, they had started having sex on the couch. Now they continued.` (kills arousal, FAIL).
+
+**11.7.5. Continuity Ledger (track in outline + honor in prose):**
+Maintain across the whole arc with zero resets until final cleanup:
+- **Bodies**: hardness/wetness/swelling/soreness/trembling carry over; if soft between rounds, show realistic re-arousal work (mouths/hands, not instant re-hardening).
+- **Fluids & Mess**: sweat, spit, slick, come, smell (musk, salt, soap, latex) persist; wet spot moves with them (couch → floor → sheets); cleanup in final chapter must equal mess made.
+- **Clothing Map**: log strip order per chapter (what came off, where it landed, what stayed rucked/torn aside). If Ch N ended skirt rucked + panties on ankle, Ch N+1 opens that way — not mysteriously naked/dressed.
+- **Protection Assets**: condoms/lube seeded 1-2 scenes early; running count across arc (e.g. 3-pack: 1 used Ch N, 1 used Ch N+1, 1 left — track wrappers/bagged disposal). Never conjure mid-thrust.
+- **Space & Time**: timestamps contiguous (e.g. 4:15-4:50 → 4:50-5:30); room state persists (spilled popcorn, creaking cot, running shower, buzzing TV on mute).
+
+**11.7.6. Per-Installment Explicitness Minimums:**
+- Any chapter installment containing penetrative/oral/peak act gets 400+ words explicit on-page per round, same as 11.3 — no `they kept going for an hour` summary to bridge chapters.
+- Bridge-only chapters (rest/snack/shower that stays groping but no climax) still need 150+ words sustained erotic touch + dirty talk + sensory detail — never a sexless filler chapter inside an NSFW arc.
+- Total arc length obeys per-chapter minima (e.g. 1000 words min per chapter → each installment drafts 1100-1300 verified). Do not pad with repeated rhythms; differentiate each installment per 11.4 (pace, position, power flip, sound set).
+
+### 11.8. Outline Tagging for Multi-Chapter NSFW Arcs
+
+When planning an extended scene, declare it explicitly in `<story_name>/outlines/arc_outline.md` so drafting and auditing stay coherent:
+```markdown
+**NSFW-Arc: Ch03-Ch05 Single Scene [Pattern: Continuous Night]**
+- Ch03 Beats 1-2: couch ignition + foreplay, edge denied, ends condom on / first push cliffhanger
+- Ch04 Beats 3-4: floor reposition cost, Round 1 climax (staggered), bridge: shower wash-turned-grope
+- Ch05 Beats 4-5: bed Round 2 different texture, staggered climax, full afterglow/cleanup, protection count 2 used = 2 bagged
+- Ledger: clothing (tank on floor Ch03 → stays; skirt rucked Ch03 → off Ch04), mess (wet cushion → damp sheets), time 4:15-6:10 contiguous
+```
+If no `NSFW-Arc` tag exists, default to single-chapter containment. Auditors must FAIL any undeclared cross-chapter continuation that resets bodies, fluids, clothing, or protection count.
 

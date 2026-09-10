@@ -1,9 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
-title StoryCrafter Reader Launcher
+title StoryCrafter Web Reader
 
 echo ========================================================
-echo        StoryCrafter Sleek Desktop Book Reader
+echo        StoryCrafter Sleek Python Web Reader
 echo ========================================================
 echo.
 
@@ -60,12 +60,14 @@ if exist "requirements.txt" (
     ".venv\Scripts\python.exe" -m pip install -q -r requirements.txt
 )
 
-:: 5. Launch Reader App
-echo [LAUNCH] Starting StoryCrafter Desktop Reader...
-if exist ".venv\Scripts\pythonw.exe" (
-    start "" ".venv\Scripts\pythonw.exe" reader_app.py
+:: 5. Launch Web Reader App
+echo [LAUNCH] Starting StoryCrafter Web Reader...
+echo [INFO] Press Ctrl+C in this console window to stop the server.
+echo.
+if exist ".venv\Scripts\python.exe" (
+    ".venv\Scripts\python.exe" web_reader.py %*
 ) else (
-    ".venv\Scripts\python.exe" reader_app.py
+    python web_reader.py %*
 )
 
-exit /b 0
+pause
