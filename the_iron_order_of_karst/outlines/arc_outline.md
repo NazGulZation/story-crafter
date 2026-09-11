@@ -45,80 +45,81 @@ An eighteen-chapter structural beat sheet written strictly from the **First-Pers
 
 ---
 
-## Act II: The System Expands (Chapters 7–12)
+## Act II: The Arsenal of Karst (Chapters 7–12)
 
-### Chapter 7: The Liquidation of Adventurers
-- **Setting**: The High Street of Karst-Borough; cobblestones scrubbed clean, armed Black Cloak patrols in matching charcoal wool coats.
-- **Sensory Anchors**: Clank of steel-shod hobnail boots; faint smell of sulfur from the new smelters; smell of roasted chicory; chime of the curfew bell.
-- **The Conflict**: The Regional Chapter of the Adventurers' Guild sends an S-Rank liaison, "Sir Ronald the Swift," to demand the reopening of taverns, exemption from weapons taxes, and the right of adventurers to commandeer supplies.
-- **The Dark Comedy & Catharsis**: Ronald attempts to deliver a flowery speech about "the freedom of the blade" and draws his enchanted rapier to intimidate the room. Viktor does not flinch; he calmly cites Decree No. 04 (Illegal Brandishing of Edged Steel in a Class-1 Administrative Zone). Four Black Cloaks drop an iron chain-net over Ronald from the rafters and beat him unconscious with wooden truncheons. The Guildhall is seized, its vaults confiscated for state bullion, and its "heroes" assigned to drainage ditch excavation.
+### Chapter 7: The Liquidation of the Guild & The Heereswaffenamt
+- **Setting**: The High Street and renovated Guildhall of Karst-Borough; smell of hot hydraulic oil, coal smoke, and sulfuric acid.
+- **Sensory Anchors**: Deafening high-pitched whine of a rifling lathe; sulfur stench stinging the nostrils; metallic clink of brass cartridge cases; crack of a supersonic rifle test.
+- **The Conflict**: Ronald the Swift arrives with an S-Rank retinue, including elven arcane archers and battle-mages. Ronald sneers that simple pikes and crossbows can never breach his certified Class-4 Aegis Barrier or withstand magical lightning.
+- **The Turn & Ballistic Overwhelm**: Viktor does not debate mysticism. He presents the newly commissioned *Karst Pattern 1* bolt-action rifle from the *Heereswaffenamt* testing bench. A single 7.92mm spitzer projectile propelled by nitrocellulose powder at 820 m/s slams into Ronald's barrier. The 3,200 foot-pounds of concentrated kinetic force overloads the mana crystalline matrix in two microseconds, shattering the shield, splitting Ronald’s lightning rapier, and throwing him bleeding into the dust.
+- **The Consequence**: The Guild is liquidated. Arcane crystals and alchemical manuscripts are seized not for wizardry, but as chemical cracking catalysts and pyrolytic agents for munitions production. The *Heereswaffenamt* (Army Ordnance Office) is established.
 
-### Chapter 8: The Smoke of Progress
-- **Setting**: The Ironworks of Karst Valley; three blast furnaces spewing grey smoke into the overcast sky; roaring bellows powered by waterwheels.
-- **Sensory Anchors**: Deafening roar of molten iron tapping; sulfur stench stinging eyes; blisteringly hot air against freezing drizzle; clatter of standardized iron pike-heads cooling in oil.
-- **The System**: Viktor abolishes silver and copper coinage within the district. He issues *Arbeitschein* (Labor Scrip). The local economy achieves terrifying autarkic efficiency. Weapons, uniform tunics, and salted rations are produced in identical, interchangeable lots.
+### Chapter 8: The Smoke of Progress (The Industrial Forge)
+- **Setting**: The industrial basin of Karst Valley; five blast furnaces spewing ash, hydraulic deep-bore drilling shops, and chemical acid distillation towers.
+- **Sensory Anchors**: Roar of steam-driven drop hammers shaping armor plates; bitter vinegar bite of nitric acid; deafening clatter of automatic casing stamping presses; reek of coal-tar distillation.
+- **The Production Miracle**: Viktor institutes the *Arbeitschein* economy and standardizes interchangeable parts. The valley begins mass assembly: 500 *Karst Pattern 1* rifles per week, water-cooled *MG-08* machine guns, millions of brass cartridges, and the casting of 105mm field howitzers. In the testing yards, the first tracked prototype of the *Sturmwagen I* tank crawls across crushed limestone on clattering steel treads.
 
 ### Chapter 9: The Return of the Beggars
-- **Setting**: The mountain pass entering Karst territory; rotting snow, muddy trails, ruined pine stumps.
-- **POV / Perspective**: The "Silver Dawn" party (Marek, Clara, Isolde, Brigit) returns from a grueling three-month dungeon raid.
-- **Sensory Anchors**: Stench of unwashed armor and festering saddle sores; sour smell of stale wine skin; Clara's ripped velvet hem dragging in mud; Marek's cracked boot soles.
-- **The Misery**: Without Lorenz to carry supplies, forage, mend armor, and cook, their campaign was a logistical catastrophe. Marek spent all their gold on high-end ale in frontier taverns; Isolde ran out of spell components; Brigit has three arrows left; Clara has fleas. They limp toward Karst-Hold expecting to find the sleepy, drunken village where Marek can boast, drink on credit, and bed tavern girls.
+- **Setting**: The mountain defile leading into Karst Basin; rotting slush, freezing drizzle, towering brick smokestacks visible on the horizon.
+- **POV / Perspective**: The "Silver Dawn" party (Marek, Clara, Isolde, Brigit) returns from a disastrous three-month dungeon raid.
+- **Sensory Anchors**: Stench of festering saddle sores and unwashed iron plates; sour reek of spoiled rations; vibration of distant artillery proof-firing rattling their teeth; roaring whine of piston engines being tested in the valley below.
+- **The Misery**: Deprived of Lorenz's logistical labor, the party is starving, infested with lice, and out of spell components. Marek clutches a wyrm-heart crystal, boasting that his heroic strength and magical relic will buy them the lordship of Karst-Hold.
 
-### Chapter 10: State Checkpoint 4
-- **Setting**: Outer Gate of Sector 4; dual concrete-lime bastions, barbed timber abatis, searchlight towers powered by reflecting mirror lanterns.
-- **Sensory Anchors**: Glare of magnesium oil lamps; barking of trained shepherd hounds; rasp of an iron gate lifting; cold, mechanical voices of Black Cloaks demanding papers.
-- **The Clash**: Marek struts to the gate, flips his chestnut hair, and announces: "Make way, peasants! Marek the Gilded and the Silver Dawn have returned with the Wyrm-Heart crystal!"
-- **The Bureaucratic Wall**: The sentry, Corporal Brandt, does not blink. "Transit vouchers. Identity booklets. Agricultural import declaration." Marek attempts to push past; the sentry blows a brass whistle. Within four seconds, twelve crossbows are leveled at Marek's chest. Marek draws his greatsword in fury and is immediately dropped by a blunt lead-weighted net and pummeled into the gravel. The girls scream in horror as they are pinned, disarmed, and cuffed in cold iron.
+### Chapter 10: State Checkpoint Four
+- **Setting**: Outer Perimeter Checkpoint 4; reinforced concrete pillbox network, barbed-wire aprons, searchlight towers, and tank traps.
+- **Sensory Anchors**: Choking diesel/coal-gas exhaust from an idling *Sturmwagen* tank; cold mechanical hum of dynamo searchlights; metallic click of twenty rifle bolts chambering rounds; oily sheen of a water-cooled heavy machine gun water jacket.
+- **The Clash**: Marek struts forward, drawing *Dawn-Sunderer* and flaring his "Heroic Aura," demanding immediate entry.
+- **The Mechanical Wall**: Sentry Corporal Brandt doesn't blink. When Marek attempts to barge through, a short three-round burst from the tripod-mounted machine gun kicks up concrete chips at his boots. The idling *Sturmwagen* pivots its sloped-armor chassis, traversing its 75mm cannon directly at Marek's chest with an earth-shaking rumble. The hydrostatic shockwave and concussive roar shatter Marek's aura. The party is surrounded, disarmed, and clamped in industrial steel cuffs.
 
-### Chapter 11: The Processing Cells
-- **Setting**: Quarantine Block C; stark white lime-washed walls, iron benches bolted to the floor, smell of carbolic acid and strong lye soap.
-- **Sensory Anchors**: Cold shock of high-pressure well-water hoses; reek of vinegar delousing dip; rough scratch of coarse grey convict smocks; scrape of steel leg-irons on slate.
-- **The Revelation**: The girls are shaved for lice, their perfumes and silks bagged as "contraband bourgeois vanity assets," and marched into Interrogation Room 1.
-- **The Confrontation**: Sitting behind the iron table under a harsh lantern is Lorenz Falk—now Supreme Commander Vogel. He is wearing a tailored charcoal high-collar tunic with silver lapel tabs. Clara gasps, weeping: "Lorenz! Oh, gods, Lorenz! You survived! Tell these brutes who we are!"
-- **The Cold Response**: Viktor does not look up from his ledger. "Prisoner Falk, Lorenz, is legally deceased per administrative record 01-A. You are currently speaking with the Supreme Directorate. State your names, places of origin, and agricultural or metallurgical qualifications."
+### Chapter 11: The Processing Cells & Technical Audit
+- **Setting**: Quarantine Block C and Directorate Technical Office; smell of carbolic acid, pungent lye, and gun-oil.
+- **Sensory Anchors**: Shock of icy chemical delousing spray; scrape of heavy shears cutting lice-ridden hair; scratching steel nib on bureaucratic tally sheets; hiss of a steam radiator.
+- **The Confrontation**: Shorn of silks and vanity, the party faces Viktor Vogel across a steel table. Clara weeps, pleading childhood memories. Isolde boasts of her elemental fire supremacy.
+- **The Cold Audit**: Viktor evaluates them strictly through engineering physics: Isolde’s pyromancy is quantified in thermal BTUs and assigned to catalytic fuel cracking towers; Brigit’s acute stereoscopic vision is assigned to the Optical Directorate for bombsight and artillery rangefinder calibration; Clara’s cellular acceleration is assigned to industrial burn triage; Marek’s physical bulk is graded as biological horsepower for heavy munitions handling.
 
-### Chapter 12: The Horns of the Karst Horde
-- **Setting**: The parapets of the Outer Ring; freezing sleet turning to black hail; distant rumble of tribal war-drums across the valley.
-- **Sensory Anchors**: Deep, chest-rattling boom of bronze kettledrums; smell of ozone and burning pitch; vibration of stone parapets under heavy march.
-- **The Emergency**: A massive steppe coalition of 6,000 horse-nomads and hill barbarians descends upon the Karst Basin, intending to pillage the frontier before winter.
-- **The Mobilization**: Viktor does not panic. The sirens sound. Within seven minutes, 2,500 trained militia assemble in silent, uniform companies. The penal battalions—including Marek in wooden clogs—are marched to the reserve trenches to haul ammunition boxes.
+### Chapter 12: The Horns of the Karst Horde & The Allied Host
+- **Setting**: The parapets of the Outer Ring; sub-zero wind carrying coal smoke and the distant thunder of bronze barbarian war horns.
+- **Sensory Anchors**: Heavy vibration of the earth under advancing infantry columns; smell of synthetic fuel and hot machine oil; metallic clanking of tank caterpillar tracks deploying to the forward revetments.
+- **The Threat**: A grand coalition of 8,000 steppe reavers, highland war-trolls, mercenary battle-mages, and High Elven wind-ward archers descends upon the basin, confident their magical shields and giant beasts will overwhelm the frontier.
+- **The Mobilization**: Viktor issues General Operational Directive 12: Combined Arms Deployment. The 1st Mechanized Rifle Regiment occupies the trench line; two batteries of 105mm howitzers and 88mm high-velocity guns unlimber; a company of *Sturmwagen* tanks takes hull-down positions; and *Black-Wing Flight Eins* readies its dive-bombers on the limestone runway.
 
 ---
 
-## Act III: Total Purification & The New Order (Chapters 13–18)
+## Act III: Total Mechanization & The Black Sun (Chapters 13–18)
 
-### Chapter 13: The Industrial Grinder
-- **Setting**: The Killing Grounds of the North Basin; interlocking trench lines, triple-layered barbed abatis, pre-sighted mortar batteries.
-- **Sensory Anchors**: Deafening concussive thuds of sulfur-bombard mortars; spray of mud and bone; mechanical rhythm of crank-loaded heavy crossbows firing in continuous rolling volleys; smell of scorched blood and wet clay.
-- **The Slaughter**: The horde charges with terrifying barbarian battle cries, expecting a glorious melee. They slam into an immovable, industrialized slaughterhouse. They never reach the walls. Mortars tear their cavalry to shreds; interlocking pike-walls impale the remnants.
-- **The Shock**: Marek, shivering in the ammo trench, watches in unadulterated horror as the "heroic combat" he built his life upon is rendered completely obsolete by mass-produced logistics, geometry, and discipline.
+### Chapter 13: The Industrial Grinder (Combined Arms Blitzkrieg)
+- **Setting**: The Killing Grounds of the North Basin; barbed-wire belts, pre-sighted artillery grid stakes, frozen mud churned by steel tracks.
+- **Sensory Anchors**: Bone-splintering thunder of massed 105mm howitzers; horrific mechanical wail of Close Air Support dive sirens; acrid reek of burning cordite and shredded troll flesh; rhythmic hammering of heavy machine gun belts.
+- **The Total War**: The elven mages erect a shimmering dome of arcane warding. Viktor unleashes the Military-Industrial Complex:
+  1. The 105mm battery pours high-explosive shells into the dome. The kinetic saturation exhausts the mages' mana in minutes, rupturing their cranial blood vessels from magical back-pressure.
+  2. *Sturmwagen* tanks roll forward, their 75mm cannons blowing war-trolls apart with armor-piercing high-explosive shells while machine guns sweep the barbarian cavalry into red mist.
+  3. Close Air Support dive-bombers plunge from the grey overcast with screaming sirens, dropping 250kg bombs onto the coalition’s command pavillons and strafing the survivors with twin 20mm wing cannons.
+- **The Collapse**: Marek, hauling 105mm artillery shells in the supply ditch under armed guard, watches in utter existential horror as the entire heroic fantasy world is wiped out by industrial mechanics.
 
 ### Chapter 14: The Trial of the Gilded Parasite
-- **Setting**: The Assembly Yard of Karst-Hold under a freezing grey sky; 3,000 assembled workers and soldiers standing in silent ranks.
-- **Sensory Anchors**: Bitter mountain wind whistling through iron cables; creak of the wooden dock; scrape of Marek's shackles as he is dragged to the iron podium.
-- **The Indictment**: Viktor reads the charges against Marek. Not "stealing my companions"—such sentimental drivel has no legal standing. The charges are: Gross Endangerment of Strategic Frontier Security, Unlicensed Weapon Transit, Black Market Coin Trafficking, and Parasitic Non-Productive Social Vagrancy.
-- **The Sentence**: Marek begs, boasts of his greatsword skill, and offers to serve as Viktor's champion. Viktor looks at him like a specimen in a jar. "The state has no need for individual champions. The state requires caloric output. Sentence: Perpetual labor reallocation to the Deep Anthracite Seam." Marek is dragged away screaming, his golden hair caked in coal sludge.
+- **Setting**: The Arena of the Black Sun; five thousand assembled foundry workers and soldiers eating warm pork sausages and drinking subsidized beer.
+- **Sensory Anchors**: Clink of tin beer flagons; roar of cheering workers; rumble of an industrial steam crane in the arena center; scrape of Marek's heavy leg-shackles against stone.
+- **The Indictment**: Viktor reads Marek's charges to the roaring crowd: Parasitic Social Vagrancy, Armed Treason, and Gross Energy Inefficiency.
+- **The Demonstration & Sentence**: To extinguish any remaining romantic myths, Marek is pitted in an iron-cable pull against the steam crane. The machine pulls him face-first into the gravel in four seconds. Marek is sentenced to the high-sulfur coking gasifiers, hauling fuel to melt armor steel for the next tank battalion.
 
-### Chapter 15: Labor Reallocation
-- **Setting**: The Directorate Reassignment Bureau; cold slate desks, gas lamps, click of abacuses.
-- **Sensory Anchors**: Smell of damp woolen uniforms; quiet sobs of Clara; scrape of steel nibs on official parchment; steam rising from tin cups of mint tea.
-- **The Appeal**: Clara, Isolde, and Brigit are brought before Viktor for sentencing. Clara kneels, crying, invoking their childhood in the village: "Lorenz... please. Look at me! We played by the river! I was foolish, I was blinded by Marek, but my heart was always yours!"
-- **The Cold Audit**: Viktor reviews their dossiers without looking into Clara's eyes. He calculates the 1,400 silver florins Lorenz spent on her education, contrasted with her zero net contribution to public hygiene. "Sentimentality is a luxury for societies with surplus grain. We have no surplus."
-- **The Allocation**: Clara is assigned to the Field Dysentery Ward as a bedpan washer; Isolde’s magical fire is harnessed via dampening runes to maintain heat in Blast Furnace No. 2; Brigit is assigned to Timber Clearance Unit 4. They are marched out in silence, their tears ignored by the unblinking guards.
+### Chapter 15: Labor Reallocation (The War Engine)
+- **Setting**: The Directorate Allocation Bureau and Central Munitions Complex; clatter of typewriter keys and roar of distant rolling mills.
+- **Sensory Anchors**: Scent of zinc ointment, scorched linen, and hot aviation fuel; hiss of steam valves; quiet sobs of Clara wiping grease from a worker’s blistered hand.
+- **The Reality**: Clara works in the Munitions Burn Ward, treating acid-splashed lathe operators; Isolde, encased in asbestos overalls, channels her magical flame into the catalytic tower cracking coal tar into high-octane aviation fuel; Brigit meticulously tests optical lenses for tank periscopes and dive-bombing reticles, earning her double rations through uncomplaining diligence.
+- **The Cold Audit**: Clara tries to beg Viktor for mercy and love. Viktor presents her with the weekly hospital survival chart, showing that her cellular magic has saved forty-eight machinist lives. Her value is now measurable; romantic indulgence is obsolete.
 
-### Chapter 16: The Submission of the Aristocracy
-- **Setting**: The Great Gate of Karst-Hold; crisp winter snow falling on immaculate basalt paving.
-- **Sensory Anchors**: Jingling silver spurs of the Count's emissaries; heavy snort of purebred southern coursers; steam rising from nostrils; absolute, deathly silence of 1,000 Black Cloak rifle-crossbowmen standing motionless along the battlements.
-- **The Confrontation**: Count Leopold arrives with eighty gilded knights to demand the return of his "runaway serfs" and the payment of three years' back-taxes.
-- **The Capitulation**: Viktor does not bow. He brings the Count to the parapet, shows him four pre-sighted heavy iron siege mortars aimed directly at the Count's unarmored encampment, and hands him a certified annexation treaty. The Count, trembling in his ermine-lined cloak, realizes he is not speaking with a rebel peasant, but an industrialized war-machine. The treaty is signed with frozen fingers.
+### Chapter 16: The Submission of the Aristocracy & The Live-Fire Proving Ground
+- **Setting**: The Western Proving Ground of Karst-Hold; frozen limestone firing range, biting winter wind.
+- **Sensory Anchors**: Smell of burnt nitrocellulose; sharp high-frequency snap of supersonic 88mm shells; terrifying shriek of a Close Air Support dive-bomber leveling out at tree-top height; trembling silver spurs of Count Leopold and the High Elven envoys.
+- **The Demands**: Count Leopold and high elven ambassadors arrive with gilded knights and court sorcerers, demanding the restoration of feudal dues and the prohibition of "blasphemous mechanical crafts."
+- **The Demonstration**: Viktor does not argue. He orders a live-fire fire mission: an 88mm battery obliterates three reinforced granite bunkers at two miles; a platoon of *Sturmwagen* tanks traverses a trench network while firing accurate 75mm rounds on the move; a dive-bomber drops a 250kg bomb onto a target redoubt, turning the stone hill into a crater of flaming rubble. Leopold and the elven envoys sign total unconditional treaties of raw material supply and state vassalage with shaking hands.
 
-### Chapter 17: The Consecration of the Black Citadel
-- **Setting**: The Central Bunker Complex of Karst-Hold, deep subterranean granite halls lit by phosphorescent lime-lamps.
-- **Sensory Anchors**: Deep hum of ventilation fans powered by subterranean waterwheels; scent of cool dry granite and gun-oil; rhythmic clatter of mimeograph printing presses producing ration coupons.
-- **The Autarky**: The entire Karst Basin is now a self-contained fortress state. Grain stores are filled for four years; iron production outpaces the imperial capital; crime is statistically zero because every citizen is accounted for every hour of the day.
+### Chapter 17: The Consecration of the Subterranean Citadel
+- **Setting**: The Subterranean Fortress of Karst-Hold; vast granite caverns illuminated by electric arc lamps, subterranean rail tracks, and blast doors.
+- **Sensory Anchors**: Deep mechanical vibration of ventilation turbines; pungent smell of cutting fluid, hot lead, and engine grease; rhythmic staccato of automated cartridge-loading machines.
+- **The Fortress State**: The basin is transformed into an impenetrable military-industrial citadel: underground assembly lines for tanks, cavernous hangars with pneumatic launch catapults for Close Air Support aircraft, and concrete flak towers armed with dual 88mm guns overlooking every mountain pass. Total self-sufficiency in steel, fuel, food, and high explosives is achieved.
 
 ### Chapter 18: No Hope Under the Black Sun
-- **Setting**: The Grand Bastion of Karst-Hold at winter solstice; a black iron eclipse partially veils the pale sun.
-- **Sensory Anchors**: Biting sub-zero wind that numbs cheekbones; crunch of frozen snow beneath polished leather boots; deafening thunder of 10,000 iron-heeled boots snapping to attention in unison; smell of pine resin and sulfur.
-- **The Epilogue**: Supreme Commander Viktor Vogel walks the high ramparts, reviewing his endless grey battalions. Down in the valley, smoke rises from orderly chimneys; in the distance, former heroes and bandits push wheelbarrows of slag in productive silence.
-- **The Final Realization**: A land that was once a chaotic, miserable, predatory fantasy wasteland has been completely transformed. It is devoid of romance, devoid of heroes, and devoid of joy—yet perfectly fed, perfectly defended, and absolutely ordered. Viktor permits himself a single, cold, imperceptible smirk. The thousand-year order has begun.
+- **Setting**: The Grand Parade Ground of Karst-Hold at winter solstice; a black iron eclipse veiling the pale sun.
+- **Sensory Anchors**: Sub-zero wind rattling iron banner cables; synchronized crash of twenty thousand steel-shod jackboots; deafening mechanical roar of three tank battalions idling in formation; low-altitude roar of an entire wing of Close Air Support dive-bombers sweeping overhead.
+- **The Climax**: Supreme Commander Viktor Vogel surveys his mechanized legions. The age of knights, wandering adventurers, magical nobility, and chaotic feudal misery has been permanently extinguished. In its place stands the unyielding, clockwork Military-Industrial Complex of the Black Sun. Viktor checks his wrist, adjusts his charcoal collar, and delivers the final administrative directive for continental expansion.

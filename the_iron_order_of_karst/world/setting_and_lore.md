@@ -48,7 +48,7 @@ Upon seizing the derelict fortress of Karst-Hold, Supreme Commander Viktor Vogel
 
 Viktor understands a foundational psychological truth: **Repression alone breeds resentment, and when men resent, the assassin's blade inevitably follows.** 
 
-A puritanical state that bans all song, laughter, and alcohol creates an unsustainable psychological pressure cooker. Learning from the ancient Roman masters of imperial longevity, Viktor establishes a state monopoly over **Food and Entertainment**:
+A puritanical state that bans all song, laughter, and alcohol creates an unsustainable psychological pressure cooker. Learning from the ancient imperial masters of statecraft, Viktor establishes a state monopoly over **Food and Entertainment**:
 
 1. **The People’s Beer Halls (*Volkshallen*)**:
    - Shuttering illicit, crime-ridden drinking dens, the State constructs clean, heated communal beer halls.
@@ -72,3 +72,37 @@ A puritanical state that bans all song, laughter, and alcohol creates an unsusta
 3. **The Unforgivable Red Line: Deliberate Betrayal & Treason**:
    - Incompetence can be educated; physical weakness can be trained; honest errors can be drilled away.
    - But **conscious, deliberate bad faith, intentional contract breach, sabotage, and treasonous betrayal** are categorized as fatal social cancers. Those who knowingly stab their benefactors in the back are stripped of their vanity and harnessed to the unyielding gears of the penal labor grid.
+
+---
+
+## 6. The Military-Industrial Complex & Anti-Magic Warfare
+
+In a fantasy realm inhabited by high-tier spellcasters, elven barrier-weavers, and colossal beasts, conventional medieval arms (swords, shields, spears, and low-velocity crossbows) are mathematically obsolete. A single master pyromancer or elven arcane ward can deflect a hundred arrows or incinerate a company of charging pikemen.
+
+To conquer and pacify this chaotic realm, Supreme Commander Viktor Vogel institutes the **Military-Industrial Complex** (*Der Militärisch-Industrielle Komplex*), mobilizing the raw geology of the Karst Basin into an unyielding, mechanized total-war engine:
+
+### 1. The Physics of Anti-Magic Kinetic Overload
+- **The Finite Mana Constant**: Arcane wards and magical barriers absorb kinetic energy through personal mana expenditure. Every joule of impact forces a metabolic drain on the caster's circulatory vessels and mana reserves.
+- **Continuous Ballistic Saturation**: A high-velocity spitzer bullet (800 m/s) delivers 3,200 foot-pounds of concentrated kinetic energy on a surface area of mere millimeters. When subjected to continuous rolling volleys from bolt-action service rifles or water-cooled machine guns firing 600 rounds per minute, the caster's mana barrier exhausts its crystalline lattice within fractions of a second. The caster suffers fatal neuro-vascular rupture and hydrostatic shock.
+- **Hydrostatic Concussive Rupture**: High-explosive artillery shells generate atmospheric overpressure waves exceeding five hundred pounds per square inch. While an arcane shield may deflect solid shrapnel, the concussive pressure envelope transmits through the barrier, liquefying the mage's internal lungs and eardrums.
+
+### 2. The Four Pillars of the Karst War Machine
+1. **Infantry Ballistics (*Heereswaffenamt*)**:
+   - **Karst Pattern 1 Service Rifle**: Standardized bolt-action rifle firing 7.92×57mm nitrocellulose cartridges with high-velocity lead-core copper-jacketed spitzer projectiles. Standard issue to all infantry cohorts.
+   - **Heavy Machine Gun Pattern 08 (*Schweres Maschinengewehr*)**: Water-cooled, belt-fed, continuous-fire suppression weapon mounted on rigid trench tripods. Creates impenetrable kinetic kill corridors against charging beast swarms and infantry masses.
+   - **Interchangeable Standardization**: Every barrel rifled to exact tolerances on hydraulic lathes; every brass casing stamped in identical batches; every firing pin swappable between rifles in the field.
+2. **Ordens-Artillerie (Heavy Ordnance & Siege Batteries)**:
+   - **105mm Light Field Howitzer**: Delivering twenty-eight-pound high-explosive and fragmentation shells up to ten kilometers, saturating enemy concentrations with pre-sighted mathematical grid fires.
+   - **88mm High-Velocity Dual-Purpose Cannon**: Long-barrel anti-monster and anti-barrier gun capable of direct-fire armor piercing and high-altitude air-bursts against flying monsters.
+3. **Panzer-Abteilung (*Sturmwagen* Tanks)**:
+   - Tracked armored fighting vehicles clad in sixty-millimeter sloped rolled-homogeneous steel plates.
+   - Powered by six-cylinder internal combustion engines running on synthesized coal-gas and distilled shale oil.
+   - Armed with a turret-mounted 75mm high-velocity cannon and twin coaxial machine guns. Impervious to elven enchanted arrows, fire cantrips, and beast claws, advancing across trenches to crush enemy defensive lines under heavy steel caterpillar treads.
+4. **Luft-Direktorat (Close Air Support - CAS)**:
+   - **Black-Wing Ground-Attack Aircraft (*Sturzkampfflugzeug*)**: Inverted gull-wing, single-engine monoplanes powered by supercharged liquid-cooled aero-engines burning synthetic aviation spirit.
+   - Equipped with mechanically driven diving sirens that emit an ear-splitting psychological wail during steep dives.
+   - Armament: Twin wing-mounted 20mm automatic cannons for raking infantry ranks and spellcaster covens, plus a centerline 250kg high-explosive blast bomb dropped with pinpoint ballistic accuracy onto enemy command tents, elven barrier hubs, and giant siege monstrosities.
+
+### 3. Mana Crystals as Chemical Reagents
+- Rather than worshipping arcane crystals as mystical relics, the Directorate treats them as high-density chemical catalysts.
+- Ground into fine powder, mana crystals serve as pyrolytic cracking catalysts in the synthetic fuel refineries, accelerating the transformation of raw coal tar into high-octane aviation fuel and stabilizing smokeless cordite propellant blocks.

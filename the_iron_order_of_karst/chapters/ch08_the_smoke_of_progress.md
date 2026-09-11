@@ -1,139 +1,93 @@
 # Chapter 8: The Smoke of Progress
 
-Artisanship is an insult to industrial geometry.
+The true sovereign of modern territory is the machine tool.
 
-In a decadent feudal economy, a blacksmith spends three weeks hammering a single iron broadsword. He engraves the fuller with religious runes, adorns the pommel with a brass lion's head, drinks four flagons of ale, and charges a merchant twelve silver florins for a weapon with an uneven temper and a two-millimeter lateral warp.
+Feudal dukes believe power resides in bloodlines, heraldic griffins, and ancient oaths sworn over ivory relics. In reality, power is an equation of metallurgy, chemical synthesis, and caloric throughput. A kingdom of ten thousand knights in gilded breastplates is merely eighty metric tons of scrap pig-iron walking toward an industrial slaughterhouse.
 
-He calls this "craftsmanship."
+Within ninety days of liquidating the Adventurers' Guild, the eastern valley of Karst-Hold was transformed into the primary production basin of the *Heereswaffenamt*.
 
-I call it a criminal misallocation of coal and human caloric energy.
+Five blast furnaces, fueled by anthracite coke from the deep adits, breathed columns of orange flame and black particulate smoke into the low, leaden clouds. The river had been channeled through masonry sluices, spinning five heavy water-turbines that powered the overhead driveshafts of the central machine works.
 
-By the start of the third month, the southern gorge of the Karst Basin had ceased to be an unmapped pine forest. It had become *Industrial Sector 1: The Blast Complex*.
+I walked the inspection catwalk of Plant No. 1. The air inside the brick hall tasted of boiling lubricating oil, sulfur, and the sour chemical sting of nitric acid vapors drifting from the munitions plant next door.
 
-Three forty-foot blast furnaces, constructed of refractory fire-brick quarried by Forced Labor Unit Beta and bound with hydraulic lime mortar, rose like dark basalt monoliths against the grey mountain sky. Driven by four heavy wooden waterwheels diverted from the River Sunder, massive leather bellows—eight feet wide, reinforced with iron ribs—pumped continuous, deafening blasts of forced air into the hearths.
+Sergeant Major Kester walked half a pace behind me, his boots ringing rhythmically on the perforated iron grating.
 
-The valley roared.
+Below us, two hundred disciplined workers in charcoal canvas smocks moved with synchronized cadence along the assembly tracks.
 
-The air trembled with the steady, concussive, eighteen-hundred-degree heartbeat of mass metallurgy. The magnificent, throat-coating stench of sulfur, hot slag, anthracite coke, and boiling mineral quench-oil smothered the pine forest.
+“Report the daily output, Sergeant Major,” I commanded.
 
-I stood on the elevated timber catwalk thirty feet above the casting floor, leaning against the iron railing. My storm-coat was unbuttoned at the throat; the ambient heat radiating from Furnace No. 2 was eighty-five degrees Fahrenheit, a blistering contrast to the freezing mountain sleet beyond the corrugated zinc eaves.
+Kester opened a zinc-bound ledger. His voice was clipped, carrying cleanly over the deafening mechanical thud of the drop hammers.
 
-Beside me stood Master Founder Torvald—formerly a village smith who had made plowshares for turnips, now Chief Inspector of the Central Ordnance Foundry.
+“Shift Alpha and Shift Beta completed three hundred and twenty *Karst Pattern 1* service rifles in the past twenty-four hours, Supreme Commander. The hydraulic rifling lathes are operating within four-micron tolerances. Barrel rejection rate has dropped to one point two percent.”
 
-Torvald wore an apron of split bull-hide, thick green-tinted spectacles to shield his retinas from the molten glare, and held an iron measuring gauge in his soot-blackened hands. He looked terrified, exhausted, and profoundly awed.
+“The cartridge drawing line?”
 
-“Tapping in sixty seconds, Supreme Commissary,” Torvald shouted over the roar of the bellows.
+“Operational across all three shifts,” Kester reported. “The hydraulic stamping presses are drawing fifty-five thousand 7.92mm brass casings daily. The nitration vats are producing three tons of stabilized guncotton per week. We have accumulated four hundred thousand finished rounds in the moisture-sealed central magazines.”
 
-“Tolerance variance on the latest batch of pike-sockets?” I asked, checking my ledger.
+I nodded once, observing the stamping line. A massive mechanical press slammed down onto a sheet of annealed brass with a thunderous *CHUNG-CLANK*, punching out twenty identical cartridge blanks every four seconds. A teenage machinist, wearing safety goggles and thick leather gloves, caught the ejector tray and fed the brass cups into the drawing die.
 
-“Zero point zero four inches, sir!” Torvald barked proudly, snapping his heels together with the nervous twitch that now infected every supervisor in Karst. “Every socket fits the standardized ash shafts down to the sixteenth of an inch! If a soldier breaks a shaft in the field, he can unscrew the head and seat it on a fresh stave in twelve seconds!”
+Every worker received three thousand two hundred calories of hearty rye bread, salted bacon, and cabbage broth daily. Every worker received thirty-five *Arbeitschein* scrip coupons at the end of the week, redeemable at the municipal commissary for warm woolens, boots, and flagons of cold *Volksbier* at the Volkshalle.
 
-“Interchangeability,” I noted. “The foundational axiom of modern combat logistics. Proceed with the tap.”
+Efficiency was high because health was preserved. Accidents were treated immediately in the factory clinic with antiseptic carbolic wash. Negligence was penalized by dockage of beer rations; punctuality and precision earned butter vouchers and extra tobacco.
 
-Torvald leaned over the railing and blew a heavy iron horn.
+We descended the iron spiral staircase into the heavy engineering bay—Sector Epsilon.
 
-*HOOOOORN.*
+The temperature rose twenty degrees. The reek of coal-tar distillation and heavy grease thickened in the throat. Here, the concrete floor was reinforced with eight inches of basalt ballast to withstand monstrous weights.
 
-On the casting floor below, three laborers—wearing wet canvas hoods and heavy leather leggings—stepped forward with twelve-foot iron tamping bars. With synchronized, rhythmic strikes, they punched out the clay plug at the base of Furnace No. 1.
+Resting upon heavy timber cribbing was a mechanical titan that existed nowhere else in this magical realm.
 
-A torrent of blinding, liquid orange-yellow iron burst from the tap-hole.
+It was an angular, box-like hull constructed of sixty-millimeter sloped rolled-homogeneous steel plates, joined by heavy cold-rivets and electric bead welds. Beneath its steel belly ran twin articulated caterpillar track assemblies, forged of interlocking manganese-steel track shoes wrapped around heavy road wheels and torsion-bar suspensions.
 
-It hissed violently as it surged down the sand-lined casting trenches, illuminating the dark, cavernous timber rafters with the glare of miniature suns. Heat washed up against my face, dry and scorching, smelling of raw earth turned to liquid fury. The molten iron flowed into two hundred pre-cast sand molds: standardized crossbow stirrups, leaf-shaped pike-heads, and rectangular armor plates.
+Projecting from the revolving hexagonal steel turret was the blued, stepped barrel of a 75mm high-velocity ordnance cannon, flanked by the perforated water jacket of an MG-08 heavy machine gun.
 
-Among the laborers wheeling five-hundred-pound iron barrows of crushed limestone flux to the furnace maw was Labor Asset 04-S—formerly known as "Sir Ronald the Swift."
+The *Sturmwagen Model I*.
 
-His peacock-slashed silk doublet had long since rotted into rags. He was stripped to the waist, his pale, aristocratic skin blistered red from slag-spatter and caked in black anthracite soot. His hands, once soft and scented with almond oil, were covered in thick, bleeding calluses as he strained against the wooden barrow handles.
+Chief Engineer Vogel-Werke Meister Halder stood beside the engine compartment, wiping grease from his calloused forearms with a kerosene-soaked rag. He snapped to rigid attention as my boots hit the concrete floor.
 
-Every twenty seconds, he wiped sweat and soot from his eyes, groaning under the weight, glancing in terror at the overseer’s notched pine stick.
+“Supreme Commander!” Halder barked.
 
-He was moving eighty pounds of flux per minute. His physical velocity had indeed reached an optimal trajectory.
+“Status of the powertrain, Meister Halder,” I directed.
 
-At 1500 hours, I descended the catwalk stairs to the newly erected *Monetary Standardization Office* beside the foundry gate.
+“The six-cylinder internal combustion engine is seated, sir,” Halder reported, tapping the heavy iron cylinder block. “We completed the test runs on synthesized fuel. By using the pulverized mana crystals seized from the Guild vaults as catalytic cracking agents in the coal-tar retorts, we achieved eighty-five octane synthetic petroleum. The engine delivers one hundred and eighty horsepower at two thousand revolutions per minute.”
 
-Inside, behind an iron-barred counter, sat Director Weidmann and three scribes.
+“Start the engine,” I said.
 
-On the table before Weidmann lay three wooden crates filled with confiscated gold sovereigns, silver florins, and copper pennies—the accumulated private coinage seized from Gunter’s warehouse, the Adventurers' Guild vaults, and the toll-takers of Blood-Ridge.
+Halder climbed onto the rear deck, engaged the inertia starter, and cranked the external flywheel with a steel bar. An assistant flipped the magneto switch.
 
-A queue of forty local workers stood before the counter: blacksmiths, brick-molders, timber-fallers, and farm-hands.
+The engine sputtered once, coughed a ring of black oily exhaust into the overhead ventilation hood, and caught with an ear-splitting, mechanical roar.
 
-“Next citizen,” Weidmann announced, dipping his iron pen into black ink.
+*VRRRRR-RUMBLE-RUMBLE.*
 
-A burly charcoal-burner stepped forward, wiping soot from his forehead with a dirty sleeve. He placed a small tin token on the counter.
+The concrete floor beneath our boots vibrated with violent, rhythmic power. The sound was an unholy concussive thrum that rattled teeth in jaws and sent a flock of ravens scattering from the high corrugated iron roof.
 
-“Citizen 412,” Weidmann checked the ledger. “Eighty-four hours logged at Charcoal Kiln 3. Metric output: twelve tons of processed anthracite coke. Deduction: zero hours absent without leave. Medical deductions: zero.”
+Kester’s eyes widened slightly. For a man raised in a world where horses and oxen were the sole movers of iron, the sheer, relentless vitality of a hundred and eighty mechanical horses contained inside a steel vault was terrifying.
 
-Weidmann reached into an iron strongbox and pulled out a clean, rectangular slip of thick parchment.
+“The tracks,” I ordered.
 
-It was not a coin. It was *State Labor Scrip*—an *Arbeitschein*.
+Halder reached into the driver’s cabin, engaged the main clutch, and shifted the planetary transmission into first gear.
 
-The slip was stamped with the Twelve-Spoked Iron Wheel in black printer’s ink, featuring two distinct numerical denominations:
-- *Face Value: 12 Units*.
-- *Redemption Guarantee: Equivalent to 12 Kilograms of Standard Rye Flour OR 36 Liters of Clean Drinking Water OR 4 Kilograms of Refined Salt Pork*.
+*CLANK-SCRAPE-CRUNCH.*
 
-The worker accepted the parchment with trembling, respectful hands, turning it over to inspect the crisp, clean printing.
+The left track engaged. The heavy manganese-steel shoes bit into the concrete, gouging white scars into the basalt floor as forty metric tons of armored steel lurched forward three paces under its own propulsion.
 
-“No... no silver, Master Notary?” the worker asked, his voice hesitant.
+“Armor performance test results?” I asked, leaning over the sloped glacis plate.
 
-Weidmann peered over his brass spectacles, his thin mouth tightening into a severe line.
+Halder pulled a certified ballistic test coupon from his tool chest.
 
-“Silver is a soft, useless metal with an erratic fluctuating value driven by southern noble debauchery,” Weidmann stated with icy condescension. “Can you eat silver when the winter blizzards close the pass? Can you burn silver in your hearth to keep your children from freezing to death?”
+“We fired three enchanted heavy siege crossbows and two fire-elemental flame charges directly at this sixty-millimeter plate at twenty paces, sir,” Halder said, a fierce grin breaking across his soot-streaked face. “The magical crossbow bolts shattered into kindling against the steel face. The fire charges scorched the paint and raised the hull temperature by four degrees Celsius. The interior compartment suffered zero deformation.”
 
-The worker swallowed hard. “No, sir.”
+“As predicted,” I replied, running my gloved fingers along the cold steel weld. “The aristocratic mages of this continent believe battle is an art of personal willpower. They believe their fireballs and lightning can break any army. They have never encountered an enemy that feels no pain, requires no air for its courage, and moves sixty tons of hardened steel across mud at twenty kilometers per hour.”
 
-“This scrip is backed by the physical inventory of the Central State Grain Silos, the Strategic Cured Pork Reserve, and the Municipal Brewery,” Weidmann recited, tapping the parchment with the end of his quill. “Every unit represents a mathematically guaranteed calorie and state-sanctioned recreation. One unit buys one kilogram of clean, stone-ground highland rye flour. Two units buy a two-liter tankard of foamy *Volksbier* and two smoked sausages at the People's Hall. Four units purchase a front-row bench at the Arena of the Black Sun for this Sunday's Cohort Derby—the Quarrymen versus the Blast-Furnace Strikers!”
+I turned toward the southern bay of Sector Epsilon.
 
-The worker’s face broke into a broad, radiant, disbelieving grin.
+There, arrayed in two immaculate rows on steel carriages, sat six completed 105mm light field howitzers, their long rifled barrels resting in travel clamps, their hydro-pneumatic recoil cylinders gleaming with fresh oil. Beside them stood the prototype of the 88mm high-velocity dual-purpose gun, capable of firing high-explosive shells up to eleven thousand meters.
 
-“The Arena...?” the worker whispered, his chest swelling with tribal pride. “My brother-in-law is pulling anchor for the Foundry Cohort! I can go watch him? With a tankard of cold beer?!”
+“And the airframe prototype?” I asked Kester.
 
-“If you possess the scrip, your seat is guaranteed by public statute,” Weidmann replied crisply. “Present your ticket at Gate 2. Avoid spilling froth upon the guards. Next citizen!”
+“In the timber hangars behind the limestone bluff, Supreme Commander,” Kester answered. “Meister Brandt has assembled the tubular steel framework for the first three *Black-Wing* ground-attack monoplanes. The supercharged aero-engines have arrived from Plant No. 3. The dive sirens and bomb racks will be mounted by next week.”
 
-The worker clutched the scrip to his chest as if it were a royal pardon, bowed three times to Weidmann, and practically skipped out the door toward the bakery and the beer-hall.
+I stepped back to the center of the engineering floor.
 
-I watched from the corner of the room, tapping my index finger twice against my collar seam.
+The valley operated as an iron foundry of modern total war.
 
-The brilliance of the system lay in its total psychological enclosure.
-- The state controlled the blast furnaces.
-- The state controlled the grain silos.
-- The state controlled the beer, the sports, and the spectacle.
-- By eliminating precious metals and monopolizing entertainment, private discontent was suffocated in its cradle.
-
-Men do not conspire to overthrow a regime that guarantees their children hot porridge every morning, gives them cold beer after a hard shift, and provides them with roaring, adrenaline-soaked stadium derbies every alternate Sunday.
-
-Liquid capital had been neutralized. Resentment had been dissolved in malted barley and public cheers. Wealth functioned purely as an engine of cheerful, total mobilization.
-
-Sergeant Kester marched into the office, his charcoal coat dusted with grey limestone flour. He gave a crisp, textbook salute.
-
-“Supreme Commissary!”
-
-“Report, Sergeant.”
-
-“Production update from the armor workshops: two hundred and forty standardized iron breastplates completed this afternoon. Every plate is stamped from one-eighth-inch cold-rolled sheet iron. Light enough for infantry forced marches, thick enough to deflect a recurve hunting arrow at twenty yards.”
-
-“Ammunition reserves?”
-
-“Crossbow quarrels: twelve thousand units boxed and greased in lard. Pike staves: eight hundred units seasoned and banded.”
-
-“Satisfactory,” I said, stepping outside into the cool afternoon air.
-
-The valley was alive with an unshakeable, terrifying rhythm. Smoke billowed from three chimneys, obscuring the jagged limestone peaks. Down on the parade ground, eighty new conscripts were drilling with eight-foot training staves, their boots slamming into the gravel in thunderous, unyielding unison:
-
-*LEFT. RIGHT. LEFT. RIGHT.*
-
-Order had ceased to be a fragile ambition; it had become an industrial machine that consumed chaos and expelled steel.
-
-I looked toward the southern crags, where the old mountain pass wound into the high wilderness.
-
-According to my temporal calculations, eighty-four days had elapsed since my awakening at Raven’s Gap. The high passes would now be choking with the first winter snows. Game would be scarce. The mountain monsters would be descending toward the valleys in search of warmth.
-
-And four disorganized, undisciplined individuals, lacking a baggage master to mend their boots and forage their turnips, would be discovering the true cost of administrative incompetence.
-
-“Sergeant Kester,” I said.
-
-“Sir!”
-
-“Double the sentry rotation at Checkpoint 4 on the southern road. Have the iron chain-nets ready and the carbolic delousing tubs boiled.”
-
-Kester blinked, scratching his chin. “Are we expecting an attack, Commissary?”
-
-“No,” I replied, my voice as cold as the furnace slag cooling in the mud. “We are expecting vermin.”
+“Increase shifts to twenty-four hours,” I instructed Halder and Kester. “Double the night shift bread rations and issue an additional half-liter of *Volksbier* per worker. Our reconnaissance scouts report movement beyond the northern peaks. When the barbarians and their sorcerers arrive, they will discover that magic is a candle in the face of an industrial sun.”

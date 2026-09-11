@@ -1,170 +1,135 @@
-# Chapter 7: The Liquidation of Adventurers
+# Chapter 7: The Liquidation of the Guild & The Heereswaffenamt
 
-The fundamental flaw of the fantasy adventurer is an inflated sense of biological relevance.
+The fundamental defect of the fantasy adventurer is an inflated belief in individual biological relevance.
 
-An adventurer believes that because he has slain a cave salamander, mastered an acrobatic backward roll, and acquired a glowing iron rapier, he exists outside the laws of civic administration. He believes that taverns exist solely to provide him with cheap mead, that maidens exist to swoon at his leather trousers, and that the state exists to pay him exorbitant bounties for cleaning up biological hazards that an organized platoon of six conscripts with pitchforks and lime could have resolved in forty minutes.
+An adventurer presumes that because he has slain a cave salamander, mastered an acrobatic backward roll, and purchased an enchanted rapier, he exists outside the laws of municipal administration. He assumes taverns exist to dispense cheap mead on credit, maidens exist to swoon at his leather breeches, and the state exists to pay him exorbitant bounties for cleaning up biological hazards that an organized squad with caustic lime and shovels could neutralize in forty minutes.
 
 This parasitic delusion had infected the frontier for two centuries under the auspices of the Regional Adventurers’ Guild.
 
-By the second month of my administration, the town of Karst-Borough—formerly an unpaved open-air latrine surrounded by squalid drinking dens—had been integrated into Administrative Sector Alpha.
+By the second month of my administration, Karst-Borough had undergone total infrastructural reorganization into Administrative Sector Alpha. The unpaved mud thoroughfares were surfaced with crushed limestone ballast and coal slag. The seventeen illicit gambling cellars were converted into municipal grain storage and precision tool-and-die workshops. Armed Black Cloak patrols in charcoal wool greatcoats marched in pairs every eight minutes with chronometric precision.
 
-The streets had been cleared of animal dung and paved with crushed limestone ballast. The seventeen illicit brothels and gambling cellars had been shuttered, their premises converted into municipal linen-weaving cooperatives and grain silos. Sentries of the Black Cloaks, clad in tailored charcoal wool greatcoats with high stiff collars and steel-toed hobnail boots, marched in pairs along the thoroughfares every eight minutes.
+At 1400 hours on a Tuesday, the Guild arrived.
 
-The populace had adjusted to the silence. Crime had ceased because presence on the street after the 2000 hours curfew carried a mandatory penalty of forty-eight hours wheelbarrow duty in the dolomite quarry.
+They bypassed the southern intake checkpoint without submitting Form 04-A (Notice of Intent to Assemble) and without declaring hazardous energetic items. At the head of a twelve-man retinue strode their regional representative, styling himself "Sir Ronald the Swift."
 
-And then, at 1400 hours on a Tuesday, the Guild arrived.
+Ronald wore a crimson velvet beret with a dyed peacock plume, a silk doublet, and supple kidskin boots. At his hip hung an ornate rapier hummed with blue electrical luminescence—a low-tier lightning enchantment that depleted valuable arcane crystals while producing negligible thermal work.
 
-They did not arrive via the proper administrative channels. They did not submit Form 04-A (Notice of Intent to Assemble) or register their sidearms at the Sector Checkpoint.
+Behind him marched two mercenaries in spiked iron plate, a battle-mage draped in embroidered runic mantles, and an elven archer whose recurve bow gleamed with polished green wood-lacquer and wind-attunement charms.
 
-Instead, their regional representative—a high-ranking guildmaster styling himself "Sir Ronald the Swift"—swaggered down the High Street at the head of a twelve-man retinue.
+They pushed past two municipal ditch-diggers sweeping the gutter, stepping onto the clean flagstones of what had formerly been the grand Guildhall—now designated as *Municipal Volkshalle No. 1 and Experimental Ballistics Proving Grounds*.
 
-It was an aesthetic catastrophe.
+I sat behind the central steel desk in the great hall. At my left stood Director Weidmann with an intake register; at my right stood Sergeant Kester, his hands resting on his sidearm holster. Resting on two wooden trestles directly beside my desk was a long, heavy pine crate with its lid unlatched, emitting the sharp, chemical reek of ether, nitric acid, and boiled linseed oil.
 
-Ronald was forty winters of age, wore a velvet beret adorned with a dyed peacock plume, a silk doublet slashed with crimson satin, and high boots of supple kidskin leather that would have dissolved in twenty seconds inside an iron foundry. At his hip hung a five-foot rapier with an ornate, gilded cup-hilt, its blade humming with a faint, luminous blue luminescence—a low-tier lightning enchantment that consumed valuable arcane crystals while providing zero thermal heating capacity.
+The double doors banged open.
 
-Behind him strode his retinue: two heavily armored mercenaries in spiked plate that clanked like loose kitchen pots, an elf archer with theatrical green feathers in his quiver, and several leather-clad cutpurses with greasy grins.
+Ronald strode into the hall, his kidskin boots clicking sharply on the scrubbed flagstones. He halted three paces from my desk, rested his palm on his gilded cup-hilt, and offered a condescending aristocratic smirk.
 
-They pushed past two citizen ditch-diggers who were respectfully sweeping the gutter, stepping onto the clean steps of what was formerly the grand Guildhall—now undergoing architectural conversion into *Municipal Volkshalle No. 1 & District Recreation Hall*.
+“Which one of you scribes is the boy Falk?” Ronald declared, his voice rich with theatrical resonance. “I am Sir Ronald the Swift, S-Rank representative of the Grand Guild Council of Osterlund. We have received highly irregular reports regarding our frontier assets.”
 
-I was sitting behind the central inspection desk in the main hall. At my left stood Director Weidmann, holding a brass-clipped ledger and the architectural plans for the civic renovation; at my right stood Sergeant Kester, hands resting lightly on the hilt of his standardized iron arming sword.
+I dipped my iron nib into the ink pot, completed an inventory tally, and pressed the blotter to the paper.
 
-The double doors banged open, bouncing against the whitewashed pine walls.
+“Present your municipal transit voucher,” I said.
 
-Ronald strode in, his kidskin boots clicking on the scrubbed flagstones. He stopped ten feet from my desk, hooked a thumb into his gilded sword-belt, adjusted his velvet beret, and flashed a condescending, aristocratic smirk.
+Ronald let out an amused snort, exchanging glances with his retinue. The elven archer chuckled with cool disdain.
 
-“Which one of you clerks is the boy Falk?” Ronald declared, his voice rich, theatrical, and dripping with courtly arrogance. “I am Sir Ronald the Swift, S-Rank representative of the Grand Guild Council of Osterlund. We have received some rather distressing correspondence from our local factors.”
+“Transit voucher?” Ronald laughed. “Little clerk, I am an S-Rank Guildmaster! The Adventurers' Guild answers to the High Crown and the ancient charters of free venture! We do not carry vouchers to enter our own chapter house!”
 
-I did not look up from the sheet of parchment before me. I dipped my iron pen into the ink pot, made two neat tally marks, and blotted the line.
+“The ancient charters of free venture were unilaterally dissolved under State Reorganization Decree 04,” I replied. “This facility is municipal property. You are currently trespassing in an active ordnance testing zone.”
 
-“State your administrative clearance voucher number,” I said.
+Ronald stepped forward, slamming a heavy leather pouch of gold onto the desk.
 
-Ronald’s smirk faltered for half a second. He let out a patronizing chuckle, glancing back at his heavily armored companions, who chuckled in obedient chorus.
+“Listen to me, boy,” Ronald hissed, dropping his smile. “We allowed you to play border guard because the mountain bandits were an irritation to our caravans. Now you close our drinking houses. You shackle our couriers in the quarry for carrying unlicensed daggers. You demand an eighty-percent tax on guild contracts!”
 
-“Clearance voucher?” Ronald laughed. “Little scribe, I am an S-Rank Guildmaster! The Adventurers' Guild answers only to the High Crown and the ancient charters of free venture! We don't carry 'clearance vouchers' to enter our own chapter house!”
+“Seventy-eight percent,” I corrected him. “Accounting for two percent municipal drainage depreciation.”
 
-“The ancient charters of free venture,” I stated, setting the pen down with a dry, wooden click, “were unilaterally revoked under Imperial Reorganization Decree 04, signed by this office thirty-four days ago. This facility has been annexed by the state as Municipal Volkshalle No. 1—a regulated recreation center and public library for the working populace. You are currently trespassing in a restricted governmental renovation zone.”
+“The Guild is the shield of this realm!” Ronald barked, his cheeks flushing red through his powdered skin. “Our mages command the elements. Our elven rangers loose arrows faster than a hawk can dive. We slaughter behemoths! What can your miserable peasant levies do against the living lightning of the Dawn?”
 
-Ronald’s eyes narrowed. He took two heavy steps forward, slamming an ivory-inlaid leather purse onto the surface of my desk. The purse jingled with heavy gold coin.
+The battle-mage stepped forward, chanting a guttural harmonic cadence. A translucent sphere of amber light materialized around Ronald and his inner circle—a certified Class-4 Aegis Barrier, vibrating with compressed arcane repulsion. Ronald drew six inches of luminous steel from his scabbard. Blue electrical arcs crackled across his blade, filling the chamber with the pungent stench of ozone.
 
-“Listen to me, boy,” Ronald hissed, dropping his theatrical charm. “We let you play your little soldier games with the local bandits because Vorn was becoming a nuisance to our caravans. But you’ve shuttered our taverns. You’ve put our members in chains for carrying concealed daggers in the streets. You’ve even had the audacity to demand an eighty-percent tax on guild bounties!”
+“Look upon this ward, scribe,” Ronald sneered. “Ten thousand steel crossbow quarrels would bounce off this aegis like rain off granite. Draw one weapon against me, and my mage will reduce this hall to glass.”
 
-“Seventy-eight percent,” I corrected him. “Accounting for two percent municipal waste-water amortisation.”
+I set my iron nib down with a quiet tap.
 
-“Enough of this insanity!” Ronald barked, his face flushing crimson beneath his scented powder. “The Guild is the lifeblood of this realm! Without our blades, who slays the forest trolls? Who explores the sunken ruins? Who protects the trade roads? We are here to present our terms:
-One: All guild members are granted immediate diplomatic immunity from your ridiculous curfews.
-Two: The reopening of all six tavern concessions, tax-free.
-Three: The immediate release of our three guild couriers currently held in your quarry.”
+“Your assessment of defense relies upon the low kinetic threshold of hand-wound tension weapons,” I stated. “A steel crossbow delivers eighty foot-pounds of energy at twenty meters. That is an archaic, biological limitation.”
 
-“And if the State rejects these terms?” I asked, leaning back against the unvarnished pine chair.
+I gestured to Sergeant Kester.
 
-Ronald’s hand dropped to the ornate cup-hilt of his rapier.
+“Sergeant Kester. Demonstrate Article 09.”
 
-He drew six inches of luminous, lightning-crackling steel from the scabbard. The air in the room filled with the sharp, acidic reek of ozone.
+Kester stepped to the pine crate. He lifted the long, dark object nestled inside oiled rags.
 
-“Then the Guild shall declare this settlement an Unregulated Outlaw Enclave,” Ronald sneered, leaning over the desk until his peacock feather grazed my lamp. “And you, little clerk, will discover what happens when five hundred licensed killers decide to collect a bounty on your scrawny neck. Do you understand me? We have slain highland wyrms. We have broken warlords. What are you going to do against the lightning of the Dawn?”
+It possessed no glowing runes, no gold filigree, and no beast-bone carvings. It was an assembly of cold, blued ordnance steel and dense walnut wood: the prototype *Karst Pattern 1 Service Rifle*.
 
-I did not blink. The illumination of his enchanted blade was an unnecessary eye-strain.
+Kester pulled the straight bolt handle upward with a crisp, metallic clatter, drew it backward to eject an inspection flag, smoothly chambered a long brass cartridge from the five-round internal magazine, and drove the bolt home, locking the dual front lugs into the receiver ring.
 
-I glanced at Director Weidmann.
+*CLACK-SNAP.*
 
-“Director Weidmann.”
+The mechanical sound was flat, precise, and completely devoid of theatrical glamour.
 
-“Sir!” Weidmann rasped, stepping forward with his pencil poised.
+“What is that iron pipe?” Ronald scoffed, his lightning rapier vibrating. “A miniature fire-pot? A toy—?”
 
-“Record the following infractions:
-First: Unauthorized entry into a government facility by twelve unregistered biological units.
-Second: Armed extortion of a public official during active administrative hours.
-Third: Brandishing an edged weapon exceeding the statutory eight-inch limit within a Class-1 Municipal Security Zone.
-Fourth: Failure to secure an active electrical discharge permit for an uncertified energetic device.”
+“Face the target aperture,” I instructed Kester. “Engage the central barrier node.”
 
-Ronald stared at me, his jaw dropping in utter, paralyzed disbelief. “Are you... are you insane?! I just threatened you with an enchanted blade!”
+Kester raised the rifle, pressed the walnut stock firmly into his shoulder pocket, aligned the blade front sight inside the U-notch rear leaf, and pulled the two-stage trigger.
 
-“A hollow threat based on a flawed tactical posture,” I observed calmly. “You have committed the elementary mistake of focusing entirely on the individual behind the desk, completely ignoring the structural geometry of the room.”
+The acoustic effect cracked through the enclosed stone hall like a lightning strike at point-blank range.
 
-I raised my right index finger.
+*CRACK.*
 
-*TWICE.*
+A dense tongue of pale orange muzzle flash erupted from the crowned steel muzzle, accompanied by a sharp whiff of burned nitrocellulose and vaporized copper.
 
-From the high, timber-raftered ceiling twelve feet above Ronald’s head, four heavy, lead-weighted iron chain-nets dropped simultaneously.
+The 7.92mm spitzer projectile left the rifled barrel at eight hundred and twenty meters per second.
 
-*CLANG-THWUMP.*
+It carried three thousand two hundred foot-pounds of concentrated kinetic energy concentrated into an impact area eight millimeters wide.
 
-The fifty-pound nets, woven of thick marine iron cable, smashed down directly upon Ronald and his three closest lieutenants with crushing, concussive momentum.
+The collision with the Class-4 Aegis Barrier defied every romantic tenet of arcane theory.
 
-Ronald let out a strangled shriek of agony as the heavy iron links drove him flat onto the flagstones. The lightning rapier clattered uselessly from his hand, discharging a pitiful spark of blue static against the stone floor before sputtering out. The two armored plate-wearers were entangled in the heavy iron mesh, thrashing like overturned beetles, their spiked pauldrons wedging deeper into the links with every movement.
+The barrier did not reflect the blow. The sheer volume of kinetic joules struck the crystalline mana lattice, demanding an instantaneous metabolic conversion that exceeded the battle-mage’s physiological limits.
 
-“What—treachery! Treason!” Ronald screamed from beneath the iron net, his peacock feather snapped, his powdered face ground into the limestone dust. “Men! Draw steel! Kill them—!”
+*SNAP-SHATTER.*
 
-Behind them, the eight remaining mercenaries in the doorway reached for their weapons.
+The amber aegis fractured with a sound like a cathedral window detonating under a steam hammer. Translucent arcane shards vaporized into the air. The severe energetic back-pressure surged directly down the mana conduit into the battle-mage. The caster shrieked as arterial blood sprayed from both ears and nostrils, his nervous system collapsing into violent convulsions as he crashed unconscious onto the flagstones.
 
-They never touched their pommels.
+The bullet, retaining over two thousand foot-pounds of forward momentum after shattering the ward, struck Ronald’s gilded cup-hilt.
 
-From the side doors and the rear colonnade, twenty-four Black Cloaks emerged with synchronized, terrifying speed. They did not draw swords. Swords create messy, biologically hazardous arterial spray on clean public flagstones.
+The enchanted steel rapier shattered into six jagged fragments. The concussive hydrostatic shock pulverized Ronald’s right wrist, throwing his body three yards backward across the hall. He slammed hard against the stone floor, rolling into the lime dust, clutching his bleeding, mangled arm and howling in high-pitched agony.
 
-They carried four-foot-long, lead-weighted oak riot batons.
+The elven archer stood paralyzed, his fingers frozen on his bowstring, his eyes dilated with horror. The two plate-armored mercenaries dropped their morningstars, their knees striking the flagstones with heavy clatters.
 
-*CRACK. THUD. CRACK.*
+“Target neutralized,” Kester reported in a flat monotone. He worked the bolt.
 
-The acoustic efficiency of the beatings was admirable. Within eight seconds, the eight mercenaries were on their knees or face-down in their own blood, groaning through cracked teeth and shattered collarbones.
+*CLACK-EJECT-SNAP.*
 
-Sergeant Kester stepped over Ronald’s flailing form, brought the iron-shod heel of his boot down directly onto Ronald’s right wrist with a sickening *crunch*, and kicked the enchanted rapier under my desk.
+A smoking brass cartridge hull spun through the air, clinking against the flagstones with a bright, metallic chime, leaving a thin trail of grey ether smoke. A fresh 7.92mm round stood locked in the chamber.
 
-“Area secure, Commissary!” Kester bellowed, his chest heaving with professional pride.
+Ten Black Cloaks entered the hall from side portals, their standardized bayonets fixed to timber poles, surrounding the frozen retinue with locked, interlocking points.
 
-I stood up, picked up the ivory-inlaid leather purse from my desk, untied the silk drawstring, and emptied forty-two gold sovereigns onto the blotter.
+I stood up, walked around the desk, and stopped above the writhing, weeping Guildmaster.
 
-“Liquid bullion,” I observed. “Approximately fourteen hundred grams of ninety-percent pure gold. This will purchase sixteen tons of deep-vein anthracite coal and two hundred forged crossbow stirrups from the southern merchant syndicates.”
+“Record the diagnostic data, Weidmann,” I said.
 
-I looked down through the iron net at Sir Ronald the Swift, who was sobbing in humiliated, uncomprehending agony, clutching his fractured wrist.
+“Recorded, Supreme Commander,” Weidmann replied, his pen flying across the ledger. “Single shot penetration through Class-4 warding. Caster incapacitated via mana back-pressure. Mechanical target structure severed.”
 
-“You... you can’t do this...” Ronald wept, his velvet beret soaked in dirty water. “The Guild... the King... this is illegal... we are heroes...”
+Ronald stared up at me through tear-stained, soot-blackened eyes, trembling violently.
 
-“Heroes do not exist,” I said, looking at him with the cold, bored eyes of a veterinary surgeon inspecting a tapeworm. “There are only producers and parasites. For two hundred years, your Guild has operated as an armed, parasitic racket, extorting bread from starving peasants and calling it 'glory'.”
+“What... what sorcery was that?” Ronald whimpered, choking on his own blood. “There was no chant... no circle... no incantation...”
 
-I sat back down and opened the labor assignment registry.
+“Chemistry and mechanical geometry,” I replied, looking down at his shattered rapier. “A chemical propellant generates thousands of atmospheres of chamber pressure, accelerating a lead-core copper-jacketed mass through a spiral-grooved steel bore. Your mystical shields operate on a finite biological mana reservoir. When saturated by kinetic joules exceeding that reservoir, the caster’s nervous system ruptures. It is elementary physics.”
 
-“Director Weidmann.”
+I stepped over him and addressed the shivering elven archer and the kneeling mercenaries.
 
-“Awaiting your commands, Supreme Commissary!” Weidmann purred, his spectacles fogged with bureaucratic pleasure.
+“Under State Security Directive 08, the Adventurers' Guild is declared an illegal paramilitary syndicate. Your assets, real estate, and equipment are forfeit to the Directorate.”
 
-“The eight mercenaries are to be stripped of their decorative steel, registered into State Labor Cohort Four, and assigned to the Drainage Canal Digging Detail. Standard ten-hour rotation. Caloric allocation: twenty-six hundred calories of hot barley porridge, salt pork, and warm wool boots.”
+I pointed to the unconscious mage and the weeping Ronald.
 
-“Not the punitive quarry, sir?” Weidmann asked, raising an eyebrow.
+“Strip them of their metals and silks. Issue them convict smocks and transport them to the central hospital for basic trauma dressing. Once stabilized, Ronald will be assigned to gravel grading in Sector Beta.”
 
-“Cruelty is the signature of an amateur, Weidmann,” I replied calmly. “A starving ditch-digger with frostbite moves zero cubic yards of silt and dies of gangrene, consuming medical lime. We provide them with sufficient calories and sound footwear to maximize mechanical yield. That is the carrot. The stick is statutory discipline: any individual who deliberately slows his pace or engages in conscious insubordination loses his evening tobacco token and pulls twenty-four hours on the stone-crusher. Understood?”
+I turned toward Sergeant Kester.
 
-“Understood, Commissary!”
+“And the guild vault?” Kester asked.
 
-“And this one?” Kester asked, nudging Ronald with his boot. “The S-Rank?”
+“Confiscate every mana crystal and every alchemy manuscript,” I directed. “We have no use for their superstitious rituals. Those crystals possess high energetic density. Ground into five-micron powder, they will act as catalytic cracking agents in our coal-tar distillation towers, accelerating the production of synthetic fuel and stabilizing our cordite drying beds.”
 
-I looked at Ronald’s smooth, uncallused hands, his manicured fingernails, and his delicate silk doublet.
+I looked at the blued receiver of the *Karst Pattern 1* resting in Kester’s hands.
 
-“A man who prides himself on swiftness and physical vanity should be provided with an occupation that channels his velocity into civil logistics,” I stated. “Assign him to the Ironworks Slag-Hauling Brigade under Foreman Vorn. He will push the eight-hundred-pound slag wheelbarrows from Blast Furnace No. 1 to the lower ravine. Issue him heavy leather work clogs, asbestos gauntlets, and twenty-eight hundred calories. If he completes seventy round-trips per shift, award him two extra ounces of lard and one recreation token for the Sunday Arena matches. If he attempts to escape or deliberately shirks his quota, he loses his leisure scrip and pulls double shifts under armed watch. We do not torture our workforce, Ronald. We optimize it.”
-
-Ronald’s eyes bulged with raw, uncomprehending shock. “You... you aren't going to hang me? You aren't going to throw me into a torture dungeon?”
-
-“Execution wastes four thousand pounds of potential kinetic output,” I replied, dipping my pen into the ink. “And dungeons produce nothing but mold and tuberculosis. In the *Ordensstaat*, even parasites are taught the dignity of productive labor. Sergeant Kester, march them out to the dispensary for wrist-splints and lice-shaving.”
-
-“Aye, Commissary!”
-
-Kester and his men dragged the weeping Guildmaster and the stunned mercenaries out across the scrubbed flagstones, leaving a trail of ruined peacock feathers out into the street.
-
-I turned to Director Weidmann and unrolled the architectural conversion schematic for the former guildhall.
-
-“Now, Director Weidmann. Issue Decree 19 regarding the immediate repurposing of this building.”
-
-“What are the designations, sir?”
-
-“The upper floor will open at 0800 hours tomorrow as the District Public Library and Technical Reading Room, stocked with three hundred manuals on crop rotation, hydrology, and metallurgy. The ground floor will become *Volkshalle No. 1*. We will install eight long oak tables, serve hot spiced cider and state-subsidized two-percent barley beer at one bronze pfennig per flagon, and provide chess and draught boards for off-shift laborers. Furthermore, the newly formed Municipal Brass Band will perform forty minutes of brisk march music every evening at 1800 hours.”
-
-Weidmann adjusted his spectacles, his pen pausing in mid-air. “Public recreation, Supreme Commissary? Subsidized beer and music for the common laborers?”
-
-“A populace that drinks clean beer in a warm hall and listens to martial horns does not brood in dark corners, Weidmann,” I said, leaning back. “When men resent, the blade follows. The Romans understood this two millennia ago: *panem et circenses*. Bread and the circus keep the social fabric intact. We give them full bellies, structured entertainment, and absolute civil certainty. In return, they will gladly report every illegal cutpurse and wandering adventurer in this valley before midnight.”
-
-Weidmann’s eyes lit up with profound, chilling comprehension. “A masterstroke of civic engineering, sir. Resentment neutralized at the source.”
-
-I blotted the ink, closed the ledger, and looked through the clean glass window at the snow-dusted town.
-
-The Guild was broken. The people were fed.
-
-Now, it was time to ignite the blast furnaces.
+“Karst-Borough is no longer an outpost,” I declared. “Establish the *Heereswaffenamt* in the eastern mill complex. Install twelve rifling lathes, commission the hydraulic cartridge drawing presses, and begin three-shift production. The era of swords and spells in this valley is terminated.”

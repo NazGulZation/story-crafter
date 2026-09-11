@@ -1,153 +1,135 @@
-# Chapter 10: State Checkpoint 4
+# Chapter 10: State Checkpoint Four
 
-Corporal Brandt had been a drunkard, a deserter, and an amateur sheep-thief.
+An administrative border is an absolute physical reality.
 
-That had been in the previous era—the era before the arrival of the Supreme Commissary. Today, Corporal Brandt was an unblinking, starch-collared instrument of border security.
+Feudal borders are porous, decorative suggestions: a wooden pole stuck in a mud puddle, a sleeping toll collector in a thatched shack, or a painted boundary stone that traveling merchants ignore at their convenience. An administrative border of the Directorate is a fortified engineering line designed to channel, inspect, and quarantine biological mass with zero tolerance for variance.
 
-He stood behind the iron-barred barrier of Checkpoint 4, wearing a charcoal wool greatcoat buttoned up to his chin, an immaculate iron breastplate polished with sand and tallow, and a pair of brass-rimmed eye-shields to protect against the glare of the magnesium-oil reflector lamps mounted on the gate gantry. In his right gauntlet, he held a spring-loaded iron punch for invalidating counterfeit transit vouchers.
+State Checkpoint 4 barred the northern gorge leading into Administrative Sector Alpha.
 
-At 1620 hours, four ragged bipeds approached the perimeter barrier.
+Where the old cart track had once meandered through boggy pine scrub, there now stretched a sixty-foot-wide macadamized highway of crushed basalt and packed gravel. Across the throat of the defile ran a dual line of steel-reinforced concrete pillboxes, their embrasures beveled to deflect incoming fire. Ahead of the concrete lay three staggered belts of concertina barbed wire, anchored to iron pickets driven deep into the permafrost, punctuated by welded iron anti-tank hedgehogs.
 
-Brandt observed them through the viewing slit of the reinforced timber blockhouse. He made an immediate, clinical threat assessment:
-- Malnutrition index: severe (sunken cheeks, protruding ribcages).
-- Biological hygiene index: catastrophic (visible pediculosis, trench foot, untreated pustules).
-- Combat readiness: negligible (rusted weapons, warped bowstring, zero tactical spacing).
-- Threat level: equivalent to four wet stray dogs carrying rusty kitchen knives.
+Above the main gatehouse, twin carbon-arc searchlight mirrors hummed with steady electrical vibration, casting blinding cones of brilliant white illumination across the approach road.
 
-Brandt picked up his brass whistle, blew one short blast, and stepped out onto the gravel apron.
+Corporal Brandt of the 4th Border Sentry Cohort stood behind the armored steel inspection counter, his charcoal wool greatcoat buttoned to the collar, his steel helmet strapped beneath his chin. Resting across his chest was a *Karst Pattern 1* rifle, its blued receiver oiled and its five-round magazine locked.
+
+At 1640 hours, four ragged figures emerged from the northern gloom into the dazzling glare of the arc lamps.
+
+Corporal Brandt did not move. He pressed the red pneumatic button beneath the counter.
+
+Inside the pillbox flanking the road, the water jacket of an MG-08 heavy machine gun hissed softly as the two-man gun crew loaded a two-hundred-and-fifty-round canvas ammunition belt into the receiver feed block.
+
+Marek the Gilded strode into the center of the illuminated road, squinting against the harsh glare. He planted his boots wide in the gravel, unslung his five-foot greatsword *Dawn-Sunderer*, and drove the point six inches into the ground with theatrical bravado. Behind him, Clara, Isolde, and Brigit huddled together in the freezing wind, shivering in their rags.
+
+“Greetings, sentries of Karst!” Marek bellowed, swelling his chest until his rusted breastplate creaked. His voice was loud, resonant, and dripping with rehearsed condescension. “I am Marek the Gilded, champion of the Silver Dawn! We have returned from the deep northern abyss bearing the Wyrm-Heart crystal! Open these gates, summon your commander, and prepare a bath and four flagons of your finest wine!”
+
+Corporal Brandt adjusted the carbon-nib of his administrative pen. He looked at Marek through the armored vision slit of the gatehouse.
+
+“Present your documents,” Brandt said. His voice was amplified through a brass acoustic speaking horn mounted above the gate, flat and devoid of emotion.
+
+Marek blinked, leaning forward with an irritated scowl.
+
+“Documents? Did your ears freeze off in this trench, soldier? I just told you who I am! I am Marek of High-Crest! S-Rank vanguard of Osterlund!”
+
+“You are currently occupying the clearance lane of State Checkpoint 4,” Brandt replied. “Present Form 01-B (Permanent Border Transit Pass), Form 07 (Medical Quarantine Certification), and an itemized import manifest for all biological and mineral cargo. Failure to produce valid documentation within sixty seconds constitutes Class-2 Border Contraband Infraction.”
+
+Marek stared at the concrete pillbox, his face darkening with rage. His hand tightened on the hilt of *Dawn-Sunderer*.
+
+“Bureaucratic insolence!” Marek roared. “You dare question a hero of the realm with your pieces of parchment?! I have slain ogres! I have cleaved mountain reavers in two! Step out of that concrete pen and bow, or I will cleave that iron gate into scrap!”
+
+Marek focused his willpower.
+
+A golden, shimmering aura of physical enhancement erupted around his limbs—the signature *Heroic Aura* of an S-Rank fighter. The air around him rippled with thermal distortion; the gravel beneath his boots began to vibrate as magical kinetic energy flooded his muscles.
+
+Behind him, Clara cheered weakly: “Show them, Marek! Teach these impudent peasants their place!”
+
+Corporal Brandt did not argue. He blew a single, piercing note on his brass whistle.
 
 *FWEET.*
 
-Six Black Cloak sentries immediately stepped into position behind the timber abatis, heavy mechanical crossbows raised to their shoulders, iron quarrels leveled at the center mass of the approaching party. Two massive mastiffs sat at their heels, their cropped ears perked, low guttural growls vibrating in their broad chests.
+From the right-hand pillbox, the water-cooled machine gun spoke.
 
-Marek of High-Crest stopped five paces from the iron barrier.
+*TAT-TAT-TAT.*
 
-He attempted to puff out his chest, but the movement caused his frayed leather breastplate straps to slip, revealing a patch of unwashed, grey-haired skin caked in dried sweat. He reached up, tossing his matted chestnut hair over his shoulder with a theatrical flick of his head, flashing a grin that revealed three yellowed, plaque-encrusted teeth.
+Three supersonic 7.92mm steel-jacketed rounds erupted from the embrasure with an ear-shattering, percussive crack.
 
-“Hail, guardsmen of the Hold!” Marek boomed, his voice carrying the rehearsed, oily bravado of a tavern champion. “Lower your bows! You stand in the presence of Marek the Gilded, Master of the Greatsword, and the Silver Dawn! We have returned from the frozen heights of the northern crags!”
+The bullets struck the macadam roadway exactly eighteen inches in front of Marek’s right boot.
 
-Corporal Brandt stared at him through his brass eye-shields. His expression was completely deadpan, resembling a tombstone carved from grey limestone.
+*CRACK-SMACK.*
 
-“State your clearance sector,” Brandt said.
+Concrete shards and pulverized basalt exploded upward in a violent cloud of dust. The sheer concussive shockwave of supersonic projectiles passing inches from his shins hammered into Marek’s ears like iron mallets, leaving his eardrums ringing with deafening, agonizing pain.
 
-Marek blinked, his smile wavering slightly. “My... my what?”
+Marek recoiled with a startled yell, stumbling back two paces, his golden aura flickering violently.
 
-“Clearance sector,” Brandt repeated, his tone identical to an official reading a tax table. “Form 04-B: Sovereign Transit Voucher. Or Form 08-C: Temporary Agricultural Migrant Pass. Present your booklets for perforation.”
+Before he could regain his footing, a low, mechanical growl began to rise from behind the concrete revetment to the left of the gate.
 
-Behind Marek, Clara stepped forward, shivering in her torn, filth-smeared silk chemise. She tried to muster the sweet, coquettish smile that had earned her free spiced cider from tavern keepers across the frontier.
+The ground beneath the roadway began to shake with rhythmic, heavy tremors.
 
-“Oh, brave soldier,” Clara whimpered, batting her soot-caked eyelashes, pressing her hands together in a delicate, maidenly prayer. “We have suffered so terribly in the cold... my poor feet are bleeding... please, open the gate! We only desire a warm hearth, a bit of bread, and a basin of hot rosewater. I am a consecrated priestess of the Dawn-Goddess! Surely the garrison can show divine charity to a holy maiden?”
+*VRRRRR-RUMBLE-CLANK.*
 
-Brandt did not glance at her eyelashes. He looked at her bare, purple, scabbed feet, then down at the quarantine manual clipped to his belt.
+Out from the covered earthen revetment crawled forty metric tons of armored steel: the *Sturmwagen Model I*.
 
-“Subject exhibits third-stage biological contamination,” Brandt noted aloud to the clerk beside him. “Probable pediculosis, cutaneous ulcerations, and acute lack of civic modesty. Addendum: Subject claims affiliation with an uncertified religious cult not registered under the General Worship Taxation Edict of Month Two.”
+Its angular, sloped-armor hull gleamed with dark charcoal-grey paint. Its manganese-steel caterpillar tracks ground over the limestone gravel with a horrific, metallic shriek that echoed off the mountain cliffs. The six-cylinder engine spewed a thick, blue plume of synthetic petroleum exhaust into the freezing air, filling the gorge with the suffocating reek of high-temperature combustion and boiling gear oil.
 
-Clara gasped, recoiling as if struck across the mouth with a wet haddock. “A... a cult?! The Dawn-Light is the imperial faith! How dare you, you insolent serf!”
+The hexagonal steel turret traversed with a smooth, hydraulic whine.
 
-“Shut up, Clara,” Marek hissed out of the corner of his mouth. He stepped directly up to the iron bars, resting a heavy, rusted gauntlet on the iron spikes, glaring down at Brandt with towering, muscular superiority.
+The long, heavy muzzle of the 75mm high-velocity cannon locked in place, pointing straight at Marek’s chest from a distance of twenty paces.
 
-“Listen to me, little sentry,” Marek growled, leaning forward until his foul, onion-scented breath hit the iron grille. “I don't know whose boot you’ve been licking while we were in the mountains, but I am an S-Rank Guild Adventurer. I have a personal writ of free passage signed by the Grand Guildmaster himself!”
+Beside the main gun, the coaxial machine gun barrel tracked his chest with cold, mechanical precision.
 
-Marek reached into his tattered belt pouch, pulled out a tarnished bronze medallion stamped with the crossed swords of the Adventurers’ Guild, and slammed it against the iron bar.
+The sheer mass of the machine, the deafening concussive roar of its engine, and the absolute absence of any biological emotion hit Marek like a physical blow.
 
-“See that? That’s Guild bronze! Now, open this gate, fetch Sergeant Kester, and have three flagons of imported vintage wine and a whole roasted pig brought to the officers' quarters in twenty minutes. If you make me wait in this sleet another sixty seconds, I’ll split your iron helmet in half and use your coat to wipe the grease off my scabbard!”
+His glorious *Heroic Aura*, designed to intimidate biological men through magical pressure, had zero effect on forty tons of cold rolled steel. The engine merely revved higher, spraying hot exhaust into the sleet.
 
-Corporal Brandt looked down at the bronze medallion.
+“What... what is that monstrosity?!” Isolde screamed, falling backward onto her hands in the mud.
 
-Then, with agonizing, mechanical slowness, Brandt raised his spring-loaded iron punch, clamped its jaws over the center of the Adventurers' Guild medallion, and squeezed the handles together.
+“Gods above... it’s a moving iron fortress!” Clara shrieked, cowering behind Brigit, weeping hysterically.
 
-*CRUNCH.*
+Marek stood frozen in the headlights of the tank, his golden aura completely collapsed under the sheer psychological weight of industrial iron. His greatsword trembled in his calloused hands.
 
-A clean, circular hole was punched directly through the crossed swords. Brandt flicked the brass slug into the mud, tossed the ruined medallion onto the gravel, and stepped back two paces.
+The side hatch of the gatehouse swung open.
 
-“Pursuant to Imperial Reorganization Decree 04,” Brandt announced in a flat, administrative monotone, “the entity designated as the 'Adventurers’ Guild' has been liquidated. All private paramilitary licenses, mercenary patents, and freelance adventuring franchises are permanently null and void. Carrying unauthorized guild insignia within an active administrative sector is an infraction under Subsection 12. Penalty: immediate confiscation and twelve days ditch-draining.”
+Twelve soldiers of the 1st Mechanized Rifle Cohort emerged in locked formation, their charcoal wool coats immaculate, their steel helmets gleaming in the searchlights. Every soldier held a *Karst Pattern 1* rifle pressed into his shoulder pocket, their long triangular steel bayonets forming an impenetrable ring of points six feet from Marek’s throat.
 
-Marek stared at the perforated medallion in the mud.
+Sergeant Major Kester stepped through the line of riflemen, holding a heavy pair of case-hardened steel transport cuffs.
 
-His face turned a deep, apoplectic purple. The veins along his temples swelled like blue earthworms. For two years, that bronze token had granted him free food, free horses, and the terrified obedience of every peasant and village bailiff from the coast to the crags.
+“Drop the weapon,” Kester commanded.
 
-“You... you broke my guild token,” Marek whispered, his voice trembling with manic, uncomprehending fury.
+Marek looked at Kester’s face through the glare. A flicker of frantic recognition crossed his features.
 
-“Furthermore,” Brandt continued, completely unfazed, “your sidearm exceeds the statutory eight-inch limit for civilian edged cutlery. You are hereby ordered to unbuckle your scabbard, place the weapon on the gravel apron, and submit your limbs to the quarantine delousing irons.”
+“Kester?!” Marek gasped, his voice cracking. “Sergeant Kester! You old drunkard! Tell these men to stand down! It’s me—Marek! Remember the ale I bought you at the tavern?! Remember the tales of the high passes?!”
 
-“I’ll kill you,” Marek roared, his mind snapping under the weight of eighty days of hunger, humiliation, and bureaucratic contempt. “I am Marek of High-Crest! I am the Gilded Cleaver! I don’t submit to clerks! I SUNDER THEM!”
+Kester did not blink. His eyes were cold, clear, and hard as granite.
 
-With a theatrical, earth-shaking battle-shout, Marek reached over his right shoulder, gripped the scarred leather hilt of *Dawn-Sunderer*, and drew five feet of notched, rusted carbon steel from its sheath.
+“Marek of High-Crest. Under State Security Decree 01, you are identified as an unregistered armed combatant attempting unauthorized breach of a Class-1 Frontier Perimeter.”
 
-He raised the massive greatsword high above his head with both hands, planting his flapping-soled boots in the mud, preparing to deliver a legendary overhead cleave that would smash through the iron gate, the sentry, and the blockhouse in a glorious display of heroic violence.
+“I have the Wyrm-Heart!” Marek yelled, holding the glowing crystal aloft with a trembling hand. “It’s worth ten thousand gold florins! We can split it, Kester! Just let us in!”
 
-He expected a duel. He expected the sentries to draw swords and clash steel in an honorable, cinematic exchange.
+Kester drew his service pistol—a blued, semi-automatic 9mm ordnance handgun. He racked the slide with a clean, dry snap.
 
-Brandt did not draw a sword.
+“Drop the blade. Ground the mineral asset. Hands behind your head. You have five seconds before the heavy gun opens fire.”
 
-Brandt raised his left hand and blew his brass whistle three times.
+Marek looked at the yawning, black bore of the 75mm tank cannon staring at his heart. He looked at the twelve fixed bayonets. He looked at Kester’s finger steady on the trigger.
 
-*FWEET-FWEET-FWEET.*
+The fantasy of the heroic warrior evaporated in the cold mountain air.
 
-From the gantry platform ten feet directly above Marek's head, two Black Cloaks pulled an iron trip-lever.
+*CLATTER.*
 
-*CLANK-WHUMP.*
+*Dawn-Sunderer* slipped from Marek’s numb fingers, striking the frozen gravel with a dull, pathetic clang. The Wyrm-Heart crystal dropped from his hand, rolling into the mud at Kester’s boots.
 
-A sixty-pound, lead-weighted marine iron chain-net dropped like an iron anvil directly onto Marek’s upturned face.
+Two riflemen stepped forward instantly. One kicked Marek’s legs out from under him with a brutal sweep of a hobnail boot, driving the gilded champion face-first into the crushed basalt. The second pinned his shoulders to the ground with a knee, hauling his arms behind his back.
 
-The heavy lead weights smashed across his brow, his nose, and his shoulders with concussive, bone-splintering momentum. *Dawn-Sunderer* was knocked from his hands, clattering uselessly onto the gravel. Marek let out a muffled, undignified shriek as the heavy iron links wrapped around his torso, dragging his six-foot-four frame violently down into the freezing limestone slurry.
+*CLICK-SNAP.*
 
-He thrashed like a netted sturgeon, kicking his boots, screaming muffled obscenities through the mud.
+The heavy steel cuffs locked around Marek’s wrists with unyielding force.
 
-“Section Three—deploy subduing implements,” Brandt ordered calmly. “Standard pacification protocol. Avoid cranial strikes; the Supreme Commissary requires uncompromised brain and musculoskeletal function for the mines.”
+Clara, Isolde, and Brigit were surrounded within three seconds. Brigit immediately raised her hands, dropping her empty bow to the road. Clara wept loudly, dropping to her knees and reciting fractured prayers, while Isolde stood frozen in shock as two Black Cloaks seized her arms, pinning her wrists behind her back.
 
-The side wicket-gate snapped open. Four Black Cloaks strode out onto the gravel.
+Kester scooped up the Wyrm-Heart crystal with a gloved hand, wrapped it in an official canvas evidence bag, and sealed it with lead wire.
 
-Moving in absolute silence, they carried out their duties with cold professionalism.
+He turned toward the gatehouse telephone box, lifted the heavy bakelite handset, and cranked the magneto.
 
-They applied four-foot-long oak batons with measured, surgical precision to Marek’s major motor nerve clusters: the peroneal nerve along the outer calf and the triceps tendons of his right arm.
+“Central Directorate,” Kester spoke into the horn. “This is Checkpoint 4. Four unregistered biological units detained at the perimeter. One Class-A energetic mineral asset secured. Preparing transport to Quarantine Block C.”
 
-*THUD. CRACK.*
+He hung up the receiver, turned back to the prisoners, and gestured with his pistol toward the idling steel transport truck behind the tank.
 
-The strikes operated as cold anatomical levers of compliance, deadening the nerve clusters until Marek's sword-arm went limp and his grip released the hilt.
-
-“Aaargh! Stop! My arm! By the Dawn—mercy! I yield! I yield!” Marek howled, his proud warrior's roar dissolving into the high-pitched, pathetic squealing of a cornered swine.
-
-“Subject has declared surrender,” Brandt observed, raising a hand. “Cease strikes immediately. Per Directive 01, gratuitous physical impacts against a compliant asset are categorized as capital asset damage.”
-
-The batons stopped instantly.
-
-Two guards pinned Marek's forearms behind his back, ratcheting heavy forged iron cuffs around his wrists with cold, metallic efficiency. He lay face-down in the puddle, sobbing softly into the mud, his nose bleeding, his chest heaving helplessly beneath the iron net.
-
-“Marek!” Clara screamed, covering her mouth in unadulterated horror.
-
-Beside her, Isolde raised her hazel staff, her hollow eyes wild with panic. “Stay back, you dogs! I am an elementalist! I will burn your gates to ash—!”
-
-*THWACK.*
-
-A six-ounce lead beanbag round, fired from a heavy pneumatic rampart projector above the gate, struck Isolde squarely in the solar plexus.
-
-The air exploded from her lungs in a wet, choking wheeze. Her hazel staff flew from her hands as she doubled over, collapsing onto her knees in the slush, clutching her stomach, retching up bile and water.
-
-Brigit dropped her warped yew bow onto the road. She did not reach for her hunting knife. Her scout's instincts, honed by years in the wild, recognized something far more terrifying than a monster or a bandit gang:
-
-This was an industrialized machine. You cannot out-skirmish a machine.
-
-“We surrender,” Brigit rasped, raising her trembling, frostbitten hands into the air. “Don’t shoot. We surrender.”
-
-Two Black Cloaks stepped forward with iron-toothed delousing tongs and heavy forged handcuffs.
-
-Within sixty seconds, Clara, Isolde, and Brigit were pinned to the gravel, their hands wrenched behind their backs, cold iron ratchets clicking tight around their wrists. Clara wept hysterically, her face pressed against the wet limestone rocks, her ruined silk dress soaking in muddy water.
-
-“Why are you doing this?!” Clara wailed, her voice cracking with despair. “We didn't do anything! We are heroes! We are the Silver Dawn!”
-
-Corporal Brandt stepped out from the gatehouse, holding a wooden clipboard and an ink-stained pine stylus.
-
-He brought the heel of his boot down onto the notched blade of *Dawn-Sunderer*, snapped the rusty iron steel in two with a sharp, dismissive crack, and kicked the broken pieces into the salvage bin.
-
-“Inventory logged,” Brandt announced to his clerk. “One piece of defective scrap steel, weight fourteen pounds. Two warped hunting shafts. One cracked hazel stick.”
-
-He looked down at the four weeping, mud-caked prisoners.
-
-“Subjects secured,” Brandt said. “Transport them to Quarantine Block C. Scrub them with hot carbolic lye, shave their heads for typhus control, and issue them standardized grey convict smocks. The Supreme Commissary has requested their presence in Interrogation Room 1.”
-
-Clara gasped through her tears, looking up from the mud. “The... the Supreme Commissary? Who is he? What is his name?!”
-
-Brandt adjusted his brass eye-shields, turned his back on them, and walked toward the gatehouse.
-
-“His name is not your concern, prisoner,” Brandt replied, his voice disappearing into the hiss of the freezing sleet. “Your concern is whether your dental records survive the intake audit.”
+“Move them,” Kester ordered. “The Supreme Commander is waiting.”
