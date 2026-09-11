@@ -59,8 +59,8 @@ def save_config(config):
         print(f"Error saving config: {e}")
 
 
-def format_markdown_to_html(md_text):
-    """Convert chapter markdown into clean, styled book HTML with drop caps."""
+def format_markdown_to_html(md_text, story_id=""):
+    """Convert chapter markdown into clean, styled book HTML with drop caps and web-safe image paths."""
     lines = md_text.splitlines()
     title = ""
     cleaned_lines = []
@@ -73,6 +73,29 @@ def format_markdown_to_html(md_text):
 
     body_md = "\n".join(cleaned_lines)
 
+    # Pre-process markdown image tags into web-safe HTML figures
+    def _replace_image_tag(match):
+        alt = match.group(1).strip()
+        src = match.group(2).strip()
+        src_norm = src.replace("\\", "/")
+
+        # Extract filename
+        filename = src_norm.split("/")[-1]
+
+        # Detect story from path if present (e.g. c:/StoryCrafter/bakushin_after_training/assets/...)
+        m_story = re.search(r'StoryCrafter/([^/]+)/assets/', src_norm, re.IGNORECASE)
+        resolved_story = m_story.group(1) if m_story else story_id
+
+        if resolved_story:
+            web_url = f"/api/assets/{resolved_story}/{filename}"
+        else:
+            web_url = f"/api/assets/{filename}"
+
+        caption_html = f'<figcaption class="illustration-caption">{html.escape(alt)}</figcaption>' if alt else ''
+        return f'\n\n<figure class="book-figure"><img src="{web_url}" alt="{html.escape(alt)}" loading="lazy">{caption_html}</figure>\n\n'
+
+    body_md = re.sub(r'!\[(.*?)\]\((.*?)\)', _replace_image_tag, body_md)
+
     if markdown:
         raw_html = markdown.markdown(body_md, extensions=['extra', 'smarty'])
     else:
@@ -80,7 +103,9 @@ def format_markdown_to_html(md_text):
         paragraphs = [p.strip() for p in body_md.split("\n\n") if p.strip()]
         html_parts = []
         for p in paragraphs:
-            if p.startswith("### "):
+            if p.startswith("<figure") and p.endswith("</figure>"):
+                html_parts.append(p)
+            elif p.startswith("### "):
                 html_parts.append(f"<h3>{html.escape(p[4:])}</h3>")
             elif p.startswith("## "):
                 html_parts.append(f"<h2>{html.escape(p[3:])}</h2>")
@@ -111,7 +136,7 @@ def scan_full_library():
                     chapter_list = []
                     for idx, f in enumerate(files, 1):
                         text = f.read_text(encoding="utf-8")
-                        title, raw_html = format_markdown_to_html(text)
+                        title, raw_html = format_markdown_to_html(text, story_id=item.name)
                         word_count = len(re.findall(r"\b\w+\b", text))
                         reading_minutes = max(1, round(word_count / 220))
 

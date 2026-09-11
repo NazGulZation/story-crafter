@@ -1,6 +1,6 @@
 # Chapter 1: Starting Gun
 
-![Bakushin O stretching in the training corridor, glistening with sweat after sprint practice](c:/StoryCrafter/bakushin_after_training/assets/ch01_01.png)
+![Bakushin O stretching in the training corridor, glistening with sweat after sprint practice](../assets/ch01_01.png)
 
 The air in the training corridor is thick with the aftermath of a grueling sprint session, smelling faintly of worn rubber, floor wax, and the sharp, ozone tang of adrenaline. You lean back against the cool concrete wall, your pulse finally beginning to settle, though your lungs still burn slightly from trying to match her pace on the timing bike. A few yards away, under the buzzing hum of the harsh fluorescent lights, Sakura Bakushin O is stretching. 
 
@@ -44,7 +44,7 @@ You open your mouth and press your tongue flat against the slick, salty skin.
 
 You drag your tongue slowly up the crease, tasting the raw, concentrated brine of her sweat. The deep, musky scent fills your nose, completely short-circuiting your brain. The wet *slurp* of your saliva mixing with her slick skin sounds deafening in the quiet room. You nip gently at the sensitive flesh just below her joint, scraping your teeth over the slick surface, and her startled gasp fractures into a ragged, helpless moan. 
 
-![Bakushin gasping in shock and pleasure as Trainer licks her slick, musky underarm](c:/StoryCrafter/bakushin_after_training/assets/ch01_02.png)
+![Bakushin gasping in shock and pleasure as Trainer licks her slick, musky underarm](../assets/ch01_02.png)
 
 "A-ah... Trainer! That's...!" She squirms against you, her strong legs trembling slightly, but she doesn't push you away. Instead, her fingers tangle violently into your hair. Her grip is bruising, demanding. She pulls your face harder into her armpit, smothering your nose and mouth in her heat. 
 
@@ -58,7 +58,7 @@ Her calloused, sweat-damp hand wraps firmly around your bare, throbbing cock.
 
 You flinch, a sharp hiss tearing through your teeth as her tight, hot grip slides down your shaft. She doesn't hesitate. She begins to stroke you, her pace already matching the manic, galloping rhythm of her sprints. It’s unpolished, a little too tight, completely frantic—and it feels unbelievably good. 
 
-![Bakushin stroking Trainer's bare cock with relentless competitive drive](c:/StoryCrafter/bakushin_after_training/assets/ch01_03.png)
+![Bakushin stroking Trainer's bare cock with relentless competitive drive](../assets/ch01_03.png)
 
 You slide your hands down to her hips, your thumbs hooking into the waistband of her tight racing bloomers. You don't pull them off—you just shove the damp, stretchy fabric roughly aside, baring the slick, swollen heat of her folds to the cool air of the room. 
 
@@ -76,4 +76,4 @@ She leans in, her lips brushing the shell of your ear, her breath hot and ragged
 
 "Bakushin dash," she whispers fiercely, her hips grinding a slow, agonizing circle against your tip. "Full speed ahead!"
 
-![Bakushin hooking her leg over Trainer's hip and grinding her wet folds against his cock against the wall](c:/StoryCrafter/bakushin_after_training/assets/ch01_04.png)
+![Bakushin hooking her leg over Trainer's hip and grinding her wet folds against his cock against the wall](../assets/ch01_04.png)

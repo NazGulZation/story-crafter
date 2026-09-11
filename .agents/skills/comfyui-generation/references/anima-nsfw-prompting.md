@@ -47,7 +47,12 @@ Defines identity, franchise, physique, expression, and primary pose:
 - **Count & Identity**: `1girl`, `[character_name] \([variant]\) \([franchise]\)` *(remember to escape parentheses with `\(` and `\)`)*
 - **Body & Features**: `large breasts` / `medium breasts` / `flat chest`, `wide hips`, `navel`, `collarbone`
 - **Expression & Gaze**: `smug`, `grin`, `blush`, `parted lips`, `heavy breathing`, `drooling`, `looking at viewer`, `half-closed eyes`, `aroused`
-- **Attire & State of Undress**: `off shoulder`, `necklace`, `pendant`, `bottomless`, `clothed female nude male`, `lifted shirt`, `undressing`
+- **Attire & State of Undress**:
+  - Fully Nude: `completely naked, bare skin` (enforces full nudity, suppressing persistent underwear/swimwear).
+  - Asymmetric State (Female Clothed, Male Nude): `clothed female nude male`.
+  - Asymmetric State (Male Clothed, Female Nude): `clothed male nude female`.
+  - Partial Undress: `off shoulder`, `necklace`, `pendant`, `bottomless`, `topless`, `lifted shirt`, `undressing`.
+  - **Uniform Tag Variants**: When using a full uniform variant tag (e.g. `[character] \(blossom in learning\) \(umamusume\)`), **remove generic clothing keywords** (`jacket, shirt, bloomers`) as they will conflict with or override the trained default uniform. Only add clothing keywords if a specific alteration (e.g. `open jacket`) is intended.
 - **Genital & Intimate Details**: `pussy`, `pubic hair` / `shaved pussy`, `clitoris`, `wet`, `cameltoe`
 - **Body Posture**: `leaning back`, `arched back`, `legs apart`, `on back`, `spread legs`
 
@@ -198,5 +203,14 @@ Once an image is generated and saved:
    - Multi-action contact (penetration + armpit licking or breast cupping) easily spawns two male partners (`2boys` glitch).
    - Anchor the scene with `1boy, solo male, only one male, single male` and negate `2boys, multiple boys, multiple males, clone, standing male` (when lying down).
 
+5. **Clothed Character Identity Variant Tags**:
+   - When portraying characters in their official costumes or racewear, use the official variant tag: `sakura bakushin o \(blossom in learning\) \(umamusume\)` rather than generic clothing tags alone.
+   - For nude scenes, retain base tag `sakura bakushin o \(umamusume\)` and enforce explicit nudity tags (`completely nude, bare skin`).
 
+6. **Facesitting / Downward 69 Oral "Severed Head" Glitch**:
+   - Direct downward top-down POV puts the male head pinned against the bottom screen border, creating squashed, severed, or faceless head glitches.
+   - Frame from a dynamic **Side 3/4 Perspective**: `side view, 3/4 view, 1girl on knees, straddling partner, leaning forward, one arm raised high braced against wall, exposed underarm, glistening armpit, 1boy lying on back, tilting head back, mouth open, licking armpit`. Negate `headless, severed head, squished face, upside down face, deformed face`.
+
+> For complete field-tested diagnostic analysis and full prompt remediation tables, see:
+> **[failure-modes-and-remediations.md](failure-modes-and-remediations.md)**
 

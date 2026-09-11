@@ -1,6 +1,6 @@
 # Chapter 3: The Honor Student's Endurance
 
-![Bakushin O leaning over the vaulting horse, flushed and breathless, sweat running down her back](c:/StoryCrafter/bakushin_after_training/assets/ch03_01.png)
+![Bakushin O leaning over the vaulting horse, flushed and breathless, sweat running down her back](../assets/ch03_01.png)
 
 You are still buried deep inside her, the damp heat of her pussy gripping your cock with every panicked stutter of her hips. The heavy musk of her sprint-sweat hangs thick in the cramped, windowless equipment room, blending with the sharp tang of latex and the metallic, electric scent of pure adrenaline. She's fighting it. The erratic flutter of her internal muscles against your length betrays how close she is, but Sakura Bakushin O does not yield easily, not even to her own pleasure.
 
@@ -32,7 +32,7 @@ The angle from behind is ruthlessly deep. You hit the back of her slick heat in 
 
 You pull back until the tip almost slips free, letting the cool air hit the slick latex, then slam forward again. The wet slap of your pelvis against her ass cheeks becomes a rapid, driving drumbeat. Your knees grind into the concrete with every thrust, sending dull spikes of pain up your legs, but the brutal, tight grip of her pussy milking your shaft overrides everything. She is incredibly wet, the thick, syrupy sound of her slick churning around your cock filling the room, competing with the squeak of the vaulting horse shifting slightly under her weight.
 
-![Deep penetration from behind over the vaulting horse, Bakushin looking back breathless](c:/StoryCrafter/bakushin_after_training/assets/ch03_02.png)
+![Deep penetration from behind over the vaulting horse, Bakushin looking back breathless](../assets/ch03_02.png)
 
 "I'm keeping pace!" she brags, though her voice trembles wildly, her knuckles turning white as she grips the edges of the equipment. "Your form is... ah... adequate, Trainer! But I won't... I won't break!"
 
@@ -50,7 +50,7 @@ You bury your nose and mouth into the damp, coarse hollow of her right armpit. Y
 
 The taste is incredibly sharp—pure, unfiltered brine and sour musk. She screams around the mouthful of leather. The overwhelming dual sensation—your cock battering her cervix from behind, your tongue lapping the salty, concentrated sweat from one pit, and your fingers vigorously working the other—completely shatters her remaining control. 
 
-![Trainer cupping Bakushin's bare breast and caressing her sweat-glistening underarm during deep thrusts](c:/StoryCrafter/bakushin_after_training/assets/ch03_03.png)
+![Trainer cupping Bakushin's bare breast and caressing her sweat-glistening underarm during deep thrusts](../assets/ch03_03.png)
 
 "T-Trainer! It's too—ah! Unfair!" she sobs, her thighs beginning to tremble violently against your hips, the muscles vibrating like a taut bowstring. "I said I wouldn't... I'm an honor student, I control the... the pace...!"
 
@@ -62,7 +62,7 @@ That breaks her. The contest is over.
 
 Her entire body goes rigidly stiff. A violent, involuntary contraction seizes her pussy, clamping down around your cock like a crushing vice. You groan loudly as her internal muscles crush the condom, milking your length with terrifying, spasming force. The sheer pressure is agonizingly good. Her legs shake so hard her knees nearly buckle, forcing her to lean all her body weight onto the vaulting horse. A broken, ragged cry tears from her throat, muffled heavily by the leather she's biting down on—a sound that has lost all its boastful volume, reduced to a desperate, feral whimper. 
 
-![Bakushin's overwhelming first climax, trembling and biting down on the vaulting horse](c:/StoryCrafter/bakushin_after_training/assets/ch03_04.png)
+![Bakushin's overwhelming first climax, trembling and biting down on the vaulting horse](../assets/ch03_04.png)
 
 She climaxes hard, her inner walls clenching and fluttering against you in rapid, punishing waves of heat. The raw force of her orgasm threatens to drag you right over the edge with her. You bite the inside of your cheek, the taste of iron blooming in your mouth as you force yourself to hold back, riding out the brutal grip of her climax without spilling your own heat.
 

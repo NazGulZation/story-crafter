@@ -203,16 +203,15 @@ masterpiece, best quality, ultra detailed anime coloring, anime screenshot,
 ```
 
 > [!IMPORTANT]
-> **No Underscores Required (Use Spaces)**:
-> While imageboards like Danbooru index tags using underscores (`reimu_hakurei`, `detached_sleeves`, `large_breasts`, `cowgirl_position`), **the Anima model was trained with spaces instead of underscores**.
-> Always format multi-word tags with natural spaces when prompting:
-> - `reimu_hakurei` -> `reimu hakurei`
-> - `detached_sleeves` -> `detached sleeves`
-> - `brown_hair` -> `brown hair`
-> - `hair_bow` -> `hair bow`
-> - `cowgirl_position` -> `cowgirl position`
-> - `pubic_hair` -> `pubic hair`
+> **Mandatory Dress State & Asymmetry Protocol**:
+> - **Fully Nude Characters**: When both characters (or a solo character) are unclothed, explicitly add `completely naked, bare skin`.
+> - **Asymmetric State (Female Clothed, Male Nude)**: When the female partner is clothed (e.g. gym clothes, uniform) while the male partner is stripped, explicitly add `clothed female nude male`.
+> - **Asymmetric State (Male Clothed, Female Nude)**: When the male partner remains clothed (e.g. shirt, suit) while the female partner is stripped, explicitly add `clothed male nude female`.
 
+> [!IMPORTANT]
+> **Uniform Tag Variants & Redundant Clothing Suppression**:
+> - When using an official character full uniform tag variant (e.g. `sakura bakushin o \(blossom in learning\) \(umamusume\)`), **remove generic clothing descriptors** (`jacket, shirt, bloomers, skirt, sports bra`).
+> - Generic clothing tokens create competing conditioning signals that override or distort the default uniform variant, causing mismatched textures or garbled patterns. Only include specific clothing tokens if a distinct modification is deliberately intended (e.g., `open jacket, unzipped jacket, torn clothes`).
 
 ### Reference Example:
 ```text
@@ -425,38 +424,16 @@ When an image scores **below 5/5**, the agent **is explicitly authorized and exp
 
 ## 10. Field-Tested Failure Modes & Proven Prompt Remediation Strategies
 
-Through extensive real-world generation runs and visual audits, several recurring failure modes in SDXL/Pony/Anima diffusion models have been cataloged along with their exact remediation rules. Apply these rules directly when drafting initial prompts and when performing dynamic prompt replacements on `< 5/5` re-rolls:
+For comprehensive documentation on common SDXL/Pony/Anima diffusion failure modes, detailed diagnostic breakdowns, and field-tested remediation rules, refer to the dedicated reference guide:
 
-### 1. The "Floor Chest / Collarbone" Glitch (POV Doggystyle in Vertical Aspect Ratio)
-- **The Failure Mode**: When requesting rear-entry / doggystyle (`from behind`, `doggystyle`, `standing doggystyle`) in vertical formats (2:3, 9:16) with downward POV (`pov, pov hands, penis in pussy`), the model defaults to its ingrained missionary template. It pastes a male chest/collarbone lying face-up on the floor at the bottom of the screen with an erect penis pointing upward into the girl, creating an absurd hybrid where she is taken from behind while a man lies underneath her on the floor.
-- **Remediation Strategy**:
-  - **Never use direct downward `pov` for standing rear-entry**.
-  - **Switch to a Side 3/4 Perspective**: Use `side view, 3/4 view, standing sex, trainer standing behind, embracing from behind`.
-  - **Negative Suppression**: Add `pov, top down view, male lying on back, chest at bottom, missionary, face up`.
+> **[references/failure-modes-and-remediations.md](references/failure-modes-and-remediations.md)**
 
-### 2. The "Motion Lines / Bouncing" Breast Ghosting Trap
-- **The Failure Mode**: Prompt tags such as `bouncing`, `motion lines`, or `motion blur` applied to female anatomy do not generate stylish action streaks; instead, the diffusion model interprets motion blur as **secondary flesh silhouettes**, generating **double breasts, dual contours, or ghosted pale bulges** beneath the chest. Furthermore, manga impact tags can manifest as spiky skin spurs along the outer hips and thighs.
-- **Remediation Strategy**:
-  - **Never prompt `bouncing`, `motion lines`, or `motion blur` on body parts**.
-  - **Express Speed & Rhythm Through Diegetic Consequences**: Prompt physical reactions instead: `flying sweat droplets, dripping sweat, heavy panting, clenched teeth, arched back, intense rhythm, squelch, sexual fluids`.
-  - **Enforce Clean Anatomy**: Use `natural breasts, firm breasts, bare breasts`.
-  - **Negative Suppression**: Always include `motion lines, motion blur, ghosting, double breasts, dual breasts, extra nipples, spikes, impact lines`.
-
-### 3. The Athletic Environment "Spontaneous Swimsuit / Leotard" Bias
-- **The Failure Mode**: In athletic scenes (gymnasiums, equipment rooms, stretching on mats, wrists crossed behind head), the model has heavy latent associations with competitive sportswear (`school swimsuit, leotard, one-piece swimsuit`). Even if `bare breasts` or `topless` is prompted, the strong sports context can manifest a full one-piece swimsuit or singlet covering the torso.
-- **Remediation Strategy**:
-  - **Enforce Redundant Total Nudity Tags**: When the scene demands full undress, use: `completely nude, topless, bottomless, bare breasts, nipples, bare skin, no clothes`.
-  - **Negative Suppression**: Explicitly ban athletic gear: `swimsuit, leotard, one-piece swimsuit, clothes, clothing, shirt, bra, sports bra, bloomers, shorts, panties`.
-
-### 4. Multi-Partner / "2boys" Contamination in Complex Multi-Point Contact
-- **The Failure Mode**: When a scene requires multiple simultaneous actions from the male partner (e.g., missionary penetration AND licking her armpit, or holding her hips AND reaching around to cup a breast), the model often splits the actions across two separate male bodies (e.g. one man lying down, another standing nearby).
-- **Remediation Strategy**:
-  - **Strict Singular Male Anchors**: Always include `1boy, solo male, only one male, single male, pov, close-up`.
-  - **Negative Suppression**: Always include `2boys, multiple boys, multiple males, clone, extra heads, extra bodies, extra limbs, standing male` (if the partner is lying down).
-
-### 5. Inverted Perspective Collapse in Post-Coital Aftermath Scenes
-- **The Failure Mode**: In aftermath/collapse scenes on the floor, framing the camera from above the head looking down the body (inverted perspective) frequently confuses spatial orientation, causing inverted legs, extra limbs, or upright erect condoms protruding from the partner's back.
-- **Remediation Strategy**:
-  - **Ground the Scene in Natural Horizons**: Frame aftermaths from side angles: `lying on side, side view, cuddle, embracing, arm draped over waist, collapsed together on mat, spent, mutual exhaustion, used condom discarded on mat`.
-  - **Negative Suppression**: Add `upside down, extra legs, extra limbs, penetration, erect penis, upright condom`.
+### Key Failure Modes Cataloged in Reference:
+1. **The "Floor Chest / Collarbone" Glitch**: Downward vertical POV in rear-entry/doggystyle -> use Side 3/4 Perspective.
+2. **The "Motion Lines / Bouncing" Breast Ghosting Trap**: Bouncing/motion tags cause secondary flesh silhouettes/dual breasts -> express speed through diegetic consequences (`flying sweat droplets, panting, arched back`).
+3. **The Athletic Environment "Spontaneous Swimsuit / Leotard" Bias**: Sport contexts force unwanted swimwear -> enforce `completely naked, bare skin` and negative bans.
+4. **Multi-Partner / "2boys" Contamination**: Complex multi-action contact generates duplicate males -> anchor with `1boy, solo male, single male`.
+5. **Inverted Perspective Collapse**: Top-down head-first views in post-coital aftermath invert limbs -> ground scene with side angles (`lying on side, cuddle, mutual exhaustion`).
+6. **Character Uniform Tag Variants & Redundant Clothing Suppression**: Full uniform tags represent complete outfits -> remove generic clothing descriptors (`jacket, shirt`) to avoid overriding default uniform patterns.
+7. **Facesitting & Downward 69 Oral "Severed Head" Glitch**: Direct top-down POV pins squashed/severed heads at bottom border -> switch to dynamic Side 3/4 perspective with braced limbs.
 

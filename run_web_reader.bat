@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 title StoryCrafter Web Reader
 
 echo ========================================================
-echo        StoryCrafter Sleek Python Web Reader
+echo        StoryCrafter Sleek Python Web Reader (LAN Mode)
 echo ========================================================
 echo.
 
@@ -61,7 +61,7 @@ if exist "requirements.txt" (
 )
 
 :: 5. Launch Web Reader App
-echo [LAUNCH] Starting StoryCrafter Web Reader...
+echo [LAUNCH] Starting StoryCrafter Web Reader (LAN Mode by default)...
 echo [INFO] Press Ctrl+C in this console window to stop the server.
 echo.
 if exist ".venv\Scripts\python.exe" (

@@ -64,8 +64,8 @@ def save_config(config):
         return False
 
 
-def format_markdown_to_html(md_text):
-    """Convert chapter markdown into clean, styled book HTML with drop caps."""
+def format_markdown_to_html(md_text, story_id=""):
+    """Convert chapter markdown into clean, styled book HTML with drop caps and web-safe image paths."""
     lines = md_text.splitlines()
     title = ""
     cleaned_lines = []
@@ -78,6 +78,29 @@ def format_markdown_to_html(md_text):
 
     body_md = "\n".join(cleaned_lines)
 
+    # Pre-process markdown image tags into web-safe HTML figures
+    def _replace_image_tag(match):
+        alt = match.group(1).strip()
+        src = match.group(2).strip()
+        src_norm = src.replace("\\", "/")
+
+        # Extract filename
+        filename = src_norm.split("/")[-1]
+
+        # Detect story from path if present (e.g. c:/StoryCrafter/bakushin_after_training/assets/...)
+        m_story = re.search(r'StoryCrafter/([^/]+)/assets/', src_norm, re.IGNORECASE)
+        resolved_story = m_story.group(1) if m_story else story_id
+
+        if resolved_story:
+            web_url = f"/api/assets/{resolved_story}/{filename}"
+        else:
+            web_url = f"/api/assets/{filename}"
+
+        caption_html = f'<figcaption class="illustration-caption">{html.escape(alt)}</figcaption>' if alt else ''
+        return f'\n\n<figure class="book-figure"><img src="{web_url}" alt="{html.escape(alt)}" loading="lazy">{caption_html}</figure>\n\n'
+
+    body_md = re.sub(r'!\[(.*?)\]\((.*?)\)', _replace_image_tag, body_md)
+
     if markdown:
         raw_html = markdown.markdown(body_md, extensions=['extra', 'smarty'])
     else:
@@ -85,7 +108,9 @@ def format_markdown_to_html(md_text):
         paragraphs = [p.strip() for p in body_md.split("\n\n") if p.strip()]
         html_parts = []
         for p in paragraphs:
-            if p.startswith("### "):
+            if p.startswith("<figure") and p.endswith("</figure>"):
+                html_parts.append(p)
+            elif p.startswith("### "):
                 html_parts.append(f"<h3>{html.escape(p[4:])}</h3>")
             elif p.startswith("## "):
                 html_parts.append(f"<h2>{html.escape(p[3:])}</h2>")
@@ -117,7 +142,7 @@ def scan_full_library():
                     for idx, f in enumerate(files, 1):
                         try:
                             text = f.read_text(encoding="utf-8")
-                            title, raw_html = format_markdown_to_html(text)
+                            title, raw_html = format_markdown_to_html(text, story_id=item.name)
                             word_count = len(re.findall(r"\b\w+\b", text))
                             reading_minutes = max(1, round(word_count / 220))
 
@@ -179,12 +204,37 @@ def find_available_port(host, start_port=8080, max_attempts=25):
     return start_port
 
 
-def generate_web_ui(library, config):
+def generate_web_ui(library, config, lan_url=None):
     """Generate the complete web reader HTML with embedded library and client scripts."""
     embedded_json = json.dumps({
         "stories": library,
-        "config": config
+        "config": config,
+        "lan_url": lan_url
     })
+
+    if lan_url:
+        lan_section = f"""
+      <div style="margin-top: 14px; padding: 10px 12px; background: rgba(0,0,0,0.04); border-radius: 6px; border: 1px solid var(--border-color); font-size: 13px;">
+        <div style="font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+          <span>📱</span> LAN Mode Active (Mobile &amp; Tablet)
+        </div>
+        <div style="color: var(--text-secondary); font-size: 12px; line-height: 1.4;">
+          Connect any mobile phone or tablet on your Wi-Fi network:
+        </div>
+        <div style="margin-top: 6px; font-family: monospace; font-size: 13px; font-weight: bold; color: var(--accent); user-select: all; word-break: break-all;">
+          {html.escape(lan_url)}
+        </div>
+      </div>"""
+    else:
+        lan_section = """
+      <div style="margin-top: 14px; padding: 10px 12px; background: rgba(0,0,0,0.04); border-radius: 6px; border: 1px solid var(--border-color); font-size: 13px;">
+        <div style="font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+          <span>🔒</span> Local Only Mode
+        </div>
+        <div style="color: var(--text-secondary); font-size: 12px; line-height: 1.4;">
+          Server is bound to localhost (127.0.0.1). Run without --local to enable LAN mode.
+        </div>
+      </div>"""
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -544,6 +594,51 @@ def generate_web_ui(library, config):
     text-align: justify;
     hyphens: auto;
     min-height: 0;
+  }}
+
+  /* BOOK ILLUSTRATIONS & FIGURES */
+  .book-figure {{
+    margin: 14px auto;
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }}
+
+  .book-figure img,
+  .page-content img,
+  #contentSingle img {{
+    max-width: 100%;
+    max-height: 440px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }}
+
+  .book-figure img:hover,
+  .page-content img:hover,
+  #contentSingle img:hover {{
+    transform: scale(1.01);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.25);
+  }}
+
+  .book-figure figcaption,
+  .illustration-caption {{
+    font-family: var(--font-serif);
+    font-size: 0.82em;
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-top: 6px;
+    text-align: center;
+    line-height: 1.35;
+    max-width: 90%;
   }}
 
   /* SINGLE COLUMN MODE */
@@ -995,6 +1090,7 @@ def generate_web_ui(library, config):
       <div class="shortcut-row"><span>Toggle Fullscreen</span><span class="shortcut-key">F</span></div>
       <div class="shortcut-row"><span>Reload Library</span><span class="shortcut-key">R</span></div>
       <div class="shortcut-row"><span>Close Dialogs</span><span class="shortcut-key">Esc</span></div>
+      {lan_section}
       <div style="text-align: right; margin-top: 16px;">
         <button class="btn active" id="btnCloseModal">Got it</button>
       </div>
@@ -1769,7 +1865,8 @@ class StoryReaderWebHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             library = self.server.get_library()
             config = load_config()
-            html_content = generate_web_ui(library, config)
+            lan_url = getattr(self.server, "lan_url", None)
+            html_content = generate_web_ui(library, config, lan_url=lan_url)
             self.wfile.write(html_content.encode("utf-8"))
 
         elif path == "/api/library":
@@ -1839,6 +1936,49 @@ class StoryReaderWebHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(ICON_ICO_FILE.read_bytes())
             else:
                 self.send_error(404, "Icon not found")
+
+        elif path.startswith("/api/assets/") or "/assets/" in path:
+            import mimetypes
+            import shutil
+            import urllib.parse
+            clean_path = urllib.parse.unquote(path)
+            if clean_path.startswith("/api/assets/"):
+                sub_path = clean_path[len("/api/assets/"):]
+            elif clean_path.startswith("/assets/"):
+                sub_path = clean_path[len("/assets/"):]
+            else:
+                sub_path = clean_path.lstrip("/")
+
+            parts = [p for p in sub_path.split("/") if p and p != "assets"]
+            target_file = None
+            if len(parts) >= 2:
+                story_name = parts[0]
+                filename = parts[-1]
+                cand = (BASE_DIR / story_name / "assets" / filename).resolve()
+                if cand.exists() and cand.is_file():
+                    target_file = cand
+            elif len(parts) == 1:
+                filename = parts[0]
+                for s_dir in BASE_DIR.iterdir():
+                    if s_dir.is_dir():
+                        cand = (s_dir / "assets" / filename).resolve()
+                        if cand.exists() and cand.is_file():
+                            target_file = cand
+                            break
+
+            if target_file and BASE_DIR in target_file.parents and target_file.is_file():
+                mime_type, _ = mimetypes.guess_type(str(target_file))
+                if not mime_type:
+                    mime_type = "image/png" if target_file.suffix.lower() == ".png" else "application/octet-stream"
+                self.send_response(200)
+                self.send_header("Content-Type", mime_type)
+                self.send_header("Content-Length", str(target_file.stat().st_size))
+                self.send_header("Cache-Control", "public, max-age=86400")
+                self.end_headers()
+                with open(target_file, "rb") as f:
+                    shutil.copyfileobj(f, self.wfile)
+            else:
+                self.send_error(404, f"Asset Not Found: {path}")
 
         else:
             self.send_error(404, "Not Found")
@@ -1917,9 +2057,11 @@ class StoryReaderServer(ThreadingHTTPServer):
             return self._library
 
 
-def run_server(host="127.0.0.1", port=8080, open_browser=True, lan_mode=False):
-    """Run the StoryReader web server."""
-    if lan_mode and host not in ("::", "0.0.0.0"):
+def run_server(host="0.0.0.0", port=8080, open_browser=True, lan_mode=True):
+    """Run the StoryReader web server in LAN mode by default."""
+    if not lan_mode and host in ("0.0.0.0", "::"):
+        host = "127.0.0.1"
+    elif lan_mode and host in ("127.0.0.1", "localhost"):
         host = "0.0.0.0"
 
     actual_port = find_available_port(host, port)
@@ -1931,9 +2073,13 @@ def run_server(host="127.0.0.1", port=8080, open_browser=True, lan_mode=False):
     ipv6_url = f"http://[::1]:{actual_port}/"
 
     is_all_interfaces = host in ("::", "0.0.0.0") or lan_mode
+    server.lan_url = lan_url if is_all_interfaces else None
+    server.local_url = local_url
+    server.is_lan_mode = is_all_interfaces
 
+    mode_label = "LAN Mode (All Interfaces)" if is_all_interfaces else "Local Only"
     print("=" * 62, flush=True)
-    print("           StoryCrafter Sleek Python Web Reader           ", flush=True)
+    print(f"       StoryCrafter Sleek Python Web Reader [{mode_label}]", flush=True)
     print("=" * 62, flush=True)
     print(f"  Local Access:      {local_url}", flush=True)
     if is_all_interfaces:
@@ -1941,7 +2087,7 @@ def run_server(host="127.0.0.1", port=8080, open_browser=True, lan_mode=False):
         if ":" in host:
             print(f"  IPv6 Loopback:     {ipv6_url}", flush=True)
     else:
-        print(f"  Network access:    Run with --lan to enable mobile reading", flush=True)
+        print(f"  Network access:    Disabled (run without --local to enable LAN mode)", flush=True)
     print("-" * 62, flush=True)
     print("  Controls & Hotkeys:", flush=True)
     print("    [Arrow Keys / Space / A / D] Turn Pages", flush=True)
@@ -1970,16 +2116,27 @@ def run_server(host="127.0.0.1", port=8080, open_browser=True, lan_mode=False):
 def main():
     parser = argparse.ArgumentParser(description="StoryCrafter Sleek Python Web Reader")
     parser.add_argument("--port", "-p", type=int, default=8080, help="Port to run server on (default: 8080)")
-    parser.add_argument("--host", type=str, default="127.0.0.1", help="Host address (default: 127.0.0.1)")
-    parser.add_argument("--lan", action="store_true", help="Bind to 0.0.0.0 to allow mobile/tablet access across LAN")
+    parser.add_argument("--host", type=str, default=None, help="Host address to bind to (default: 0.0.0.0 [LAN mode])")
+    parser.add_argument("--lan", dest="lan", action="store_true", default=True, help="Enable LAN mode (default: enabled)")
+    parser.add_argument("--local", "--no-lan", dest="lan", action="store_false", help="Disable LAN mode and bind only to localhost (127.0.0.1)")
     parser.add_argument("--no-browser", action="store_true", help="Do not open web browser automatically")
     args = parser.parse_args()
 
+    if args.host is not None:
+        host = args.host
+        lan_mode = args.lan if host not in ("127.0.0.1", "localhost") else False
+    elif not args.lan:
+        host = "127.0.0.1"
+        lan_mode = False
+    else:
+        host = "0.0.0.0"
+        lan_mode = True
+
     run_server(
-        host=args.host,
+        host=host,
         port=args.port,
         open_browser=not args.no_browser,
-        lan_mode=args.lan
+        lan_mode=lan_mode
     )
 
 
