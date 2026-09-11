@@ -64,6 +64,23 @@ Never resolve story conflicts or climaxes via unearned coincidences, miraculous 
 - **Asymmetry of Luck**: Coincidence and bad luck may hurt the protagonist and complicate their situation, but coincidence and good luck may **never** rescue them or solve the core conflict. Solutions must be paid for with character agency, established intellect, or heavy cost.
 - **Rule Integrity**: If magic, alchemy, or technology exists, its operational costs, failure modes, and boundaries must be established before they are tested in a life-or-death crisis.
 
+### 2.4. Mandatory Plot Hole Audit Protocol (Writing, Rewriting & Reworking)
+Whenever drafting, rewriting, or reworking a story, arc, chapter, or scene, the author must ALWAYS perform an exhaustive plot hole audit before considering the manuscript complete:
+1. **Chronological & Calendar Verification**:
+   - Check that travel durations, production timelines, biological recovery windows, and seasonal progression match across all chapters.
+   - Guard against temporal collisions (e.g., an expedition declared to take 3 months clashing with a home-front development timeline stated to take 5 months).
+2. **Epistemic & Information Asymmetry Audit**:
+   - Track who knows what, when they learned it, and how they learned it.
+   - Characters must never act on off-screen intelligence, secret identities, or distant events without a verified in-world transmission vehicle (courier, intercepted dispatch, spy report, logical deduction).
+3. **Causal Tracking & Asset Origin ("How Did That Get Here?")**:
+   - Every weapon, tool, chemical compound, raw material, or machine must have an established origin and logistical supply chain.
+   - Industrial leaps must be seeded with foundational prerequisites (e.g., machine tools, chemical synthesis, metallurgy, trained artisans).
+4. **Scale, Demographics & Manpower Accounting**:
+   - Track casualty figures, workforce requirements, and army sizes against the setting's established population base.
+   - Ensure explosive manpower growth is earned through dramatized refugee migration, integration, or recruitment rather than spontaneous generation.
+5. **Adversary Competence & Counter-Strategy Audit**:
+   - Adversaries must behave with logical self-interest, tactical prudence, and believable countermeasures based on the information available to them, rather than acting with suicidal incompetence to enable easy protagonist victories.
+
 ---
 
 ## 3. High-Impact Prose & Anti-AI Hallmarks

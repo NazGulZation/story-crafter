@@ -4,7 +4,7 @@ The true sovereign of modern territory is the machine tool.
 
 Feudal dukes believe power resides in bloodlines, heraldic griffins, and ancient oaths sworn over ivory relics. In reality, power is an equation of metallurgy, chemical synthesis, and caloric throughput. A kingdom of ten thousand knights in gilded breastplates is merely eighty metric tons of scrap pig-iron walking toward an industrial slaughterhouse.
 
-Within ninety days of liquidating the Adventurers' Guild, the eastern valley of Karst-Hold was transformed into the primary production basin of the *Heereswaffenamt*.
+Within thirty days of liquidating the Adventurers' Guild, the eastern valley of Karst-Hold was transformed into the primary production basin of the *Heereswaffenamt*.
 
 Five blast furnaces, fueled by anthracite coke from the deep adits, breathed columns of orange flame and black particulate smoke into the low, leaden clouds. The river had been channeled through masonry sluices, spinning five heavy water-turbines that powered the overhead driveshafts of the central machine works.
 

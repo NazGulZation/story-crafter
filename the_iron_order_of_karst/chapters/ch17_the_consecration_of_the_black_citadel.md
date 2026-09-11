@@ -60,13 +60,13 @@ Looking out from the cliff face, the entire northern frontier was visible.
 
 Along the mountain peaks, three massive concrete Flak Towers dominated the skyline. Each tower was an impregnable fortress of reinforced concrete, armed with twin long-barreled 88mm dual-purpose guns in armored barbettes, their optical rangefinders sweeping the horizon for any airborne threat or approaching army.
 
-Down in the basin, the smoke of industry rose from orderly stacks. The town of Karst-Borough was clean, paved, and safe. The five thousand citizens lived in warm apartments with running water and district heating. Every child attended primary vocational school; every worker received statutory healthcare in the clean clinics run by Clara’s trained nursing cohorts; every citizen spent their Saturday evenings drinking subsidized *Volksbier* in the municipal beer halls.
+Down in the basin, the smoke of industry rose from orderly stacks across all seven administrative sectors. The central borough of Sector Alpha housed five thousand specialized machinists and administrators in warm apartments with running water and district heating, while the surrounding valley communes and mining complexes supported eighty thousand registered citizens. Every child attended primary vocational school; every worker received statutory healthcare in the clean clinics run by Clara’s trained nursing cohorts; every citizen spent their Saturday evenings drinking subsidized *Volksbier* in the municipal beer halls.
 
 Feudal kingdoms built empires on misery, blood, and aristocratic indulgence.
 
 The Directorate had constructed a civilization of absolute order, where every gear meshed, every calorie was accounted for, and every citizen was a protected, productive component of an invincible machine.
 
-“The autarkic cycle is closed, Supreme Commander,” Director Weidmann said, stepping up beside me with the final economic summary. “Grain stores in the subterranean silos are secured for four years. Fuel synthesis outpaces operational consumption by thirty percent. Our steel production exceeds the combined output of the three neighboring duchies. The basin is an autarkic fortress.”
+“The autarkic cycle is closed, Supreme Commander,” Director Weidmann said, stepping up beside me with the final economic summary. “Our registered basin population stands at eighty-five thousand citizens, sustaining our twenty-thousand-strong defense and logistics corps without degrading factory shifts. Grain stores in the subterranean silos are secured for four years. Fuel synthesis outpaces operational consumption by thirty percent. Our steel production exceeds the combined output of the three neighboring duchies. The basin is an autarkic fortress.”
 
 I pulled back my left sleeve, tapped my wrist twice against the seam of my charcoal wool coat, and looked out into the freezing mountain sky.
 

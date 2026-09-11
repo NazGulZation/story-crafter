@@ -6,13 +6,15 @@ An aristocratic courtier presumes that international relations consist of parchm
 
 The Directorate conducts diplomacy through demonstrated kinetic overpressure.
 
-At 1000 hours on a sub-zero December morning, the royal delegation from the Osterlund capital arrived at the Western Proving Ground of Karst-Hold.
+At 1000 hours on a frosty November morning, before the winter snowstorms sealed the southern mountain passes, the royal delegation from the Osterlund capital arrived at the Western Proving Ground of Karst-Hold.
 
 It was an opulent, archaic procession.
 
 Count Leopold of the Western Marches rode at the head of eighty gilded knights mounted on heavy chargers. Leopold wore an ermine-lined velvet cloak, a chased silver cuirass, and gilded spurs that jingled with every haughty step of his warhorse.
 
 Riding beside him were two high-ranking envoys from the High Elven Forest Court, clad in diaphanous silver robes and green emerald-leaf cloaks, accompanied by three senior battle-mages from the Royal Academy carrying ivory staves capped with glowing star-sapphires.
+
+Their presence with a mere eighty-man retinue revealed the catastrophic failure of feudal intelligence. In the southern capital, the royal court and the elven elders had dismissed the frantic frontier reports of the North Basin battle—tales of iron wagons spitting thunder and screaming metal birds—as drunken peasant folklore and barbarian excuses for a rout. Relying on six-month-old guild registries from before Ronald’s liquidation, they presumed Karst-Hold remained under the control of a runaway peasant hunter leading an unruly bandit rabble.
 
 They arrived to deliver a formal feudal ultimatum.
 

@@ -58,7 +58,7 @@ I gestured to Sergeant Kester.
 
 Kester stepped to the pine crate. He lifted the long, dark object nestled inside oiled rags.
 
-It possessed no glowing runes, no gold filigree, and no beast-bone carvings. It was an assembly of cold, blued ordnance steel and dense walnut wood: the prototype *Karst Pattern 1 Service Rifle*.
+It possessed no glowing runes, no gold filigree, and no beast-bone carvings. It was an assembly of cold, blued ordnance steel and dense walnut wood: the prototype *Karst Pattern 1 Service Rifle*. Over the preceding four weeks, two master clockmakers and the armory's head blacksmith had labored across twelve-hour shifts, hand-boring the barrel on a manual bench jig, hand-cutting the four spiral rifling grooves with hardened steel broaches, and hand-forming the brass cartridge cases from scrap copper and zinc under my direct engineering blueprints.
 
 Kester pulled the straight bolt handle upward with a crisp, metallic clatter, drew it backward to eject an inspection flag, smoothly chambered a long brass cartridge from the five-round internal magazine, and drove the bolt home, locking the dual front lugs into the receiver ring.
 

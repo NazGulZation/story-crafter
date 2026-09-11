@@ -14,7 +14,7 @@ The stench preceded them by fifty paces: a rancid miasma of unwashed bodies, gan
 
 Marek the Gilded walked at the vanguard, his glorious swagger reduced to a painful, splay-footed limp. The polished mirror-finish of his gilded plate armor was gone, replaced by a greasy crust of dried swamp mud, troll bile, and red rust along the joints. The five-foot greatsword *Dawn-Sunderer* was strapped across his back, its scabbard frayed, its pommel dented from having been used to crack stubborn walnuts. His flowing chestnut curls hung in greasy, tangled hanks caked with wood-ash and lice.
 
-Behind him stumbled Clara of the Weeping Spring. Her pristine cleric’s habit of white samite and silver lace was torn to ribbons, dragging in the black peat mud. Her silk slippers had rotted away six weeks prior; she now wore strips of raw wolf-hide bound to her blistered feet with dirty hemp cord. Her pale cheeks were sunken from malnutrition, smeared with charcoal, and her hands trembled uncontrollably around a cracked prayer focus.
+Behind him stumbled Clara of the Weeping Spring. Her pristine cleric’s habit of white samite and silver lace was torn to ribbons, dragging in the black peat mud. Her silk slippers had rotted away six weeks prior; she now wore strips of raw wolf-hide bound to her blistered feet with dirty hemp cord. Her pale cheeks were sunken from malnutrition, smeared with charcoal, and her hands trembled uncontrollably around a cracked prayer focus. Only her continuous cellular regeneration prayers had kept their intestines and kidneys from shutting down after six weeks of drinking stagnant cave water and chewing raw blind salamanders, a ceaseless metabolic strain that had drained her spiritual reservoir and emaciated her frame.
 
 Beside her limped Isolde the Pyromancer. Her embroidered velvet robes were scorched along the hem from her own misfired cantrips. Her satchel of arcane reagents had been ruined during a river crossing two weeks into their expedition; she now carried four dried leaves and a handful of sulfurous mud in an unwashed tin cup. Her lips were cracked, bleeding from cold and salt deficiency.
 
@@ -26,7 +26,7 @@ Marek paused, leaning heavily on a dead spruce branch that snapped beneath his w
 
 “Stop and camp with what, Clara?” Marek snapped, his voice hoarse and stripped of courtly charm. “We have no tent. The guy-wires were cut by whatever mountain goblin raided our camp on Raven’s Gap three months ago. We have no salt pork. We have no dry kindling. We keep walking until we reach Karst-Hold!”
 
-“You said the dungeon would be easy!” Isolde rasped, coughing violently into her sleeve. “You promised a hoard of ancient elven silver! We spent six weeks trapped in a flooded basalt tomb eating blind salamanders! My mana is depleted! My fingers are frozen! And what did we get?”
+“You said the dungeon would be easy!” Isolde rasped, coughing violently into her sleeve. “You promised a hoard of ancient elven silver! We spent six weeks trapped in a flooded basalt tomb eating blind salamanders! If Clara hadn't purged the cave rot from our guts twice a day, we would be four bloated corpses in the dark! My mana is depleted! My fingers are frozen! And what did we get?”
 
 Marek’s bloodshot eyes flashed with sudden, desperate vanity. He reached into his leather tunic and pulled out an object wrapped in a torn strip of grease-soaked oilcloth.
 

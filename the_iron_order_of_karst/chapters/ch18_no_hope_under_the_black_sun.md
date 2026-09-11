@@ -12,7 +12,7 @@ A rare astronomical convergence veiled the pale winter sun in a ring of black ir
 
 I stood upon the high granite parapet of Bastion 1, my gloved hands resting upon the cold basalt balustrade.
 
-Beside me stood Sergeant Major Kester, his chest adorned with the Iron Cross of Merit, holding the ceremonial review baton. Below us, filling the two-mile concrete expanse of the Grand Parade Ground, stood the mobilized power of the *Ordensstaat*.
+Beside me stood Sergeant Major Kester, his chest adorned with the Iron Cross of Merit, holding the ceremonial review baton. Below us, filling the two-mile concrete expanse of the Grand Parade Ground, stood the mobilized power of the *Ordensstaat*—twenty thousand front-line riflemen and auxiliary logistics personnel, supported by the eighty-five thousand registered citizens of the basin.
 
 Twenty thousand soldiers of the Mechanized Infantry Corps stood locked in silent, immaculate companies.
 
@@ -50,11 +50,11 @@ Twenty thousand pairs of steel-shod jackboots snapped together with a single, de
 
 *CLACK.*
 
-“One year ago, this basin was a forgotten wasteland of mud, bandits, and starvation,” I said, looking out across the sea of blued steel and iron tracks. “Wandering mercenaries looted your fields. Feudal dukes taxed your misery. The weak were devoured by beasts, and the strong lived as parasites.”
+“One year ago, on this very ground, this basin was a forgotten wasteland of mud, bandits, and starvation,” I said, looking out across the sea of blued steel and iron tracks. “Wandering mercenaries looted your fields. Feudal dukes taxed your misery. The weak were devoured by beasts, and the strong lived as parasites.”
 
 I raised my right hand, gesturing toward the endless ranks of tanks, guns, and disciplined infantry.
 
-“We have abolished the age of parasites. We have replaced superstition with metallurgy, chaos with administration, and hunger with the machine. Today, you are neither serfs nor cattle. You are the vanguard of a new age.”
+“Supported by eighty-five thousand workers and farmers across our seven sectors, we have abolished the age of parasites. We have replaced superstition with metallurgy, chaos with administration, and hunger with the machine. Today, you are the productive builders of an unyielding future. You are the vanguard of a new age.”
 
 As my words echoed into the quiet basin, a low, rhythmic roar began to vibrate from the northern sky.
 

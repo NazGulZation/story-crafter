@@ -93,6 +93,13 @@ When drafting story scenes:
 - **Mandatory Seeding & Foreshadowing (Chekhov's Arsenal)**: Every critical tool, skill, weakness, magical rule, tactical advantage, ally intervention, or environmental turning point must be established, hinted at, or dramatized in advance.
 - **Earned Agency & Costly Resolutions**: Protagonists must resolve dilemmas through decisions, trade-offs, previously displayed competence, or costly sacrifice. Coincidence may introduce trouble, but coincidence must never resolve trouble.
 - **Ironclad Cause-and-Effect**: Plot events must follow the principle of *"Therefore / But"* rather than *"And then / Suddenly"*. Every consequence must logically flow from prior actions, systemic rules, or established character flaws.
+- **Mandatory Plot Hole Audit on Writing, Rewriting & Reworking**:
+  Whenever drafting, rewriting, or reworking any story, arc, chapter, or scene, the writer must ALWAYS systematically check for plot holes across five critical vectors:
+  1. *Timeline & Chronology Alignment*: Verify that elapsed days, production schedules, travel times, and seasonal shifts align across chapters without temporal clashes.
+  2. *Information Asymmetry & Epistemic Tracking*: Characters must only act on intelligence they plausibly acquired; never leak private off-screen events or identities without an in-world transmission vehicle.
+  3. *Resource, Tooling & Asset Origins*: Every weapon, machine, chemical reagent, or logistical asset must possess a verifiable origin, raw material supply, and manufacturing precedent.
+  4. *Demographic & Scale Sanity*: Troop counts, labor manpower, and casualties must match established populations, refugee flows, and logistical support limits.
+  5. *Adversarial Counter-Action Logic*: Opponents must act with plausible competence, tactical self-interest, and logical counter-measures rather than convenient idiocy.
 
 ---
 

@@ -6,9 +6,9 @@ The feudal lords of the south write epic poems about the "Great Steppe Host." Th
 
 To an administrator of the Directorate, an invading army of eight thousand men is eight hundred metric tons of hostile biological mass advancing into pre-calibrated artillery kill-zones.
 
-At 0600 hours on a freezing November dawn, the alarm sounded across the Karst Basin.
+At 0600 hours on a crisp June dawn, with the northern mountain defiles cleared of winter avalanches, the alarm sounded across the Karst Basin.
 
-The mechanical, rising and falling howl of electric air-raid sirens mounted atop the concrete watchtowers tore through the freezing dawn, their piercing acoustic frequency vibrating off the frozen dolomite bluffs.
+The mechanical, rising and falling howl of electric air-raid sirens mounted atop the concrete watchtowers tore through the morning mist, their piercing acoustic frequency vibrating off the dolomite bluffs.
 
 *WUUUUU-AAAHHH-WUUUUU.*
 
@@ -18,7 +18,7 @@ I stood upon the reinforced concrete command balcony of Bastion 1, my binoculars
 
 At my side stood Sergeant Major Kester, wearing his steel helmet and holding a field telephone handset connected by heavy copper wire to the battery command pits.
 
-Three miles across the frost-bitten moorland of the North Basin, the horizon was dark with an ocean of horsemen, war-wagons, and massed foot infantry.
+Three miles across the green moorland of the North Basin, the horizon was dark with an ocean of horsemen, war-wagons, and massed foot infantry.
 
 The Steppe Coalition had assembled: eight thousand northern reavers clad in boiled leather and wolf pelts, brandishing curved sabers and recurve bows. At their center strode two dozen highland war-trolls—hulking, nine-foot monstrosities with thick, calcified hides that shrugged off iron arrows like dried grass.
 
@@ -34,14 +34,14 @@ A translucent, shimmering dome of crystalline arcane energy began to unfurl acro
 
 Kester tapped the brass chart board.
 
-“First: The 1st Mechanized Rifle Regiment occupies the primary concrete trench line across Sector Alpha. Sixty water-cooled MG-08 machine guns are pre-sighted along interlocking grazing-fire corridors.
+“First: The 1st Mechanized Rifle Regiment—two thousand four hundred drilled conscripts drawn from our forty thousand registered basin citizens—occupies the primary concrete trench line across Sector Alpha. Sixty water-cooled MG-08 machine guns are pre-sighted along interlocking grazing-fire corridors.
 Second: Ordens-Artillerie Battery Alpha and Battery Beta—twelve 105mm light field howitzers and four 88mm high-velocity dual-purpose guns—are entrenched in the rear limestone redoubts, zeroed onto surveyed fire-grid coordinates.
 Third: Panzer-Abteilung 1—six *Sturmwagen Model I* tanks—occupies the hull-down revetments along the central highway.
 Fourth: In the subterranean ammo magazines, Penal Unit Omega has completed the distribution of two thousand high-explosive artillery shells.”
 
 Below the command balcony, in the sunken communication trench leading to the forward battery, a line of penal laborers hauled heavy wooden ammunition crates.
 
-At the head of the cart line, sweating profusely despite the sub-zero frost, was Prisoner 401-A: Marek the Gilded.
+At the head of the cart line, sweating profusely in the morning chill, was Prisoner 401-A: Marek the Gilded.
 
 His chestnut curls were completely gone, replaced by a bristling stubble caked with anthracite soot and dry sweat. His gilded plate armor had been replaced by a coarse grey canvas smock and heavy wooden clogs that clattered in the mud. He strained against the harness of a four-wheeled munitions cart, his broad shoulders knotted as he hauled six ninety-pound cases of 105mm high-explosive shells toward the howitzer pits under the watchful eye of a bayonet-wielding guard.
 
