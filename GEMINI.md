@@ -54,8 +54,36 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
 When drafting story scenes:
 - **Sensory Grounding**: Anchor every scene with at least three distinct senses (scent, texture, taste, acoustic resonance, temperature) beyond visual description.
 - **Eliminate AI Clichés**: Avoid repetitive tropes such as forgotten breathing ("a breath she didn't know she was holding"), melodramatic shivers, eyes flashing with unreadable emotion, abstract emotion labeling, or overused metaphors ("testament to", "tapestry of").
+- **Strict Prohibition of False Dichotomy & Antithetical Framing ("Not Just A, But B" & Equivalents)**:
+  - **Forbidden Syntactic Patterns**: Never use the formulaic negation-contrast tic to manufacture dramatic contrast or pseudo-profundity:
+    - `not just A, but B` / `not only A, but B`
+    - `not merely A; it was B` / `did not simply A; they B`
+    - `was not A, but B` / `was not A; it was B`
+    - `did not [verb] because A; they [verb] because B`
+    - `no longer A; he/she/it was B`
+    - `not an A, but a B` / `not an A; it was a B`
+    - `he/she was not X; he/she was Y`
+    - `it was not a [warning/threat]; it was a [promise/guarantee]`
+    - `I had given them no A... I had given them B...`
+  - **Why It Is Prohibited**: This is an omnipresent, lazy AI tic where sentences constantly define reality by what it *is not* before revealing what it *is*. It dilutes narrative momentum, sounds formulaic and smug, and creates repetitive sentence rhythms.
+  - **Mandatory Affirmative Directives**: Make direct, active, affirmative declarations. State what the reality *is* immediately, grounding it in concrete sensory details and active verbs.
+    - *Banned*: "The acoustic effect was not a heroic roar; it was the dry clatter of heavy machinery."
+    - *Affirmative*: "The blast clattered against the stone like an industrial punch-press."
+    - *Banned*: "He was no longer Marek the Gilded; he was an engine."
+    - *Affirmative*: "Marek strained against the leather harness, hauling forty tons of coal a week like an iron draught-engine."
+    - *Banned*: "They did not shout because they were enslaved; they shouted because they were terrified of the chaos..."
+    - *Affirmative*: "They roared out of terror for the chaos of their past, clinging fiercely to the certainty of their rations."
 - **Dynamic Action**: Avoid simultaneous dual-action ("as / while") overload. Sequence beats cleanly with active verbs and tangible physical consequences.
 - **Dialogue with Subtext**: Characters rarely speak unvarnished truth; dialogue must reflect character status, tension, deflection, and hidden motives.
+- **Strict Prohibition of Meta-Commentary & Structural Signposting**:
+  - **Forbidden Meta Patterns**: Never inject structural commentary, fourth-wall breaks, out-of-character narrator signposting, or structural declarations into story prose, narration, or character dialogue:
+    - `"Act One is concluded"` / `"Act Two begins"`
+    - `"Now, we begin the next arc"` / `"The next arc begins here"`
+    - `"The chapter ends now"` / `"Thus concludes the chapter"`
+    - `### [END OF THE STORY / NOVEL / ARC]`
+    - Any meta commentary by characters or narration regarding plot structure, chapter progression, acts, arcs, pacing, reader experience, or the fourth wall.
+  - **Why It Is Prohibited**: It is amateurish, pulls the reader completely out of the immersion, shatters narrative illusion, and reduces prose to a self-conscious checklist.
+  - **Mandatory Immersion Directive**: Stay 100% inside the narrative reality, character psychology, and diegetic world. End scenes and chapters with organic, in-universe character actions, concrete sensory beats, spoken orders, or atmospheric environmental notes.
 
 ---
 

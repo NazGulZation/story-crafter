@@ -30,6 +30,7 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
 | **Forbidden Beasts & Creatures** | `Dragon` / `Drakes`, `Monster Crawler`, `Monster Dog` | Construct creatures with coherent ecology, realistic sensory organs, predatory behavior, and environmental adaptation rather than generic fantasy monsters. |
 | **Forbidden Plot Tropes** | `Deus Ex Machina`, `Ass-Pulls`, `Unforeshadowed Plot Armor`, `Opening Alley Thug / Mugger Encounter`, `Accountant Assistant / Junior Ledger Clerk Subordination` | Ground every climax in earned causality. Avoid having the protagonist assaulted by alley muggers at the start or taking subordinate junior bookkeeper employment. Instead, establish their rise via independent commercial arbitrage, debt leverage, contract law, or commercial syndication. |
 | **Forbidden Earth Idioms & Eponyms in Fantasy** | `Achilles' heel/tendon`, `Pyrrhic victory`, `Romanesque`, `Gothic`, `Byzantine`, `Damascened`, `Spanish/Flemish/Swedish/Andalusian/Persian/Parisian`, `Latin script`, `Christian mercy/charity`, Earth saints | Never use Earth-derived idioms, architectural styles, demonyms, languages, religions, or eponyms in secondary fantasy worlds. Always translate into setting-authentic equivalents (e.g., *heel-cords*, *ruinous triumph*, *Old Imperial basalt*, *High Imperial script*, *divine mercy of the Light*, *Wester-Reach merino*, *southern blood-stallions*). |
+| **Forbidden Meta-Commentary & Structural Signposts** | `"Act One is concluded"`, `"Now, we begin the next arc"`, `"The chapter ends now"`, `### [END OF...]`, narrator fourth-wall breaks | Stay 100% within the diegetic narrative reality and character perspective. End scenes with concrete in-world sensory beats, actions, or spoken orders. Never allow characters or narration to signpost plot structure, acts, or arcs. |
 
 > [!IMPORTANT]
 > **Anti-Cliché Directive**: In addition to the banned list, systematically reject lazy fantasy tropes. When tempted to name a town "Riverwood" or "Shadowfen", or give a character an overused apostrophe-laden elven name, pause and construct culturally grounded nomenclature based on authentic linguistic roots.
@@ -81,6 +82,21 @@ AI-generated fiction frequently falls into repetitive stylistic tics. Actively s
    - *Good*: "She drew three inches of steel from the scabbard. The wind picked up, driving grit into her eyes. She took another step."
 4. **The Melodramatic Shiver / Breath You Didn't Know You Were Holding**:
    - Strip all clichés involving forgotten breathing, eyes flashing with unreadable emotions, or shivers running down spines.
+5. **False Dichotomy & Antithetical Framing ("Not Just A, But B" & Equivalents)**:
+   - *Bad*: "The acoustic effect was not a heroic roar; it was the dry clatter of heavy machinery."
+   - *Good*: "The blast clattered against the stone like an industrial punch-press."
+   - *Bad*: "They did not just accept the Ordensstaat; they would have torn apart any foreign knight..."
+   - *Good*: "The populace defended the Ordensstaat with savage loyalty, ready to tear apart any trespasser who threatened their grain or beer."
+   - *Bad*: "He was no longer Marek the Gilded; he was an engine."
+   - *Good*: "Marek strained against the leather harness, hauling forty tons of coal a week like an iron draught-engine."
+   - *Bad*: "They did not shout because they were enslaved; they shouted because they were terrified of the chaos..."
+   - *Good*: "They roared out of terror for the chaos of their past, clinging fiercely to the certainty of their rations."
+   - *Directive*: Never define what something *is not* before stating what it *is*. State what the reality is immediately, with direct active verbs and concrete sensory details. Ban all variations of `not just A, but B`, `not only A, but B`, `was not A; it was B`, `did not [verb] because A; they [verb] because B`, and `no longer A; was B`.
+6. **Meta-Commentary & Structural Signposting**:
+   - *Bad*: "Act One is concluded. We have work to do."
+   - *Good*: "The pass is secured. Now, we begin the industrialization of the valley."
+   - *Bad*: "Now, we begin the next arc." / "The chapter ends now." / "### [END OF...]"
+   - *Directive*: Never allow characters, dialogue, or narration to break the fourth wall, reference literary acts/arcs/chapters, or signal structural conclusions. Stay 100% within the diegetic narrative reality.
 
 ---
 

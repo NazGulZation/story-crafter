@@ -60,6 +60,15 @@ Stories/
   - [Chapter 14](file:///c:/StoryCrafter/the_mockingbirds_ledger/chapters/ch14_the_hero_unmade.md): The poisoning, arrest, and public shaming of Godfrey Sterling.
   - [Chapter 15](file:///c:/StoryCrafter/the_mockingbirds_ledger/chapters/ch15_the_mockingbirds_realm.md): Lord Protector Petyr Baelish sovereign atop the High Citadel.
 
+### [The Iron Order of Karst](file:///d:/Documents/story-crafter/the_iron_order_of_karst/)
+- **Status**: In Progress (18 Chapters).
+- **Core Premise**: Mortally wounded by an urban partisan ambush in Ost-Paris, *Standartenführer* Viktor Vogel of *Ordensstaat Burgund* dies ordering the total cleansing of his sector. Instead of Valhalla, he awakens in the freezing mud outside a heated silk pavilion tent in the body of Lorenz Falk—an unappreciated support scout shivering on "guard duty" while an arrogant greatsword mercenary beds all three of his party companions inside. Treating the betrayal with pure bureaucratic disgust as a gross breach of sentry discipline, Viktor loots the party wagon, seizes command of the derelict frontier garrison of Karst-Hold, and systematically constructs the totalitarian "Burgundian System" across the chaotic, bandit-ridden wasteland.
+- **Tone**: Pitch-black comedy, deadpan bureaucratic authoritarianism, industrial military discipline versus chaotic fantasy tropes.
+- **Structure**:
+  - **Act I (Chapters 1–6)**: *Requisition & The Black Redoubt* — Transmigration, seizing Karst-Hold, liquidating robber-barons into labor units, establishing the Black Directorate.
+  - **Act II (Chapters 7–12)**: *The System Expands* — Eradication of the Adventurers' Guild, blast furnace industrialization, the humiliating checkpoint arrest of Marek and the harem.
+  - **Act III (Chapters 13–18)**: *Total Purification & The New Order* — Industrial trench war against the horde, public trial and coal-mine labor reallocation, capitulation of the feudal nobility, and total autarky under the Black Sun.
+
 ---
 
 ## Desktop Book Reader (One-Click Launch)
