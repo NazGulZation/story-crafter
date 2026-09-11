@@ -209,9 +209,21 @@ masterpiece, best quality, ultra detailed anime coloring, anime screenshot,
 > - **Asymmetric State (Male Clothed, Female Nude)**: When the male partner remains clothed (e.g. shirt, suit) while the female partner is stripped, explicitly add `clothed male nude female`.
 
 > [!IMPORTANT]
-> **Uniform Tag Variants & Redundant Clothing Suppression**:
-> - When using an official character full uniform tag variant (e.g. `sakura bakushin o \(blossom in learning\) \(umamusume\)`), **remove generic clothing descriptors** (`jacket, shirt, bloomers, skirt, sports bra`).
-> - Generic clothing tokens create competing conditioning signals that override or distort the default uniform variant, causing mismatched textures or garbled patterns. Only include specific clothing tokens if a distinct modification is deliberately intended (e.g., `open jacket, unzipped jacket, torn clothes`).
+> **Uniform Tag Variants: Generic Suppression vs. Iconic Component Decomposition**:
+> - **Suppress Redundant Generic Clothing**: When using an official character full uniform variant tag (e.g. `sakura bakushin o \(blossom in learning\) \(umamusume\)`), **remove vague generic clothing descriptors** (`jacket, shirt, bloomers, skirt, sports bra, clothes`). Generic tokens create competing conditioning signals that distort standard uniforms.
+> - **Decompose Complex / Elaborate Silks & Costumes**: However, if a complex costume or racing silk (e.g. `matikane tannhauser \(clippety-tippety-clop\) \(umamusume\)`) defaults to generic casual t-shirts or plain skirts because the variant tag alone is under-weighted, **decompose the outfit into its 3–5 iconic structural pieces** (e.g. `blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt`). Specific structural anchors force the model to render the exact canon attire without falling back to casual clothes.
+
+
+> [!IMPORTANT]
+> **Second Character as "You" (POV / Self-Insert Protagonist Tagging)**:
+> - If the second character represents **"you"** (the reader, narrator, Trainer, Producer, Commander, Sensei, Master, or POV protagonist):
+>   - **Always add `faceless male` or `faceless female`** based on the protagonist's gender:
+>     - **Male Protagonist ("You")**: `1boy, faceless male, [role/context if relevant, e.g. trainer \(umamusume\)], [physique, e.g. muscular, tall]...`
+>     - **Female Protagonist ("You")**: `1girl, faceless female, [role/context if relevant]...`
+> - **Why This Is Mandatory**:
+>   - In second-person ("you") narrative fiction and POV eroge/visual novel scenes, tagging `faceless male` or `faceless female` prevents the diffusion model from rendering a distracting, specific, or conflicting face for the reader's avatar.
+>   - Keeps visual focus, detail, and facial expression fidelity 100% anchored on the main heroine.
+>   - Prevents unintended feature or ear bleed (e.g. animal ears or accessories leaking onto the protagonist).
 
 ### Reference Example:
 ```text
@@ -219,7 +231,7 @@ masterpiece, best quality, ultra detailed anime coloring, anime screenshot,
 
 1girl, agnes tachyon \(casual\) \(umamusume\), large breasts, smug, grin, off shoulder, necklace, pendant, bottomless, pussy, pubic hair, leaning back, 
 
-1boy, pov, pov hands, clothed female nude male, large penis
+1boy, faceless male, pov, pov hands, clothed female nude male, large penis
 
 vaginal, sex, cowgirl position, straddling, 
 
@@ -314,6 +326,7 @@ reimu hakurei, touhou, brown hair, long hair, hair ribbon, hair bow, red ribbon,
 |-----------|-----------------------|------------------------------|------------|-----------------------------------|
 | Reimu Hakurei | `reimu_hakurei` | `reimu hakurei` | `touhou` | `brown hair, long hair, hair bow, red ribbon, brown eyes, miko, detached sleeves, red skirt, sarashi` |
 | Agnes Tachyon (casual) | `agnes_tachyon_(casual)_(umamusume)` | `agnes tachyon \(casual\) \(umamusume\)` | `umamusume` | `large breasts, smug, off shoulder sweater, necklace, pendant` |
+| Matikanetannhauser (Clippety-Tippety-Clop) | `matikanetannhauser_(clippety-tippety-clop)_(umamusume)` | `matikane tannhauser \(clippety-tippety-clop\) \(umamusume\), clippety-tippety-clop` | `umamusume` | `horse ears, horse tail, brown hair, streaked hair, white forelock, yellow eyes, amber eyes, ear ornament, red beads, blue beads, blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt` |
 
 > Add newly researched characters to the table above for future reference.
 
@@ -436,4 +449,10 @@ For comprehensive documentation on common SDXL/Pony/Anima diffusion failure mode
 5. **Inverted Perspective Collapse**: Top-down head-first views in post-coital aftermath invert limbs -> ground scene with side angles (`lying on side, cuddle, mutual exhaustion`).
 6. **Character Uniform Tag Variants & Redundant Clothing Suppression**: Full uniform tags represent complete outfits -> remove generic clothing descriptors (`jacket, shirt`) to avoid overriding default uniform patterns.
 7. **Facesitting & Downward 69 Oral "Severed Head" Glitch**: Direct top-down POV pins squashed/severed heads at bottom border -> switch to dynamic Side 3/4 perspective with braced limbs.
+8. **The "Vertical Monolith / Cock Pole" Foreshortening Glitch**: Upward vertical POV in pre-penetration/frottage causes extreme perspective distortion and disconnected genitalia -> switch to seated/reclined Side 3/4 Perspective with explicit lap grinding and pelvic contact.
+10. **The "Multi-Arm Hallucination & Spontaneous Puddle" Trap**: Intimate close-up missionary causing 4 arms and fluid leaking into background water pools -> explicitly disambiguate each character's arm placement, ban `4 arms, extra arms`, and ban `water, puddle, pool, onsen` on dry terrain.
+11. **The Protagonist / "You" Face & Feature Clash (Self-Insert Immersion)**: When the second character represents "you", always add `faceless male` or `faceless female` to preserve reader self-insertion, maintain full visual focus on the heroine, and eliminate ear/feature bleed.
+12. **The "Generic Casual / T-Shirt Fallback" on Elaborate Racing Silks**: Decompose intricate costumes into 3–5 signature structural pieces (`blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt`) rather than relying purely on under-weighted variant tags.
+13. **Kinetic Speed & Racing Velocity vs. Anatomical Smearing**: Keep character anatomy crisp and articulate while scoping motion effects to `motion blur background`, flying turf debris, pinned ears, and clenched teeth.
+
 

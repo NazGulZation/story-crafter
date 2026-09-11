@@ -1,5 +1,7 @@
 # Morning Ritual
 
+![Machitan slipping into Trainer's dorm room in the early morning gray light, oversized sleep shirt hanging off one bare shoulder](../assets/ch07_01.png)
+
 Your back aches. It’s the very first thing you register as the gray pre-dawn light filters through the slanted blinds of your Tracen Academy trainer’s room. You shift on the firm mattress and immediately wince, a sharp hiss escaping your teeth. A tight, scabbed lattice of scratches crisscrosses your shoulder blades, a vivid, stinging reminder of rough pine bark and clutching fingernails. The bite mark resting high on your collarbone throbs with a dull, rhythmic heat, pulsing in time with your heartbeat. Your muscles feel incredibly heavy, drained of energy, yet deep in your marrow, you are still humming with the residual electricity of last night's Obon festival. 
 
 You rub the sleep from your eyes with the heels of your hands. The scent of crushed pine needles, damp earth, and dried sweat still clings stubbornly to your skin, entirely overpowering the generic body wash you used during the hasty shower you managed before collapsing into bed a few hours ago. 
@@ -56,6 +58,8 @@ She looks at your cock with wide, awestruck eyes, as if she hasn't seen it just 
 
 "It's... already waking up," she murmurs. Her voice loses its nervous, high-pitched edge, replaced by a breathy, unpolished need that makes your pulse hammer in your throat. 
 
+![Machitan kneeling on the carpet beside the bed, staring with wide, awestruck amber eyes at Trainer's throbbing erection](../assets/ch07_02.png)
+
 She doesn't try to be seductive. There’s no slow, practiced teasing, no sultry looks through her lashes. She just leans in, her small hands gripping your thighs for balance, her nails digging slightly into your muscle, and opens her mouth. 
 
 Her lips are soft, slightly chapped from last night, and incredibly hot. She takes the head of your cock into her mouth with a clumsy, eager lunge. The staggering contrast between the cool room and the wet, scalding heat of her mouth makes your hips jerk upward involuntarily. Machitan makes a startled, muffled sound against you, but she doesn't pull back. 
@@ -76,6 +80,8 @@ It’s sloppy, wet, and incredibly raw. She bobs her head, the static-filled che
 
 The sensory overload is immediate and absolute. The tight, dry friction of her hand, the hot, slick suction of her mouth, the smell of her milky soap mixed heavily with the undeniable, sharp tang of arousal filling the air. The faint, musical jingling of her ear beads provides a chaotic, delicate rhythm track to the crude, wet sounds of her mouth working over you. 
 
+![Machitan kneeling beside the bed, looking up with flushed cheeks as she bobs her head and pumps Trainer's cock](../assets/ch07_03.png)
+
 Her ears are perked forward, alert and intensely focused, twitching occasionally. Every time you twitch or groan, her ears flick, registering your response, and she adjusts her grip or the pressure of her mouth, trying to figure out exactly what feels best. She's learning on the fly, driven by that stubborn, earnest determination that makes her who she is. 
 
 The pleasure begins to coil tightly in your lower belly, a hot, heavy tension that winds tighter with every clumsy, eager bob of her head. You reach down, your fingers tangling in the messy chestnut hair at the nape of her neck. You can feel the faint, raised scratches on her shoulder blades through the thin cotton of her shirt. 
@@ -95,6 +101,8 @@ The immediate loss of heat and pressure leaves you gasping, your hips thrusting 
 Her amber eyes are blown wide, pupils dilated so far there's barely a ring of gold left. Her ears are pinned completely flat against her head, a chaotic mix of intense focus, overwhelming arousal, and deep embarrassment. 
 
 "Not yet," she stammers. Her voice is trembling, completely wrecked with lust. She swipes a clumsy thumb across her wet chin, smearing the spit. "I want... I want to make sure I get it all. I can't spill any. F-for the stamina."
+
+![Machitan pulling back right before climax, a thick bridge of saliva connecting her swollen lips to Trainer's cock tip](../assets/ch07_04.png)
 
 She licks her lips, her gaze locked hungrily on the throbbing, weeping head of your cock. The raw, unfiltered hunger in her expression is staggering, completely at odds with her usual clumsy, cheerful demeanor. 
 

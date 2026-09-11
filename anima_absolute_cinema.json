@@ -616,6 +616,110 @@
       }
     },
     {
+      "id": 68,
+      "type": "PreviewImage",
+      "pos": [
+        2029.1172099782225,
+        222.84382214878343
+      ],
+      "size": [
+        350.9965716256702,
+        638.1290131135531
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 115
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.29.0",
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 66,
+      "type": "KSampler",
+      "pos": [
+        1258.865001485296,
+        235.67369617999384
+      ],
+      "size": [
+        297.15631103515625,
+        266.5079040527344
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 121
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 117
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 118
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 110
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "slot_index": 0,
+          "links": [
+            112
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.40",
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        68862197233533,
+        "randomize",
+        30,
+        3,
+        "euler_ancestral",
+        "normal",
+        0.6
+      ],
+      "widgets_values_named": {
+        "seed": 68862197233533,
+        "control_after_generate": "randomize",
+        "steps": 30,
+        "cfg": 3,
+        "sampler_name": "euler_ancestral",
+        "scheduler": "normal",
+        "denoise": 0.6
+      }
+    },
+    {
       "id": 11,
       "type": "CLIPTextEncode",
       "pos": [
@@ -665,49 +769,13 @@
         }
       },
       "widgets_values": [
-        "masterpiece, best quality, score_9, score_8, score_7, year 2025, newest, highres, absurdres, very aesthetic, \n\n1girl, agnes tachyon \\(casual\\) \\(umamusume\\), large breasts, smug, grin, off shoulder, necklace, pendant, bottomless, pussy, pubic hair, leaning back, \n\n1boy, pov, pov hands, clothed female nude male, large penis\n\nvaginal, sex, cowgirl position, straddling, \n\nscenery, bedroom, blurred background"
+        "masterpiece, best quality, ultra detailed anime coloring, anime screenshot,\n\n1girl, rem \\(re:zero\\), re:zero, blue hair, short hair, hair ornament, hair ribbon, maid headdress, blue eyes, blush, heavy breathing, parted lips, drooling, maid apron, maid collar, detached sleeves, lifted skirt, no panties, large breasts, pussy, shaved pussy, on back, spread legs, arched back,\n\n1boy, pov, pov hands, large penis, gripping thighs, clothed female nude male,\nvaginal, sex, missionary, deep penetration, hard thrusting, dripping fluids, pussy juice, sweat, trembling, steaming body,\n\nscenery, mansion bedroom, roswaal mansion, luxurious bed, velvet sheets, pillows, candelabra, warm ambient lighting, depth of field"
       ],
       "widgets_values_named": {
-        "text": "masterpiece, best quality, score_9, score_8, score_7, year 2025, newest, highres, absurdres, very aesthetic, \n\n1girl, agnes tachyon \\(casual\\) \\(umamusume\\), large breasts, smug, grin, off shoulder, necklace, pendant, bottomless, pussy, pubic hair, leaning back, \n\n1boy, pov, pov hands, clothed female nude male, large penis\n\nvaginal, sex, cowgirl position, straddling, \n\nscenery, bedroom, blurred background"
+        "text": "masterpiece, best quality, ultra detailed anime coloring, anime screenshot,\n\n1girl, rem \\(re:zero\\), re:zero, blue hair, short hair, hair ornament, hair ribbon, maid headdress, blue eyes, blush, heavy breathing, parted lips, drooling, maid apron, maid collar, detached sleeves, lifted skirt, no panties, large breasts, pussy, shaved pussy, on back, spread legs, arched back,\n\n1boy, pov, pov hands, large penis, gripping thighs, clothed female nude male,\nvaginal, sex, missionary, deep penetration, hard thrusting, dripping fluids, pussy juice, sweat, trembling, steaming body,\n\nscenery, mansion bedroom, roswaal mansion, luxurious bed, velvet sheets, pillows, candelabra, warm ambient lighting, depth of field"
       },
       "color": "#232",
       "bgcolor": "#353"
-    },
-    {
-      "id": 68,
-      "type": "PreviewImage",
-      "pos": [
-        2029.1172099782225,
-        222.84382214878343
-      ],
-      "size": [
-        350.9965716256702,
-        638.1290131135531
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 115
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.29.0",
-        "Node name for S&R": "PreviewImage"
-      },
-      "widgets_values": [],
-      "widgets_values_named": {}
     },
     {
       "id": 63,
@@ -767,97 +835,27 @@
       },
       "widgets_values": [
         "enable",
-        0,
+        594625585715840,
         "randomize",
         50,
         4,
-        "er_sde",
-        "beta",
+        "res_multistep",
+        "normal",
         0,
         10000,
         "disable"
       ],
       "widgets_values_named": {
         "add_noise": "enable",
-        "noise_seed": 0,
+        "noise_seed": 594625585715840,
         "control_after_generate": "randomize",
         "steps": 50,
         "cfg": 4,
-        "sampler_name": "er_sde",
-        "scheduler": "beta",
+        "sampler_name": "res_multistep",
+        "scheduler": "normal",
         "start_at_step": 0,
         "end_at_step": 10000,
         "return_with_leftover_noise": "disable"
-      }
-    },
-    {
-      "id": 66,
-      "type": "KSampler",
-      "pos": [
-        1258.865001485296,
-        235.67369617999384
-      ],
-      "size": [
-        297.15631103515625,
-        266.5079040527344
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 121
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 117
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 118
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 110
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "slot_index": 0,
-          "links": [
-            112
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.40",
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        0,
-        "randomize",
-        30,
-        3,
-        "euler_ancestral",
-        "normal",
-        0.6
-      ],
-      "widgets_values_named": {
-        "seed": 0,
-        "control_after_generate": "randomize",
-        "steps": 30,
-        "cfg": 3,
-        "sampler_name": "euler_ancestral",
-        "scheduler": "normal",
-        "denoise": 0.6
       }
     }
   ],
@@ -1019,10 +1017,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.3724156642400909,
+      "scale": 1.247650603854628,
       "offset": [
-        -623.5347744212271,
-        -19.736351927536234
+        -526.6250705526013,
+        -7.18144890079202
       ]
     },
     "frontendVersion": "1.51.10",

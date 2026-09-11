@@ -1,5 +1,7 @@
 # Gentle
 
+![First penetration, cock buried to the hilt in Machitan on the moss bed with forehead-to-forehead intimacy](../assets/ch03_01.png)
+
 You press into her.
 
 Slow. The head of your cock parts her, and the wet heat that swallows you is staggering — tight, clenching, alive. Her breath locks in her throat. Her nails sink into the muscle of your shoulders, ten sharp half-moons of pressure, and her legs tighten around your waist. You slide deeper, inch by careful inch, feeling her open around you, the resistance and the yield. She's slick enough that the push is smooth, but the tightness makes every centimeter feel earned.
@@ -28,6 +30,8 @@ You lower your mouth to her neck. Kiss the pulse point — feel her heartbeat ha
 
 The wet sound of your bodies meeting is steady, rhythmic — a slick, fleshy percussion that fills the clearing between cicada pulses. Every thrust pushes a small, breathless sound from her. Mm. Ah. Nn. Her ears are half-folded, twitching with each stroke, the beads clicking faintly.
 
+![Trainer kissing Machitan's bared neck during slow rhythmic missionary thrusting beneath the cedar canopy](../assets/ch03_02.png)
+
 You shift your angle. Press deeper. Her breath catches and her back arches off the moss.
 
 "There — right there — don't stop—"
@@ -43,6 +47,8 @@ Your hand slides down her side — ribs, the dip of her waist, the flare of her 
 "I can feel every—" She swallows. A thrust bottoms out and her sentence dissolves into a soft, broken moan. "Every time you push in, it's — I feel so full. I didn't know it would feel like—"
 
 She pulls you down and kisses you. Deep, unhurried, tongue sliding against yours, tasting each other in slow exploration. You can feel her moaning into the kiss — the vibration humming through your jaw. The rhythm stays languid. Rolling. Each full stroke ending with a grind of your hips against hers, your pelvis pressing against her clit, and she shudders every time the pressure connects.
+
+![Intimate french kiss and pelvic grinding as Trainer grips Machitan's inner thigh deep inside her](../assets/ch03_03.png)
 
 A firefly drifts through the clearing, blinking once above her shoulder before vanishing into the cedars. Somewhere in the trees, a night bird calls — two low notes and a trill. The world beyond this patch of moss feels impossibly distant, like the festival and the crowds and Tracen Academy belong to a different century.
 
@@ -77,3 +83,5 @@ You hesitate. Your hips slow. The gentle rhythm you've been keeping stutters.
 She grabs your hair with both fists and yanks your face down to hers. Her teeth graze your lower lip. Her breath is ragged, hot, desperate against your mouth.
 
 "I said *harder*."
+
+![Machitan's feral climax demand, teeth bared and nails clawing Trainer's back as her tail wraps his calf](../assets/ch03_04.png)

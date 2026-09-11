@@ -1,5 +1,7 @@
 # The Longest Furlong
 
+![Machitan in the racecourse paddock in her Clippety-Tippety-Clop silks, waving up at Trainer with a nervous, lopsided smile](../assets/ch09_01.png)
+
 The turf smells sharp—like crushed blades, damp, rich soil, and the unmistakable electric charge of anticipation. You lean your weight against the white plastic rail, the cold metal vibration of the PA system humming beneath your forearms. The grandstand behind you is a sheer, towering wall of noise. It’s a chaotic ocean of overlapping chatter, the rustling of a thousand racing programs, the distant clatter of glass bottles, and the heavy, buttery aroma of vendor popcorn cutting through the autumn breeze. The air is cool, biting at your cheeks, but the sheer volume of bodies around you radiates a dull, stifling heat.
 
 Down in the paddock, the Umamusume parade in their endless, slow circles. Machitan looks impossibly small among them. There are girls here with glossy, flawless coats, girls carrying haughty expressions and muscles that look carved from solid marble. They walk with practiced grace, their tails swishing with measured arrogance. And then there is Machitan. She fidgets. She stretches her calves, straightens the sleeves of her Team Canopus silks, adjusts the stiff collar, and immediately misjudges the distance to a chalk lane marker. Her toe catches it. She stumbles forward, catching herself with a clumsy, panicked windmill of her arms.
@@ -33,6 +35,8 @@ The middle of the race is a brutal war of attrition. The wind whips past you, ca
 Machitan takes the hit. Her stride breaks for a fraction of a second, her frame jolting visibly on the monitor, but she doesn’t fall back. She absorbs the impact, her boots chewing deep into the turf, and just keeps pushing. She doesn't have the explosive, terrifying acceleration of the favorites. What she has is the rhythm of a metronome that refuses to stop ticking.
 
 Every stride is identical to the last. While the girls around her start to pant, their coats darkening with sweat, their forms getting sloppy as the lactic acid builds in their thighs, Machitan’s form stays stubbornly, annoyingly perfect. She eats the ground one agonizing meter at a time.
+
+![Machitan galloping fiercely on the backstretch, boots churning the turf as she fights forward with relentless stamina](../assets/ch09_02.png)
 
 She’s like water cutting through stone. Relentless. Slowly, almost imperceptibly, she starts to move up.
 
@@ -76,6 +80,8 @@ Machitan doesn’t look. She doesn't breathe. She just runs.
 
 The finish line flashes past. They cross it in a chaotic blur of motion, a tangle of pumping limbs and flying turf.
 
+![Machitan lunging across the finish line in a photo-finish surge, gasping for air as her chest crosses the wire in first place](../assets/ch09_03.png)
+
 It’s too close. A nose. Maybe a neck. The naked eye can't tell.
 
 The crowd is on its feet, screaming itself hoarse. You can’t breathe. Your heart is hammering against your ribs like a trapped bird, frantic and heavy. You taste copper in your mouth and realize you've bitten through your lower lip.
@@ -113,6 +119,8 @@ Her right ear brushes against your cheek, the red and blue beads jingling franti
 "I won," she whispers into your ear, her voice trembling and raw. She sounds like she’s testing the words, rolling them around on her tongue to make sure they’re real. "I— I actually won."
 
 You wrap your arms around her waist, lifting her just a fraction off the ground. She feels solid, warm, and overwhelmingly alive in your grip. The crowd is still cheering, roaring her name, but all you can hear is her ragged breathing and the soft jingle of her beads.
+
+![Machitan leaping over the track rail into Trainer's arms, sobbing and laughing in joyful tears as he lifts her off the ground](../assets/ch09_04.png)
 
 She buries her wet face into your shoulder—right into the spot with the faint, lingering ache of the bite mark from last night. It stings sharply.
 

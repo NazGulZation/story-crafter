@@ -1,5 +1,7 @@
 # First Touch
 
+![Machitan stepping into the secluded clearing, clothes loosened in the moonlight](../assets/ch02_01.png)
+
 Her back hits a cedar trunk and she laughs against your mouth — breathless, startled, delighted. The bark catches the fabric of her yukata with a soft rasp. You're still kissing her, tasting blue raspberry and underneath it something warmer, salt-sweet and distinctly her, and her fingers are knotted in your collar so tight you can feel the pull across your shoulders.
 
 You stumble deeper into the trees together, trading kisses like currency, and the shrine path disappears behind a curtain of fern and low-hanging branches. The ground changes beneath your sandals — packed earth giving way to soft, springy moss. A break in the cedar canopy opens above you: stars, a half-moon, blue-black summer sky. The clearing is small, maybe three meters across, cupped in a gentle slope. The moss is thick and damp, the air heavy with the vegetal green smell of growing things and wet earth.
@@ -34,6 +36,8 @@ You cup her breast through the cotton. Feel the nipple tighten against your palm
 
 Your mouth closes over her nipple. Warm, pebbled, tasting of clean skin and exertion. She gasps — a real one, sharp and unguarded. Her fingers rake into your hair. You suck gently, then harder, flicking your tongue, and her moan comes back, louder this time, less controlled. Her hips press forward against yours, an instinctive roll.
 
+![Trainer suckling Machitan's bare breast against the ancient cedar tree](../assets/ch02_02.png)
+
 Your hand slides down her stomach. Flat, toned from training, the muscles fluttering under your fingertips. You trace the waistband of her panties. She holds her breath. Your fingers slip lower, over the cotton, cupping her.
 
 Soaked.
@@ -45,6 +49,8 @@ The fabric is hot and wet against your palm. She whimpers when you press, her hi
 You pull the panties aside. Your fingers touch her directly — slick, swollen, burning hot. She's drenched. Your middle finger slides between her folds, finds her clit, and the noise she makes is raw, wrenched out of her, a moan that dissolves into a keening whine. Her nails bite into your scalp.
 
 You stroke her — slow, deliberate circles, spreading the slickness. She rocks against your hand, chasing the pressure, her breath coming in sharp little punches. Her tail is flicking wild behind her, rapid irregular beats. You dip a finger inside her — tight, clenching immediately, pulling you deeper — and her hips buck hard.
+
+![Trainer deeply fingering Machitan's drenched cunt on the soft forest moss](../assets/ch02_03.png)
 
 "Oh — oh god — right there, don't stop, please don't—"
 
@@ -61,6 +67,8 @@ You kiss her jaw. Brush your lips down her neck. Keep your fingers light, teasin
 You push your underwear down. Your cock springs free, hard, aching. She feels it against her thigh — the heat of it, the rigidity — and her breath catches. Her hand reaches down, wraps around you, and the grip is clumsy and tight and perfect. She strokes — uncertain at first, then firmer when she feels you throb in her hand.
 
 She pulls her panties the rest of the way off, kicking one leg free. Wraps her legs around your waist. The position shift presses her bare cunt against your cock — no fabric, nothing between you now, just wet heat sliding against hard length. She grinds. Every roll of her hips drags her slickness along you, clit catching on the ridge. The sensation punches the air out of your lungs.
+
+![Machitan grinding her bare wet pussy against Trainer's cock in desperate anticipation](../assets/ch02_04.png)
 
 She locks eyes with you. Amber irises almost swallowed by black. Her voice comes out rough, stripped raw, barely a whisper — stammered and urgent and nothing like the cheerful girl who was laughing about ring toss an hour ago:
 

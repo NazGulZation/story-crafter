@@ -1,5 +1,7 @@
 # Rougher
 
+![Machitan arching her back against the moss as Trainer slams into her, hair gripped and throat exposed](../assets/ch04_01.png)
+
 You slam into her.
 
 The sound is obscene — a wet, meaty crack that scatters the cicadas from the nearest cedar trunk. Machitan's back bows off the moss and the cry that rips out of her is nothing like the soft, breathy moans from before. It's loud, ragged, torn from the bottom of her lungs. Her head falls back. Her throat works. Her fingers claw at the yukata bunched beneath her, tearing the cotton.
@@ -22,6 +24,8 @@ You pin her wrists above her head. One hand, both her slender wrists gathered to
 
 "Fuck — Trainer — right there — don't you dare stop—"
 
+![Trainer pinning Machitan's wrists above her head into the moss, biting into her neck as she arches up](../assets/ch04_02.png)
+
 Her dirty talk is artless, blurted, stammered between ragged breaths. She's not performing. Every word is punched out of her by pleasure and surprise — surprise at herself, at the sounds she's making, at how much she wants this. The sweet girl who apologizes for tripping is pinned under you begging to be fucked harder, and neither of you expected this but neither of you wants to stop.
 
 You bite her neck. She cries out. You suck a bruise into the tendon above her collarbone — taste salt sweat, feel her pulse hammering against your tongue. She retaliates: teeth sinking into the meat of your shoulder, and this time she does break skin. The sting is sharp, metallic, and your hips stutter before driving harder in response. She moans around the mouthful of your flesh.
@@ -33,6 +37,8 @@ Your knees ache on the ground. The moss is soft but your kneecaps have found eve
 She goes willingly. Eagerly. Drops to all fours on the spread yukata, spine dipping, ass tilting up toward you. Her knees are stained green from the moss. Her tail lifts and swishes to the side — an instinctive, animal invitation that sends a bolt of heat straight through you. Moonlight catches the sheen of arousal slicking her inner thighs.
 
 You grip her hips and push back in.
+
+![Machitan on all fours on the mossy ground, looking back over her shoulder as Trainer enters her from behind](../assets/ch04_03.png)
 
 The angle is deeper. She cries into the bunched fabric, muffling herself, then gives up — lifts her head and lets the sound ring through the trees. A long, broken moan that rises in pitch with each thrust. You can see the muscles in her back flex and roll, the shallow valley of her spine glistening with sweat. Her fingers claw at the moss beyond the yukata's edge, tearing up green tufts.
 
@@ -53,6 +59,8 @@ Her entire body seizes. The cry that tears out of her is raw — high, ragged, a
 She clamps down so tight around you that your vision whites at the edges. The squeeze is relentless, rhythmic, and you have nothing left to resist it with. You bury yourself to the hilt, grab her hips hard enough to leave fingerprints, and come inside her — a pulsing rush of heat that tears a groan from your throat. Your hips jerk in short, involuntary thrusts, each one pushing deeper as the orgasm empties you in flooding waves. Her cunt milks every pulse, clenching in counterpoint, drawing you in.
 
 You collapse forward over her back. She folds beneath you, arms giving out, cheek pressed into the damp yukata. Both of you are shaking. Your cock twitches inside her — aftershocks, diminishing — and you can feel the wet heat of your come between you. Her breathing is a wreck: fast, shallow, shuddering.
+
+![Machitan collapsed on the moss after an overwhelming climax, white semen dripping down her inner thighs](../assets/ch04_04.png)
 
 You pull out slowly. She whimpers at the withdrawal. A thin string of cum follows, catching moonlight before breaking. You roll onto your back beside her. The moss is cool against your scratched-up skin. Your shoulder throbs where she bit through.
 

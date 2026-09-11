@@ -1,5 +1,7 @@
 # Lanterns and Laughter
 
+![Machitan arriving at the Obon festival in her Clippety-Tippety-Clop outfit](../assets/ch01_01.png)
+
 The taiko hits your chest before you hear it. A low, resonant thump that rolls through the crowd like a second heartbeat, and you feel it in the backs of your teeth, in the soles of your sandals against the packed earth. The shrine grounds are thick with bodies tonight — Obon brings everyone out, Tracen's students and staff and half the neighboring town spilling between food stalls draped in red-and-white bunting, the air dense with yakisoba smoke and the caramel-sweet char of grilled dango.
 
 Machitan is three paces ahead of you, weaving through the crowd with the kind of cheerful determination she brings to everything. Her yukata is white cotton printed with blue morning glories, the obi sash cinched neatly — someone on Team Canopus must have tied it for her, because there's no way she managed that crisp a bow on her own. Her chestnut hair hangs loose tonight, no beret, and the white forelock streak catches every paper lantern they pass under, flashing pale gold. Her horse ears swivel constantly, drawn to every new sound — a child's shriek, a vendor's bark, the off-key singing from the beer garden. The red and blue beads on her right ear glint like tiny signal lamps.
@@ -22,6 +24,8 @@ You buy kakigori from the next stall. Blue raspberry for her, lemon for you. The
 
 "Oh no. Oh — it looks like I'm bleeding some kind of alien—" She dabs at it with a napkin, smearing it wider. "Well. That's there now."
 
+![Machitan tasting the blue raspberry syrup dripping down the front of her clothes](../assets/ch01_02.png)
+
 You eat your lemon ice walking through the crowd, shoulder to shoulder because the press of festival-goers makes single-file impossible. Her bare forearm brushes yours. Warm skin, faintly damp from the humidity. She smells like soap — something plain, unscented — layered under the charcoal and sugar of the festival air. Every few steps her tail swishes behind her, tickling the back of your hand.
 
 She chatters. About training schedules, about how Kitasan Black won another race and it was "incredible, really, she's on a completely different level," about how she messed up her interval workout yesterday by tripping on the track's inner line. She doesn't stop talking, but she keeps glancing at you between sentences, quick sidelong looks from those amber-yellow eyes, as if checking whether you're still listening. You are. You always are.
@@ -33,6 +37,8 @@ Then her sandal catches a flagstone edge.
 She pitches forward — and you've been ready for this since you met her, because Matikanetannhauser trips on flat surfaces the way other people blink. Your hand catches her waist, the other gripping her upper arm. The momentum swings her into you, close, and suddenly her face is right there. Centimeters. You can see the darker purple rim at the top of her irises, the individual lashes casting tiny shadows. Lantern light paints one side of her face warm orange. Her ears flatten straight back against her hair.
 
 She doesn't pull away.
+
+![Trainer catching Machitan by the waist as she stumbles into his chest](../assets/ch01_03.png)
 
 The taiko drums pound. The crowd flows around you like water around stones. Her fingers are still curled into the front of your yukata from when she grabbed for balance.
 
@@ -69,3 +75,5 @@ The kiss deepens. Her mouth opens against yours. Your hand slides from her waist
 She pulls back just far enough to breathe. Her eyes are dark, pupils blown wide against amber. Her ears are flat, trembling.
 
 Then she takes your hand and walks backward off the path, into the gap between two old cedars, pulling you with her. Into the dark, into the trees, her mouth finding yours again, hot and open and tasting of sugar and wanting.
+
+![Passionate kiss against the cedar tree, blouse opened and breasts bared in the dark](../assets/ch01_04.png)

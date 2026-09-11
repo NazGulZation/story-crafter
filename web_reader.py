@@ -96,8 +96,30 @@ def format_markdown_to_html(md_text, story_id=""):
         else:
             web_url = f"/api/assets/{filename}"
 
+        # Attempt to detect natural dimensions for smooth layout reservation
+        aspect_style = ""
+        asset_file = None
+        if resolved_story:
+            cand = BASE_DIR / resolved_story / "assets" / filename
+            if cand.exists():
+                asset_file = cand
+        if not asset_file:
+            cand = BASE_DIR / "assets" / filename
+            if cand.exists():
+                asset_file = cand
+
+        if asset_file:
+            try:
+                from PIL import Image as PILImage
+                with PILImage.open(asset_file) as img_obj:
+                    w, h = img_obj.size
+                    if w > 0 and h > 0:
+                        aspect_style = f' style="aspect-ratio: {w} / {h};"'
+            except Exception:
+                pass
+
         caption_html = f'<figcaption class="illustration-caption">{html.escape(alt)}</figcaption>' if alt else ''
-        return f'\n\n<figure class="book-figure"><img src="{web_url}" alt="{html.escape(alt)}" loading="lazy">{caption_html}</figure>\n\n'
+        return f'\n\n<figure class="book-figure"><img src="{web_url}" alt="{html.escape(alt)}" loading="lazy"{aspect_style}>{caption_html}</figure>\n\n'
 
     body_md = re.sub(r'!\[(.*?)\]\((.*?)\)', _replace_image_tag, body_md)
 
@@ -598,21 +620,23 @@ def generate_web_ui(library, config, lan_url=None):
 
   /* BOOK ILLUSTRATIONS & FIGURES */
   .book-figure {{
-    margin: 14px auto;
+    margin: 0 auto 10px auto;
     text-align: center;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     page-break-inside: avoid;
     break-inside: avoid;
+    box-sizing: border-box;
   }}
 
   .book-figure img,
   .page-content img,
   #contentSingle img {{
     max-width: 100%;
-    max-height: 440px;
+    max-height: min(440px, calc(100vh - 220px), calc(100dvh - 220px));
     height: auto;
     object-fit: contain;
     border-radius: 6px;
@@ -638,7 +662,70 @@ def generate_web_ui(library, config, lan_url=None):
     margin-top: 6px;
     text-align: center;
     line-height: 1.35;
-    max-width: 90%;
+    max-width: 95%;
+  }}
+
+  /* FULL ILLUSTRATION DEDICATED PAGE */
+  .has-illustration .page-content,
+  .page-content:has(.book-figure) {{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    overflow: hidden;
+  }}
+
+  .has-illustration .book-figure,
+  .page-content:has(.book-figure) > .book-figure {{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }}
+
+  .has-illustration .book-figure img,
+  .page-content:has(.book-figure) .book-figure img {{
+    max-width: 100%;
+    max-height: calc(100% - 32px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    flex: 1 1 auto;
+    min-height: 0;
+  }}
+
+  .has-illustration .book-figure figcaption,
+  .page-content:has(.book-figure) .book-figure figcaption {{
+    flex-shrink: 0;
+    margin-top: 6px;
+    margin-bottom: 2px;
+  }}
+
+  /* STANDALONE CHAPTER TITLE CARD PAGE */
+  .is-title-page .page-content,
+  .page-content:has(.chapter-title-block:only-child) {{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }}
+  .is-title-page .chapter-title-block,
+  .page-content:has(.chapter-title-block:only-child) .chapter-title-block {{
+    margin: auto 0;
+    padding: 24px 12px;
+  }}
+  .is-title-page .chapter-main-title {{
+    font-size: 28px;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
   }}
 
   /* SINGLE COLUMN MODE */
@@ -928,7 +1015,30 @@ def generate_web_ui(library, config, lan_url=None):
     }}
     .page-left {{
       border-right: none;
-      padding: 20px 24px 16px 24px;
+      padding: 16px 20px 14px 20px;
+    }}
+    .page-running-header {{
+      margin-bottom: 8px;
+    }}
+    .page-running-footer {{
+      padding-top: 4px;
+    }}
+    .book-figure {{
+      margin: 0 auto 6px auto;
+    }}
+    .book-figure img,
+    .page-content img,
+    .has-illustration .book-figure img {{
+      max-width: 100%;
+      max-height: min(420px, calc(100vh - 180px), calc(100dvh - 180px), calc(100% - 26px));
+      height: auto;
+      object-fit: contain;
+    }}
+    .book-figure figcaption,
+    .illustration-caption {{
+      font-size: 0.78em;
+      margin-top: 4px;
+      line-height: 1.25;
     }}
     .book-single {{
       padding: 24px 20px;
@@ -1461,7 +1571,25 @@ def generate_web_ui(library, config, lan_url=None):
     let isFirstPage = true;
 
     for (let i = 0; i < nodes.length; i++) {{
-      const nodeHtml = nodes[i].outerHTML;
+      const node = nodes[i];
+      const nodeHtml = node.outerHTML;
+      const isImage = node.matches('figure, .book-figure, img') || Boolean(node.querySelector('img, figure, .book-figure'));
+
+      if (isImage) {{
+        // If there is preceding content accumulated on the current page, close and push that page
+        if (currentPageNodes.length > 0) {{
+          splitPages.push(currentPageNodes.join(''));
+          currentPageNodes = [];
+          tester.innerHTML = '';
+          isFirstPage = false;
+        }}
+        // The picture ALWAYS starts on its own new page at the very top
+        splitPages.push(nodeHtml);
+        tester.innerHTML = '';
+        isFirstPage = false;
+        continue;
+      }}
+
       tester.innerHTML += nodeHtml;
 
       if (tester.scrollHeight > targetHeight + 6) {{
@@ -1519,15 +1647,25 @@ def generate_web_ui(library, config, lan_url=None):
     chapterTagLeft.textContent = `Chapter ${{currentChapterIndex + 1}}`;
     chapterTagRight.textContent = `Chapter ${{currentChapterIndex + 1}}`;
 
-    contentLeft.innerHTML = splitPages[leftIndex] || '<p style="color:var(--text-muted); text-align:center; padding-top:40px;"><em>End of chapter.</em></p>';
-    contentRight.innerHTML = isSinglePageOnMobile ? '' : (splitPages[rightIndex] || '');
+    const leftHtml = splitPages[leftIndex] || '<p style="color:var(--text-muted); text-align:center; padding-top:40px;"><em>End of chapter.</em></p>';
+    const rightHtml = isSinglePageOnMobile ? '' : (splitPages[rightIndex] || '');
 
-    if (currentPagePair === 0) {{
-      pageLeft.classList.add('has-drop-cap');
-    }} else {{
-      pageLeft.classList.remove('has-drop-cap');
-    }}
-    pageRight.classList.remove('has-drop-cap');
+    contentLeft.innerHTML = leftHtml;
+    contentRight.innerHTML = rightHtml;
+
+    // Drop cap on first narrative paragraph of chapter
+    const firstParaIndex = splitPages.findIndex(p => p.includes('<p'));
+    pageLeft.classList.toggle('has-drop-cap', leftIndex === firstParaIndex);
+    pageRight.classList.toggle('has-drop-cap', !isSinglePageOnMobile && rightIndex === firstParaIndex);
+
+    // Track illustration page to apply dedicated top-aligned full layout
+    pageLeft.classList.toggle('has-illustration', leftHtml.includes('book-figure'));
+    pageRight.classList.toggle('has-illustration', !isSinglePageOnMobile && rightHtml.includes('book-figure'));
+
+    // Track standalone title-card page
+    const isTitleOnly = (h) => h && h.includes('chapter-title-block') && !h.includes('<p') && !h.includes('book-figure');
+    pageLeft.classList.toggle('is-title-page', isTitleOnly(leftHtml));
+    pageRight.classList.toggle('is-title-page', !isSinglePageOnMobile && isTitleOnly(rightHtml));
 
     contentLeft.scrollTop = 0;
     contentRight.scrollTop = 0;

@@ -1,5 +1,7 @@
 # Afterglow Between the Lanterns
 
+![Machitan resting against Trainer's bare chest in the quiet afterglow on the mossy ground](../assets/ch06_01.png)
+
 You don't know how long you lie there.
 
 Long enough for the sweat to cool and the night air to raise goosebumps along your arms. Long enough for her shaking to subside into occasional tremors — a twitch of her thigh, a flutter of her stomach muscles, aftershocks diminishing like ripples in still water. Her ear twitches against your chest in lazy intervals, the beads tapping your collarbone with each small movement. Her tail rests across your thigh, motionless except for the faintest metronome sway at the tip.
@@ -28,6 +30,8 @@ You kneel beside her. Cup water in your palms and pour it over her shoulders, he
 
 You wash each other. It's tender and practical and nothing like sex — careful hands avoiding the worst of the scrapes, sluicing away dried sweat and the sticky residue of two rounds. She cups water between her thighs, cleaning herself with quick, efficient motions, grimacing slightly at the sensitivity. The intimacy of it is quieter than anything that came before, but heavier somehow. You're seeing her in the aftermath, the unvarnished reality of what you did together, and neither of you is looking away.
 
+![Machitan standing naked in the shallow forest stream, arms crossed beneath her bare breasts against the cold night air](../assets/ch06_02.png)
+
 She stands in the stream, dripping, arms crossed over her chest against the cold. Moonlight paints her in silver and deep shadow. The water runs down her legs in thin rivulets. She's looking at you with an expression you can't quite read — soft, a little bewildered, deeply warm.
 
 "Stop staring," she mumbles. But she doesn't turn away.
@@ -41,6 +45,8 @@ She pulls on her panties, then her yukata, wrestling the damp cotton over damp s
 "I can't tie this. My hands are shaking." She holds them up as evidence. They are, in fact, trembling. "I could barely tie it when my hands *weren't* shaking."
 
 You kneel in front of her. Take the sash. Wrap it around her waist — your knuckles brush her hip bones, still warm through the cotton. You tie the obi in a simple knot. Not the elaborate bow her teammate managed earlier; just functional, enough to hold the yukata closed. Your hands rest on her waist when you're done. You look up at her.
+
+![Trainer kneeling to tie Machitan's obi sash while her morning-glory yukata rests loosely open, exposing her bare chest as she touches his cheek](../assets/ch06_03.png)
 
 She touches your face. Fingertips on your cheek, thumb at the corner of your mouth. Her ears twitch.
 
@@ -75,6 +81,8 @@ She laughs. Quiet. Just for you.
 "Some things never change, huh?"
 
 You kiss her. Soft. She tastes like stream water and cold night air — nothing sweet left, nothing artificial. Just her. Her ears are up, perked, happy. The beads catch the moonlight one last time.
+
+![Trainer catching Machitan after a stumble on the shrine path, sharing a passionate kiss as her loose yukata parts to reveal her chest](../assets/ch06_04.png)
 
 You walk back onto the empty festival grounds. The stalls are shuttered, tarps pulled over, the strings of lanterns dark overhead. A cleanup crew works in the distance, folding tables and stacking chairs. Nobody looks at you. Two people in rumpled yukata walking home from a festival — nothing to see.
 

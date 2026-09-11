@@ -1,5 +1,7 @@
 # Unraveled
 
+![Machitan kneeling at the stream edge, looking up with earnest eyes as she takes Trainer into her mouth](../assets/ch05_01.png)
+
 Stream water is still cold on your skin when her mouth closes over you.
 
 She kneels at the water's edge, knees on the smooth river stones, and takes your cock into her mouth with the same headlong determination she brings to everything — no hesitation, no teasing, just warm, wet pressure engulfing you. You're soft from the first round and the cold water, but her tongue drags along the underside with slow, firm strokes, and the contrast between the frigid stream around your calves and the heat of her mouth is dizzying. You feel yourself thicken against her tongue. Stiffening in increments. She hums — a small, satisfied vibration that travels up your shaft and settles in your spine.
@@ -10,6 +12,8 @@ You pull her up before you tip over the edge. She rises dripping, stream water r
 
 Your turn. You press her back against the nearest cedar. The bark is rough — she hisses when it bites her shoulder blades, then pulls you closer anyway, mouth hungry on yours. You slide two fingers inside her. She's still swollen from the first round, sensitive, and the sound she makes when you curl upward is a fractured whine that echoes off the water. Her cunt grips your fingers, slick and hot, and you work her steadily — slow strokes, thumb circling her clit, feeling her arousal rebuild in the tightening of her thighs, the quickening of her breath, the way her hips roll into your hand with increasing urgency.
 
+![Trainer pressing Machitan against a cedar by the stream, kissing her deeply while sliding fingers inside her slick heat](../assets/ch05_02.png)
+
 "You're — ah — you're good at that—" Her head tips back against the bark. Her throat works. "Don't stop — keep — right there—"
 
 You withdraw your fingers. She whines at the loss. You hook your hands under her thighs and lift.
@@ -17,6 +21,8 @@ You withdraw your fingers. She whines at the loss. You hook your hands under her
 She understands instantly. Her legs wrap around your waist, ankles locking behind your back, and the position presses her against the tree trunk — bark scraping her shoulder blades, your body pinning her from the front. Her weight settles in your arms, her thighs gripping your hips. You line up. The head of your cock nudges against her entrance — wet, swollen, clenching in anticipation.
 
 You push in.
+
+![Trainer lifting Machitan against the cedar trunk, her legs locked around his waist as he buries himself deep inside her](../assets/ch05_03.png)
 
 She's tighter than before. The first round left her sensitive, swollen, and every inch of entry drags a keening moan from her throat. Her nails dig into your shoulders — the same crescent marks from earlier, reopened. You bottom out and hold, feeling her pulse around you, her inner walls fluttering.
 
@@ -53,6 +59,8 @@ You don't stop. Even as the aftershocks shake through you, you keep moving — s
 "You can."
 
 She comes apart.
+
+![Machitan arching in an overwhelming multi-wave orgasm pinned to the cedar, semen dripping down her trembling inner thighs](../assets/ch05_04.png)
 
 It's not like the first time — sharp and sudden. This one builds in a slow, agonizing wave that you can feel cresting through her entire body. Her thighs begin trembling, then shaking, then spasming. Her pussy clamps down in rhythmic, desperate contractions — so tight around your softening cock that you gasp. Her eyes squeeze shut. Her mouth opens in a silent cry that holds for one second, two, three — and then breaks into a wrenched, shuddering sob.
 

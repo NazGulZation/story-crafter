@@ -98,3 +98,69 @@ When depicting a character in their canonical outfit, racewear, or school unifor
   - **Never use direct straight-down top-down POV for facesitting / 69 positions**.
   - **Switch to a Dynamic Side 3/4 Perspective or Profile View**: Prompt `side view, 3/4 view, 1girl, completely naked, on knees, leaning forward, one arm raised high braced against wall, exposed underarm, glistening armpit, 1boy, lying on back on mat, tilting head back, mouth open, tongue out, licking her armpit, tongue on underarm`.
   - **Negative Suppression**: Always add `headless, severed head, squished face, upside down face, deformed face, bad eyes, bad mouth, extra heads, extra arms, extra limbs`.
+
+---
+
+## 9. The "Vertical Monolith / Cock Pole" Foreshortening Glitch (Upward Frontal POV in Frottage/Straddling)
+
+- **The Failure Mode**: When attempting pre-penetration, dry humping, or frottage with an upward vertical or low-angle frontal POV (`pov, upward view, looking up, straddling, penis against pussy, hand on penis`), extreme foreshortening causes the model to render an unnaturally upright, disembodied vertical shaft standing like a monolith in the foreground. The female partner's groin geometry becomes ambiguous or detached, and hands holding the shaft appear disjointed or floating.
+- **Remediation Strategy**:
+  - **Abandon Direct Upward Frontal POV**: Do not prompt upward camera angles with detached POV elements for close lap interactions.
+  - **Switch to Seated / Reclined Side 3/4 Perspective**: Ground both bodies in space: `side view, side 3/4 angle, 1girl, straddling partner's lap, thighs apart, legs wrapped around partner's waist, arched back, leaning forward, looking at partner, 1boy, sitting up, hands on partner's hips, holding waist, muscular, large erect penis`.
+  - **Explicitly Detail the Physical Contact**: Anchor the exact frictional interaction: `frottage, grinding, penis against pussy, shaft rubbing against clit, pre-penetration, dripping pussy juice, wet fluids, clitoral friction, intimate contact, hips pressed close`.
+  - **Negative Suppression**: Always add `floating penis, detached penis, upward angle, direct vertical view, extreme foreshortening, distorted perspective`.
+
+---
+
+## 10. The "Multi-Arm Hallucination & Spontaneous Puddle" Trap (Intimate Close-Up Missionary)
+
+- **The Failure Mode**: In intimate, close-up missionary compositions involving multiple simultaneous upper-body touch points (`forehead against partner, hands on partner's shoulders, hovering over`), the diffusion model frequently duplicates arm limbs, producing 4 distinct arms (e.g. two arms wrapping around the neck and two extra arms emerging from the torso or floor). Additionally, heavy arousal fluid tokens (`wet pussy, dripping fluids, pussy juice, puddle`) leak into the environmental background conditioning, causing spontaneous ponds, streams, baths, or blue water puddles to appear between the characters' legs even when outdoors in dry terrain.
+- **Remediation Strategy**:
+  - **Strictly Disambiguate Arm Placements for Each Subject**:
+    - For the female subject: explicitly allocate one arm around partner and one arm grounded (`one arm around partner's neck, one hand braced on ground/moss`).
+    - For the male subject: explicitly define his bracing (`hovering over, missionary, hands braced on ground beside her head`).
+  - **Enforce Strict Multi-Limb Negative Bans**: Always include `extra limbs, extra arms, extra hands, 4 arms, multi-arms, floating limbs`.
+  - **Liquid Landscape Negative Suppression for Dry Ground**: When scenes occur on dry ground (moss, bedding, futon, tatami, forest floor), explicitly ban liquid landscape tokens in negative prompt: `water, pond, river, stream, pool, onsen, hot spring, bath, puddle`.
+
+---
+
+## 11. The Protagonist / "You" Face & Feature Clash (Self-Insert Immersion)
+
+- **The Failure Mode**: In second-person ("you") narratives (e.g. stories written from the perspective of the Trainer, Producer, Commander, Master, or reader), prompting a secondary character as a generic or named role (e.g. `1boy, trainer (umamusume)`) without an anonymity anchor causes two major defects:
+  1. **Distracting Specific Faces**: The model renders a fully detailed, distinct, or idiosyncratic anime face that conflicts with reader self-insertion, often drawing visual attention away from the primary heroine.
+  2. **Feature & Accessory Bleed**: When the heroine has unique biological or decorative features (e.g. horse ears, horns, halo, ear beads, unusual hair streaks), the absence of a `faceless` token frequently causes the model to mirror those non-human features onto the protagonist (e.g. generating horse ears or ear ornaments on the human Trainer).
+- **Remediation Strategy**:
+  - **Always Tag `faceless male` or `faceless female`**:
+    - For male protagonist ("you"): `1boy, faceless male, [role/context if needed, e.g. trainer (umamusume)], muscular, short hair...`
+    - For female protagonist ("you"): `1girl, faceless female, [role/context if needed]...`
+  - **Enforce Human Feature Isolation**: Explicitly state `human ears, no animal ears, no horse ears` on the partner if the heroine has fantasy or animal traits.
+  - **Negative Suppression**: Add `horse ears on boy, animal ears on male, ear ornament on male, multiple horse ears, deformed ears, 4 ears`.
+
+---
+
+## 12. The "Generic Casual / T-Shirt Fallback" on Elaborate Racing Silks & Variant Outfits (Iconic Component Decomposition)
+
+- **The Failure Mode**: When prompting a character in a specific elaborate costume or racing silk (e.g., `matikane tannhauser (clippety-tippety-clop) (umamusume)`), relying solely on the variant tag without structural components often causes the model to fall back to generic casual wear (plain t-shirts, modern hoodies, or plain skirts) due to diluted text-encoder weights for the specific outfit variant.
+- **Remediation Strategy**:
+  - **Decompose the Costume into 3–5 Signature Structural Anchors**: Rather than using vague clothing terms (like `shirt, jacket, clothes`) which cause tag confusion, explicitly state the unique, iconic design components that define the costume:
+    - *Example (Machitan Clippety-Tippety-Clop)*: `blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt, gold trim`.
+    - *Example (Teio Beyond the Horizon)*: `blue tailcoat, white pants, gold epaulets, blue cape, white ascot`.
+  - **Differentiate Generic Clothing Suppression from Iconic Anchoring**:
+    - *Banned*: Adding generic tags like `shirt, jacket, pants` that compete with the costume logic.
+    - *Mandatory*: Adding precise, unique silhouette pieces (`casquette cap, corset, cutaway shoulders`) that guide the diffusion model to reconstruct the exact canon outfit.
+  - **Negative Suppression**: Add `t-shirt, casual clothes, gym uniform, school uniform, plain shirt, hoodie`.
+
+---
+
+## 13. Kinetic Speed & Racing Velocity vs. Anatomical Smearing
+
+- **The Failure Mode**: In high-speed sports, sprinting, or turf racing sequences, prompting `motion blur`, `blur`, or `speed lines` often causes the model to blur the character's facial features, hands, and limb contours, producing melted anatomy or blurry smudges.
+- **Remediation Strategy**:
+  - **Isolate Motion Blur to the Environment**: Explicitly tag `motion blur background` or `blurred background` while keeping the character sharply focused:
+    - *Character Anchors*: `running, sprinting, high speed, dynamic angle, clenched teeth, flying sweat, intense expression, horse ears pinned back, sharp focus on character`.
+    - *Environmental Velocity*: `motion blur background, flying turf, kicking up dirt, speed lines in background, stadium lighting, racetrack`.
+  - **Express Speed Through Diegetic Consequences**: Detail flying sweat droplets, flying dirt/turf clods from running shoes/hooves, fluttering ribbons/hair, and strained neck tendons.
+  - **Negative Suppression**: Add `blurry character, blurry face, motion blur on body, melted limbs, deformed legs, extra legs, bad anatomy`.
+
+
+

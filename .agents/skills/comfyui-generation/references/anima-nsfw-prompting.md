@@ -61,6 +61,11 @@ Defines identity, franchise, physique, expression, and primary pose:
 ### Block 3: Secondary Character & Framing (`{secondary_character}`)
 Defines the partner, perspective, and bodily presence in the scene:
 - **Count & Identity**: `1boy`, `faceless male`, `tall male`, `trainer \([umamusume]\)`
+- **Second Character as "You" (POV / Reader Protagonist)**:
+  - If the secondary character represents **"you"** (the reader, narrator, Trainer, Producer, Commander, Sensei, Master, or POV protagonist), **always add `faceless male` or `faceless female`**:
+    - For male protagonist: `1boy, faceless male, [role, e.g. trainer \(umamusume\)], [physique, e.g. muscular, tall]`
+    - For female protagonist: `1girl, faceless female, [role], ...`
+  - Tagging `faceless male` / `faceless female` prevents the diffusion model from rendering an intrusive, distinct face that breaks reader self-insertion, keeps visual rendering fidelity centered on the heroine, and prevents feature bleed (e.g. animal ears leaking onto the protagonist).
 - **Camera Perspective**: `pov`, `pov hands`, `first-person view`, `from behind`, `close-up`, `low angle`
 - **Interaction Contact**: `hands on hips`, `grabbing thighs`, `holding hands`, `pov hands on waist`
 - **Partner State**: `clothed female nude male`, `shirtless male`, `large penis`, `erection`, `veiny penis`, `precum`
@@ -108,7 +113,7 @@ masterpiece, best quality, ultra detailed anime coloring, anime screenshot,
 
 1girl, agnes tachyon \(casual\) \(umamusume\), large breasts, smug, grin, off shoulder, necklace, pendant, bottomless, pussy, pubic hair, leaning back, 
 
-1boy, pov, pov hands, clothed female nude male, large penis
+1boy, faceless male, pov, pov hands, clothed female nude male, large penis
 
 vaginal, sex, cowgirl position, straddling, 
 
@@ -121,7 +126,7 @@ masterpiece, best quality, ultra detailed anime coloring, anime screenshot,
 
 1girl, blue hair, long hair, blue eyes, blush, heavy breathing, parted lips, tears, arched back, large breasts, bare shoulders, on back, legs apart, pussy, wet, 
 
-1boy, pov, pov hands, gripping hips, muscular male, large penis, 
+1boy, faceless male, pov, pov hands, gripping hips, muscular male, large penis, 
 
 vaginal, sex, missionary, deep penetration, intense, sweat, steaming body, trembling, 
 
@@ -134,7 +139,7 @@ masterpiece, best quality, ultra detailed anime coloring, anime screenshot,
 
 1girl, blonde hair, twin tails, red eyes, looking back, open mouth, blushing, doggy style, on all fours, arched spine, wide hips, round buttocks, pussy, pubic hair, 
 
-1boy, pov, pov hands on waist, standing behind, veiny erection, large penis, 
+1boy, faceless male, pov, pov hands on waist, standing behind, veiny erection, large penis, 
 
 vaginal, sex, from behind, penetration, hard thrusting, sweat, dripping, 
 
@@ -153,7 +158,7 @@ masterpiece, best quality, ultra detailed anime coloring, anime screenshot,
 
 1girl, agnes tachyon \(casual\) \(umamusume\), large breasts, smug, grin, off shoulder, necklace, pendant, bottomless, pussy, pubic hair, leaning back, 
 
-1boy, pov, pov hands, clothed female nude male, large penis
+1boy, faceless male, pov, pov hands, clothed female nude male, large penis
 
 vaginal, sex, cowgirl position, straddling, 
 
@@ -211,6 +216,24 @@ Once an image is generated and saved:
    - Direct downward top-down POV puts the male head pinned against the bottom screen border, creating squashed, severed, or faceless head glitches.
    - Frame from a dynamic **Side 3/4 Perspective**: `side view, 3/4 view, 1girl on knees, straddling partner, leaning forward, one arm raised high braced against wall, exposed underarm, glistening armpit, 1boy lying on back, tilting head back, mouth open, licking armpit`. Negate `headless, severed head, squished face, upside down face, deformed face`.
 
+7. **Oral Progression & Fluid Dynamics**:
+   - **Boxers Easing / Inspection**: `kneeling, bedside, pulling down boxers, looking at penis, wide eyes, awe, flushed face, morning erection, erect penis, large penis`.
+   - **Active Fellatio / Deepthroat Anchor**: `fellatio, blowjob, deepthroat, oral, kneeling by bed, looking up at viewer, holding shaft at base, flushed cheeks, parted lips`.
+   - **Climax Pullback & Saliva Bridge**: `mouth pull, pulling away, mouth open, looking up, holding shaft at base, saliva trail, saliva string, saliva bridge connecting lips to tip, glistening fluids, precum, morning erection, breathless`. Negate `cum on face, messy cum` (if pulling back immediately prior to ejaculation).
+   - **Oral Creampie / Throat Bulge / Swallowing**: `deepthroat, oral creampie, swallowing, throat bulge, throat flex, semen in mouth, drinking semen, eyes closed, hands on partner's thighs, gulp`.
+   - **Post-Oral Mouth Wipe & Pride/Victory**: `wiping mouth, back of hand, wiping lips, semen on mouth, semen on lips, kneeling, looking at viewer, proud expression, victory sign, v sign, wink`.
+
+8. **Elaborate Costume Decomposition vs. Generic Clothing Suppression**:
+   - For complex racing silks and elaborate variants, relying purely on the variant tag (e.g. `matikane tannhauser (clippety-tippety-clop) (umamusume)`) can cause the model to default to generic casual t-shirts or standard uniforms.
+   - **Decompose into 3–5 signature structural pieces**: `blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt`.
+   - Negate generic defaults: `t-shirt, casual clothes, gym uniform, school uniform`.
+
+9. **Cinematic Track Racing & High-Velocity Athletic Action**:
+   - **Sprint Velocity**: `running, high speed, sprinting, turf flying, clenched teeth, flying sweat, intense expression, horse ears pinned back, dynamic angle, motion blur background, racetrack, turf`. Keep character sharp by scoping blur strictly to `motion blur background`.
+   - **Photo-Finish Climax**: `photo finish, crossing finish line, leaning forward, chest breaking tape, screaming, open mouth gasping, exhaustion, sweat, dramatic lighting, stadium lights`.
+   - **Post-Race Emotional Embrace**: `embracing, hugging, catching in arms, jumping into arms, laughing through tears, joyful crying, racetrack rail, grandstand background, 1boy, faceless male, trainer (umamusume)`.
+
 > For complete field-tested diagnostic analysis and full prompt remediation tables, see:
 > **[failure-modes-and-remediations.md](failure-modes-and-remediations.md)**
+
 
