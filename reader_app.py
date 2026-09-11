@@ -721,6 +721,12 @@ def get_html_ui():
     text-indent: 0;
   }}
 
+  .page-content p.paragraph-continuation,
+  .page-content blockquote.paragraph-continuation {{
+    text-indent: 0 !important;
+    margin-top: 0 !important;
+  }}
+
   .page-content blockquote {{
     border-left: 3px solid var(--accent);
     padding-left: 18px;
@@ -1300,6 +1306,50 @@ def get_html_ui():
     splitPagesIntoSpreads(rawHtml, title, direction);
   }}
 
+  function splitHtmlIntoTokens(inner) {{
+    return inner.split(/(\\s+|<[^>]+>)/).filter(t => t.length > 0);
+  }}
+
+  function buildSubParagraph(tokens, start, end, isContinuation, tagName = 'p') {{
+    if (start >= end) return '';
+    let openTags = [];
+    for (let i = 0; i < start; i++) {{
+      const t = tokens[i];
+      if (t.startsWith('</')) {{
+        openTags.pop();
+      }} else if (t.startsWith('<') && !t.endsWith('/>')) {{
+        const m = t.match(/<([a-zA-Z0-9]+)/);
+        if (m) openTags.push(m[1]);
+      }}
+    }}
+
+    let result = '';
+    for (const tag of openTags) {{
+      result += '<' + tag + '>';
+    }}
+
+    let activeTags = [...openTags];
+    for (let i = start; i < end; i++) {{
+      const t = tokens[i];
+      result += t;
+      if (t.startsWith('</')) {{
+        activeTags.pop();
+      }} else if (t.startsWith('<') && !t.endsWith('/>')) {{
+        const m = t.match(/<([a-zA-Z0-9]+)/);
+        if (m) activeTags.push(m[1]);
+      }}
+    }}
+
+    for (let i = activeTags.length - 1; i >= 0; i--) {{
+      result += '</' + activeTags[i] + '>';
+    }}
+
+    const trimmed = result.trim();
+    if (!trimmed) return '';
+    const cls = isContinuation ? ' class="paragraph-continuation"' : '';
+    return `<${{tagName}}${{cls}}>${{trimmed}}</${{tagName}}>`;
+  }}
+
   function splitPagesIntoSpreads(rawHtml, title, direction = null) {{
     // Measure actual rendered size of the page content area
     const targetHeight = Math.max(320, (contentLeft.clientHeight > 50 ? contentLeft.clientHeight : (window.innerHeight - 200)));
@@ -1367,32 +1417,90 @@ def get_html_ui():
         continue;
       }}
 
-      tester.innerHTML += nodeHtml;
+      // Check if nodeHtml fits entirely on the current page
+      const testCurrent = currentPageNodes.join('') + nodeHtml;
+      tester.innerHTML = testCurrent;
 
-      // When added element causes page overflow
-      if (tester.scrollHeight > targetHeight + 6) {{
-        // If we already have content on this page, push current page and start a new one
-        if (currentPageNodes.length > (isFirstPage ? 1 : 0)) {{
-          splitPages.push(currentPageNodes.join(''));
-          currentPageNodes = [nodeHtml];
-          isFirstPage = false;
-          tester.innerHTML = nodeHtml;
+      if (tester.scrollHeight <= targetHeight + 6) {{
+        currentPageNodes.push(nodeHtml);
+        continue;
+      }}
 
-          // If a single massive paragraph overflows by itself, still push it to avoid losing text
-          if (tester.scrollHeight > targetHeight + 6) {{
+      // Node does not fit on current page.
+      // Check if it fits whole on a fresh empty page:
+      const canPushCurrent = currentPageNodes.length > (isFirstPage ? 1 : 0);
+      tester.innerHTML = nodeHtml;
+      if (canPushCurrent && tester.scrollHeight <= targetHeight + 6) {{
+        splitPages.push(currentPageNodes.join(''));
+        currentPageNodes = [nodeHtml];
+        tester.innerHTML = nodeHtml;
+        isFirstPage = false;
+        continue;
+      }}
+
+      // Node is a long paragraph that cannot fit on a single page,
+      // or current page already has prior content: push current page if possible so paragraph begins cleanly
+      if (canPushCurrent) {{
+        splitPages.push(currentPageNodes.join(''));
+        currentPageNodes = [];
+        tester.innerHTML = '';
+        isFirstPage = false;
+      }}
+
+      // Binary-search splitting for long paragraphs/blockquotes across pages
+      const tagName = (node.tagName && node.tagName.toLowerCase() === 'blockquote') ? 'blockquote' : 'p';
+      const tagRegex = new RegExp(`^<${{tagName}}[^>]*>([\\\\s\\\\S]*)<\\\\/${{tagName}}>$`, 'i');
+      const m = nodeHtml.match(tagRegex);
+      const inner = m ? m[1] : nodeHtml;
+      const tokens = splitHtmlIntoTokens(inner);
+
+      let remainingTokens = tokens;
+      let isContinuation = false;
+
+      while (remainingTokens.length > 0) {{
+        const baseHtml = currentPageNodes.join('');
+        let low = 1;
+        let high = remainingTokens.length;
+        let bestFit = 0;
+
+        while (low <= high) {{
+          const mid = Math.floor((low + high) / 2);
+          const cand = buildSubParagraph(remainingTokens, 0, mid, isContinuation, tagName);
+          tester.innerHTML = baseHtml + cand;
+          if (tester.scrollHeight <= targetHeight + 6) {{
+            bestFit = mid;
+            low = mid + 1;
+          }} else {{
+            high = mid - 1;
+          }}
+        }}
+
+        if (bestFit === 0) {{
+          if (currentPageNodes.length > 0) {{
             splitPages.push(currentPageNodes.join(''));
             currentPageNodes = [];
             tester.innerHTML = '';
+            isFirstPage = false;
+            continue;
+          }} else {{
+            bestFit = Math.min(remainingTokens.length, 1);
           }}
-        }} else {{
-          currentPageNodes.push(nodeHtml);
+        }}
+
+        const chunkHtml = buildSubParagraph(remainingTokens, 0, bestFit, isContinuation, tagName);
+        remainingTokens = remainingTokens.slice(bestFit);
+        isContinuation = true;
+
+        if (remainingTokens.length > 0) {{
+          currentPageNodes.push(chunkHtml);
           splitPages.push(currentPageNodes.join(''));
           currentPageNodes = [];
-          isFirstPage = false;
           tester.innerHTML = '';
+          isFirstPage = false;
+        }} else {{
+          currentPageNodes.push(chunkHtml);
+          tester.innerHTML = currentPageNodes.join('');
         }}
-      }} else {{
-        currentPageNodes.push(nodeHtml);
       }}
     }}
 
