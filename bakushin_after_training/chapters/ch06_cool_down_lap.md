@@ -1,6 +1,6 @@
 # Cool-Down Lap
 
-![Bakushin O in her pink race jacket, high ponytail, looking back over her shoulder at the doorway with a warm satisfied smile](c:/StoryCrafter/bakushin_after_training/assets/ch06_cool_down.jpg)
+![Bakushin O sprawled on the blue mats in afterglow, hair undone, soft satisfied smile](c:/StoryCrafter/bakushin_after_training/assets/ch06_01.png)
 
 You are both completely ruined, tangled together on the sweat-soaked surface of the stacked gym mats. The harsh fluorescent light of the equipment room beats down on your exhausted bodies, illuminating the utter wreck you've made of each other. 
 
@@ -19,6 +19,8 @@ You kneel beside her, the vinyl creaking under your knees. You take a fresh medi
 "Sore?" you ask, your voice raspy, a quiet rumble in the enclosed space.
 
 "Just a... a little," she admits, though her competitive spirit immediately flares to mask the vulnerability. She puffs out her chest, the motion drawing your eyes to the sheen of sweat pooling in her cleavage. "But an honor student always pushes through the burn! Muscle fatigue is just weakness leaving the body, Trainer!"
+
+![Trainer gently wiping sweat and fluids from Bakushin's flushed skin with medical tissues](c:/StoryCrafter/bakushin_after_training/assets/ch06_02.png)
 
 You huff a laugh, dragging the tissue higher, carefully wiping the tender, swollen lips of her pussy. She winces again, her hips bucking up just a fraction, but she doesn't pull away. The lingering sensuality of the act is still heavy between you. Your knuckles brush against her swollen clit, and a ragged stutter of a moan escapes her throat. Even now, thoroughly spent, her body is hyper-responsive. 
 
@@ -45,6 +47,8 @@ Instantly, her nose wrinkles. "Ugh!" she laughs, pulling back. "You're so salty!
 Bakushin grins, that wild, incandescent, all-in expression that first pulled you into this room. "I have to know what my competition tastes like!" 
 
 Before you can react, she lunges forward again. Her warm, wet tongue swipes aggressively right up the center of your armpit. 
+
+![Bakushin playfully sniffing and teasingly licking Trainer's underarm in mutual afterglow laughter](c:/StoryCrafter/bakushin_after_training/assets/ch06_03.png)
 
 You let out a startled bark of laughter, twisting away as the ticklish, abrasive scrape of her tongue hits you. She falls back against the mats, dissolving into peals of bright, echoing laughter. It’s loud, joyful, and completely devoid of self-consciousness. You join in, the sound of your shared laughter chasing the last vestiges of heavy, erotic tension out of the room, replacing it with a deep, fond warmth.
 
@@ -75,6 +79,8 @@ Bakushin zips her jacket up a few more inches, then reaches out and grips the do
 Satisfied that the coast is clear, she looks back over her shoulder at you. Her cheeks are still flushed a deep pink, and there is a lingering, satisfied softness in her purplish-pink eyes, but her grin—that bright, burning, competitive grin—is sharper than ever.
 
 "Same time after tomorrow's training?" she asks, her voice a hushed, excited whisper.
+
+![Bakushin redressed at the open doorway, winking over her shoulder with an incandescent grin](c:/StoryCrafter/bakushin_after_training/assets/ch06_04.png)
 
 You don't even have to think about it. "I'll make sure to bring extra water."
 

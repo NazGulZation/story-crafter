@@ -1,6 +1,6 @@
 # Chapter 5: The Final Stretch
 
-![Bakushin O, hair loose and wild, face flushed and overwhelmed, pressing desperately into someone's shoulder](c:/StoryCrafter/bakushin_after_training/assets/ch05_final_stretch.jpg)
+![Bakushin O riding in cowgirl position, sweat dripping from her chin, frantic pace in the equipment room](c:/StoryCrafter/bakushin_after_training/assets/ch05_01.png)
 
 Her sweat drips from the point of her chin, splashing hot and salty against the center of your chest, a metronome keeping time with her frantic pace. 
 
@@ -15,6 +15,8 @@ But her cadence is visibly fraying. The measured, competitive bounce she started
 You don't want to let her finish this alone from up there, detached and separated. You engage your core and sit up, lifting your torso off the sticky vinyl of the mats to meet her halfway. The sudden shift in gravity forces her to adjust her balance. She lets out a sharp, surprised squeak as your chest collides heavily with hers, the damp skin of your torsos slapping together. 
 
 To keep from falling backward, she immediately throws both her arms around your neck, locking her hands tightly behind your head. Her legs wrap instinctively around your waist, hooking her calves behind your thighs to anchor herself flush against your pelvis. 
+
+![Trainer sitting up into a sweat-soaked chest-to-chest embrace, thrusting upward as Bakushin wraps around him](c:/StoryCrafter/bakushin_after_training/assets/ch05_02.png)
 
 The sudden movement exposes everything you crave. With her arms raised and wrapped securely around your neck, her underarms are presented perfectly at the level of your face, right where you want them. 
 
@@ -45,6 +47,8 @@ The overwhelming sensation sends her over the edge. Her second climax of the nig
 It is a violent, full-body event. You feel the exact moment her muscles lock up. Her pussy clenches around your cock with terrifying force, milking the latex rhythmically in a series of violent, involuntary contractions that try to wring every drop out of you. 
 
 "TRAINER!" she screams, a raw, broken wail that she muffles by burying her face directly into your shoulder. Her teeth graze your skin, not quite biting, but clamping down in pure sensory overload as the orgasm tears through her. 
+
+![Bakushin biting desperately into Trainer's shoulder during her overwhelming second climax as he buries his face in her underarm](c:/StoryCrafter/bakushin_after_training/assets/ch05_03.png)
 
 Her legs start to shake violently where they flank your hips. Her nails dig into your back like she’s trying to anchor herself to the earth, scraping hot red lines into your skin. You feel her heart hammering against your chest, a frantic drumbeat, and her whole body goes rigid as she rides the crest of the climax. Her vision whites out, her eyes rolling back under her closed lids, her breath hitching and stalling in her throat as she whines uncontrollably. 
 
@@ -77,6 +81,8 @@ A second later, the elastic of her scrunchie gives way completely. It slides dow
 With all her energy spent, Bakushin collapses forward. 
 
 She becomes utter dead weight, her chest flattening against yours, her soft cheek resting against your collarbone. The sheer physical exhaustion pins you both flat against the sticky, sweat-soaked surface of the mats. 
+
+![Exhausted mutual collapse on the mats after climax, tangled together in the immediate aftermath](c:/StoryCrafter/bakushin_after_training/assets/ch05_04.png)
 
 Neither of you speaks. The only sounds in the equipment room are the harsh, jagged sounds of your synchronized, panting breaths, and the distant, muffled hum of the fluorescent lights overhead. You lie there, buried under her weight, your cock still resting deep inside her, the heat of her body seeping into your pores. 
 

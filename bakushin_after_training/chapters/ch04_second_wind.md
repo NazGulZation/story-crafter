@@ -1,6 +1,6 @@
 # Second Wind
 
-![Bakushin O sitting triumphantly on stacked mats, arms raised behind her head, fierce confident grin](c:/StoryCrafter/bakushin_after_training/assets/ch04_second_wind.jpg)
+![Bakushin O sitting triumphantly on stacked mats, arms raised behind her head, fierce confident grin](c:/StoryCrafter/bakushin_after_training/assets/ch04_01.png)
 
 The harsh fluorescent light of the equipment room beats down on the two of you, illuminating the glistening sheen of sweat coating every inch of your bodies. You are still buried deep inside her, the air thick and heavy with the overpowering musk of her exertion, compounded by the sharp, salty tang of sex. She is still trembling against you, the aftershocks of her climax rippling through her thighs where they clamp like a vise around your hips. Her breath comes in jagged, wet gasps against your collarbone, each exhale carrying the scent of sports drink and adrenaline. 
 
@@ -30,6 +30,8 @@ The sensation is a chaotic, overwhelming rush. There is no slow, tentative explo
 
 She bobs her head rapidly, a slightly erratic but incredibly eager rhythm. You feel the scrape of her teeth occasionally, a sharp prick of friction that only heightens the raw sensitivity. She is loud, even with her mouth entirely full. Muffled hums, eager groans, and wet, sloppy sucking sounds fill the small, stuffy room. 
 
+![Bakushin enthusiastically taking Trainer into her mouth, looking up with fierce competitive lust](c:/StoryCrafter/bakushin_after_training/assets/ch04_02.png)
+
 "Mmgh—!" she hums loudly, her hands gripping your bare thighs tight enough to leave bruises, her thumbs pressing deep into your muscles for leverage. 
 
 The frantic pace is dizzying, but you want more of her. You reach down, grabbing her slippery, sweat-drenched hips, and haul her forward. She yelps in surprise, her mouth popping off your cock with a loud smack, leaving a string of saliva connecting you for a split second.
@@ -54,6 +56,8 @@ It’s completely drenched. The skin is flushed pink, a large bead of sweat gath
 
 You can't resist. You tilt your head back, abandoning her pussy for a second, and drag your tongue right up into the hollow of her raised armpit.
 
+![Bakushin straddling Trainer's face, displaying both sweat-drenched armpits while he laps at her core](c:/StoryCrafter/bakushin_after_training/assets/ch04_03.png)
+
 Bakushin gasps, a sharp, ragged sound that vibrates through your cock. "Ah! Tr-Trainer! You really like that spot, don't you?!" 
 
 She doesn't pull away. Instead, she leans into it, presenting the pit to you entirely, her arm straightening against the wall. You lap at the salty skin, licking away the accumulated sweat, burying your nose in the damp crease and inhaling as hard as you can. The taste is abrasive and intense, a pure shot of her essence. You suck on the skin there, feeling the tight muscle of her shoulder twitch under your mouth, the friction rough and grounding. 
@@ -75,6 +79,8 @@ When she is completely seated, her thighs bracketing your ribs, she lets out a l
 She raises both arms high into the air, crossing her wrists behind her head in a makeshift stretching pose to cool her overheated body. The position thrusts her chest forward and completely, proudly displays both of her sweat-drenched armpits to you. The sight is magnificent—the glistening hollows, the flush of exertion, the scent radiating down to you in the cramped room, entirely unhidden.
 
 Then, she begins to bounce.
+
+![Bakushin riding cowgirl on the mats with arms raised behind her head, breasts and hips bouncing wildly](c:/StoryCrafter/bakushin_after_training/assets/ch04_04.png)
 
 Her small frame is incredibly powerful. She sets a punishing, rapid rhythm right from the start, acting like a jockey driving for the finish line. Her hips slam down against yours with wet, heavy thuds. The sound of flesh slapping against flesh fills the equipment room, echoing sharply off the concrete walls and the leather vaulting horse.
 

@@ -1,6 +1,6 @@
 # Chapter 2: Reckless Pace
 
-![Bakushin O gripping the overhead bar, arms raised, sweat glistening under the fluorescent light](c:/StoryCrafter/bakushin_after_training/assets/ch02_reckless_pace.jpg)
+![Bakushin O gripping the overhead bar, arms raised, sweat glistening under the fluorescent light](c:/StoryCrafter/bakushin_after_training/assets/ch02_01.png)
 
 The heat of the cramped equipment room presses in on you, thick with the concentrated musk of sweat and leather, but you barely register it over the searing friction against your hips. Her right thigh is still hooked firmly over your waist, the taut muscles of her leg clamping you in place as your erection slides hard against her slick, swollen folds. Her racing bloomers are pushed roughly to the side, the elastic band digging a red line into her hip, but they do nothing to stop the wet heat bleeding through to coat you.
 
@@ -29,6 +29,8 @@ You pull back from her armpit, panting, a thin string of saliva connecting your 
 You step back just enough to kick your pooled pants and underwear completely off your boots, freeing your legs. The cool air of the room bites at your bare skin, but the heat radiating from Bakushin is like a furnace. You reach blindly for your dropped trainer bag, resting against the base of the pommel horse. Your fingers fumble with the zipper for a maddening second before you find the small, square foil packet tucked into the front pocket.
 
 Bakushin watches you with wide, intense eyes, her breath coming in ragged pants as you tear the wrapper open with your teeth. She doesn't look away, completely unashamed, her chest rising and falling rapidly as you pinch the reservoir tip and roll the latex down over your throbbing, aching length. The snap of the rubber against your base is loud in the small room.
+
+![Bakushin watching with eager, competitive eyes as Trainer prepares the condom](c:/StoryCrafter/bakushin_after_training/assets/ch02_02.png)
 
 "Perfect preparation!" she declares loudly, though her voice trembles with poorly concealed desperation. "As expected of my Trainer! Now, full speed ahead!"
 
@@ -60,6 +62,8 @@ You don't rush. You take it millimeter by millimeter, letting her body stretch t
 
 You hit the base, burying yourself to the hilt with a heavy, wet slap of skin against skin. The impact jars the breath from her lungs. You hold there, perfectly still, letting the reality of the connection settle between you. You are completely seated inside her, her legs wrapped around your thighs, her arms locked on the bar above, her chest heaving as her body spasms around your length.
 
+![First deep penetration pinned against the mats, Bakushin crying out in breathless pleasure](c:/StoryCrafter/bakushin_after_training/assets/ch02_03.png)
+
 "Good?" you ask, your voice a harsh rasp.
 
 "G-Good!" she gasps out, her eyes snapping open, blazing with that familiar, terrifyingly eager competitive fire. "Is that... is that all? A slow start won't win the race, Trainer!"
@@ -79,6 +83,8 @@ You don't hesitate. You turn your head and bury your mouth into her right pit, j
 "Ahhhhh!" Bakushin screams, her fingers white-knuckling the metal bar. "Wait—Trainer—ah! You're—you're doing both at once!"
 
 You lap eagerly at the slick, salty well, your tongue darting into the deepest crease to catch a bead of fresh sweat, while your hips maintain the brutal, relentless pace below. The taste of her musk is intoxicating, a primal, heavy flavor that makes your mouth water. You suck on the tender skin, leaving a bright red mark, then drag your tongue down the side of her breast before switching to her left armpit.
+
+![Trainer burying his face into Bakushin's exposed, sweat-glistening underarm while thrusting relentlessly](c:/StoryCrafter/bakushin_after_training/assets/ch02_04.png)
 
 You alternate between them, burying your face in her sweat, inhaling the raw, pungent scent of her exertion while you pound into her core. The sensory overload is absolute. The taste of salt, the smell of musk, the wet, slapping sound of your bodies colliding, the blinding heat of her pussy gripping your cock.
 
