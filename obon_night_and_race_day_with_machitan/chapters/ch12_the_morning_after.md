@@ -1,5 +1,7 @@
 # The Morning After
 
+![Trainer holding Machitan against the cool dorm wall, her legs wrapped tight around his waist as he slides in for deep standing sex](../assets/ch12_01.png)
+
 Her hand refuses to let go. Her fingers, slick with sweat and your own spent fluids, wrap tight around your softening cock, squeezing with a persistent, greedy pressure. The friction is slow and deliberate. You are still trembling from the first climax, your chest heaving, but the wet heat of her grip pulls the blood right back down. 
 
 "I told you," Machitan whispers against your collarbone. Her teeth scrape over the bruised bite mark she left there earlier, sending a sharp spike of adrenaline through your exhausted muscles. "I still have plenty of stamina from this morning. Don't... don't stop yet."
@@ -42,6 +44,8 @@ You cut her off with a deep, grinding thrust, burying yourself to the hilt. She 
 
 Her tail curls possessively around your right thigh, holding you in place. Her legs hook over your shoulders, opening her completely to you. 
 
+![Trainer and Machitan collapsed together in intimate missionary on the dorm bed, foreheads close, sharing breathless gaze and tears of pleasure](../assets/ch12_02.png)
+
 The rhythm resumes, a slow, agonizingly deep slide in and out. The wet, slapping sounds fill the quiet room. Her hands map your back, tracing the fading bark-scrapes from the forest and the new, stinging gouges she just made. 
 
 "I really... I wanted you so much," she whispers, her voice cracking. Her ordinary, unfiltered honesty bleeds out between heavy breaths. "When I was running today... all I could think about was getting back here. Winning, so... so I could have this."
@@ -70,6 +74,8 @@ Machitan is curled against your side, her head resting on your chest. She is wea
 
 The red and blue beads on her right ear tap lightly against your collarbone as she shifts, her ear twitching in a slow, content rhythm. 
 
+![Machitan curled against Trainer's bare chest at dawn in his oversized white button-down shirt, looking up with tender amber eyes](../assets/ch12_03.png)
+
 "Trainer?" she murmurs. Her voice is gravelly with sleep and overuse. 
 
 "Hmm?" you hum, stroking a tangled strand of chestnut hair away from her forehead. Her white forelock is finally dry, soft against your fingers. 
@@ -97,3 +103,6 @@ It feels like a lifetime ago that you were standing under the lanterns of the Ob
 The morning sun catches the red and blue beads on her ear, lighting them up like tiny embers in the pale dawn. Her breathing slows, evening out as sleep finally claims her. You hold her close, the weight of her body grounding you to the bed, to the room, to her. 
 
 Outside, the campus stirs — distant footsteps, the clatter of a maintenance cart, the first notes of birdsong replacing the memory of taiko drums. None of it reaches her. She sleeps on, her hand still holding yours, her heartbeat steady against your ribs.
+
+![Machitan sleeping peacefully at golden sunrise, cheek squished against Trainer's chest with their fingers intertwined under the morning sun](../assets/ch12_04.png)
+

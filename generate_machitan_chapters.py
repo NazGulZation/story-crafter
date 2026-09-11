@@ -95,7 +95,7 @@ def wait_and_download(prompt_id, filename, timeout=600, poll=4):
             continue
     raise TimeoutError(f"Generation timed out after {timeout}s")
 
-def generate_image(pos_prompt, filename, seed=None, width=832, height=1216):
+def generate_image(pos_prompt, filename, seed=None, extra_neg=None, width=832, height=1216):
     if seed is None:
         seed = random_seed()
     print(f"\n==================================================")
@@ -104,6 +104,10 @@ def generate_image(pos_prompt, filename, seed=None, width=832, height=1216):
     print(f"Resolution: {width}x{height}")
     print(f"==================================================")
 
+    neg_text = NEG_PROMPT
+    if extra_neg:
+        neg_text = f"{NEG_PROMPT}, {extra_neg}"
+
     api = load_and_convert_workflow()
     for nid, n in api.items():
         ctype = n.get("class_type", "")
@@ -111,7 +115,7 @@ def generate_image(pos_prompt, filename, seed=None, width=832, height=1216):
             if nid == "11":
                 n["inputs"]["text"] = pos_prompt
             elif nid == "12":
-                n["inputs"]["text"] = NEG_PROMPT
+                n["inputs"]["text"] = neg_text
         elif ctype in ("KSampler", "KSamplerAdvanced"):
             if "seed" in n["inputs"]:
                 n["inputs"]["seed"] = seed

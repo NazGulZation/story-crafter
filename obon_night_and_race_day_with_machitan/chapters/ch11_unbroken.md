@@ -1,5 +1,7 @@
 # Unbroken
 
+![Trainer driving into Machitan to the hilt on the dorm bed in deep missionary, her bare heels hooked around his waist as she cries out in pleasure](../assets/ch11_01.png)
+
 You thrust forward, driving your hips flush against hers, and the soaking heat of her pussy swallows you to the hilt. The friction is a wet, heavy drag, her swollen flesh parting and stretching painfully tight around your cock. Machitan cries out, her head throwing back against the cheap dorm mattress. The motion pulls her throat into a taut, pale line under the warm golden lamplight, her skin flushed deep crimson. Her thighs lock around your waist in a vise grip of pure, raw muscle, her heels digging fiercely into your glutes. She demanded you fuck her hard, and you aren’t about to hold back now. You pull back, the slick heat trying to cling to you, and slam into her again. The wet smack of skin on skin echoes off the thin walls of the cramped dorm room.
 
 "Ah! Yes—right—ah!" she stammers, the words breaking apart as she rides the shockwaves of each impact. Her fingernails dig deep into your shoulders, finding the scabbed bite mark from that night in the forest, her grip turning frantic as the stretch overwhelms her. The single mattress groans beneath you, the bed frame protesting the sudden violence with a rhythmic, metallic squeak. The room smells of cheap shower soap entirely overpowered by the thick, heavy musk of her arousal.
@@ -14,6 +16,8 @@ She begins to ride. The pace she sets is aggressive, a grinding, unyielding rhyt
 
 "God, you feel— ah! So deep—" she blurts, her voice tearing. Sweat plasters her chestnut hair and that white forelock to her forehead, dripping from her chin onto your chest. 
 
+![Machitan straddling Trainer in cowgirl position, riding him with fierce dominant rhythm as her breasts bounce and her hands brace flat against his chest](../assets/ch11_02.png)
+
 She’s taking exactly what she wants, grinding her swollen clit against your abdomen with every downward thrust. 
 
 The intensity is a two-way street, and the aggressive friction of her riding is pushing you both toward the edge too fast. You reach up, gripping her waist, your thumbs digging into the soft, sweaty flesh above her hips. 
@@ -27,6 +31,8 @@ You kneel behind her, grip her hips tight enough to leave bruises, and drive in.
 "Ahhhh! Fuck!" she screams, her face burying into the thin pillow before she abandons it, letting the sound tear freely from her throat. 
 
 The rhythm turns primal. Your hips slam into hers, the force driving her forward until the headboard begins to batter against the wall. *Thump. Thump. Thump.* The noise is deafening in the small room, but neither of you can stop. Her wetness drips down her inner thighs, the slick sound of your bodies mating filling the heavy air. You can feel the heat radiating off her skin, the friction building to a fever pitch.
+
+![Machitan on all fours on the bed in doggystyle position, back deeply arched and tail raised as Trainer drives in from behind while gripping her hips](../assets/ch11_03.png)
 
 "You're taking it so well," you groan, leaning over her sweating back, your chest dragging against her spine. "Good girl."
 
@@ -49,6 +55,8 @@ But as you shift, her hand reaches back, her fingers wrapping firmly around the 
 Her tail gives one lazy, satisfied swish against your leg. 
 
 "Ah... no, you don't," she mumbles, her voice thick and gravelly with exhaustion and lingering, heavy arousal. She rolls over, forcing you to shift, tangling her limbs with yours and pressing her sweat-slicked body tight against your side. Her hand stays locked on you, refusing to let the night end. "The winner... gets two rounds."
+
+![Machitan lying beside Trainer on the bed with a smug, loving smile, semen leaking from her pussy as her hand possessively holds the base of his erection](../assets/ch11_04.png)
 
 She shifts against you, her thumb idly stroking over the sensitive skin, slowly coaxing the blood back. Her mouth finds your neck, her lips pressing a soft, wet kiss against your pulse point before her teeth lightly scrape the skin. 
 

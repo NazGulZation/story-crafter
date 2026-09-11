@@ -1,5 +1,7 @@
 # Winner's Privilege
 
+![Machitan walking back from the race under the amber streetlamps in her teal Canopus track jacket and sports bra, bouncing with euphoric post-race energy beside Trainer](../assets/ch10_01.png)
+
 The evening air is heavy and cool against your skin, carrying the scent of damp pavement and the fading energy of the stadium. Beside you, Matikanetannhauser is practically vibrating. The post-race high hasn't worn off, leaving her bouncing on the balls of her feet as you walk the familiar path back to the Tracen dormitories. She’s showered and changed into her casual gear—her teal Team Canopus track jacket zipped halfway over a black sports bra, and loose running shorts that swish against her thighs. Her chestnut hair, with that striking white forelock, catches the amber glow of the streetlamps.
 
 She chatters endlessly, the red and blue beads on her right ear jingling a cheerful, erratic rhythm. "...and then at the final turn, my legs were burning so much, Trainer, but I just thought about what you said—and what we did this morning—and I just pushed, and then the finish line was right there!"
@@ -34,6 +36,8 @@ She hooks her thumbs into the waistband of her running shorts and shoves them do
 
 You tug it free, tossing it onto the floor. You kick off your shoes, shuck your pants and underwear in one rough motion. The air in the room is suddenly stifling, thick with the smell of sweat, clean soap, and the slick, salty tang of need. 
 
+![Machitan undressing in the warm golden light of Trainer's dorm room, breathless laugh as her sports bra catches on her ear beads, exposing her bare chest and toned midriff](../assets/ch10_02.png)
+
 You don't give her a chance to speak. You grip her hips—her muscles tense, hard as iron under the soft skin—and shove her backward. The backs of her knees hit the edge of the mattress, and she falls onto the bed with a squeak, the springs groaning in protest as she bounces once. 
 
 Before she can scramble up, you drop between her thighs. You grab her ankles, pushing her legs wide, and bury your face between them. 
@@ -45,6 +49,8 @@ She's already slick. The walk, the anticipation, the sheer adrenaline of the vic
 You suck hard. Machitan screams, a loud, raw noise that bounces off the thin walls of your room. She doesn't care who hears. Her thighs instantly clamp down like a vice around your ears, the sheer strength of a racehorse threatening to crush your skull. Her fingers tangle in your hair, yanking at the roots, anchoring you exactly where she wants you. 
 
 "Oh god—yes—Trainer—" Her voice breaks into a ragged sob. Her tail thumps frantically against the mattress, a rhythmic, desperate drumming. 
+
+![Trainer performing intense cunnilingus on the single bed, Machitan's thighs clamping around his head in ecstatic spasms as she clutches his hair](../assets/ch10_03.png)
 
 You swirl your tongue, fast and relentless, while sliding two fingers deep inside her soaking cunt. She's incredibly tight, her internal muscles clenching around your fingers with every frantic thrust you make. You can feel the tension winding tighter in her body. Her skin flushes a deep, mottled red, radiating a blistering heat. The floral smell of her soap is completely overpowered by the pungent, intoxicating scent of her arousal. 
 
@@ -65,3 +71,5 @@ You kneel up, wiping the slick wetness from your chin. The mattress groans under
 She hauls you forward and falls back onto the mattress, wrapping her strong, trembling legs tight around your waist. Her chestnut hair is plastered to her sweaty forehead, her chest heaving, her eyes wild with a feral, singular focus. 
 
 "Enough teasing," she growls, her voice dropping into a harsh, ragged register you've never heard from her before. "Fuck me. Hard. I earned this."
+
+![Machitan surging up on the bed after the climax denial, nails digging into Trainer's shoulders with fierce determination as her legs lock around his waist](../assets/ch10_04.png)
