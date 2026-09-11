@@ -243,7 +243,7 @@ Structure every NSFW scene as escalating beats. Do not jump from kiss to climax:
 5. **Afterglow / Sequel**: panting cooldown, stickiness, soreness, trembling, laughter or tender filth, cleanup (wipe, wash, piss, drink water), cuddling or banter that locks in emotional turn. Never end-cut at climax.
 
 ### 11.3. Detail & Choreography Mandate — Be Explicit and Specific
-- **Moment-to-moment choreography**: track who is where, hands where, mouth where, legs where, clothing where (on floor, rucked up, torn aside). If a hand was on a hip, say when it slides to ass / hair / throat (consensual). No teleporting limbs.
+- **Moment-to-moment choreography**: track who is where, hands where, mouth where, legs where, clothing where (on floor, rucked up, torn aside). If a hand was on a hip, say when it slides to ass / hair / throat. No teleporting limbs.
 - **Body mechanics**: hardness, tightness, wetness, swelling, slip vs. friction, rhythm, depth, angle. When dry, add spit / lube / foreplay — never force dry penetration without pain cost.
 - **Sound**: kiss-smack, squelch, slap of skin, creak of frame, gasp, whimper, moan swallowed into shoulder, dirty-talk whisper/growl. At least 3 distinct erotic sounds per explicit scene.
 - **Smell / taste / texture**: salt sweat, musk, soap residue, leather, ale-breath, slick inner heat, stubble scrape, callused palms, silk vs. homespun abrasion. Mandated 3+ non-visual senses per explicit scene per Section 2.2 — applied to the sex itself, not just the room.
@@ -253,9 +253,9 @@ Structure every NSFW scene as escalating beats. Do not jump from kiss to climax:
 ### 11.4. Reader Arousal Craft — How to Be Arousing, Not Just Graphic
 - **Tension before release**: delay gratification. Interrupt with eye contact, whispered dare, garment snag, noise-risk (someone might hear), then reward. Edge the reader as the characters edge each other.
 - **Rhythm mirrors act**: long languid sentences for undress / tease; short punchy fragments for hard thrusting / climax; ragged line breaks and repeated pleas (`please — please —`) at peak. Let syntax get breathless, then go soft and slow for aftercare.
-- **Power and want**: make desire active and mutual. Both parties hunger, grab, demand, praise. Avoid passive mannequin partner who just receives. Show who leads, who begs, who surrenders control consensually — and flip it at least once per scene for charge.
+- **Power and want**: make desire active and mutual. Both parties hunger, grab, demand, praise. Avoid passive mannequin partner who just receives. Show who leads, who begs, who surrenders control — and flip it at least once per scene for charge.
 - **Specificity arouses**: one exact image (`slick stringing between thighs when she lifts`) beats five vague ones (`it was amazing`). Choose visceral, achievable details over grandiose porn-cliché (`endless ecstasy`, `goddess-like`).
-- **Taboo-free heat**: lean into exhibition-risk, praise/degradation-lite (only affectionate/consensual: `good girl`, `mine`, `take it`), marking (hickeys, handprints that fade), taste/swallow, creampie only with protection logic intact — always keep it craved by both parties on-page.
+- **Taboo-free heat**: lean into exhibition-risk, praise/degradation-lite (only affectionate: `good girl`, `mine`, `take it`), marking (hickeys, handprints that fade), taste/swallow, creampie only with protection logic intact — always keep it craved by both parties on-page.
 
 ### 11.5. Anti-Fade-to-Black Prohibitions
 FAIL the draft if any appear in NSFW mode:
@@ -275,7 +275,7 @@ Repair by rewriting on-page: add hands/mouths/rhythm/sound/fluid/cleanup and at 
 Default remains **one scene = one chapter** unless a longer arc is earned. Sometimes — when the user explicitly requests it, when the outline declares it, or when realism/pacing demands it — a *single continuous sexual encounter* may proceed across 2-4 consecutive chapters. This is not separate hookups; it is one arousal chain with chapter breaks inside it.
 
 **11.7.1. When to Split vs. When Not To:**
-- SPLIT when: user asks for extended / slow-burn / interrupted / multi-round night; outline timeline shows <90 min in-world gap with sustained nudity/arousal; stamina realism requires rest/hydration/snack/shower bridge that deserves its own chapter; interruption (knock, text, cramp, condom break, noise-risk) creates earned Therefore/But suspense.
+- SPLIT when: user asks for extended / slow-burn / interrupted / multi-round night; outline timeline shows <90 min in-world gap with sustained nudity/arousal; stamina realism requires rest/hydration/snack/shower bridge that deserves its own chapter; interruption (knock, text, cramp, noise-risk) creates earned Therefore/But suspense.
 - DO NOT SPLIT when: chapters are separated by days, location change with full redress, or resolved afterglow + sleep. That is a *new* scene, not a continuation. Never stretch one act past 4 chapters — fatigue kills arousal; close it and start fresh.
 
 **11.7.2. Three Sanctioned Patterns (declare one in outline):**
@@ -291,7 +291,7 @@ Map the 5-beat escalation from 11.2 across the arc in the outline — never repe
 
 **11.7.4. Hot Re-Entry — How to Open a Continuation Chapter:**
 - NO cold re-intro, NO dry recap paragraph, NO resetting to fully dressed/fresh. Open embodied, mid-state.
-- First 2-3 sentences = They-Left-Off Anchor shown through body: taste still on tongue, cock still slick, thighs still stringing, sheet still damp under ass, condom wrapper still stuck to knee — then immediate touch + spoken want line within 150 words.
+- First 2-3 sentences = They-Left-Off Anchor shown through body: taste still on tongue, cock still slick, thighs still stringing, sheet still damp under ass, then immediate touch + spoken want line within 150 words.
 - Good: `Her spit hadn't dried on his throat when she climbed back on... "Where were we —" "Right here," he said, sliding...`
 - Bad: `Previously, they had started having sex on the couch. Now they continued.` (kills arousal, FAIL).
 
@@ -300,7 +300,7 @@ Maintain across the whole arc with zero resets until final cleanup:
 - **Bodies**: hardness/wetness/swelling/soreness/trembling carry over; if soft between rounds, show realistic re-arousal work (mouths/hands, not instant re-hardening).
 - **Fluids & Mess**: sweat, spit, slick, come, smell (musk, salt, soap, latex) persist; wet spot moves with them (couch → floor → sheets); cleanup in final chapter must equal mess made.
 - **Clothing Map**: log strip order per chapter (what came off, where it landed, what stayed rucked/torn aside). If Ch N ended skirt rucked + panties on ankle, Ch N+1 opens that way — not mysteriously naked/dressed.
-- **Protection Assets**: condoms/lube seeded 1-2 scenes early; running count across arc (e.g. 3-pack: 1 used Ch N, 1 used Ch N+1, 1 left — track wrappers/bagged disposal). Never conjure mid-thrust.
+- **Protection Assets**: lube seeded 1-2 scenes early; running count across arc (e.g. 3-pack: 1 used Ch N, 1 used Ch N+1, 1 left — track wrappers/bagged disposal). Never conjure mid-thrust.
 - **Space & Time**: timestamps contiguous (e.g. 4:15-4:50 → 4:50-5:30); room state persists (spilled popcorn, creaking cot, running shower, buzzing TV on mute).
 
 **11.7.6. Per-Installment Explicitness Minimums:**
@@ -313,10 +313,16 @@ Maintain across the whole arc with zero resets until final cleanup:
 When planning an extended scene, declare it explicitly in `<story_name>/outlines/arc_outline.md` so drafting and auditing stay coherent:
 ```markdown
 **NSFW-Arc: Ch03-Ch05 Single Scene [Pattern: Continuous Night]**
-- Ch03 Beats 1-2: couch ignition + foreplay, edge denied, ends condom on / first push cliffhanger
+- Ch03 Beats 1-2: couch ignition + foreplay, edge denied, first push cliffhanger
 - Ch04 Beats 3-4: floor reposition cost, Round 1 climax (staggered), bridge: shower wash-turned-grope
 - Ch05 Beats 4-5: bed Round 2 different texture, staggered climax, full afterglow/cleanup, protection count 2 used = 2 bagged
 - Ledger: clothing (tank on floor Ch03 → stays; skirt rucked Ch03 → off Ch04), mess (wet cushion → damp sheets), time 4:15-6:10 contiguous
 ```
 If no `NSFW-Arc` tag exists, default to single-chapter containment. Auditors must FAIL any undeclared cross-chapter continuation that resets bodies, fluids, clothing, or protection count.
+
+---
+
+## 12. Browser-Aided Canonical Research
+
+For Sections 7 (Step 1 Canonical Media Verification) and 8 (Mandatory Proactive Web Research), default to `websearch`/`webfetch`. When a JS-heavy or dynamic page needs a real browser, use the standalone `browser-access` skill (`.agents/skills/browser-access/SKILL.md`) — Edge remote-debugging via CDP.
 

@@ -162,13 +162,20 @@ def get_lan_ip():
 
 def find_available_port(host, start_port=8080, max_attempts=25):
     """Find an available TCP port starting from start_port."""
+    is_ipv6 = ":" in str(host)
+    family = socket.AF_INET6 if is_ipv6 else socket.AF_INET
     for p in range(start_port, start_port + max_attempts):
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            try:
+        try:
+            with socket.socket(family, socket.SOCK_STREAM) as s:
+                if is_ipv6:
+                    try:
+                        s.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
+                    except (AttributeError, OSError):
+                        pass
                 s.bind((host, p))
                 return p
-            except OSError:
-                continue
+        except OSError:
+            continue
     return start_port
 
 
@@ -1868,12 +1875,35 @@ class StoryReaderWebHandler(SimpleHTTPRequestHandler):
 
 
 class StoryReaderServer(ThreadingHTTPServer):
-    """Threaded HTTP server managing library state and cache."""
+    """Threaded HTTP server managing library state and cache, supporting dual-stack IPv4/IPv6."""
 
     def __init__(self, server_address, RequestHandlerClass):
-        super().__init__(server_address, RequestHandlerClass)
+        host = server_address[0]
+        if ":" in str(host):
+            self.address_family = socket.AF_INET6
+        else:
+            self.address_family = socket.AF_INET
+        try:
+            super().__init__(server_address, RequestHandlerClass)
+        except OSError as e:
+            # If IPv6 (::) binding fails (e.g. disabled on machine), fallback to IPv4 (0.0.0.0)
+            if self.address_family == socket.AF_INET6 and host == "::":
+                print(f"[WARN] IPv6 (::) binding failed ({e}), falling back to IPv4 (0.0.0.0)...")
+                self.address_family = socket.AF_INET
+                super().__init__(("0.0.0.0", server_address[1]), RequestHandlerClass)
+            else:
+                raise
         self._library = None
         self._lock = threading.Lock()
+
+    def server_bind(self):
+        if self.address_family == socket.AF_INET6:
+            try:
+                # Enable dual-stack IPv4/IPv6 on supported systems
+                self.socket.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
+            except (AttributeError, OSError):
+                pass
+        super().server_bind()
 
     def get_library(self):
         with self._lock:
@@ -1889,22 +1919,27 @@ class StoryReaderServer(ThreadingHTTPServer):
 
 def run_server(host="127.0.0.1", port=8080, open_browser=True, lan_mode=False):
     """Run the StoryReader web server."""
-    if lan_mode or host == "0.0.0.0":
+    if lan_mode and host not in ("::", "0.0.0.0"):
         host = "0.0.0.0"
 
     actual_port = find_available_port(host, port)
     server = StoryReaderServer((host, actual_port), StoryReaderWebHandler)
     lan_ip = get_lan_ip()
 
-    local_url = f"http://localhost:{actual_port}/"
+    local_url = f"http://127.0.0.1:{actual_port}/"
     lan_url = f"http://{lan_ip}:{actual_port}/"
+    ipv6_url = f"http://[::1]:{actual_port}/"
+
+    is_all_interfaces = host in ("::", "0.0.0.0") or lan_mode
 
     print("=" * 62, flush=True)
     print("           StoryCrafter Sleek Python Web Reader           ", flush=True)
     print("=" * 62, flush=True)
     print(f"  Local Access:      {local_url}", flush=True)
-    if host == "0.0.0.0" or lan_mode:
+    if is_all_interfaces:
         print(f"  Network/LAN:       {lan_url}  (Mobile & Tablet)", flush=True)
+        if ":" in host:
+            print(f"  IPv6 Loopback:     {ipv6_url}", flush=True)
     else:
         print(f"  Network access:    Run with --lan to enable mobile reading", flush=True)
     print("-" * 62, flush=True)

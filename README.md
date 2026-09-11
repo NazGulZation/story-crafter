@@ -85,7 +85,7 @@ A sleek, book-style desktop application for reading all stories in this workspac
 A responsive, feature-rich web application version of StoryReader powered by a Python multi-threaded HTTP server. It can be accessed on any browser locally or over local Wi-Fi from phones and tablets:
 - **Launch via Batch**: Double-click [`run_web_reader.bat`](file:///c:/StoryCrafter/run_web_reader.bat).
 - **Direct Python Launch**: `.\.venv\Scripts\python.exe web_reader.py` (or `python reader_app.py --web`).
-- **Mobile & LAN Access**: Run with `--lan` (e.g. `.\.venv\Scripts\python.exe web_reader.py --lan`) to bind to `0.0.0.0` and access from any mobile phone, iPad, or tablet connected to your local network.
+- **Mobile & LAN Access**: By default, the server binds to IPv4 local (`127.0.0.1`), accessible at `http://127.0.0.1:8080/`. Run with `--lan` (e.g. `.\.venv\Scripts\python.exe web_reader.py --lan`) to bind to `0.0.0.0` and access from any mobile phone, iPad, or tablet connected to your local network.
 - **Key Features**:
   - **Identical Book Aesthetics**: Two-page spread with center spine shadow or single scroll mode, Cinzel/Georgia drop caps, running headers, and 4 themes (*Parchment*, *Warm Sepia*, *Midnight*, *Clean Paper*).
   - **Touch & Mobile Swipes**: Left/right swipe gestures on touchscreens for page navigation.
