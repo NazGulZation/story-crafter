@@ -194,7 +194,7 @@ Once an image is generated and saved:
 
 1. **Doggystyle / Rear-Entry in Vertical Aspect Ratio**:
    - **Do NOT use vertical POV**: Downward vertical POV (`pov, pov hands, from behind`) causes the model to generate a missionary male chest/collarbone lying on the floor at the bottom of the frame with an erect penis pointing up.
-   - **Always use Side 3/4 Perspective**: Prompt `side view, 3/4 view, standing doggystyle, standing sex, embracing from behind`. Negate `pov, top down view, male lying on back, chest at bottom, missionary`.
+   - **Side 3/4 avoids the floor-chest glitch; partial chin/mouth is faceless-compliant**: `side view, 3/4 view, standing doggystyle, standing sex, embracing from behind` fixes anatomy. A chin/mouth-only partial male face with eyes cropped out **passes** — `faceless` = eyes hidden, not head removed. Enforce `faceless male, eyes hidden, eyes out of frame` and negate `male eyes, detailed eyes on male` (do NOT ban chin/mouth). See guideline 10 for POV alternatives. Negate `pov, top down view, male lying on back, chest at bottom, missionary` for anatomy.
 
 2. **Bouncing & Motion Lines**:
    - **Never prompt `bouncing`, `motion lines`, or `motion blur` on anatomy**: The model interprets motion lines as secondary contours/flesh, causing double breasts or ghosted bulges.
@@ -232,6 +232,29 @@ Once an image is generated and saved:
    - **Sprint Velocity**: `running, high speed, sprinting, turf flying, clenched teeth, flying sweat, intense expression, horse ears pinned back, dynamic angle, motion blur background, racetrack, turf`. Keep character sharp by scoping blur strictly to `motion blur background`.
    - **Photo-Finish Climax**: `photo finish, crossing finish line, leaning forward, chest breaking tape, screaming, open mouth gasping, exhaustion, sweat, dramatic lighting, stadium lights`.
    - **Post-Race Emotional Embrace**: `embracing, hugging, catching in arms, jumping into arms, laughing through tears, joyful crying, racetrack rail, grandstand background, 1boy, faceless male, trainer (umamusume)`.
+
+10. **POV-Reliable 6-Act Set for Faceless Self-Insert Batches (Field-Tested 2026-09-12)**:
+   - When a batch demands strict `faceless male` across 6 distinct acts/expressions, use only POV-native framings — verified 6/6 first-try 5/5 (Echidna batch, Node 63 steps=60):
+     1. `missionary, on back, spread legs, gripping thighs` / overwhelmed parted-lips drooling
+     2. `cowgirl position, straddling, riding, hands on waist` / smug grin half-closed eyes
+     3. `mating press, legs over head, hands gripping ankles` + arm disambiguation (`one arm around partner's neck, one hand braced on bed`) / ahegao tongue out
+     4. `fellatio, blowjob, kneeling by bed, holding shaft at base, looking up` / devoted teary
+     5. `paizuri, titjob, breasts sandwiching shaft, holding breasts together` / seductive licking lips
+     6. `reverse cowgirl, facing away, looking back over shoulder, bare buttocks` / tearful bliss — delivers rear composition with zero side-view face bleed.
+
+11. **Cunnilingus Is NOT POV-Native (Field Finding 2026-09-12, Moona 1st-costume batch)**:
+   - Frontal / low-angle cunnilingus (`pov, male lying on back, head directly under crotch`) renders the male neck as a vertical hyperextended column with squashed face — looks weird, perspective collapse (see `moona_10_cunnilingus_overwhelmed` attempt #1).
+   - Always frame cunnilingus from **Side 3/4**: `(side view:1.2), (3/4 view:1.1), 1boy kneeling in front, head tilted back, mouth open, tongue on pussy, 1girl sitting on bed, spread legs`. Negate `pov, top down view, male lying on back, head directly under crotch, severed head, squished face, upside down face`. De-emphasize POV with `(pov:0.7)`.
+
+12. **Tag Emphasis / Weight Syntax `(tag:weight)`**:
+   - Anima accepts `(tag:weight)` to boost or suppress individual tags: `(red hair:1.1)`, `(red hair:1.2)` emphasize; `(red hair:0.8)` de-emphasizes. Neutral = `1.0`, usable range ~`0.5`–`1.5`.
+   - Use for under-weighted costume tags (`(moona hoshinova \(1st costume\) \(hololive\):1.2)`), camera locks (`(side view:1.2)`), identity locks (`(purple hair:1.1)`), and act anchors (`(cunnilingus:1.2)`). Escape name parentheses as `\(` `\)`, weight inside outer parens.
+
+13. **Smug + Armpit Display (Field-Tested 2026-09-12, Risu 10/10 batch)**:
+   - Smug variants that all read as "smug or equivalent": `smug, grin` / `smug, smirk` / `confident, smug, grin` / `smug, smirk, wink` / `smug, licking lips`. Pair with `half-closed eyes, blush, looking at viewer` (or `looking back over shoulder` for rear acts).
+   - Armpit anchors that survive penetration poses: `one arm raised high`, `one arm raised behind head`, `both arms raised behind head`, `one arm raised high braced against wall` + `exposed armpit, glistening armpit` (`exposed armpits` for both arms). Verified across cowgirl, missionary, mating press, fellatio, standing, reverse cowgirl, doggystyle, handjob, cunnilingus, thighjob.
+   - Keep the male faceless while arms go up: arms-up poses invite face-bleed on the partner — hold `faceless male, eyes hidden` and negate `male eyes, detailed eyes on male`.
+   - Per-character safety: when the brief assumes adult but forbids `adult/mature woman` positives as redundant, enforce adulthood purely via negatives: `underage, loli, child, minor`.
 
 > For complete field-tested diagnostic analysis and full prompt remediation tables, see:
 > **[failure-modes-and-remediations.md](failure-modes-and-remediations.md)**

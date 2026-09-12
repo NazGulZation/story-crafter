@@ -4,7 +4,8 @@ description: >-
   Generate images and run diffusion workflows using local or remote ComfyUI instances (e.g. SaladCloud, RunPod, localhost:8188).
   Covers health check verification (/system_stats), automated conversion of frontend UI workflow JSON to ComfyUI API prompt format,
   dynamic parameter overrides (prompts, seeds, dimensions, samplers), job queueing (/prompt), execution polling (/history/{prompt_id}),
-  output asset retrieval (/view), Anima Danbooru-tag NSFW prompt engineering, visible validation scoring (writing the score so the user can see it),
+  output asset retrieval (/view), Anima Danbooru-tag NSFW prompt engineering, tag emphasis weighting ((tag:1.2)), asset naming conventions ({char}_{attrs}_{n}.png),
+  visible validation scoring (writing the score so the user can see it),
   prompt replacement/refinement on re-rolls (< 5/5), and visual quality/prompt-fidelity verification loop (5/5 rating standard).
 ---
 
@@ -218,10 +219,11 @@ masterpiece, best quality, ultra detailed anime coloring, anime screenshot,
 > **Second Character as "You" (POV / Self-Insert Protagonist Tagging)**:
 > - If the second character represents **"you"** (the reader, narrator, Trainer, Producer, Commander, Sensei, Master, or POV protagonist):
 >   - **Always add `faceless male` or `faceless female`** based on the protagonist's gender:
->     - **Male Protagonist ("You")**: `1boy, faceless male, [role/context if relevant, e.g. trainer \(umamusume\)], [physique, e.g. muscular, tall]...`
->     - **Female Protagonist ("You")**: `1girl, faceless female, [role/context if relevant]...`
+>     - **Male Protagonist ("You")**: `1boy, faceless male, eyes hidden, [role/context if relevant, e.g. trainer \(umamusume\)], [physique, e.g. muscular, tall]...`
+>     - **Female Protagonist ("You")**: `1girl, faceless female, eyes hidden, [role/context if relevant]...`
+> - **What "faceless" means**: **eyes hidden, not head removed**. A visible chin, mouth, or jaw with eyes cropped/out of frame is compliant. Only detailed protagonist eyes/gaze counts as a failure. Enforce with `eyes hidden, face cropped at eyes, eyes out of frame` and negative `male eyes, detailed eyes on male`.
 > - **Why This Is Mandatory**:
->   - In second-person ("you") narrative fiction and POV eroge/visual novel scenes, tagging `faceless male` or `faceless female` prevents the diffusion model from rendering a distracting, specific, or conflicting face for the reader's avatar.
+>   - In second-person ("you") narrative fiction and POV eroge/visual novel scenes, tagging `faceless male` or `faceless female` prevents the diffusion model from rendering distracting protagonist eyes/gaze that break reader self-insertion.
 >   - Keeps visual focus, detail, and facial expression fidelity 100% anchored on the main heroine.
 >   - Prevents unintended feature or ear bleed (e.g. animal ears or accessories leaking onto the protagonist).
 
@@ -327,6 +329,14 @@ reimu hakurei, touhou, brown hair, long hair, hair ribbon, hair bow, red ribbon,
 | Reimu Hakurei | `reimu_hakurei` | `reimu hakurei` | `touhou` | `brown hair, long hair, hair bow, red ribbon, brown eyes, miko, detached sleeves, red skirt, sarashi` |
 | Agnes Tachyon (casual) | `agnes_tachyon_(casual)_(umamusume)` | `agnes tachyon \(casual\) \(umamusume\)` | `umamusume` | `large breasts, smug, off shoulder sweater, necklace, pendant` |
 | Matikanetannhauser (Clippety-Tippety-Clop) | `matikanetannhauser_(clippety-tippety-clop)_(umamusume)` | `matikane tannhauser \(clippety-tippety-clop\) \(umamusume\), clippety-tippety-clop` | `umamusume` | `horse ears, horse tail, brown hair, streaked hair, white forelock, yellow eyes, amber eyes, ear ornament, red beads, blue beads, blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt` |
+| Emilia (Re:Zero) | `emilia_(re:zero)` | `emilia \(re:zero\)` | `re:zero` | `silver hair, white hair, grey hair, very long hair, long hair, crown braid, blunt bangs, hair flower, white flower, white rose, x hair ornament, purple ribbon, hair ribbon, pointy ears, elf, purple eyes, bright pupils, white dress, detached collar, green gem necklace, detached sleeves, white pleated skirt` |
+| Echidna (Re:Zero, Witch of Greed) | `echidna_(re:zero)` | `echidna \(re:zero\)` | `re:zero` | `mature female, adult woman, very long hair, white hair, long hair, bangs, hair between eyes, sidelocks, butterfly hair ornament, purple eyes, medium breasts, black long layered dress, black capelet, black high heels` |
+| Moona Hoshinova | `moona_hoshinova` | `(moona hoshinova \(hololive\):1.2)` | `hololive, hololive indonesia` | `purple hair, gradient hair, yellow tips, very long hair, long hair, purple eyes, large breasts` |
+| Moona Hoshinova (1st costume) | `moona_hoshinova_(1st_costume)` | `(moona hoshinova \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `black choker, constellation print, single earring, fishnets, thigh boots` |
+| Airani Iofifteen | `airani_iofifteen` | `(airani iofifteen \(hololive\):1.2)` | `hololive, hololive indonesia` | `pink hair, long hair, side ponytail, sidelocks, purple eyes, palette hair ornament, medium breasts` |
+| Airani Iofifteen (1st costume) | `airani_iofifteen_(1st_costume)` | `(airani iofifteen \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `white shirt, blue overalls, palette hair ornament, side ponytail` |
+| Ayunda Risu | `ayunda_risu` | `(ayunda risu \(hololive\):1.2)` | `hololive, hololive indonesia` | `squirrel girl, squirrel ears, squirrel tail, brown hair, long hair, low twintails, green eyes, leaf hair ornament, acorn pendant, medium breasts` |
+| Ayunda Risu (1st costume) | `ayunda_risu_(1st_costume)` | `(ayunda risu \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `pink beret, red bow, white dress, pink cardigan, thighhighs` |
 
 > Add newly researched characters to the table above for future reference.
 
@@ -454,5 +464,56 @@ For comprehensive documentation on common SDXL/Pony/Anima diffusion failure mode
 11. **The Protagonist / "You" Face & Feature Clash (Self-Insert Immersion)**: When the second character represents "you", always add `faceless male` or `faceless female` to preserve reader self-insertion, maintain full visual focus on the heroine, and eliminate ear/feature bleed.
 12. **The "Generic Casual / T-Shirt Fallback" on Elaborate Racing Silks**: Decompose intricate costumes into 3–5 signature structural pieces (`blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt`) rather than relying purely on under-weighted variant tags.
 13. **Kinetic Speed & Racing Velocity vs. Anatomical Smearing**: Keep character anatomy crisp and articulate while scoping motion effects to `motion blur background`, flying turf debris, pinned ears, and clenched teeth.
+14. **Cunnilingus Frontal / POV Perspective Collapse**: Frontal low-angle or POV cunnilingus (`pov, male lying on back, head directly under crotch`) hyperextends the male neck into a vertical column with squashed face — looks weird. Use Side 3/4 instead: `side view, 3/4 view, kneeling in front, head tilted back, mouth open`. See §11 and failure-modes §15.
+
+---
+
+## 11. Tag Emphasis / Weight Syntax `(tag:weight)`
+
+Anima / Qwen 3 text encoder supports per-tag weight overrides with `(tag:weight)` parentheses-colon syntax. Use to force under-weighted canon tags or suppress overpowering biases without rewriting the whole prompt.
+
+### Syntax
+- **Emphasize**: `(red hair:1.1)`, `(moona hoshinova \(1st costume\) \(hololive\):1.2)`, `(side view:1.2)`
+- **Strong emphasize**: `(tag:1.3)` — use sparingly; above ~1.4 risks burnout / oversaturation.
+- **De-emphasize**: `(red hair:0.8)`, `(pov:0.7)`, `(male face:0.5)`
+- **Range**: roughly `0.5`–`1.5`. `1.0` = neutral. Omit weight = `1.0`.
+
+### When to use
+1. **Under-weighted variant tags**: `(sakura bakushin o \(blossom in learning\) \(umamusume\):1.2)` when the model falls back to casual clothes.
+2. **Camera enforcement**: `(side view:1.2)`, `(3/4 view:1.1)` for doggystyle / cunnilingus where POV keeps collapsing; de-emphasize the failure framing with `(pov:0.7)`, `(top down view:0.6)`.
+3. **Identity lock**: `(moona hoshinova:1.2)`, `(purple hair:1.1)`, `(gradient hair:1.1)` when likeness drifts across a batch.
+4. **Act anchors**: `(cunnilingus:1.2)`, `(tongue on pussy:1.1)` when oral contact floats or disconnects.
+
+### Worked example (cunnilingus side-view fix)
+```text
+1girl, (moona hoshinova \(1st costume\) \(hololive\):1.2), purple hair, gradient hair, clothed, lifted skirt,
+
+1boy, faceless male, (side view:1.2), (3/4 view:1.1), kneeling in front, head tilted back, mouth open, (cunnilingus:1.2),
+
+cunnilingus, oral, tongue on pussy, (pov:0.7)
+```
+Negative: `pov, top down view, male lying on back, head directly under crotch, severed head, squished face, upside down face`.
+
+> Weight syntax works in both `comfyui_runner.py --prompt` overrides and batch scripts — pass the parenthesised string through unchanged. Parentheses in character names must still be escaped (`\(` `\)`); the trailing `:weight` goes inside the outer parens.
+
+---
+
+## 12. Asset Naming & Prompt-Sidecar Hygiene
+
+Final deliverables use semantic file names — never workflow seeds or act spoilers with seed suffixes.
+
+### Naming format
+`{char}_{attrs}_{n}.png` — all lowercase, underscores only:
+- `{char}`: short character key (`moona`, `iofi`, `risu`, …).
+- `{attrs}`: underscore-joined descriptors in fixed order: dress state first (`naked`, `clothed`), then theme tags (`armpit`, …).
+- `{n}`: 1-based index within that character+attrs group.
+
+Examples: `moona_naked_1.png`, `moona_clothed_3.png`, `iofi_naked_2.png`, `risu_naked_armpit_4.png`, `risu_clothed_armpit_1.png`.
+
+### Rules
+1. **One folder per character** under the assets root (e.g. `assets/holoid/`, `assets/iofi/`, `assets/risu/`).
+2. **No prompt sidecars in deliverables**: batch-run `.txt` files (prompt/seed logs) must be deleted before handover — `Get-ChildItem -Path <assets> -Filter "*.txt" -Recurse | Remove-Item -Force`. Seeds live only in ephemeral runner logs, never in final names.
+3. **Numbering restarts per group**: `*_naked_1..5`, `*_clothed_1..5` — do not number 1..10 across dress states.
+4. **Rename on download**: rename `Anima_*.png` outputs immediately after `download_images()` (see batch scripts `gen_moona.py`, `gen_iofi.py`, `gen_risu.py` pattern) so re-rolls replace the semantic slot instead of accumulating files.
 
 

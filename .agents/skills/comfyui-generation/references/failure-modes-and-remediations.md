@@ -126,15 +126,17 @@ When depicting a character in their canonical outfit, racewear, or school unifor
 
 ## 11. The Protagonist / "You" Face & Feature Clash (Self-Insert Immersion)
 
+- **Definition (corrected)**: `faceless male` / `faceless female` means **eyes hidden** — not head removed. A visible chin, mouth, jaw, or cropped head is compliant as long as **no detailed eyes** are rendered on the protagonist.
 - **The Failure Mode**: In second-person ("you") narratives (e.g. stories written from the perspective of the Trainer, Producer, Commander, Master, or reader), prompting a secondary character as a generic or named role (e.g. `1boy, trainer (umamusume)`) without an anonymity anchor causes two major defects:
-  1. **Distracting Specific Faces**: The model renders a fully detailed, distinct, or idiosyncratic anime face that conflicts with reader self-insertion, often drawing visual attention away from the primary heroine.
+  1. **Distracting Eyes / Gaze**: The model renders fully detailed eyes (and gaze direction) on the protagonist, which conflicts with reader self-insertion and draws visual attention away from the primary heroine. Chin/mouth-only partial faces are fine; **detailed male eyes are the failure signal**.
   2. **Feature & Accessory Bleed**: When the heroine has unique biological or decorative features (e.g. horse ears, horns, halo, ear beads, unusual hair streaks), the absence of a `faceless` token frequently causes the model to mirror those non-human features onto the protagonist (e.g. generating horse ears or ear ornaments on the human Trainer).
 - **Remediation Strategy**:
-  - **Always Tag `faceless male` or `faceless female`**:
-    - For male protagonist ("you"): `1boy, faceless male, [role/context if needed, e.g. trainer (umamusume)], muscular, short hair...`
-    - For female protagonist ("you"): `1girl, faceless female, [role/context if needed]...`
+  - **Always Tag `faceless male` or `faceless female` + eye-hiding anchors**:
+    - For male protagonist ("you"): `1boy, faceless male, eyes hidden, face cropped at eyes, [role/context if needed, e.g. trainer (umamusume)], muscular, short hair...`
+    - For female protagonist ("you"): `1girl, faceless female, eyes hidden, face cropped at eyes, [role/context if needed]...`
+    - Partial-face framings (`head cropped, eyes out of frame, chin only, mouth only`) are explicitly compliant — do NOT demand `no head`.
   - **Enforce Human Feature Isolation**: Explicitly state `human ears, no animal ears, no horse ears` on the partner if the heroine has fantasy or animal traits.
-  - **Negative Suppression**: Add `horse ears on boy, animal ears on male, ear ornament on male, multiple horse ears, deformed ears, 4 ears`.
+  - **Negative Suppression**: Add `male eyes, detailed eyes on male, gaze on male, horse ears on boy, animal ears on male, ear ornament on male, multiple horse ears, deformed ears, 4 ears`.
 
 ---
 
@@ -161,6 +163,31 @@ When depicting a character in their canonical outfit, racewear, or school unifor
     - *Environmental Velocity*: `motion blur background, flying turf, kicking up dirt, speed lines in background, stadium lighting, racetrack`.
   - **Express Speed Through Diegetic Consequences**: Detail flying sweat droplets, flying dirt/turf clods from running shoes/hooves, fluttering ribbons/hair, and strained neck tendons.
   - **Negative Suppression**: Add `blurry character, blurry face, motion blur on body, melted limbs, deformed legs, extra legs, bad anatomy`.
+
+---
+
+## 14. Side-View Standing / Doggy Eye Visibility vs. POV Reliability (Corrected 2026-09-12, Anima + Qwen 3)
+
+- **Corrected Standard**: Per user clarification, `faceless` = **eyes hidden**, not head removed. A partial male face showing only chin/mouth/jaw with eyes cropped out is **compliant (5/5)**. Only **detailed male eyes/gaze** counts as a faceless failure.
+- **The Field Finding**: In side-view standing or doggy compositions with a large male torso in frame (`side view, 3/4 view, standing sex, kneeling behind, hands on hips`), the model persistently renders a partial chin/mouth at the top frame edge despite `head out of frame, torso only, no head` + `male face, male head` negatives (3x verified, Emilia doggy + standing, Node 63 steps=60, 832x1216). Under the corrected eyes-hidden standard, these chin/mouth-only outputs **pass** — no re-roll needed as long as no eyes are visible.
+- **Remediation Strategy**:
+  - **Enforce eyes-hidden, not head removal**: prompt `faceless male, eyes hidden, face cropped at eyes, eyes out of frame` and negate `male eyes, detailed eyes on male, gaze on male`. Do NOT demand `no head` / ban `mouth, chin, face` — that over-constrains and wastes re-rolls.
+  - **POV remains the most reliable framings**: `missionary POV`, `cowgirl straddling riding POV`, `mating press legs-up POV`, `blowjob kneeling POV`, `paizuri looking-down POV` all held first-try 5/5 across a 6-image Echidna batch.
+  - **For back/butt views, use reverse-cowgirl POV facing away**: `facing away, reverse cowgirl, straddling, looking back over shoulder, bare buttocks, hands on hips` keeps the male below-frame while delivering rear composition.
+  - **Use paizuri as a safe distinct non-vaginal act**: `paizuri, titjob, breasts sandwiching shaft, holding breasts together, looking at viewer` is POV-native and faceless-safe.
+  - **Retroactive note**: Emilia `emilia_3.png` / `emilia_6.png` final versions (chin/mouth visible, eyes cropped) score **5/5** under this corrected definition.
+
+---
+
+## 15. Cunnilingus Frontal / POV Perspective Collapse (Field Finding 2026-09-12)
+
+- **The Failure Mode**: Prompting cunnilingus from frontal low-angle or POV (`pov, top down view, male lying on back, head directly under crotch, 1girl sitting, spread legs`) renders the male torso as a vertical column with the neck hyperextended 90° and the face squashed directly under the vulva. Result looks weird: detached chin, missing nose/eyes geometry, overlong neck — a front-view cousin of the §8 facesitting "severed head" glitch. Verified in `moona_10_cunnilingus_overwhelmed_seed927343492.png`: prompt asked `side view, 3/4 view, kneeling in front` but model defaulted to frontal lie-under framing.
+- **Remediation Strategy**:
+  - **Never use frontal POV / lie-under framing for cunnilingus**. Enforce Side 3/4 with weights: `(side view:1.2), (3/4 view:1.1), 1boy kneeling in front, head tilted back, mouth open, tongue out, tongue on pussy, 1girl sitting on bed edge, spread legs, leaning back on hands`.
+  - **De-emphasize the failure framing**: add `(pov:0.7)` to the positive prompt and hard-ban `pov, top down view, male lying on back, head directly under crotch` in the negative prompt.
+  - **Weight the act anchor**: `(cunnilingus:1.2), (tongue on pussy:1.1)` keeps oral contact from floating when the camera moves to profile.
+  - **Negative Suppression**: `headless, severed head, squished face, upside down face, deformed face, detached chin, long neck, extra heads`.
+- **Emphasis syntax note**: Anima supports `(tag:weight)` — `(tag:1.1)`/`(tag:1.2)` emphasize, `(tag:0.8)` de-emphasizes, range ~`0.5`–`1.5`. Escape costume parens (`\(1st costume\)`) with weight inside outer parens.
 
 
 
