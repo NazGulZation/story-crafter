@@ -567,9 +567,10 @@ Field reference: `assets/landscape_nsfw/landscape_surprise_seed1791093015.png` (
 
 For Krea 2-architecture pipelines (`krea2 t2i workflow correct.json`) — natural-language
 smartphone-photo prompting, mandatory Qwen3-VL encoder pairing (`type: "krea2"`), single-pass
-10-step `euler`/`beta` sampling — see the dedicated reference:
+10–15-step `euler`/`beta` sampling (10 fast default, 15 preferred for finals) — see the dedicated references:
 
-> **[references/krea2-generation.md](references/krea2-generation.md)**
+> **[references/krea2-generation.md](references/krea2-generation.md)** (mechanics + photoreal base)
+> **[references/krea2-nsfw.md](references/krea2-nsfw.md)** (NSFW emphasis, age bands, batch proofs)
 
 Quick start via the Krea 2 runner (`scripts/krea2_generate.py`, proven 2026-09-12, ~10s per
 888x1176 image on RTX 4080 SUPER):
