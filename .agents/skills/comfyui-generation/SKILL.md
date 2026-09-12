@@ -3,10 +3,12 @@ name: comfyui-generation
 description: >-
   Generate images and run diffusion workflows using local or remote ComfyUI instances (e.g. SaladCloud, RunPod, localhost:8188).
   Covers health check verification (/system_stats), automated conversion of frontend UI workflow JSON to ComfyUI API prompt format,
-  dynamic parameter overrides (prompts, seeds, dimensions, samplers), job queueing (/prompt), execution polling (/history/{prompt_id}),
+  dynamic parameter overrides (prompts, seeds, dimensions, samplers), portrait and landscape orientation control (base + LatentUpscale sizing),
+  job queueing (/prompt), execution polling (/history/{prompt_id}),
   output asset retrieval (/view), Anima Danbooru-tag NSFW prompt engineering, tag emphasis weighting ((tag:1.2)), asset naming conventions ({char}_{attrs}_{n}.png),
   visible validation scoring (writing the score so the user can see it),
   prompt replacement/refinement on re-rolls (< 5/5), and visual quality/prompt-fidelity verification loop (5/5 rating standard).
+  Also covers Krea 2 photorealistic generation (including adult NSFW) via references/krea2-generation.md and scripts/krea2_generate.py.
 ---
 
 # ComfyUI Image Generation & Workflow Execution
@@ -99,6 +101,14 @@ python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.
   --seed 42 `
   --steps 35 `
   --output-dir "C:\StoryCrafter\assets"
+
+# 4. Landscape run (width > height; upscale auto-derives to preserve orientation)
+python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.py `
+  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud" `
+  --workflow "C:\StoryCrafter\anima_absolute_cinema.json" `
+  --width 1216 --height 832 `
+  --randomize-seed `
+  --output-dir "C:\StoryCrafter\assets\landscape_nsfw"
 ```
 
 ---
@@ -183,6 +193,10 @@ def wait_and_download(server_url, prompt_id, output_dir, poll_interval=5, timeou
    - Always filter for `type == "output"` (from `SaveImage` nodes) unless intermediate inspection is explicitly requested.
 4. **VRAM & Timeout Considerations**:
    - Multi-pass workflows (e.g. high-step base sampler + latent upscale + refiner) can take 45s to 3 minutes on high-end GPUs (RTX 4080/4090). Ensure polling timeouts are set to at least 600s.
+5. **Portrait Upscale Reverting a Landscape Request (the LatentUpscale trap)**:
+   - `anima_absolute_cinema.json` is portrait-native: base `832x1216` + `LatentUpscale 1168x1704`. Overriding only `EmptyLatentImage` to landscape (e.g. `1216x832`) leaves the upscale node portrait, so pass 2 silently stretches the image back to portrait.
+   - `apply_overrides()` now sets **both** nodes: `--width/--height` drive the base, and `LatentUpscale` auto-derives as `round(base * --upscale-factor / 8) * 8` (default factor `1.4`: `1216x832` -> `1704x1168`). Override explicitly with `--upscale-width/--upscale-height` when needed.
+   - Always verify final output with PIL (`width > height`) — see §13.
 
 ---
 
@@ -515,5 +529,57 @@ Examples: `moona_naked_1.png`, `moona_clothed_3.png`, `iofi_naked_2.png`, `risu_
 2. **No prompt sidecars in deliverables**: batch-run `.txt` files (prompt/seed logs) must be deleted before handover — `Get-ChildItem -Path <assets> -Filter "*.txt" -Recurse | Remove-Item -Force`. Seeds live only in ephemeral runner logs, never in final names.
 3. **Numbering restarts per group**: `*_naked_1..5`, `*_clothed_1..5` — do not number 1..10 across dress states.
 4. **Rename on download**: rename `Anima_*.png` outputs immediately after `download_images()` (see batch scripts `gen_moona.py`, `gen_iofi.py`, `gen_risu.py` pattern) so re-rolls replace the semantic slot instead of accumulating files.
+
+---
+
+## 13. Landscape Orientation Protocol (Field-Tested 2026-09-12)
+
+Default workflow `anima_absolute_cinema.json` is portrait-native (`832x1216` -> upscale `1168x1704`). Any landscape request must override **both** stages or pass 2 reverts the image to portrait (see §5.5).
+
+### Resolutions
+- **Base**: `1216x832` (exact inverse of the default; width > height).
+- **Upscale (auto)**: `1704x1168` (= `round(base * 1.4 / 8) * 8`).
+- Keep all dimensions multiples of 8 (latent requirement); the runner enforces this in auto-derive.
+
+### CLI
+```powershell
+--width 1216 --height 832                       # minimal: upscale auto-derives to 1704x1168
+--width 1216 --height 832 --upscale-factor 1.5  # larger second pass
+--upscale-width 1704 --upscale-height 1168      # fully explicit (overrides auto)
+```
+
+### Prompt composition for wide frames
+- Prefer horizontal body arrangements: lying/reclined scenes, doggystyle rear POV, side 3/4 missionary, reverse cowgirl looking back — vertical standing + upward POV wastes side space and risks the §10.8/§10.9 foreshortening glitches.
+- Anchor the wide setting in block 5: `wide bedroom, large bed with white sheets, night window, twin lamps, depth of field, cinematic wide shot, horizontal composition`.
+- Negative additions for landscape: `portrait, vertical composition, tall image` (plus the usual `2boys, multiple males, extra limbs, 4 arms, water, puddle, pool`).
+
+### Verification (mandatory)
+```python
+from PIL import Image
+im = Image.open("output.png")
+assert im.size[0] > im.size[1], f"Not landscape: {im.size}"
+```
+Field reference: `assets/landscape_nsfw/landscape_surprise_seed1791093015.png` (1704x1168, rear-POV doggystyle, 5/5 first try).
+
+---
+
+## 14. Krea 2 Photoreal Generation (incl. NSFW)
+
+For Krea 2-architecture pipelines (`krea2 t2i workflow correct.json`) — natural-language
+smartphone-photo prompting, mandatory Qwen3-VL encoder pairing (`type: "krea2"`), single-pass
+10-step `euler`/`beta` sampling — see the dedicated reference:
+
+> **[references/krea2-generation.md](references/krea2-generation.md)**
+
+Quick start via the Krea 2 runner (`scripts/krea2_generate.py`, proven 2026-09-12, ~10s per
+888x1176 image on RTX 4080 SUPER):
+
+```powershell
+python .agents/skills/comfyui-generation/scripts/krea2_generate.py `
+  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud/" `
+  --prompt "Amateur smartphone photo of ..." `
+  --randomize-seed `
+  --output-dir "C:\StoryCrafter\assets"
+```
 
 

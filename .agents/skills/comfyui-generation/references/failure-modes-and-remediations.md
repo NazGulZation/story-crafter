@@ -189,5 +189,15 @@ When depicting a character in their canonical outfit, racewear, or school unifor
   - **Negative Suppression**: `headless, severed head, squished face, upside down face, deformed face, detached chin, long neck, extra heads`.
 - **Emphasis syntax note**: Anima supports `(tag:weight)` — `(tag:1.1)`/`(tag:1.2)` emphasize, `(tag:0.8)` de-emphasizes, range ~`0.5`–`1.5`. Escape costume parens (`\(1st costume\)`) with weight inside outer parens.
 
+---
+
+## 16. Landscape Request Reverted to Portrait by Stale LatentUpscale (Field Finding 2026-09-12)
+
+- **The Failure Mode**: Requesting landscape via `EmptyLatentImage` alone (`1216x832`) while `LatentUpscale` keeps its portrait default (`1168x1704`) produces a portrait (or stretched) final image — pass 2 silently re-imposes the old aspect ratio.
+- **Remediation Strategy**:
+  - Always set **both** nodes: base `1216x832` + upscale `1704x1168` (or `round(base * 1.4 / 8) * 8` for other sizes).
+  - `comfyui_runner.py` auto-derives the upscale from `--width/--height` via `--upscale-factor` (default `1.4`); use `--upscale-width/--upscale-height` only for explicit control.
+  - Verify with PIL (`width > height`) before scoring; see SKILL.md §13.
+
 
 

@@ -90,6 +90,7 @@ Grounds the scene in a tangible space without cluttering the foreground subjects
 - **Scenery**: `scenery, bedroom`, `hotel room`, `tatami room`, `onsen`, `office`, `locker room`, `dungeon`, `dimly lit room`
 - **Focal Elements**: `bed`, `bed sheets`, `pillows`, `mattress`, `sofa`
 - **Depth & Optics**: `blurred background`, `depth of field`, `soft lighting`, `rim lighting`, `cinematic lighting`, `sunlight through window`
+- **Landscape wide-frame anchors** (when base is `1216x832`): add `wide bedroom, large bed with white sheets, night window, twin lamps, cinematic wide shot, horizontal composition` and negate `portrait, vertical composition, tall image`. Prefer horizontal poses (lying/reclined, rear-POV doggystyle, side 3/4, reverse cowgirl looking back). See SKILL.md §13.
 
 ---
 

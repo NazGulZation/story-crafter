@@ -124,6 +124,9 @@ def apply_overrides(
     cfg: Optional[float] = None,
     width: Optional[int] = None,
     height: Optional[int] = None,
+    upscale_width: Optional[int] = None,
+    upscale_height: Optional[int] = None,
+    upscale_factor: float = 1.4,
 ) -> Dict[str, Any]:
     """Apply common parameter overrides to the API prompt dictionary.
 
@@ -131,12 +134,39 @@ def apply_overrides(
         randomize_seed: If True, generate a fresh random seed for every
                         KSampler/KSamplerAdvanced node, overriding any
                         fixed seed supplied via the `seed` argument.
+        width/height: Base resolution applied to EmptyLatentImage.
+        upscale_width/upscale_height: Explicit resolution for LatentUpscale
+                        nodes. If omitted but width/height are given, the
+                        upscale size is auto-derived as
+                        round(base * upscale_factor / 8) * 8 so the aspect
+                        ratio (portrait vs landscape) is preserved. This is
+                        mandatory for landscape: leaving a portrait upscale
+                        (e.g. 1168x1704) while the base is landscape
+                        (e.g. 1216x832) silently stretches the image back
+                        to portrait on the second pass.
+        upscale_factor: Multiplier used for auto-derivation (default 1.4,
+                        matching anima_absolute_cinema.json 832x1216 ->
+                        1168x1704).
     """
     # Resolve effective seed once so both KSampler nodes get the same value
     effective_seed: Optional[int] = seed
     if randomize_seed:
         effective_seed = random_seed()
         print(f"  [randomize_seed] Using seed: {effective_seed}")
+
+    # Resolve effective upscale size once so all LatentUpscale nodes agree.
+    # Explicit CLI values win; otherwise derive from base W/H to preserve
+    # orientation (critical for landscape: W must stay > H).
+    effective_upscale: Tuple[Optional[int], Optional[int]] = (upscale_width, upscale_height)
+    if (upscale_width is None or upscale_height is None) and (width is not None and height is not None):
+        auto_w = int(round(width * upscale_factor / 8.0) * 8)
+        auto_h = int(round(height * upscale_factor / 8.0) * 8)
+        effective_upscale = (
+            upscale_width if upscale_width is not None else auto_w,
+            upscale_height if upscale_height is not None else auto_h,
+        )
+        print(f"  [upscale] Auto-derived LatentUpscale: {effective_upscale[0]}x{effective_upscale[1]} "
+              f"(base {width}x{height} x{upscale_factor})")
 
     for node_id, node_data in api_prompt.items():
         ctype = node_data.get("class_type", "")
@@ -160,12 +190,22 @@ def apply_overrides(
                     if positive_prompt is not None:
                         inputs["text"] = positive_prompt
 
-        # Override latent size
+        # Override latent size (base + upscale must share orientation)
         if ctype == "EmptyLatentImage":
             if width is not None:
                 inputs["width"] = width
             if height is not None:
                 inputs["height"] = height
+
+        # Override latent upscale size — REQUIRED for orientation changes.
+        # Without this, a landscape base (1216x832) gets stretched back to
+        # the workflow default portrait upscale (1168x1704) on pass 2.
+        if ctype == "LatentUpscale":
+            uw, uh = effective_upscale
+            if uw is not None:
+                inputs["width"] = uw
+            if uh is not None:
+                inputs["height"] = uh
 
         # Override sampler settings
         if ctype in ("KSampler", "KSamplerAdvanced"):
@@ -302,8 +342,11 @@ def main():
     parser.add_argument("--randomize-seed", action="store_true", help="Generate a random seed for each run (overrides --seed)")
     parser.add_argument("--steps", type=int, help="Override sampling steps")
     parser.add_argument("--cfg", type=float, help="Override CFG scale")
-    parser.add_argument("--width", type=int, help="Override width")
-    parser.add_argument("--height", type=int, help="Override height")
+    parser.add_argument("--width", type=int, help="Override base width (EmptyLatentImage). Landscape: use a value > --height, e.g. 1216x832")
+    parser.add_argument("--height", type=int, help="Override base height (EmptyLatentImage). Landscape: use a value < --width, e.g. 1216x832")
+    parser.add_argument("--upscale-width", type=int, default=None, help="Explicit LatentUpscale width (default: auto width*upscale-factor, keeps orientation)")
+    parser.add_argument("--upscale-height", type=int, default=None, help="Explicit LatentUpscale height (default: auto height*upscale-factor, keeps orientation)")
+    parser.add_argument("--upscale-factor", type=float, default=1.4, help="Multiplier for auto-derived LatentUpscale size (default 1.4)")
     parser.add_argument("--timeout", type=int, default=600, help="Max wait time in seconds")
     parser.add_argument("--stats-only", action="store_true", help="Only check server status and exit")
 
@@ -337,7 +380,10 @@ def main():
         steps=args.steps,
         cfg=args.cfg,
         width=args.width,
-        height=args.height
+        height=args.height,
+        upscale_width=args.upscale_width,
+        upscale_height=args.upscale_height,
+        upscale_factor=args.upscale_factor
     )
 
     # Step 4: Queue prompt
