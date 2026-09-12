@@ -91,11 +91,6 @@ def format_markdown_to_html(md_text, story_id=""):
         m_story = re.search(r'StoryCrafter/([^/]+)/assets/', src_norm, re.IGNORECASE)
         resolved_story = m_story.group(1) if m_story else story_id
 
-        if resolved_story:
-            web_url = f"/api/assets/{resolved_story}/{filename}"
-        else:
-            web_url = f"/api/assets/{filename}"
-
         # Attempt to detect natural dimensions for smooth layout reservation
         aspect_style = ""
         asset_file = None
@@ -108,7 +103,12 @@ def format_markdown_to_html(md_text, story_id=""):
             if cand.exists():
                 asset_file = cand
 
+        v_param = ""
         if asset_file:
+            try:
+                v_param = f"?v={int(asset_file.stat().st_mtime)}"
+            except Exception:
+                pass
             try:
                 from PIL import Image as PILImage
                 with PILImage.open(asset_file) as img_obj:
@@ -117,6 +117,11 @@ def format_markdown_to_html(md_text, story_id=""):
                         aspect_style = f' style="aspect-ratio: {w} / {h};"'
             except Exception:
                 pass
+
+        if resolved_story:
+            web_url = f"/api/assets/{resolved_story}/{filename}{v_param}"
+        else:
+            web_url = f"/api/assets/{filename}{v_param}"
 
         caption_html = f'<figcaption class="illustration-caption">{html.escape(alt)}</figcaption>' if alt else ''
         return f'\n\n<figure class="book-figure"><img src="{web_url}" alt="{html.escape(alt)}" loading="lazy"{aspect_style}>{caption_html}</figure>\n\n'
@@ -153,11 +158,12 @@ def format_markdown_to_html(md_text, story_id=""):
 def scan_full_library():
     """Scan workspace and pre-render all stories and chapters into complete JSON."""
     stories = []
-    for item in BASE_DIR.iterdir():
+    for item in sorted(BASE_DIR.iterdir(), key=lambda p: p.name.lower()):
         if item.is_dir() and not item.name.startswith((".", "_", "venv")):
             chapters_dir = item / "chapters"
             if chapters_dir.is_dir():
-                files = sorted(chapters_dir.glob("*.md"))
+                # Natural sort for chapters: ch01, ch02, ..., ch10, etc.
+                files = sorted(chapters_dir.glob("*.md"), key=lambda f: [int(t) if t.isdigit() else t.lower() for t in re.split(r'(\d+)', f.name)])
                 if files:
                     display_title = item.name.replace("_", " ").title()
                     chapter_list = []
@@ -186,9 +192,76 @@ def scan_full_library():
                         "total_chapters": len(chapter_list)
                     })
 
-    # Sort so 'the_mockingbirds_ledger' is primary if present
-    stories.sort(key=lambda s: 0 if s["id"] == "the_mockingbirds_ledger" else 1)
+    # Sort so 'the_mockingbirds_ledger' is primary if present, then alphabetical
+    stories.sort(key=lambda s: (0 if s["id"] == "the_mockingbirds_ledger" else 1, s["title"].lower()))
     return stories
+
+
+def scan_assets_gallery():
+    """Scan the root \\assets directory (ignoring story chapter assets) and return standalone assets."""
+    assets_dir = BASE_DIR / "assets"
+    if not assets_dir.is_dir():
+        return {"total": 0, "folders": ["All"], "assets": []}
+
+    valid_exts = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg", ".bmp", ".avif"}
+    all_assets = []
+    folder_set = set()
+
+    for item in sorted(assets_dir.rglob("*")):
+        if item.is_file() and item.suffix.lower() in valid_exts:
+            try:
+                rel_to_assets = item.relative_to(assets_dir)
+                rel_path_str = str(rel_to_assets).replace("\\", "/")
+                parent_folder = rel_to_assets.parent.as_posix()
+                if parent_folder == ".":
+                    parent_folder = "root"
+                else:
+                    folder_set.add(parent_folder)
+
+                st = item.stat()
+                size_bytes = st.st_size
+                if size_bytes >= 1024 * 1024:
+                    size_formatted = f"{size_bytes / (1024 * 1024):.2f} MB"
+                elif size_bytes >= 1024:
+                    size_formatted = f"{size_bytes / 1024:.1f} KB"
+                else:
+                    size_formatted = f"{size_bytes} B"
+
+                # Check dimensions with PIL
+                w, h = None, None
+                try:
+                    from PIL import Image as PILImage
+                    with PILImage.open(item) as img_obj:
+                        w, h = img_obj.size
+                except Exception:
+                    pass
+
+                all_assets.append({
+                    "filename": item.name,
+                    "rel_path": rel_path_str,
+                    "folder": parent_folder,
+                    "url": f"/api/gallery/asset/{rel_path_str}?v={int(st.st_mtime)}",
+                    "size_bytes": size_bytes,
+                    "size_formatted": size_formatted,
+                    "modified": int(st.st_mtime),
+                    "width": w,
+                    "height": h,
+                    "aspect_ratio": f"{w} / {h}" if (w and h) else "auto"
+                })
+            except Exception as e:
+                print(f"[WARN] Failed to read asset {item}: {e}")
+
+    # Discover any subdirectories (including empty directories)
+    for sub in sorted(assets_dir.iterdir()):
+        if sub.is_dir() and not sub.name.startswith((".", "_")):
+            folder_set.add(sub.name)
+
+    folders = ["All"] + sorted(list(folder_set))
+    return {
+        "total": len(all_assets),
+        "folders": folders,
+        "assets": all_assets
+    }
 
 
 def get_lan_ip():
@@ -226,11 +299,14 @@ def find_available_port(host, start_port=8080, max_attempts=25):
     return start_port
 
 
-def generate_web_ui(library, config, lan_url=None):
+def generate_web_ui(library, config, gallery=None, lan_url=None):
     """Generate the complete web reader HTML with embedded library and client scripts."""
+    if gallery is None:
+        gallery = scan_assets_gallery()
     embedded_json = json.dumps({
         "stories": library,
         "config": config,
+        "gallery": gallery,
         "lan_url": lan_url
     })
 
@@ -361,12 +437,19 @@ def generate_web_ui(library, config, lan_url=None):
     z-index: 50;
     user-select: none;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }}
+
+  header.app-bar::-webkit-scrollbar {{
+    display: none;
   }}
 
   .app-bar-left, .app-bar-right, .app-bar-center {{
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-shrink: 0;
   }}
 
   .btn {{
@@ -728,10 +811,10 @@ def generate_web_ui(library, config, lan_url=None):
     margin-bottom: 12px;
   }}
 
-  /* SINGLE COLUMN MODE */
+  /* INFINITE SCROLL DOWN MODE */
   .book-single {{
     width: 100%;
-    max-width: min(920px, calc(100vw - 80px));
+    max-width: min(900px, calc(100vw - 40px));
     height: 100%;
     max-height: 100%;
     background-color: var(--bg-page);
@@ -740,13 +823,110 @@ def generate_web_ui(library, config, lan_url=None):
     border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
-    padding: 40px 60px;
+    padding: 0 48px 40px 48px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    position: relative;
+  }}
+
+  .book-single .page-running-header {{
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-page);
+    z-index: 20;
+    padding: 14px 0 10px 0;
+    margin: 0;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 11px;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    user-select: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
   }}
 
   .book-single .page-content {{
     overflow-y: visible;
+    width: 100%;
+  }}
+
+  .chapter-scroll-section {{
+    padding: 40px 0 32px 0;
+    border-bottom: 1px dashed var(--border-color);
+  }}
+
+  .chapter-scroll-section:last-of-type {{
+    border-bottom: none;
+  }}
+
+  .chapter-scroll-footer {{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 36px;
+    padding-top: 16px;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-family: var(--font-sans);
+    user-select: none;
+  }}
+
+  .chapter-scroll-divider {{
+    font-size: 14px;
+    letter-spacing: 8px;
+    color: var(--accent);
+    opacity: 0.6;
+  }}
+
+  .chapter-scroll-section .book-figure {{
+    margin: 28px auto;
+    text-align: center;
+    max-width: 100%;
+  }}
+
+  .chapter-scroll-section .book-figure img {{
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: var(--shadow-page);
+    object-fit: contain;
+  }}
+
+  .story-end-block {{
+    text-align: center;
+    padding: 50px 0 70px 0;
+    user-select: none;
+  }}
+
+  .story-end-ornament {{
+    font-size: 20px;
+    color: var(--accent);
+    margin-bottom: 10px;
+    letter-spacing: 6px;
+  }}
+
+  .story-end-title {{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+  }}
+
+  .btn-back-to-top {{
+    margin: 0 auto;
+    padding: 6px 16px;
+    font-size: 13px;
+    cursor: pointer;
+  }}
+
+  .book-single .page-running-footer {{
+    display: none;
   }}
 
   /* CHAPTER TYPOGRAPHY */
@@ -1047,8 +1227,24 @@ def generate_web_ui(library, config, lan_url=None):
       line-height: 1.25;
     }}
     .book-single {{
-      padding: 24px 20px;
+      padding: 0 20px 30px 20px;
       max-width: 100%;
+    }}
+    body[data-layout="scroll"] main.book-stage {{
+      padding: 0 !important;
+    }}
+    body[data-layout="scroll"] .book-single {{
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0 16px 40px 16px;
+      max-width: 100%;
+    }}
+    body[data-layout="scroll"] .nav-turn-btn {{
+      display: none !important;
+    }}
+    body[data-layout="scroll"] .chapter-scroll-section {{
+      padding: 24px 0 20px 0;
     }}
     .nav-turn-btn {{
       width: 32px;
@@ -1060,6 +1256,559 @@ def generate_web_ui(library, config, lan_url=None):
     footer.app-footer {{
       font-size: 11px;
       padding: 0 10px;
+    }}
+  }}
+
+  @media (max-width: 540px) {{
+    .btn .btn-text {{
+      display: none;
+    }}
+  }}
+
+  /* ==========================================================================
+     GLOBAL ASSET GALLERY MODAL & LIGHTBOX
+     ========================================================================== */
+  .gallery-overlay {{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(14, 16, 20, 0.78);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 95;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    animation: fadeIn 0.18s ease-out;
+  }}
+
+  .gallery-overlay.open {{
+    display: flex;
+  }}
+
+  @keyframes fadeIn {{
+    from {{ opacity: 0; transform: scale(0.985); }}
+    to {{ opacity: 1; transform: scale(1); }}
+  }}
+
+  .gallery-container {{
+    width: 100%;
+    max-width: 1360px;
+    height: 92vh;
+    height: 92dvh;
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    font-family: var(--font-sans);
+  }}
+
+  .gallery-header {{
+    padding: 14px 20px;
+    background: var(--bg-book);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    user-select: none;
+  }}
+
+  .gallery-title-area {{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }}
+
+  .gallery-title {{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }}
+
+  .gallery-title h2 {{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+  }}
+
+  .gallery-badge-dir {{
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 700;
+  }}
+
+  .gallery-count-badge {{
+    background: var(--accent);
+    color: #fff;
+    padding: 2px 9px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+  }}
+
+  .gallery-subtitle {{
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin: 0;
+  }}
+
+  .gallery-subtitle code {{
+    background: rgba(0,0,0,0.05);
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-family: monospace;
+  }}
+
+  .gallery-actions {{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }}
+
+  .btn-close-gallery {{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 12px;
+  }}
+
+  .gallery-toolbar {{
+    padding: 10px 20px;
+    background: var(--bg-book);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }}
+
+  .gallery-search-box {{
+    display: flex;
+    align-items: center;
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 5px 10px;
+    gap: 8px;
+    flex: 1;
+    max-width: 380px;
+    min-width: 220px;
+  }}
+
+  .gallery-search-input {{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    width: 100%;
+  }}
+
+  .btn-clear-search {{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 12px;
+    padding: 0 2px;
+  }}
+
+  .btn-clear-search:hover {{
+    color: var(--accent);
+  }}
+
+  .gallery-folder-tabs {{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow-x: auto;
+    max-width: 100%;
+    padding-bottom: 2px;
+  }}
+
+  .folder-tab-btn {{
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+  }}
+
+  .folder-tab-btn:hover {{
+    border-color: var(--accent);
+    color: var(--accent);
+  }}
+
+  .folder-tab-btn.active {{
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-weight: 600;
+  }}
+
+  .gallery-body {{
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    -webkit-overflow-scrolling: touch;
+  }}
+
+  .gallery-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 16px;
+  }}
+
+  .asset-card {{
+    background: var(--bg-book);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+  }}
+
+  .asset-card:hover {{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+    border-color: var(--accent);
+  }}
+
+  .asset-thumb-wrap {{
+    width: 100%;
+    height: 190px;
+    background: rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }}
+
+  .asset-thumb-img {{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.28s ease;
+  }}
+
+  .asset-card:hover .asset-thumb-img {{
+    transform: scale(1.05);
+  }}
+
+  .asset-folder-tag {{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: rgba(0, 0, 0, 0.68);
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    backdrop-filter: blur(2px);
+  }}
+
+  .asset-info {{
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-top: 1px solid var(--border-color);
+  }}
+
+  .asset-filename {{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }}
+
+  .asset-meta {{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-muted);
+  }}
+
+  .gallery-empty {{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--text-muted);
+  }}
+
+  .gallery-empty-icon {{
+    font-size: 48px;
+    margin-bottom: 12px;
+    opacity: 0.6;
+  }}
+
+  .gallery-empty-text {{
+    font-size: 15px;
+    font-weight: 500;
+  }}
+
+  /* LIGHTBOX OVERLAY */
+  .lightbox-overlay {{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(8, 10, 14, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 120;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }}
+
+  .lightbox-overlay.open {{
+    display: flex;
+  }}
+
+  .lightbox-dialog {{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    max-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+  }}
+
+  .lightbox-header {{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    color: #f7f1e3;
+    font-family: var(--font-sans);
+  }}
+
+  .lightbox-title-info {{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+  }}
+
+  .lightbox-filename {{
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }}
+
+  .lightbox-folder-badge {{
+    background: rgba(255,255,255,0.15);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #e2d9c8;
+  }}
+
+  .lightbox-counter {{
+    font-size: 12px;
+    color: #a89f8d;
+    white-space: nowrap;
+  }}
+
+  .lightbox-top-actions {{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }}
+
+  .lightbox-top-actions .btn {{
+    color: #f7f1e3;
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(255,255,255,0.08);
+  }}
+
+  .lightbox-top-actions .btn:hover {{
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }}
+
+  .lightbox-stage {{
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 4px 0;
+  }}
+
+  .lightbox-nav-btn {{
+    width: 46px;
+    height: 72px;
+    background: rgba(30, 34, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+    z-index: 10;
+    user-select: none;
+  }}
+
+  .lightbox-nav-btn:hover {{
+    background: var(--accent);
+    border-color: var(--accent);
+    transform: scale(1.06);
+  }}
+
+  .lightbox-image-wrap {{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 6px 12px;
+  }}
+
+  #lightboxImage {{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.7);
+  }}
+
+  .lightbox-footer {{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+  }}
+
+  .lightbox-metadata {{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }}
+
+  .lightbox-hint {{
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 11px;
+  }}
+
+  /* TOAST NOTIFICATION */
+  .gallery-toast {{
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: #181b20;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--accent);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.22s cubic-bezier(0.2, 0.8, 0.25, 1);
+    z-index: 200;
+    font-family: var(--font-sans);
+  }}
+
+  .gallery-toast.show {{
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }}
+
+  @media (max-width: 820px) {{
+    .gallery-overlay {{
+      padding: 0;
+    }}
+    .gallery-container {{
+      width: 100%;
+      height: 100dvh;
+      border-radius: 0;
+      border: none;
+    }}
+    .gallery-header {{
+      padding: 10px 14px;
+    }}
+    .gallery-toolbar {{
+      padding: 8px 14px;
+    }}
+    .gallery-search-box {{
+      max-width: 100%;
+    }}
+    .gallery-grid {{
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 10px;
+    }}
+    .asset-thumb-wrap {{
+      height: 135px;
+    }}
+    .lightbox-dialog {{
+      max-height: 100dvh;
+    }}
+    .lightbox-nav-btn {{
+      width: 36px;
+      height: 56px;
+      font-size: 24px;
+    }}
+    .lightbox-footer {{
+      flex-direction: column;
+      height: auto;
+      gap: 4px;
+      padding: 6px 8px;
+    }}
+    .lightbox-hint {{
+      display: none;
     }}
   }}
 
@@ -1088,6 +1837,14 @@ def generate_web_ui(library, config, lan_url=None):
       <select class="select-input" id="selectStory" title="Select Story">
         <!-- populated dynamically -->
       </select>
+
+      <button class="btn" id="btnReloadLibrary" title="Rescan & reload all stories and chapters (R)">
+        <span>↻</span> <span class="btn-text">Reload</span>
+      </button>
+
+      <button class="btn" id="btnGallery" title="Asset Gallery (\assets) (G)">
+        <span>🖼️</span> Gallery
+      </button>
     </div>
 
     <div class="app-bar-center">
@@ -1112,8 +1869,8 @@ def generate_web_ui(library, config, lan_url=None):
         <option value="paper">Clean Paper</option>
       </select>
 
-      <button class="btn" id="btnLayout" title="Toggle Layout Spread / Scroll (L)">
-        <span id="layoutIcon">📖 Spread</span>
+      <button class="btn" id="btnLayout" title="Toggle Reading Mode: Book Spread / Infinite Scroll (L)">
+        <span id="layoutIcon">📖 <span class="btn-text">Spread</span></span>
       </button>
 
       <button class="btn" id="btnSound" title="Toggle Page Flip Sound (S)">🔊 Sound</button>
@@ -1131,8 +1888,11 @@ def generate_web_ui(library, config, lan_url=None):
       <div class="toc-header">
         <div style="display: flex; align-items: center; gap: 8px;">
           <h2>Chapters</h2>
-          <button class="btn" id="btnReloadLibrary" title="Rescan stories & chapters (R)" style="padding: 2px 8px; font-size: 11px;">
+          <button class="btn" id="btnReloadLibraryDrawer" title="Rescan stories & chapters (R)" style="padding: 2px 8px; font-size: 11px;">
             ↻ Reload
+          </button>
+          <button class="btn" id="btnLayoutDrawer" title="Switch Reading Mode (Spread / Infinite Scroll)" style="padding: 2px 8px; font-size: 11px;">
+            <span id="layoutDrawerIcon">📜 Scroll</span>
           </button>
         </div>
         <button class="btn" id="btnCloseToc">✕</button>
@@ -1172,13 +1932,10 @@ def generate_web_ui(library, config, lan_url=None):
       </div>
 
       <!-- SINGLE COLUMN CONTAINER -->
+      <!-- SINGLE COLUMN / INFINITE SCROLL CONTAINER -->
       <div class="book-single" id="bookSingle" style="display: none;">
         <div class="page-running-header" id="headerSingle">Chapter Title</div>
         <div class="page-content" id="contentSingle"></div>
-        <div class="page-running-footer">
-          <span id="singleWordCount">Word count</span>
-          <span id="singleReadTime">Reading time</span>
-        </div>
       </div>
     </main>
   </div>
@@ -1196,12 +1953,14 @@ def generate_web_ui(library, config, lan_url=None):
   <div class="modal-backdrop" id="helpModal">
     <div class="modal-box">
       <h3>StoryCrafter Web Reader</h3>
-      <div class="shortcut-row"><span>Next Page / Chapter</span><span class="shortcut-key">Right / Space / D / Swipe Left</span></div>
+      <div class="shortcut-row"><span>Next Page / Chapter</span><span class="shortcut-key">Right / D / Swipe Left</span></div>
       <div class="shortcut-row"><span>Previous Page / Chapter</span><span class="shortcut-key">Left / A / Swipe Right</span></div>
+      <div class="shortcut-row"><span>Scroll Down (Scroll Mode)</span><span class="shortcut-key">Space / PageDown</span></div>
       <div class="shortcut-row"><span>Table of Contents</span><span class="shortcut-key">M</span></div>
+      <div class="shortcut-row"><span>Asset Gallery (\assets)</span><span class="shortcut-key">G</span></div>
       <div class="shortcut-row"><span>Cycle Theme</span><span class="shortcut-key">T</span></div>
       <div class="shortcut-row"><span>Toggle Sound Effect</span><span class="shortcut-key">S</span></div>
-      <div class="shortcut-row"><span>Toggle Spread / Scroll</span><span class="shortcut-key">L</span></div>
+      <div class="shortcut-row"><span>Toggle Spread / Infinite Scroll</span><span class="shortcut-key">L</span></div>
       <div class="shortcut-row"><span>Font Size Up / Down</span><span class="shortcut-key">+ / -</span></div>
       <div class="shortcut-row"><span>Toggle Fullscreen</span><span class="shortcut-key">F</span></div>
       <div class="shortcut-row"><span>Reload Library</span><span class="shortcut-key">R</span></div>
@@ -1212,6 +1971,90 @@ def generate_web_ui(library, config, lan_url=None):
       </div>
     </div>
   </div>
+
+  <!-- ASSET GALLERY MODAL -->
+  <div class="gallery-overlay" id="galleryModal">
+    <div class="gallery-container">
+      <div class="gallery-header">
+        <div class="gallery-title-area">
+          <div class="gallery-title">
+            <span style="font-size: 20px;">🖼️</span>
+            <h2>Root Asset Gallery</h2>
+            <span class="gallery-badge-dir">(\\assets)</span>
+            <span class="gallery-count-badge" id="galleryCountBadge">0 assets</span>
+          </div>
+          <p class="gallery-subtitle">Browsing standalone media assets in <code>\\assets</code> (independent of story chapters)</p>
+        </div>
+        <div class="gallery-actions">
+          <button class="btn" id="btnReloadGallery" title="Rescan \\assets directory">
+            ↻ Rescan
+          </button>
+          <button class="btn btn-close-gallery" id="btnCloseGallery" title="Close Gallery (Esc)">✕</button>
+        </div>
+      </div>
+
+      <!-- FILTER & SEARCH BAR -->
+      <div class="gallery-toolbar">
+        <div class="gallery-search-box">
+          <span style="font-size: 13px; opacity: 0.7;">🔍</span>
+          <input type="text" id="gallerySearchInput" class="gallery-search-input" placeholder="Search assets by filename or folder...">
+          <button class="btn-clear-search" id="btnClearSearch" style="display:none;" title="Clear search">✕</button>
+        </div>
+        <div class="gallery-folder-tabs" id="galleryFolderTabs">
+          <!-- Populated dynamically with pills: All, rezero_nsfw, etc. -->
+        </div>
+      </div>
+
+      <!-- GALLERY BODY -->
+      <div class="gallery-body" id="galleryBody">
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Populated dynamically -->
+        </div>
+        <div class="gallery-empty" id="galleryEmpty" style="display:none;">
+          <div class="gallery-empty-icon">📁</div>
+          <div class="gallery-empty-text" id="galleryEmptyText">No assets found in \\assets</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-overlay" id="lightboxModal">
+    <div class="lightbox-dialog">
+      <div class="lightbox-header">
+        <div class="lightbox-title-info">
+          <span class="lightbox-filename" id="lightboxFilename">filename.png</span>
+          <span class="lightbox-folder-badge" id="lightboxFolderBadge">folder</span>
+          <span class="lightbox-counter" id="lightboxCounter">1 / 18</span>
+        </div>
+        <div class="lightbox-top-actions">
+          <button class="btn" id="btnCopyMdTag" title="Copy Markdown Tag">📋 Copy Markdown</button>
+          <a class="btn" id="btnOpenOriginal" target="_blank" rel="noopener" title="Open Full Resolution">↗ Open Full</a>
+          <button class="btn btn-close-lightbox" id="btnCloseLightbox" title="Close (Esc)">✕</button>
+        </div>
+      </div>
+
+      <div class="lightbox-stage">
+        <button class="lightbox-nav-btn prev" id="btnLightboxPrev" title="Previous Image (Left Arrow)">‹</button>
+        <div class="lightbox-image-wrap">
+          <img id="lightboxImage" src="" alt="Asset preview">
+        </div>
+        <button class="lightbox-nav-btn next" id="btnLightboxNext" title="Next Image (Right Arrow)">›</button>
+      </div>
+
+      <div class="lightbox-footer">
+        <div class="lightbox-metadata" id="lightboxMeta">
+          <span>📐 Dimensions</span>
+          <span>💾 Size</span>
+          <span>📁 Path</span>
+        </div>
+        <div class="lightbox-hint">Use ‹ / › or Left / Right arrow keys to browse · Esc to exit</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="gallery-toast" id="galleryToast">Copied to clipboard!</div>
 
 <!-- PRE-LOADED DATA FROM BACKEND -->
 <script>
@@ -1248,6 +2091,8 @@ def generate_web_ui(library, config, lan_url=None):
   const selectTheme = document.getElementById('selectTheme');
   const btnLayout = document.getElementById('btnLayout');
   const layoutIcon = document.getElementById('layoutIcon');
+  const btnLayoutDrawer = document.getElementById('btnLayoutDrawer');
+  const layoutDrawerIcon = document.getElementById('layoutDrawerIcon');
   const btnFontInc = document.getElementById('btnFontInc');
   const btnFontDec = document.getElementById('btnFontDec');
   const btnPrevPage = document.getElementById('btnPrevPage');
@@ -1275,6 +2120,203 @@ def generate_web_ui(library, config, lan_url=None):
   const btnHelp = document.getElementById('btnHelp');
   const btnCloseModal = document.getElementById('btnCloseModal');
   const btnReloadLibrary = document.getElementById('btnReloadLibrary');
+  const btnReloadLibraryDrawer = document.getElementById('btnReloadLibraryDrawer');
+
+  // GLOBAL ASSET GALLERY STATE
+  let galleryData = data.gallery || {{ total: 0, folders: ['All'], assets: [] }};
+  let currentFolderFilter = 'All';
+  let currentSearchQuery = '';
+  let filteredAssets = [];
+  let currentLightboxIndex = 0;
+
+  // DOM Elements for Gallery
+  const btnGallery = document.getElementById('btnGallery');
+  const galleryModal = document.getElementById('galleryModal');
+  const btnCloseGallery = document.getElementById('btnCloseGallery');
+  const btnReloadGallery = document.getElementById('btnReloadGallery');
+  const gallerySearchInput = document.getElementById('gallerySearchInput');
+  const btnClearSearch = document.getElementById('btnClearSearch');
+  const galleryFolderTabs = document.getElementById('galleryFolderTabs');
+  const galleryGrid = document.getElementById('galleryGrid');
+  const galleryEmpty = document.getElementById('galleryEmpty');
+  const galleryEmptyText = document.getElementById('galleryEmptyText');
+  const galleryCountBadge = document.getElementById('galleryCountBadge');
+
+  // DOM Elements for Lightbox
+  const lightboxModal = document.getElementById('lightboxModal');
+  const btnCloseLightbox = document.getElementById('btnCloseLightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxFilename = document.getElementById('lightboxFilename');
+  const lightboxFolderBadge = document.getElementById('lightboxFolderBadge');
+  const lightboxCounter = document.getElementById('lightboxCounter');
+  const lightboxMeta = document.getElementById('lightboxMeta');
+  const btnLightboxPrev = document.getElementById('btnLightboxPrev');
+  const btnLightboxNext = document.getElementById('btnLightboxNext');
+  const btnOpenOriginal = document.getElementById('btnOpenOriginal');
+  const btnCopyMdTag = document.getElementById('btnCopyMdTag');
+  const galleryToast = document.getElementById('galleryToast');
+
+  // ASSET GALLERY & LIGHTBOX LOGIC
+  function showToast(msg) {{
+    if (!galleryToast) return;
+    galleryToast.textContent = msg;
+    galleryToast.classList.add('show');
+    clearTimeout(galleryToast._timer);
+    galleryToast._timer = setTimeout(() => {{
+      galleryToast.classList.remove('show');
+    }}, 2400);
+  }}
+
+  function escapeHtml(str) {{
+    return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }}
+
+  function openGallery() {{
+    galleryModal.classList.add('open');
+    renderGallery();
+  }}
+
+  function closeGallery() {{
+    galleryModal.classList.remove('open');
+    closeLightbox();
+  }}
+
+  function renderFolderTabs() {{
+    galleryFolderTabs.innerHTML = '';
+    const folders = galleryData.folders || ['All'];
+    folders.forEach(folder => {{
+      const btn = document.createElement('button');
+      btn.className = 'folder-tab-btn' + (folder === currentFolderFilter ? ' active' : '');
+      let count = 0;
+      if (folder === 'All') {{
+        count = (galleryData.assets || []).length;
+      }} else {{
+        count = (galleryData.assets || []).filter(a => a.folder === folder).length;
+      }}
+      btn.textContent = `${{folder}} (${{count}})`;
+      btn.onclick = () => {{
+        currentFolderFilter = folder;
+        renderFolderTabs();
+        filterAndRenderAssets();
+      }};
+      galleryFolderTabs.appendChild(btn);
+    }});
+  }}
+
+  function filterAndRenderAssets() {{
+    const q = currentSearchQuery.trim().toLowerCase();
+    const assets = galleryData.assets || [];
+    filteredAssets = assets.filter(a => {{
+      const matchFolder = (currentFolderFilter === 'All') || (a.folder === currentFolderFilter);
+      const matchSearch = !q || (a.filename.toLowerCase().includes(q) || a.folder.toLowerCase().includes(q));
+      return matchFolder && matchSearch;
+    }});
+
+    galleryCountBadge.textContent = `${{filteredAssets.length}} of ${{assets.length}} assets`;
+    galleryGrid.innerHTML = '';
+
+    if (filteredAssets.length === 0) {{
+      galleryEmpty.style.display = 'flex';
+      if (q) {{
+        galleryEmptyText.textContent = `No assets match "${{currentSearchQuery}}" in folder "${{currentFolderFilter}}"`;
+      }} else if (currentFolderFilter !== 'All') {{
+        galleryEmptyText.textContent = `No assets found in folder "${{currentFolderFilter}}"`;
+      }} else {{
+        galleryEmptyText.textContent = 'No media assets found in root \\assets';
+      }}
+    }} else {{
+      galleryEmpty.style.display = 'none';
+      filteredAssets.forEach((asset, idx) => {{
+        const card = document.createElement('div');
+        card.className = 'asset-card';
+        card.title = `${{asset.filename}} (${{asset.size_formatted}})`;
+
+        const dimText = (asset.width && asset.height) ? `${{asset.width}}×${{asset.height}}` : 'Image';
+        card.innerHTML = `
+          <div class="asset-thumb-wrap">
+            <span class="asset-folder-tag">${{escapeHtml(asset.folder)}}</span>
+            <img class="asset-thumb-img" src="${{asset.url}}" alt="${{escapeHtml(asset.filename)}}" loading="lazy">
+          </div>
+          <div class="asset-info">
+            <div class="asset-filename">${{escapeHtml(asset.filename)}}</div>
+            <div class="asset-meta">
+              <span>${{dimText}}</span>
+              <span>${{asset.size_formatted}}</span>
+            </div>
+          </div>
+        `;
+        card.onclick = () => openLightbox(idx);
+        galleryGrid.appendChild(card);
+      }});
+    }}
+  }}
+
+  function renderGallery() {{
+    renderFolderTabs();
+    filterAndRenderAssets();
+  }}
+
+  function openLightbox(idx) {{
+    if (!filteredAssets.length) return;
+    currentLightboxIndex = Math.max(0, Math.min(idx, filteredAssets.length - 1));
+    const asset = filteredAssets[currentLightboxIndex];
+    if (!asset) return;
+
+    lightboxImage.src = asset.url;
+    lightboxFilename.textContent = asset.filename;
+    lightboxFolderBadge.textContent = asset.folder;
+    lightboxCounter.textContent = `${{currentLightboxIndex + 1}} / ${{filteredAssets.length}}`;
+    const dimText = (asset.width && asset.height) ? `${{asset.width}} × ${{asset.height}} px` : '';
+    lightboxMeta.innerHTML = `
+      ${{dimText ? `<span>📐 ${{dimText}}</span>` : ''}}
+      <span>💾 ${{asset.size_formatted}}</span>
+      <span>📁 \\assets\\${{escapeHtml(asset.rel_path)}}</span>
+    `;
+    btnOpenOriginal.href = asset.url;
+
+    btnLightboxPrev.style.visibility = currentLightboxIndex > 0 ? 'visible' : 'hidden';
+    btnLightboxNext.style.visibility = currentLightboxIndex < filteredAssets.length - 1 ? 'visible' : 'hidden';
+
+    lightboxModal.classList.add('open');
+  }}
+
+  function closeLightbox() {{
+    lightboxModal.classList.remove('open');
+    lightboxImage.src = '';
+  }}
+
+  function nextLightbox() {{
+    if (currentLightboxIndex < filteredAssets.length - 1) {{
+      openLightbox(currentLightboxIndex + 1);
+    }}
+  }}
+
+  function prevLightbox() {{
+    if (currentLightboxIndex > 0) {{
+      openLightbox(currentLightboxIndex - 1);
+    }}
+  }}
+
+  async function reloadGalleryData() {{
+    if (!btnReloadGallery) return;
+    btnReloadGallery.disabled = true;
+    btnReloadGallery.textContent = '...';
+    try {{
+      const res = await fetch('/api/gallery?t=' + Date.now());
+      const fresh = await res.json();
+      if (fresh && fresh.assets) {{
+        galleryData = fresh;
+        renderGallery();
+        showToast(`Rescanned: ${{fresh.total}} assets found`);
+      }}
+    }} catch (e) {{
+      console.error('Failed to reload gallery:', e);
+      showToast('Error reloading gallery');
+    }} finally {{
+      btnReloadGallery.disabled = false;
+      btnReloadGallery.textContent = '↻ Rescan';
+    }}
+  }}
 
   // AUDIO SYNTHESIZER FOR CRISP PAPER SWIPE
   let audioCtx = null;
@@ -1358,7 +2400,8 @@ def generate_web_ui(library, config, lan_url=None):
     return {{
       story: params.get('story'),
       chapter: params.get('chapter'),
-      page: params.get('page') !== null ? parseInt(params.get('page'), 10) : null
+      page: params.get('page') !== null ? parseInt(params.get('page'), 10) : null,
+      layout: params.get('layout')
     }};
   }}
 
@@ -1366,10 +2409,21 @@ def generate_web_ui(library, config, lan_url=None):
     const st = currentStory();
     const ch = currentChapter();
     if (!st || !ch) return;
-    const hash = `#story=${{encodeURIComponent(st.id)}}&chapter=${{encodeURIComponent(ch.filename)}}&page=${{currentPagePair}}`;
+    let hash = `#story=${{encodeURIComponent(st.id)}}&chapter=${{encodeURIComponent(ch.filename)}}`;
+    if (currentConfig.layout === 'spread') {{
+      hash += `&page=${{currentPagePair}}`;
+    }} else {{
+      hash += `&layout=scroll`;
+    }}
     if (window.location.hash !== hash) {{
       history.replaceState(null, '', hash);
     }}
+  }}
+
+  function isMobileClient() {{
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+           (window.innerWidth <= 820 && window.matchMedia && window.matchMedia('(pointer: coarse)').matches) ||
+           window.innerWidth <= 820;
   }}
 
   // INITIALIZATION
@@ -1379,11 +2433,31 @@ def generate_web_ui(library, config, lan_url=None):
       return;
     }}
 
+    // Check responsive viewport
+    checkViewport();
+
     // Check URL Hash first, then config
     const hashParams = parseUrlHash();
     const activeStoryId = (hashParams && hashParams.story) || currentConfig.active_story;
     const activeChapterFile = (hashParams && hashParams.chapter) || currentConfig.active_chapter;
     const activePage = (hashParams && hashParams.page !== null) ? hashParams.page : currentConfig.page_index;
+
+    // Mobile detection & Layout preference: default to infinite scroll on mobile
+    const isMobile = isMobileClient();
+    let savedLayout = null;
+    try {{
+      savedLayout = localStorage.getItem('storycrafter_layout_override');
+    }} catch (e) {{}}
+
+    if (hashParams && hashParams.layout) {{
+      currentConfig.layout = (hashParams.layout === 'scroll' || hashParams.layout === 'single') ? 'scroll' : 'spread';
+    }} else if (savedLayout) {{
+      currentConfig.layout = (savedLayout === 'scroll' || savedLayout === 'single') ? 'scroll' : 'spread';
+    }} else if (isMobile) {{
+      currentConfig.layout = 'scroll';
+    }} else if (currentConfig.layout === 'single') {{
+      currentConfig.layout = 'scroll';
+    }}
 
     if (activeStoryId) {{
       const sIdx = stories.findIndex(s => s.id === activeStoryId);
@@ -1404,10 +2478,13 @@ def generate_web_ui(library, config, lan_url=None):
 
     applyConfig();
     updateStoryView();
-    loadChapter(currentChapterIndex, false, null, currentPagePair);
+    renderGallery();
 
-    // Check responsive layout mode
-    checkViewport();
+    if (currentConfig.layout === 'scroll') {{
+      renderInfiniteScroll(currentChapterIndex);
+    }} else {{
+      loadChapter(currentChapterIndex, false, null, currentPagePair);
+    }}
 
     requestAnimationFrame(() => {{
       const ch = currentChapter();
@@ -1433,21 +2510,35 @@ def generate_web_ui(library, config, lan_url=None):
   function applyConfig() {{
     body.setAttribute('data-theme', currentConfig.theme);
     selectTheme.value = currentConfig.theme;
-    document.querySelectorAll('.page-content').forEach(el => {{
+    document.querySelectorAll('.page-content, .chapter-body-html').forEach(el => {{
       el.style.fontSize = currentConfig.font_size + 'px';
     }});
     updateLayoutDisplay();
   }}
 
   function updateLayoutDisplay() {{
-    if (currentConfig.layout === 'spread') {{
+    const isSpread = currentConfig.layout === 'spread';
+    body.setAttribute('data-layout', isSpread ? 'spread' : 'scroll');
+
+    const btnPrevPage = document.getElementById('btnPrevPage');
+    const btnNextPage = document.getElementById('btnNextPage');
+
+    if (isSpread) {{
       bookSpread.style.display = 'grid';
       bookSingle.style.display = 'none';
-      layoutIcon.textContent = '📖 Spread';
+      layoutIcon.innerHTML = '<span>📖</span> <span class="btn-text">Spread</span>';
+      btnLayout.title = 'Current Mode: Book Spread (Click or press L for Infinite Scroll)';
+      if (layoutDrawerIcon) layoutDrawerIcon.textContent = '📜 Scroll Mode';
+      if (btnPrevPage) btnPrevPage.style.display = '';
+      if (btnNextPage) btnNextPage.style.display = '';
     }} else {{
       bookSpread.style.display = 'none';
       bookSingle.style.display = 'flex';
-      layoutIcon.textContent = '📜 Scroll';
+      layoutIcon.innerHTML = '<span>📜</span> <span class="btn-text">Scroll</span>';
+      btnLayout.title = 'Current Mode: Infinite Scroll (Click or press L for Book Spread)';
+      if (layoutDrawerIcon) layoutDrawerIcon.textContent = '📖 Spread Mode';
+      if (btnPrevPage) btnPrevPage.style.display = 'none';
+      if (btnNextPage) btnNextPage.style.display = 'none';
     }}
   }}
 
@@ -1478,17 +2569,142 @@ def generate_web_ui(library, config, lan_url=None):
         <span class="ch-meta">${{ch.word_count}} words · ${{ch.reading_time}}</span>
       `;
       li.onclick = () => {{
-        loadChapter(idx, false, 'next');
+        if (currentConfig.layout === 'scroll') {{
+          scrollToChapter(idx, true);
+        }} else {{
+          loadChapter(idx, false, 'next');
+        }}
         tocDrawer.classList.remove('open');
       }};
       tocList.appendChild(li);
     }});
   }}
 
+  function renderInfiniteScroll(targetChapterIndex = null) {{
+    const st = currentStory();
+    if (!st || !st.chapters || !st.chapters.length) {{
+      contentSingle.innerHTML = '<p class="empty-notice" style="text-align: center; padding: 40px; color: var(--text-muted);">No chapters found in this story.</p>';
+      return;
+    }}
+
+    let html = '';
+    st.chapters.forEach((ch, idx) => {{
+      html += `
+        <article class="chapter-scroll-section" id="chapter-scroll-${{idx}}" data-chapter-index="${{idx}}">
+          <div class="chapter-title-block">
+            <div class="chapter-eyebrow">Chapter ${{idx + 1}}</div>
+            <h1 class="chapter-main-title">${{escapeHtml(ch.title)}}</h1>
+            <div class="chapter-ornament">❦  ❧</div>
+          </div>
+          <div class="has-drop-cap chapter-body-html">${{ch.html}}</div>
+          <div class="chapter-scroll-footer">
+            <div class="chapter-scroll-divider">✦ ✦ ✦</div>
+            <div class="chapter-meta-tag">${{ch.word_count}} words · ${{ch.reading_time}} read</div>
+          </div>
+        </article>
+      `;
+    }});
+
+    html += `
+      <div class="story-end-block">
+        <div class="story-end-ornament">❦  ❦  ❦</div>
+        <div class="story-end-title">End of ${{escapeHtml(st.title)}}</div>
+        <button class="btn btn-back-to-top" id="btnBackToTop">↑ Return to Top</button>
+      </div>
+    `;
+
+    contentSingle.innerHTML = html;
+
+    const btnBackToTop = document.getElementById('btnBackToTop');
+    if (btnBackToTop) {{
+      btnBackToTop.onclick = () => {{
+        scrollToChapter(0, true);
+      }};
+    }}
+
+    // Apply font size
+    document.querySelectorAll('.page-content, .chapter-body-html').forEach(el => {{
+      el.style.fontSize = currentConfig.font_size + 'px';
+    }});
+
+    const targetIdx = (targetChapterIndex !== null && targetChapterIndex !== undefined) ? targetChapterIndex : currentChapterIndex;
+    if (targetIdx > 0 && targetIdx < st.chapters.length) {{
+      requestAnimationFrame(() => {{
+        scrollToChapter(targetIdx, false);
+      }});
+    }} else {{
+      const ch = st.chapters[0];
+      if (ch) {{
+        headerSingle.textContent = `${{st.title}} — ${{ch.title}}`;
+        footerChapterInfo.textContent = `${{st.title}} — Chapter 1 of ${{st.chapters.length}}`;
+      }}
+      updateScrollHeaderAndFooter();
+    }}
+  }}
+
+  function scrollToChapter(idx, smooth = true) {{
+    const st = currentStory();
+    if (!st || !st.chapters || idx < 0 || idx >= st.chapters.length) return;
+    currentChapterIndex = idx;
+    const target = document.getElementById(`chapter-scroll-${{idx}}`);
+    if (target && bookSingle) {{
+      const targetTop = target.offsetTop - 10;
+      bookSingle.scrollTo({{ top: Math.max(0, targetTop), behavior: smooth ? 'smooth' : 'auto' }});
+    }}
+    const ch = st.chapters[idx];
+    if (ch) {{
+      headerSingle.textContent = `${{st.title}} — ${{ch.title}}`;
+      footerChapterInfo.textContent = `${{st.title}} — Chapter ${{idx + 1}} of ${{st.chapters.length}}`;
+    }}
+    renderToc();
+    syncUrlHash();
+    saveState();
+  }}
+
+  function updateScrollHeaderAndFooter() {{
+    if (currentConfig.layout !== 'scroll') return;
+    const sections = bookSingle.querySelectorAll('.chapter-scroll-section');
+    if (!sections.length) return;
+
+    const containerTop = bookSingle.getBoundingClientRect().top;
+    let activeIdx = currentChapterIndex;
+
+    sections.forEach((sec, idx) => {{
+      const rect = sec.getBoundingClientRect();
+      if (rect.top - containerTop <= 160 && rect.bottom - containerTop > 40) {{
+        activeIdx = idx;
+      }}
+    }});
+
+    if (activeIdx !== currentChapterIndex) {{
+      currentChapterIndex = activeIdx;
+      const ch = currentStory().chapters[currentChapterIndex];
+      if (ch) {{
+        headerSingle.textContent = `${{currentStory().title}} — ${{ch.title}}`;
+        footerChapterInfo.textContent = `${{currentStory().title}} — Chapter ${{currentChapterIndex + 1}} of ${{currentStory().chapters.length}}`;
+        renderToc();
+        syncUrlHash();
+        saveState();
+      }}
+    }}
+
+    const scrollRange = bookSingle.scrollHeight - bookSingle.clientHeight;
+    if (scrollRange > 0) {{
+      const pct = Math.min(100, Math.max(0, Math.round((bookSingle.scrollTop / scrollRange) * 100)));
+      progressFill.style.width = pct + '%';
+      footerProgressInfo.textContent = pct + '% Read';
+    }}
+  }}
+
   function loadChapter(idx, startAtEnd = false, direction = null, specificPage = null) {{
     currentChapterIndex = idx;
     const ch = currentStory().chapters[idx];
     if (!ch) return;
+
+    if (currentConfig.layout === 'scroll') {{
+      scrollToChapter(idx, false);
+      return;
+    }}
 
     if (specificPage !== null && specificPage !== undefined) {{
       currentPagePair = specificPage;
@@ -1517,8 +2733,10 @@ def generate_web_ui(library, config, lan_url=None):
       </div>
       <div class="has-drop-cap">${{rawHtml}}</div>
     `;
-    document.getElementById('singleWordCount').textContent = `${{ch.word_count}} words`;
-    document.getElementById('singleReadTime').textContent = `${{ch.reading_time}} read`;
+    const singleWc = document.getElementById('singleWordCount');
+    if (singleWc) singleWc.textContent = `${{ch.word_count}} words`;
+    const singleRt = document.getElementById('singleReadTime');
+    if (singleRt) singleRt.textContent = `${{ch.reading_time}} read`;
 
     if (direction && currentConfig.layout === 'single') {{
       contentSingle.classList.remove('swish-next', 'swish-prev');
@@ -1822,8 +3040,7 @@ def generate_web_ui(library, config, lan_url=None):
       }}
     }} else {{
       if (currentChapterIndex < currentStory().chapters.length - 1) {{
-        loadChapter(currentChapterIndex + 1, false, 'next');
-        bookSingle.scrollTop = 0;
+        scrollToChapter(currentChapterIndex + 1, true);
       }}
     }}
   }}
@@ -1841,8 +3058,7 @@ def generate_web_ui(library, config, lan_url=None):
       }}
     }} else {{
       if (currentChapterIndex > 0) {{
-        loadChapter(currentChapterIndex - 1, true, 'prev');
-        bookSingle.scrollTop = 0;
+        scrollToChapter(currentChapterIndex - 1, true);
       }}
     }}
   }}
@@ -1880,7 +3096,12 @@ def generate_web_ui(library, config, lan_url=None):
     currentStoryIndex = parseInt(e.target.value, 10);
     currentChapterIndex = 0;
     updateStoryView();
-    loadChapter(0);
+    if (currentConfig.layout === 'scroll') {{
+      renderInfiniteScroll(0);
+      if (bookSingle) bookSingle.scrollTop = 0;
+    }} else {{
+      loadChapter(0);
+    }}
   }};
 
   btnToggleToc.onclick = () => tocDrawer.classList.toggle('open');
@@ -1893,23 +3114,30 @@ def generate_web_ui(library, config, lan_url=None):
   }};
 
   btnLayout.onclick = () => {{
-    currentConfig.layout = currentConfig.layout === 'spread' ? 'single' : 'spread';
+    currentConfig.layout = (currentConfig.layout === 'spread') ? 'scroll' : 'spread';
+    try {{
+      localStorage.setItem('storycrafter_layout_override', currentConfig.layout);
+    }} catch (e) {{}}
     updateLayoutDisplay();
     if (currentConfig.layout === 'spread') {{
-      const ch = currentChapter();
-      if (ch && ch.html) {{
-        splitPagesIntoSpreads(ch.html, ch.title);
-      }}
+      loadChapter(currentChapterIndex, false, null, 0);
+    }} else {{
+      renderInfiniteScroll(currentChapterIndex);
     }}
     saveState();
   }};
+
+  if (btnLayoutDrawer) {{
+    btnLayoutDrawer.onclick = () => btnLayout.click();
+  }}
 
   btnFontInc.onclick = () => {{
     if (currentConfig.font_size < 32) {{
       currentConfig.font_size += 2;
       applyConfig();
-      if (currentChapter().html) {{
-        splitPagesIntoSpreads(currentChapter().html, currentChapter().title);
+      if (currentConfig.layout === 'spread') {{
+        const ch = currentChapter();
+        if (ch && ch.html) splitPagesIntoSpreads(ch.html, ch.title);
       }}
       saveState();
     }}
@@ -1919,8 +3147,9 @@ def generate_web_ui(library, config, lan_url=None):
     if (currentConfig.font_size > 12) {{
       currentConfig.font_size -= 2;
       applyConfig();
-      if (currentChapter().html) {{
-        splitPagesIntoSpreads(currentChapter().html, currentChapter().title);
+      if (currentConfig.layout === 'spread') {{
+        const ch = currentChapter();
+        if (ch && ch.html) splitPagesIntoSpreads(ch.html, ch.title);
       }}
       saveState();
     }}
@@ -1928,6 +3157,16 @@ def generate_web_ui(library, config, lan_url=None):
 
   btnPrevPage.onclick = prevPage;
   btnNextPage.onclick = nextPage;
+
+  let scrollThrottleTimer = null;
+  bookSingle.addEventListener('scroll', () => {{
+    if (currentConfig.layout !== 'scroll') return;
+    if (scrollThrottleTimer) return;
+    scrollThrottleTimer = requestAnimationFrame(() => {{
+      scrollThrottleTimer = null;
+      updateScrollHeaderAndFooter();
+    }});
+  }}, {{ passive: true }});
 
   btnSound.onclick = () => {{
     soundEnabled = !soundEnabled;
@@ -1956,31 +3195,160 @@ def generate_web_ui(library, config, lan_url=None):
     if (e.target === helpModal) helpModal.classList.remove('open');
   }};
 
+  // ATTACH GALLERY & LIGHTBOX LISTENERS
+  if (btnGallery) {{
+    btnGallery.onclick = () => {{
+      if (galleryModal.classList.contains('open')) {{
+        closeGallery();
+      }} else {{
+        openGallery();
+      }}
+    }};
+  }}
+  if (btnCloseGallery) btnCloseGallery.onclick = closeGallery;
+  if (galleryModal) {{
+    galleryModal.onclick = (e) => {{
+      if (e.target === galleryModal) closeGallery();
+    }};
+  }}
+
+  if (gallerySearchInput) {{
+    gallerySearchInput.oninput = () => {{
+      currentSearchQuery = gallerySearchInput.value;
+      btnClearSearch.style.display = currentSearchQuery ? 'block' : 'none';
+      filterAndRenderAssets();
+    }};
+  }}
+  if (btnClearSearch) {{
+    btnClearSearch.onclick = () => {{
+      gallerySearchInput.value = '';
+      currentSearchQuery = '';
+      btnClearSearch.style.display = 'none';
+      filterAndRenderAssets();
+      gallerySearchInput.focus();
+    }};
+  }}
+
+  if (btnCloseLightbox) btnCloseLightbox.onclick = closeLightbox;
+  if (btnLightboxPrev) btnLightboxPrev.onclick = (e) => {{ e.stopPropagation(); prevLightbox(); }};
+  if (btnLightboxNext) btnLightboxNext.onclick = (e) => {{ e.stopPropagation(); nextLightbox(); }};
+  if (lightboxModal) {{
+    lightboxModal.onclick = (e) => {{
+      if (e.target === lightboxModal || e.target.classList.contains('lightbox-stage') || e.target.classList.contains('lightbox-image-wrap')) {{
+        closeLightbox();
+      }}
+    }};
+  }}
+
+  if (btnCopyMdTag) {{
+    btnCopyMdTag.onclick = () => {{
+      const asset = filteredAssets[currentLightboxIndex];
+      if (!asset) return;
+      const md = `![${{asset.filename}}](/api/gallery/asset/${{asset.rel_path}})`;
+      if (navigator.clipboard && navigator.clipboard.writeText) {{
+        navigator.clipboard.writeText(md).then(() => {{
+          showToast('Copied markdown tag to clipboard!');
+        }}).catch(() => {{
+          prompt('Copy markdown tag:', md);
+        }});
+      }} else {{
+        prompt('Copy markdown tag:', md);
+      }}
+    }};
+  }}
+
+  if (btnReloadGallery) {{
+    btnReloadGallery.onclick = reloadGalleryData;
+  }}
+
   // LIVE LIBRARY RELOAD
   async function reloadLibraryData() {{
-    if (!btnReloadLibrary) return;
-    btnReloadLibrary.disabled = true;
-    btnReloadLibrary.textContent = '...';
+    const reloadBtns = [btnReloadLibrary, btnReloadLibraryDrawer].filter(Boolean);
+    reloadBtns.forEach(btn => {{
+      btn.disabled = true;
+      btn._origHtml = btn.innerHTML;
+      btn.textContent = '...';
+    }});
     try {{
-      const res = await fetch('/api/reload');
+      const res = await fetch('/api/reload?t=' + Date.now());
+      if (!res.ok) {{
+        throw new Error(`HTTP ${{res.status}}`);
+      }}
       const freshData = await res.json();
       if (freshData && freshData.stories) {{
+        const prevStoryId = currentStory() ? currentStory().id : null;
+        const prevChapterFilename = currentChapter() ? currentChapter().filename : null;
+        const prevPage = currentPagePair;
+
         stories = freshData.stories;
+        if (freshData.gallery) {{
+          galleryData = freshData.gallery;
+          if (galleryModal && galleryModal.classList.contains('open')) {{
+            renderGallery();
+          }}
+        }}
         populateStorySelect();
+
+        // Restore active story by ID
+        if (prevStoryId) {{
+          const sIdx = stories.findIndex(s => s.id === prevStoryId);
+          if (sIdx !== -1) {{
+            currentStoryIndex = sIdx;
+          }} else {{
+            currentStoryIndex = Math.min(currentStoryIndex, Math.max(0, stories.length - 1));
+          }}
+        }}
         selectStory.value = currentStoryIndex;
         updateStoryView();
-        loadChapter(currentChapterIndex);
+
+        // Restore active chapter by filename
+        let targetChapterIndex = currentChapterIndex;
+        if (prevChapterFilename && currentStory() && currentStory().chapters) {{
+          const cIdx = currentStory().chapters.findIndex(c => c.filename === prevChapterFilename);
+          if (cIdx !== -1) {{
+            targetChapterIndex = cIdx;
+          }} else {{
+            targetChapterIndex = Math.min(currentChapterIndex, Math.max(0, currentStory().chapters.length - 1));
+          }}
+        }}
+
+        if (currentConfig.layout === 'scroll') {{
+          const prevScroll = bookSingle ? bookSingle.scrollTop : 0;
+          renderInfiniteScroll(targetChapterIndex);
+          if (bookSingle && prevScroll > 0) {{
+            bookSingle.scrollTop = prevScroll;
+          }}
+          updateScrollHeaderAndFooter();
+        }} else {{
+          loadChapter(targetChapterIndex, false, null, prevPage);
+        }}
+
+        let totalChapters = 0;
+        stories.forEach(s => {{ totalChapters += (s.chapters ? s.chapters.length : 0); }});
+        showToast(`Reloaded: ${{stories.length}} stories, ${{totalChapters}} chapters`);
+      }} else {{
+        showToast('No stories found');
       }}
     }} catch (err) {{
       console.error('Failed to reload library:', err);
+      showToast('Error reloading stories');
     }} finally {{
-      btnReloadLibrary.disabled = false;
-      btnReloadLibrary.textContent = '↻ Reload';
+      reloadBtns.forEach(btn => {{
+        btn.disabled = false;
+        if (btn._origHtml) {{
+          btn.innerHTML = btn._origHtml;
+        }} else {{
+          btn.innerHTML = '<span>↻</span> <span class="btn-text">Reload</span>';
+        }}
+      }});
     }}
   }}
 
   if (btnReloadLibrary) {{
     btnReloadLibrary.onclick = reloadLibraryData;
+  }}
+  if (btnReloadLibraryDrawer) {{
+    btnReloadLibraryDrawer.onclick = reloadLibraryData;
   }}
 
   // TOUCH & SWIPE NAVIGATION FOR MOBILE & TABLETS
@@ -1990,6 +3358,7 @@ def generate_web_ui(library, config, lan_url=None):
 
   const stage = document.getElementById('bookStage');
   stage.addEventListener('touchstart', (e) => {{
+    if (currentConfig.layout !== 'spread') return;
     if (e.touches.length === 1) {{
       touchStartX = e.touches[0].clientX;
       touchStartY = e.touches[0].clientY;
@@ -1998,6 +3367,7 @@ def generate_web_ui(library, config, lan_url=None):
   }}, {{ passive: true }});
 
   stage.addEventListener('touchend', (e) => {{
+    if (currentConfig.layout !== 'spread') return;
     if (e.changedTouches.length === 1) {{
       const deltaX = e.changedTouches[0].clientX - touchStartX;
       const deltaY = e.changedTouches[0].clientY - touchStartY;
@@ -2015,14 +3385,76 @@ def generate_web_ui(library, config, lan_url=None):
 
   // KEYBOARD NAVIGATION
   window.addEventListener('keydown', (e) => {{
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA') {{
+      if (e.key === 'Escape') {{
+        if (e.target === gallerySearchInput) {{
+          gallerySearchInput.blur();
+        }}
+      }}
+      return;
+    }}
 
-    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'd' || e.key === 'D') {{
+    // Lightbox navigation takes precedence if open
+    if (lightboxModal && lightboxModal.classList.contains('open')) {{
+      if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D' || e.key === ' ') {{
+        e.preventDefault();
+        nextLightbox();
+        return;
+      }} else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {{
+        e.preventDefault();
+        prevLightbox();
+        return;
+      }} else if (e.key === 'Escape') {{
+        e.preventDefault();
+        closeLightbox();
+        return;
+      }}
+    }}
+
+    // Gallery close takes precedence if open
+    if (galleryModal && galleryModal.classList.contains('open')) {{
+      if (e.key === 'Escape') {{
+        e.preventDefault();
+        closeGallery();
+        return;
+      }} else if (e.key === 'g' || e.key === 'G') {{
+        e.preventDefault();
+        closeGallery();
+        return;
+      }}
+    }}
+
+    if (e.key === 'g' || e.key === 'G') {{
       e.preventDefault();
-      nextPage();
+      openGallery();
+      return;
+    }}
+
+    if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {{
+      e.preventDefault();
+      if (currentConfig.layout === 'scroll') {{
+        if (currentChapterIndex < currentStory().chapters.length - 1) {{
+          scrollToChapter(currentChapterIndex + 1, true);
+        }}
+      }} else {{
+        nextPage();
+      }}
     }} else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {{
       e.preventDefault();
-      prevPage();
+      if (currentConfig.layout === 'scroll') {{
+        if (currentChapterIndex > 0) {{
+          scrollToChapter(currentChapterIndex - 1, true);
+        }}
+      }} else {{
+        prevPage();
+      }}
+    }} else if (e.key === ' ') {{
+      e.preventDefault();
+      if (currentConfig.layout === 'scroll') {{
+        bookSingle.scrollBy({{ top: Math.round(bookSingle.clientHeight * 0.8), behavior: 'smooth' }});
+      }} else {{
+        nextPage();
+      }}
     }} else if (e.key === 'm' || e.key === 'M') {{
       tocDrawer.classList.toggle('open');
     }} else if (e.key === 's' || e.key === 'S') {{
@@ -2048,6 +3480,8 @@ def generate_web_ui(library, config, lan_url=None):
     }} else if (e.key === 'Escape') {{
       tocDrawer.classList.remove('open');
       helpModal.classList.remove('open');
+      if (galleryModal) galleryModal.classList.remove('open');
+      closeLightbox();
     }}
   }});
 
@@ -2110,18 +3544,23 @@ class StoryReaderWebHandler(SimpleHTTPRequestHandler):
         if path == "/" or path == "/index.html":
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
-            self.send_header("Cache-Control", "no-cache")
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
             self.end_headers()
-            library = self.server.get_library()
+            library = self.server.reload_library()
+            gallery = self.server.get_gallery()
             config = load_config()
             lan_url = getattr(self.server, "lan_url", None)
-            html_content = generate_web_ui(library, config, lan_url=lan_url)
+            html_content = generate_web_ui(library, config, gallery=gallery, lan_url=lan_url)
             self.wfile.write(html_content.encode("utf-8"))
 
         elif path == "/api/library":
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Cache-Control", "no-cache")
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
             self.end_headers()
             library = self.server.get_library()
             self.wfile.write(json.dumps({"stories": library}).encode("utf-8"))
@@ -2129,10 +3568,44 @@ class StoryReaderWebHandler(SimpleHTTPRequestHandler):
         elif path == "/api/reload":
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.send_header("Cache-Control", "no-cache")
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
             self.end_headers()
             library = self.server.reload_library()
-            self.wfile.write(json.dumps({"status": "ok", "stories": library}).encode("utf-8"))
+            gallery = self.server.get_gallery()
+            self.wfile.write(json.dumps({"status": "ok", "stories": library, "gallery": gallery}).encode("utf-8"))
+
+        elif path == "/api/gallery":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
+            self.end_headers()
+            gallery = self.server.reload_gallery()
+            self.wfile.write(json.dumps(gallery).encode("utf-8"))
+
+        elif path.startswith("/api/gallery/asset/"):
+            import mimetypes
+            import shutil
+            import urllib.parse
+            rel_req = urllib.parse.unquote(path[len("/api/gallery/asset/"):])
+            assets_dir = (BASE_DIR / "assets").resolve()
+            target_file = (assets_dir / rel_req).resolve()
+            if target_file.is_file() and (assets_dir == target_file.parent or assets_dir in target_file.parents):
+                mime_type, _ = mimetypes.guess_type(str(target_file))
+                if not mime_type:
+                    mime_type = "image/png" if target_file.suffix.lower() == ".png" else "application/octet-stream"
+                self.send_response(200)
+                self.send_header("Content-Type", mime_type)
+                self.send_header("Content-Length", str(target_file.stat().st_size))
+                self.send_header("Cache-Control", "public, max-age=86400")
+                self.end_headers()
+                with open(target_file, "rb") as f:
+                    shutil.copyfileobj(f, self.wfile)
+            else:
+                self.send_error(404, f"Gallery Asset Not Found: {path}")
 
         elif path == "/api/config":
             self.send_response(200)
@@ -2200,20 +3673,34 @@ class StoryReaderWebHandler(SimpleHTTPRequestHandler):
 
             parts = [p for p in sub_path.split("/") if p and p != "assets"]
             target_file = None
-            if len(parts) >= 2:
+            assets_dir = (BASE_DIR / "assets").resolve()
+
+            # First, check if sub_path resolves inside root \assets
+            cand_global = (assets_dir / "/".join(parts)).resolve()
+            if cand_global.exists() and cand_global.is_file() and (assets_dir == cand_global.parent or assets_dir in cand_global.parents):
+                target_file = cand_global
+
+            # Next, if 2 or more parts: check story-level assets
+            if not target_file and len(parts) >= 2:
                 story_name = parts[0]
                 filename = parts[-1]
                 cand = (BASE_DIR / story_name / "assets" / filename).resolve()
                 if cand.exists() and cand.is_file():
                     target_file = cand
-            elif len(parts) == 1:
+
+            # Next, if 1 part: search root \assets first, then all story assets
+            if not target_file and len(parts) == 1:
                 filename = parts[0]
-                for s_dir in BASE_DIR.iterdir():
-                    if s_dir.is_dir():
-                        cand = (s_dir / "assets" / filename).resolve()
-                        if cand.exists() and cand.is_file():
-                            target_file = cand
-                            break
+                cand_root = (assets_dir / filename).resolve()
+                if cand_root.exists() and cand_root.is_file():
+                    target_file = cand_root
+                else:
+                    for s_dir in BASE_DIR.iterdir():
+                        if s_dir.is_dir():
+                            cand = (s_dir / "assets" / filename).resolve()
+                            if cand.exists() and cand.is_file():
+                                target_file = cand
+                                break
 
             if target_file and BASE_DIR in target_file.parents and target_file.is_file():
                 mime_type, _ = mimetypes.guess_type(str(target_file))
@@ -2283,6 +3770,7 @@ class StoryReaderServer(ThreadingHTTPServer):
             else:
                 raise
         self._library = None
+        self._gallery = None
         self._lock = threading.Lock()
 
     def server_bind(self):
@@ -2303,7 +3791,19 @@ class StoryReaderServer(ThreadingHTTPServer):
     def reload_library(self):
         with self._lock:
             self._library = scan_full_library()
+            self._gallery = scan_assets_gallery()
             return self._library
+
+    def get_gallery(self):
+        with self._lock:
+            if self._gallery is None:
+                self._gallery = scan_assets_gallery()
+            return self._gallery
+
+    def reload_gallery(self):
+        with self._lock:
+            self._gallery = scan_assets_gallery()
+            return self._gallery
 
 
 def run_server(host="0.0.0.0", port=8080, open_browser=True, lan_mode=True):

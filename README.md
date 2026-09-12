@@ -100,6 +100,7 @@ A responsive, feature-rich web application version of StoryReader powered by a P
   - **Responsive Reflow**: Adapts smoothly to mobile screens (<820px) without cramped text or horizontal scrollbars.
   - **URL Deep-Linking**: URL hash routing (`#story=...&chapter=...&page=...`) enables bookmarking, browser back/forward navigation, and instant page refreshes without losing place.
   - **Live Library Reload**: "↻ Reload" button in the Table of Contents drawer dynamically rescans story chapters without restarting the server.
+  - **Root Asset Gallery**: Standalone media asset browser (`\assets`) accessible via the top bar `🖼️ Gallery` button or `G` shortcut, featuring folder category filtering, real-time search, responsive card grid, and an interactive lightbox with markdown snippet copying.
   - **Fullscreen Reading**: Fullscreen mode (`F` shortcut) for distraction-free reading.
   - **Web Audio Paper Sounds**: Realistic fibrous paper swipe rustle synthesized via Web Audio API.
   - **PWA Ready**: Web app manifest and icons support "Add to Home Screen" on iOS and Android.
