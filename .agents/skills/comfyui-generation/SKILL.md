@@ -80,23 +80,25 @@ A complete, production-ready runner utility is included in this skill at:
 
 ### Command-Line Usage:
 
+Set your server endpoint in your environment (e.g. `$env:COMFYUI_SERVER_URL = "http://127.0.0.1:8188"` or remote cloud host):
+
 ```powershell
 # 1. Health check only
 python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.py `
-  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud" `
-  --workflow "C:\StoryCrafter\anima_absolute_cinema.json" `
+  --server "$env:COMFYUI_SERVER_URL" `
+  --workflow "anima_absolute_cinema.json" `
   --stats-only
 
 # 2. Run workflow and download output
 python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.py `
-  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud" `
-  --workflow "C:\StoryCrafter\anima_absolute_cinema.json" `
+  --server "$env:COMFYUI_SERVER_URL" `
+  --workflow "anima_absolute_cinema.json" `
   --output-dir "C:\StoryCrafter\assets"
 
 # 3. Run with parameter overrides (prompt, seed, steps, resolution)
 python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.py `
-  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud" `
-  --workflow "C:\StoryCrafter\anima_absolute_cinema.json" `
+  --server "$env:COMFYUI_SERVER_URL" `
+  --workflow "anima_absolute_cinema.json" `
   --prompt "masterpiece, best quality, 1girl, silver hair, glowing eyes, cinematic lighting" `
   --seed 42 `
   --steps 35 `
@@ -104,8 +106,8 @@ python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.
 
 # 4. Landscape run (width > height; upscale auto-derives to preserve orientation)
 python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.py `
-  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud" `
-  --workflow "C:\StoryCrafter\anima_absolute_cinema.json" `
+  --server "$env:COMFYUI_SERVER_URL" `
+  --workflow "anima_absolute_cinema.json" `
   --width 1216 --height 832 `
   --randomize-seed `
   --output-dir "C:\StoryCrafter\assets\landscape_nsfw"
@@ -286,10 +288,10 @@ def random_seed() -> int:
 ```powershell
 # Randomize seed every run
 python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.py `
-  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud" `
-  --workflow "C:\StoryCrafter\anima_absolute_cinema.json" `
+  --server "$env:COMFYUI_SERVER_URL" `
+  --workflow "anima_absolute_cinema.json" `
   --randomize-seed `
-  --output-dir "C:\StoryCrafter"
+  --output-dir "C:\StoryCrafter\assets"
 ```
 
 ### In Batch Scripts
@@ -336,23 +338,15 @@ Collect and verify these for the character:
 reimu hakurei, touhou, brown hair, long hair, hair ribbon, hair bow, red ribbon, brown eyes, miko, detached sleeves, red skirt
 ```
 
-### Verified Reference Examples
+### Representative Reference Examples
 
-| Character | Danbooru Tag (Search) | Anima Prompt Format (Spaces) | Series Tag | Key Appearance Tags (Prompt Ready) |
-|-----------|-----------------------|------------------------------|------------|-----------------------------------|
-| Reimu Hakurei | `reimu_hakurei` | `reimu hakurei` | `touhou` | `brown hair, long hair, hair bow, red ribbon, brown eyes, miko, detached sleeves, red skirt, sarashi` |
-| Agnes Tachyon (casual) | `agnes_tachyon_(casual)_(umamusume)` | `agnes tachyon \(casual\) \(umamusume\)` | `umamusume` | `large breasts, smug, off shoulder sweater, necklace, pendant` |
-| Matikanetannhauser (Clippety-Tippety-Clop) | `matikanetannhauser_(clippety-tippety-clop)_(umamusume)` | `matikane tannhauser \(clippety-tippety-clop\) \(umamusume\), clippety-tippety-clop` | `umamusume` | `horse ears, horse tail, brown hair, streaked hair, white forelock, yellow eyes, amber eyes, ear ornament, red beads, blue beads, blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt` |
-| Emilia (Re:Zero) | `emilia_(re:zero)` | `emilia \(re:zero\)` | `re:zero` | `silver hair, white hair, grey hair, very long hair, long hair, crown braid, blunt bangs, hair flower, white flower, white rose, x hair ornament, purple ribbon, hair ribbon, pointy ears, elf, purple eyes, bright pupils, white dress, detached collar, green gem necklace, detached sleeves, white pleated skirt` |
-| Echidna (Re:Zero, Witch of Greed) | `echidna_(re:zero)` | `echidna \(re:zero\)` | `re:zero` | `mature female, adult woman, very long hair, white hair, long hair, bangs, hair between eyes, sidelocks, butterfly hair ornament, purple eyes, medium breasts, black long layered dress, black capelet, black high heels` |
-| Moona Hoshinova | `moona_hoshinova` | `(moona hoshinova \(hololive\):1.2)` | `hololive, hololive indonesia` | `purple hair, gradient hair, yellow tips, very long hair, long hair, purple eyes, large breasts` |
-| Moona Hoshinova (1st costume) | `moona_hoshinova_(1st_costume)` | `(moona hoshinova \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `black choker, constellation print, single earring, fishnets, thigh boots` |
-| Airani Iofifteen | `airani_iofifteen` | `(airani iofifteen \(hololive\):1.2)` | `hololive, hololive indonesia` | `pink hair, long hair, side ponytail, sidelocks, purple eyes, palette hair ornament, medium breasts` |
-| Airani Iofifteen (1st costume) | `airani_iofifteen_(1st_costume)` | `(airani iofifteen \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `white shirt, blue overalls, palette hair ornament, side ponytail` |
-| Ayunda Risu | `ayunda_risu` | `(ayunda risu \(hololive\):1.2)` | `hololive, hololive indonesia` | `squirrel girl, squirrel ears, squirrel tail, brown hair, long hair, low twintails, green eyes, leaf hair ornament, acorn pendant, medium breasts` |
-| Ayunda Risu (1st costume) | `ayunda_risu_(1st_costume)` | `(ayunda risu \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `pink beret, red bow, white dress, pink cardigan, thighhighs` |
+| Character Type | Danbooru Tag (Search) | Anima Prompt Format (Spaces) | Series Tag | Key Appearance Tags (Prompt Ready) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Standard Franchise Character** (Reimu Hakurei) | `reimu_hakurei` | `reimu hakurei` | `touhou` | `brown hair, long hair, hair bow, red ribbon, brown eyes, miko, detached sleeves, red skirt, sarashi` |
+| **Decomposed Complex Attire** (Matikane Tannhauser) | `matikanetannhauser_(clippety-tippety-clop)_(umamusume)` | `matikane tannhauser \(clippety-tippety-clop\) \(umamusume\), clippety-tippety-clop` | `umamusume` | `horse ears, horse tail, brown hair, streaked hair, white forelock, yellow eyes, amber eyes, ear ornament, red beads, blue beads, blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt` |
 
-> Add newly researched characters to the table above for future reference.
+> For the comprehensive catalog of tested character tags across various franchises (Umamusume, Hololive, Re:Zero, Touhou), see:
+> **[references/anima-nsfw-prompting.md §14 (Verified Character Tag Reference Catalog)](references/anima-nsfw-prompting.md#14-verified-character-tag-reference-catalog)**
 
 ---
 
@@ -465,20 +459,20 @@ For comprehensive documentation on common SDXL/Pony/Anima diffusion failure mode
 
 > **[references/failure-modes-and-remediations.md](references/failure-modes-and-remediations.md)**
 
-### Key Failure Modes Cataloged in Reference:
-1. **The "Floor Chest / Collarbone" Glitch**: Downward vertical POV in rear-entry/doggystyle -> use Side 3/4 Perspective.
-2. **The "Motion Lines / Bouncing" Breast Ghosting Trap**: Bouncing/motion tags cause secondary flesh silhouettes/dual breasts -> express speed through diegetic consequences (`flying sweat droplets, panting, arched back`).
-3. **The Athletic Environment "Spontaneous Swimsuit / Leotard" Bias**: Sport contexts force unwanted swimwear -> enforce `completely naked, bare skin` and negative bans.
-4. **Multi-Partner / "2boys" Contamination**: Complex multi-action contact generates duplicate males -> anchor with `1boy, solo male, single male`.
-5. **Inverted Perspective Collapse**: Top-down head-first views in post-coital aftermath invert limbs -> ground scene with side angles (`lying on side, cuddle, mutual exhaustion`).
-6. **Character Uniform Tag Variants & Redundant Clothing Suppression**: Full uniform tags represent complete outfits -> remove generic clothing descriptors (`jacket, shirt`) to avoid overriding default uniform patterns.
-7. **Facesitting & Downward 69 Oral "Severed Head" Glitch**: Direct top-down POV pins squashed/severed heads at bottom border -> switch to dynamic Side 3/4 perspective with braced limbs.
-8. **The "Vertical Monolith / Cock Pole" Foreshortening Glitch**: Upward vertical POV in pre-penetration/frottage causes extreme perspective distortion and disconnected genitalia -> switch to seated/reclined Side 3/4 Perspective with explicit lap grinding and pelvic contact.
-10. **The "Multi-Arm Hallucination & Spontaneous Puddle" Trap**: Intimate close-up missionary causing 4 arms and fluid leaking into background water pools -> explicitly disambiguate each character's arm placement, ban `4 arms, extra arms`, and ban `water, puddle, pool, onsen` on dry terrain.
-11. **The Protagonist / "You" Face & Feature Clash (Self-Insert Immersion)**: When the second character represents "you", always add `faceless male` or `faceless female` to preserve reader self-insertion, maintain full visual focus on the heroine, and eliminate ear/feature bleed.
-12. **The "Generic Casual / T-Shirt Fallback" on Elaborate Racing Silks**: Decompose intricate costumes into 3–5 signature structural pieces (`blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt`) rather than relying purely on under-weighted variant tags.
-13. **Kinetic Speed & Racing Velocity vs. Anatomical Smearing**: Keep character anatomy crisp and articulate while scoping motion effects to `motion blur background`, flying turf debris, pinned ears, and clenched teeth.
-14. **Cunnilingus Frontal / POV Perspective Collapse**: Frontal low-angle or POV cunnilingus (`pov, male lying on back, head directly under crotch`) hyperextends the male neck into a vertical column with squashed face — looks weird. Use Side 3/4 instead: `side view, 3/4 view, kneeling in front, head tilted back, mouth open`. See §11 and failure-modes §15.
+### Core Diagnostic Categories & Quick Solutions:
+
+1. **Camera & Perspective Collapse (Glitch Modes 1, 5, 7, 8, 14)**:
+   - *Symptom*: Extreme downward POV or top-down angles cause severed heads, squashed faces, hyperextended necks (especially in oral/cunnilingus or doggystyle), or floating vertical genitalia.
+   - *Fix*: Switch to **Side 3/4 Perspective**: `(side view:1.2), (3/4 view:1.1)`. De-emphasize POV with `(pov:0.7)`. Explicitly anchor braced limbs on furniture/walls.
+2. **Anatomical & Kinetic Artifacts (Glitch Modes 2, 4, 10, 13)**:
+   - *Symptom*: Motion lines creating dual breasts/flesh ghosting; multi-arm hallucinations (4 arms) in close missionary; duplicate partners (`2boys`).
+   - *Fix*: Never prompt motion blur on anatomy—express velocity through consequences (`flying sweat droplets, panting, arched back, motion blur background`). Explicitly disambiguate arm positions (`one arm around neck, one hand braced on bed`) and enforce `1boy, solo male`.
+3. **Attire & Environment Bleed (Glitch Modes 3, 6, 12)**:
+   - *Symptom*: Athletic environments forcing spontaneous swimsuits; elaborate costumes defaulting to generic casual t-shirts.
+   - *Fix*: For full nudity, enforce `completely naked, bare skin`. For complex racing silks or elaborate uniforms, decompose the outfit into **3–5 signature structural pieces** (e.g. `blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt`) and negate `t-shirt, casual clothes`.
+4. **Self-Insert & POV Feature Clash (Glitch Mode 11)**:
+   - *Symptom*: Protagonist eyes/features rendering on the partner or animal ears bleeding onto the reader.
+   - *Fix*: Always tag `faceless male, eyes hidden` or `faceless female, eyes hidden` with negative `male eyes, detailed eyes on male`.
 
 ---
 
@@ -577,7 +571,7 @@ Quick start via the Krea 2 runner (`scripts/krea2_generate.py`, proven 2026-09-1
 
 ```powershell
 python .agents/skills/comfyui-generation/scripts/krea2_generate.py `
-  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud/" `
+  --server "$env:COMFYUI_SERVER_URL" `
   --prompt "Amateur smartphone photo of ..." `
   --randomize-seed `
   --output-dir "C:\StoryCrafter\assets"

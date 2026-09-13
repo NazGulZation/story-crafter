@@ -260,4 +260,25 @@ Once an image is generated and saved:
 > For complete field-tested diagnostic analysis and full prompt remediation tables, see:
 > **[failure-modes-and-remediations.md](failure-modes-and-remediations.md)**
 
+---
+
+## 14. Verified Character Tag Reference Catalog
+
+When prompting named characters in Anima/Qwen3, use these verified canonical tags, series tags, and structural appearance tokens:
+
+| Character | Danbooru Tag (Search) | Anima Prompt Format (Spaces) | Series Tag | Key Appearance Tags (Prompt Ready) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Reimu Hakurei** | `reimu_hakurei` | `reimu hakurei` | `touhou` | `brown hair, long hair, hair bow, red ribbon, brown eyes, miko, detached sleeves, red skirt, sarashi` |
+| **Agnes Tachyon (casual)** | `agnes_tachyon_(casual)_(umamusume)` | `agnes tachyon \(casual\) \(umamusume\)` | `umamusume` | `large breasts, smug, off shoulder sweater, necklace, pendant` |
+| **Matikane Tannhauser (Clippety-Tippety-Clop)** | `matikanetannhauser_(clippety-tippety-clop)_(umamusume)` | `matikane tannhauser \(clippety-tippety-clop\) \(umamusume\), clippety-tippety-clop` | `umamusume` | `horse ears, horse tail, brown hair, streaked hair, white forelock, yellow eyes, amber eyes, ear ornament, red beads, blue beads, blue casquette cap, red corset, white blouse, cutaway shoulders, blue skirt` |
+| **Emilia** | `emilia_(re:zero)` | `emilia \(re:zero\)` | `re:zero` | `silver hair, white hair, grey hair, very long hair, long hair, crown braid, blunt bangs, hair flower, white flower, white rose, x hair ornament, purple ribbon, hair ribbon, pointy ears, elf, purple eyes, bright pupils, white dress, detached collar, green gem necklace, detached sleeves, white pleated skirt` |
+| **Echidna (Witch of Greed)** | `echidna_(re:zero)` | `echidna \(re:zero\)` | `re:zero` | `mature female, adult woman, very long hair, white hair, long hair, bangs, hair between eyes, sidelocks, butterfly hair ornament, purple eyes, medium breasts, black long layered dress, black capelet, black high heels` |
+| **Moona Hoshinova** | `moona_hoshinova` | `(moona hoshinova \(hololive\):1.2)` | `hololive, hololive indonesia` | `purple hair, gradient hair, yellow tips, very long hair, long hair, purple eyes, large breasts` |
+| **Moona Hoshinova (1st costume)** | `moona_hoshinova_(1st_costume)` | `(moona hoshinova \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `black choker, constellation print, single earring, fishnets, thigh boots` |
+| **Airani Iofifteen** | `airani_iofifteen` | `(airani iofifteen \(hololive\):1.2)` | `hololive, hololive indonesia` | `pink hair, long hair, side ponytail, sidelocks, purple eyes, palette hair ornament, medium breasts` |
+| **Airani Iofifteen (1st costume)** | `airani_iofifteen_(1st_costume)` | `(airani iofifteen \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `white shirt, blue overalls, palette hair ornament, side ponytail` |
+| **Ayunda Risu** | `ayunda_risu` | `(ayunda risu \(hololive\):1.2)` | `hololive, hololive indonesia` | `squirrel girl, squirrel ears, squirrel tail, brown hair, long hair, low twintails, green eyes, leaf hair ornament, acorn pendant, medium breasts` |
+| **Ayunda Risu (1st costume)** | `ayunda_risu_(1st_costume)` | `(ayunda risu \(1st costume\) \(hololive\):1.2)` | `hololive, hololive indonesia` | `pink beret, red bow, white dress, pink cardigan, thighhighs` |
+
+
 

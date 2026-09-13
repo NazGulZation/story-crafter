@@ -2,7 +2,7 @@
 
 Proven flow for `https://huggingface.co/login` -> `https://huggingface.co/` + Space `https://huggingface.co/spaces/kulkas2pintu/QWEN_EDIT_IMAGE`.
 
-Requires the debug Edge from the parent `browser-access` skill launched with `--remote-allow-origins=*` (websocket CDP), plus `C:\Python312\python.exe` + `websocket-client`.
+Requires the debug Edge from the parent `browser-access` skill launched with `--remote-allow-origins=*` (websocket CDP), plus `python` + `websocket-client`.
 
 ## Form facts (plain POST, not React state)
 
@@ -34,7 +34,7 @@ ws.close()
 
 ```powershell
 # Run without persisting creds (single invocation, then clear):
-$env:HF_EMAIL='user@example.com'; $env:HF_PASS='...'; C:\Python312\python.exe login.py; $env:HF_EMAIL=$null; $env:HF_PASS=$null
+$env:HF_EMAIL='user@example.com'; $env:HF_PASS='...'; python login.py; $env:HF_EMAIL=$null; $env:HF_PASS=$null
 ```
 
 ```python

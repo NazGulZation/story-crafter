@@ -20,14 +20,15 @@ Agent has no native browser tool. Control Edge via Chrome DevTools Protocol (CDP
 - Port `9222` is usually occupied by Edge background process (`msedge.exe --no-startup-window --win-session-start`) and returns `404 Not Found` on `/`, `/json/version`, `/json/list`. It may also show an `ESTABLISHED` connection from Antigravity `chrome-devtools-mcp`. Do NOT use `9222`.
 - Never kill or retrofit the user's main Edge. Always launch a separate debuggable instance with a separate `--user-data-dir` and a free port (e.g. `9333`).
 - Available runtimes in this workspace: `node v18`, `python 3.12`, `curl.exe`, PowerShell 5.1. Node 18 has no stable global `WebSocket`; prefer HTTP-only CDP endpoints unless a websocket lib is installed.
-- Approved temp root: `C:\Users\fidy7\AppData\Local\Temp\opencode`. Use subdir `edge-debug` for the debug profile.
+- Approved temp root: `$env:TEMP\opencode` (e.g. `C:\Users\<user>\AppData\Local\Temp\opencode`). Use subdir `edge-debug` for the debug profile.
 - Edge binary: `C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe`.
 
 ## 2. Launch (PowerShell via bash tool)
 
 ```powershell
-New-Item -ItemType Directory -Path "C:\Users\fidy7\AppData\Local\Temp\opencode\edge-debug" -Force
-Start-Process -FilePath "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList "--remote-debugging-port=9333","--remote-allow-origins=*","--user-data-dir=C:\Users\fidy7\AppData\Local\Temp\opencode\edge-debug","--no-first-run","--no-default-browser-check","about:blank"
+$debugDir = "$env:TEMP\opencode\edge-debug"
+New-Item -ItemType Directory -Path $debugDir -Force
+Start-Process -FilePath "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -ArgumentList "--remote-debugging-port=9333","--remote-allow-origins=*","--user-data-dir=$debugDir","--no-first-run","--no-default-browser-check","about:blank"
 ```
 > `--remote-allow-origins=*` is required for websocket CDP (`Runtime.evaluate`, form fill, login verification). Without it, HTTP `/json/*` works but websocket handshake fails with `403 Forbidden ... Use --remote-allow-origins`.
 
@@ -63,10 +64,10 @@ Successful navigation is proven when `/json/list` shows e.g. `page :: <query> - 
 
 ## 6. Websocket CDP via Python (Runtime.evaluate)
 
-HTTP covers navigation, but form fill, login, and in-page verification need websocket. Verified stack: `C:\Python312\python.exe` + `websocket-client` (`import websocket`).
+HTTP covers navigation, but form fill, login, and in-page verification need websocket. Verified stack: `python` + `websocket-client` (`import websocket`).
 
 ```powershell
-C:\Python312\python.exe -c "import websocket; print(websocket.__version__)"
+python -c "import websocket; print(websocket.__version__)"
 ```
 
 Pattern:
@@ -85,14 +86,8 @@ ws.close()
 
 For async page fetch, set `"awaitPromise": True` and use an `async` IIFE.
 
-## 7. Reference: Hugging Face Login
+## 7. Reference: Form Fill & Login Automation
 
-Proven HF login flow (form fill + submit + `whoami-v2` verification) is kept as a separate reference doc to keep this SKILL.md lean:
+Proven login flow (form fill + submit + `whoami-v2` verification) is kept as a separate reference doc:
 
-- See [references/huggingface-login.md](references/huggingface-login.md) — verified 2026-09-10 against `https://huggingface.co/login` and Space `https://huggingface.co/spaces/kulkas2pintu/QWEN_EDIT_IMAGE`. Creds only via `HF_EMAIL`/`HF_PASS` env, never written to disk.
-
-## 8. Reference: Gradio Image-Edit Test
-
-Proven Single Image Edit flow on the Omni Space (Edge headless proof screenshots + `gradio_client` submit -> download + visual verify) — kept as a separate reference doc:
-
-- See [references/gradio-image-edit.md](references/gradio-image-edit.md) — verified 2026-09-10 against `https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor` (`/edit_image_interface` via `handle_file`, result `img` on `assets.omniapi.net` at output resolution, UA+Referer download, rainbow-prompt verification).
+- See [references/huggingface-login.md](references/huggingface-login.md) — credentials passed only via environment variables (`HF_EMAIL`/`HF_PASS`), never written to disk or logs.

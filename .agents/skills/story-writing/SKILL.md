@@ -15,25 +15,21 @@ A disciplined, modular framework for crafting compelling narrative fiction, rich
 
 ## 1. Absolute Constraints: Forbidden Names & Tropes
 
-The following elements are strictly forbidden across all creative writing, character creation, worldbuilding, and story drafting. Do not use these exact names, close phonetic variants, or simple re-skins:
+All creative writing, character generation, worldbuilding, and drafting must strictly comply with the single source of truth defined in [GEMINI.md §1 & §6](file:///c:/StoryCrafter/GEMINI.md). Do not use banned names, locations, creatures, or close phonetic variants:
 
-```
-Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria, Whispering Wood, Dragon/Drakes, Garrick, Bram, Vaelrian, Vane, Aethelgard, Harrick, Varis, Corin, Silas, Monster Crawler, Monster Dog, Sunken Crypt/Hollow.
-```
+### Core Craft Prohibitions & Mandated Alternatives:
 
-### Breakdown of Forbidden Elements:
-
-| Category | Forbidden Elements | Mandated Alternative Strategy |
+| Category | Policy & Reference | Mandated Creative Strategy |
 | :--- | :--- | :--- |
-| **Forbidden Locations** | `Sunken Pass`, `Oakhaven`, `Whispering Wood`, `Sunken Crypt`, `Sunken Hollow` | Create geologically and historically specific topiary names (e.g., *Skelter Gap*, *Cormorant Reach*, *Marrow-Fen*, *Thimble-in-the-Clay*, *The Red Kilns*). |
-| **Forbidden Names** | `Julian`, `Rian`, `Mia`, `Elyria`, `Garrick`, `Bram`, `Vaelrian`, `Vane`, `Aethelgard`, `Harrick`, `Varis`, `Corin`, `Silas` | Base naming on authentic phonetic roots and linguistic traditions (e.g., Anglo-Saxon, Old Norse, Cornish, Slavic, Ugaritic, Basque) consistent with the character's culture. |
-| **Forbidden Beasts & Creatures** | `Dragon` / `Drakes`, `Monster Crawler`, `Monster Dog` | Construct creatures with coherent ecology, realistic sensory organs, predatory behavior, and environmental adaptation rather than generic fantasy monsters. |
-| **Forbidden Plot Tropes** | `Deus Ex Machina`, `Ass-Pulls`, `Unforeshadowed Plot Armor`, `Opening Alley Thug / Mugger Encounter`, `Accountant Assistant / Junior Ledger Clerk Subordination`, `Mary Sue / Gary Stu Protagonists`, `Omniscient Mastermind / Frictionless Infallibility` | Ground every climax in earned causality. Avoid having the protagonist assaulted by alley muggers at the start or taking subordinate junior bookkeeper employment. Never allow the protagonist to be an infallible, omniscient mastermind whose plans always succeed without friction, blind spots, or setbacks. Establish their rise via independent commercial arbitrage, debt leverage, contract law, or commercial syndication, while subjecting every scheme to realistic friction, competent opposition, and costly trade-offs. |
-| **Forbidden Earth Idioms & Eponyms in Fantasy** | `Achilles' heel/tendon`, `Pyrrhic victory`, `Romanesque`, `Gothic`, `Byzantine`, `Damascened`, `Spanish/Flemish/Swedish/Andalusian/Persian/Parisian`, `Latin script`, `Christian mercy/charity`, Earth saints | Never use Earth-derived idioms, architectural styles, demonyms, languages, religions, or eponyms in secondary fantasy worlds. Always translate into setting-authentic equivalents (e.g., *heel-cords*, *ruinous triumph*, *Old Imperial basalt*, *High Imperial script*, *divine mercy of the Light*, *Wester-Reach merino*, *southern blood-stallions*). |
-| **Forbidden Meta-Commentary & Structural Signposts** | `"Act One is concluded"`, `"Now, we begin the next arc"`, `"The chapter ends now"`, `### [END OF...]`, narrator fourth-wall breaks | Stay 100% within the diegetic narrative reality and character perspective. End scenes with concrete in-world sensory beats, actions, or spoken orders. Never allow characters or narration to signpost plot structure, acts, or arcs. |
+| **Forbidden Locations** | See [GEMINI.md §1](file:///c:/StoryCrafter/GEMINI.md) (`Sunken Pass`, `Oakhaven`, `Whispering Wood`, `Sunken Crypt/Hollow`, etc.) | Create geologically and historically specific topiary names (e.g., *Skelter Gap*, *Cormorant Reach*, *Marrow-Fen*, *Thimble-in-the-Clay*, *The Red Kilns*). |
+| **Forbidden Names** | See [GEMINI.md §1](file:///c:/StoryCrafter/GEMINI.md) (`Julian`, `Rian`, `Mia`, `Garrick`, `Bram`, `Vaelrian`, `Varis`, `Silas`, etc.) | Base naming on authentic phonetic roots and linguistic traditions (e.g., Anglo-Saxon, Old Norse, Cornish, Slavic, Ugaritic, Basque) consistent with the character's culture. |
+| **Forbidden Beasts & Creatures** | See [GEMINI.md §1](file:///c:/StoryCrafter/GEMINI.md) (`Dragon`/`Drakes`, `Monster Crawler`, `Monster Dog`, etc.) | Construct creatures with coherent ecology, realistic sensory organs, predatory behavior, and environmental adaptation rather than generic fantasy monsters. |
+| **Forbidden Narrative & Plot Tropes** | No `Deus Ex Machina`, no unseeded plot armor, no opening alley brawls, no subordinate clerk employment, no Mary Sue omniscient infallibility | Ground every climax in earned causality. Protagonists must rise through independent commercial arbitrage, debt leverage, contract law, or commercial syndication rather than subordinate clerk employment or street mugger beatdowns. Subject every scheme to realistic friction, competent opposition, and costly trade-offs. |
+| **Forbidden Earth Idioms & Eponyms in Fantasy** | See [GEMINI.md §6](file:///c:/StoryCrafter/GEMINI.md) (No Earth idioms, eponyms, architectural descriptors, demonyms, languages, or religions in fantasy) | Always translate into setting-authentic equivalents (e.g., *heel-cords*, *ruinous triumph*, *Old Imperial basalt*, *High Imperial script*, *divine mercy of the Light*, *Wester-Reach merino*, *southern blood-stallions*). |
+| **Forbidden Meta-Commentary & Structural Signposts** | See [GEMINI.md §2](file:///c:/StoryCrafter/GEMINI.md) (No `"Act One is concluded"`, `"Now, we begin the next arc"`, `"The chapter ends now"`, etc.) | Stay 100% within the diegetic narrative reality and character perspective. End scenes with concrete in-world sensory beats, actions, or spoken orders. Never signpost plot structure, acts, or arcs. |
 
 > [!IMPORTANT]
-> **Anti-Cliché Directive**: In addition to the banned list, systematically reject lazy fantasy tropes. When tempted to name a town "Riverwood" or "Shadowfen", or give a character an overused apostrophe-laden elven name, pause and construct culturally grounded nomenclature based on authentic linguistic roots.
+> **Anti-Cliché Directive**: In addition to the banned list in [GEMINI.md](file:///c:/StoryCrafter/GEMINI.md), systematically reject lazy fantasy tropes. When tempted to name a town "Riverwood" or "Shadowfen", or give a character an overused apostrophe-laden elven name, pause and construct culturally grounded nomenclature based on authentic linguistic roots.
 
 ---
 
@@ -87,6 +83,9 @@ Whenever drafting, rewriting, or reworking a story, arc, chapter, or scene, the 
    - Verify that the protagonist's plans did not execute effortlessly.
    - Confirm that the protagonist faced genuine uncertainty, made imperfect calculations, or paid a tangible price (reputational, financial, physical, or tactical).
    - Ensure secondary characters demonstrated independent agency rather than subservient sycophancy.
+
+> [!TIP]
+> **Comprehensive Audit Matrix & Causal Repair**: For the full 12-point integrity matrix, 3-phase auditing flow, and causal repair techniques (living instrument, upstream seeding, friction injection), invoke and execute the companion [narrative-consistency](file:///c:/StoryCrafter/.agents/skills/narrative-consistency/SKILL.md) skill.
 
 ### 2.5. Measured Plot Twists & Strategic Reversals ("Surprising in the Moment, Inevitable in Retrospect")
 
@@ -429,7 +428,7 @@ When planning an extended scene, declare it explicitly in `<story_name>/outlines
 - Ch05 Beats 4-5: bed Round 2 different texture, staggered climax, full afterglow/cleanup, protection count 2 used = 2 bagged
 - Ledger: clothing (tank on floor Ch03 → stays; skirt rucked Ch03 → off Ch04), mess (wet cushion → damp sheets), time 4:15-6:10 contiguous
 ```
-If no `NSFW-Arc` tag exists, default to single-chapter containment. Auditors must FAIL any undeclared cross-chapter continuation that resets bodies, fluids, clothing, or protection count.
+If no `NSFW-Arc` tag exists, default to single-chapter containment. Auditors must FAIL any undeclared cross-chapter continuation that resets bodies, fluids, clothing, or protection count (see the full verification checklist in [narrative-consistency/SKILL.md §4](file:///c:/StoryCrafter/.agents/skills/narrative-consistency/SKILL.md#4-quality--verification-checklist)).
 
 ### 11.9. Image-Driven NSFW Scene Adaptation & Pre-Processing Protocol
 

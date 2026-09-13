@@ -95,7 +95,7 @@ Before publishing or finalizing any chapter:
 - [ ] **No Unseeded Deliverables**: Every contract, tool, or weapon introduced in the climax was planted upstream.
 - [ ] **Intentional Character Actions**: Sparing foes or taking risks reflects active strategy, not authorial oversight.
 - [ ] **Timeline Consistency**: Travel times and recovery windows adhere to realistic pacing.
-- [ ] **Zero Forbidden Elements**: No banned names, near-variants (e.g., `Bran` for `Bram`), forbidden tropes, or Earth-derived eponyms/idioms.
+- [ ] **Zero Forbidden Elements**: No banned names, near-variants, forbidden tropes, or Earth-derived eponyms/idioms (verified against [GEMINI.md §1 & §6](file:///c:/StoryCrafter/GEMINI.md)).
 - [ ] **Anti-Mary Sue & Plan Friction Verified**: Schemes do not execute smoothly without opposition or complication. The protagonist faces real resistance, makes imperfect calculations, and is forced to scramble.
 - [ ] **Competence Calibration & Dignity Preserved**: The protagonist is never degraded into a bumbling butt-monkey or chronic failure to manufacture conflict. Their baseline plan was intelligent, complications arose from worthy foes or fog-of-war, and the MC actively adapts to secure a satisfying, dignified win.
 - [ ] **Autonomous Allies & Competent Foes**: Opponents fight intelligently; allies challenge the protagonist rather than acting as a sycophantic cheering section.
