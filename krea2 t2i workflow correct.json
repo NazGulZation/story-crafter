@@ -1119,7 +1119,7 @@
         }
       },
       "widgets_values": [
-        2560217928,
+        785289937,
         "randomize",
         2048,
         2048,
@@ -1134,7 +1134,7 @@
         false
       ],
       "widgets_values_named": {
-        "seed": 2560217928,
+        "seed": 785289937,
         "control_after_generate": "randomize",
         "resolution": 2048,
         "max_resolution": 2048,
@@ -1404,152 +1404,6 @@
       },
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 40,
-      "type": "TriggerWord Toggle (LoraManager)",
-      "pos": [
-        -1387.7545489645743,
-        -36.22066276344276
-      ],
-      "size": [
-        596.1458333333334,
-        284
-      ],
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "trigger_words",
-          "shape": 7,
-          "type": "string",
-          "link": 36
-        }
-      ],
-      "outputs": [
-        {
-          "name": "filtered_trigger_words",
-          "type": "STRING",
-          "links": [
-            37
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-lora-manager",
-        "ver": "acc625ead3c18f7f40f1e6f35194d682e96e8afd",
-        "Node name for S&R": "TriggerWord Toggle (LoraManager)",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.7"
-        }
-      },
-      "widgets_values": [
-        true,
-        true,
-        false,
-        [],
-        ""
-      ],
-      "widgets_values_named": {
-        "group_mode": true,
-        "default_active": true,
-        "allow_strength_adjustment": false,
-        "toggle_trigger_words": [],
-        "orinalMessage": ""
-      },
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 46,
-      "type": "KSampler Config (rgthree)",
-      "pos": [
-        -2154.68699323721,
-        157.72632613132154
-      ],
-      "size": [
-        273.4986328125,
-        234
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "refiner_step",
-          "type": "INT",
-          "widget": {
-            "name": "refiner_step"
-          },
-          "link": 65
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STEPS",
-          "type": "INT",
-          "links": [
-            54
-          ]
-        },
-        {
-          "name": "REFINER_STEP",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "CFG",
-          "type": "FLOAT",
-          "links": [
-            85
-          ]
-        },
-        {
-          "name": "SAMPLER",
-          "type": "COMBO",
-          "links": [
-            55
-          ]
-        },
-        {
-          "name": "SCHEDULER",
-          "type": "COMBO",
-          "links": [
-            56
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "rgthree-comfy",
-        "ver": "8ff50e4521881eca1fe26aec9615fc9362474931",
-        "Node name for S&R": "KSampler Config (rgthree)",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.5.2"
-        }
-      },
-      "widgets_values": [
-        10,
-        1,
-        1,
-        "euler",
-        "beta"
-      ],
-      "widgets_values_named": {
-        "steps_total": 10,
-        "refiner_step": 1,
-        "cfg": 1,
-        "sampler_name": "euler",
-        "scheduler": "beta"
-      },
-      "color": "#233",
-      "bgcolor": "#355"
     },
     {
       "id": 3,
@@ -1903,7 +1757,7 @@
       },
       "widgets_values": [
         "enable",
-        133073358047066,
+        378633836374343,
         "randomize",
         8,
         1,
@@ -1915,7 +1769,7 @@
       ],
       "widgets_values_named": {
         "add_noise": "enable",
-        "noise_seed": 133073358047066,
+        "noise_seed": 378633836374343,
         "control_after_generate": "randomize",
         "steps": 8,
         "cfg": 1,
@@ -2020,6 +1874,152 @@
       },
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 46,
+      "type": "KSampler Config (rgthree)",
+      "pos": [
+        -2154.68699323721,
+        157.72632613132154
+      ],
+      "size": [
+        273.4986328125,
+        234
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "refiner_step",
+          "type": "INT",
+          "widget": {
+            "name": "refiner_step"
+          },
+          "link": 65
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STEPS",
+          "type": "INT",
+          "links": [
+            54
+          ]
+        },
+        {
+          "name": "REFINER_STEP",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "CFG",
+          "type": "FLOAT",
+          "links": [
+            85
+          ]
+        },
+        {
+          "name": "SAMPLER",
+          "type": "COMBO",
+          "links": [
+            55
+          ]
+        },
+        {
+          "name": "SCHEDULER",
+          "type": "COMBO",
+          "links": [
+            56
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "8ff50e4521881eca1fe26aec9615fc9362474931",
+        "Node name for S&R": "KSampler Config (rgthree)",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        15,
+        1,
+        1,
+        "euler",
+        "beta"
+      ],
+      "widgets_values_named": {
+        "steps_total": 15,
+        "refiner_step": 1,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "beta"
+      },
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 40,
+      "type": "TriggerWord Toggle (LoraManager)",
+      "pos": [
+        -1387.7545489645743,
+        -36.22066276344276
+      ],
+      "size": [
+        596.1458333333334,
+        284
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "trigger_words",
+          "shape": 7,
+          "type": "string",
+          "link": 36
+        }
+      ],
+      "outputs": [
+        {
+          "name": "filtered_trigger_words",
+          "type": "STRING",
+          "links": [
+            37
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-lora-manager",
+        "ver": "acc625ead3c18f7f40f1e6f35194d682e96e8afd",
+        "Node name for S&R": "TriggerWord Toggle (LoraManager)",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        true,
+        true,
+        false,
+        [],
+        ""
+      ],
+      "widgets_values_named": {
+        "group_mode": true,
+        "default_active": true,
+        "allow_strength_adjustment": false,
+        "toggle_trigger_words": [],
+        "orinalMessage": ""
+      },
+      "color": "#223",
+      "bgcolor": "#335"
     }
   ],
   "links": [
@@ -2317,10 +2317,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.0727759278132043,
+      "scale": 1.0727759278132054,
       "offset": [
-        1249.8499338573715,
-        593.6966053077297
+        1530.7116584180797,
+        592.4173650761855
       ]
     },
     "workflowRendererVersion": "LG",

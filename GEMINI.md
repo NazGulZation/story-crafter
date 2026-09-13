@@ -39,6 +39,7 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
 - **Forbidden Narrative & Plot Tropes**:
   - `Opening Alley Thug / Mugger Encounter`: Having the newly awakened or destitute protagonist ambushed, attacked, or harassed by street thugs, cutpurses, or alley muggers in the opening chapter to establish physical danger, demonstrate quick brawling competence, or loot initial coins.
   - `Accountant Assistant / Junior Ledger Clerk Subordination`: Having the protagonist take a subordinate, junior salaried position as an assistant bookkeeper, tally-clerk, or junior ledger clerk under a petty bureaucrat. Protagonists must operate as independent principals, brokers, arbiters, syndicators, or creditors from inception.
+  - `Mary Sue / Gary Stu Omniscient Infallibility & Frictionless Plan Execution`: Making the protagonist an omniscient, infallible mastermind whose plans and whims always succeed effortlessly without friction, setbacks, or meaningful opposition. Having adversaries act with clownish incompetence solely to elevate the protagonist, or reducing secondary characters into a sycophantic chorus that exists only to marvel at the protagonist's genius. Protagonists must face real friction, make costly miscalculations, experience genuine vulnerability, and earn victories at tangible cost.
 
 ### Directives:
 1. **No Reskins or Near-Variants**: Do not use these exact names, close phonetic variants (e.g., *Jullian*, *Vaelryn*, *Aethelgardt*), or thin reskins.
@@ -100,6 +101,15 @@ When drafting story scenes:
   3. *Resource, Tooling & Asset Origins*: Every weapon, machine, chemical reagent, or logistical asset must possess a verifiable origin, raw material supply, and manufacturing precedent.
   4. *Demographic & Scale Sanity*: Troop counts, labor manpower, and casualties must match established populations, refugee flows, and logistical support limits.
   5. *Adversarial Counter-Action Logic*: Opponents must act with plausible competence, tactical self-interest, and logical counter-measures rather than convenient idiocy.
+- **Anti-Mary Sue / Gary Stu Mandate & The Law of Friction**:
+  - *The Law of Friction*: No plan survives contact with reality intact. Every scheme must encounter unforeseen friction—weather, supply delays, human miscommunication, contradictory third-party interests, or adversary countermeasures. The protagonist's competence is demonstrated through desperate improvisation and resilience under pressure, not preternatural omniscience.
+  - *No Sycophant Retinues*: Allies and secondary characters must retain independent agency, self-interest, moral boundaries, and flaws. They must never exist solely as cheerleaders or marveling spectators to the protagonist's brilliance.
+  - *Authentic Vulnerability & Meaningful Costs*: Protagonists must bleed, err, miscalculate, and possess genuine psychological or tactical blind spots. Victories must extract a tangible cost (exhausted assets, severed alliances, moral injury, physical wounds), completely barring effortless, clean-sweep triumphs that leave the reader bored.
+  - *Competence Calibration (Anti-Incompetence & Anti-"Too Dumb to Live")*: Never overcorrect by swinging the pendulum into making the protagonist a chronic failure, bumbling butt-monkey, or pathetic punching bag. In close-POV and self-insert storytelling, repeated humiliation or unforced stupidity makes the reader hate and lose respect for the MC. The protagonist's baseline intellect and planning must be demonstrably sound; complications must arise from worthy adversaries or genuine fog-of-war, not protagonist idiocy. The protagonist must shine in their resilience, adapt under fire, and secure satisfying, hard-earned victories that preserve their dignity and competence.
+- **Measured & Earned Plot Twists ("Surprising in the Moment, Inevitable in Retrospect")**:
+  - *Measured Restraint ("Here and There")*: Pepper twists strategically at key inflection points, mid-arc climaxes, or major chapter turns. Avoid oversaturating every scene or chapter with whiplash reversals, which induces twist fatigue and destroys dramatic weight.
+  - *Fair-Play Foreshadowing*: Every twist must be seeded upstream through subtle clues, behavioral discrepancies, double-edged dialogue, or administrative anomalies. The reveal must never be a random unseeded shock; the reader should look back and realize the signs were hidden in plain sight.
+  - *Subverting Certainty*: Use twists to shatter the protagonist's neat assumptions, expose their cognitive blind spots, or reveal conflicting third-party agendas, forcing desperate adaptation and keeping the story gripping.
 
 ---
 

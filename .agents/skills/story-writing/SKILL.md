@@ -28,7 +28,7 @@ Avoid using these names/tropes; Sunken Pass, Oakhaven, Julian, Rian, Mia, Elyria
 | **Forbidden Locations** | `Sunken Pass`, `Oakhaven`, `Whispering Wood`, `Sunken Crypt`, `Sunken Hollow` | Create geologically and historically specific topiary names (e.g., *Skelter Gap*, *Cormorant Reach*, *Marrow-Fen*, *Thimble-in-the-Clay*, *The Red Kilns*). |
 | **Forbidden Names** | `Julian`, `Rian`, `Mia`, `Elyria`, `Garrick`, `Bram`, `Vaelrian`, `Vane`, `Aethelgard`, `Harrick`, `Varis`, `Corin`, `Silas` | Base naming on authentic phonetic roots and linguistic traditions (e.g., Anglo-Saxon, Old Norse, Cornish, Slavic, Ugaritic, Basque) consistent with the character's culture. |
 | **Forbidden Beasts & Creatures** | `Dragon` / `Drakes`, `Monster Crawler`, `Monster Dog` | Construct creatures with coherent ecology, realistic sensory organs, predatory behavior, and environmental adaptation rather than generic fantasy monsters. |
-| **Forbidden Plot Tropes** | `Deus Ex Machina`, `Ass-Pulls`, `Unforeshadowed Plot Armor`, `Opening Alley Thug / Mugger Encounter`, `Accountant Assistant / Junior Ledger Clerk Subordination` | Ground every climax in earned causality. Avoid having the protagonist assaulted by alley muggers at the start or taking subordinate junior bookkeeper employment. Instead, establish their rise via independent commercial arbitrage, debt leverage, contract law, or commercial syndication. |
+| **Forbidden Plot Tropes** | `Deus Ex Machina`, `Ass-Pulls`, `Unforeshadowed Plot Armor`, `Opening Alley Thug / Mugger Encounter`, `Accountant Assistant / Junior Ledger Clerk Subordination`, `Mary Sue / Gary Stu Protagonists`, `Omniscient Mastermind / Frictionless Infallibility` | Ground every climax in earned causality. Avoid having the protagonist assaulted by alley muggers at the start or taking subordinate junior bookkeeper employment. Never allow the protagonist to be an infallible, omniscient mastermind whose plans always succeed without friction, blind spots, or setbacks. Establish their rise via independent commercial arbitrage, debt leverage, contract law, or commercial syndication, while subjecting every scheme to realistic friction, competent opposition, and costly trade-offs. |
 | **Forbidden Earth Idioms & Eponyms in Fantasy** | `Achilles' heel/tendon`, `Pyrrhic victory`, `Romanesque`, `Gothic`, `Byzantine`, `Damascened`, `Spanish/Flemish/Swedish/Andalusian/Persian/Parisian`, `Latin script`, `Christian mercy/charity`, Earth saints | Never use Earth-derived idioms, architectural styles, demonyms, languages, religions, or eponyms in secondary fantasy worlds. Always translate into setting-authentic equivalents (e.g., *heel-cords*, *ruinous triumph*, *Old Imperial basalt*, *High Imperial script*, *divine mercy of the Light*, *Wester-Reach merino*, *southern blood-stallions*). |
 | **Forbidden Meta-Commentary & Structural Signposts** | `"Act One is concluded"`, `"Now, we begin the next arc"`, `"The chapter ends now"`, `### [END OF...]`, narrator fourth-wall breaks | Stay 100% within the diegetic narrative reality and character perspective. End scenes with concrete in-world sensory beats, actions, or spoken orders. Never allow characters or narration to signpost plot structure, acts, or arcs. |
 
@@ -45,7 +45,7 @@ Maintain forward momentum and psychological weight by structuring narrative unit
 1. **Scene (Action & Conflict)**:
    - **Goal**: The POV character enters the scene wanting a clear, concrete objective.
    - **Conflict**: Active, rising opposition (environment, adversary, social pressure).
-   - **Disaster / Complication**: The scene ends on an unexpected setback or costly outcome ("Yes, but..." or "No, and furthermore...").
+   - **Disaster / Complication**: The scene ends on an unexpected setback or costly outcome ("Yes, but..." or "No, and furthermore..."). *Crucial anti-Mary Sue rule*: A scene must never be an effortless victory walk where the protagonist executes a plan without resistance or cost. The plan must fray, encounter unforeseen friction, or yield painful side-effects that demand hard adaptation.
 
 2. **Sequel (Processing & Transition)**:
    - **Reaction**: Visceral, emotional, and physical aftermath of the disaster.
@@ -57,12 +57,15 @@ Maintain forward momentum and psychological weight by structuring narrative unit
 - **Show** for pivotal moments: confrontations, betrayals, intimate realizations, combat, and moral crossroads.
 - **Sensory Anchors**: Every major scene must anchor the reader with at least three distinct senses (smell of damp tallow, taste of metallic well water, texture of salt-crusted woolen cuffs) rather than relying exclusively on visual descriptions.
 
-### 2.3. Narrative Causality & Foreshadowing (Anti-Deus Ex Machina)
+### 2.3. Narrative Causality & Foreshadowing (Anti-Deus Ex Machina & Anti-Mary Sue)
 Never resolve story conflicts or climaxes via unearned coincidences, miraculous eleventh-hour rescues, sudden unexplained power surges, or unseeded plot items:
 - **The Plant-and-Payoff Law (Chekhov's Arsenal)**: If a character uses a hidden dagger, a forgotten herbal remedy, a dormant magical quirk, or an influential patron's favor to survive a crisis, that element **must be seeded at least one to two scenes/chapters earlier**.
 - **The "Therefore / But" Principle**: Never link narrative beats with "and then... suddenly...". Link beats with *"therefore..."* (logical consequence) or *"but..."* (logical setback).
 - **Asymmetry of Luck**: Coincidence and bad luck may hurt the protagonist and complicate their situation, but coincidence and good luck may **never** rescue them or solve the core conflict. Solutions must be paid for with character agency, established intellect, or heavy cost.
 - **Rule Integrity**: If magic, alchemy, or technology exists, its operational costs, failure modes, and boundaries must be established before they are tested in a life-or-death crisis.
+- **The Law of Friction (Clausewitzian Friction in Storytelling)**: No plan survives contact with reality intact. Human error, imperfect intelligence, bad weather, logistical snags, contradictory third-party interests, or adversary countermeasures will disrupt or derail parts of any scheme. The protagonist demonstrates competence through *improvisation under stress and costly trade-offs*, NOT through godlike omniscience that anticipated every variable. If everything goes according to the protagonist's plan and whim, the narrative dies and the reader is bored.
+- **Adversarial Parity & Tactical Dignity**: Opponents are intelligent, self-interested agents with their own networks and viable counter-strategies. Never reduce antagonists to blithering fools solely to make the protagonist look clever. An adversary must exploit the protagonist's missteps and land painful, dangerous blows.
+- **Autonomous Allies (No Sycophant Retinues)**: Supporting characters are independent individuals with their own moral boundaries, fears, self-interest, and flaws. They must never act as a chorus of cheerleaders who exist solely to marvel at the protagonist's genius. Allies can hesitate, make honest blunders, disagree, or push back.
 
 ### 2.4. Mandatory Plot Hole Audit Protocol (Writing, Rewriting & Reworking)
 Whenever drafting, rewriting, or reworking a story, arc, chapter, or scene, the author must ALWAYS perform an exhaustive plot hole audit before considering the manuscript complete:
@@ -80,6 +83,33 @@ Whenever drafting, rewriting, or reworking a story, arc, chapter, or scene, the 
    - Ensure explosive manpower growth is earned through dramatized refugee migration, integration, or recruitment rather than spontaneous generation.
 5. **Adversary Competence & Counter-Strategy Audit**:
    - Adversaries must behave with logical self-interest, tactical prudence, and believable countermeasures based on the information available to them, rather than acting with suicidal incompetence to enable easy protagonist victories.
+6. **Plan Friction & Protagonist Fallibility Audit (Anti-Mary Sue Check)**:
+   - Verify that the protagonist's plans did not execute effortlessly.
+   - Confirm that the protagonist faced genuine uncertainty, made imperfect calculations, or paid a tangible price (reputational, financial, physical, or tactical).
+   - Ensure secondary characters demonstrated independent agency rather than subservient sycophancy.
+
+### 2.5. Measured Plot Twists & Strategic Reversals ("Surprising in the Moment, Inevitable in Retrospect")
+
+Injecting well-timed plot twists and reversals prevents the narrative from becoming predictable and keeps the reader hooked. However, twists must be applied with **measured restraint**—sprinkled strategically "here and there", rather than as an incessant barrage that exhausts the reader:
+
+1. **The Golden Law of Twists**:
+   - A plot twist must be **surprising in the moment, but inevitable in retrospect**.
+   - If a twist requires withholding basic information the POV character would obviously know, or introduces unseeded surprises out of nowhere, it is an amateur ass-pull that violates Section 2.3 (Chekhov's Arsenal).
+   - The reader should re-read earlier scenes and kick themselves for missing the signs hidden in plain sight.
+
+2. **Dosing & Pacing ("Here and There, Not Too Much")**:
+   - **Restraint Standard**: Reserve major plot twists for pivotal narrative junctions—such as a mid-arc crisis, a major chapter climax, or an act turning point. Do NOT twist every chapter or scene.
+   - Constant whiplash reversals induce "twist fatigue" and emotional detachment; when readers cannot trust reality, they stop investing emotionally in outcomes. Use twists as potent spices, not the bulk of the meal.
+
+3. **Four Grounded In-World Twist Archetypes**:
+   - **The Misread Allegiance / Divergent Stakeholder**: An ally or informant acts contrary to expectations—not from random malice, but because they held an older, deeper debt, family hostage, or ideological boundary that the protagonist overlooked.
+   - **The Inverted Ambush / The Counter-Trap**: The protagonist believes they have cornered an opponent, only to realize the opponent anticipated the gambit and turned the battlefield into a counter-trap.
+   - **The Third-Party Beneficiary**: Defeating a primary rival unintentionally removes the sole check against a far more dangerous, dormant threat waiting in the background.
+   - **The Double-Edged Asset**: A captured contract, alchemical formula, or piece of leverage contains an overlooked caveat, hidden clause, or systemic weakness that reverses the leverage.
+
+4. **Fair-Play Seeding Protocol**:
+   - Plant clues in plain sight at least 2 to 3 scenes or chapters prior (e.g., an offhand comment about an overdue shipment, an unusual wax seal, an uncharacteristic pause during negotiations).
+   - Give each clue a plausible, innocent surface explanation when first dramatized so the reader (and protagonist) interprets it conventionally until the reveal recontextualizes it.
 
 ---
 
@@ -126,6 +156,8 @@ Every major character must be defined by tension, flaws, and specific habits:
 - **Full Name & Epithet**: (Culturally grounded, avoiding forbidden names)
 - **Concrete Desire**: What do they want right now in chapter one?
 - **Core Wound / Misbelief**: What lie do they believe about themselves or the world?
+- **Fatal Blind Spot / Genuine Flaw**: A real, damaging liability that causes costly miscalculations (e.g., arrogance, paranoia, tunnel-visioned ruthlessness, emotional numbness) — NOT a fake "vanity flaw" like "cares too much" or "works too hard".
+- **Vulnerability & Breaking Point**: What physical, psychological, or logistical pressure pushes them to panic, make errors, or second-guess themselves?
 - **Tactile Tic / Mannerism**: A physical habit under stress (e.g., thumbing a notched knuckle, clearing a gravelly throat, adjusting a brass ring).
 - **Dialogue Cadence**:
   - Sentence length (terse vs. ornate)
@@ -133,6 +165,38 @@ Every major character must be defined by tension, flaws, and specific habits:
   - Topic deflection tactic (humor, aggression, silence, feigned ignorance)
 - **Contradiction**: An internal friction point (e.g., a compassionate debt-collector, a cowardly duelist with impeccable technique).
 ```
+
+### 4.1. Anti-Mary Sue / Gary Stu Calibration & The Fallibility Principle
+
+When a protagonist possesses preternatural omniscience, outsmarts everyone with effortless 4D chess, and has everything unfold according to their plan and whim, **dramatic tension collapses and the reader becomes bored**. An untouchable protagonist is an uninteresting protagonist.
+
+Adhere strictly to the four anti-Mary Sue rules:
+
+1. **The Law of Plan Friction (No Scheme Survives Contact with Reality)**:
+   - Every complex plan must fray. Uncooperative terrain, unexpected delays, miscommunicated orders, independent third parties, or clever adversary countermeasures must disrupt the protagonist's initial design.
+   - The protagonist's brilliance must shine through **desperate improvisation, grit, and costly adaptation under pressure**, NOT through passive, omniscient foresight.
+   - If a plan works on the first try with 100% precision, the scene is an authorial failure.
+
+2. **Genuine, Consequential Flaws vs. "Vanity Flaws"**:
+   - Ban all faux flaws designed to flatter the character (e.g., "too dedicated", "too perfectionist", "too broodingly protective").
+   - Flaws must be genuine liabilities that hurt the protagonist: pride that ignores a warning, greed that overextends logistical lines, contempt that underestimates a peasant revolt, or emotional trauma that induces reckless hesitation.
+   - The protagonist must occasionally be **wrong**, make bad calls, and suffer the resulting fallout.
+
+3. **Secondary Character Autonomy (No Sycophant Retinues)**:
+   - Allies and subordinates are NOT an audience of fawning cheerleaders whose sole role is to gasp in admiration at the protagonist's intellect.
+   - Supporting characters have their own moral lines, distinct ambitions, familial obligations, and flaws.
+   - They must push back, disagree on ethics or tactics, harbor private doubts, and occasionally act against the protagonist's wishes when their core interests clash.
+
+4. **The Law of Costly Victories (No Clean Sweeps)**:
+   - Every victory must extract a tangible, painful cost: depleted reserves, burnt bridges, severed relationships, scarred bodies, or newly created enemies.
+   - Partial victories and pyrrhic trade-offs are mandatory. Solving one crisis should logically seed the seeds of the next complication.
+
+5. **Competence Calibration: Avoiding the Incompetence / "Too Dumb to Live" Trap**:
+   - **The Danger of Overcorrection**: When trying to avoid a Mary Sue / Gary Stu, never swing to the opposite extreme by turning the protagonist into a bumbling, pathetic punching bag who constantly fails, botches basic tasks, or gets humiliated chapter after chapter.
+   - **Incompetence Fatigue & Reader Disgust**: In close-POV and especially self-insert storytelling, chronic failure or artificial stupidity makes the reader lose respect for the MC and despise reading about them. The reader wants to root for a capable, compelling figure, not cringe at an incompetent weakling.
+   - **Sound Planning, Formidable Opposition**: The protagonist's baseline plan must be rational, sharp, and logical given the facts available. When a plan frays, it must be because the adversary is genuinely skilled or because of genuine fog-of-war—**never because the protagonist held the "idiot ball" or made unforced amateur blunders**.
+   - **Resourceful Recovery**: The protagonist's true competence is demonstrated by their **resilience and adaptability under fire**. When hit with unexpected setbacks, they don't panic or beg for rescue; they think on their feet, execute decisive tactical audibles, and salvage a hard-won victory.
+   - **Dignity & Net Positive Competence**: The protagonist must ultimately prevail in their core goals across an arc. Even in defeat, they maintain spine, poise, and dignity, commanding the respect or fear of their adversaries.
 
 ---
 
@@ -177,15 +241,29 @@ D:\Documents\Stories/
 - Define the scene's emotional turn (e.g., Hopeful -> Disillusioned, Suspicious -> Terrified).
 - **Canonical Media Verification**: If incorporating, adapting, or transmigrating any existing media element (characters, historical figures, organizations, artifacts, magic systems, places from established fiction, history, or mythology), proactively research and verify them (via web search) to master their canonical psychology, speech patterns, physical mannerisms, iconic philosophies, and lore milestones before drafting.
 - **Foreshadowing & Seeding**: Identify what upcoming conflicts will require, and plant seeds (clues, tools, habits, knowledge, rumors) now.
+- **Friction & Vulnerability Planning**: Identify where the protagonist's initial plan will hit a snag, what unforeseen variable or adversary counter-move disrupts it, and which character flaw will be tested under pressure.
+- **Plot Twist & Reversal Mapping**: If this scene or upcoming arc beat features a plot twist, confirm that upstream clues are planted in plain sight with innocent surface explanations, and ensure the story adheres to the "measured restraint" standard (strategic inflection points, never constant whiplash).
 
 ### Step 2: Drafting
 - Draft focused prose blocks (800 - 2,500 words per scene).
 - Keep dialogue sharp; characters should rarely say exactly what they mean.
 - Ensure obstacles feel earned and victories come with a cost.
+- Show the protagonist sweating, struggling, and actively adapting when their initial expectations are shattered.
+- Give secondary characters distinct motives, doubts, and pushback—never allow them to degenerate into a sycophantic cheering section.
+- **Calibrate Competence & Dignity**: Never make the protagonist look pathetic, chronically bungling, or stupid to force failure. In close-POV and self-insert stories, unforced idiocy makes the reader hate the MC. Keep their baseline plan smart; force setbacks through worthy foes and realistic chaos, and showcase their competence through sharp, resilient adaptation under fire.
 
 ### Step 3: Anti-Cliché & Causality Sweep
 - **Forbidden tropes check**: Ensure zero forbidden names or tropes appear.
 - **Ass-Pull / Deus Ex Machina audit**: Verify that any conflict resolved in this scene relies strictly on previously established skills, tools, or sacrifices.
+- **Plot Twist Fair-Play & Restraint Audit**: If a twist or reversal dropped in this scene, is it earned through prior clues? Does it feel inevitable in hindsight? Does it respect the "here and there" restraint standard rather than causing twist fatigue?
+- **Anti-Mary Sue / Infallibility audit**:
+  - Did everything go according to the protagonist's plan and whim? If yes, **FAIL** the draft and inject friction, a costly misstep, or an adversary counter-punch.
+  - Did adversaries behave like incompetent clowns? If yes, give them plausible intelligence and tactical counter-measures.
+  - Did allies act as mindless cheerleaders marveling at the protagonist's genius? If yes, inject independent agency, skepticism, or competing priorities.
+  - Was the victory a painless, frictionless clean sweep? If yes, enforce a tangible cost (wounds, lost resources, broken trust, new complications).
+- **Anti-Incompetence / Butt-Monkey audit**:
+  - Did the protagonist look pathetic, clumsy, or chronically incompetent? Did they hold the "idiot ball" just to manufacture drama?
+  - If yes, **FAIL** the draft. Ensure complications stem from formidable opposition or unforeseen fog-of-war, preserving the MC's dignity, core intelligence, and satisfying recovery.
 - **Canonical voice audit**: Verify that any established media characters behave and speak strictly in-character, free of caricatures or fanon dilution.
 - **Style polish**: Eliminate filler adverbs (*suddenly*, *nervously*, *quickly*), weed out passive voice, and replace filter words (*he noticed*, *she heard*, *he felt*).
 

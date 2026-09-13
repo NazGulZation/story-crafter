@@ -13,9 +13,9 @@ A rigorous, systematic methodology for narrative auditing, plot hole elimination
 
 ---
 
-## 1. The 8-Point Narrative Integrity Matrix
+## 1. The 12-Point Narrative Integrity Matrix
 
-Every chapter, scene, outline, and lore document must be audited against these eight fundamental vectors of narrative consistency:
+Every chapter, scene, outline, and lore document must be audited against these twelve fundamental vectors of narrative consistency:
 
 | Vector | Core Question | Failure Mode (Plot Hole / Flaw) | Mandated Remediation Strategy |
 | :--- | :--- | :--- | :--- |
@@ -29,6 +29,8 @@ Every chapter, scene, outline, and lore document must be audited against these e
 | **8. Setting Authenticity & Constraints** | *Is the prose free of prohibited tropes, forbidden names, and real-world Earth idioms/eponyms?* | Using banned names (`Bram`, `Julian`, `Silas`), forbidden tropes (opening alley brawls), or Earth eponyms (`Pyrrhic victory`, `Achilles' heel`, `baroque`). | Perform automated and manual sweeps against the project's [GEMINI.md](file:///c:/StoryCrafter/GEMINI.md) constraints and substitute setting-authentic equivalents. |
 | **9. Anti-Antithesis & Prose Directness** | *Is the prose free of "not just A, but B", "was not A; it was B", and formulaic negation-contrast tics?* | Using repetitive AI antithesis framing instead of direct, active declarations. | Eliminate all variations of "not just A, but B", "not merely A; it was B", "did not X; they Y". State what the reality *is* immediately with active verbs and concrete sensory details. |
 | **10. Anti-Meta & Immersion Integrity** | *Is the prose free of fourth-wall breaks, structural signposts ("Act One concluded", "next arc"), and meta headers?* | Characters or narrator referencing acts, arcs, chapters, or structural story mechanics, breaking reader immersion. | Ensure prose remains 100% inside the diegetic reality. Conclude scenes with organic in-world actions, sensory details, or spoken dialogue. |
+| **11. Anti-Mary Sue & Competence Calibration** | *Does the protagonist face genuine friction without being degraded into an incompetent, pathetic punching bag?* | Either extreme fails: protagonist acting as an omniscient mastermind where everything goes to plan (boring), OR swinging into a bumbling butt-monkey who constantly fails and holds the idiot ball (disgusting/hated by reader). | Subject plans to Clausewitzian friction and worthy opposition while keeping the protagonist's core intellect and baseline plans sound; let setbacks arise from fog-of-war or skilled foes, and prove the MC's competence through sharp resilience, tactical audibles, and hard-earned, satisfying victories. |
+| **12. Plot Twist Fair-Play & Dosing** | *Is the plot twist seeded upstream, inevitable in retrospect, and dosed with restraint ("here and there"), or is it an unearned shock that induces twist fatigue?* | Unseeded shock-value reversals ("out of nowhere"); twists that contradict established character traits; or constant chapter-after-chapter reversals that exhaust the reader and destroy credibility. | Plant clues 2-3 scenes prior with innocent surface explanations; limit twists to major narrative pivots (mid-arc, act turns); ensure the twist exposes protagonist assumptions and feels organic to the world. |
 
 ---
 
@@ -52,10 +54,12 @@ flowchart TD
 ### Phase 2: Causal Trace & Friction Test
 1. **The Friction Test**: If an obstacle disappears easily, inject realistic friction (social resistance, physical fatigue, cost of goods, suspicious guards).
 2. **The "Why Didn't They Just..." Test**: For every adversary action, ask: *What was the most obvious counter-move, and why couldn't they take it?* Ensure adversaries are restricted by plausible hubris, incomplete information, fear, or legal/physical barriers.
+3. **The Effortless Execution Test (Anti-Mary Sue Audit)**: If the protagonist's scheme executes cleanly from start to finish without a hitch, it fails the friction test. Inject Clausewitzian friction: an intercepted message, an unbribed sentry, foul weather slicking the streets, or an adversary anticipating the opening move.
 
 ### Phase 3: Psychological & Physical Sanity Check
 1. **Competence Calibration**: Highly competent characters must not make uncharacteristic amateur mistakes solely to advance the plot. If they make a mistake, it must stem from an established emotional blindspot or calculated gamble.
 2. **Consequence Accounting**: Ensure wounds, reputational damage, debt obligations, and resource depletion persist across chapters until properly resolved.
+3. **Flaw Consequence & Ally Autonomy Check**: Verify that the protagonist's flaws (pride, paranoia, over-calculation) produce real negative consequences on-page. Ensure secondary characters are not a sycophantic chorus; allies must push back, disagree on ethics/tactics, and pursue independent self-interest.
 
 ---
 
@@ -75,6 +79,14 @@ When a plot hole, unseeded turn, or logic contradiction is discovered, use these
 - *Problem*: A character knows a rival's secret plan without an explanation.
 - *Repair*: Establish an intermediary informant, intercepted dispatch, or commercial ledger anomaly (e.g., unusual grain requisitions revealing troop movements) that allowed the character to deduce the plan logically.
 
+### 4. The Friction Injection Technique (Repairing Effortless / Mary Sue Arcs)
+- *Problem*: The protagonist devises a scheme, executes it cleanly, outwits all foes without sweating, and secondary characters marvel at their untouchable genius. The narrative feels hollow, tensionless, and boring.
+- *Repair*: Fracture the scheme at the halfway mark. Force an unexpected obstacle (adversary counter-intelligence, an ally making a panic mistake, or a logistical breakdown). Force the protagonist to abandon their ideal plan, take a painful hit (financial, physical, or social), and improvise under severe pressure to salvage a partial, costly victory.
+
+### 5. Fair-Play Retro-Seeding (Repairing Unearned / Gimmick Twists)
+- *Problem*: A plot twist occurs at the climax or turning point, but the reader feels cheated because no prior clues, behavioral anomalies, or contextual breadcrumbs were established.
+- *Repair*: Go back 2-3 scenes or chapters. Plant an innocent-looking anomaly (an offhand comment, an unexplained carriage arrival, an unusual clause in a ledger, or a subtle facial hesitation) that has a mundane plausible explanation at the time, but becomes the undeniable smoking gun once the twist is revealed.
+
 ---
 
 ## 4. Quality & Verification Checklist
@@ -84,6 +96,11 @@ Before publishing or finalizing any chapter:
 - [ ] **Intentional Character Actions**: Sparing foes or taking risks reflects active strategy, not authorial oversight.
 - [ ] **Timeline Consistency**: Travel times and recovery windows adhere to realistic pacing.
 - [ ] **Zero Forbidden Elements**: No banned names, near-variants (e.g., `Bran` for `Bram`), forbidden tropes, or Earth-derived eponyms/idioms.
+- [ ] **Anti-Mary Sue & Plan Friction Verified**: Schemes do not execute smoothly without opposition or complication. The protagonist faces real resistance, makes imperfect calculations, and is forced to scramble.
+- [ ] **Competence Calibration & Dignity Preserved**: The protagonist is never degraded into a bumbling butt-monkey or chronic failure to manufacture conflict. Their baseline plan was intelligent, complications arose from worthy foes or fog-of-war, and the MC actively adapts to secure a satisfying, dignified win.
+- [ ] **Autonomous Allies & Competent Foes**: Opponents fight intelligently; allies challenge the protagonist rather than acting as a sycophantic cheering section.
+- [ ] **Tangible Victory Costs**: Victories are not frictionless clean sweeps; the protagonist pays in blood, treasure, reputational fallout, or newly ignited complications.
+- [ ] **Plot Twist Fair-Play & Dosing**: Any twist is seeded upstream in plain sight, inevitable in hindsight, and applied with measured restraint ("here and there", not every chapter).
 
 ### NSFW / Explicit — Explicit, Detailed, Arousing Audit
 Apply ONLY to chapters with requested NSFW/erotica content. In NSFW mode, vague fade-to-black or summary sex is a consistency failure — every requested scene must audit as on-page, explicit, and arousing:
