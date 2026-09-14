@@ -166,12 +166,12 @@ vaginal, sex, cowgirl position, straddling,
 scenery, bedroom, blurred background
 "@
 
-python c:\StoryCrafter\.agents\skills\comfyui-generation\scripts\comfyui_runner.py `
-  --server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud" `
-  --workflow "C:\StoryCrafter\anima_absolute_cinema.json" `
+python .agents\skills\comfyui-generation\scripts\comfyui_runner.py `
+  --server "$env:COMFYUI_SERVER_URL" `
+  --workflow "anima_absolute_cinema.json" `
   --prompt "$prompt" `
   --randomize-seed `
-  --output-dir "C:\StoryCrafter\assets"
+  --output-dir "assets"
 ```
 
 ---

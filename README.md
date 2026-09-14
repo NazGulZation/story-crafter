@@ -12,9 +12,11 @@ Stories/
 ├── README.md                                  # Workspace overview & story catalog
 ├── .agents/
 │   └── skills/
-│       ├── story-writing/                     # Workspace creative writing skill
+│       ├── story-writing/                     # Unified creative writing, character craft, causality matrix, & auditing skill
 │       │   └── SKILL.md
-│       └── narrative-consistency/             # Plot hole auditing & causal consistency skill
+│       ├── comfyui-generation/                # Diffusion image generation, prompt engineering, & quality verification
+│       │   └── SKILL.md
+│       └── browser-access/                    # Edge browser remote debugging (CDP) for dynamic web research
 │           └── SKILL.md
 └── the_rogue_prince_of_blackweir/             # Active Story Project
     ├── chapters/                              # 10 completed chapters
@@ -40,25 +42,25 @@ Stories/
 
 ## Story Catalog
 
-### [The Rogue Prince of Blackweir](file:///c:/StoryCrafter/the_rogue_prince_of_blackweir/)
+### [The Rogue Prince of Blackweir](file:///d:/Documents/story-crafter/the_rogue_prince_of_blackweir/)
 - **Status**: Complete (10 Chapters).
 - **Core Premise**: Following the fatal plunge at the Gods Eye, the soul of Prince Daemon Targaryen awakens in the discarded, broken-hearted shell of Caspar Thorne—the betrayed logistical mastermind of an arrogant hero's party.
 - **Key Milestones**:
-  - [Chapter 1](file:///c:/StoryCrafter/the_rogue_prince_of_blackweir/chapters/ch01_the_silver_smirk.md): The tavern betrayal and Daemon Targaryen's awakening.
-  - [Chapter 8](file:///c:/StoryCrafter/the_rogue_prince_of_blackweir/chapters/ch08_the_gods_eye_in_the_arena.md): **The Climax & Catharsis** — The brutal public arena duel where Daemon shatters Lysander's vanity and holy blessings.
-  - [Chapter 10](file:///c:/StoryCrafter/the_rogue_prince_of_blackweir/chapters/ch10_the_sovereign_of_the_ash.md): The ascent of the Citadel of the Red Kilns and sovereign preparation for war.
+  - [Chapter 1](file:///d:/Documents/story-crafter/the_rogue_prince_of_blackweir/chapters/ch01_the_silver_smirk.md): The tavern betrayal and Daemon Targaryen's awakening.
+  - [Chapter 8](file:///d:/Documents/story-crafter/the_rogue_prince_of_blackweir/chapters/ch08_the_gods_eye_in_the_arena.md): **The Climax & Catharsis** — The brutal public arena duel where Daemon shatters Lysander's vanity and holy blessings.
+  - [Chapter 10](file:///d:/Documents/story-crafter/the_rogue_prince_of_blackweir/chapters/ch10_the_sovereign_of_the_ash.md): The ascent of the Citadel of the Red Kilns and sovereign preparation for war.
 
-### [The Mockingbird's Ledger](file:///c:/StoryCrafter/the_mockingbirds_ledger/)
+### [The Mockingbird's Ledger](file:///d:/Documents/story-crafter/the_mockingbirds_ledger/)
 - **Status**: Complete (15 Chapters, 2 Arcs).
 - **Core Premise**: Following his execution at Winterfell, the soul of Lord Petyr Baelish awakens in the starved, broken-hearted body of Alden Croft—banished five years prior by a gilded "Hero" and three treacherous women who shared his bed.
 - **Structure**:
   - **Arc 1 (Chapters 1–9)**: *The Foundations of Debt* — The gutter awakening, economic reconnaissance, the whisper network of *The Brazen Quill*, and cornering the realm's grain, arms, and sovereign bonds.
   - **Arc 2 (Chapters 10–15)**: *The Sovereign Audit & Catharsis (Climax Arc)* — Commencing at Chapter 10, the systemic default of the realm, military mutiny, religious downfall, the psychological destruction of the childhood friend, and the public ruin of Lord Godfrey Sterling.
 - **Key Milestones**:
-  - [Chapter 1](file:///c:/StoryCrafter/the_mockingbirds_ledger/chapters/ch01_the_gutter_and_the_mockingbird.md): Awakening in the gutter and the memory of betrayal.
-  - [Chapter 10](file:///c:/StoryCrafter/the_mockingbirds_ledger/chapters/ch10_the_sovereign_audit.md): **The Climax Arc Begins** — The midnight Sovereign Audit and declaration of kingdom bankruptcy.
-  - [Chapter 14](file:///c:/StoryCrafter/the_mockingbirds_ledger/chapters/ch14_the_hero_unmade.md): The poisoning, arrest, and public shaming of Godfrey Sterling.
-  - [Chapter 15](file:///c:/StoryCrafter/the_mockingbirds_ledger/chapters/ch15_the_mockingbirds_realm.md): Lord Protector Petyr Baelish sovereign atop the High Citadel.
+  - [Chapter 1](file:///d:/Documents/story-crafter/the_mockingbirds_ledger/chapters/ch01_the_gutter_and_the_mockingbird.md): Awakening in the gutter and the memory of betrayal.
+  - [Chapter 10](file:///d:/Documents/story-crafter/the_mockingbirds_ledger/chapters/ch10_the_sovereign_audit.md): **The Climax Arc Begins** — The midnight Sovereign Audit and declaration of kingdom bankruptcy.
+  - [Chapter 14](file:///d:/Documents/story-crafter/the_mockingbirds_ledger/chapters/ch14_the_hero_unmade.md): The poisoning, arrest, and public shaming of Godfrey Sterling.
+  - [Chapter 15](file:///d:/Documents/story-crafter/the_mockingbirds_ledger/chapters/ch15_the_mockingbirds_realm.md): Lord Protector Petyr Baelish sovereign atop the High Citadel.
 
 ### [The Iron Order of Karst](file:///d:/Documents/story-crafter/the_iron_order_of_karst/)
 - **Status**: In Progress (18 Chapters).
@@ -74,8 +76,8 @@ Stories/
 ## Desktop Book Reader (One-Click Launch)
 
 A sleek, book-style desktop application for reading all stories in this workspace:
-- **Launch via Executable**: Double-click [`StoryReader.exe`](file:///c:/StoryCrafter/StoryReader.exe). It checks/installs Python, initializes the local `.venv`, installs requirements, and opens the reader with an embedded custom vector book icon.
-- **Launch via Batch**: Double-click [`run_reader.bat`](file:///c:/StoryCrafter/run_reader.bat).
+- **Launch via Executable**: Double-click [`StoryReader.exe`](StoryReader.exe). It checks/installs Python, initializes the local `.venv`, installs requirements, and opens the reader with an embedded custom vector book icon.
+- **Launch via Batch**: Double-click [`run_reader.bat`](run_reader.bat).
 - **Direct Python Launch**: `.\.venv\Scripts\python.exe reader_app.py`.
 - **Features**:
   - Two-page book spread with spine crease effect or continuous reading mode.
@@ -92,24 +94,14 @@ A sleek, book-style desktop application for reading all stories in this workspac
 ## Web Book Reader (Browser & Mobile Access)
 
 A responsive, feature-rich web application version of StoryReader powered by a Python multi-threaded HTTP server. It can be accessed on any browser locally or over local Wi-Fi from phones and tablets:
-- **Launch via Batch**: Double-click [`run_web_reader.bat`](file:///c:/StoryCrafter/run_web_reader.bat).
+- **Launch via Batch**: Double-click [`run_web_reader.bat`](run_web_reader.bat).
 - **Mobile & LAN Access**: By default, the server runs in **LAN mode** (binding to `0.0.0.0`), allowing immediate reading from any mobile phone, iPad, or tablet connected to your local Wi-Fi at `http://<your-lan-ip>:8080/`, as well as on your desktop at `http://127.0.0.1:8080/`. To restrict the server to localhost only, pass the `--local` flag (or `--no-lan`).
-- **Key Features**:
-  - **Identical Book Aesthetics**: Two-page spread with center spine shadow or single scroll mode, Cinzel/Georgia drop caps, running headers, and 4 themes (*Parchment*, *Warm Sepia*, *Midnight*, *Clean Paper*).
-  - **Touch & Mobile Swipes**: Left/right swipe gestures on touchscreens for page navigation.
-  - **Responsive Reflow**: Adapts smoothly to mobile screens (<820px) without cramped text or horizontal scrollbars.
-  - **URL Deep-Linking**: URL hash routing (`#story=...&chapter=...&page=...`) enables bookmarking, browser back/forward navigation, and instant page refreshes without losing place.
-  - **Live Library Reload**: "↻ Reload" button in the Table of Contents drawer dynamically rescans story chapters without restarting the server.
-  - **Root Asset Gallery**: Standalone media asset browser (`\assets`) accessible via the top bar `🖼️ Gallery` button or `G` shortcut, featuring folder category filtering, real-time search, responsive card grid, and an interactive lightbox with markdown snippet copying.
-  - **Fullscreen Reading**: Fullscreen mode (`F` shortcut) for distraction-free reading.
-  - **Web Audio Paper Sounds**: Realistic fibrous paper swipe rustle synthesized via Web Audio API.
-  - **PWA Ready**: Web app manifest and icons support "Add to Home Screen" on iOS and Android.
 
 ---
 
 ## Active Constraints & Writing Rules
 
-All story drafts, character sheets, and lore documents within this workspace adhere strictly to the rules in [GEMINI.md](file:///d:/Documents/Stories/GEMINI.md):
+All story drafts, character sheets, and lore documents within this workspace adhere strictly to the rules in [GEMINI.md](file:///d:/Documents/story-crafter/GEMINI.md):
 
 1. **Strictly Forbidden Names & Tropes**:
    - `Sunken Pass`, `Oakhaven`, `Julian`, `Rian`, `Mia`, `Elyria`, `Whispering Wood`, `Dragon/Drakes`, `Garrick`, `Bram`, `Vaelrian`, `Vane`, `Aethelgard`, `Harrick`, `Varis`, `Corin`, `Silas`, `Monster Crawler`, `Monster Dog`, `Sunken Crypt/Hollow`.

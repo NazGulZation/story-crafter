@@ -123,7 +123,7 @@ python .agents/skills/comfyui-generation/scripts/krea2_generate.py `
 ```
 
 > Verified-instance example: `--server "https://shrimp-taco-teniyo1vd6ugnz31.salad.cloud/"`,
-> `--output-dir "C:\StoryCrafter\assets"`, ~10s per image; first successful NSFW generation at
+> `--output-dir "assets"`, ~10s per image; first successful NSFW generation at
 > seed `2148589397` (`assets/krea2_nsfw_test_00001_.png`, 4/5 — only miss: `twintails` rendered
 > as single ponytail).
 
