@@ -21,7 +21,7 @@ Profiles and behavioral registers for the cast of *The Rogue Prince of Blackweir
 
 ## 2. Antagonist: Lysander of House Morn
 - **Epithet**: "The Blessed Son" / "The Sun-Favored".
-- **Concept**: A narcissistic aristocrat granted raw divine radiance by the Luminescent Mother purely because of his angelic facial symmetry. Incapable of understanding tactics, creature biology, or logistical realities.
+- **Concept**: A vainglorious aristocrat granted raw divine radiance by the Luminescent Mother purely because of his angelic facial symmetry. Incapable of understanding tactics, creature biology, or logistical realities.
 - **Concrete Desire**: Total public adulation, wealth, and effortless heroic glory without enduring hardship or discipline.
 - **Core Misbelief**: Believes divine light and beauty elevate him above all consequences and that lesser men exist solely to reflect his magnificence.
 - **Tactile Mannerism**: Preening his golden curls with ringed fingers; resting a manicured palm on his gilded broadsword hilt.

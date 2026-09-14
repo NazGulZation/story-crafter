@@ -74,7 +74,7 @@ I smiled, my quill scratching across the parchment. *Gisela’s iron. A charming
 
 *Flue One: Master Orlo, a clerk from the High Court of Chancellor Vivienne Claire, drinking spiced wine with a courier from the southern ports.*
 
-"...three crates of liturgical silver cleared the chapel gate at midnight," Orlo whispered nervously, his cup clattering against the pine table. "Banded in lead, marked as *Holy Relics of Saint Jude*. But they weren't bones, I swear it. They sounded like church plate. Lady Vivienne signed the transit pass herself. She has a debt of four thousand sovereigns with the Genoese bankers that comes due on the feast of Saint Michael."
+"...three crates of liturgical silver cleared the chapel gate at midnight," Orlo whispered nervously, his cup clattering against the pine table. "Banded in lead, marked as *Holy Relics of Saint Aldhelm*. But they weren't bones, I swear it. They sounded like church plate. Lady Vivienne signed the transit pass herself. She has a debt of four thousand sovereigns with the Genoese bankers that comes due on the feast of Saint Michael."
 
 I paused, blowing softly upon the wet ink. *Vivienne's church plate. An arch-chancellor who steals from her own altars to pay her debts.*
 

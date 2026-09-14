@@ -52,7 +52,7 @@ Lynette turned her glare upon me. "Well? Did your masters procure the southern n
 
 I stepped forward, placing the bolt of green silk upon an ebony side table, and retrieved a small vellum portfolio from beneath my cloak.
 
-"The elixirs have arrived from San Remo, Your Grace," I said, pitching my voice into that soft, melodic register that calms startled horses. "Six porcelain jars of the restorative balm, sealed with the apothecary's wax. Guaranteed to erase ten years of grief from the brow within a single fortnight."
+"The elixirs have arrived from Port Aleron, Your Grace," I said, pitching my voice into that soft, melodic register that calms startled horses. "Six porcelain jars of the restorative balm, sealed with the apothecary's wax. Guaranteed to erase ten years of grief from the brow within a single fortnight."
 
 Lynette let out a ragged, shuddering breath, pressing her palms against her temples.
 

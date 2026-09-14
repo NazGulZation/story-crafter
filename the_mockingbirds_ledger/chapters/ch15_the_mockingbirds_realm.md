@@ -34,7 +34,7 @@ Mallow consulted a small vellum scroll.
 
 "And Vivienne Claire?"
 
-"The Grand Inquisitor stripped her of her vows and consecrated names. She resides in the lay dormitory of Saint Eluned’s cloister, scrubbing the flagstones of the chapter house in coarse burlap. She is forbidden to speak above a whisper on pain of the scourge."
+"The Grand Inquisitor stripped her of her vows and consecrated names. She resides in the lay dormitory of Saint Annora’s cloister, scrubbing the flagstones of the chapter house in coarse burlap. She is forbidden to speak above a whisper on pain of the scourge."
 
 "And Lynette Morrow?"
 

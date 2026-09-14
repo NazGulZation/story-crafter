@@ -2,7 +2,7 @@
 
 A vow sworn in childhood is written on water, but a mortgage deed is carved into granite.
 
-The old ruined chapel of Saint Ursula stood on the windswept bluff three miles outside the East Gate, overlooking the grey, frothing breakers of the Bitter Sea. It was the highest point on the road to Weirs-End. Ten years ago, two peasant children with mud between their toes had climbed to this very ridge, staring toward the gleaming spires of Bell-Garde, swearing that one day they would walk those streets together as lord and lady.
+The old ruined chapel of Saint Elowen stood on the windswept bluff three miles outside the East Gate, overlooking the grey, frothing breakers of the Bitter Sea. It was the highest point on the road to Weirs-End. Ten years ago, two peasant children with mud between their toes had climbed to this very ridge, staring toward the gleaming spires of Bell-Garde, swearing that one day they would walk those streets together as lord and lady.
 
 Now, the chapel roof was caved in, its altar overgrown with blackened nettles, the air tasting sharply of salt-spray, rotting sea-kelp tossed upon the rocks below, and the damp, sour wool of a drenched travelling cloak.
 

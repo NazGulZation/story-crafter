@@ -36,7 +36,7 @@ Geographical, political, and material worldbuilding for the frontier marches of 
 ### 2. The Gore-Horn Behemoth
 - **Habitat**: Deep subterranean defiles of the Wyrm-Tooth Crags.
 - **Anatomy**: Massive quadrupedal juggernaut covered in slate-gray hide. Head crowned by six hollow, flute-like horns.
-- **Behavior**: Blind titan tracking prey solely through acoustic resonance and heat currents. When provoked, its hollow horns whistle a deafening frequency while spraying pressurized caustic bile.
+- **Behavior**: Blind behemoth tracking prey solely through acoustic resonance and heat currents. When provoked, its hollow horns whistle a deafening frequency while spraying pressurized caustic bile.
 
 ---
 

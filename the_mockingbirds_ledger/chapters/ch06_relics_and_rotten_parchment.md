@@ -8,7 +8,7 @@ The subterranean vaults smelled of burning frankincense that failed to smother t
 
 I walked the flagstones of the North Chancel, my footsteps muffled by thick felt-soled slippers.
 
-Before the altar of Saint Jude the Martyr stood High Chancellor Vivienne Claire.
+Before the altar of Saint Aldhelm the Martyr stood High Chancellor Vivienne Claire.
 
 She was draped in pleated robes of bleached samite, banded at the hem in silver wire, an ivory wimple framing a face as delicate and unblemished as curd. Her fingers, long and slender, clicked an ebony rosary as she knelt upon a velvet prie-dieu. To any pilgrim looking through the wrought-iron screen, she was a living saint—an angelic maiden who had risen from humble beginnings through divine grace and sacred purity.
 
@@ -28,7 +28,7 @@ She frowned, her gaze dipping to the brass casket in my hands. A tiny crease app
 
 "The church does not receive deliveries at night," she said coldly.
 
-"Not even from the port of San Remo?" I asked, tilting my head with polite curiosity. "Not even when the consignment contains two thousand gold florins in Genoese bills of exchange, remitted in payment for the... *sacred finger-bones* of Saint Jude?"
+"Not even from the port of Port Aleron?" I asked, tilting my head with polite curiosity. "Not even when the consignment contains two thousand gold florins in Genoese bills of exchange, remitted in payment for the... *sacred finger-bones* of Saint Aldhelm?"
 
 Vivienne’s porcelain mask fractured.
 
@@ -50,11 +50,11 @@ I drew a folded sheepskin ledger from my inner pocket, turning the pages with de
 
 "Lies," she choked, her hand flying to the rosary at her throat. "Slander born of the Pit!"
 
-"Item twelve," I read aloud, ignoring her protest. *"Fourteenth of August. The left femur of Saint Cecilia. Sold to the Count of Montfort for six hundred gold pieces. Provenance certified under the Great Privy Seal of High Chancellor Vivienne Claire."*
+"Item twelve," I read aloud, ignoring her protest. *"Fourteenth of August. The left femur of Saint Celestine. Sold to the Count of Montfort for six hundred gold pieces. Provenance certified under the Great Privy Seal of High Chancellor Vivienne Claire."*
 
 I looked up from the parchment, my grey eyes smiling into hers.
 
-"Remarkable bone, that femur. Especially considering that Saint Ysolde died without legs, having been martyred by the Wheel. The bone in question belonged to a calf slaughtered behind the butcher's row in the Canal Ward."
+"Remarkable bone, that femur. Especially considering that Saint Morwen died without legs, having been martyred by the Wheel. The bone in question belonged to a calf slaughtered behind the butcher's row in the Canal Ward."
 
 Vivienne stared at me in horrified silence. Her chest rose and fell in rapid, shallow bursts. For the first time, she truly looked at my face—past the neat beard, past the fine wool coat.
 
@@ -64,7 +64,7 @@ Her blue eyes widened in sudden, staggering comprehension.
 
 "Alden Croft," I supplied gently, dipping my head. "The very same novice you once counseled to accept his banishment with holy humility. *'The Light demands strength, brother,'* I believe were your exact words as you watched Lord Godfrey toss my sword into the horse trough."
 
-Vivienne retreated half a step, her back pressing against the cold marble of Saint Maelor’s tomb. Her mind was working frantically, weighing threats, violence, and escape.
+Vivienne retreated half a step, her back pressing against the cold marble of Saint Kaelen’s tomb. Her mind was working frantically, weighing threats, violence, and escape.
 
 Then, true to her nature, she chose the weapon that had served her best for five years.
 
@@ -102,7 +102,7 @@ She pulled back as if stung by an adder, her expression twisting into an ugly, s
 
 I took the brass casket from the tomb and placed it directly into her trembling hands.
 
-"Two thousand gold florins, Lady Vivienne. The complete remittance from San Remo, less a modest ten percent handling fee for *The Grey River Syndicate*."
+"Two thousand gold florins, Lady Vivienne. The complete remittance from Port Aleron, less a modest ten percent handling fee for *The Grey River Syndicate*."
 
 She stared at the casket, utterly uncomprehending. "You're... giving me the coin?"
 

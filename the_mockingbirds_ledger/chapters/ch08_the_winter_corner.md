@@ -2,7 +2,7 @@
 
 Winter is the only auditor whose judgment cannot be bribed.
 
-The frost arrived three weeks before the feast of Saint Martin, carried down from the jagged northern crags on the back of a biting, howling gale. By the third morning, the surface of the River Sunder was choked with jagged plates of black river-ice that ground against the wooden pilings of the wharves with the sickening groan of snapping timber.
+The frost arrived three weeks before the feast of Saint Lucan, carried down from the jagged northern crags on the back of a biting, howling gale. By the third morning, the surface of the River Sunder was choked with jagged plates of black river-ice that ground against the wooden pilings of the wharves with the sickening groan of snapping timber.
 
 The air smelled of salt-sleet, freezing oak pitch, and the dry, musty starch of frosted grain sacks being hauled across frozen mud.
 

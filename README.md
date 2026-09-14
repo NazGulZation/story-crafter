@@ -69,7 +69,13 @@ Stories/
 - **Structure**:
   - **Act I (Chapters 1–6)**: *Requisition & The Black Redoubt* — Transmigration, seizing Karst-Hold, liquidating robber-barons into labor units, establishing the Black Directorate.
   - **Act II (Chapters 7–12)**: *The System Expands* — Eradication of the Adventurers' Guild, blast furnace industrialization, the humiliating checkpoint arrest of Marek and the harem.
-  - **Act III (Chapters 13–18)**: *Total Purification & The New Order* — Industrial trench war against the horde, public trial and coal-mine labor reallocation, capitulation of the feudal nobility, and total autarky under the Black Sun.
+### [The Kingslayer's Reckoning](file:///d:/Documents/story-crafter/the_kingslayers_reckoning/)
+- **Status**: Complete (18 Chapters, 39,590 words).
+- **Core Premise**: Before death claims him beneath the collapsing vaults of the Red Keep holding Cersei, the soul of Ser Jaime Lannister awakens in the mud outside *The Gilded Boar* in the discarded body of Theron Marrow. Cast out of the *Sun-Vanguard* by the vain, Goddess-favored hero Evander Montfort and mocked by his treacherous companions—including his childhood friend Lyra Cole—Jaime discovers he has been restored with two living, intact hands. Receiving the 60-second anti-magic *Sovereign Duel* blessing from an ancient Forgotten God in Chapter 3, the Kingslayer embarks on an ironclad, slow-burn revenge to dismantle false heroes with pure Westerosi knightly lethality.
+- **Tone**: Gritty, sardonic, aristocratic, grounded martial violence, tactical swordplay, and psychological retribution.
+- **Structure**:
+  - **Arc 1 (Chapters 1–11)**: *The Gilded Lie and the Forge of Steel* — Transmigration, calibration of the mortal vessel, covenant with the Forgotten God, rise through the independent dueling circuit, and the public humiliation of Evander at the Midsummer Tourney.
+  - **Arc 2 (Chapters 12–18)**: *The Sovereign Reckoning and the Golden Vow* — Commencing at Chapter 12: the highland winter campaign, Evander's catastrophic cowardice and rout, the cold dismissal of the groveling osanajimi, the formal trial by combat in the cathedral plaza, and Jaime's sovereign peace.
 
 ---
 

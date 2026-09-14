@@ -2,7 +2,7 @@
 
 The last thing I remembered was fire, blood, and the howling gale above the Gods Eye. 
 
-I remembered the scream of my fell crimson mount as our talons locked with the ancient green titan, the rush of the clouds, and the savage, ecstatic grin on my face as I leaped from the saddle. I remembered the clean, singing bite of Dark Sister driving hilt-deep through the blind sapphire eye of my nephew, bone splintering beneath my weight, and the black waters of the lake rushing up like an iron wall to crush us both.
+I remembered the scream of my fell crimson mount as our talons locked with the ancient green leviathan, the rush of the clouds, and the savage, ecstatic grin on my face as I leaped from the saddle. I remembered the clean, singing bite of Dark Sister driving hilt-deep through the blind sapphire eye of my nephew, bone splintering beneath my weight, and the black waters of the lake rushing up like an iron wall to crush us both.
 
 I had welcomed the dark. I had earned my death.
 
