@@ -101,6 +101,13 @@ Before publishing or finalizing any chapter:
 - [ ] **Autonomous Allies & Competent Foes**: Opponents fight intelligently; allies challenge the protagonist rather than acting as a sycophantic cheering section.
 - [ ] **Tangible Victory Costs**: Victories are not frictionless clean sweeps; the protagonist pays in blood, treasure, reputational fallout, or newly ignited complications.
 - [ ] **Plot Twist Fair-Play & Dosing**: Any twist is seeded upstream in plain sight, inevitable in hindsight, and applied with measured restraint ("here and there", not every chapter).
+- [ ] **No Excessive Formality / Lean Diction**: Prose and dialogue follow Orwell's rule: "Never use a long word where a short one will do." Dialogue sounds natural for each character's background without stiff, academic, or bureaucratic vocabulary.
+- [ ] **Dynamic Chapter Word-Count Thresholds**:
+  - Bridging / Transition / Setup Chapters: Minimum **1,500 words** (verified via `split` count).
+  - Main Turn-Around / Plot Twist / Climax / Major Confrontation Chapters: Minimum **2,200 words** (verified via `split` count).
+- [ ] **Mandatory Post-Draft Canonical Lore & Role Recheck**: If featuring a character or faction from existing media, conduct a secondary post-draft recheck confirming that their internal psychology, referenced history, relationships, and role are strictly canonical to their source material. Conduct web research if needed to confirm facts.
+- [ ] **Natural Chapter Endings (No Melodramatic One-Liners)**: Routine and bridging chapters end normally with grounded, practical character actions, procedural tasks, or natural dialogue. No theatrical mic-drop epigrams, dramatic catchphrases whispered to the wind, or performative closing lines (permitted ONLY in crucial/core turning points or novel climaxes).
+- [ ] **Post-Draft End-to-End Continuity Audit Across All Chapters**: After drafting or modifying chapters, conduct a systematic cross-chapter audit. Verify 100% parity for quantifiable numbers (troop counts, vanguard sizes, guard escorts, horse numbers, coin sums, wagon loads), action/order handoffs from Chapter N to Chapter N+1, physical injuries/bandages, and environmental states without numerical drift or continuity drop-offs.
 
 ### NSFW / Explicit — Explicit, Detailed, Arousing Audit
 Apply ONLY to chapters with requested NSFW/erotica content. In NSFW mode, vague fade-to-black or summary sex is a consistency failure — every requested scene must audit as on-page, explicit, and arousing:

@@ -83,6 +83,13 @@ Whenever drafting, rewriting, or reworking a story, arc, chapter, or scene, the 
    - Verify that the protagonist's plans did not execute effortlessly.
    - Confirm that the protagonist faced genuine uncertainty, made imperfect calculations, or paid a tangible price (reputational, financial, physical, or tactical).
    - Ensure secondary characters demonstrated independent agency rather than subservient sycophancy.
+7. **Mandatory Post-Draft End-to-End Continuity Audit Across All Chapters**:
+   - **Audit Execution**: AFTER writing, expanding, or editing any chapter(s), the author must ALWAYS perform an end-to-end continuity audit across ALL adjacent and connected chapters in the manuscript before marking the work complete.
+   - **Critical Vectors**:
+     - *Numerical & Quantifiable Parity*: Verify that troop numbers, vanguard sizes, guard escorts, horse tallies, coin sums, wagon loads, and weapon counts in Chapter N match 100% with Chapter N+1 (e.g., if thirty or forty guards are ordered in Chapter 8, verify Chapter 9 does not deploy an unaligned number without an explicit on-page explanation).
+     - *Action & Command Handoffs*: Ensure orders given at the end of Chapter N are accurately received and dramatized at the start of Chapter N+1.
+     - *Physical & Inventory Continuity*: Track wounds, bandages, armor damage, weapons, and mounts from chapter to chapter without spontaneous healing or vanishing items.
+     - *Chronological & Environmental State*: Verify that travel times, time of day, weather, and terrain match cleanly across scene transitions.
 
 > [!TIP]
 > **Comprehensive Audit Matrix & Causal Repair**: For the full 12-point integrity matrix, 3-phase auditing flow, and causal repair techniques (living instrument, upstream seeding, friction injection), invoke and execute the companion [narrative-consistency](file:///c:/StoryCrafter/.agents/skills/narrative-consistency/SKILL.md) skill.
@@ -109,6 +116,15 @@ Injecting well-timed plot twists and reversals prevents the narrative from becom
 4. **Fair-Play Seeding Protocol**:
    - Plant clues in plain sight at least 2 to 3 scenes or chapters prior (e.g., an offhand comment about an overdue shipment, an unusual wax seal, an uncharacteristic pause during negotiations).
    - Give each clue a plausible, innocent surface explanation when first dramatized so the reader (and protagonist) interprets it conventionally until the reveal recontextualizes it.
+
+### 2.6. Dynamic Chapter Length & Pacing Standards
+Every chapter must adhere strictly to dynamic word-count thresholds calibrated to its structural role in the narrative:
+- **Bridging / Transition / Setup Chapters**: Minimum **1,500 words** (target 1,550 - 1,800 words to ensure a safe buffer above word-count variance).
+  - Handles logistical movement, intermediate negotiations, strategic setup, camp life, and character reactions between major crises.
+  - Expand through grounded sensory detail (3+ non-visual senses), operational realism, character voice, and friction.
+- **Main Turn-Around / Plot Twist / Climax / Major Confrontation Chapters**: Minimum **2,200 words** (target 2,250 - 2,600 words).
+  - Handles major causal turning points, plot reversals, decisive military engagements, high-stakes council showdowns, lethal betrayals, public trials, and arc climaxes.
+  - Expand through moment-to-moment dramatic tension, tactical choreography, multi-layered dialogue with subtext, psychological reckoning, and the immediate aftermath of the crisis.
 
 ---
 
@@ -143,6 +159,16 @@ AI-generated fiction frequently falls into repetitive stylistic tics. Actively s
    - *Good*: "The pass is secured. Now, we begin the industrialization of the valley."
    - *Bad*: "Now, we begin the next arc." / "The chapter ends now." / "### [END OF...]"
    - *Directive*: Never allow characters, dialogue, or narration to break the fourth wall, reference literary acts/arcs/chapters, or signal structural conclusions. Stay 100% within the diegetic narrative reality.
+7. **Excessive Formality & Rigid Bloat ("Never Use a Long Word Where a Short One Will Do")**:
+   - *Bad (Stiff/Bureaucratic)*: "Tired of looking over my shoulder during a withdrawal to make sure our clerk hadn’t dropped his ink-horn in the gorse."
+   - *Good (Natural/Punchy)*: "Tired of looking over my shoulder when we run to make sure our clerk didn’t drop his ink-pot in the dirt."
+   - *Bad*: "The company experienced total logistical insolvency."
+   - *Good*: "The company ran out of coin."
+   - *Directive*: Never use an overly formal, academic, bureaucratic, or polysyllabic Latinate word where a short, punchy word will do. Match speech registers authentically to character backgrounds—mercenaries talk like killers, carters talk like teamsters, and nobles speak with cold, crisp authority rather than sounding like legal dissertations. Strip stiff SAT filler words (*withdrawal* -> *retreat/run*, *commence* -> *start*, *utilize* -> *use*, *subsequently* -> *then*, *altercation* -> *fight*, *fabrications* -> *lies*).
+8. **Melodramatic Chapter-Ending One-Liners (End Chapters Normally)**:
+   - *Bad (Cliche / Cringe)*: "'A Lannister always pays his debts,' I said to the wind." / "'A debt,' I murmured into the cold sea wind... 'And House Lannister always pays its debts.'" / "The silence of Dun-Carrow belonged to the Lion." / "The vanguard was accounted for. Now only the peacock remained."
+   - *Good (Natural & Grounded)*: "I signed the requisition, capped the horn of black ink, and handed the vellum back to Morcar. 'Get the wagons moving before the frost sets.'" / "I set the cup down upon the pine table, fastened my cloak against the draught, and walked down to inspect the stable watch."
+   - *Directive*: Never cap off routine chapters with theatrical mic-drop epigrams, dramatic catchphrases whispered to the wind, or repetitive one-liners. It feels artificial, predictable, and cringing. End chapters normally with grounded, organic character actions, mundane procedural tasks, administrative business, or natural dialogue. Reserve thematic closing lines exclusively for crucial, core turning points or pivotal arc climaxes (e.g., the ultimate finale of an entire novel).
 
 ---
 
@@ -244,7 +270,9 @@ D:\Documents\Stories/
 - **Plot Twist & Reversal Mapping**: If this scene or upcoming arc beat features a plot twist, confirm that upstream clues are planted in plain sight with innocent surface explanations, and ensure the story adheres to the "measured restraint" standard (strategic inflection points, never constant whiplash).
 
 ### Step 2: Drafting
-- Draft focused prose blocks (800 - 2,500 words per scene).
+- Draft prose blocks adhering to chapter role thresholds:
+  - **Bridging / Transition / Setup Chapters**: Minimum **1,500 words** (target 1,550 - 1,800 words).
+  - **Main Turn-Around / Plot Twist / Climax / Major Confrontation Chapters**: Minimum **2,200 words** (target 2,250 - 2,600 words).
 - Keep dialogue sharp; characters should rarely say exactly what they mean.
 - Ensure obstacles feel earned and victories come with a cost.
 - Show the protagonist sweating, struggling, and actively adapting when their initial expectations are shattered.
@@ -264,6 +292,7 @@ D:\Documents\Stories/
   - Did the protagonist look pathetic, clumsy, or chronically incompetent? Did they hold the "idiot ball" just to manufacture drama?
   - If yes, **FAIL** the draft. Ensure complications stem from formidable opposition or unforeseen fog-of-war, preserving the MC's dignity, core intelligence, and satisfying recovery.
 - **Canonical voice audit**: Verify that any established media characters behave and speak strictly in-character, free of caricatures or fanon dilution.
+- **Mandatory Post-Draft Canonical Lore & Role Recheck**: AFTER the story, arc, or chapter is drafted, conduct a mandatory second recheck to verify that all referenced lore, history, psychological traits, relationships, and the character's role remain strictly faithful to canonical source material. Actively search the web (`search_web`) to confirm any uncertain historical milestones, exact quotes, or lore nuances.
 - **Style polish**: Eliminate filler adverbs (*suddenly*, *nervously*, *quickly*), weed out passive voice, and replace filter words (*he noticed*, *she heard*, *he felt*).
 
 ---
@@ -280,6 +309,10 @@ Whenever creative writing incorporates, references, adapts, or transmigrates est
 2. **Strict Elimination of Out-of-Character (OOC) Drift**:
    - Prevent the character from acting like a generic protagonist or softening into sentimental modern morality.
    - Preserve their authentic edge, flaws, arrogance, contradictions, and moral ambiguities.
+3. **Mandatory Post-Draft Canonical Lore & Role Recheck**:
+   - AFTER the prose is written, execute a dedicated secondary verification pass focused exclusively on canon fidelity.
+   - Review all internal monologues, dialogue, memories of past events, and tactical decisions against canonical lore.
+   - If any canonical detail, relationship dynamic, or historical event is in doubt, search the web to confirm accuracy before marking the manuscript complete. Fix any inaccuracies or fanon dilutions immediately.
 
 ---
 

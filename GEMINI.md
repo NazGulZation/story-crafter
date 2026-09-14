@@ -75,7 +75,11 @@ When drafting story scenes:
     - *Banned*: "They did not shout because they were enslaved; they shouted because they were terrified of the chaos..."
     - *Affirmative*: "They roared out of terror for the chaos of their past, clinging fiercely to the certainty of their rations."
 - **Dynamic Action**: Avoid simultaneous dual-action ("as / while") overload. Sequence beats cleanly with active verbs and tangible physical consequences.
-- **Dialogue with Subtext**: Characters rarely speak unvarnished truth; dialogue must reflect character status, tension, deflection, and hidden motives.
+- **Dialogue with Subtext & Authentic Voice**: Characters rarely speak unvarnished truth; dialogue must reflect character status, tension, deflection, and hidden motives.
+- **Strict Prohibition of Excessive Formality & Rigid Words ("Never Use a Long Word Where a Short One Will Do")**:
+  - **Avoid Stiff/Rigid Phrasing**: Never use overly formal, academic, bureaucratic, or Latinate vocabulary in dialogue or prose when a simpler, punchier word works.
+  - **Authentic Speech Registers**: Characters must speak naturally for their background. Rough mercenaries, skirmishers, and common soldiers must never speak like military academy professors or legal clerks (e.g., *Banned*: "Tired of looking over my shoulder during a withdrawal..."; *Natural*: "Tired of looking over my shoulder when we run...").
+  - **Lean, Muscular Prose**: Default to strong, plain words over bloated vocabulary. Strip bureaucratic stiffness (*withdrawal* -> *retreat/run*, *commence* -> *begin/start*, *utilize* -> *use*, *subsequently* -> *then*, *altercation* -> *fight/brawl*, *fabrications* -> *lies*).
 - **Strict Prohibition of Meta-Commentary & Structural Signposting**:
   - **Forbidden Meta Patterns**: Never inject structural commentary, fourth-wall breaks, out-of-character narrator signposting, or structural declarations into story prose, narration, or character dialogue:
     - `"Act One is concluded"` / `"Act Two begins"`
@@ -84,7 +88,16 @@ When drafting story scenes:
     - `### [END OF THE STORY / NOVEL / ARC]`
     - Any meta commentary by characters or narration regarding plot structure, chapter progression, acts, arcs, pacing, reader experience, or the fourth wall.
   - **Why It Is Prohibited**: It is amateurish, pulls the reader completely out of the immersion, shatters narrative illusion, and reduces prose to a self-conscious checklist.
-  - **Mandatory Immersion Directive**: Stay 100% inside the narrative reality, character psychology, and diegetic world. End scenes and chapters with organic, in-universe character actions, concrete sensory beats, spoken orders, or atmospheric environmental notes.
+- **Strict Prohibition of Melodramatic Chapter-Ending One-Liners (Natural Chapter Endings)**:
+  - **Forbidden Ending Patterns**: Do not end chapters with melodramatic mic-drop one-liners, theatrical epigrams whispered to the wind, smug catchphrase repetitions, or formulaic parting mottos:
+    - `"A debt," I murmured into the cold sea wind... "And House Lannister always pays its debts."`
+    - `"A Lannister always pays his debts," I said to the wind.`
+    - `"The silence of [City] belonged to the Lion."`
+    - `"The vanguard was accounted for. Now only the peacock remained."`
+    - Any repetitive, performative one-liners whispered into the void, empty philosophical mic-drops, or theatrical poses designed to cap off a chapter.
+  - **Why It Is Prohibited**: It is repetitive, predictable, cliché, and cringing. Real people and grounded leaders do not murmur catchphrases to the wind or strike stage poses at the close of every routine meeting, transaction, or evening.
+  - **Mandatory Natural Endings Directive**: At the end of each chapter, just end it normally. Ground the ending in practical, in-universe character actions, mundane procedural steps, routine administrative business, logistical instructions, or organic atmospheric observations (e.g., closing a ledger, setting down a pen, checking an axle pin, pulling on gloves, stepping out of the rain into a warehouse, or walking toward a mess fire).
+  - **Sole Exception**: Crucial, core turning points or pivotal arc climaxes (such as the ultimate conclusion of an entire book or the decisive turning point of a war), where a thematic line has been painstakingly earned through multiple arcs of struggle. Routine chapters, bridging chapters, and intermediate confrontations must ALWAYS end normally.
 
 ---
 
@@ -110,6 +123,13 @@ When drafting story scenes:
   - *Measured Restraint ("Here and There")*: Pepper twists strategically at key inflection points, mid-arc climaxes, or major chapter turns. Avoid oversaturating every scene or chapter with whiplash reversals, which induces twist fatigue and destroys dramatic weight.
   - *Fair-Play Foreshadowing*: Every twist must be seeded upstream through subtle clues, behavioral discrepancies, double-edged dialogue, or administrative anomalies. The reveal must never be a random unseeded shock; the reader should look back and realize the signs were hidden in plain sight.
   - *Subverting Certainty*: Use twists to shatter the protagonist's neat assumptions, expose their cognitive blind spots, or reveal conflicting third-party agendas, forcing desperate adaptation and keeping the story gripping.
+- **Mandatory Post-Writing End-to-End Continuity Audit Across All Chapters**:
+  - **Mandate**: AFTER drafting, rewriting, or editing any chapter(s), the writer must ALWAYS execute a dedicated, systematic cross-chapter continuity audit across ALL written chapters before considering the task complete.
+  - **Critical Vectors to Cross-Check Chapter-to-Chapter**:
+    1. *Numerical & Quantifiable Parity*: Verify that troop counts, vanguard sizes, escort numbers, horse counts, coin sums, weapon tallies, wagon loads, dates, distances, and elapsed time mentioned in Chapter N match 100% with what is deployed, received, or referenced in Chapter N+1 and downstream chapters (e.g., if a commander orders forty mounted guards in Chapter 8, ensure Chapter 9 does not deploy thirty or fifty without an explicit diegetic explanation).
+    2. *Action & Command Handoffs*: Verify that orders given, decisions made, or movements initiated at the close of Chapter N are accurately picked up and dramatized at the start of Chapter N+1 without dropped threads, forgotten dispatches, or phantom companions.
+    3. *Physical & Gear State Continuity*: Ensure character wounds, bloodstains, armor dents, broken weapons, fatigue, and inventory carry over consistently from scene to scene without miraculous off-screen healing or vanishing equipment.
+    4. *Environmental & Temporal Tracking*: Ensure day/night cycles, seasonal progression, blizzard/storm transitions, and geographic travel times remain airtight across chapter breaks.
 
 ---
 
@@ -118,6 +138,7 @@ When drafting story scenes:
 When creative writing or worldbuilding incorporates, references, adapts, or transmigrates elements from established external media (e.g., historical figures, classical mythologies, or licensed fictional characters, factions, and worlds):
 - **Mandatory Proactive Web Research**: Never rely on vague memory, fanon memes, or generic tropes. Actively research canonical source material (via search tools) to verify psychological profiles, speech patterns, physical mannerisms, iconic philosophies, and lore milestones.
 - **Strict Anti-OOC Enforcement**: The character or element must act, speak, and make decisions strictly true to their canonical essence. Never dilute an established figure's intellect, flaws, ruthlessness, or unique moral compass into a generic protagonist archetype.
+- **Mandatory Post-Draft Canonical Lore & Role Recheck**: After drafting any scene, chapter, or story featuring an established media character, execute a dedicated secondary audit verifying that their internal monologue, referenced history, relationships, and role strictly reflect canonical source lore. Search the web proactively to confirm any disputed or nuanced details before finalizing.
 
 ---
 
@@ -150,3 +171,17 @@ When a story takes place in a fantasy world (e.g. *The Mockingbird's Ledger*, *T
     - `Andalusian courser` -> `southern blood-stallion` / `Val-d'Or courser`
     - `Persian carpet` -> `woven silk carpet` / `southern pile rug`
     - `Fall of Troy` -> `Siege of Khors` / `Sack of the Sun-Citadel`
+
+---
+
+## 7. Dynamic Chapter Length & Pacing Standards
+
+Every chapter must adhere strictly to dynamic word-count thresholds calibrated to its structural role in the narrative:
+
+- **Bridging / Transition / Setup Chapters**: Minimum **1,500 words**.
+  - Applies to chapters covering logistical movement, intermediate negotiations, strategic setup, intelligence gathering, camp life, and character processing between crises.
+  - Expansion must be achieved through concrete sensory grounding (3+ non-visual senses), operational detail, character voice, and friction—never repetitive padding.
+- **Main Turn-Around / Plot Twist / Climax / Major Confrontation Chapters**: Minimum **2,200 words**.
+  - Applies to chapters featuring major causal turning points, plot reversals, decisive military engagements, high-stakes council showdowns, lethal betrayals, public tribunals, and arc climaxes.
+  - Expansion must deliver sustained moment-to-moment dramatic tension, tactical choreography, multi-layered dialogue with subtext, psychological reckoning, and the immediate aftermath of the crisis.
+
