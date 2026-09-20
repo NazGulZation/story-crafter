@@ -8,8 +8,8 @@ An eighteen-chapter serialized novel written strictly in the **First-Person POV 
 
 - **Arc 1: The Gilded Lie and the Forge of Steel (Chapters 1–11)**
   - *Core Theme*: Awakening, calibration of the mortal vessel, covenant with the Forgotten God, rise as an independent contract duelist, and the public shattering of Evander's aura at the Midsummer Tourney.
-- **Arc 2: The Sovereign Reckoning and the Golden Vow (Chapters 12–18)**
-  - *Core Theme*: Commencing at Chapter 12: the winter highland expedition, the catastrophic rout and cowardice of the hero, the bitter rejection of the groveling osanajimi, the formal trial by combat in the sunlit cathedral plaza, and the establishment of true knightly order.
+- **Arc 2: The Sunfire Heresy and the Kingslayer's Justice (Chapters 12–18)**
+  - *Core Theme*: Commencing at Chapter 12: the victory feast poisoned by temple treason, the theocratic lockdown of Barrow-Gate, Jaime's urban counter-mobilization with the smelter-guilds, the neutralization of the catastrophic "Liquid Sun" conspiracy, the exposure of false allies, and the ultimate Sovereign Duel dismantling the mad hero in the cathedral plaza.
 
 ---
 
@@ -40,8 +40,9 @@ An eighteen-chapter serialized novel written strictly in the **First-Person POV 
 
 #### Chapter 4: The Pit of Barrow-Gate
 - **Setting**: The subterranean fighting pit beneath the Old Tanneries; smell of tallow grease, bloodied sawdust, cheap plum brandy.
-- **Action**: Jaime enters the pit to earn hard coin and forge a reputation. He faces brute berserkers with low-tier strength buffs.
-- **Friction**: Theron's forearm muscles cramp during the third bout. Jaime cannot overpower his opponent; he must win through economic footwork, eye feints, and an arming-sword pommel strike that shatters the brute's jaw.
+- **Action**: Jaime enters the pit to earn hard coin and calibrate his newly acquired strength. He faces Torvald the Bone-Breaker.
+- **The Blessing Calibration**: When Torvald charges with Stone-Bone flared, Jaime activates the Sovereign Duel to test the Forgotten God's gift; the brown aura snuffs out, leaving Torvald panicked and fragile, while Jaime shatters his nose and jaw with an economic pommel strike.
+- **Aftermath**: The drunken crowd mocks Torvald for buying a counterfeit hedge-priest charm, leaving Jaime's secret completely concealed while he clocks the exact 60-second limit and cold ash residue.
 
 #### Chapter 5: The Spoiled Escort
 - **Setting**: The rocky pass of the Iron Crags; howling wind, loose shale, smell of sulfur springs.
@@ -62,11 +63,13 @@ An eighteen-chapter serialized novel written strictly in the **First-Person POV 
 - **Setting**: The upper promenade outside the Margrave's palace; white limestone flags, golden afternoon light, fluttering silk pennants.
 - **Conflict**: Evander corners Jaime in public, demanding he yield his merchant contracts.
 - **The Verbal Flaying**: Jaime dismantles Evander's posture and technique before the City Watch, pointing out the boy's dropped guard and weak left foot. Enraged, Evander challenges Jaime to the upcoming Midsummer Tourney.
+- **The Chance Encounter on the Cypress Terrace**: Descending toward the wharves, Jaime encounters Renata Fell sitting on a parapet slicing a green apple. Jaime questions why a hardened border skirmisher follows an incompetent peacock, and bluntly asks why in the seven names she would spread her legs for him. Renata's cynical defense exposes the ugly, desperate survival math of gutter-born mercenaries and her growing disgust with Evander's vanity, establishing deep subtext for their Chapter 10 duel.
 
 #### Chapter 9: The Salt in the Wine
 - **Setting**: The blacksmith district of Barrow-Gate; hammering iron, acrid coal smoke.
-- **Adversarial Friction**: Evander pays a cutpurse to poison Jaime's whetstone oil with flesh-numbing aconite before the tourney.
-- **Causal Counter-Play**: Jaime, an old hand at court intrigue, spots the greasy residue, switches the stones, and fractures the cutpurse's elbow, sending him back with a quiet warning.
+- **The Ambush**: Evander pays a cutpurse gifted with a low-tier *Shadow-Slip* blessing to poison Jaime's whetstone oil with flesh-numbing aconite in the dark forge alley.
+- **The Sovereign Duel**: Jaime senses the magical displacement, corners the saboteur in the pitch black, and invokes the Sovereign Duel. The grey ash field strips the assassin's magical stealth, leaving him shivering and exposed as a naked mortal.
+- **Interrogation**: Jaime fractures the saboteur's elbow in an iron lock, forces a confession, and sends the weeping wretch back to Evander with the ruined stones.
 
 #### Chapter 10: The Tourney of the Pale March
 - **Setting**: The grand arena before Margrave Carrow; brass horns, ten thousand cheering spectators, smell of roasted chestnuts and horse sweat.
@@ -82,41 +85,51 @@ An eighteen-chapter serialized novel written strictly in the **First-Person POV 
 
 ---
 
-### Arc 2: The Sovereign Reckoning and the Golden Vow
+#### Arc 2: The Sunfire Heresy and the Kingslayer's Justice
+ 
+#### Chapter 12: The Poisoned Chalice (Arc 2 Kickoff)
+- **Setting**: The Great Banquet Hall of the Margrave's Keep in Barrow-Gate; roasted boar, spiced cider, candlelit oak tables, rain against the leaded lancet windows.
+- **The Political Spark**: At the victory feast celebrating the tourney, Margrave Carrow and Factor Vallow announce municipal reforms: auditing temple tithes and appointing Jaime (Theron Marrow) Commander of the City Bastions. High Prelate Malakor and Grand Inquisitor Justinian attend with false courtesies.
+- **The Treason**: Margrave Carrow drinks from the silver chalice and collapses in convulsions, poisoned by a rare temple venom (Sun-Spite). Justinian unfurls a papal decree, brands Jaime and the Margrave's inner circle "Ash Heretics", and unleashes the Dawnguard to seize the keep.
+- **Evander's Return**: Evander enters, his face patched with silver wire and his eyes blazing with fanatical mania, proclaimed "Lord Protector of the Faith".
+- **Jaime's Counter-Action**: Jaime smells the pyromancer's trap. He parries Justinian's lead paladin, shields Lady Aurelia, and cuts an exit through the banquet side-gates with Deputy Brand and four loyal watchmen, retreating into the subterranean lower city to organize the resistance.
 
-#### Chapter 12: The Desperate Peacock (Arc 2 Kickoff)
-- **Setting**: The High Council Chamber of Barrow-Gate; vaulted timber rafters, tallow candles, scent of cedar smoke.
-- **The Fall**: Evander's defeat ruins his reputation. To salvage their prestige, the Church of Sol-Aethel proclaims an S-rank expedition to clear the Blighted Highlands.
-- **The Command**: Margrave Carrow, disgusted by the church's bluster, appoints Jaime Captain of the Marcher Auxiliary to oversee the logistics and flank defense.
+#### Chapter 13: The Shadow of the Sunburst
+- **Setting**: The lower wards and subterranean iron foundries beneath Barrow-Gate; sulfur smoke, coal braziers, water dripping through basalt masonry.
+- **The Theocratic Terror**: The Church locks down Barrow-Gate. Temple paladins patrol the streets, looting merchant guildhalls and arresting magistrates. A bounty of ten thousand silver crowns is placed on Theron Marrow's head.
+- **The Counter-Mobilization**: Jaime establishes his command in the deep foundries with Factor Vallow, Master Kroll, and the Smelter-Guild masters. Jaime coordinates supply lines, inspects barricades, and refuses panicked retreats.
+- **The Terrifying Discovery**: Scouting teams capture a temple wagon loaded with casks of "Liquid Sun"—volatile solar naphtha developed by the Church's alchemists. Justinian plans to seed the municipal cisterns and aqueducts to incinerate the lower wards and purge all "heretics" if the city resists.
 
-#### Chapter 13: The Winter March
-- **Setting**: The jagged ascents of the Grey Spires under driving sleet; black ice, frozen ruts, dying mules.
-- **The Folly**: Evander marches his retinue into the freezing heights without winter scouts or salt rations, obsessed with claiming the ancient relic citadel before Jaime.
-- **Jaime's Discipline**: Jaime advances at a steady, sustainable pace, keeping his men dry, fed, and fortified with trench braziers.
+#### Chapter 14: The Alchemist's Despair
+- **Setting**: The upper cloisters of the High Academy and the alchemy laboratories; broken retorts, scorched masonry, ozone stench, rain blowing through fractured stained glass.
+- **Infiltration**: Jaime leads a squad through the ancient stormwater culverts into the occupied upper cloisters to recover the poison antidote for the Margrave and locate the remaining naphtha fuses.
+- **Seraphina's Ruin**: He finds Seraphina Kestrel imprisoned in her own laboratory. The Church forced her to distill the unstable Liquid Sun; when she warned that the compound would detonate and obliterate the city, Evander struck her down, snapped her wand, and locked her away to be executed after the purge. Her mana channels are burnt out, her glamour stripped.
+- **Cold Pragmatism**: Seraphina expects execution, but Jaime extracts the antidote vials and the deployment maps with cool Kingsguard detachment. He spares her life, leaving her with the bitter realization that the quiet porter she ridiculed is the only man standing between Barrow-Gate and total ash.
 
-#### Chapter 14: The Slaughter in the Defile
-- **Setting**: The narrow ice gorge of Black-Mist at dawn; sub-zero howling gale, frozen blood on granite boulders.
-- **The Ambush**: Highland frost-fiends trap Evander's force. The freezing wind quenches his solar heat.
-- **The Coward**: In a frenzy of panic, Evander cuts the baggage lines, kicks aside his own retainers, mounts his prize warhorse, and flees down the mountain alone, abandoning the party.
+#### Chapter 15: The Judas Kiss at the Water Gate (The Osanajimi's Reckoning)
+- **Setting**: The deserted Lower Water Gate and the salt-warehouses along the river fog; smell of wet hemp, rotted wood, greasy mud.
+- **The False Overture**: Lyra Cole sends a desperate tavern runner with a signed token, claiming she stole the keys to the Margrave's sickroom and begs to meet Jaime at the Water Gate to defect.
+- **The Trap Revealed**: Lyra has made a deal with Evander and Justinian for gold sovereigns and aristocratic favor. Thirty elite Dawnguard crossbowmen wait in the warehouse shadows to assassinate Jaime.
+- **The Inverted Ambush**: Jaime anticipates the treachery. He arrives with fifty smelter-militia armed with heavy iron pavises and weighted crowbars. When Lyra attempts to embrace him and signal the archers, Jaime's squad springs the counter-trap, surrounding and wiping out the inquisitors.
+- **The Osanajimi's Downfall**: Discarded in the freezing mud among the dead paladins, her stolen silk drenched in ditch-water, Lyra weeps and begs for forgiveness, pleading childhood memories. Jaime looks down with cold disdain: *"You chose your masters, Lyra. Now pay their reckoning."* He strips her stolen silver chain and consigns her to the debtors' pen to scrape tallow and scrub wagons until trial.
 
-#### Chapter 15: The Beggar in the Snow (The Osanajimi's Reckoning)
-- **Setting**: Jaime's fortified mountain redoubt at the mouth of the gorge; roaring iron stoves, smell of mulled spruce beer and roasted horse flesh.
-- **The Rescue**: Jaime's phalanx holds the mouth of the gorge, breaking the frost-fiends and rescuing the abandoned baggage train.
-- **The Catharsis**: Seraphina and Renata are dragged in, frostbitten and disgraced. Lyra Cole crawls on her hands and knees through frozen mud, sobbing, clinging to Jaime's boots, begging him to remember their childhood love and take her back.
-- **The Cold Dismissal**: Jaime looks down with the icy aristocratic contempt of a Lannister: *"I am not Theron. And even if I were, a lion does not rut with ditch-refuse. You laughed in the warm tent; now scrub the baggage grease."*
+#### Chapter 16: The Siege of the High Bastion
+- **Setting**: The Grand Colonnade and the lower bailey of the Margrave's Keep; burning barricades, shouting conscripts, iron quarrels hissing through sleet.
+- **The Desperate Offensive**: Realizing the conspiracy is leaking, High Prelate Malakor orders Evander and his remaining paladins to storm the Margrave's private bedchamber, execute Lady Aurelia, and ignite the Liquid Sun beneath the fortress.
+- **Tactical Mastery**: Jaime leads the combined guild militia and surviving City Watch in a brutal urban counter-assault. He deploys iron caltrops to break the church's heavy chargers, utilizes rooftop crossbow volleys, and advances behind an unbreakable pike wall.
+- **The Undercroft Defusal**: Jaime personally storms the keep's undercroft, cutting down the fanatic pyromancers seconds before they light the fuses to the naphtha casks. He delivers the antidote to Lady Aurelia, reviving Margrave Carrow.
+- **The Fanatic's Retreat**: His lines collapsing and his paladins surrendering, Evander flees back to the Great Cathedral of Sol-Aethel, barring the bronze doors.
 
-#### Chapter 16: The Heretic's Summons
-- **Setting**: The Cathedral of Sol-Aethel in Barrow-Gate; soaring stained glass, incense smoke, armed temple paladins.
-- **The Desperate Gambit**: Evander, sheltered by the corrupt High Prelate, accuses Jaime of practicing black witchcraft to sabotage the holy crusade.
-- **The Sovereign Trial**: Jaime and Margrave Carrow confront the church with the frozen corpses of abandoned soldiers and signed supply manifests. Evander, driven mad by humiliation, invokes the sacred Right of Trial by Combat.
-
-#### Chapter 17: The Fall of the Sun-Gilded (Climax of the Novel)
-- **Setting**: The grand marble forum outside the cathedral before the gathered thousands; cold winter wind, blazing braziers.
-- **The Duel**: Evander drinks forbidden divine elixirs, igniting with blinding radiant sunfire that cracks the marble flags.
-- **The Sovereign Duel Invoked**: Jaime activates the Forgotten God's blessing.
-- **The Reckoning**: The holy fire is snuffed like a tallow wick. Without his magic, Evander is a sobbing, terrified child. Jaime dismantles him with Arthur Dayne's three-strike rhythm: severing his sword arm at the elbow, shattering his right knee, and driving iron straight through his gilded breastplate.
+#### Chapter 17: The Eclipse of the Sun-Gilded (Climax of the Novel)
+- **Setting**: The Great Cathedral Nave and the grand marble plaza before ten thousand assembled citizens and troops; blustering wind, guttering braziers, soaring stone arches.
+- **The Last Stand**: Margrave Carrow's host breaches the cathedral gates. Prelate Malakor is cornered on the dais, screaming curses.
+- **The Mad God**: Evander Montfort emerges from the inner sanctum. Overdosed on concentrated "Solar Tears", his body erupts in blinding, white-hot holy fire that melts the marble flags and scorches the air. He screams that he is the living dawn, invincible and chosen, challenging Jaime to single combat.
+- **The Sovereign Duel Invoked**: Jaime steps forward, drawing his plain iron longsword, and calls upon the Anvil of Ash.
+- **The Sixty Seconds**: The ash domain strikes. The holy sunfire dies like a wet candle. Evander's borrowed strength vanishes; his greatsword drags against the floor; his balance shatters.
+- **The Cathartic Reckoning**: Jaime dismantles him with clinical, unyielding precision—severing the tendons in his sword arm, breaking his knee with his steel buckler, and driving cold steel through his gilded breastplate. Evander dies in the cold ash, weeping and unmasked. High Prelate Malakor and Justinian are dragged into irons.
 
 #### Chapter 18: The Kingslayer's Peace (Epilogue & Resolution)
-- **Setting**: The high battlements of Barrow-Gate at sunrise; crisp mountain air, golden light bathing the green spring lowlands.
-- **Aftermath**: The corrupt Prelate is stripped of his office; Evander's corpse is consigned to common lime; Lyra, Seraphina, and Renata are sentenced to five years of field labor.
-- **The Lion's Future**: Jaime Lannister stands upon the walls. He rolls the knuckles of his whole, living right hand, checks the balance of his plain steel longsword, and accepts the Margrave's commission as Lord Marshal to build a true order of knights.
+- **Setting**: The high battlements of Barrow-Gate at crisp autumn dawn; smoke drifting away over the slate roofs, clear river light.
+- **The Order of Iron**: Margrave Carrow disestablishes the corrupt Adventurers' Guild monopoly and strips the Church of its military privileges. The Marcher Order of the Iron Boar is founded, with Jaime appointed Lord Commander and High Justiciar.
+- **The Traitors' Lot**: Seraphina works as an unranked alchemist under heavy oversight; Lyra scrubs tallow in the municipal yards; the corrupt clergy face civic tribunals.
+- **The Lion's Redemption**: Jaime stands upon the wall, rolling the wrist of his whole, living right hand. In his past life, he saved half a million people from fire and was cursed as the Kingslayer. In this life, he saved a city from holy fire and took his place as a true protector of the realm.

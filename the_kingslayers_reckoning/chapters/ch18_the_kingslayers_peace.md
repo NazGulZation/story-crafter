@@ -1,119 +1,114 @@
 # The Kingslayer's Peace
 
-Spring came to Barrow-Gate with the slow, grinding melt of mountain ice.
+The morning sun rose over the Grey Spires in a clean, pale wash of gold that brushed the rain-washed slate roofs of Barrow-Gate.
 
-From the high parapet of the Margrave’s citadel, the world looked clean and sharp in the dawn light. The Grey Spires to the north were still capped with eternal snow, their granite horns jutting into the pale blue sky, but the lower valleys were turning green. The river Roar, swollen with runoff from the thawed glaciers, rushed past the city quays with a deep, churning roar, carrying timber rafts and grain barges south toward the rich agricultural lowlands.
+A crisp autumn breeze swept down from the high pine ridges, chasing away the lingering stench of sulfur, burnt pitch, and wet ash. Below the battlements of the High Bastion, the chimney flues of the Lower Ward were already breathing thin ribbons of blue peat smoke into the dawn air. From the market squares came the familiar, comforting clatter of iron-rimmed wagon wheels, the barking of dray-dogs, and the rhythmic ringing of blacksmiths' hammers greeting the first light.
 
-The smell of damp pine timber, wet horse manure, roasting chicory coffee, and forge smoke drifted up from the lower ward on the morning breeze.
+I stood at the stone embrasure of the highest watchtower, resting my forearms against the cool limestone parapet.
 
-I rested both forearms on the cold granite crenel, watching the city awaken.
+My right hand flexed against the stone. 
 
-Three months had passed since the blood of Evander Montfort had frozen on the cathedral marble. 
+Ten living, flesh-and-blood fingers gripped the edge of the crenel. The knuckles were callused from sword-work; the skin on the palm was tough as cured rawhide. I opened and closed the fist three times, watching the tendons dance beneath the skin of my wrist with effortless grace. 
 
-The hero’s gilded greatsword had not been placed in a holy shrine. By order of the Margrave’s council, the six feet of electrum steel had been delivered to the city foundry. The smiths had melted the metal into twelve hundred practical iron-and-copper hinge-pins for the reconstruction of the frontier outposts. Evander’s body had been dumped into a trench of quicklime behind the pauper’s cemetery without a headstone, without a hymn, and without a single candle lit in his name. 
+For twenty years after Vargo Hoat’s mummers had hacked off my hand on that bloody tree-stump in the Riverlands, every morning had begun with a ghost. My shoulder would reach for fingers that were not there; my mind would fire impulses into an empty sleeve. I had hidden the shame behind twenty pounds of hammered gold, strutting through the Red Keep like a gilded mummer while lesser men whispered behind my back.
 
-The Church of Sol-Aethel had learned the cost of false pride. 
+Now, the ghost was gone. In the mortal shell of nineteen-year-old Theron Marrow, the steel answered to the bone once more.
 
-High Prelate Malakor had been stripped of his golden cope by a synod of northern abbots, escorted under armed guard to a remote mountain hermitage to spend his remaining years transcribing border tithes. The church’s private army had been disbanded, its paladins absorbed directly into the Marcher Auxiliary under secular command.
+Behind me, the heavy oak door of the watchtower stair clicked open.
 
-Down in the lower courtyard, the daily work of the garrison was underway.
+Footsteps echoed across the flagstones—light, measured, and confident.
 
-Beside the great laundry cauldrons near the east gate, steam billowed into the cold morning air. 
+I did not turn. I recognized the scent of cedar oil and crushed lavender before she spoke.
 
-Lady Seraphina Kestrel stood over a wooden tub filled with boiling water and lye soap, her sleeves rolled past her thin elbows. Her fine porcelain skin had roughened, reddened by lye fumes and winter drafts. Her blue mana channels remained completely dead, extinguished forever by the frost-frenzy in the gorge. When a washerwoman dumped a basket of dirty wool tunics onto the bench beside her, Seraphina said nothing. She picked up a scrub brush with callused hands and began working the greasy stains from the collars, her face pale, silent, and numb.
+"The council has concluded the morning audit, Lord Commander," Lady Aurelia said, stepping up beside me at the parapet.
 
-Across the yard, near the mule pens, Renata Fell hauled two iron buckets of oats toward the feeding troughs.
+She wore a long mantle of dark green wool trimmed with silver fox fur over a tailored riding doublet of grey suede, her hair braided neatly behind her shoulders. In her gloved hands she carried a rolled parchment cylinder bound with emerald silk ribbon and sealed with the green falcon of House Carrow.
 
-Her recurve bow was long gone, splintered across my thigh in the tourney ring. Her right wrist, broken in the fall, had set with an ugly knot of bone that left her fingers stiff and curled. She could no longer draw a bowstring or throw a dagger. She walked with a slight limp, wearing a patched frieze coat, dumping grain for twenty stubborn pack mules under the watchful eye of a scarred stable sergeant. When a mule nipped at her sleeve, she backed away with a meek duck of her head, shoveling the manure from the stall door without looking up.
+"Lord Commander," I murmured, turning my head to look at her with a wry grin. "A heavy title for an unranked hedge-fighter from the ditch-lands."
 
-And then, there was the baggage train.
+"My father does not give titles to hedge-fighters," Aurelia replied, her hazel eyes meeting mine with cool, unblinking clarity. "He gives them to men who keep their heads when an army panics and who know how to put out a burning fuse with their own skin."
 
-At the center of the avenue, forty freight wagons were being hitched to six-mule teams, preparing for the spring supply run to the fortified citadel of Ashen-Crag.
+She glanced down at my left forearm. 
 
-Behind the fourth grain cart stood Lyra Cole.
+Beneath my woolen sleeve, the fresh linen bandages were still thick with comfrey salve, the scorched flesh healing cleanly under the camp chirurgeon's care.
 
-She wore a coarse smock of unbleached hemp, cinched at the waist with a piece of tarred rope. Her golden-brown curls were tucked beneath a rough linen kerchief; her cheeks were stained with wheel grease and soot. In her hands she held a broad iron shovel, scraping dried dung and river gravel from the wagon tracks, tossing the waste into a wooden wheelbarrow.
+"What did the magistrates decide?" I asked, turning my gaze back out over the waking city.
 
-She stopped for a moment, leaning her forehead against the ash haft of the shovel, catching her breath. 
+"The temple is broken," Aurelia said, resting her elbows on the stone beside mine. "The sovereign charter has been ratified by every guild master in the province. The Church of Sol-Aethel is stripped of its independent military arm. The Dawnguard is permanently disbanded; their armories have been transferred to the city watch, and their treasury of four hundred thousand silver marks has been impounded by the municipal exchequer."
 
-For a brief heartbeat, her eyes lifted toward the high battlements. 
+"And High Prelate Malakor?"
 
-Through the clear morning air, she saw me standing upon the rampart, my dark wool mantle billowing in the river breeze.
+Aurelia’s lips curved into a cold, satisfied line. "The prelate and Justinian were sentenced to hard labor in the deep granite quarries of the northern defile. They will spend what remains of their lives hauling blocks of basalt with iron chains around their ankles, under the watchful eyes of the smelter-hands they tried to burn."
 
-She did not wave. She did not cry out. She did not weep.
+"A fitting penance," I said. "Let them pray to the sun while breaking granite in the cold."
 
-She looked at me for three long seconds—three seconds in which the full reality of her life existed without illusion. 
+"And the alchemist?" Aurelia asked. "Seraphina Kestrel?"
 
-She had wanted velvet and soft pillows. She had wanted to sit beside a handsome hero who wore gold in his hair and whispered pretty lies in a warm tent. She had thrown away loyalty, decency, and fifteen years of childhood devotion for a handful of sweet words and a silk ribbon. 
+"She gave us the antidote that saved your father," I replied. "And she gave us the map to the cistern fuses. A soldier who delivers the key to a fortress has bought her neck."
 
-Now the hero was lime in a ditch, and she had an iron shovel, a sackcloth smock, and thirty miles of muddy mountain road to walk behind forty draught mules.
+"My father agreed," Aurelia nodded. "She has been stripped of her guild titles and her academy rank, but her life is spared. Master Ormund has taken her into the smelter-laboratories as a common apprentice. She will spend the next three years testing coal quality and assaying pig-iron under armed watch. Her pride is dead, but her hands are whole."
 
-Lyra lowered her head. 
+I looked down toward the Lower Water Gate three hundred paces below.
 
-She gripped the ash wood with her blistered fingers, dug the iron blade back into the gravel, and continued shoveling.
+In the muddy dray-yards beside the salt-sheds, the morning work teams were already assembling. 
 
-Footsteps echoed along the stone walkway behind me.
+Among the carters and furnace-hands moved a small, solitary figure clad in a coarse tunic of unbleached hemp and heavy wooden clogs. 
 
-Margrave Carrow walked up to the crenel, accompanied by two pages carrying a cedar chest bound in brass. The old lord looked rested, the deep creases around his grey eyes softened by the arrival of spring. He leaned his hands on the parapet, looking out over the crowded quays and the long column of wagons.
+It was Lyra Cole.
 
-"The border is quiet, Captain," Carrow said, his voice deep and gravelly. "The clans in the foothills have sent three embassies seeking trade charters. Ashen-Crag is garrisoned with five hundred pikes, and the grain warehouses are full for the first time in twenty years."
+Her fine southern silks and white ermine were gone, burned to ash in Kroll’s smelting furnaces. Her chestnut curls were tucked beneath a rough wool kerchief stained with coal dust. In her red, chapped hands she carried a heavy wooden bucket of axle-grease and an iron scraper, trudging through the mud toward a line of sixty loaded timber wagons. 
 
-"Pikes and grain win more wars than gilded knights," I replied, keeping my eyes on the distant river.
+As a teamster shouted an order, she set down her bucket, took the scraper, and knelt in the freezing mire to clean the grease-caked iron spindles of a wagon hub.
 
-"Aye," Carrow agreed with a low chuckle. "Which brings me to the business of the province."
+There was no crowd to pity her. No golden hero to sing her praises. No soft bed in a high-town suite.
 
-He signaled to the pages. The boys opened the cedar chest, revealing a heavy chain of office forged of solid silver links, each link shaped like an iron gate, and a vellum scroll bearing the great wax seal of the Marcher Council.
+Only the cold mud, the smell of horse manure, and the relentless, unyielding arithmetic of honest labor.
 
-"The council met at dawn," Carrow said, looking at me with steady, measuring eyes. "We have had enough of holy champions, miracle-workers, and church favorites who run when the wind turns cold. The province needs an iron fist that understands how to build roads, move rations, and hold a line."
+"Does it satisfy you?" Aurelia asked quietly, following my gaze to the yards below. "Seeing her scrape grease?"
 
-He picked up the silver chain.
+"Satisfaction is for boys who keep score in tavern yards, my lady," I said, resting my knuckles against my belt. "Lyra made her bargain with the world. She wanted luxury without labor, glory without danger, and power without honor. The world has simply balanced her ledger."
 
-"The office of Lord Marshal of the Northern Marches is vacant, Captain Marrow. It carries the command of five thousand men-at-arms, eight border fortresses, and three thousand silver marks a year from the customs toll. The council wants you."
+Aurelia smiled thinly, extending the parchment cylinder toward me.
 
-I looked at the silver chain.
+"From the Margrave," she said.
 
-In another life, in another world, I had worn the white cloak of the Kingsguard. I had stood behind the Iron Throne, listening to the shrieks of dying men while a mad king giggled in his filth. I had ridden into battle beneath the golden lion of House Lannister, chasing honor through rivers of blood, only to be branded an oath-breaker and a monster by the very lords whose lives I had saved. I had watched my sister plunge into madness, and I had died beneath tons of falling stone while King's Landing burned.
+I took the cylinder, broke the emerald beeswax seal with my thumbnail, and unrolled the thick calfskin vellum. 
 
-That life was finished.
+The text was written in the crisp, angular hand of the municipal chancery, signed with Margrave Carrow's personal seal and countersigned by the masters of the seven major guilds:
 
-The ghosts of the Red Keep had no power over this mountain air. 
+> *By Sovereign Decree of the Margraviate of Barrow-Gate:*
+> *The fraudulent monopolies of the Adventurers' Guild are hereby dissolved within the Marcher Borders.*
+> *In their stead is founded the Marcher Order of the Iron Boar, dedicated to the defense of the realm, the protection of the trade roads, and the enforcement of sovereign justice.*
+> *By unanimous acclaim of the High Council and the Freemen's Assembly, Captain Theron Marrow is confirmed as Lord Commander of the Order and High Justiciar of the March.*
 
-Here, in the body of Theron Marrow, I was no longer a puppet of my father’s ambition or a prisoner of my family’s name. I had forged my own place with cold iron, disciplined arithmetic, and thirty feet of timber wagons.
+I read the lines slowly, feeling the weight of the words settle into the morning air.
 
-I looked down at my right hand.
+Lord Commander.
 
-I spread the fingers. I made a fist.
+Thirty years ago, when Lord Commander Gerold Hightower fell at the Tower of Joy, King Robert had given me the white cloak. I had worn it with bitterness, knowing every lord in the realm whispered *Kingslayer* behind my back. They had looked at my white armor and seen only an oathbreaker who struck down his king. I had stood before the Iron Throne, despised by Ned Stark, distrusted by Robert, and pitied by my own father.
 
-The knuckles were hard, callused, and full of living warmth. The joints moved without hesitation, without the stiff click of painted wood or gilded metal. The hand was mine again.
+I looked down at the vellum in my hands.
 
-I reached out and took the silver chain from the Margrave's hands.
+Then I looked out over the stone walls of Barrow-Gate, where two hundred marcher guards stood watch in the morning light, their helmets catching the sun, their eyes turning toward this tower with genuine, earned reverence.
 
-The metal was heavy and cold, settling against my wool mantle with a reassuring, solid weight.
+These men did not know the name Jaime Lannister. They did not know the Red Keep, or the wildfire beneath the septs, or the tragic madness of the Targaryens. 
 
-"I accept the commission, my Lord," I told him. "On three conditions."
+To them, I was the man who had faced the holy fire with honest iron, who had pulled a burning fuse from the foundation pillars with his own flesh, and who had stood between their families and the ash.
 
-Carrow raised a grizzled eyebrow. "Name them."
+I had earned this cloak not with highborn blood or family gold, but with forty inches of cold steel and the hard labor of my own hands.
 
-"First, the supply train is reorganized under civilian carters with guaranteed wages and veteran pensions. Second, every knight in the Marcher service trains with the pike and the entrenching tool before he touches a lance. Third, the Anvil of Ash is granted the right to maintain its stone shrines along the mountain passes without harassment from the city clergy."
+"You are quiet, Lord Commander," Aurelia said, stepping closer, her shoulder lightly brushing mine as she looked out over the river valley. "Do you find the title lacking?"
 
-Carrow studied my face for a long moment, then spat over the parapet into the ditch below.
+"No, my lady," I said, a genuine, relaxed smile touching my eyes. "The title will do."
 
-"Done," the Margrave barked. "The church had their turn, and they left five hundred boys to freeze in the rocks. Let the stone god have his shrines, so long as the roads stay clear."
+I rolled the vellum tightly, slipped it into the leather case at my belt, and checked the buckle of my scabbard.
 
-He clapped a heavy hand against my shoulder armor.
+My three-foot arming sword hung at my left hip, its dark blade resting clean and true in its sheath. 
 
-"Come down to the great hall, Lord Marshal. The captains are waiting to receive your orders for the summer deployment."
+Below in the courtyard, the trumpets sounded the third bell of the morning. 
 
-"Give me a moment, my Lord," I said. "I will be down shortly."
+The changing of the watch had begun.
 
-Carrow nodded and turned back toward the tower stairs, his boots clattering against the granite flags.
+I pulled on my leather riding gloves, smoothed the wool of my mantle, and turned toward the stairwell door.
 
-I remained on the high wall alone.
-
-The morning sun crested the eastern ridge of the Grey Spires, bathing the stone battlements in a warm, amber glow. 
-
-I unclasped the scabbard of my arming sword, drew the three feet of plain steel six inches from its leather sheath, and inspected the edge. The blade was clean, true, and honed to a razor's sharpness. 
-
-I slid the iron home with a soft, decisive click.
-
-I turned away from the valley, pulled my gloves tight over my living fingers, and walked down the tower stairs toward the armory to begin the muster.
+"Come, Lady Aurelia," I said, stepping across the threshold into the cool shadows of the tower. "The men are assembling on the lists. It is time to teach them how to hold an iron line."

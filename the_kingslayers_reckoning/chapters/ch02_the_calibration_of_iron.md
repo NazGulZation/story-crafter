@@ -104,7 +104,7 @@ The man had jumped. He had left both feet hanging in the air for two full heartb
 
 Yet the magic had saved him. 
 
-The blessing had corrected his edge alignment mid-flight, blasting the beast with raw kinetic force.
+The blessing had corrected his edge alignment mid-flight, blasting the beast with raw, blunt violence.
 
 That was the rot of this realm.
 

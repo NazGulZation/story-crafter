@@ -38,11 +38,11 @@ She had stripped down for maximum agility.
 
 She wore tight, supple calfskin breeches, soft leather moccasins that made no sound on the sand, and a sleeveless tunic of dark boiled leather reinforced with small horn scales over her ribs. At her left hip hung a recurve hunting bow of laminated horn and sinew; in her hands she held two twenty-inch curved hunting blades forged of blued steel, their edges ground thin as shaving razors.
 
-At her ankles, two silver rings pulsed with a pale green light—the *Gale Step*, a low-tier wind-blessing that reduced friction and accelerated short-distance dashes by half. Her left hand rested lightly on the grip of a composite horn short-bow slung across her back; at her hips hung twin recurved daggers in boiled leather sheaths, her crooked nose set in a cocky, predatory sneer.
+At her ankles, two silver rings pulsed with a pale green light—the *Gale Step*, a low-tier wind-blessing that buoyed her footing across the loose sand and quickened her sudden bursts by half. Her crooked nose wrinkled in a cocky, predatory sneer.
 
 "Well, well, Theron," Renata said, twirling her twin blades in tight, flashing figure-eights before her chest. "Look at you in your big boy boots. You got lucky on the Crags because the stalkers were focused on the mules. But here, there are no wagons to hide behind."
 
-"You talk as much as your master," I said, lowering my center of gravity into a balanced, relaxed stance. "Though I doubt your steel cuts any deeper than his."
+"You didn't fix your footwork, girl," I said, lowering my center of gravity into a balanced, relaxed stance. "You're still springing from the toe. I told you an iron boot would catch you."
 
 Renata’s eyes narrowed to slits. "I'll carve the liver out of your ribs before you clear your second step, plow-boy."
 

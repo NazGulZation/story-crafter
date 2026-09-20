@@ -30,9 +30,7 @@ My voice was quiet, dry, and leisurely.
 
 I rolled my right wrist. The arming sword made a small, singing loop through the humid cellar air. The soul-brand from the Anvil of Ash lay quiet beneath my breastbone, an icy seed of power. 
 
-I would not need the Sovereign Duel for this clown.
-
-A knight who invoked a divine trump card against a common tavern brawler was no knight at all. A master of the blade used his gifts for kings and gods; a butcher in a pit was handled with simple geometry and clean footwork.
+A knight used his gifts with care. Before I staked my life against Evander Montfort’s divine cheats in the sunlight of the High Colonnade, I needed to calibrate the Forgotten God’s gift. I needed to know with certainty whether the Anvil’s promise was forged iron or a dying god’s vapor. And this cellar, buried deep beneath six feet of tannery clay, surrounded by drunken ruffians who could barely see through the pipe smoke, was the safest forge in the world to strike the first test blow.
 
 Brand raised his iron cudgel, slamming it against an iron rim hanging from the rafters.
 
@@ -76,7 +74,7 @@ I ducked beneath the flailing leather sleeve. I came up on his rear flank and sn
 
 Torvald went down on one knee with a heavy grunt.
 
-Yet the brute was durable. The brown stone-bone aura flared around his spine, absorbing the kinetic shock that would have crippled a normal man. He surged upward like a wounded boar, spinning with a short, brutal backhand chop of his axe haft.
+Yet the brute was durable. The brown stone-bone aura flared around his spine, absorbing the concussive shock that would have crippled a normal man. He surged upward like a wounded boar, spinning with a short, brutal backhand chop of his axe haft.
 
 The wooden shaft clipped my left shoulder.
 
@@ -84,7 +82,7 @@ Pain flared through my deltoid.
 
 The force drove me back two steps, the sawdust sliding under my boots. My breath caught in my throat.
 
-*Friction,* I reminded myself, tasting the sour tang of copper in the back of my mouth. 
+*Reality,* I reminded myself, tasting the sour tang of copper in the back of my mouth. A boy's tendons and unhardened bone were not an iron anvil.
 
 Theron Marrow’s nineteen-year-old body had fast twitch-fibers, but his muscle mass was light. An eighty-pound blow from an armored quarryman transmitted shock straight through the bone of my clavicle, sending a dull ache radiating down to my left wrist. My left hand grew numb around the buckler strap.
 
@@ -100,7 +98,7 @@ Torvald shook his shaggy head, spitting blood into the sawdust. His small pig-ey
 
 He charged.
 
-This time, he kept his axe tight to his chest, using his armored bulk to bulldoze me into the corner stakes. A classic street tactic: crowd the fencer, smother his reach, and crush him against the wood with brute weight.
+This time, he kept his axe tight to his chest, using his armored bulk to bulldoze me into the corner stakes. A classic street tactic: crowd the fencer, smother his reach, and crush him against the wood with brute weight. The brown light of Stone-Bone flared around his chest and thighs, shimmering like wet mud in the lantern-light, hardening his sinew to granite.
 
 I let him come.
 
@@ -108,7 +106,25 @@ I retreated two paces until my rear heel touched the rough oak planks of the pit
 
 The spectators above shouted in triumph, believing the bout was over. "Cornered him! Squeeze him, Torvald!"
 
-Torvald lunged with a straight overhead cleave, bringing eight pounds of iron straight down toward the crown of my kettle-helm.
+*Now,* I thought, focusing my intent upon the icy seed resting beneath my breastbone.
+
+*The Sovereign Duel.*
+
+A silent tremor passed through the soles of my boots. 
+
+It was not a roaring wave of golden heat like the gaudy spells of Sol-Aethel. It was a cold hush of falling ash. An invisible ring of grey stillness expanded outward across the bloodied sawdust, sealing the two of us inside a domain where no god, no blessing, and no cheat could breathe.
+
+The brown aura around Torvald’s neck sputtered and died in the blink of an eye. 
+
+The unnatural thickness in his forearms deflated. The heavy cords of his neck shrank back to common mortal flesh. For the first time since he stepped into the ring, the brute felt the true, unbuffered weight of twenty pounds of blackened iron mail dragging down his shoulders. 
+
+Torvald’s pig-eyes bulged in shock. A strangled gasp caught in his throat as the supernatural strength vanished from his blood, his forward charge suddenly turning clumsy, heavy, and unguided.
+
+Within my own chest, the cold ash settled like a block of forged iron. My mortal heart hammered against my ribs, marking the steady, ticking cadence of the sixty seconds. 
+
+Sixty seconds. In this ring, both of us were merely flesh and bone. 
+
+Panicked by the sudden absence of his stone-bone shield, Torvald lunged with a desperate overhead cleave, bringing eight pounds of iron straight down toward the crown of my kettle-helm. Without his blessing guiding the blade, the strike was wild, leaning far past his front toe.
 
 In the final fraction of a heartbeat, I shifted my weight onto my left toe and dropped my center of gravity six inches. 
 
@@ -130,7 +146,7 @@ The iron ring-pommel of my arming sword took Torvald squarely in the middle of h
 
 *CRUNCH.*
 
-The sound of cartilage and nasal bone shattering was sweet as a lute chord. 
+Without his stone-bone enchantment to absorb the concussive shock, the sound of cartilage and nasal bone shattering was crisp as dried kindling. 
 
 Torvald’s eyes rolled white. Blood erupted from both nostrils in a bright crimson spray. His axe slipped from his limp fingers, burying its blade in the dirt.
 
@@ -140,13 +156,21 @@ I stepped around him, planted my right boot against the small of his armored bac
 
 Torvald crashed face-first into the sawdust, his massive arms splayed out, his shaven head plowing three inches into the muck. 
 
-He lay motionless in the dirt. The brown stone-bone light at his neck sputtered and died, leaving only the dull grey of dead iron.
+He lay motionless in the dirt. The bull's skull pendant at his neck lay dull and dead against his chest.
+
+Around us, the faint grey chill of the Sovereign Duel dissolved, forty seconds remaining unused on the invisible clock, leaving only the humid stench of the cellar and the ache of my bruised shoulder.
 
 The cellar went utterly still.
 
 Two hundred men leaned over the timber rails, mouths open, clay cups forgotten in their hands. 
 
 The fat wool-merchant with the missing tooth stared down into the pit, his jaw slack, his ten silver marks sitting abandoned on the rail.
+
+"What happened to his ward?" a gravel-voiced carter shouted from the second tier, breaking the silence. "He had the stone-bone flared!"
+
+"Cheap hedge-priest trinket!" another gambler cursed, spitting on the floor. "I told the bastard! He bought that charm off an itinerant peddler behind the tannery! River clay and brass foil!"
+
+"Aye! Broke on the first solid jolt!"
 
 Deputy Brand lowered his cudgel, his scarred ear twitching. 
 

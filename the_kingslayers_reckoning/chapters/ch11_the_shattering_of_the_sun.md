@@ -58,7 +58,7 @@ Margrave Carrow raised his iron truncheon from the royal pavilion.
 
 Evander exploded into motion.
 
-His divine solar aura erupted into a blinding pillar of golden fire that towered twenty feet into the azure sky. The sheer kinetic force of his takeoff sent a shockwave through the arena floor, spraying sand thirty paces in all directions. 
+His divine solar aura erupted into a blinding pillar of golden fire that towered twenty feet into the azure sky. The concussive violence of his takeoff sent a shockwave through the arena floor, spraying sand thirty paces in all directions. 
 
 He crossed the ten paces in half a heartbeat, his six-foot greatsword brought overhead in a two-handed cleave meant to vaporize my blade and split my torso from crown to pelvis.
 
@@ -252,7 +252,7 @@ I broke the emerald seal with my thumbnail.
 
 The parchment bore four lines written in a sharp, elegant hand:
 
-> *The church’s pet is broken, but winter approaches from the northern heights. The Margrave convenes the War Council at fourth bell tonight. A seat at the high table has been set for the Lion of the River.*
+> *The church’s pet is broken, but the High Prelate schemes in the upper sanctum. The Margrave convenes the Grand Council and victory feast at fourth bell tonight. A seat at the high table has been set for the Lion of the River.*
 
 I smiled thinly, rolling the parchment and slipping it into my tunic.
 

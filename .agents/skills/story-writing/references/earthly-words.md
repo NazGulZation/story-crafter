@@ -89,12 +89,28 @@ Theological concepts, linguistic labels, and religious figures belonging to real
 
 ---
 
+### 2.5. Modern Technical, Engineering & Physics Jargon
+Technical vocabulary, scientific formulas, mechanical engineering terms, and modern corporate idioms in secondary-world fantasy narratives.
+
+| Prohibited Modern / Physics Term | Scientific / Corporate Origin | Immersion-Breaking Factor |
+| :--- | :--- | :--- |
+| `Friction` (in narrative prose / monologue) | Classical mechanics / physics | Meta-craft leak or physics jargon. Characters do not think "friction"; they endure mud, muscle cramps, and seized iron. |
+| `Reduced friction` | Tribology / physics | Describes magical speed or footing like an engineering lab report rather than an elemental blessing. |
+| `Kinetic force` / `Kinetic shock` | Classical Newtonian mechanics | Describes martial strikes and impacts like ballistics software instead of visceral bone-breaking force. |
+| `Centrifugal force` / `Momentum` (physics) | Classical mechanics | Presumes modern physics education over experiential combat weight and balance. |
+| `Parameters`, `Optics`, `Dynamic` (jargon) | Modern management / cybernetics | Boardroom jargon completely out of place in historical or fantasy feudal settings. |
+
+---
+
 ## 3. Master Translation & Conversion Matrix
 
 When drafting scenes, consult this lookup table to replace prohibited Earth terms with grounded, setting-authentic substitutes:
 
 | Prohibited Earth Term | Setting-Authentic Fantasy Substitute | Context / Rationale |
 | :--- | :--- | :--- |
+| **Friction** (in prose / thought) | `drag`, `grit`, `resistance`, `strain`, `obstacle`, `obstinate pushback`, `mud`, `cramping` | Dramatize the concrete physical, logistical, or social resistance directly; never write the word "friction". |
+| **Reduced friction** | `buoyed footing`, `skimming above the dust`, `sliding like grease`, `lightened stride` | Sensory, magical description of movement instead of laboratory mechanics. |
+| **Kinetic force / shock** | `concussive shock`, `blunt violence`, `crushing weight`, `shattering impact` | Visceral physical description of martial force. |
 | **Achilles tendon** / **heel** | `heel-cord`, `heel tendon`, `critical vulnerability`, `hidden flaw` | Anatomical description rather than Greek mythological eponym. |
 | **Pyrrhic victory** | `ruinous triumph`, `costly victory`, `bloody dividend`, `bitter triumph` | Emphasizes the cost in blood and coin rather than King Pyrrhus. |
 | **Trojan horse** | `hollow gift`, `treacherous tribute`, `veiled siege-engine`, `concealed ambush` | Focuses on tactical deception. |
@@ -144,7 +160,17 @@ When a protagonist transmigrates from Earth or an established external franchise
 
 ### 4.2. Universal Physical Units vs. Cultural Descriptors
 - **Permitted Universal Units**: English distance, weight, and volume measures (*paces*, *feet*, *inches*, *yards*, *miles*, *leagues*, *pounds*, *stones*, *ounces*, *bushels*, *casks*, *barrels*) are standard English language conventions for medieval fantasy and are fully permitted.
-- **Metric System in Pre-Industrial Fantasy**: Avoid metric terms (*kilometers*, *centimeters*, *grams*) in pre-industrial or medieval fantasy unless specifically justified by an industrialized sci-fi or modern militarist protagonist (e.g., *The Iron Order of Karst*).
+### 4.3. Crossover & Secondary-World Native POV Epistemic Asymmetry Protocol
+When a narrative features a visitor or traveler from Earth, sci-fi space, or another dimension (such as Doctor Who, a Time Lord, or an Earth explorer) interacting with native fantasy characters:
+1. **The Native Fantasy POV Rule**:
+   - Native fantasy characters possess zero knowledge of Earth geography, nation-states, regional accents, or Earth literature.
+   - In third-person limited narration anchored to a native fantasy character (or first-person fantasy POV), the narrative prose must **NEVER** use real-world Earth labels (e.g. `Scottish`, `Scottish brogue`, `Scottish accent`, `English`, `British`, `Victorian`, `Dickensian`, `Manchester`) as objective or descriptive facts.
+   - Describe foreign mannerisms, accents, and artifacts strictly through **visceral, sensory, and acoustic textures**:
+     - *Banned in Native Narration*: "the man muttered in a sharp Scottish brogue", "his Scottish accent bit into the room", "Dickensian hierarchy".
+     - *Mandatory Sensory Affirmative*: "the man muttered in a sharp, dry, rolling cadence with hard consonants that snapped like shears", "his severe, rolling northern cadence bit into the room", "a tiered hierarchy of limestone for the lords and mud for the beggars".
+2. **Crossover Spoken Dialogue vs. Native Perception Separation**:
+   - The crossover character may speak Earth words, names, or cultural references in their own direct spoken dialogue (e.g., the Twelfth Doctor muttering *"Scotland in November"*, *"a laundry house in Manchester"*, or *"Dickensian"*), preserving their canonical voice.
+   - However, the native fantasy character must perceive these words with authentic diegetic bewilderment—as bizarre, untranslatable foreign syllables, alien nonsense, or unknown lands—and the narrative prose must never validate them as familiar concepts.
 
 ---
 
@@ -166,6 +192,10 @@ earthly_patterns = {
     'persian': r'\bpersian\b|\bpersia\b',
     'andalusian': r'\bandalusian\b|\bandalusia\b',
     'parisian': r'\bparisian\b|\bparisienne\b',
+    'scottish/scotland': r'\bscottish\b|\bscotland\b|\bbrogue\b',
+    'english/british': r'\benglish\b|\bbritish\b|\bbritain\b|\bengland\b',
+    'manchester/london': r'\bmanchester\b|\blondon\b',
+    'dickensian': r'\bdickensian\b|\bdickens\b',
     'troy/trojan': r'\btrojan\b|\btroy\b',
     'pyrrhic': r'\bpyrrhic\b',
     'gorgon': r'\bgorgon\b',

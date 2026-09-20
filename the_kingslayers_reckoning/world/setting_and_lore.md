@@ -1,4 +1,4 @@
-# World Setting & Lore: The Kingslayer's Reckoning
+﻿# World Setting & Lore: The Kingslayer's Reckoning
 
 ---
 
@@ -50,20 +50,21 @@
 2. **Fixed Duration**:
    - The null-zone lasts for exactly **60 seconds (1 minute)**, or terminates early if one combatant dies.
    - At the 60-second mark, the field collapses immediately, restoring normal physical and magical laws.
-3. **External Damage Vulnerability (Clausewitzian Friction)**:
+3. **External Damage Vulnerability & Battlefield Interference**:
    - The duel does **NOT** create an impenetrable barrier.
    - Third parties can intervene: archers can shoot arrows into the circle, bystanders can throw spears, and mages can cast spells from outside. Both duelists can be wounded or killed by external forces during the sixty seconds.
-4. **Cooldown Cost**:
+4. **Cooldown Cost & Physical Sensation**:
    - Strictly **1 hour** of physical recovery before the domain can be invoked again.
+   - **Sensory & Physical Toll**: Consumes no magical mana, but releases a deep, freezing ash chill beneath Jaime's ribs that leaves his chest feeling like cold forged iron. During the sixty seconds, victory demands absolute, unassisted mortal muscle, stamina, and martial precision; once the zone collapses, the mortal body bears the full accumulated exhaustion of unbuffered combat.
 
 ---
 
 ## 5. Combat Systems & The Adventurer Illusion
 
 - **The Modern Adventurer**:
-  - Dependent on the Adventurers' Guild "Aura System"—a manifestation of ambient blessing that guides blade swings, absorbs kinetic impact, and boosts agility.
-  - Modern fighters telegraph their strikes wildly because the blessing corrects blade alignment mid-air. They do not understand leverage, distance management, or defensive recovery.
+   - Dependent on the Adventurers' Guild "Aura System"—a manifestation of ambient blessing that guides blade swings, absorbs concussive impact, and boosts agility.
+   - Modern fighters telegraph their strikes wildly because the blessing corrects blade alignment mid-air. They do not understand leverage, distance management, or defensive recovery.
 - **The Westerosi Knight (Jaime Lannister)**:
-  - Trained from age eight in the brutal, unsparing realities of castle yards under Arthur Dayne, Barristan Selmy, and the iron discipline of Tywin Lannister's men-at-arms.
-  - Senses balance in the hips, edge alignment in the forearm, weight distribution in the soles of the boots, and reads muscle twitches in the opponent's shoulder three heartbeats before a strike lands.
-  - Within the 60 seconds of the *Sovereign Duel*, modern "champions" are merely clumsy sheep before an apex predator.
+   - Trained from age eight in the brutal, unsparing realities of castle yards under Arthur Dayne, Barristan Selmy, and the iron discipline of Tywin Lannister's men-at-arms.
+   - Senses balance in the hips, edge alignment in the forearm, weight distribution in the soles of the boots, and reads muscle twitches in the opponent's shoulder three heartbeats before a strike lands.
+   - Within the 60 seconds of the *Sovereign Duel*, modern "champions" are merely clumsy sheep before an apex predator.

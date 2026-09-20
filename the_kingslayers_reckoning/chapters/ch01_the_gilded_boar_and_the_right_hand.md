@@ -146,7 +146,7 @@ I pushed myself up from the mud.
 
 My movements were smooth, deliberate, and entirely free of haste. I stood tall, planting my boots firmly in the muck. Theron’s frame was lean, perhaps an inch shorter than my old Westerosi body, but his center of gravity was solid. His shoulders were wide enough, his hips narrow, his legs possessing the clean, springy reach of a natural runner. 
 
-I wiped a smear of brown sludge from my cheek with the back of my right hand, feeling the warm friction of my own skin. 
+I wiped a smear of brown sludge from my cheek with the back of my right hand, feeling the rough warmth of my own knuckles against raw skin. 
 
 *Gods,* I thought, a razor-thin smile touching my mouth. *Cersei would have hated this mud. But she would have loved the look on this boy's face.*
 

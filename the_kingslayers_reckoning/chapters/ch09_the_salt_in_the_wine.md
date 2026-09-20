@@ -68,78 +68,98 @@ Behind me, thirty paces back, the grey cloak followed.
 
 The Black Ditch was a maze of narrow, winding lanes running between windowless tanneries and timber storehouses. The ground was slick with black mud and rotting offal; the river fog rolled in thick from the lower basins, muffling the sound of the hammers behind us.
 
-I turned into the alley of the Salt Racks—a dead-end lane lined with wooden frames used for curing river fish.
+I turned into the alley of the Salt Racks—a dead-end lane lined with wooden frames used for curing river fish. The stench of brine, drying cod, and stagnant ditch-water was thick enough to choke a dray horse. Overhead, rotten canvas tarpaulins flapped in the river breeze, blocking the weak grey light from the sky.
 
 I stopped at the far end, facing the blank granite wall of the town granary.
 
-The footsteps behind me quickened. 
+The footsteps behind me ceased. 
 
-The man in the grey cloak rounded the corner, pulling an eight-inch bone-handled pig-sticker from his sleeve, moving with the quiet, predatory confidence of an alley cutthroat closing in on an easy mark.
+Yet there was no sound of boot leather retreating. In the gloom between two fish racks, the air warped with a strange, greasy shimmer—a subtle displacement of light that looked like grease floating on cold dishwater. 
 
-"Turn around, ditch-boy," the cutpurse whispered, his yellow teeth bared in a sneer. "Hand over that purse, and maybe you live to see the lists—"
+*Shadow-Slip,* I recognized immediately. 
 
-I turned.
+Theron Marrow’s memories of the Lower Ward supplied the mark: a gutter-tier blessing common among river smugglers and guild cutthroats. It did not make a man invisible in daylight, but in deep shadow or twilight fog, it blurred the outline of his limbs and softened the scrape of his soles against the cobbles, allowing a killer to step within arm's reach before his victim ever sensed the draft of an edge.
 
-I was not holding my purse. 
+"Turn around, ditch-boy," a disembodied voice hissed from the damp gloom between the racks. The sound seemed to drift from nowhere and everywhere at once, muffled by the magical haze. "Hand over the porcelain jar and your purse, and maybe you live to see the lists tomorrow."
 
-I was standing four feet from him, balanced on the balls of my feet, my arming sword resting point-forward in my right hand, steady as an iron bar.
+I did not reach for my purse. 
 
-The cutpurse’s eyes went wide. The sneer melted from his mouth.
+I turned around, plant-footed, my center of gravity balanced, my arming sword resting point-forward in the low ward.
 
-He lunged with a desperate, frantic thrust at my throat.
+From the black shadow beneath a fish rack, a distorted shape lunged forward. The magical blur lunged at my throat, an eight-inch bone-handled pig-sticker gleaming with dark oil, aimed to sever my windpipe from the blind quarter.
 
-He had speed, but zero form. He led with his chin, his weight falling forward onto his front toe.
+I focused my will on the icy seed beneath my breastbone.
 
-I stepped to the right, sweeping my buckler across his forearm.
+*The Sovereign Duel.*
+
+A silent shudder ripped through the damp alley stones.
+
+It arrived like the freezing draft of an iron tomb. An invisible domain of cold grey ash swept outward across the puddles, enveloping the fish racks, the brick walls, and the lunging phantom in sixty paces of absolute divine silence.
+
+The magical displacement tore like wet paper.
+
+The *Shadow-Slip* collapsed in a ragged puff of greasy vapor.
+
+The cutpurse was violently yanked back into raw, mortal reality. His translucent silhouette hardened into coarse wool and dirty calfskin; his boots slammed clumsily into the black mud as the magical buoyancy vanished from his heels. The sudden shock of mortal gravity pitched him forward off balance, his arm flailing wildly, his jaw dropping in unvarnished horror as he felt his blood run cold and unblessed.
+
+Within my chest, the cold ash settled like a solid slab of pig iron. The invisible clockwork began its steady countdown: sixty seconds of pure mortal flesh.
+
+Panicked by the sudden death of his blessing, the cutpurse made a desperate, clumsy stab at my face, leading with his chin and overextending his elbow.
+
+I did not even have to move my rear foot.
+
+I took a half-step to the right and snapped the iron rim of my buckler across his exposed forearm.
 
 *SLAP.*
 
-The iron rim struck his wrist, knocking the pig-sticker into the mud. 
+The iron rim took him dead on the radial nerve. His fingers snapped open in a spasm of agonizing numbness, the poisoned blade slipping into the black muck.
 
-Before he could pull his arm back, my left hand shot out like an iron clamp, seizing his wrist, twisting his arm upward behind his back in a brutal joint-lock.
+Before he could stagger back into the fog, my left hand shot forward like a blacksmith's vise. I caught his wrist, pulled him into my hip, and twisted his right arm upward behind his shoulder blades in a brutal leverage lock.
 
 *SNAP.*
 
-The cutpurse shrieked, falling to his knees in the black filth, his elbow dislocated, his shoulder pinned against the damp granite stones of the wall.
+The cutpurse shrieked—a raw, high-pitched squeal that echoed off the damp granary stones. His elbow dislocated with a wet crunch, the joint hyper-extended until his forehead plowed into the rotting fish scales on the alley floor.
 
-"Quiet," I whispered into his ear, resting the cold flat of my blade against his jugular. "Scream again, and I take your ears off."
+"Quiet," I whispered into his ear, resting the razor-sharp edge of my arming sword against the pulsing blue vein in his neck. "Scream again, and I take your ears off."
 
-The man choked back his agony, sobbing into the muck, his forehead pressed against the wet stones. "Mercy... mercy, master... I was only paid... I was only hired..."
+The cutpurse gagged on the filth, weeping, his breath hitching in pure terror as he felt the cold, unyielding weight of mortal steel against his throat.
 
-"Who gave you the porcelain jar?" I asked, my voice calm as falling snow.
+"Mercy... sweet Mother of the Dawn, mercy..." he sobbed, shivering uncontrollably. "My ward... my blessing died... what are you? What did you do to me?"
 
-"A paladin!" the cutpurse gasped, tears of pain cutting tracks through the soot on his cheeks. "Sir Kenneth... from the Temple of the Sun! He paid me three silver marks at the Red Lantern tavern! Said to give it to the boy to deliver to you! Said it was just a prank to make you drop your blade on the sands!"
+"You are in the presence of real iron, cutthroat," I said, my voice flat, leisurely, carrying the cold authority of Casterly Rock. "A novelty in this soft realm, I know. Now answer me before the sixty heartbeats run out: who paid you to bring that jar of aconite to Master Hal’s forge?"
 
-"A very amusing prank," I murmured.
+"Sir Kenneth!" the man gasped, tears carving clean white tracks through the charcoal soot on his face. "Sir Kenneth from the Temple of the Sun! He gave me three silver marks at the Red Lantern! Said to give the porcelain to an apprentice boy to deliver to you! Said it was just a numbing oil to spoil your grip on tourney morning!"
 
-I reached into my belt pouch with my free hand, pulled out the stone jar of aconite oil, and held it before his terrified eyes.
+"A very amusing jest," I said.
 
-"Sir Kenneth has horse-grooms, does he not?" I asked softly.
+I kept him pinned with my knee against his kidney, feeling the clock in my chest reach twenty seconds remaining. With my free right hand, I retrieved the porcelain jar of boiled wolfsbane oil from my pouch and held it before his bulging eyes.
 
-"Aye... aye, at the White Stallion livery..."
+"Sir Kenneth has horse-grooms at the White Stallion livery, does he not?"
 
-"Sir Kenneth rubs sweet oil on Lord Evander’s tournament lances and leather gauntlets every morning before the lists," I noted. "A good squire keeps his master’s gear supple."
+"Aye... aye, by the north gate..."
 
-I pulled a second small clay jar from my pouch—the ordinary mutton tallow I used for waterproofing my boots. 
+"Sir Kenneth oils Lord Evander’s tournament gauntlets and saddle-leather every morning before the horns sound," I noted quietly. "A loyal squire keeps his champion’s gear supple and clean."
 
-I switched the wax seals with my thumb. 
+I pulled a second earthenware pot from my pocket—the common mutton tallow I used for waterproofing my leather boots.
 
-I dropped the jar of wolfsbane oil into the cutpurse's ragged pocket.
+With a flick of my thumb, I peeled the yellow beeswax seal from the porcelain and pressed it onto the mutton tallow. Then I slipped the jar of deadly aconite oil deep into the cutpurse's ragged inner pocket.
 
-"You will take this jar to Sir Kenneth’s stable tonight," I told him, pressing the steel an eighth of an inch deeper into his neck. "You will tell him the boy failed to find me, and that you stole it back so he could use it on Lord Montfort’s practice gauntlets instead. You will do it cleanly. If one drop touches your tongue, you will choke on your own spit before midnight."
+"You will take this jar to Sir Kenneth’s stable tonight," I told him, pressing the cold steel an eighth of an inch deeper into the skin of his throat until a single bead of scarlet blood welled against the carbon edge. "You will tell him the apprentice boy failed to find me, and that you took it back so he could use it on Lord Montfort’s practice gauntlets instead. You will do it cleanly, with a straight face and a humble bow. If one drop touches your tongue, your lungs will fill with phlegm and you will choke to death before midnight."
 
-"I'll do it! By the gods, I'll do it!" the man whimpered, trembling violently.
+"I'll do it! By the Light, I swear on my mother's bones, I'll do it!" the wretch whimpered, his teeth chattering against the mud.
 
-"If you flee the town, I will find you," I added, my tone devoid of heat, carrying the cold certainty of an absolute promise. "If you speak to the watch, I will find you. Now walk."
+"If you flee the city, I will find you," I added, my tone devoid of heat, carrying the weight of an absolute certainty. "If you speak a single word to the temple guards, I will find you. And when I find you, there will be no sixty-second count."
+
+At my chest, the invisible ash-zone faded, forty seconds having elapsed. The cold chill dissolved beneath my ribs, leaving only the damp river fog and the heavy mortal ache in my knuckles.
 
 I released his arm.
 
-The cutpurse collapsed into the mud, clutching his dislocated elbow to his chest with a whimpering gasp. He scrambled to his feet, slipping twice on the wet offal, and fled down the alley like a scalded cur.
+The cutpurse collapsed flat into the muck, cradling his broken, swollen elbow against his ribs with ragged, choking sobs. He scrambled to his hands and knees, slipping twice on the wet fish entrails, and fled down the alleyway like a hound that had looked into the jaws of a wolf.
 
 I wiped a fleck of street mud from my leather brigandine with my knuckle.
 
-A lion did not merely kill snakes; he turned their fangs back into their own tails. 
+A lion did not merely step around snakes; he milked their venom and poured it into the master's winecup. 
 
-If Evander Montfort wanted poison on the lists, he was welcome to sample his own brew.
+If Evander Montfort wanted poison on the lists, he was welcome to drink his fill.
 
-I turned on my heel and walked back to Master Hal’s smithy to finish my scabbard.
+I sheathed my arming sword with a crisp, dry snick, turned on my heel, and walked out of the Salt Racks back toward Master Hal’s forge.

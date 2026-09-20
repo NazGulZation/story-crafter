@@ -114,4 +114,113 @@ The leather tumbled through the bright mountain sunlight, spinning forty paces d
 
 "Sharpen your six-foot spit, boy," I told him, turning my back on his gilded retinue. "And pray the wind doesn't blow too hard on the lists. You might lose your feathers."
 
-I walked through the colonnade, my four spearmen falling into disciplined step behind me, their iron boots ringing with rhythmic confidence against the white stone.
+I walked through the colonnade, leaving the peacock shouting useless curses at my back. At the vaulted archway leading down to the Lower Ward, I halted and turned to Kester.
+
+"Take the men back to the wharves," I told him, handing him the bundle of signed grain manifests. "Ensure the carters stack the oats under oiled canvas before the afternoon storm rolls off the peaks. I will inspect the warehouse tallies before sundown."
+
+"Aye, my lord," Kester grunted, tucking the parchment into his leather hauberk. He signaled the other three spearmen, and their iron-shod boots clattered down the broad wagon ramp toward the harbor basin.
+
+I turned toward the narrower footpath—the Cypress Terrace—that wound down the western cliff face between the upper tier and the dry docks. It was a steep, shaded flight of stone stairs cut directly into the mountain basalt, cool and smelling of wild thyme, mountain cedar, and crushed figs rotting in the sun.
+
+Halfway down the second flight, where the cypress roots broke through the mortar, a figure sat perched on the low retaining wall.
+
+Renata Fell.
+
+She had stripped off her brigandine, wearing only a sweat-stained linen shirt, faded arming pants, and patched calfskin boots dusted with white limestone powder. Her double daggers lay across her knees in their worn scabbards, and she held a small hunting knife in her scarred fingers, peeling a tart green apple with measured, practiced curls.
+
+When my shadow fell across the flagstones, she didn't look up. The blade severed a curl of green skin, flicking it into the dry ravine below.
+
+"That was a very stupid piece of theater, Theron," she said, her voice rough as river gravel. "Evander is a vain son of a bitch, but his lance hits like a runaway timber wagon. In three days, he’ll skewer your fancy surcoat and nail your spine to the tilt barrier."
+
+"A timber wagon only hits what sits in its rut," I said, pausing three paces away and leaning against the stone coping. The sun struck the back of my neck, warm against the chill mountain draft rising from the bay. "And your boy couldn't hit a bull in an alleyway if the bull had the courtesy to step two inches to the left."
+
+Renata sliced a wedge of apple and popped it into her mouth. The crunch was sharp, the sour tang of wild fruit carrying on the breeze. "He’s got four circles of dawn-gold etched into his soul, Theron. You’re an outcast baggage boy with forty broken-down marcher infantry and an empty purse."
+
+"My purse is considerably heavier than yours, girl," I remarked, letting my gaze drift down to her scuffed gear. "I noticed the Margrave's niece was wearing peach-colored silk and an arctic fox collar at the banquet table. Meanwhile, you're sitting in the dirt with soles held together by cobbler’s wax and pig grease. How many silver marks did the boy pay you for that three-headed beast in the salt caverns?"
+
+Her chewing slowed. A muscle in her jaw jumped, tight as bowstring.
+
+"That’s party business," she spat.
+
+"Which means nothing," I said calmly. "Not a copper. He took the glory, took the guild voucher, and bought silk slippers for the little bird from House Cole."
+
+"Shut your mouth," she muttered, turning the apple in her grip.
+
+I took a slow step closer, watching the way her right thumb rested near the pommel of her dagger. A good knife-fighter’s thumb—calloused, relaxed, ready to drive three inches of tempered steel into a man's throat in a heartbeat. The woman had real edge to her. Real grit. She wasn't the sort of soft, gilded ornament Evander surrounded himself with.
+
+Which made the whole farce ridiculous.
+
+"I can understand an escort riding behind him for twenty copper pennies a week," I said, folding my arms across my doublet. "Common mercenary math. A man needs meat in his belly and a roof over his head, even if he has to smell an ass's perfume to get it. What I don't understand is why a woman who actually knows how to hold an edge would trail behind an empty peacock who doesn't know how to parry in the middle octave."
+
+She glared up at me, her gray eyes narrowing beneath her shaggy fringe of dark hair.
+
+"And again," I added, keeping my voice mild, conversational, and completely devoid of pity, "why in the seven names would you spread your legs for him?"
+
+The motion was pure instinct.
+
+The apple dropped to the stones. Renata came off the wall in a blur of motion, her hunting knife whipping out in a low, vicious arc aimed straight at my ribs.
+
+I didn't draw my sword. I didn't reach for my arming sword or step back. I simply shifted my left hip back two inches, letting the steel slice through empty air an inch shy of my linen doublet, and caught her wrist in a vise of fingers right at the joint.
+
+The force of her lunge jarred up through my forearm, but my boots were planted deep in the flagstone mortar. We stood chest to chest, our breath tangling in the mountain wind. She smelled of horse sweat, leather oil, and the bitter acid of green apples.
+
+Her jaw was clamped so tight I could see the tendons corded against her throat.
+
+"Say that again, plow-boy," she whispered, her teeth bared like a mountain wolf caught in a snare. "Say it once more, and I’ll carve that insolent tongue out of your throat and feed it to the gulls."
+
+"You could try," I said softly, not loosening my grip on her wrist by a hair. "You're quick enough. But you leave your left shoulder open when you strike off the back heel. A veteran pikeman would have taken your arm off at the elbow before your blade cleared your hip."
+
+Her breathing came hard and ragged. Her fingers twitched around the knife hilt, but she didn't try to wrench free. She knew the leverage was mine. More than that, she knew I wasn't afraid of her.
+
+"Let go of me," she hissed.
+
+I opened my hand and stepped back, smooth and easy, letting my arms drop to my sides.
+
+Renata didn't lunge again. She rubbed her wrist where red welts were already rising from my grip, then bent down, snatched her apple off the dust, and wiped it savagely against her thigh.
+
+"You don't know a damn thing about the border," she said, her voice shaking with quiet, burning fury.
+
+"Enlighten me," I said with dry amusement. "You seem eager to justify him."
+
+"You think a woman walks through mercenary camps with a bow and two pig-stickers and men just tip their hats and step aside?" She took a vicious bite of the apple, chewing with harsh, grinding bites. "Six months out of the year, you’re sleeping in mud forty leagues from the nearest town. Sixty men in a column, four tents, and five barrels of sour rotgut every Saturday night. You want to know what happens to an unbonded skirmisher when the winter rains set in and the ale runs out?"
+
+I said nothing. I had ridden with sellsword companies in the Disputed Lands. I knew precisely what happened.
+
+"They drag you into the gully behind the horse lines," she said, staring past my shoulder toward the grey expanse of the bay. "Three of them, four of them, until someone cracks your skull with an entrenching spade so you don't talk to the captain."
+
+She spat a piece of apple peel onto the stone.
+
+"Evander is an arrogant, posturing cock," she said flatly. "He whines when his wool chafes his collar. He forgets to pay the mess bill. He preens in every polished shield from here to the capital. But when he first rode out of the High Sanctuary with that god-touched seal blazing on his forehead, nobody touched him. And nobody touched anyone who slept in his tent."
+
+The wind gusted up from the harbor, whipping her dark hair across her cheek.
+
+"A bull in the yard," I murmured. "Even a stupid one keeps the jackals in the brush."
+
+"Aye," she said, her voice dropping into a dull, bitter rasp. "A bull. At first... at first you tell yourself the light means something. The priests sing about chosen champions, the heralds shout about justice and holy wrath, and you think maybe, just maybe, the gods sent someone who isn't a drunken butcher. You think if you stay close to the fire, some of the warmth will rub off on you."
+
+She gave a short, jagged bark of laughter that had no humor in it.
+
+"Then you find out the fire is just painted canvas. He spends two hours in the morning having his squire curl his hair. He takes the bounties we bled for and spends them on velvet doublets. And the moment some lord's daughter looks his way from a gallery, you’re just the scullery maid who carries his spare javelins."
+
+She looked at me then, direct and unblinking, the raw wound of her pride laid bare in the midday light.
+
+"So go ahead, Captain Marrow. Tell me again how stupid I am. Tell me how I ought to have known better."
+
+I looked at her for a long moment. There was no mockery left in my chest. I had known knights of the Kingsguard who were braver than Renata Fell, and far more noble in their speech, but very few who had survived on thinner crusts.
+
+"I didn't say you were stupid," I told her quietly. "I asked why you stayed."
+
+"Five thousand gold crowns," she said, tapping the hilt of her dagger. "That’s the victor's purse for the Grand Melee and the lists combined. Evander promised me a quarter share if I scout the terrain and handle his reserve mounts. Twelve hundred crowns buys a stone house in the Upper Reach, five acres of vineyard, and enough iron to keep every border cutthroat in the province off my land for the rest of my life."
+
+"He won't give you twelve hundred crowns, Renata," I said. "If he wins, he'll give you a silk ribbon and twenty silver pieces, and tell you to be grateful for the honor of his acquaintance."
+
+"Then I’ll take it from his saddlebags while he’s drinking with the Margrave," she snapped, though her eyes betrayed the doubt gnawing at her ribs. "Or maybe I'll win the skirmish purse myself."
+
+"Not with that footwork," I replied, turning toward the stairs. "You push off your toes when you spring. Fine for hunting deer in the brush. In the lists, an iron boot will catch you mid-leap and break your ankle like a dried twig. Plant your heel first. Drive from the hip."
+
+She frowned, staring at me as if I had spoken in some dead empire's tongue. "Why the hell are you telling me that?"
+
+"Because if you're going to bleed on the sand in three days," I said over my shoulder as I started down the stone steps, "I'd prefer it be from an honest sword-stroke rather than a clumsy tumble."
+
+I didn't wait for her answer. I descended the remaining flights into the bustling noise of the Lower Ward wharves, where the creak of ship cranes, the shouting of stevedores, and the sharp scent of pitch and brine swallowed the mountain quiet.
+
