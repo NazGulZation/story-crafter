@@ -64,9 +64,9 @@ The construction began.
 
 Using the Hoe’s terraforming power, Bakushin aimed at the black pool. Columns of solid soil erupted from the seabed, swallowing the stagnant water in bursts of packed peat:
 
-`Stone (x2) consumed.`  
-`Stone (x2) consumed.`  
-`Stone (x2) consumed.`
+`Stone (x4) consumed.`  
+`Stone (x4) consumed.`  
+`Stone (x4) consumed.`
 
 Leeches were stranded high and dry on the newly formed mounds, squirming helplessly on the soil where Gold Ship crushed them with swift overhead swings of her iron mace. 
 

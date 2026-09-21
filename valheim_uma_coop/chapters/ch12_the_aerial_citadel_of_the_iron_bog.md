@@ -100,7 +100,7 @@ Gold Ship dragged a resin torch from her pouch and dropped it over the side. The
 
 Equipping a simple wooden **Hoe**, King walked along the muddy edge of the swamp. 
 
-"Observe the terraforming mechanics," King instructed over the voice comms. "The Hoe possesses two vital settings: *Level Ground* and *Raise Earth*. Level Ground flattens the soil to the exact altitude of your avatar's feet, smoothing jagged hummocks. Raise Earth consumes two units of quarried stone to erupt a vertical pillar of solid terrain above the water."
+"Observe the terraforming mechanics," King instructed over the voice comms. "The Hoe possesses two vital settings: *Level Ground* and *Raise Earth*. Level Ground flattens the soil to the exact altitude of your avatar's feet, smoothing jagged hummocks. Raise Earth consumes four units of quarried stone to erupt a vertical pillar of solid terrain above the water."
 
 Using the tool with surgical precision, King spent sixty loose stones to raise a dry, level dirt causeway four feet above the waterline. 
 

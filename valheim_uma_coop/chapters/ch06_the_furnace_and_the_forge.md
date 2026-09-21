@@ -92,10 +92,10 @@ Naturally, Gold Ship ignored the warning. She loaded five hundred units of quarr
 
 "Gyah! The laws of physics are harassing me!" Gold Ship hollered, scrambling out from under the axle.
 
-King shook her head with a wry smile and spent eight wood and fifteen bronze at the forge to craft a weapon of forestry:
+King shook her head with a wry smile and spent four wood, eight bronze, and two leather scraps at the forge to craft a weapon of forestry:
 
 `Bronze Axe`  
-`Requirements: 8 Wood, 15 Bronze, 2 Leather Scraps`
+`Requirements: 4 Wood, 8 Bronze, 2 Leather Scraps`
 
 Bakushin eagerly accepted the gleaming bronze axe. She sprinted across the river to an ancient, white-barked Birch tree that had previously defied their flint tools with the mocking prompt *Too hard*.
 

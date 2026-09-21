@@ -23,7 +23,7 @@
   - Hunting Deer: King and Bakushin try to harvest deer hides for armor. Bakushin sprints at full speed toward every herd, scaring them miles away. King forces her to crouch and sneak using a crude bow.
   - Urara’s Boar Project: Haru Urara discovers two wild boars. She traps them in a roundpole fence pen. She tosses dandelions first, but the boars sniff and ignore them. King checks the wiki: boars only eat berries, red mushrooms, and carrots! Urara tosses raspberries and red mushrooms, acclimating Carrot and Melon with pink pixelated hearts.
   - The Night Raid: Night falls. The cold debuff strikes. A pack of red-eyed Greydwarves and a 2-star wild boar assault the homestead.
-  - Combat chaos: Golshi swings a crude club with friendly fire toggled, accidentally smacking Bakushin into the riverbank. King plants her circular Wood Shield, utilizing its 1.5x parry multiplier to stagger the 2-star boar with a ringing chime, finishing it with her flint spear.
+  - Combat chaos: Golshi swings a crude club while both have friendly fire toggled, accidentally smacking Bakushin into the riverbank. King plants her circular Wood Shield, utilizing its 1.5x parry multiplier to stagger the 2-star boar with a ringing chime, finishing it with her flint spear.
 - **Atmospheric / Sensory Details**: The greasy crunch of rice crackers, the cold draft sneaking under the dormitory door, the high-pitched hum of Golshi's RGB fans, the satisfying wooden *thock* of Valheim's cooking spit alert.
 - **Ending**: Logistics and routine. King writes labels onto wooden chests (`WOOD`, `FOOD`, `SKINS`), organizes the inventory, and checks the clock before distributing fresh tea.
 

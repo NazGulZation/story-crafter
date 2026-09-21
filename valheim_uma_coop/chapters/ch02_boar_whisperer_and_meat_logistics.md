@@ -6,7 +6,7 @@ King Halo reached across the table, picked up an opened ceramic jar, and spooned
 
 "Pay attention to the interface," King commanded, tapping the glass of her secondary display where a fan-made game wiki lay open in three neatly arranged browser tabs. "Our avatars are currently operating at a maximum health pool of twenty-five points. A stiff breeze or an angry squirrel could dispatch us. Why? Because you three have been treating our dietary regimen like a roadside foraging picnic."
 
-"Hey! Raspberries are delicious!" Urara said, her eyes shining in the blue monitor glow. She clicked her inventory, where four neat stacks of ruby-red berries occupied the top row. "And look, King-chan, I found yellow mushrooms in a hollow log! They glow in the dark like little lamps!"
+"Hey! Raspberries are delicious!" Urara said, her eyes shining in the blue monitor glow. She clicked her inventory, where four neat stacks of ruby-red berries occupied the top row. "And look, King-chan, I found red mushrooms under an oak tree! They look like little fairy parasols!"
 
 "And they provide almost no sustained constitution," King countered smoothly. "Valheim operates on a multi-tier caloric index. To face significant challenges, one must consume three distinct nutritional profiles simultaneously. One fruit or vegetable, and two varieties of cooked protein."
 
@@ -140,7 +140,7 @@ And towering behind them in the gloom stood a massive wild boar with two jagged 
 
 "Party time, goblins!" Gold Ship roared. 
 
-Her avatar charged into the pack, swinging her heavy wooden club in wide, sweeping arcs. But in her haste, Gold Ship had left the PvP toggle active in her inventory menu.
+Her avatar charged into the pack, swinging her heavy wooden club in wide, sweeping arcs. But during an earlier sparring debate, both Gold Ship and Bakushin had toggled the crossed-swords PvP icon active in their inventory menus, and neither had remembered to disable friendly fire.
 
 Her club whistled through the air, completely missed the lead Greydwarf, and caught Bakushin’s avatar squarely across the ribs with a deafening wooden *THWACK*.
 
@@ -166,9 +166,9 @@ King timed the impact with razor focus. At the exact millisecond the boar’s sn
 
 The parry sound rang out like a bronze bell. A white shockwave erupted from King’s shield, stumbling the massive boar backward into the dirt, staggered and completely vulnerable.
 
-King lunged. Her Flint Spear flashed forward in a crisp, deadly three-hit combination.
+King lunged. Her Flint Spear flashed forward in rapid, punishing thrusts into the beast's staggered flank.
 
-*Thrust. Thrust. Pierce.*
+*Thrust. Thrust. Strike.*
 
 The two-star boar disintegrated into a burst of golden smoke, showering the ground with six cuts of prime raw meat, four thick leather scraps, and a magnificent horned trophy.
 

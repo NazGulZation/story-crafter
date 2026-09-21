@@ -62,11 +62,11 @@ The virtual camera jolted. Showers of pine cones and broken needles rained down 
 
 *THUD. THUD.*
 
-Fifty yards away, emerging from the tree line beside the coastal rocks where they had planned to mine tin, stepped an eighteen-foot-tall blue Forest Troll. 
+Fifty yards away, emerging from the tree line beside the coastal rocks where they had planned to mine tin, stepped an eighteen-foot-tall blue Forest Troll. Flanking its heels through the brush came an ironwood Greydwarf Brute with glowing crimson eyes, drawn by the reverberations of falling timber.
 
 It was the very same breed of nightmare that had swatted Gold Ship across the forest the previous evening: mottled cyan skin, black moss covering its shoulders, and an entire uprooted, thirty-foot pine trunk clutched in its massive fist.
 
-The red boss bar spanned their screens:
+A terrifying crimson health bar flared above the blue giant's brow:
 
 `Troll`
 
@@ -94,7 +94,7 @@ The eighteen-foot giant groaned in shock. The concussive rebound tore the tree t
 
 "BAKUSHIN! BAKUSHIN!" 
 
-Bakushin closed the distance in two strides, driving her bronze axe into the Troll’s exposed kneecap with blinding fury. 
+Bakushin closed the distance in two strides, driving her bronze axe into the Troll’s exposed kneecap with blinding fury, then pivoting to cleave the charging Greydwarf Brute with a vicious overhead stroke that shattered its wooden core into flying kindling.
 
 Urara fired three consecutive Flaming Arrows into the beast’s chest: *Thump! Thump! Thump!* Bright orange fire engulfed the blue leather hide, ticking down massive bursts of burning damage.
 
@@ -106,13 +106,13 @@ Gold Ship leaped through the air, bringing her club down squarely between the mo
 
 *CRACK!*
 
-The Troll let out a final, shuddering groan. Its massive knees buckled, and the colossal blue giant collapsed forward onto the forest floor with the thunderous impact of a falling tower, dissolving into a mountain of loot:
+The Troll let out a final, shuddering groan. Its massive knees buckled, and the colossal blue giant collapsed forward onto the forest floor with the thunderous impact of a falling tower, dissolving into a mountain of loot alongside the Brute's remains:
 
 `Troll Hide (x8)`  
 `Coins (x45)`  
-`Ancient Seed`
+`Ancient Seed (x1)`
 
-"The seed!" King gasped, grabbing the third amber-glowing pod from the soil. "The third seed was in its hoard!"
+"The seed!" King gasped, grabbing the third amber-glowing pod from the soil where the Brute had fallen. "The third seed dropped from the Brute!"
 
 "We did it!" Urara cheered, jumping up on her cushion. "King-chan parried the giant tree! That was amazing!"
 

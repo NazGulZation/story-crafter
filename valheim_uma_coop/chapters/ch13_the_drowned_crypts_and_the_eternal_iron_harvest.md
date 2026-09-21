@@ -138,7 +138,7 @@ Urara became the quartermaster, sorting ancient bones and leather scraps into de
 
 Then came the hauling.
 
-Scrap Iron weighed twelve kilograms per chunk. Carrying twenty-five chunks placed an avatar right on the razor edge of the 300-kilogram encumbrance threshold. 
+Scrap Iron weighed ten kilograms per chunk. Carrying thirty chunks placed an avatar right on the razor edge of the 300-kilogram encumbrance threshold. 
 
 They formed a living bucket brigade: walking in single file down the crypt steps, marching across King's raised stone causeway, climbing the coastal knoll, and packing every single pound of ore into the four cargo slots of the Karve moored in the cove.
 

@@ -147,7 +147,7 @@ It stood eighteen feet tall, its skin a mottled, leathery blue the color of deep
 
 Clutched in its massive, four-fingered blue fist was an entire uprooted, thirty-foot pine tree, its broken branches stripped like barbed wire, wielded effortlessly like a crude war club.
 
-A monstrous red boss bar stretched across the top of all four monitors:
+A thick, terrifying crimson health bar flared above the titan's brow:
 
 `Troll`
 

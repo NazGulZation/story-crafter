@@ -232,7 +232,9 @@ King Halo sat back against the wooden backrest of her desk chair, exhaling a lon
 
 They gathered their gear and stepped back through the `BONEMASS_01` portal, returning to the warm, torchlit halls of King’s Outpost in the Meadows. 
 
-King walked her avatar to the central hearth room. Above the stone fireplace, beside the mounted antlers of Eikthyr and the twisted roots of the Elder, King placed the grotesque, dripping Bonemass Trophy onto the center mounting hook. 
+From the outpost courtyard, they marched back to the Sacrificial Stones where their journey had first begun. Beneath the quiet night sky, King walked her avatar to the third weathered megalith, mounting the grotesque, dripping Bonemass Trophy upon the ancient iron hook. 
+
+A deep, resonant hum echoed across the megaliths as the stone lit with an unearthly emerald seal:
 
 `New Power Unlocked: Bonemass (Physical Damage -50%)`
 
