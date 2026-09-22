@@ -65,7 +65,49 @@ def save_config(config):
 
 
 def format_markdown_to_html(md_text, story_id=""):
-    """Convert chapter markdown into clean, styled book HTML with drop caps and web-safe image paths."""
+    """Convert chapter markdown into clean, styled book HTML with drop caps, choices parsing, and web-safe image paths."""
+    # Check frontmatter if present
+    is_ending = False
+    ending_title = None
+    if md_text.startswith("---"):
+        parts = md_text.split("---", 2)
+        if len(parts) >= 3:
+            fm_str = parts[1]
+            md_text = parts[2]
+            for fline in fm_str.splitlines():
+                if fline.strip().lower().startswith("ending:"):
+                    val = fline.split(":", 1)[1].strip().lower()
+                    if val in ("true", "yes", "1"):
+                        is_ending = True
+                elif fline.strip().lower().startswith("ending_title:"):
+                    ending_title = fline.split(":", 1)[1].strip().strip('"\'')
+
+    # Check for ### Ending: [Title] heading anywhere in md_text
+    m_ending = re.search(r'^\s*#{2,3}\s+Ending:\s*(.+)$', md_text, re.MULTILINE | re.IGNORECASE)
+    if m_ending:
+        is_ending = True
+        if not ending_title:
+            ending_title = m_ending.group(1).strip()
+
+    # Parse ### Choices block
+    choices = []
+    choices_pattern = r'(?:\r?\n|^)\s*#{2,3}\s+Choices\s*\r?\n([\s\S]*?)$'
+    m_choices = re.search(choices_pattern, md_text, re.IGNORECASE)
+    if m_choices:
+        choices_block = m_choices.group(1)
+        # Strip choices block from md_text so it does not render as raw markdown bullets
+        md_text = md_text[:m_choices.start()].rstrip()
+        for bline in choices_block.splitlines():
+            m_link = re.search(r'[-*]\s*\[(.*?)\]\((.*?)\)', bline)
+            if m_link:
+                c_text = m_link.group(1).strip()
+                c_target = m_link.group(2).strip().replace("\\", "/").split("/")[-1]
+                if c_text and c_target:
+                    choices.append({
+                        "text": c_text,
+                        "target": c_target
+                    })
+
     lines = md_text.splitlines()
     title = ""
     cleaned_lines = []
@@ -152,7 +194,7 @@ def format_markdown_to_html(md_text, story_id=""):
                 html_parts.append(f"<p>{formatted}</p>")
         raw_html = "\n".join(html_parts)
 
-    return title, raw_html
+    return title, raw_html, choices, is_ending, ending_title
 
 
 def scan_full_library():
@@ -170,7 +212,7 @@ def scan_full_library():
                     for idx, f in enumerate(files, 1):
                         try:
                             text = f.read_text(encoding="utf-8")
-                            title, raw_html = format_markdown_to_html(text, story_id=item.name)
+                            title, raw_html, choices, is_ending, ending_title = format_markdown_to_html(text, story_id=item.name)
                             word_count = len(re.findall(r"\b\w+\b", text))
                             reading_minutes = max(1, round(word_count / 220))
 
@@ -180,16 +222,32 @@ def scan_full_library():
                                 "index": idx,
                                 "word_count": word_count,
                                 "reading_time": f"{reading_minutes} min",
-                                "html": raw_html
+                                "html": raw_html,
+                                "choices": choices,
+                                "is_ending": is_ending,
+                                "ending_title": ending_title or (title if is_ending else None)
                             })
                         except Exception as e:
                             print(f"[WARN] Failed to parse chapter {f}: {e}")
+
+                    is_interactive = any(bool(ch.get("choices") or ch.get("is_ending")) for ch in chapter_list)
+                    endings = [
+                        {
+                            "filename": ch["filename"],
+                            "title": ch.get("ending_title") or ch["title"],
+                            "index": ch["index"]
+                        }
+                        for ch in chapter_list if ch.get("is_ending")
+                    ]
 
                     stories.append({
                         "id": item.name,
                         "title": display_title,
                         "chapters": chapter_list,
-                        "total_chapters": len(chapter_list)
+                        "total_chapters": len(chapter_list),
+                        "is_interactive": is_interactive,
+                        "endings": endings,
+                        "total_endings": len(endings)
                     })
 
     # Sort so 'the_mockingbirds_ledger' is primary if present, then alphabetical
@@ -1812,6 +1870,329 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }}
   }}
 
+  /* INTERACTIVE STORY MODE STYLES */
+  .story-mode-badge {{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(139, 58, 43, 0.12);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: var(--font-sans);
+    margin-left: 8px;
+    vertical-align: middle;
+  }}
+
+  .interactive-block {{
+    margin: 28px auto 14px auto;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    text-align: center;
+  }}
+
+  .choice-container {{
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px dashed var(--border-color);
+    border-radius: 10px;
+    padding: 20px 18px;
+    margin-top: 10px;
+  }}
+
+  .interactive-choice-header {{
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }}
+
+  .choice-options-grid {{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }}
+
+  .choice-card {{
+    background: var(--bg-book);
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: var(--font-serif);
+  }}
+
+  .choice-card:hover {{
+    background: var(--bg-page);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }}
+
+  .choice-card .choice-icon {{
+    font-size: 14px;
+    color: var(--accent);
+    background: rgba(139, 58, 43, 0.1);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }}
+
+  .choice-card:hover .choice-icon {{
+    transform: translateX(3px);
+    background: var(--accent);
+    color: #fff;
+  }}
+
+  .choice-card .choice-text {{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.45;
+    flex: 1;
+  }}
+
+  /* ENDING CARD */
+  .ending-card {{
+    background: var(--bg-book);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+  }}
+
+  .ending-ribbon {{
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }}
+
+  .ending-heading {{
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+  }}
+
+  .ending-meta-badge {{
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(139, 58, 43, 0.1);
+    border-radius: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 18px;
+    font-family: var(--font-sans);
+  }}
+
+  .ending-actions {{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }}
+
+  .btn-interactive {{
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.15s ease;
+  }}
+
+  /* INTERACTIVE TOC & STORY MAP */
+  .toc-interactive-panel {{
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(0, 0, 0, 0.02);
+  }}
+
+  .toc-tracker-card {{
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+  }}
+
+  .toc-tracker-title-row {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--font-sans);
+    margin-bottom: 6px;
+  }}
+
+  .toc-tracker-stat {{
+    color: var(--accent);
+  }}
+
+  .toc-progress-track {{
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 3px;
+    overflow: hidden;
+  }}
+
+  .toc-progress-fill {{
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }}
+
+  .toc-path-header {{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }}
+
+  .btn-toc-action {{
+    background: transparent;
+    border: none;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }}
+
+  .btn-toc-action:hover {{
+    background: rgba(139, 58, 43, 0.1);
+  }}
+
+  .toc-path-trail {{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }}
+
+  .toc-path-chip {{
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-size: 11px;
+    cursor: pointer;
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.15s ease;
+  }}
+
+  .toc-path-chip:hover {{
+    border-color: var(--accent);
+    color: var(--accent);
+  }}
+
+  .toc-path-chip.active {{
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    font-weight: 600;
+  }}
+
+  .toc-path-arrow {{
+    color: var(--text-muted);
+    font-weight: bold;
+    font-size: 12px;
+  }}
+
+  .toc-section-header {{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }}
+
+  .interactive-toc-item.visited {{
+    border-left-color: var(--accent);
+  }}
+
+  .interactive-toc-item.locked {{
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: transparent !important;
+  }}
+
+  .ch-badge {{
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1px 6px;
+    border-radius: 4px;
+  }}
+
+  .ch-badge.root-node {{
+    background: rgba(44, 82, 130, 0.15);
+    color: #2c5282;
+  }}
+
+  .ch-badge.branch-node {{
+    background: rgba(139, 58, 43, 0.12);
+    color: var(--accent);
+  }}
+
+  .ch-badge.ending-discovered {{
+    background: rgba(40, 167, 69, 0.15);
+    color: #28a745;
+  }}
+
+  .ch-badge.ending-revealed {{
+    background: rgba(255, 193, 7, 0.2);
+    color: #b78103;
+  }}
+
   /* SCROLLBAR */
   ::-webkit-scrollbar {{
     width: 6px;
@@ -1856,6 +2237,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
         <circle cx="256" cy="370" r="8" fill="#d4af37"/>
       </svg>
       <span class="story-title-badge" id="currentStoryTitle">StoryCrafter Web Reader</span>
+      <span class="story-mode-badge" id="storyModeBadge" style="display: none;"></span>
     </div>
 
     <div class="app-bar-right">
@@ -2072,6 +2454,35 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     active_story: 'the_mockingbirds_ledger',
     active_chapter: 'ch01_the_gutter_and_the_mockingbird.md'
   }}, data.config || {{}});
+
+  // INTERACTIVE STORY PROGRESS STATE
+  let interactiveProgress = currentConfig.interactive_progress || {{}};
+  try {{
+    const localInteractive = localStorage.getItem('storycrafter_interactive_progress');
+    if (localInteractive) {{
+      interactiveProgress = Object.assign(JSON.parse(localInteractive), interactiveProgress);
+    }}
+  }} catch (e) {{}}
+
+  function getStoryProgress(storyId) {{
+    if (!interactiveProgress[storyId]) {{
+      interactiveProgress[storyId] = {{
+        current_chapter: null,
+        history: [],
+        discovered_endings: [],
+        revealed_nodes: []
+      }};
+    }}
+    return interactiveProgress[storyId];
+  }}
+
+  function saveInteractiveProgress() {{
+    try {{
+      localStorage.setItem('storycrafter_interactive_progress', JSON.stringify(interactiveProgress));
+    }} catch (e) {{}}
+    currentConfig.interactive_progress = interactiveProgress;
+    saveState();
+  }}
 
   let currentStoryIndex = 0;
   let currentChapterIndex = 0;
@@ -2470,6 +2881,15 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     if (activeChapterFile) {{
       const cIdx = currentStory().chapters.findIndex(c => c.filename === activeChapterFile);
       if (cIdx !== -1) currentChapterIndex = cIdx;
+    }} else {{
+      const st = currentStory();
+      if (st && st.is_interactive) {{
+        const prog = getStoryProgress(st.id);
+        if (prog && prog.current_chapter) {{
+          const cIdx = st.chapters.findIndex(c => c.filename === prog.current_chapter);
+          if (cIdx !== -1) currentChapterIndex = cIdx;
+        }}
+      }}
     }}
 
     if (activePage !== undefined && activePage !== null) {{
@@ -2552,30 +2972,283 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }});
   }}
 
+  function buildInteractiveBlockHtml(ch) {{
+    if (!ch) return '';
+    const st = currentStory();
+    if (!st || !st.is_interactive) return '';
+
+    if (ch.is_ending) {{
+      const prog = getStoryProgress(st.id);
+      if (!prog.discovered_endings.includes(ch.filename)) {{
+        prog.discovered_endings.push(ch.filename);
+        saveInteractiveProgress();
+      }}
+      const endingIndex = (st.endings ? st.endings.findIndex(e => e.filename === ch.filename) : -1) + 1;
+      const totalEndings = st.total_endings || (st.endings ? st.endings.length : 1);
+      return `
+        <div class="ending-card">
+          <div class="ending-ribbon">✦ Ending Reached ✦</div>
+          <h2 class="ending-heading">${{escapeHtml(ch.ending_title || ch.title)}}</h2>
+          <div class="ending-meta-badge">Discovered: Ending ${{endingIndex || 1}} of ${{totalEndings}}</div>
+          <div class="ending-actions">
+            <button class="btn btn-interactive active" onclick="handleRestartStory()">↻ Restart Story</button>
+            <button class="btn btn-interactive" onclick="handleBacktrack()">⮌ Backtrack to Previous Choice</button>
+          </div>
+        </div>
+      `;
+    }}
+
+    if (ch.choices && ch.choices.length > 0) {{
+      let optionsHtml = '';
+      ch.choices.forEach(opt => {{
+        optionsHtml += `
+          <button class="choice-card" onclick="handleChoiceClick('${{escapeHtml(opt.target)}}')">
+            <span class="choice-icon">➤</span>
+            <span class="choice-text">${{escapeHtml(opt.text)}}</span>
+          </button>
+        `;
+      }});
+      return `
+        <div class="choice-container">
+          <div class="interactive-choice-header">❦ Decide Your Course ❦</div>
+          <div class="choice-options-grid">
+            ${{optionsHtml}}
+          </div>
+          <div style="margin-top: 12px;">
+            <button class="btn" style="font-size: 11px; opacity: 0.8;" onclick="handleBacktrack()">⮌ Backtrack to Previous Choice</button>
+          </div>
+        </div>
+      `;
+    }}
+
+    return '';
+  }}
+
+  function handleChoiceClick(targetFilename) {{
+    const st = currentStory();
+    if (!st || !st.chapters) return;
+    const targetIdx = st.chapters.findIndex(c => c.filename === targetFilename);
+    if (targetIdx === -1) {{
+      showToast('Destination chapter not found: ' + targetFilename);
+      return;
+    }}
+    const currentCh = st.chapters[currentChapterIndex];
+    const prog = getStoryProgress(st.id);
+    if (currentCh && !prog.history.includes(currentCh.filename)) {{
+      prog.history.push(currentCh.filename);
+    }}
+    if (!prog.revealed_nodes.includes(targetFilename)) {{
+      prog.revealed_nodes.push(targetFilename);
+    }}
+    prog.current_chapter = targetFilename;
+    saveInteractiveProgress();
+
+    playPaperSound();
+    if (currentConfig.layout === 'scroll') {{
+      scrollToChapter(targetIdx, true);
+    }} else {{
+      loadChapter(targetIdx, false, 'next', 0);
+    }}
+    renderToc();
+  }}
+
+  function handleBacktrack() {{
+    const st = currentStory();
+    if (!st || !st.is_interactive) return;
+    const prog = getStoryProgress(st.id);
+    if (!prog.history || prog.history.length === 0) {{
+      showToast('Already at the opening chapter.');
+      return;
+    }}
+    const prevFilename = prog.history.pop();
+    const prevIdx = st.chapters.findIndex(c => c.filename === prevFilename);
+    prog.current_chapter = prevFilename;
+    saveInteractiveProgress();
+
+    playPaperSound();
+    if (prevIdx !== -1) {{
+      if (currentConfig.layout === 'scroll') {{
+        scrollToChapter(prevIdx, true);
+      }} else {{
+        loadChapter(prevIdx, false, 'prev', 0);
+      }}
+      showToast('Backtracked to previous chapter.');
+    }}
+    renderToc();
+  }}
+
+  function handleRestartStory() {{
+    const st = currentStory();
+    if (!st || !st.is_interactive) return;
+    const prog = getStoryProgress(st.id);
+    prog.history = [];
+    const rootChapter = st.chapters[0];
+    prog.current_chapter = rootChapter ? rootChapter.filename : null;
+    if (rootChapter && !prog.revealed_nodes.includes(rootChapter.filename)) {{
+      prog.revealed_nodes.push(rootChapter.filename);
+    }}
+    saveInteractiveProgress();
+
+    playPaperSound();
+    if (currentConfig.layout === 'scroll') {{
+      scrollToChapter(0, true);
+    }} else {{
+      loadChapter(0, false, 'prev', 0);
+    }}
+    showToast('Story restarted from Chapter 1.');
+    renderToc();
+  }}
+
   function updateStoryView() {{
-    currentStoryTitle.textContent = currentStory().title;
+    const st = currentStory();
+    currentStoryTitle.textContent = st.title;
+    const badge = document.getElementById('storyModeBadge');
+    if (badge) {{
+      if (st.is_interactive) {{
+        badge.style.display = 'inline-flex';
+        badge.textContent = `🎲 Interactive (${{st.total_endings || (st.endings ? st.endings.length : 5)}} Endings)`;
+      }} else {{
+        badge.style.display = 'none';
+      }}
+    }}
     renderToc();
   }}
 
   function renderToc() {{
     tocList.innerHTML = '';
-    const chs = currentStory().chapters;
-    chs.forEach((ch, idx) => {{
-      const li = document.createElement('li');
-      li.className = 'toc-item' + (idx === currentChapterIndex ? ' active' : '');
-      li.innerHTML = `
-        <span class="ch-num">Chapter ${{ch.index}}</span>
-        <span class="ch-name">${{ch.title}}</span>
-        <span class="ch-meta">${{ch.word_count}} words · ${{ch.reading_time}}</span>
-      `;
-      li.onclick = () => {{
-        if (currentConfig.layout === 'scroll') {{
-          scrollToChapter(idx, true);
-        }} else {{
-          loadChapter(idx, false, 'next');
+    const st = currentStory();
+    if (!st) return;
+
+    if (!st.is_interactive) {{
+      const chs = st.chapters;
+      chs.forEach((ch, idx) => {{
+        const li = document.createElement('li');
+        li.className = 'toc-item' + (idx === currentChapterIndex ? ' active' : '');
+        li.innerHTML = `
+          <span class="ch-num">Chapter ${{ch.index}}</span>
+          <span class="ch-name">${{ch.title}}</span>
+          <span class="ch-meta">${{ch.word_count}} words · ${{ch.reading_time}}</span>
+        `;
+        li.onclick = () => {{
+          if (currentConfig.layout === 'scroll') {{
+            scrollToChapter(idx, true);
+          }} else {{
+            loadChapter(idx, false, 'next');
+          }}
+          tocDrawer.classList.remove('open');
+        }};
+        tocList.appendChild(li);
+      }});
+      return;
+    }}
+
+    // INTERACTIVE STORY MAP TOC
+    const prog = getStoryProgress(st.id);
+    const discoveredCount = (prog.discovered_endings || []).length;
+    const totalEndings = st.total_endings || (st.endings ? st.endings.length : 5);
+    const progressPct = Math.round((discoveredCount / Math.max(1, totalEndings)) * 100);
+
+    const trackerContainer = document.createElement('div');
+    trackerContainer.className = 'toc-interactive-panel';
+    trackerContainer.innerHTML = `
+      <div class="toc-tracker-card">
+        <div class="toc-tracker-title-row">
+          <span class="toc-tracker-label">🏆 Endings Discovered</span>
+          <span class="toc-tracker-stat">${{discoveredCount}} / ${{totalEndings}}</span>
+        </div>
+        <div class="toc-progress-track">
+          <div class="toc-progress-fill" style="width: ${{progressPct}}%"></div>
+        </div>
+      </div>
+
+      <div class="toc-path-header">
+        <span>🧭 Active Playthrough Path</span>
+        <button class="btn-toc-action" onclick="handleRestartStory()" title="Restart from Chapter 1">↻ Restart</button>
+      </div>
+      <div class="toc-path-trail" id="tocPathTrail"></div>
+
+      <div class="toc-section-header">📜 Story Map (Fog-of-War)</div>
+    `;
+    tocList.appendChild(trackerContainer);
+
+    const pathTrailEl = trackerContainer.querySelector('#tocPathTrail');
+    const pathList = [...(prog.history || [])];
+    const currentCh = st.chapters[currentChapterIndex];
+    if (currentCh && !pathList.includes(currentCh.filename)) {{
+      pathList.push(currentCh.filename);
+    }}
+    if (pathList.length === 0 && currentCh) pathList.push(currentCh.filename);
+
+    pathList.forEach((fname, stepIdx) => {{
+      const chObj = st.chapters.find(c => c.filename === fname);
+      if (!chObj) return;
+      const chip = document.createElement('span');
+      chip.className = 'toc-path-chip' + (fname === currentCh.filename ? ' active' : '');
+      chip.textContent = chObj.title;
+      chip.title = `Step ${{stepIdx + 1}}: ${{chObj.title}} (Click to navigate)`;
+      chip.onclick = () => {{
+        const cIdx = st.chapters.findIndex(c => c.filename === fname);
+        if (cIdx !== -1) {{
+          if (currentConfig.layout === 'scroll') scrollToChapter(cIdx, true);
+          else loadChapter(cIdx, false, null, 0);
+          tocDrawer.classList.remove('open');
         }}
-        tocDrawer.classList.remove('open');
       }};
+      pathTrailEl.appendChild(chip);
+      if (stepIdx < pathList.length - 1) {{
+        const arrow = document.createElement('span');
+        arrow.className = 'toc-path-arrow';
+        arrow.textContent = '›';
+        pathTrailEl.appendChild(arrow);
+      }}
+    }});
+
+    st.chapters.forEach((ch, idx) => {{
+      const isCurrent = idx === currentChapterIndex;
+      const isVisited = (prog.history || []).includes(ch.filename) || isCurrent;
+      const isRevealed = isVisited || (prog.revealed_nodes || []).includes(ch.filename) || idx === 0;
+
+      const li = document.createElement('li');
+      li.className = 'toc-item interactive-toc-item' + (isCurrent ? ' active' : '') + (isVisited ? ' visited' : '') + (!isRevealed ? ' locked' : '');
+
+      if (isRevealed) {{
+        let tagBadge = '';
+        if (ch.is_ending) {{
+          const isEndingDiscovered = (prog.discovered_endings || []).includes(ch.filename);
+          tagBadge = isEndingDiscovered 
+            ? '<span class="ch-badge ending-discovered">✓ Discovered Ending</span>' 
+            : '<span class="ch-badge ending-revealed">★ Ending Node</span>';
+        }} else if (idx === 0) {{
+          tagBadge = '<span class="ch-badge root-node">◆ Opening Chapter</span>';
+        }} else {{
+          tagBadge = '<span class="ch-badge branch-node">⑂ Decision Node</span>';
+        }}
+
+        li.innerHTML = `
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span class="ch-num">${{isVisited ? '● Visited' : '○ Unlocked Branch'}}</span>
+            ${{tagBadge}}
+          </div>
+          <span class="ch-name">${{ch.title}}</span>
+          <span class="ch-meta">${{ch.word_count}} words · ${{ch.reading_time}}</span>
+        `;
+        li.onclick = () => {{
+          if (currentConfig.layout === 'scroll') {{
+            scrollToChapter(idx, true);
+          }} else {{
+            loadChapter(idx, false, 'next', 0);
+          }}
+          tocDrawer.classList.remove('open');
+        }};
+      }} else {{
+        li.innerHTML = `
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span class="ch-num" style="opacity: 0.6;">🔒 Locked Branch</span>
+          </div>
+          <span class="ch-name" style="opacity: 0.5; font-style: italic;">??? (Unexplored Choice)</span>
+          <span class="ch-meta" style="opacity: 0.5;">Make decisions in story to reveal</span>
+        `;
+      }}
       tocList.appendChild(li);
     }});
   }}
@@ -2589,14 +3262,19 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
 
     let html = '';
     st.chapters.forEach((ch, idx) => {{
+      let interactiveHtml = '';
+      if (st.is_interactive) {{
+        interactiveHtml = `<div class="interactive-block">${{buildInteractiveBlockHtml(ch)}}</div>`;
+      }}
       html += `
         <article class="chapter-scroll-section" id="chapter-scroll-${{idx}}" data-chapter-index="${{idx}}">
           <div class="chapter-title-block">
-            <div class="chapter-eyebrow">Chapter ${{idx + 1}}</div>
+            <div class="chapter-eyebrow">${{ch.is_ending ? 'Ending' : 'Chapter ' + (idx + 1)}}</div>
             <h1 class="chapter-main-title">${{escapeHtml(ch.title)}}</h1>
             <div class="chapter-ornament">❦  ❧</div>
           </div>
           <div class="has-drop-cap chapter-body-html">${{ch.html}}</div>
+          ${{interactiveHtml}}
           <div class="chapter-scroll-footer">
             <div class="chapter-scroll-divider">✦ ✦ ✦</div>
             <div class="chapter-meta-tag">${{ch.word_count}} words · ${{ch.reading_time}} read</div>
@@ -2713,25 +3391,39 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }}
 
     renderToc();
-    footerChapterInfo.textContent = `${{currentStory().title}} — Chapter ${{idx + 1}} of ${{currentStory().chapters.length}}`;
+    const st = currentStory();
+    if (st.is_interactive) {{
+      footerChapterInfo.textContent = ch.is_ending
+        ? `${{st.title}} — Ending: ${{ch.title}}`
+        : `${{st.title}} — ${{ch.title}}`;
+    }} else {{
+      footerChapterInfo.textContent = `${{st.title}} — Chapter ${{idx + 1}} of ${{st.chapters.length}}`;
+    }}
 
     renderChapterContent(ch, direction);
     saveState();
   }}
 
   function renderChapterContent(ch, direction = null) {{
+    const st = currentStory();
     const rawHtml = ch.html;
     const title = ch.title;
+    const isEnding = Boolean(ch.is_ending);
+    let interactiveHtml = '';
+    if (st.is_interactive) {{
+      interactiveHtml = `<div class="interactive-block">${{buildInteractiveBlockHtml(ch)}}</div>`;
+    }}
 
     // Single Scroll View
-    headerSingle.textContent = `${{currentStory().title}} — ${{title}}`;
+    headerSingle.textContent = `${{st.title}} — ${{title}}`;
     contentSingle.innerHTML = `
       <div class="chapter-title-block">
-        <div class="chapter-eyebrow">Chapter ${{currentChapterIndex + 1}}</div>
+        <div class="chapter-eyebrow">${{isEnding ? 'Ending' : 'Chapter ' + (currentChapterIndex + 1)}}</div>
         <h1 class="chapter-main-title">${{title}}</h1>
         <div class="chapter-ornament">❦  ❧</div>
       </div>
       <div class="has-drop-cap">${{rawHtml}}</div>
+      ${{interactiveHtml}}
     `;
     const singleWc = document.getElementById('singleWordCount');
     if (singleWc) singleWc.textContent = `${{ch.word_count}} words`;
@@ -2746,7 +3438,8 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }}
 
     // Split into pages for Spread View
-    splitPagesIntoSpreads(rawHtml, title, direction);
+    const fullHtml = rawHtml + (interactiveHtml ? '\n' + interactiveHtml : '');
+    splitPagesIntoSpreads(fullHtml, title, direction, isEnding);
   }}
 
   function splitHtmlIntoTokens(inner) {{
@@ -2793,7 +3486,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     return `<${{tagName}}${{cls}}>${{trimmed}}</${{tagName}}>`;
   }}
 
-  function splitPagesIntoSpreads(rawHtml, title, direction = null) {{
+  function splitPagesIntoSpreads(rawHtml, title, direction = null, isEnding = false) {{
     checkViewport();
     const targetHeight = Math.max(320, (contentLeft.clientHeight > 50 ? contentLeft.clientHeight : (window.innerHeight - 190)));
     const targetWidth = Math.max(280, (contentLeft.clientWidth > 50 ? contentLeft.clientWidth : (isSinglePageOnMobile ? window.innerWidth - 60 : Math.floor((window.innerWidth - 160) / 2))));
@@ -2828,7 +3521,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
 
     const titleBlockHtml = `
       <div class="chapter-title-block">
-        <div class="chapter-eyebrow">Chapter ${{currentChapterIndex + 1}}</div>
+        <div class="chapter-eyebrow">${{isEnding ? 'Ending' : 'Chapter ' + (currentChapterIndex + 1)}}</div>
         <h1 class="chapter-main-title">${{title}}</h1>
         <div class="chapter-ornament">❦  ❧</div>
       </div>
@@ -2842,6 +3535,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
       const node = nodes[i];
       const nodeHtml = node.outerHTML;
       const isImage = node.matches('figure, .book-figure, img') || Boolean(node.querySelector('img, figure, .book-figure'));
+      const isInteractiveBlock = node.matches('.interactive-block') || Boolean(node.querySelector('.interactive-block'));
 
       if (isImage) {{
         // If there is preceding content accumulated on the current page, close and push that page
@@ -2855,6 +3549,24 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
         splitPages.push(nodeHtml);
         tester.innerHTML = '';
         isFirstPage = false;
+        continue;
+      }}
+
+      if (isInteractiveBlock) {{
+        // Test if interactive block fits on current page
+        const testCurrent = currentPageNodes.join('') + nodeHtml;
+        tester.innerHTML = testCurrent;
+        if (tester.scrollHeight <= targetHeight + 6) {{
+          currentPageNodes.push(nodeHtml);
+        }} else {{
+          if (currentPageNodes.length > 0) {{
+            splitPages.push(currentPageNodes.join(''));
+            currentPageNodes = [];
+            tester.innerHTML = '';
+            isFirstPage = false;
+          }}
+          splitPages.push(nodeHtml);
+        }}
         continue;
       }}
 
@@ -3028,6 +3740,29 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
   }}
 
   function nextPage() {{
+    const st = currentStory();
+    const ch = currentChapter();
+    if (st && st.is_interactive) {{
+      if (currentConfig.layout === 'spread') {{
+        if (currentPagePair < totalPagePairs - 1) {{
+          currentPagePair++;
+          renderCurrentSpread('next');
+          saveState();
+        }} else {{
+          if (ch && ch.choices && ch.choices.length > 0) {{
+            showToast('Please make a choice below to proceed.');
+          }} else if (ch && ch.is_ending) {{
+            showToast('Ending reached. Select Restart or Backtrack.');
+          }}
+        }}
+      }} else {{
+        if (ch && ch.choices && ch.choices.length > 0) {{
+          showToast('Please make a choice below to proceed.');
+        }}
+      }}
+      return;
+    }}
+
     if (currentConfig.layout === 'spread') {{
       if (currentPagePair < totalPagePairs - 1) {{
         currentPagePair++;
@@ -3046,6 +3781,22 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
   }}
 
   function prevPage() {{
+    const st = currentStory();
+    if (st && st.is_interactive) {{
+      if (currentConfig.layout === 'spread') {{
+        if (currentPagePair > 0) {{
+          currentPagePair--;
+          renderCurrentSpread('prev');
+          saveState();
+        }} else {{
+          handleBacktrack();
+        }}
+      }} else {{
+        handleBacktrack();
+      }}
+      return;
+    }}
+
     if (currentConfig.layout === 'spread') {{
       if (currentPagePair > 0) {{
         currentPagePair--;
@@ -3072,7 +3823,8 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
       theme: currentConfig.theme,
       font_size: currentConfig.font_size,
       layout: currentConfig.layout,
-      page_index: currentPagePair
+      page_index: currentPagePair,
+      interactive_progress: interactiveProgress
     }};
 
     try {{
@@ -3094,13 +3846,22 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
   // ATTACH EVENT LISTENERS
   selectStory.onchange = (e) => {{
     currentStoryIndex = parseInt(e.target.value, 10);
-    currentChapterIndex = 0;
+    const st = currentStory();
+    let initialChapterIdx = 0;
+    if (st && st.is_interactive) {{
+      const prog = getStoryProgress(st.id);
+      if (prog && prog.current_chapter) {{
+        const found = st.chapters.findIndex(c => c.filename === prog.current_chapter);
+        if (found !== -1) initialChapterIdx = found;
+      }}
+    }}
+    currentChapterIndex = initialChapterIdx;
     updateStoryView();
     if (currentConfig.layout === 'scroll') {{
-      renderInfiniteScroll(0);
+      renderInfiniteScroll(initialChapterIdx);
       if (bookSingle) bookSingle.scrollTop = 0;
     }} else {{
-      loadChapter(0);
+      loadChapter(initialChapterIdx);
     }}
   }};
 
