@@ -3438,7 +3438,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }}
 
     // Split into pages for Spread View
-    const fullHtml = rawHtml + (interactiveHtml ? '\n' + interactiveHtml : '');
+    const fullHtml = interactiveHtml ? (rawHtml + interactiveHtml) : rawHtml;
     splitPagesIntoSpreads(fullHtml, title, direction, isEnding);
   }}
 
