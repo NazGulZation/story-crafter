@@ -31,6 +31,12 @@ A story with multiple endings must avoid arbitrary, sudden "you died" traps. Eve
 - **Poetic Justice & Earned Downfalls**: When antagonists or rival factions meet their end, ensure their reckoning turns their own methods, arrogance, or contracts against them, adhering to the Retribution Principle in `GEMINI.md`.
 - **Emotional Closure**: Endings must provide complete narrative and atmospheric resolution, grounding the final beat in concrete in-universe actions (sealing a vault, surveying a flooded valley, signing a parchment) rather than melodramatic mic-drops.
 
+### 1.3. Absolute Tree Architecture & Ending Exclusivity
+Every decision branch must culminate in distinct consequences and a dedicated, unshared terminal ending:
+- **No Shared Endings**: Multiple branches must never merge into the same ending chapter. An ending belongs exclusively to the unique path that earned it.
+- **Zero Convergence**: Once a storyline branches, paths must never rejoin at intermediate chapters or funnel into shared choke points.
+- **Mathematical Invariant ($E \ge B$)**: The total number of terminal endings ($E$) must always be greater than or equal to the total number of branches ($B$) at any decision tier. Every branch must lead to at least one dedicated ending.
+
 ---
 
 ## 2. Technical Authoring Specification in StoryCrafter
@@ -100,11 +106,11 @@ When the reader reaches an ending chapter:
 
 ---
 
-## 3. Branching Graph Architecture & Complexity Management
+## 3. Branching Graph Architecture: The Absolute Tree Mandate
 
-To prevent runaway combinatorial explosion while maintaining deep player agency, use one of three proven narrative architectures:
+To guarantee that player decisions carry genuine, uncompromised weight, all interactive narratives in StoryCrafter must form a **pure directed out-tree (arborescence)** rooted at Chapter 1.
 
-### 3.1. The 3-Tier Diamond / Tree (Recommended for 5 Endings)
+### 3.1. The 3-Tier Tree Architecture (Recommended for 5 to 8 Endings)
 ```
           [ Ch 01: Root Dilemma ]
                  /        \
@@ -114,11 +120,53 @@ To prevent runaway combinatorial explosion while maintaining deep player agency,
 ```
 - **Tier 1 (Root)**: Establishes the high-stakes central crisis, introducing all relevant factions and immediate stakes. Ends in a stark 2-way strategic divergence.
 - **Tier 2 (Mid-Game Branches)**: Explores the immediate tactical reality of the chosen vector (e.g., subterranean physical struggle vs diplomatic high-stakes parley). Each introduces a critical second-order complication.
-- **Tier 3 (Terminal Endings)**: Final choices trigger decisive climaxes and resolutions.
+- **Tier 3 (Terminal Endings)**: Final choices trigger decisive climaxes and resolutions. Every path terminates in its own dedicated, unshared ending.
 
-### 3.2. Convergent Bottlenecks (For Longer Epics)
-If expanding beyond 8 chapters, avoid pure exponential branching by introducing **pinch points** or **choke nodes**:
-- Paths diverge for 1–2 chapters to explore distinct tactical solutions, then converge at a mandatory crisis milestone (e.g. the breaching of the inner gate), where the state of the citadel reflects the previous choices made.
+### 3.2. Strict Prohibition of Branch Convergence & Shared Endings
+**Zero Convergence Mandate**: All forms of narrative convergence, path merging, or ending recycling are strictly forbidden:
+1. **In-Degree Invariant**:
+   - The opening chapter has $\text{in-degree} = 0$.
+   - **Every non-root chapter (whether intermediate branch or terminal ending) must have $\text{in-degree} = 1$.**
+   - Having $\text{in-degree} \ge 2$ (two or more parent chapters pointing to the same child chapter) is an automatic architectural failure.
+2. **Strict Prohibition of Shared Endings ("No Funneling")**:
+   - Two different branches (e.g. `ch02a` and `ch02b`) must NEVER link to the same ending file (e.g. `ending01.md`).
+   - Every single terminal branch must culminate in its own unique, unshared ending chapter.
+3. **Strict Prohibition of Intermediate Choke Points**:
+   - Authors must never diverge paths only to reconverge them into a shared intermediate chapter. Once paths diverge, they remain completely separate timelines until their respective terminal endings.
+
+### 3.3. Mathematical Branch-to-Ending Invariant ($E \ge B$)
+For any valid interactive narrative graph:
+- Let $k(u)$ be the out-degree (number of choices) at any decision node $u$. Every decision node must offer $k(u) \ge 2$ choices.
+- In a pure directed tree with $L$ decision levels, the total number of terminal ending leaves $E$ is the sum of leaf nodes across all branch lineages:
+  $$E = \sum_{\text{branch } b} E_b \quad \text{where } E_b \ge 1 \text{ for every branch } b$$
+- Therefore, **Endings $\ge$ Branches ($E \ge B$)** holds across every decision tier of the story. If a story opens with 2 branches, it must possess $\ge 2$ endings; if it branches into 4 paths, it must possess $\ge 4$ endings.
+
+```mermaid
+graph TD
+    classDef root fill:#4a154b,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef branch fill:#1f4068,stroke:#fff,stroke-width:1.5px,color:#fff;
+    classDef ending fill:#162447,stroke:#e43f5a,stroke-width:2px,color:#fff;
+    classDef forbidden fill:#8b0000,stroke:#ff0000,stroke-width:2px,stroke-dasharray: 5 5,color:#fff;
+
+    subgraph "VALID: Absolute Out-Tree Architecture (In-Degree = 1, E >= B)"
+        R1["Ch 01: Root Dilemma"]:::root --> B1A["Ch 02A: Sluice Path"]:::branch
+        R1 --> B1B["Ch 02B: Parley Path"]:::branch
+        B1A --> E1["Ending 1: Drowned Gorge"]:::ending
+        B1A --> E2["Ending 2: Sapper's Grave"]:::ending
+        B1B --> E3["Ending 3: Mercenary's Charter"]:::ending
+        B1B --> E4["Ending 4: Trapper's Toll"]:::ending
+        B1B --> E5["Ending 5: Iron Redoubt"]:::ending
+    end
+
+    subgraph "FORBIDDEN: Convergence & Shared Endings (In-Degree > 1)"
+        R2["Ch 01"]:::root --> B2A["Branch A"]:::branch
+        R2 --> B2B["Branch B"]:::branch
+        B2A -.->|"FORBIDDEN MERGE"| FAIL_END["Ending X (Shared)"]:::forbidden
+        B2B -.->|"FORBIDDEN MERGE"| FAIL_END
+        B2A -.->|"FORBIDDEN CHOKE"| FAIL_MID["Ch 03 (Pinch Point)"]:::forbidden
+        B2B -.->|"FORBIDDEN CHOKE"| FAIL_MID
+    end
+```
 
 ---
 
@@ -161,18 +209,28 @@ When commissioned to create an interactive story:
 
 - [ ] **Step 1: Define the Core Dilemma & Setting**:
   - Establish a self-contained, high-tension crisis rooted in independent protagonist agency (e.g. sapper holding a fortress, bailiff arbitrating an impounded vessel, merchant defending a trade lock).
-- [ ] **Step 2: Map the Graph & 5 Thematic Endings**:
-  - Sketch the Mermaid diagram with exact filenames for all nodes and endings.
+- [ ] **Step 2: Map the Graph & Thematic Endings**:
+  - Sketch the Mermaid tree diagram ensuring **in-degree = 1** for all non-root nodes and **$E \ge B$**.
   - Define the thematic title and distinct consequence of each ending.
 - [ ] **Step 3: Draft Chapters Sequentially by Branch**:
   - Draft Root Chapter (`ch01`).
-  - Draft Branch A and its associated endings.
-  - Draft Branch B and its associated endings.
+  - Draft Branch A and its dedicated unshared endings.
+  - Draft Branch B and its dedicated unshared endings.
   - Include `### Choices` and `### Ending: [Title]` tags.
 - [ ] **Step 4: End-to-End Continuity Audit**:
   - Walk every path from Root to Ending.
   - Check timeline alignment, resource counts, wounds, and epistemic isolation.
-- [ ] **Step 5: Test in StoryCrafter Web Reader**:
+- [ ] **Step 5: Automated Graph & Tree Audit**:
+  - Run the interactive graph auditor on the story directory:
+    ```powershell
+    python .agents/skills/interactive-storytelling/scripts/verify_tree_graph.py [story_id]
+    ```
+  - Verify that the audit returns `[PASS]` with 0 violations:
+    - In-degree = 1 for all non-root nodes (zero convergence).
+    - Zero shared endings across branches.
+    - Mathematical invariant satisfied ($E \ge B$).
+    - Zero dead ends and zero broken links.
+- [ ] **Step 6: Test in StoryCrafter Web Reader**:
   - Verify that the story appears with the interactive badge.
-  - Test all choice button transitions and backtrack functionality.
-  - Verify that all 5 endings register properly in the Table of Contents tracker.
+  - Test all choice button transitions and backtrack functionality in both Spread and Scroll mode.
+  - Verify that all endings register properly in the Table of Contents tracker.

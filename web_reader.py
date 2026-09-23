@@ -1973,6 +1973,91 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     flex: 1;
   }}
 
+  .choice-card.is-chosen {{
+    background: rgba(139, 58, 43, 0.08);
+    border-color: var(--accent);
+    cursor: default;
+    box-shadow: 0 2px 8px rgba(139, 58, 43, 0.12);
+  }}
+
+  .choice-card.is-chosen:hover {{
+    transform: none;
+    background: rgba(139, 58, 43, 0.08);
+    border-color: var(--accent);
+  }}
+
+  .choice-card.is-chosen .choice-icon {{
+    background: var(--accent);
+    color: #fff;
+  }}
+
+  .choice-badge-chosen {{
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent);
+    background: rgba(139, 58, 43, 0.14);
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-left: 8px;
+  }}
+
+  .choice-card.is-alternative {{
+    opacity: 0.88;
+    border-style: dashed;
+  }}
+
+  .choice-card.is-alternative:hover {{
+    opacity: 1;
+    border-style: solid;
+    border-color: var(--accent);
+  }}
+
+  .choice-badge-branch {{
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: rgba(0, 0, 0, 0.06);
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-left: 8px;
+    transition: all 0.2s ease;
+  }}
+
+  .choice-card.is-alternative:hover .choice-badge-branch {{
+    color: var(--accent);
+    background: rgba(139, 58, 43, 0.14);
+  }}
+
+  .historical-choice-hint {{
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+  }}
+
+  @keyframes streamFadeIn {{
+    from {{
+      opacity: 0;
+      transform: translateY(16px);
+    }}
+    to {{
+      opacity: 1;
+      transform: translateY(0);
+    }}
+  }}
+
+  .chapter-scroll-section.newly-streamed {{
+    animation: streamFadeIn 0.35s ease-out;
+  }}
+
   /* ENDING CARD */
   .ending-card {{
     background: var(--bg-book);
@@ -2972,16 +3057,66 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }});
   }}
 
-  function buildInteractiveBlockHtml(ch) {{
+  function findPathToChapter(st, targetFilename) {{
+    if (!st || !st.chapters || !st.chapters.length) return [];
+    const root = st.chapters[0];
+    if (root.filename === targetFilename) return [root.filename];
+
+    const queue = [[root.filename]];
+    const visited = new Set([root.filename]);
+
+    while (queue.length > 0) {{
+      const path = queue.shift();
+      const currFile = path[path.length - 1];
+      const ch = st.chapters.find(c => c.filename === currFile);
+      if (!ch || !ch.choices) continue;
+
+      for (const opt of ch.choices) {{
+        if (opt.target === targetFilename) {{
+          return [...path, opt.target];
+        }}
+        if (!visited.has(opt.target)) {{
+          visited.add(opt.target);
+          queue.push([...path, opt.target]);
+        }}
+      }}
+    }}
+    return [root.filename, targetFilename];
+  }}
+
+  function getActivePath(st) {{
+    if (!st || !st.is_interactive || !st.chapters || !st.chapters.length) return [];
+    const prog = getStoryProgress(st.id);
+    let pathList = [...(prog.history || [])];
+    const rootFilename = st.chapters[0].filename;
+
+    if (pathList.length === 0) {{
+      if (prog.current_chapter && prog.current_chapter !== rootFilename) {{
+        pathList = findPathToChapter(st, prog.current_chapter);
+      }} else {{
+        pathList = [rootFilename];
+        prog.current_chapter = rootFilename;
+      }}
+    }} else {{
+      if (prog.current_chapter && !pathList.includes(prog.current_chapter)) {{
+        pathList.push(prog.current_chapter);
+      }}
+    }}
+    return pathList;
+  }}
+
+  function buildInteractiveBlockHtml(ch, selectedTarget = null, isHistorical = false, stepIndex = 0) {{
     if (!ch) return '';
     const st = currentStory();
     if (!st || !st.is_interactive) return '';
 
     if (ch.is_ending) {{
-      const prog = getStoryProgress(st.id);
-      if (!prog.discovered_endings.includes(ch.filename)) {{
-        prog.discovered_endings.push(ch.filename);
-        saveInteractiveProgress();
+      if (!isHistorical) {{
+        const prog = getStoryProgress(st.id);
+        if (!prog.discovered_endings.includes(ch.filename)) {{
+          prog.discovered_endings.push(ch.filename);
+          saveInteractiveProgress();
+        }}
       }}
       const endingIndex = (st.endings ? st.endings.findIndex(e => e.filename === ch.filename) : -1) + 1;
       const totalEndings = st.total_endings || (st.endings ? st.endings.length : 1);
@@ -2991,8 +3126,8 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
           <h2 class="ending-heading">${{escapeHtml(ch.ending_title || ch.title)}}</h2>
           <div class="ending-meta-badge">Discovered: Ending ${{endingIndex || 1}} of ${{totalEndings}}</div>
           <div class="ending-actions">
-            <button class="btn btn-interactive active" onclick="handleRestartStory()">↻ Restart Story</button>
-            <button class="btn btn-interactive" onclick="handleBacktrack()">⮌ Backtrack to Previous Choice</button>
+            <button class="btn btn-interactive active" type="button" onclick="handleRestartStory()">↻ Restart Story</button>
+            <button class="btn btn-interactive" type="button" onclick="handleBacktrack()">⮌ Backtrack to Previous Choice</button>
           </div>
         </div>
       `;
@@ -3000,28 +3135,93 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
 
     if (ch.choices && ch.choices.length > 0) {{
       let optionsHtml = '';
-      ch.choices.forEach(opt => {{
-        optionsHtml += `
-          <button class="choice-card" onclick="handleChoiceClick('${{escapeHtml(opt.target)}}')">
-            <span class="choice-icon">➤</span>
-            <span class="choice-text">${{escapeHtml(opt.text)}}</span>
-          </button>
+      if (isHistorical && selectedTarget) {{
+        ch.choices.forEach(opt => {{
+          if (opt.target === selectedTarget) {{
+            optionsHtml += `
+              <button class="choice-card is-chosen" type="button" title="Selected path on this playthrough">
+                <span class="choice-icon">✓</span>
+                <span class="choice-text">${{escapeHtml(opt.text)}}</span>
+                <span class="choice-badge-chosen">Chosen Path</span>
+              </button>
+            `;
+          }} else {{
+            optionsHtml += `
+              <button class="choice-card is-alternative" type="button" onclick="handleBranchFromChoice('${{escapeHtml(ch.filename)}}', '${{escapeHtml(opt.target)}}')" title="Click to rewind and branch in this direction">
+                <span class="choice-icon">⑂</span>
+                <span class="choice-text">${{escapeHtml(opt.text)}}</span>
+                <span class="choice-badge-branch">Branch Here</span>
+              </button>
+            `;
+          }}
+        }});
+        return `
+          <div class="choice-container is-historical">
+            <div class="interactive-choice-header">❦ Decision Point (Step ${{stepIndex + 1}}) ❦</div>
+            <div class="historical-choice-hint">Selected path shown below. Click another option to rewind and branch.</div>
+            <div class="choice-options-grid">
+              ${{optionsHtml}}
+            </div>
+          </div>
         `;
-      }});
-      return `
-        <div class="choice-container">
-          <div class="interactive-choice-header">❦ Decide Your Course ❦</div>
-          <div class="choice-options-grid">
-            ${{optionsHtml}}
+      }} else {{
+        ch.choices.forEach(opt => {{
+          optionsHtml += `
+            <button class="choice-card" type="button" onclick="handleChoiceClick('${{escapeHtml(opt.target)}}')">
+              <span class="choice-icon">➤</span>
+              <span class="choice-text">${{escapeHtml(opt.text)}}</span>
+            </button>
+          `;
+        }});
+        return `
+          <div class="choice-container">
+            <div class="interactive-choice-header">❦ Decide Your Course ❦</div>
+            <div class="choice-options-grid">
+              ${{optionsHtml}}
+            </div>
+            <div style="margin-top: 12px;">
+              <button class="btn" type="button" style="font-size: 11px; opacity: 0.8;" onclick="handleBacktrack()">⮌ Backtrack to Previous Choice</button>
+            </div>
           </div>
-          <div style="margin-top: 12px;">
-            <button class="btn" style="font-size: 11px; opacity: 0.8;" onclick="handleBacktrack()">⮌ Backtrack to Previous Choice</button>
-          </div>
-        </div>
-      `;
+        `;
+      }}
     }}
 
     return '';
+  }}
+
+  function handleBranchFromChoice(fromChapterFilename, targetFilename) {{
+    const st = currentStory();
+    if (!st || !st.chapters) return;
+    const targetIdx = st.chapters.findIndex(c => c.filename === targetFilename);
+    if (targetIdx === -1) {{
+      showToast('Destination chapter not found: ' + targetFilename);
+      return;
+    }}
+    const prog = getStoryProgress(st.id);
+    const hIdx = (prog.history || []).indexOf(fromChapterFilename);
+    if (hIdx !== -1) {{
+      prog.history = prog.history.slice(0, hIdx + 1);
+    }} else {{
+      prog.history = [fromChapterFilename];
+    }}
+    prog.current_chapter = targetFilename;
+    if (!prog.revealed_nodes.includes(targetFilename)) {{
+      prog.revealed_nodes.push(targetFilename);
+    }}
+    saveInteractiveProgress();
+    currentChapterIndex = targetIdx;
+    playPaperSound();
+
+    if (currentConfig.layout === 'scroll') {{
+      renderInteractiveScrollStream(targetFilename);
+      showToast('Branched to new path.');
+    }} else {{
+      loadChapter(targetIdx, false, 'next', 0);
+    }}
+    renderToc();
+    syncUrlHash();
+    saveState();
   }}
 
   function handleChoiceClick(targetFilename) {{
@@ -3033,6 +3233,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
       return;
     }}
     const currentCh = st.chapters[currentChapterIndex];
+    const targetCh = st.chapters[targetIdx];
     const prog = getStoryProgress(st.id);
     if (currentCh && !prog.history.includes(currentCh.filename)) {{
       prog.history.push(currentCh.filename);
@@ -3041,15 +3242,63 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
       prog.revealed_nodes.push(targetFilename);
     }}
     prog.current_chapter = targetFilename;
+    currentChapterIndex = targetIdx;
     saveInteractiveProgress();
 
     playPaperSound();
     if (currentConfig.layout === 'scroll') {{
-      scrollToChapter(targetIdx, true);
+      if (currentCh) {{
+        const prevBlockSafeId = currentCh.filename.replace(/[^a-zA-Z0-9_-]/g, '_');
+        const prevBlock = document.getElementById(`interactive-block-${{prevBlockSafeId}}`);
+        if (prevBlock) {{
+          prevBlock.innerHTML = buildInteractiveBlockHtml(currentCh, targetFilename, true, prog.history.length - 1);
+        }}
+      }}
+
+      const stepIdx = prog.history.length;
+      let interactiveHtml = '';
+      if (targetCh.is_ending) {{
+        interactiveHtml = `<div class="interactive-block">${{buildInteractiveBlockHtml(targetCh, null, false, stepIdx)}}</div>`;
+      }} else if (targetCh.choices && targetCh.choices.length > 0) {{
+        interactiveHtml = `<div class="interactive-block" id="interactive-block-${{targetFilename.replace(/[^a-zA-Z0-9_-]/g, '_')}}">${{buildInteractiveBlockHtml(targetCh, null, false, stepIdx)}}</div>`;
+      }}
+
+      const safeId = targetFilename.replace(/[^a-zA-Z0-9_-]/g, '_');
+      const sectionHtml = `
+        <article class="chapter-scroll-section newly-streamed" id="chapter-scroll-${{safeId}}" data-chapter-index="${{targetIdx}}" data-chapter-filename="${{targetFilename}}" data-step-index="${{stepIdx}}">
+          <div class="chapter-title-block">
+            <div class="chapter-eyebrow">${{targetCh.is_ending ? 'Ending' : 'Step ' + (stepIdx + 1) + ' of Path'}}</div>
+            <h1 class="chapter-main-title">${{escapeHtml(targetCh.title)}}</h1>
+            <div class="chapter-ornament">❦  ❧</div>
+          </div>
+          <div class="has-drop-cap chapter-body-html">${{targetCh.html}}</div>
+          ${{interactiveHtml}}
+          <div class="chapter-scroll-footer">
+            <div class="chapter-scroll-divider">✦ ✦ ✦</div>
+            <div class="chapter-meta-tag">${{targetCh.word_count}} words · ${{targetCh.reading_time}} read</div>
+          </div>
+        </article>
+      `;
+      contentSingle.insertAdjacentHTML('beforeend', sectionHtml);
+
+      const newSec = document.getElementById(`chapter-scroll-${{safeId}}`);
+      if (newSec) {{
+        newSec.querySelectorAll('.chapter-body-html').forEach(el => {{
+          el.style.fontSize = currentConfig.font_size + 'px';
+        }});
+        requestAnimationFrame(() => {{
+          const targetTop = newSec.offsetTop - 10;
+          bookSingle.scrollTo({{ top: Math.max(0, targetTop), behavior: 'smooth' }});
+        }});
+      }}
+
+      updateScrollHeaderAndFooter();
     }} else {{
       loadChapter(targetIdx, false, 'next', 0);
     }}
     renderToc();
+    syncUrlHash();
+    saveState();
   }}
 
   function handleBacktrack() {{
@@ -3063,18 +3312,29 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     const prevFilename = prog.history.pop();
     const prevIdx = st.chapters.findIndex(c => c.filename === prevFilename);
     prog.current_chapter = prevFilename;
+    if (prevIdx !== -1) currentChapterIndex = prevIdx;
     saveInteractiveProgress();
 
     playPaperSound();
-    if (prevIdx !== -1) {{
-      if (currentConfig.layout === 'scroll') {{
-        scrollToChapter(prevIdx, true);
-      }} else {{
+    if (currentConfig.layout === 'scroll') {{
+      renderInteractiveScrollStream(prevFilename);
+      const safePrevId = prevFilename.replace(/[^a-zA-Z0-9_-]/g, '_');
+      const choiceBlock = document.getElementById(`interactive-block-${{safePrevId}}`);
+      if (choiceBlock) {{
+        requestAnimationFrame(() => {{
+          bookSingle.scrollTo({{ top: Math.max(0, choiceBlock.offsetTop - 120), behavior: 'smooth' }});
+        }});
+      }}
+      showToast('Backtracked to previous chapter.');
+    }} else {{
+      if (prevIdx !== -1) {{
         loadChapter(prevIdx, false, 'prev', 0);
       }}
       showToast('Backtracked to previous chapter.');
     }}
     renderToc();
+    syncUrlHash();
+    saveState();
   }}
 
   function handleRestartStory() {{
@@ -3088,15 +3348,19 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
       prog.revealed_nodes.push(rootChapter.filename);
     }}
     saveInteractiveProgress();
+    currentChapterIndex = 0;
 
     playPaperSound();
     if (currentConfig.layout === 'scroll') {{
-      scrollToChapter(0, true);
+      renderInteractiveScrollStream();
+      if (bookSingle) bookSingle.scrollTop = 0;
     }} else {{
       loadChapter(0, false, 'prev', 0);
     }}
     showToast('Story restarted from Chapter 1.');
     renderToc();
+    syncUrlHash();
+    saveState();
   }}
 
   function updateStoryView() {{
@@ -3172,25 +3436,24 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     tocList.appendChild(trackerContainer);
 
     const pathTrailEl = trackerContainer.querySelector('#tocPathTrail');
-    const pathList = [...(prog.history || [])];
+    const pathList = getActivePath(st);
     const currentCh = st.chapters[currentChapterIndex];
-    if (currentCh && !pathList.includes(currentCh.filename)) {{
-      pathList.push(currentCh.filename);
-    }}
-    if (pathList.length === 0 && currentCh) pathList.push(currentCh.filename);
 
     pathList.forEach((fname, stepIdx) => {{
       const chObj = st.chapters.find(c => c.filename === fname);
       if (!chObj) return;
       const chip = document.createElement('span');
-      chip.className = 'toc-path-chip' + (fname === currentCh.filename ? ' active' : '');
+      chip.className = 'toc-path-chip' + (currentCh && fname === currentCh.filename ? ' active' : '');
       chip.textContent = chObj.title;
       chip.title = `Step ${{stepIdx + 1}}: ${{chObj.title}} (Click to navigate)`;
       chip.onclick = () => {{
         const cIdx = st.chapters.findIndex(c => c.filename === fname);
         if (cIdx !== -1) {{
-          if (currentConfig.layout === 'scroll') scrollToChapter(cIdx, true);
-          else loadChapter(cIdx, false, null, 0);
+          if (currentConfig.layout === 'scroll') {{
+            scrollToChapterSection(fname, true);
+          }} else {{
+            loadChapter(cIdx, false, null, 0);
+          }}
           tocDrawer.classList.remove('open');
         }}
       }};
@@ -3234,7 +3497,22 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
         `;
         li.onclick = () => {{
           if (currentConfig.layout === 'scroll') {{
-            scrollToChapter(idx, true);
+            const currentPath = getActivePath(st);
+            if (currentPath.includes(ch.filename)) {{
+              scrollToChapterSection(ch.filename, true);
+            }} else {{
+              const newPath = findPathToChapter(st, ch.filename);
+              const p = getStoryProgress(st.id);
+              p.history = newPath.slice(0, -1);
+              p.current_chapter = ch.filename;
+              if (!p.revealed_nodes.includes(ch.filename)) {{
+                p.revealed_nodes.push(ch.filename);
+              }}
+              saveInteractiveProgress();
+              currentChapterIndex = idx;
+              renderInteractiveScrollStream(ch.filename);
+              showToast('Switched to branch: ' + ch.title);
+            }}
           }} else {{
             loadChapter(idx, false, 'next', 0);
           }}
@@ -3253,6 +3531,94 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }});
   }}
 
+  function renderInteractiveScrollStream(targetChapterFilename = null) {{
+    const st = currentStory();
+    if (!st || !st.chapters || !st.chapters.length) {{
+      contentSingle.innerHTML = '<p class="empty-notice" style="text-align: center; padding: 40px; color: var(--text-muted);">No chapters found in this story.</p>';
+      return;
+    }}
+
+    const prog = getStoryProgress(st.id);
+    let pathList = getActivePath(st);
+    if (!pathList.length) {{
+      pathList = [st.chapters[0].filename];
+      prog.current_chapter = pathList[0];
+    }}
+
+    pathList.forEach(fn => {{
+      if (!prog.revealed_nodes.includes(fn)) prog.revealed_nodes.push(fn);
+    }});
+    saveInteractiveProgress();
+
+    let html = '';
+    pathList.forEach((fname, stepIdx) => {{
+      const ch = st.chapters.find(c => c.filename === fname);
+      if (!ch) return;
+      const chIdx = st.chapters.findIndex(c => c.filename === fname);
+      const isLast = (stepIdx === pathList.length - 1);
+      const nextFname = isLast ? null : pathList[stepIdx + 1];
+
+      let interactiveHtml = '';
+      if (ch.is_ending) {{
+        interactiveHtml = `<div class="interactive-block">${{buildInteractiveBlockHtml(ch, null, !isLast, stepIdx)}}</div>`;
+      }} else if (ch.choices && ch.choices.length > 0) {{
+        const blockId = fname.replace(/[^a-zA-Z0-9_-]/g, '_');
+        interactiveHtml = `<div class="interactive-block" id="interactive-block-${{blockId}}">${{buildInteractiveBlockHtml(ch, nextFname, !isLast, stepIdx)}}</div>`;
+      }}
+
+      const safeId = fname.replace(/[^a-zA-Z0-9_-]/g, '_');
+      html += `
+        <article class="chapter-scroll-section" id="chapter-scroll-${{safeId}}" data-chapter-index="${{chIdx}}" data-chapter-filename="${{fname}}" data-step-index="${{stepIdx}}">
+          <div class="chapter-title-block">
+            <div class="chapter-eyebrow">${{ch.is_ending ? 'Ending' : 'Step ' + (stepIdx + 1) + ' of Path'}}</div>
+            <h1 class="chapter-main-title">${{escapeHtml(ch.title)}}</h1>
+            <div class="chapter-ornament">❦  ❧</div>
+          </div>
+          <div class="has-drop-cap chapter-body-html">${{ch.html}}</div>
+          ${{interactiveHtml}}
+          <div class="chapter-scroll-footer">
+            <div class="chapter-scroll-divider">✦ ✦ ✦</div>
+            <div class="chapter-meta-tag">${{ch.word_count}} words · ${{ch.reading_time}} read</div>
+          </div>
+        </article>
+      `;
+    }});
+
+    contentSingle.innerHTML = html;
+
+    document.querySelectorAll('.page-content, .chapter-body-html').forEach(el => {{
+      el.style.fontSize = currentConfig.font_size + 'px';
+    }});
+
+    const targetFname = targetChapterFilename || pathList[pathList.length - 1];
+    const targetIdx = st.chapters.findIndex(c => c.filename === targetFname);
+    if (targetIdx !== -1) {{
+      currentChapterIndex = targetIdx;
+    }}
+
+    if (targetChapterFilename) {{
+      requestAnimationFrame(() => {{
+        scrollToChapterSection(targetChapterFilename, false);
+      }});
+    }} else {{
+      updateScrollHeaderAndFooter();
+    }}
+
+    renderToc();
+    syncUrlHash();
+    saveState();
+  }}
+
+  function scrollToChapterSection(fname, smooth = true) {{
+    if (!bookSingle || !fname) return;
+    const safeId = fname.replace(/[^a-zA-Z0-9_-]/g, '_');
+    const target = document.getElementById(`chapter-scroll-${{safeId}}`);
+    if (target) {{
+      const targetTop = target.offsetTop - 10;
+      bookSingle.scrollTo({{ top: Math.max(0, targetTop), behavior: smooth ? 'smooth' : 'auto' }});
+    }}
+  }}
+
   function renderInfiniteScroll(targetChapterIndex = null) {{
     const st = currentStory();
     if (!st || !st.chapters || !st.chapters.length) {{
@@ -3260,21 +3626,24 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
       return;
     }}
 
+    if (st.is_interactive) {{
+      const targetFname = (targetChapterIndex !== null && targetChapterIndex !== undefined && st.chapters[targetChapterIndex])
+        ? st.chapters[targetChapterIndex].filename
+        : null;
+      renderInteractiveScrollStream(targetFname);
+      return;
+    }}
+
     let html = '';
     st.chapters.forEach((ch, idx) => {{
-      let interactiveHtml = '';
-      if (st.is_interactive) {{
-        interactiveHtml = `<div class="interactive-block">${{buildInteractiveBlockHtml(ch)}}</div>`;
-      }}
       html += `
         <article class="chapter-scroll-section" id="chapter-scroll-${{idx}}" data-chapter-index="${{idx}}">
           <div class="chapter-title-block">
-            <div class="chapter-eyebrow">${{ch.is_ending ? 'Ending' : 'Chapter ' + (idx + 1)}}</div>
+            <div class="chapter-eyebrow">Chapter ${{idx + 1}}</div>
             <h1 class="chapter-main-title">${{escapeHtml(ch.title)}}</h1>
             <div class="chapter-ornament">❦  ❧</div>
           </div>
           <div class="has-drop-cap chapter-body-html">${{ch.html}}</div>
-          ${{interactiveHtml}}
           <div class="chapter-scroll-footer">
             <div class="chapter-scroll-divider">✦ ✦ ✦</div>
             <div class="chapter-meta-tag">${{ch.word_count}} words · ${{ch.reading_time}} read</div>
@@ -3324,12 +3693,25 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     const st = currentStory();
     if (!st || !st.chapters || idx < 0 || idx >= st.chapters.length) return;
     currentChapterIndex = idx;
+    const ch = st.chapters[idx];
+    if (st.is_interactive && ch) {{
+      const safeId = ch.filename.replace(/[^a-zA-Z0-9_-]/g, '_');
+      const target = document.getElementById(`chapter-scroll-${{safeId}}`) || document.getElementById(`chapter-scroll-${{idx}}`);
+      if (target && bookSingle) {{
+        const targetTop = target.offsetTop - 10;
+        bookSingle.scrollTo({{ top: Math.max(0, targetTop), behavior: smooth ? 'smooth' : 'auto' }});
+      }}
+      headerSingle.textContent = `${{st.title}} — ${{ch.title}}`;
+      renderToc();
+      syncUrlHash();
+      saveState();
+      return;
+    }}
     const target = document.getElementById(`chapter-scroll-${{idx}}`);
     if (target && bookSingle) {{
       const targetTop = target.offsetTop - 10;
       bookSingle.scrollTo({{ top: Math.max(0, targetTop), behavior: smooth ? 'smooth' : 'auto' }});
     }}
-    const ch = st.chapters[idx];
     if (ch) {{
       headerSingle.textContent = `${{st.title}} — ${{ch.title}}`;
       footerChapterInfo.textContent = `${{st.title}} — Chapter ${{idx + 1}} of ${{st.chapters.length}}`;
@@ -3341,6 +3723,54 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
 
   function updateScrollHeaderAndFooter() {{
     if (currentConfig.layout !== 'scroll') return;
+    const st = currentStory();
+    if (!st) return;
+
+    if (st.is_interactive) {{
+      const sections = bookSingle.querySelectorAll('.chapter-scroll-section');
+      if (!sections.length) return;
+
+      const containerTop = bookSingle.getBoundingClientRect().top;
+      let activeSection = null;
+      sections.forEach(sec => {{
+        const rect = sec.getBoundingClientRect();
+        if (rect.top - containerTop <= 160 && rect.bottom - containerTop > 40) {{
+          activeSection = sec;
+        }}
+      }});
+      if (!activeSection && sections.length > 0) {{
+        activeSection = sections[0];
+      }}
+
+      if (activeSection) {{
+        const fname = activeSection.getAttribute('data-chapter-filename');
+        const stepIdx = parseInt(activeSection.getAttribute('data-step-index') || '0', 10);
+        const ch = st.chapters.find(c => c.filename === fname);
+        if (ch) {{
+          const chIdx = st.chapters.findIndex(c => c.filename === fname);
+          if (chIdx !== -1 && chIdx !== currentChapterIndex) {{
+            currentChapterIndex = chIdx;
+            renderToc();
+            syncUrlHash();
+            saveState();
+          }}
+          headerSingle.textContent = `${{st.title}} — ${{ch.title}}`;
+          const pathList = getActivePath(st);
+          footerChapterInfo.textContent = ch.is_ending
+            ? `${{st.title}} — Ending: ${{ch.title}}`
+            : `${{st.title}} — Step ${{stepIdx + 1}} of ${{pathList.length}} · ${{ch.title}}`;
+        }}
+      }}
+
+      const scrollRange = bookSingle.scrollHeight - bookSingle.clientHeight;
+      if (scrollRange > 0) {{
+        const pct = Math.min(100, Math.max(0, Math.round((bookSingle.scrollTop / scrollRange) * 100)));
+        progressFill.style.width = pct + '%';
+        footerProgressInfo.textContent = pct + '% Read';
+      }}
+      return;
+    }}
+
     const sections = bookSingle.querySelectorAll('.chapter-scroll-section');
     if (!sections.length) return;
 
@@ -3380,7 +3810,17 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     if (!ch) return;
 
     if (currentConfig.layout === 'scroll') {{
-      scrollToChapter(idx, false);
+      const st = currentStory();
+      if (st && st.is_interactive) {{
+        const pathList = getActivePath(st);
+        if (pathList.includes(ch.filename)) {{
+          scrollToChapterSection(ch.filename, false);
+        }} else {{
+          renderInteractiveScrollStream(ch.filename);
+        }}
+      }} else {{
+        scrollToChapter(idx, false);
+      }}
       return;
     }}
 
@@ -4194,7 +4634,15 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {{
       e.preventDefault();
       if (currentConfig.layout === 'scroll') {{
-        if (currentChapterIndex < currentStory().chapters.length - 1) {{
+        const st = currentStory();
+        if (st && st.is_interactive) {{
+          const pathList = getActivePath(st);
+          const currCh = currentChapter();
+          const pIdx = pathList.indexOf(currCh.filename);
+          if (pIdx !== -1 && pIdx < pathList.length - 1) {{
+            scrollToChapterSection(pathList[pIdx + 1], true);
+          }}
+        }} else if (currentChapterIndex < currentStory().chapters.length - 1) {{
           scrollToChapter(currentChapterIndex + 1, true);
         }}
       }} else {{
@@ -4203,7 +4651,15 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }} else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {{
       e.preventDefault();
       if (currentConfig.layout === 'scroll') {{
-        if (currentChapterIndex > 0) {{
+        const st = currentStory();
+        if (st && st.is_interactive) {{
+          const pathList = getActivePath(st);
+          const currCh = currentChapter();
+          const pIdx = pathList.indexOf(currCh.filename);
+          if (pIdx > 0) {{
+            scrollToChapterSection(pathList[pIdx - 1], true);
+          }}
+        }} else if (currentChapterIndex > 0) {{
           scrollToChapter(currentChapterIndex - 1, true);
         }}
       }} else {{
