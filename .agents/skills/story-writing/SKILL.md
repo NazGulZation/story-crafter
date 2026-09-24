@@ -323,21 +323,34 @@ flowchart TD
 - **Foreshadowing & Friction Planning**: Seed required tools/knowledge now; map where the protagonist's initial scheme will encounter Clausewitzian friction.
 - **Plot Twist Mapping**: Confirm upstream clues are planted in plain sight with innocent surface explanations; observe the "here and there" restraint standard.
 
-### Step 2: Drafting
-- Draft prose blocks adhering to chapter thresholds:
-  - **Bridging / Transition Chapters**: Minimum **1,500 words** (verified via word count).
-  - **Main Turn-Around / Climax Chapters**: Minimum **2,200 words** (verified via word count).
+### Step 2: Drafting & Dynamic Word Counts
+- **Tiered Word-Count Architecture**:
+  - **Setup / Inciting / Intermediate / Bridging Chapters**: Minimum **1,500 words** (verified via strict word count). Used for establishing the operational dilemma, character stakes, logistical positioning, and initial tactical moves.
+  - **Main Turn-Around / Climax / Major Confrontation / Ending Chapters**: Minimum **2,200 words** (verified via strict word count). Used for decisive turning points, major payoffs, high-stakes negotiations, complex battles, and terminal resolutions.
 - Keep dialogue sharp; characters rarely say exactly what they mean.
 - Give minor NPCs a vivid flicker of their own unwritten lives.
 - If drafting villain retribution, dramatize the three beats of downfall on-page.
 - Preserve protagonist dignity: complications arise from worthy foes or fog-of-war, never unforced stupidity.
 
-### Step 3: Post-Draft Causal & Consistency Audit
+### Step 3: Post-Draft Causal, Consistency & Automated Audit
 - Execute the 3-phase audit protocol against the 13-Point Narrative Integrity Matrix.
 - Check plan friction: if a scheme executed effortlessly, inject Clausewitzian friction.
 - Verify that minor NPCs are not cardboard vending machines and adversaries are not bland caricatures.
 - If a villain fell, verify the comeuppance was deeply satisfying, earned, and poetic.
 - Execute post-draft cross-chapter parity checks: 100% parity for troop counts, escort sizes, coin sums, orders, physical injuries, and weather across chapter boundaries.
+- **Automated Verification Command**:
+  Always audit newly drafted or modified chapters using direct Python execution (avoiding shell pipeline encoding artifacts on Windows):
+  ```powershell
+  python -c "
+  import os, re
+  with open(r'path/to/chapter.md', encoding='utf-8') as f: text = f.read()
+  words = len(text.split())
+  print('Words:', words)
+  print('Frictions:', re.findall(r'friction\w*', text, re.IGNORECASE))
+  print('Negations:', re.findall(r'\b(not just|not only|not merely|did not simply|was not [^,.;]+, but|no longer [^,.;]+; (?:he|she|it|they) was|it was not a [^,.;]+; it was|not as [^,.;]+, but as)\b', text, re.IGNORECASE))
+  print('Banned:', re.findall(r'\b(Julian|Rian|Mia|Elyria|Garrick|Bram|Vaelrian|Vane|Aethelgard|Harrick|Varis|Corin|Silas|dragon\w*|drake\w*|monster crawler\w*|monster dog\w*)\b', text, re.IGNORECASE))
+  "
+  ```
 
 ---
 

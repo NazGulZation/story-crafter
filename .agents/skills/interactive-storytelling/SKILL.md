@@ -200,6 +200,10 @@ All interactive prose, characters, and settings must strictly abide by the rules
    - Anchor every scene in at least 3 physical senses beyond sight.
    - Strictly ban the literal word `friction` in story prose (show resistance through mud, rusted gears, seizing winches, sour wine).
    - Natural chapter endings: avoid melodramatic mic-drops.
+5. **Tiered Word-Count Standards for Interactive Chapters**:
+   Interactive chapters must maintain narrative depth, authentic character agency, and tactical immersion. Never treat branching chapters as rushed outlines or shallow synopses:
+   - **Setup / Inciting / Intermediate Chapters** (`ch01`, `ch02`, `ch03`): Minimum **1,500 words** per chapter.
+   - **Climax / Major Decision / Terminal Ending Chapters** (`ch04`, `endingXX`): Minimum **2,200 words** per chapter.
 
 ---
 
@@ -213,14 +217,29 @@ When commissioned to create an interactive story:
   - Sketch the Mermaid tree diagram ensuring **in-degree = 1** for all non-root nodes and **$E \ge B$**.
   - Define the thematic title and distinct consequence of each ending.
 - [ ] **Step 3: Draft Chapters Sequentially by Branch**:
-  - Draft Root Chapter (`ch01`).
-  - Draft Branch A and its dedicated unshared endings.
-  - Draft Branch B and its dedicated unshared endings.
+  - Draft Root Chapter (`ch01`) ($\ge 1,500$ words).
+  - Draft intermediate branches ($\ge 1,500$ words each).
+  - Draft climax and dedicated terminal endings ($\ge 2,200$ words each).
   - Include `### Choices` and `### Ending: [Title]` tags.
 - [ ] **Step 4: End-to-End Continuity Audit**:
   - Walk every path from Root to Ending.
   - Check timeline alignment, resource counts, wounds, and epistemic isolation.
-- [ ] **Step 5: Automated Graph & Tree Audit**:
+- [ ] **Step 5: Automated Word-Count & Quality Sweep**:
+  - Execute direct Python word-count verification across all story chapters:
+    ```powershell
+    python -c "
+    import os, glob
+    story_dir = r'[story_id]/chapters'
+    for fpath in sorted(glob.glob(f'{story_dir}/*.md')):
+        text = open(fpath, encoding='utf-8').read()
+        words = len(text.split())
+        is_climax = 'ending' in fpath or 'ch04' in fpath
+        min_words = 2200 if is_climax else 1500
+        status = 'PASS' if words >= min_words else 'FAIL'
+        print(f'[{status}] {os.path.basename(fpath)}: {words} words (min {min_words})')
+    "
+    ```
+- [ ] **Step 6: Automated Graph & Tree Audit**:
   - Run the interactive graph auditor on the story directory:
     ```powershell
     python .agents/skills/interactive-storytelling/scripts/verify_tree_graph.py [story_id]
@@ -230,7 +249,7 @@ When commissioned to create an interactive story:
     - Zero shared endings across branches.
     - Mathematical invariant satisfied ($E \ge B$).
     - Zero dead ends and zero broken links.
-- [ ] **Step 6: Test in StoryCrafter Web Reader**:
+- [ ] **Step 7: Test in StoryCrafter Web Reader**:
   - Verify that the story appears with the interactive badge.
   - Test all choice button transitions and backtrack functionality in both Spread and Scroll mode.
   - Verify that all endings register properly in the Table of Contents tracker.

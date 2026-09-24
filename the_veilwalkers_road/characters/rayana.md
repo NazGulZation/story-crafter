@@ -1,0 +1,17 @@
+# Character Profile: Captain Rayana of Sentinel
+
+- **Full Name & Epithet**: Captain Rayana of Sentinel, "The Unbroken Edge"
+- **Race & Demonym**: Redguard (Crown-descended native of Sentinel, Hammerfell)
+- **Age**: Twenty-eight winters
+- **Physical Appearance**: Tall, athletic, and powerfully proportioned, built with the supple conditioning of a desert skirmisher. Deep sun-bronzed skin marked with pale fencing scars along her forearms and collarbones. Raven-black hair pulled into tight warrior braids woven with hammered brass beads that click faintly when she moves. Striking, sharp amber-brown eyes beneath dark, arched brows that convey cynical assessment. Broad shoulders, sculpted abdominal muscles, flared hips, and long, powerful legs. Carries a curved Alik'r steel scimitar with a blackened sharkskin hilt and wears battered, oiled leather brigandine reinforced with silver-chased steel pauldrons.
+- **Lived Background & Formative Scars**: Born in the port slums of Sentinel during the aftermath of the Great War. Rose through the ranks of Hammerfell’s free mercenary companies before crossing the border into Skyrim as a contracted captain of arms. Hired by Thonar Silver-Blood to drill and lead the private house guards in Markarth. Following an ambush by Forsworn in the Karth canyon, Thonar scapegoated Rayana for the loss of a silver ore shipment, publicly stripping her of her rank, impounding her company’s back pay, and throwing her second-in-command into Cidhna Mine.
+- **Concrete External Want vs. Deep Internal Need**:
+  - *External Want*: Break into the Treasury House, reclaim her mercenaries' stolen wages, cut Thonar's arrogant throat, and liberate her men from Cidhna Mine.
+  - *Internal Need*: Overcome the bitter, hollow isolation born of mercenary cynicism and find comrades whose loyalty is forged in shared blood and mutual honor rather than bought by the purse.
+- **Core Misbelief**: Believes every commander, jarl, and lover is a self-serving buyer who will discard their soldiers the second the silver runs dry.
+- **Fatal Blind Spot**: Tactical pride; refuses to retreat from an engagement if she perceives the withdrawal as an insult to her professional competence or Alik'r heritage.
+- **Vulnerability & Breaking Point**: The mention of her younger sister left behind in Sentinel; witnessing soldiers under her command executed while disarmed.
+- **Tactile Tic**: Smooths the polished brass pommel of her scimitar with the pad of her thumb whenever assessing a dangerous room or suppressing volcanic fury.
+- **Dialogue Cadence**: Low-pitched, smoky, and clipped. Speaks with a dry, sardonic wit, employing practical military terminology and sparse southern idioms. Rarely raises her voice, letting quiet authority carry her commands.
+- **Internal Contradiction**: Openly scoffs at Reach pagan superstitions and Nord tavern brawling, yet keeps a small pouch of desert sand from Sentinel tied to her boot string, refusing to let northern soil claim her final rest.
+- **Sexual Dynamic**: Athletic, demanding, and fiercely competitive. Approaches intimacy as a battle of wills where surrender is earned blow for blow and stroke for stroke. Relishes physical resistance, deep pinning holds, and biting kisses. Clashes furiously with Meara's feral dominance, channeling their mutual animosity into breathless, sweat-drenched threesomes and foursomes where she fights greedily for the protagonist’s mouth, touch, and seed.

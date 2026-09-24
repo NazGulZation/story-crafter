@@ -1,0 +1,17 @@
+# Character Profile: Meara the Blood-Weaver
+
+- **Full Name & Epithet**: Meara of Red Eagle Redoubt, "The Blood-Weaver"
+- **Race & Demonym**: Reachwoman (Ancient Nedic-Breton descent native to the high crags of the Druadach Mountains)
+- **Age**: Twenty-six winters
+- **Physical Appearance**: Tall, lithe, and predatory, moving with the silent, stalking poise of a mountain cat. Pale olive skin lined with complex ritual scarification along her collarbones and inner thighs, and painted with intricate spiraling woad glyphs rendered in deep indigo and deer-blood red. Long, lustrous raven-black hair falling in wild waves past her shoulder blades, woven with crow quills, polished wolf fangs, and dried sprigs of briar-thistle. Piercing, calculating slate-gray eyes framed by dark lashes. High, sharp cheekbones, a full sensual mouth, and an athletic, supple figure with high, firm breasts tipped in dark berry-tinted nipples and narrow, curved hips.
+- **Lived Background & Formative Scars**: Raised in the sacred caves beneath Sundered Towers, apprenticed directly to the elder matriarchs and Briarheart shamans. Master of ancient Nedic blood-rites, spirit-weaving, and sacrificial wards that bend natural forces and animate bone and stone. Viewed Cerys’s undercover infiltration of Markarth’s taverns as a cowardly, corrupting compromise with Nord invaders. Sent by the elder matriarchs to Markarth's subterranean undercroft to monitor Cerys, sabotage the Silver-Blood trade lines, and reclaim ancestral relics from Dwemer ruins.
+- **Concrete External Want vs. Deep Internal Need**:
+  - *External Want*: Drive the Nords and Imperial legions from the Reach forever, shatter the stone gates of Markarth with ancient blood-rites, and restore the Red Eagle's reign.
+  - *Internal Need*: Break free from the suffocating, mutilating dogma of the elder Hagravens without betraying her people’s ancient gods or losing her magical primacy.
+- **Core Misbelief**: Believes power only flows through blood sacrifice and fear, and that tender emotion or mercy is a sickness that will rot the Reach from within.
+- **Fatal Blind Spot**: Arrogant certainty in her ritual invulnerability; underestimates the cold mechanics of steel, discipline, and complex illusion magic.
+- **Vulnerability & Breaking Point**: The sight of child hostages used as bargaining chips; hearing the dying laments of her clan elders murdered in the Karthwasten purges.
+- **Tactile Tic**: Toys with a necklace of hollow crow bones resting against her cleavage, rolling the delicate quills between her index finger and thumb when preparing a curse.
+- **Dialogue Cadence**: Melodic, dark, and mocking. Speaks with an archaic, rhythmic cadence that sounds like poetry whispered in the dark, heavily accented with guttural Reach phonemes and sharp, breathless pauses.
+- **Internal Contradiction**: Preaches absolute savagery against all outsiders, yet hoards rare texts of Breton mind-magic and Camlorn philosophy recovered from looted caravans, studying them by firelight in secret.
+- **Sexual Dynamic**: Voracious, ritualistic, and intoxicatingly sadistic-sensual. Believes that physical union is an altar of spiritual conquest. Takes immense pleasure in clawing, biting, drawing tiny droplets of crimson from her partner’s chest, and riding with hypnotic, primal abandon. Clashes furiously with Rayana's disciplined martial pride, turning their mutual disgust into ferocious, biting bisexual lust where they vie to claim the protagonist’s body and drown in his release.
