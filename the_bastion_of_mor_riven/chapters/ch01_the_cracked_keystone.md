@@ -26,13 +26,13 @@ Logan spat into the sluice chute. The saliva vanished instantly into the churnin
 
 Logan unhooked the brass-bound leather case from his belt and pulled out the fortress elevation chart. The vellum was limp with dampness, but the ink held true. His predecessor had laid out the lower works eighty years ago with the paranoid cunning of an engineer who expected betrayal from both land and water.
 
-Two choices lay open before him, both carved in stone, both demanding immediate, irreversible action.
+Below in the lower gallery, the disused mill race connected straight into the porous gravel strata beneath the north tower. With copper stop-pins pulled, the swollen Calder torrent could be vented through the chambers, ruining fifty sacks of barley and the garrison's forge coals, but roaring into the gallery to drown Kestrel’s miners before they could tamp a single charge.
 
-The first was the low flood-gate. By pulling the copper stop-pins in the lower gallery, Logan could vent the swollen Calder torrent straight through the disused mill race. The water would submerge the lower vaults, ruining fifty sacks of barley and the garrison's forge coals, but it would roar into the porous gravel strata below the north tower, drowning Kestrel’s sapping gallery and suffocating every miner in their trench before they could tamp a single charge.
+Above on the outer water-gate parapet, a horn sounded three long, measured notes. Through the river mist, a horseman in a silver-edged surcoat appeared upon the bank road, waving a green-and-gold pennant—the embassy of Baron Kestrel. The mercenary baron wanted the Calder gorge intact for his timber rafts and river tolls, offering terms of capitulation backed by the seal of the regional trade league while his unseen sappers hammered deeper beneath the foundation.
 
-The second lay above. On the outer water-gate parapet, a horn sounded three long, measured notes. Through the mist, a horseman in a silver-edged surcoat appeared upon the riverbank road, waving a green-and-gold pennant—the embassy of Baron Kestrel. The mercenary baron had not yet committed his heavy foot to a breach. He wanted the Calder gorge intact for his timber rafts and river tolls. The herald came to offer terms of capitulation, backed by the legal seal of the regional trade league. Parleying with the herald would buy time to assess Kestrel's numbers and exploit the mercenary commander's commercial greed, but it meant pausing the defensive works while the sappers continued their unseen tunnel below.
+Logan wiped cold river spray from his eyes, the iron keys heavy against his palm as the limestone wall trembled beneath his boots.
 
-Logan wiped river spray from his eyes and looked from the iron winch to the parapet stair.
+---
 
 ### Choices
 - [Descend into the lower vaults and open the low sluice gate to flood the subterranean mine](ch02a_the_drowned_sconces.md)

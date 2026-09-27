@@ -16,6 +16,7 @@ import html
 import socket
 import argparse
 import threading
+import time
 import webbrowser
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -197,58 +198,71 @@ def format_markdown_to_html(md_text, story_id=""):
     return title, raw_html, choices, is_ending, ending_title
 
 
+def scan_single_story(story_id):
+    """Scan and parse a single story folder into a story dict."""
+    item = BASE_DIR / story_id
+    if not item.is_dir() or item.name.startswith((".", "_", "venv")):
+        return None
+    chapters_dir = item / "chapters"
+    if not chapters_dir.is_dir():
+        return None
+    # Natural sort for chapters: ch01, ch02, ..., ch10, etc.
+    files = sorted(chapters_dir.glob("*.md"), key=lambda f: [int(t) if t.isdigit() else t.lower() for t in re.split(r'(\d+)', f.name)])
+    if not files:
+        return None
+
+    display_title = item.name.replace("_", " ").title()
+    chapter_list = []
+    for idx, f in enumerate(files, 1):
+        try:
+            text = f.read_text(encoding="utf-8")
+            title, raw_html, choices, is_ending, ending_title = format_markdown_to_html(text, story_id=item.name)
+            word_count = len(re.findall(r"\b\w+\b", text))
+            reading_minutes = max(1, round(word_count / 220))
+
+            chapter_list.append({
+                "filename": f.name,
+                "title": title or f.stem.replace("_", " ").title(),
+                "index": idx,
+                "word_count": word_count,
+                "reading_time": f"{reading_minutes} min",
+                "html": raw_html,
+                "choices": choices,
+                "is_ending": is_ending,
+                "ending_title": ending_title or (title if is_ending else None)
+            })
+        except Exception as e:
+            print(f"[WARN] Failed to parse chapter {f}: {e}")
+
+    is_interactive = any(bool(ch.get("choices") or ch.get("is_ending")) for ch in chapter_list)
+    endings = [
+        {
+            "filename": ch["filename"],
+            "title": ch.get("ending_title") or ch["title"],
+            "index": ch["index"]
+        }
+        for ch in chapter_list if ch.get("is_ending")
+    ]
+
+    return {
+        "id": item.name,
+        "title": display_title,
+        "chapters": chapter_list,
+        "total_chapters": len(chapter_list),
+        "is_interactive": is_interactive,
+        "endings": endings,
+        "total_endings": len(endings)
+    }
+
+
 def scan_full_library():
     """Scan workspace and pre-render all stories and chapters into complete JSON."""
     stories = []
     for item in sorted(BASE_DIR.iterdir(), key=lambda p: p.name.lower()):
         if item.is_dir() and not item.name.startswith((".", "_", "venv")):
-            chapters_dir = item / "chapters"
-            if chapters_dir.is_dir():
-                # Natural sort for chapters: ch01, ch02, ..., ch10, etc.
-                files = sorted(chapters_dir.glob("*.md"), key=lambda f: [int(t) if t.isdigit() else t.lower() for t in re.split(r'(\d+)', f.name)])
-                if files:
-                    display_title = item.name.replace("_", " ").title()
-                    chapter_list = []
-                    for idx, f in enumerate(files, 1):
-                        try:
-                            text = f.read_text(encoding="utf-8")
-                            title, raw_html, choices, is_ending, ending_title = format_markdown_to_html(text, story_id=item.name)
-                            word_count = len(re.findall(r"\b\w+\b", text))
-                            reading_minutes = max(1, round(word_count / 220))
-
-                            chapter_list.append({
-                                "filename": f.name,
-                                "title": title or f.stem.replace("_", " ").title(),
-                                "index": idx,
-                                "word_count": word_count,
-                                "reading_time": f"{reading_minutes} min",
-                                "html": raw_html,
-                                "choices": choices,
-                                "is_ending": is_ending,
-                                "ending_title": ending_title or (title if is_ending else None)
-                            })
-                        except Exception as e:
-                            print(f"[WARN] Failed to parse chapter {f}: {e}")
-
-                    is_interactive = any(bool(ch.get("choices") or ch.get("is_ending")) for ch in chapter_list)
-                    endings = [
-                        {
-                            "filename": ch["filename"],
-                            "title": ch.get("ending_title") or ch["title"],
-                            "index": ch["index"]
-                        }
-                        for ch in chapter_list if ch.get("is_ending")
-                    ]
-
-                    stories.append({
-                        "id": item.name,
-                        "title": display_title,
-                        "chapters": chapter_list,
-                        "total_chapters": len(chapter_list),
-                        "is_interactive": is_interactive,
-                        "endings": endings,
-                        "total_endings": len(endings)
-                    })
+            story = scan_single_story(item.name)
+            if story:
+                stories.append(story)
 
     # Sort so 'the_mockingbirds_ledger' is primary if present, then alphabetical
     stories.sort(key=lambda s: (0 if s["id"] == "the_mockingbirds_ledger" else 1, s["title"].lower()))
@@ -2304,7 +2318,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
         <!-- populated dynamically -->
       </select>
 
-      <button class="btn" id="btnReloadLibrary" title="Rescan & reload all stories and chapters (R)">
+      <button class="btn" id="btnReloadLibrary" title="Reload active story (R) | Shift+Click to rescan entire library">
         <span>↻</span> <span class="btn-text">Reload</span>
       </button>
 
@@ -2355,8 +2369,11 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
       <div class="toc-header">
         <div style="display: flex; align-items: center; gap: 8px;">
           <h2>Chapters</h2>
-          <button class="btn" id="btnReloadLibraryDrawer" title="Rescan stories & chapters (R)" style="padding: 2px 8px; font-size: 11px;">
+          <button class="btn" id="btnReloadLibraryDrawer" title="Reload active story (R) | Shift+Click to rescan entire library" style="padding: 2px 8px; font-size: 11px;">
             ↻ Reload
+          </button>
+          <button class="btn" id="btnRescanAllDrawer" title="Rescan entire library & assets (Shift+R)" style="padding: 2px 8px; font-size: 11px;">
+            ↻ All
           </button>
           <button class="btn" id="btnLayoutDrawer" title="Switch Reading Mode (Spread / Infinite Scroll)" style="padding: 2px 8px; font-size: 11px;">
             <span id="layoutDrawerIcon">📜 Scroll</span>
@@ -2430,7 +2447,8 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
       <div class="shortcut-row"><span>Toggle Spread / Infinite Scroll</span><span class="shortcut-key">L</span></div>
       <div class="shortcut-row"><span>Font Size Up / Down</span><span class="shortcut-key">+ / -</span></div>
       <div class="shortcut-row"><span>Toggle Fullscreen</span><span class="shortcut-key">F</span></div>
-      <div class="shortcut-row"><span>Reload Library</span><span class="shortcut-key">R</span></div>
+      <div class="shortcut-row"><span>Reload Active Story</span><span class="shortcut-key">R</span></div>
+      <div class="shortcut-row"><span>Rescan Entire Library</span><span class="shortcut-key">Shift + R</span></div>
       <div class="shortcut-row"><span>Close Dialogs</span><span class="shortcut-key">Esc</span></div>
       {lan_section}
       <div style="text-align: right; margin-top: 16px;">
@@ -2617,6 +2635,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
   const btnCloseModal = document.getElementById('btnCloseModal');
   const btnReloadLibrary = document.getElementById('btnReloadLibrary');
   const btnReloadLibraryDrawer = document.getElementById('btnReloadLibraryDrawer');
+  const btnRescanAllDrawer = document.getElementById('btnRescanAllDrawer');
 
   // GLOBAL ASSET GALLERY STATE
   let galleryData = data.gallery || {{ total: 0, folders: ['All'], assets: [] }};
@@ -2962,6 +2981,11 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
 
     populateStorySelect();
     selectStory.value = currentStoryIndex;
+
+    // If active story specified via URL hash differs from server embedded config, background-refresh it
+    if (hashParams && hashParams.story && hashParams.story !== currentConfig.active_story) {{
+      reloadStoryData(hashParams.story, true);
+    }}
 
     if (activeChapterFile) {{
       const cIdx = currentStory().chapters.findIndex(c => c.filename === activeChapterFile);
@@ -4303,6 +4327,10 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }} else {{
       loadChapter(initialChapterIdx);
     }}
+    // Auto-refresh the newly selected story from disk in background seamlessly
+    if (st && st.id) {{
+      reloadStoryData(st.id, true);
+    }}
   }};
 
   btnToggleToc.onclick = () => tocDrawer.classList.toggle('open');
@@ -4462,16 +4490,111 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     btnReloadGallery.onclick = reloadGalleryData;
   }}
 
-  // LIVE LIBRARY RELOAD
-  async function reloadLibraryData() {{
-    const reloadBtns = [btnReloadLibrary, btnReloadLibraryDrawer].filter(Boolean);
+  // LIVE SINGLE-STORY RELOAD
+  async function reloadStoryData(storyId, isSilent = false) {{
+    if (!storyId) return;
+    const reloadBtns = [btnReloadLibrary, btnReloadLibraryDrawer, btnRescanAllDrawer].filter(Boolean);
+    if (!isSilent) {{
+      reloadBtns.forEach(btn => {{
+        btn.disabled = true;
+        if (!btn._origHtml) btn._origHtml = btn.innerHTML;
+        btn.textContent = '...';
+      }});
+    }}
+
+    try {{
+      const res = await fetch('/api/reload?story=' + encodeURIComponent(storyId) + '&t=' + Date.now());
+      if (!res.ok) {{
+        throw new Error(`HTTP ${{res.status}}`);
+      }}
+      const data = await res.json();
+      if (data && data.status === 'ok' && data.story) {{
+        const freshStory = data.story;
+        const targetStoryId = freshStory.id;
+
+        // Update in stories cache array
+        const sIdx = stories.findIndex(s => s.id === targetStoryId);
+        if (sIdx !== -1) {{
+          stories[sIdx] = freshStory;
+        }} else {{
+          stories.push(freshStory);
+          stories.sort((a, b) => (a.id === 'the_mockingbirds_ledger' ? -1 : (b.id === 'the_mockingbirds_ledger' ? 1 : a.title.localeCompare(b.title))));
+        }}
+
+        // If the reloaded story is the currently active story, re-render view
+        if (currentStory() && currentStory().id === targetStoryId) {{
+          const prevChapterFilename = currentChapter() ? currentChapter().filename : null;
+          const prevPage = currentPagePair;
+
+          updateStoryView();
+
+          // Restore active chapter by filename
+          let targetChapterIndex = currentChapterIndex;
+          if (prevChapterFilename && currentStory().chapters) {{
+            const cIdx = currentStory().chapters.findIndex(c => c.filename === prevChapterFilename);
+            if (cIdx !== -1) {{
+              targetChapterIndex = cIdx;
+            }} else {{
+              targetChapterIndex = Math.min(currentChapterIndex, Math.max(0, currentStory().chapters.length - 1));
+            }}
+          }}
+
+          if (currentConfig.layout === 'scroll') {{
+            const prevScroll = bookSingle ? bookSingle.scrollTop : 0;
+            renderInfiniteScroll(targetChapterIndex);
+            if (bookSingle && prevScroll > 0) {{
+              bookSingle.scrollTop = prevScroll;
+            }}
+            updateScrollHeaderAndFooter();
+          }} else {{
+            loadChapter(targetChapterIndex, false, null, prevPage);
+          }}
+
+          if (!isSilent) {{
+            const chCount = freshStory.chapters ? freshStory.chapters.length : 0;
+            showToast(`Refreshed: ${{freshStory.title}} (${{chCount}} chapters)`);
+          }}
+        }}
+      }} else if (!isSilent) {{
+        showToast('Error refreshing story: ' + (data && data.error ? data.error : 'Not found'));
+      }}
+    }} catch (err) {{
+      console.error('Failed to reload story:', err);
+      if (!isSilent) {{
+        showToast('Error refreshing story');
+      }}
+    }} finally {{
+      if (!isSilent) {{
+        reloadBtns.forEach(btn => {{
+          btn.disabled = false;
+          if (btn._origHtml) {{
+            btn.innerHTML = btn._origHtml;
+          }} else {{
+            btn.innerHTML = '<span>↻</span> <span class="btn-text">Reload</span>';
+          }}
+        }});
+      }}
+    }}
+  }}
+
+  // LIVE FULL LIBRARY RESCAN OR DELEGATE TO SINGLE STORY
+  async function reloadLibraryData(isFull = false) {{
+    if (!isFull) {{
+      const cur = currentStory();
+      if (cur && cur.id) {{
+        return reloadStoryData(cur.id, false);
+      }}
+    }}
+
+    const reloadBtns = [btnReloadLibrary, btnReloadLibraryDrawer, btnRescanAllDrawer].filter(Boolean);
     reloadBtns.forEach(btn => {{
       btn.disabled = true;
-      btn._origHtml = btn.innerHTML;
+      if (!btn._origHtml) btn._origHtml = btn.innerHTML;
       btn.textContent = '...';
     }});
+
     try {{
-      const res = await fetch('/api/reload?t=' + Date.now());
+      const res = await fetch('/api/reload?full=1&t=' + Date.now());
       if (!res.ok) {{
         throw new Error(`HTTP ${{res.status}}`);
       }}
@@ -4526,7 +4649,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
 
         let totalChapters = 0;
         stories.forEach(s => {{ totalChapters += (s.chapters ? s.chapters.length : 0); }});
-        showToast(`Reloaded: ${{stories.length}} stories, ${{totalChapters}} chapters`);
+        showToast(`Rescanned library: ${{stories.length}} stories, ${{totalChapters}} chapters`);
       }} else {{
         showToast('No stories found');
       }}
@@ -4546,10 +4669,13 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
   }}
 
   if (btnReloadLibrary) {{
-    btnReloadLibrary.onclick = reloadLibraryData;
+    btnReloadLibrary.onclick = (e) => reloadLibraryData(e.shiftKey);
   }}
   if (btnReloadLibraryDrawer) {{
-    btnReloadLibraryDrawer.onclick = reloadLibraryData;
+    btnReloadLibraryDrawer.onclick = (e) => reloadLibraryData(e.shiftKey);
+  }}
+  if (btnRescanAllDrawer) {{
+    btnRescanAllDrawer.onclick = () => reloadLibraryData(true);
   }}
 
   // TOUCH & SWIPE NAVIGATION FOR MOBILE & TABLETS
@@ -4687,7 +4813,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
     }} else if (e.key === 'f' || e.key === 'F') {{
       toggleFullscreen();
     }} else if (e.key === 'r' || e.key === 'R') {{
-      reloadLibraryData();
+      reloadLibraryData(e.shiftKey);
     }} else if (e.key === '+' || e.key === '=') {{
       btnFontInc.click();
     }} else if (e.key === '-' || e.key === '_') {{
@@ -4712,6 +4838,7 @@ def generate_web_ui(library, config, gallery=None, lan_url=None):
         currentStoryIndex = sIdx;
         selectStory.value = sIdx;
         updateStoryView();
+        reloadStoryData(hashParams.story, true);
       }}
     }}
     if (hashParams.chapter) {{
@@ -4765,9 +4892,15 @@ class StoryReaderWebHandler(SimpleHTTPRequestHandler):
             self.send_header("Pragma", "no-cache")
             self.send_header("Expires", "0")
             self.end_headers()
-            library = self.server.reload_library()
-            gallery = self.server.get_gallery()
+            # Ensure full library is initialized from memory cache or cold scan
+            library = self.server.get_library()
             config = load_config()
+            active_story = config.get("active_story")
+            if active_story:
+                # Refresh only the currently active story from disk on page refresh
+                self.server.reload_single_story(active_story)
+                library = self.server.get_library()
+            gallery = self.server.get_gallery()
             lan_url = getattr(self.server, "lan_url", None)
             html_content = generate_web_ui(library, config, gallery=gallery, lan_url=lan_url)
             self.wfile.write(html_content.encode("utf-8"))
@@ -4789,9 +4922,35 @@ class StoryReaderWebHandler(SimpleHTTPRequestHandler):
             self.send_header("Pragma", "no-cache")
             self.send_header("Expires", "0")
             self.end_headers()
-            library = self.server.reload_library()
-            gallery = self.server.get_gallery()
-            self.wfile.write(json.dumps({"status": "ok", "stories": library, "gallery": gallery}).encode("utf-8"))
+
+            qs = parse_qs(parsed.query)
+            story_param = qs.get("story", [None])[0]
+            full_param = qs.get("full", ["0"])[0] in ("1", "true", "True")
+
+            if story_param and not full_param:
+                # Refresh ONLY the currently read story
+                fresh_story = self.server.reload_single_story(story_param)
+                if fresh_story:
+                    self.wfile.write(json.dumps({
+                        "status": "ok",
+                        "mode": "single",
+                        "story": fresh_story
+                    }).encode("utf-8"))
+                else:
+                    self.wfile.write(json.dumps({
+                        "status": "error",
+                        "error": f"Story '{story_param}' not found or has no chapters."
+                    }).encode("utf-8"))
+            else:
+                # Rescan entire library and gallery
+                library = self.server.reload_library()
+                gallery = self.server.get_gallery()
+                self.wfile.write(json.dumps({
+                    "status": "ok",
+                    "mode": "full",
+                    "stories": library,
+                    "gallery": gallery
+                }).encode("utf-8"))
 
         elif path == "/api/gallery":
             self.send_response(200)
@@ -5011,6 +5170,25 @@ class StoryReaderServer(ThreadingHTTPServer):
             self._gallery = scan_assets_gallery()
             return self._library
 
+    def reload_single_story(self, story_id):
+        with self._lock:
+            if self._library is None:
+                self._library = scan_full_library()
+            fresh_story = scan_single_story(story_id)
+            if fresh_story:
+                updated = False
+                for idx, s in enumerate(self._library):
+                    if s["id"] == story_id:
+                        self._library[idx] = fresh_story
+                        updated = True
+                        break
+                if not updated:
+                    self._library.append(fresh_story)
+                    self._library.sort(key=lambda s: (0 if s["id"] == "the_mockingbirds_ledger" else 1, s["title"].lower()))
+            else:
+                self._library = [s for s in self._library if s["id"] != story_id]
+            return fresh_story
+
     def get_gallery(self):
         with self._lock:
             if self._gallery is None:
@@ -5032,6 +5210,14 @@ def run_server(host="0.0.0.0", port=8080, open_browser=True, lan_mode=True):
 
     actual_port = find_available_port(host, port)
     server = StoryReaderServer((host, actual_port), StoryReaderWebHandler)
+
+    # Pre-load stories library into memory cache on cold startup
+    t_start = time.time()
+    print("  [CACHE] Pre-loading stories library...", end=" ", flush=True)
+    initial_lib = server.get_library()
+    server.get_gallery()
+    print(f"Done ({len(initial_lib)} stories in {time.time() - t_start:.2f}s).", flush=True)
+
     lan_ip = get_lan_ip()
 
     local_url = f"http://127.0.0.1:{actual_port}/"
@@ -5059,7 +5245,7 @@ def run_server(host="0.0.0.0", port=8080, open_browser=True, lan_mode=True):
     print("    [Arrow Keys / Space / A / D] Turn Pages", flush=True)
     print("    [M] Table of Contents    [T] Cycle Themes", flush=True)
     print("    [S] Sound Toggle         [L] Spread / Scroll Layout", flush=True)
-    print("    [F] Fullscreen           [R] Live Reload Library", flush=True)
+    print("    [F] Fullscreen           [R] Reload Active Story ([Shift+R] All)", flush=True)
     print("=" * 62, flush=True)
     print("  Press Ctrl+C to stop server.\n", flush=True)
 

@@ -66,9 +66,9 @@ She tilted her head, studying my face with an intensity that made the air betwee
 
 She looked at her brass watch, its leather strap darkened by sweat against her slender wrist. Then she looked back up at me through dark, thick lashes, her tongue darting out to moisten her bottom lip.
 
-"We can walk down to the station together," she said, the words measured, giving me the choice. "The tour ends at the gate, we bow, I hand you a promotional postcard, and you take the train to your hotel. Or you let the group go down alone, and you follow me into the mountain."
+"We can walk down to the station together," she said, her voice quiet beneath the rustle of the cedar canopy. "The tour ends at the gate, we bow, I hand you a promotional postcard, and you take the train to your hotel. Or you let the group go down alone, and you follow me into the mountain."
 
-The choice sat between us, heavy and electric as the summer storm brewing over the western hills.
+A gust of humid mountain wind swept down through the tunnel of torii gates, rattling the vermillion timber and scattering dry cedar needles across the damp stone steps. Down in the valley, the distant chime of the Keihan line crossing sounded three times, thin and metallic against the rumble of thunder gathering behind Mount Tenno. Hana kept her gaze locked on mine, her dark eyes reflecting the fading amber light of the lantern, waiting as the tour group's footsteps faded into the woods below.
 
 ---
 

@@ -54,6 +54,15 @@ AI-generated fiction frequently falls into formulaic stylistic tics. Actively el
    - *Forbidden Patterns*: Never write the word `friction` (or variants `frictional`, `frictionless`) in story prose, dialogue, internal monologue, or narrative descriptions when depicting complications, tactical obstacles, physical strain, logistical delays, or magical effects (e.g., banned: `*Friction,* I reminded myself...`, `feeling the warm friction of my own skin`, `the blessing reduced friction`, `the friction of the march slowed us`).
    - *Why It Is Prohibited*: It is an immersion-shattering AI tic where meta-craft instructions (like "The Law of Plan Friction") leak directly into the character's voice or narrator's vocabulary. It sounds like an engineering manual, physics textbook, or corporate debrief, instantly tearing the reader out of the secondary world.
    - *Mandatory Directive (Show the Drag, Don't Name the Word)*: Embody resistance through visceral, in-world realities: mud sucking at boots, seizing wagon axles, cramping forearms, sour wine, rotted linchpins, suspicious bailiffs, freezing sleet, stubborn pack mules, or bruising concussions. When describing magical speed or evasion, use sensory terms (*buoyed footing*, *skimming above the grit*, *sliding like grease*, *lightened boots*), never clinical physics jargon (*reduced friction*).
+8. **Strict Prohibition of Narrative Choice-Signposting in Interactive Fiction**:
+   - *Forbidden Patterns*: In branching or interactive narratives, never end chapter prose with rhetorical questions, overt option summaries, or meta-choice framing:
+     - `"Do you choose [Option A], or do you choose [Option B]?"`
+     - `"The choice hung before me: do I [A] or do I [B]?"`
+     - `"The choices of how to [action] lay open before me..."`
+     - `"The choice sat between us, heavy and electric..."`
+     - Any narratorial prompt or meta-dilemma checklist framing the upcoming choice block.
+   - *Why It Is Prohibited*: The interactive UI already parses the `### Choices` block into interactive choice cards. Announcing or summarizing the options in prose is redundant, intrusive, and breaks narrative immersion.
+   - *Mandatory Directive*: Terminate chapter prose cleanly on a pure diegetic beat—sensory grounding, environmental cues, or routine physical character actions—leaving the explicit decision entirely to the interactive choice interface.
 
 ---
 

@@ -28,15 +28,11 @@ Kestrel wanted the gorge intact. The river was the only trade vein capable of ha
 
 Logan glanced down at the timber bridge. Beyond the three riders, fifty paces back along the alder road, Kestrel’s vanguard captains sat their chargers in full plate, waiting for the drawbridge to lower.
 
-Three paths stood open before him on the parapet.
+Signing the parchment would secure the lives of seventy pikemen, spare the fifteen civilian masons, and preserve Mor-Riven’s water infrastructure under an independent guild charter, ending the siege with silver rather than blood.
 
-He could accept the terms. By signing the parchment, he would secure the lives of seventy pikemen, spare the fifteen civilian masons, and preserve Mor-Riven’s water infrastructure under an independent guild charter, ending the siege with silver rather than blood.
+Yet on the bridgehead, the vanguard officers waited in tight order beneath the machicolations, right where sixty pounds of dry blasting powder sat primed beneath the parapet planks. Across the barbican, thirty garrison crossbowmen stood with windlasses drawn, their eyes fixed on the portcullis chains as the rain drummed against their helmets.
 
-He could feign compliance. He could accept the initial articles, invite Kestrel's vanguard officers onto the drawbridge span to take ceremonial possession, and have Tobias drop sixty pounds of blasting powder through the machicolations directly onto the bridge timbers, taking the Baron's elite captains in a devastating counter-ambush.
-
-Or he could reject the offer entirely. He could snap the herald's quill, drop the heavy iron portcullises, and rally the garrison on the narrow bridgehead redoubt, forcing Kestrel's men to pay for every foot of stone in a bloody, close-quarters slugfest against the granite walls.
-
-Logan looked down at the waiting herald.
+Logan gripped the crenel stone, the spray of the river cold against his knuckles as the herald held out the quill.
 
 ### Choices
 - [Accept Baron Kestrel's terms and sign the mercenary charter to save the garrison](ending03_the_mercenarys_charter.md)

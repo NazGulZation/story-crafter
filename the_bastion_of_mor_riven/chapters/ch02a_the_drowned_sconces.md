@@ -38,13 +38,13 @@ Tobias stared at the sealed powder vault, his jaw working silently in the lanter
 
 "The drift is too narrow, and the casing is spiked into the stone," Logan said. He ran his calloused thumb along the sweating rock. "We have two minutes before their trencher captain notices the water backing up and touches a port-fire to the fuse."
 
-Two courses of action lay in Logan's hands.
+Above the gorge, three kegs of their fine-grain powder remained dry against the weir piers. Rupturing the Calder barrier would unleash a fifty-foot wave across the lower basin, sweeping away Kestrel’s timber mantlets, trenches, and siege lines in one deluge at the cost of Mor-Riven's water mills, grain stores, and lower bailey.
 
-The first was the main flood-weir release. By setting three kegs of their own fine-grain powder against the river weir's masonry piers above, Logan could rupture the Calder barrier entirely. The mountain flood would tear through the gorge in an unstoppable fifty-foot wave, sweeping away Kestrel’s siege lines, their timber mantlets, and their trenches in one apocalyptic deluge. The cost was total: the lower bailey, the water mills, and the garrison's grain stores would be obliterated, leaving Mor-Riven an isolated, starving fortress perched on bare granite.
+Inside the narrow drift, three copper-cased sulfur charges sat ready in Logan's haversack. Wading the flooded seam would allow him to wedge the charges directly into the shale roof above the enemy gallery, entombing the miners before their fuse caught, though the falling rock would seal the lower vault and trap the sapper squad in the dark.
 
-The second was a desperate close-quarters counter-blast. Logan still carried three copper-cased sulfur charges in his haversack. If he waded through the submerged lateral drift, he could wedge the sulfur canisters directly into the rock seam above the enemy powder chamber and detonate it prematurely. The resulting cave-in would collapse the limestone roof into the enemy powder vault, snuffing the fuse and entombing the enemy sappers, but the blast would collapse the lower galleries and permanently trap Logan's team beneath the stone.
+Logan struck a spark against the iron tinder-box, the sharp smell of sulfur flaring in the damp tunnel as Tobias steadied the lantern.
 
-Logan took the iron tinder-box from his coat and looked at Tobias.
+---
 
 ### Choices
 - [Rupture the Calder river weir to wash away Kestrel's entire siege army in the gorge](ending01_the_drowned_gorge.md)

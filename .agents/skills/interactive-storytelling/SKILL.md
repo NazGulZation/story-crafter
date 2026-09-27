@@ -104,6 +104,22 @@ When the reader reaches an ending chapter:
 - The ending is permanently recorded in the reader's discovered achievements.
 - Interactive controls (**Restart Story** and **Backtrack to Previous Choice**) are rendered.
 
+### 2.4. Strict Prohibition of Narrative Choice-Signposting & Meta-Framing
+When concluding a chapter before the `### Choices` heading, narrative prose must **NEVER** explicitly signpost, summarize, or meta-frame the upcoming decision options:
+- **Forbidden Patterns**:
+  - `"Do you choose [Option A], or do you choose [Option B]?"`
+  - `"The choice hung before me: do I [A] or do I [B]?"`
+  - `"The choices of how to [action] lay open before me..."`
+  - `"The choice sat between us, heavy and electric..."`
+  - `"Which path will he take? Will he [A] or [B]?"`
+  - Any overt narrative rhetorical question, meta-dilemma checklist, or authorial announcement framing the player's upcoming choices.
+- **Why It Is Prohibited**:
+  - The StoryCrafter Web Reader automatically parses the `### Choices` block and renders styled, interactive choice cards in the reader interface.
+  - Reciting or summarizing the choices in prose immediately before the choice cards is redundant, intrusive, and breaks immersion by turning character experience into a game-master prompt.
+- **Mandatory Affirmative Directive: Pure Diegetic Beat**:
+  - Terminate chapter prose cleanly on an in-world atmospheric, sensory, or physical character beat (e.g., listening to rain on the glass, cooling sweat on the skin, setting down a cup, hearing a floorboard creak, watching a screen blink).
+  - The dramatic tension of the choice must emerge organically from the established scene stakes, leaving the explicit decision to the interactive UI choice cards.
+
 ---
 
 ## 3. Branching Graph Architecture: The Absolute Tree Mandate
