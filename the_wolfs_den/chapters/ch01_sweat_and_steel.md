@@ -20,7 +20,7 @@ Then a loud, cheerful clap shattered the silence from the edge of the veranda.
 
 "Aha! That's a clean point to our Princess Knight!"
 
-Kaori sat perched on the low cedar railing overlooking the courtyard bamboo, swinging her bare, grass-stained legs back and forth. Her dark brunette hair, cut short around her temples and cascading down her back in a thick, knotted tail, bounced with every swing. The twin ahoge cowlicks atop her head twitched merrily. She held half a cold mountain melon in one hand and a carved wooden spoon in the other, completely unbothered by the three-mile sprint drill she had completed twenty minutes earlier.
+Kaori sat perched on the low cedar railing overlooking the courtyard bamboo, swinging her bare, grass-stained legs back and forth. She wore her signature black brawler crop top fastened with a knotted rope bow, paired with dark workout shorts and a vibrant red-patterned Ryukyu jacket tied casually around her waist. Her dark brunette hair, cut in a choppy mullet around her temples and cascading down her back in a thick, knotted tail, bounced with every swing, while the twin ahoge cowlicks atop her head twitched merrily. She held half a cold mountain melon in one hand and a carved wooden spoon in the other, completely unbothered by the three-mile sprint drill she had completed twenty minutes earlier.
 
 "Nankurunaisa, Makoto!" Kaori called out with a sunny grin, flashing her canine teeth. "You went charging in head-first like a wild boar again. You gotta flow with the strike, like the ocean tide rolling over the reef! Right, Yuuki?"
 

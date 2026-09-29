@@ -14,7 +14,7 @@ The wet, concussive slap of our pelvises colliding echoed like thunder through t
 
 *SLAP. SLAP. SLAP.*
 
-Her heavy breasts bounced wildly with every violent descent, sweat flying from her ribs. Behind her, Kaori reached around with an eager, sunny grin, cupping Makoto’s heaving breasts in her hands, kneading the firm flesh and pinching her dark nipples.
+Her firm breasts bounced wildly with every violent descent, sweat flying from her ribs. Behind her, Kaori reached around with an eager, sunny grin, cupping Makoto’s heaving breasts in her hands, kneading the firm flesh and pinching her dark nipples.
 
 "Go, Makoto! Ride him!" Kaori laughed through her gasps, her dog tail wagging frantically. "Look at how deep he's buried in you! You look like a wild beast in heat!"
 

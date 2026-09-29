@@ -102,7 +102,7 @@ She sat astride my chest, her bare knees pressing into my ribs. The semen pooled
 
 "Look at you, lying there flat on your back," she panted, her hands slamming down onto my collarbones, pinning me with all the strength left in her athletic arms. "You think because you flooded me, you're the master here? In Caon, the vanguard leads from the front!"
 
-She leaned down, her heavy breasts swinging above my face, their dark, swollen nipples glistening with droplets of sweat. She took my jaw between her rough, calloused fingers and forced my head back, kissing me with bruising, reckless force. Her tongue fought mine for dominance, tasting of her own spent juices and the salt drying on our lips.
+She leaned down, her firm, athletic breasts swinging above my face, their dark, swollen nipples glistening with droplets of sweat. She took my jaw between her rough, calloused fingers and forced my head back, kissing me with bruising, reckless force. Her tongue fought mine for dominance, tasting of her own spent juices and the salt drying on our lips.
 
 Her hips began to pump against my groin again, relentless and unyielding. Even spent, my erection swelled back to full, rigid thickness against the drag of her thighs.
 

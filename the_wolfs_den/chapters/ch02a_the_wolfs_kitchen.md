@@ -16,7 +16,7 @@ The vast training hall fell abruptly silent.
 
 Outside, the cicadas in the bamboo grove had finally ceased their chorus, replaced by the cool, intermittent chirp of bell-crickets hidden beneath the foundation stones. A light breeze stirred the paper transoms, carrying the scent of damp garden moss, but it did little to dispel the dense heat trapped within the cedar walls.
 
-Makoto let out a long, heavy breath that fluttered the stray violet bangs plastered to her forehead. She bent down, scooped up three fallen practice bokken from the mats, and marched toward the weapon rack along the northern wall. Her movements were deliberate, but the tight set of her shoulders and the rapid twitch of her triangular wolf ears revealed the nervous energy still thrumming beneath her skin.
+Makoto let out a long, heavy breath that fluttered the stray violet bangs plastered to her forehead. She bent down, scooped up three fallen practice bokken from the mats, and marched toward the weapon rack along the northern wall, racking them beside her heavy two-handed iron greatsword and folded blue vanguard capelet. Her movements were deliberate, but the tight set of her shoulders and the rapid twitch of her triangular wolf ears revealed the nervous energy still thrumming beneath her skin.
 
 "Well," she muttered, sliding the wooden blades into their notched slots with a sharp *clack-clack-clack*. "That gets the noisy bunch out of the way. Now I can actually get this place secured without Kaori tripping over the door latches."
 
@@ -70,7 +70,7 @@ She twisted her hips suddenly, spinning within the circle of my arms until her b
 
 "Well? You've got me cornered, Princess Knight," she growled softly, her teeth bared in a fierce, trembling smirk, though her fingers reached out and hooked into the lapels of my training gi, pulling me an inch closer until our foreheads nearly touched. "What are you going to do about it?"
 
-The old wooden floorboards beneath our bare feet were cool, but between our bodies, the air was suffocatingly hot. From the distant west wing, the faint, muffled splash of bathwater drifted through the quiet halls, followed by the soft hum of the night wind through the bamboo.
+The old wooden floorboards beneath our bare feet were cool, but between our bodies, the air was suffocatingly hot. From the corridors beyond, the quiet guildhall stirred with faint signs of life—the sharp click of a brass latch by the archive pantry, the whisper of silk along the staircase landing, and the distant, wet slap of bare feet skipping across the bathhouse breezeway.
 
 Makoto’s fingers tightened in my collar, her knuckles digging into my chest as her amber eyes searched mine in the dark.
 
@@ -79,3 +79,7 @@ Makoto’s fingers tightened in my collar, her knuckles digging into my chest as
 ### Choices
 - [Match her intensity — pin her against the training post](ch03a1_fangs_and_claws.md)
 - [Step close into her guard — breathe in her heated skin](ch03a2_the_wolfs_musk.md)
+- [Answer Kasumi's knock at the archive pantry door](ch03a3_the_detectives_reprimand.md)
+- [Welcome Maho into the moonlit kitchen](ch03a4_predator_and_vixen.md)
+- [Let Kaori in from the bathhouse breezeway](ch03a5_midnight_foragers.md)
+

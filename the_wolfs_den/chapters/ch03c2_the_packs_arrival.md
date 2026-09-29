@@ -52,7 +52,7 @@ Makoto stared at Maho, then at me. Her golden pupils dilated, her chest heaving 
 
 "A royal decree, huh?" Makoto growled, her lips pulling back in a fierce, feral smirk. "Fine by me! But don't think for a second a fox can outlast an alpha wolf!"
 
-With a single, aggressive jerk of her hands, Makoto grabbed the collar of her tank top and tore it straight down the middle, ripping the cotton from her body and tossing it aside. Her heavy, firm breasts spilled free, their dark nipples erect and glistening in the lantern light. She kicked off her shorts in a single fluid motion, standing completely bare, her toned athletic frame radiating raw, predatory heat.
+With a single, aggressive jerk of her hands, Makoto grabbed the collar of her tank top and tore it straight down the middle, ripping the cotton from her body and tossing it aside. Her firm, athletic breasts spilled free, their dark nipples erect and glistening in the lantern light. She kicked off her shorts in a single fluid motion, standing completely bare, her toned athletic frame radiating raw, predatory heat.
 
 "That's the spirit, Captain!" Kaori laughed with boundless enthusiasm.
 
